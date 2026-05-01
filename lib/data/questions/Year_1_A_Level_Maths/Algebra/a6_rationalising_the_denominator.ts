@@ -27,7 +27,7 @@ export const questions: Question[] = [
     marks: 1,
     examStyle: false,
     yearCreated: 2026,
-    tags: ['rationalising', 'single surd denominator'],
+    tags: [],
     workedSolution: {
       steps: [
         {
@@ -37,7 +37,7 @@ export const questions: Question[] = [
           explanation: 'Multiplying by \\( \\frac{\\sqrt{2}}{\\sqrt{2}} \\) does not change the value of the fraction (it equals 1), but it removes the surd from the denominator.'
         }
       ],
-      finalAnswer: '\\(\\frac{\\sqrt{2}}{2\\)',
+      finalAnswer: '\\(\\frac{\\sqrt{2}}{2}\\)',
     }
   },
   {
@@ -49,7 +49,7 @@ export const questions: Question[] = [
     marks: 1,
     examStyle: false,
     yearCreated: 2026,
-    tags: ['rationalising', 'single surd denominator'],
+    tags: [],
     workedSolution: {
       steps: [
         {
@@ -59,7 +59,7 @@ export const questions: Question[] = [
           explanation: '\\( \\sqrt{5} \\times \\sqrt{5} = 5 \\) on the bottom, so the surd disappears.'
         }
       ],
-      finalAnswer: '\\(\\frac{\\sqrt{5}}{5\\)',
+      finalAnswer: '\\(\\frac{\\sqrt{5}}{5}\\)',
     }
   },
   {
@@ -71,7 +71,7 @@ export const questions: Question[] = [
     marks: 2,
     examStyle: false,
     yearCreated: 2026,
-    tags: ['rationalising', 'single surd denominator', 'simplifying'],
+    tags: [],
     workedSolution: {
       steps: [
         {
@@ -87,7 +87,7 @@ export const questions: Question[] = [
           explanation: 'Divide top and bottom by 2.'
         }
       ],
-      finalAnswer: '\\(4\\sqrt{2\\)',
+      finalAnswer: '\\(4\\sqrt{2}\\)',
     }
   },
   {
@@ -99,7 +99,7 @@ export const questions: Question[] = [
     marks: 2,
     examStyle: false,
     yearCreated: 2026,
-    tags: ['rationalising', 'single surd denominator', 'simplifying'],
+    tags: [],
     workedSolution: {
       steps: [
         {
@@ -115,7 +115,7 @@ export const questions: Question[] = [
           explanation: 'Divide top and bottom by 3.'
         }
       ],
-      finalAnswer: '\\(2\\sqrt{3\\)',
+      finalAnswer: '\\(2\\sqrt{3}\\)',
     }
   },
   {
@@ -127,7 +127,7 @@ export const questions: Question[] = [
     marks: 2,
     examStyle: false,
     yearCreated: 2026,
-    tags: ['rationalising', 'single surd denominator', 'simplifying'],
+    tags: [],
     workedSolution: {
       steps: [
         {
@@ -143,7 +143,7 @@ export const questions: Question[] = [
           explanation: '\\( 14 \\div 7 = 2 \\).'
         }
       ],
-      finalAnswer: '\\(2\\sqrt{7\\)',
+      finalAnswer: '\\(2\\sqrt{7}\\)',
     }
   },
   {
@@ -155,7 +155,7 @@ export const questions: Question[] = [
     marks: 2,
     examStyle: false,
     yearCreated: 2026,
-    tags: ['rationalising', 'single surd denominator', 'simplifying'],
+    tags: [],
     workedSolution: {
       steps: [
         {
@@ -171,7 +171,7 @@ export const questions: Question[] = [
           explanation: '\\( 20 \\div 5 = 4 \\).'
         }
       ],
-      finalAnswer: '\\(4\\sqrt{5\\)',
+      finalAnswer: '\\(4\\sqrt{5}\\)',
     }
   },
   {
@@ -183,7 +183,7 @@ export const questions: Question[] = [
     marks: 2,
     examStyle: false,
     yearCreated: 2026,
-    tags: ['rationalising', 'single surd denominator', 'simplifying'],
+    tags: [],
     workedSolution: {
       steps: [
         {
@@ -199,7 +199,7 @@ export const questions: Question[] = [
           explanation: '\\( 9 \\div 3 = 3 \\).'
         }
       ],
-      finalAnswer: '\\(3\\sqrt{3\\)',
+      finalAnswer: '\\(3\\sqrt{3}\\)',
     }
   },
   {
@@ -211,7 +211,7 @@ export const questions: Question[] = [
     marks: 2,
     examStyle: false,
     yearCreated: 2026,
-    tags: ['rationalising', 'single surd denominator', 'simplifying'],
+    tags: [],
     workedSolution: {
       steps: [
         {
@@ -227,7 +227,7 @@ export const questions: Question[] = [
           explanation: '\\( 10 \\div 2 = 5 \\).'
         }
       ],
-      finalAnswer: '\\(5\\sqrt{2\\)',
+      finalAnswer: '\\(5\\sqrt{2}\\)',
     }
   },
   {
@@ -239,7 +239,7 @@ export const questions: Question[] = [
     marks: 2,
     examStyle: false,
     yearCreated: 2026,
-    tags: ['rationalising', 'single surd denominator', 'simplifying'],
+    tags: [],
     workedSolution: {
       steps: [
         {
@@ -255,7 +255,7 @@ export const questions: Question[] = [
           explanation: '\\( 24 \\div 6 = 4 \\).'
         }
       ],
-      finalAnswer: '\\(4\\sqrt{6\\)',
+      finalAnswer: '\\(4\\sqrt{6}\\)',
     }
   },
   {
@@ -267,7 +267,7 @@ export const questions: Question[] = [
     marks: 2,
     examStyle: false,
     yearCreated: 2026,
-    tags: ['rationalising', 'single surd denominator', 'simplifying'],
+    tags: [],
     workedSolution: {
       steps: [
         {
@@ -283,7 +283,7 @@ export const questions: Question[] = [
           explanation: '\\( 15 \\div 5 = 3 \\).'
         }
       ],
-      finalAnswer: '\\(3\\sqrt{5\\)',
+      finalAnswer: '\\(3\\sqrt{5}\\)',
     }
   },
   {
@@ -295,7 +295,7 @@ export const questions: Question[] = [
     marks: 3,
     examStyle: false,
     yearCreated: 2026,
-    tags: ['rationalising', 'single surd denominator', 'simplifying', 'adding'],
+    tags: [],
     workedSolution: {
       steps: [
         {
@@ -317,7 +317,7 @@ export const questions: Question[] = [
           explanation: '\\( 4 + 5 = 9 \\).'
         }
       ],
-      finalAnswer: '\\(9\\sqrt{2\\)',
+      finalAnswer: '\\(9\\sqrt{2}\\)',
     }
   },
   {
@@ -329,7 +329,7 @@ export const questions: Question[] = [
     marks: 3,
     examStyle: false,
     yearCreated: 2026,
-    tags: ['rationalising', 'single surd denominator', 'simplifying', 'subtracting'],
+    tags: [],
     workedSolution: {
       steps: [
         {
@@ -351,7 +351,7 @@ export const questions: Question[] = [
           explanation: '\\( 5 - 2 = 3 \\).'
         }
       ],
-      finalAnswer: '\\(3\\sqrt{3\\)',
+      finalAnswer: '\\(3\\sqrt{3}\\)',
     }
   },
   {
@@ -363,7 +363,7 @@ export const questions: Question[] = [
     marks: 2,
     examStyle: false,
     yearCreated: 2026,
-    tags: ['rationalising', 'single surd denominator'],
+    tags: [],
     workedSolution: {
       steps: [
         {
@@ -379,7 +379,7 @@ export const questions: Question[] = [
           explanation: 'Divide top and bottom by 3.'
         }
       ],
-      finalAnswer: '\\(\\frac{\\sqrt{6}}{2\\)',
+      finalAnswer: '\\(\\frac{\\sqrt{6}}{2}\\)',
     }
   },
   {
@@ -391,7 +391,7 @@ export const questions: Question[] = [
     marks: 2,
     examStyle: false,
     yearCreated: 2026,
-    tags: ['rationalising', 'single surd denominator'],
+    tags: [],
     workedSolution: {
       steps: [
         {
@@ -407,7 +407,7 @@ export const questions: Question[] = [
           explanation: 'The 4 and the 10 share a common factor of 2.'
         }
       ],
-      finalAnswer: '\\(\\frac{2\\sqrt{10}}{5\\)',
+      finalAnswer: '\\(\\frac{2\\sqrt{10}}{5}\\)',
     }
   },
   {
@@ -419,7 +419,7 @@ export const questions: Question[] = [
     marks: 3,
     examStyle: false,
     yearCreated: 2026,
-    tags: ['rationalising', 'single surd denominator', 'simplifying'],
+    tags: [],
     workedSolution: {
       steps: [
         {
@@ -435,7 +435,7 @@ export const questions: Question[] = [
           explanation: '\\( \\sqrt{3} \\times \\sqrt{2} = \\sqrt{6} \\) and \\( 2\\sqrt{2} \\times \\sqrt{2} = 2 \\times 2 = 4 \\).'
         }
       ],
-      finalAnswer: '\\(\\frac{\\sqrt{6}}{4\\)',
+      finalAnswer: '\\(\\frac{\\sqrt{6}}{4}\\)',
     }
   },
   {
@@ -447,7 +447,7 @@ export const questions: Question[] = [
     marks: 2,
     examStyle: false,
     yearCreated: 2026,
-    tags: ['rationalising', 'single surd denominator'],
+    tags: [],
     workedSolution: {
       steps: [
         {
@@ -463,7 +463,7 @@ export const questions: Question[] = [
           explanation: '\\( \\frac{5\\sqrt{3}}{6} \\) cannot be simplified further.'
         }
       ],
-      finalAnswer: '\\(\\frac{5\\sqrt{3}}{6\\)',
+      finalAnswer: '\\(\\frac{5\\sqrt{3}}{6}\\)',
     }
   },
   {
@@ -475,7 +475,7 @@ export const questions: Question[] = [
     marks: 2,
     examStyle: false,
     yearCreated: 2026,
-    tags: ['rationalising', 'single surd denominator', 'simplifying'],
+    tags: [],
     workedSolution: {
       steps: [
         {
@@ -503,7 +503,7 @@ export const questions: Question[] = [
     marks: 3,
     examStyle: false,
     yearCreated: 2026,
-    tags: ['rationalising', 'conjugate', 'binomial denominator'],
+    tags: [],
     workedSolution: {
       steps: [
         {
@@ -525,7 +525,7 @@ export const questions: Question[] = [
           explanation: 'Dividing by \\( -2 \\): \\( \\frac{2}{-2} = -1 \\). So \\( a = -1 \\), \\( b = 1 \\), \\( k = 3 \\).'
         }
       ],
-      finalAnswer: '\\(-1 + \\sqrt{3\\)',
+      finalAnswer: '\\(-1 + \\sqrt{3}\\)',
     }
   },
   {
@@ -537,7 +537,7 @@ export const questions: Question[] = [
     marks: 3,
     examStyle: false,
     yearCreated: 2026,
-    tags: ['rationalising', 'conjugate', 'binomial denominator'],
+    tags: [],
     workedSolution: {
       steps: [
         {
@@ -559,7 +559,7 @@ export const questions: Question[] = [
           explanation: 'Since 8 ÷ 4 = 2, we get integer coefficients \\( a = 2 \\), \\( b = 2 \\), \\( k = 5 \\).'
         }
       ],
-      finalAnswer: '\\(2 + 2\\sqrt{5\\)',
+      finalAnswer: '\\(2 + 2\\sqrt{5}\\)',
     }
   },
   {
@@ -571,7 +571,7 @@ export const questions: Question[] = [
     marks: 3,
     examStyle: false,
     yearCreated: 2026,
-    tags: ['rationalising', 'conjugate', 'binomial denominator'],
+    tags: [],
     workedSolution: {
       steps: [
         {
@@ -593,7 +593,7 @@ export const questions: Question[] = [
           explanation: 'The 7 in the numerator and denominator cancel, giving \\( a = 3 \\), \\( b = 1 \\), \\( k = 2 \\).'
         }
       ],
-      finalAnswer: '\\(3 + \\sqrt{2\\)',
+      finalAnswer: '\\(3 + \\sqrt{2}\\)',
     }
   },
   {
@@ -605,7 +605,7 @@ export const questions: Question[] = [
     marks: 3,
     examStyle: false,
     yearCreated: 2026,
-    tags: ['rationalising', 'conjugate', 'binomial denominator'],
+    tags: [],
     workedSolution: {
       steps: [
         {
@@ -627,7 +627,7 @@ export const questions: Question[] = [
           explanation: '\\( \\frac{4}{2} = 2 \\), then multiply through.'
         }
       ],
-      finalAnswer: '\\(4 + 2\\sqrt{6\\)',
+      finalAnswer: '\\(4 + 2\\sqrt{6}\\)',
     }
   },
   {
@@ -639,7 +639,7 @@ export const questions: Question[] = [
     marks: 3,
     examStyle: false,
     yearCreated: 2026,
-    tags: ['rationalising', 'conjugate', 'binomial denominator'],
+    tags: [],
     workedSolution: {
       steps: [
         {
@@ -661,7 +661,7 @@ export const questions: Question[] = [
           explanation: 'The 14 on top and bottom cancel exactly.'
         }
       ],
-      finalAnswer: '\\(4 - \\sqrt{2\\)',
+      finalAnswer: '\\(4 - \\sqrt{2}\\)',
     }
   },
   {
@@ -673,7 +673,7 @@ export const questions: Question[] = [
     marks: 3,
     examStyle: false,
     yearCreated: 2026,
-    tags: ['rationalising', 'conjugate', 'binomial denominator'],
+    tags: [],
     workedSolution: {
       steps: [
         {
@@ -695,7 +695,7 @@ export const questions: Question[] = [
           explanation: 'The 12s cancel, leaving the numerator bracket.'
         }
       ],
-      finalAnswer: '\\(5 + \\sqrt{13\\)',
+      finalAnswer: '\\(5 + \\sqrt{13}\\)',
     }
   },
   {
@@ -707,7 +707,7 @@ export const questions: Question[] = [
     marks: 3,
     examStyle: false,
     yearCreated: 2026,
-    tags: ['rationalising', 'conjugate', 'binomial denominator'],
+    tags: [],
     workedSolution: {
       steps: [
         {
@@ -729,7 +729,7 @@ export const questions: Question[] = [
           explanation: '\\( \\frac{8}{4} = 2 \\), then multiply through the bracket.'
         }
       ],
-      finalAnswer: '\\(6 - 2\\sqrt{5\\)',
+      finalAnswer: '\\(6 - 2\\sqrt{5}\\)',
     }
   },
   {
@@ -741,7 +741,7 @@ export const questions: Question[] = [
     marks: 3,
     examStyle: false,
     yearCreated: 2026,
-    tags: ['rationalising', 'conjugate', 'binomial denominator'],
+    tags: [],
     workedSolution: {
       steps: [
         {
@@ -763,7 +763,7 @@ export const questions: Question[] = [
           explanation: 'The numerator and denominator both contain 25, which cancel to give \\( a = 6 \\), \\( b = 1 \\), \\( k = 11 \\).'
         }
       ],
-      finalAnswer: '\\(6 + \\sqrt{11\\)',
+      finalAnswer: '\\(6 + \\sqrt{11}\\)',
     }
   },
   {
@@ -775,7 +775,7 @@ export const questions: Question[] = [
     marks: 4,
     examStyle: false,
     yearCreated: 2026,
-    tags: ['rationalising', 'conjugate', 'binomial numerator and denominator'],
+    tags: [],
     workedSolution: {
       steps: [
         {
@@ -797,7 +797,7 @@ export const questions: Question[] = [
           explanation: '\\( \\frac{4}{2} = 2 \\) and \\( \\frac{2\\sqrt{3}}{2} = \\sqrt{3} \\).'
         }
       ],
-      finalAnswer: '\\(2 + \\sqrt{3\\)',
+      finalAnswer: '\\(2 + \\sqrt{3}\\)',
     }
   },
   {
@@ -809,7 +809,7 @@ export const questions: Question[] = [
     marks: 4,
     examStyle: false,
     yearCreated: 2026,
-    tags: ['rationalising', 'conjugate', 'binomial numerator and denominator'],
+    tags: [],
     workedSolution: {
       steps: [
         {
@@ -831,7 +831,7 @@ export const questions: Question[] = [
           explanation: 'Divide each term in the numerator by \\( -2 \\).'
         }
       ],
-      finalAnswer: '\\(-\\frac{13}{2} - \\frac{5}{2}\\sqrt{7\\)',
+      finalAnswer: '\\(-\\frac{13}{2} - \\frac{5}{2}\\sqrt{7}\\)',
     }
   },
   {
@@ -843,7 +843,7 @@ export const questions: Question[] = [
     marks: 4,
     examStyle: false,
     yearCreated: 2026,
-    tags: ['rationalising', 'conjugate', 'binomial numerator and denominator'],
+    tags: [],
     workedSolution: {
       steps: [
         {
@@ -865,7 +865,7 @@ export const questions: Question[] = [
           explanation: 'Divide each term by 7.'
         }
       ],
-      finalAnswer: '\\(\\frac{17}{7} - \\frac{8}{7}\\sqrt{2\\)',
+      finalAnswer: '\\(\\frac{17}{7} - \\frac{8}{7}\\sqrt{2}\\)',
     }
   },
   {
@@ -877,7 +877,7 @@ export const questions: Question[] = [
     marks: 4,
     examStyle: false,
     yearCreated: 2026,
-    tags: ['rationalising', 'conjugate', 'binomial numerator and denominator'],
+    tags: [],
     workedSolution: {
       steps: [
         {
@@ -899,7 +899,7 @@ export const questions: Question[] = [
           explanation: 'Divide each term by 41.'
         }
       ],
-      finalAnswer: '\\(\\frac{32}{41} + \\frac{7}{41}\\sqrt{5\\)',
+      finalAnswer: '\\(\\frac{32}{41} + \\frac{7}{41}\\sqrt{5}\\)',
     }
   },
   {
@@ -911,7 +911,7 @@ export const questions: Question[] = [
     marks: 4,
     examStyle: false,
     yearCreated: 2026,
-    tags: ['rationalising', 'conjugate', 'binomial numerator and denominator'],
+    tags: [],
     workedSolution: {
       steps: [
         {
@@ -933,7 +933,7 @@ export const questions: Question[] = [
           explanation: 'Divide each term by 7.'
         }
       ],
-      finalAnswer: '\\(1 + \\sqrt{2\\)',
+      finalAnswer: '\\(1 + \\sqrt{2}\\)',
     }
   },
   {
@@ -945,7 +945,7 @@ export const questions: Question[] = [
     marks: 4,
     examStyle: false,
     yearCreated: 2026,
-    tags: ['rationalising', 'conjugate', 'binomial numerator and denominator'],
+    tags: [],
     workedSolution: {
       steps: [
         {
@@ -967,7 +967,7 @@ export const questions: Question[] = [
           explanation: 'Dividing by 1 leaves the numerator unchanged.'
         }
       ],
-      finalAnswer: '\\(11 - 6\\sqrt{3\\)',
+      finalAnswer: '\\(11 - 6\\sqrt{3}\\)',
     }
   },
   {
@@ -979,7 +979,7 @@ export const questions: Question[] = [
     marks: 4,
     examStyle: false,
     yearCreated: 2026,
-    tags: ['rationalising', 'conjugate', 'two surds in denominator'],
+    tags: [],
     workedSolution: {
       steps: [
         {
@@ -1013,7 +1013,7 @@ export const questions: Question[] = [
     marks: 4,
     examStyle: false,
     yearCreated: 2026,
-    tags: ['rationalising', 'conjugate', 'two surds in denominator'],
+    tags: [],
     workedSolution: {
       steps: [
         {
@@ -1047,7 +1047,7 @@ export const questions: Question[] = [
     marks: 4,
     examStyle: false,
     yearCreated: 2026,
-    tags: ['rationalising', 'conjugate', 'two surds in denominator'],
+    tags: [],
     workedSolution: {
       steps: [
         {
@@ -1069,7 +1069,7 @@ export const questions: Question[] = [
           explanation: 'The 3s cancel, so \\( k = 1 \\), \\( x = 10 \\), \\( y = 7 \\).'
         }
       ],
-      finalAnswer: '\\(\\sqrt{10} + \\sqrt{7\\)',
+      finalAnswer: '\\(\\sqrt{10} + \\sqrt{7}\\)',
     }
   },
   {
@@ -1081,7 +1081,7 @@ export const questions: Question[] = [
     marks: 4,
     examStyle: false,
     yearCreated: 2026,
-    tags: ['rationalising', 'conjugate', 'two surds in denominator'],
+    tags: [],
     workedSolution: {
       steps: [
         {
@@ -1103,7 +1103,7 @@ export const questions: Question[] = [
           explanation: 'The 8s cancel.'
         }
       ],
-      finalAnswer: '\\(\\sqrt{11} - \\sqrt{3\\)',
+      finalAnswer: '\\(\\sqrt{11} - \\sqrt{3}\\)',
     }
   },
   {
@@ -1115,7 +1115,7 @@ export const questions: Question[] = [
     marks: 2,
     examStyle: false,
     yearCreated: 2026,
-    tags: ['rationalising', 'single surd denominator'],
+    tags: [],
     workedSolution: {
       steps: [
         {
@@ -1125,7 +1125,7 @@ export const questions: Question[] = [
           explanation: '\\( \\sqrt{11} \\times \\sqrt{11} = 11 \\).'
         }
       ],
-      finalAnswer: '\\(\\frac{7\\sqrt{11}}{11\\)',
+      finalAnswer: '\\(\\frac{7\\sqrt{11}}{11}\\)',
     }
   },
   {
@@ -1137,7 +1137,7 @@ export const questions: Question[] = [
     marks: 3,
     examStyle: false,
     yearCreated: 2026,
-    tags: ['rationalising', 'single surd denominator', 'simplifying'],
+    tags: [],
     workedSolution: {
       steps: [
         {
@@ -1153,7 +1153,7 @@ export const questions: Question[] = [
           explanation: '\\( \\sqrt{5} \\times \\sqrt{3} = \\sqrt{15} \\) and \\( 2\\sqrt{3} \\times \\sqrt{3} = 2 \\times 3 = 6 \\).'
         }
       ],
-      finalAnswer: '\\(\\frac{\\sqrt{15}}{6\\)',
+      finalAnswer: '\\(\\frac{\\sqrt{15}}{6}\\)',
     }
   },
   {
@@ -1165,7 +1165,7 @@ export const questions: Question[] = [
     marks: 4,
     examStyle: false,
     yearCreated: 2026,
-    tags: ['rationalising', 'single surd denominator', 'simplifying', 'adding'],
+    tags: [],
     workedSolution: {
       steps: [
         {
@@ -1187,7 +1187,7 @@ export const questions: Question[] = [
           explanation: '\\( 2 + 3 = 5 \\).'
         }
       ],
-      finalAnswer: '\\(5\\sqrt{2\\)',
+      finalAnswer: '\\(5\\sqrt{2}\\)',
     }
   },
   {
@@ -1199,7 +1199,7 @@ export const questions: Question[] = [
     marks: 2,
     examStyle: false,
     yearCreated: 2026,
-    tags: ['rationalising', 'single surd denominator'],
+    tags: [],
     workedSolution: {
       steps: [
         {
@@ -1209,7 +1209,7 @@ export const questions: Question[] = [
           explanation: '\\( 3\\sqrt{5} \\times \\sqrt{5} = 3 \\times 5 = 15 \\).'
         }
       ],
-      finalAnswer: '\\(\\frac{2\\sqrt{5}}{15\\)',
+      finalAnswer: '\\(\\frac{2\\sqrt{5}}{15}\\)',
     }
   },
   {
@@ -1221,7 +1221,7 @@ export const questions: Question[] = [
     marks: 2,
     examStyle: false,
     yearCreated: 2026,
-    tags: ['rationalising', 'single surd denominator', 'simplifying'],
+    tags: [],
     workedSolution: {
       steps: [
         {
@@ -1249,7 +1249,7 @@ export const questions: Question[] = [
     marks: 3,
     examStyle: false,
     yearCreated: 2026,
-    tags: ['rationalising', 'conjugate', 'binomial denominator'],
+    tags: [],
     workedSolution: {
       steps: [
         {
@@ -1271,7 +1271,7 @@ export const questions: Question[] = [
           explanation: 'The 6s cancel exactly.'
         }
       ],
-      finalAnswer: '\\(4 + \\sqrt{10\\)',
+      finalAnswer: '\\(4 + \\sqrt{10}\\)',
     }
   },
   {
@@ -1283,7 +1283,7 @@ export const questions: Question[] = [
     marks: 3,
     examStyle: false,
     yearCreated: 2026,
-    tags: ['rationalising', 'conjugate', 'binomial denominator'],
+    tags: [],
     workedSolution: {
       steps: [
         {
@@ -1305,7 +1305,7 @@ export const questions: Question[] = [
           explanation: 'Numerator and denominator both contain 32, giving \\( a = 7 \\), \\( b = 1 \\), \\( k = 17 \\).'
         }
       ],
-      finalAnswer: '\\(7 + \\sqrt{17\\)',
+      finalAnswer: '\\(7 + \\sqrt{17}\\)',
     }
   },
   {
@@ -1317,7 +1317,7 @@ export const questions: Question[] = [
     marks: 3,
     examStyle: false,
     yearCreated: 2026,
-    tags: ['rationalising', 'single surd denominator', 'simplifying'],
+    tags: [],
     workedSolution: {
       steps: [
         {
@@ -1333,7 +1333,7 @@ export const questions: Question[] = [
           explanation: '\\( \\sqrt{2} \\times \\sqrt{2} = 2 \\), then divide.'
         }
       ],
-      finalAnswer: '\\(3\\sqrt{2\\)',
+      finalAnswer: '\\(3\\sqrt{2}\\)',
     }
   },
   {
@@ -1345,7 +1345,7 @@ export const questions: Question[] = [
     marks: 4,
     examStyle: false,
     yearCreated: 2026,
-    tags: ['rationalising', 'conjugate', 'solving equations'],
+    tags: [],
     workedSolution: {
       steps: [
         {
@@ -1367,7 +1367,7 @@ export const questions: Question[] = [
           explanation: '\\( \\frac{10}{2} = 5 \\), then expand the bracket.'
         }
       ],
-      finalAnswer: '\\(x = 5 + 5\\sqrt{3\\)',
+      finalAnswer: '\\(x = 5 + 5\\sqrt{3}\\)',
     }
   },
   {
@@ -1379,7 +1379,7 @@ export const questions: Question[] = [
     marks: 5,
     examStyle: false,
     yearCreated: 2026,
-    tags: ['rationalising', 'conjugate', 'solving equations'],
+    tags: [],
     workedSolution: {
       steps: [
         {
@@ -1407,7 +1407,7 @@ export const questions: Question[] = [
           explanation: 'Dividing by \\( -1 \\) negates each term.'
         }
       ],
-      finalAnswer: '\\(y = -13 - 6\\sqrt{5\\)',
+      finalAnswer: '\\(y = -13 - 6\\sqrt{5}\\)',
     }
   },
   {
@@ -1419,7 +1419,7 @@ export const questions: Question[] = [
     marks: 5,
     examStyle: false,
     yearCreated: 2026,
-    tags: ['rationalising', 'conjugate', 'problem solving', 'area'],
+    tags: [],
     workedSolution: {
       steps: [
         {
@@ -1447,7 +1447,7 @@ export const questions: Question[] = [
           explanation: 'Divide each term by 4.'
         }
       ],
-      finalAnswer: '\\((2 + \\sqrt{5) cm\\)',
+      finalAnswer: '\\((2 + \\sqrt{5})\\) cm',
     }
   },
   {
@@ -1459,7 +1459,7 @@ export const questions: Question[] = [
     marks: 3,
     examStyle: false,
     yearCreated: 2026,
-    tags: ['rationalising', 'conjugate', 'two surds in denominator'],
+    tags: [],
     workedSolution: {
       steps: [
         {
@@ -1481,7 +1481,7 @@ export const questions: Question[] = [
           explanation: 'Dividing by \\( -1 \\) flips the signs.'
         }
       ],
-      finalAnswer: '\\(\\sqrt{3} - \\sqrt{2\\)',
+      finalAnswer: '\\(\\sqrt{3} - \\sqrt{2}\\)',
     }
   },
   {
@@ -1493,7 +1493,7 @@ export const questions: Question[] = [
     marks: 4,
     examStyle: false,
     yearCreated: 2026,
-    tags: ['rationalising', 'conjugate', 'two surds in denominator'],
+    tags: [],
     workedSolution: {
       steps: [
         {
@@ -1515,7 +1515,7 @@ export const questions: Question[] = [
           explanation: 'Divide each term by 4.'
         }
       ],
-      finalAnswer: '\\(2 + \\sqrt{3\\)',
+      finalAnswer: '\\(2 + \\sqrt{3}\\)',
     }
   },
   {
@@ -1527,7 +1527,7 @@ export const questions: Question[] = [
     marks: 4,
     examStyle: false,
     yearCreated: 2026,
-    tags: ['rationalising', 'conjugate', 'binomial denominator'],
+    tags: [],
     workedSolution: {
       steps: [
         {
@@ -1543,7 +1543,7 @@ export const questions: Question[] = [
           explanation: 'Numerator: \\( \\sqrt{2} \\times 3\\sqrt{2} = 6 \\) and \\( \\sqrt{2} \\times (-1) = -\\sqrt{2} \\). Denominator: \\( (3\\sqrt{2})^2 - 1 = 18 - 1 = 17 \\).'
         }
       ],
-      finalAnswer: '\\(\\frac{6 - \\sqrt{2}}{17\\)',
+      finalAnswer: '\\(\\frac{6 - \\sqrt{2}}{17}\\)',
     }
   },
   {
@@ -1555,7 +1555,7 @@ export const questions: Question[] = [
     marks: 2,
     examStyle: false,
     yearCreated: 2026,
-    tags: ['rationalising', 'single surd denominator', 'proof'],
+    tags: [],
     workedSolution: {
       steps: [
         {
@@ -1583,7 +1583,7 @@ export const questions: Question[] = [
     marks: 2,
     examStyle: false,
     yearCreated: 2026,
-    tags: ['rationalising', 'single surd denominator', 'simplifying'],
+    tags: [],
     workedSolution: {
       steps: [
         {
@@ -1611,7 +1611,7 @@ export const questions: Question[] = [
     marks: 4,
     examStyle: false,
     yearCreated: 2026,
-    tags: ['rationalising', 'conjugate', 'binomial denominator'],
+    tags: [],
     workedSolution: {
       steps: [
         {
@@ -1633,7 +1633,7 @@ export const questions: Question[] = [
           explanation: 'Giving \\( a = 1 \\), \\( b = 2 \\), \\( k = 3 \\).'
         }
       ],
-      finalAnswer: '\\(1 + 2\\sqrt{3\\)',
+      finalAnswer: '\\(1 + 2\\sqrt{3}\\)',
     }
   },
   {
@@ -1645,7 +1645,7 @@ export const questions: Question[] = [
     marks: 4,
     examStyle: false,
     yearCreated: 2026,
-    tags: ['rationalising', 'conjugate', 'binomial denominator'],
+    tags: [],
     workedSolution: {
       steps: [
         {
@@ -1667,7 +1667,7 @@ export const questions: Question[] = [
           explanation: 'Giving \\( a = -3 \\), \\( b = 2 \\), \\( k = 5 \\).'
         }
       ],
-      finalAnswer: '\\(-3 + 2\\sqrt{5\\)',
+      finalAnswer: '\\(-3 + 2\\sqrt{5}\\)',
     }
   },
   {
@@ -1679,7 +1679,7 @@ export const questions: Question[] = [
     marks: 2,
     examStyle: false,
     yearCreated: 2026,
-    tags: ['rationalising', 'single surd denominator', 'simplifying'],
+    tags: [],
     workedSolution: {
       steps: [
         {
@@ -1695,7 +1695,7 @@ export const questions: Question[] = [
           explanation: '\\( 25 \\div 5 = 5 \\).'
         }
       ],
-      finalAnswer: '\\(5\\sqrt{5\\)',
+      finalAnswer: '\\(5\\sqrt{5}\\)',
     }
   },
   {
@@ -1707,7 +1707,7 @@ export const questions: Question[] = [
     marks: 2,
     examStyle: false,
     yearCreated: 2026,
-    tags: ['rationalising', 'single surd denominator', 'simplifying'],
+    tags: [],
     workedSolution: {
       steps: [
         {
@@ -1723,7 +1723,7 @@ export const questions: Question[] = [
           explanation: '\\( 18 \\div 6 = 3 \\).'
         }
       ],
-      finalAnswer: '\\(3\\sqrt{6\\)',
+      finalAnswer: '\\(3\\sqrt{6}\\)',
     }
   },
   {
@@ -1735,7 +1735,7 @@ export const questions: Question[] = [
     marks: 2,
     examStyle: false,
     yearCreated: 2026,
-    tags: ['rationalising', 'single surd denominator', 'simplifying'],
+    tags: [],
     workedSolution: {
       steps: [
         {
@@ -1751,7 +1751,7 @@ export const questions: Question[] = [
           explanation: '4 is the largest square factor of 8.'
         }
       ],
-      finalAnswer: '\\(2\\sqrt{2\\)',
+      finalAnswer: '\\(2\\sqrt{2}\\)',
     }
   },
   {
@@ -1763,7 +1763,7 @@ export const questions: Question[] = [
     marks: 3,
     examStyle: false,
     yearCreated: 2026,
-    tags: ['rationalising', 'conjugate', 'binomial denominator'],
+    tags: [],
     workedSolution: {
       steps: [
         {
@@ -1785,7 +1785,7 @@ export const questions: Question[] = [
           explanation: 'The 2s cancel exactly.'
         }
       ],
-      finalAnswer: '\\(3 + \\sqrt{7\\)',
+      finalAnswer: '\\(3 + \\sqrt{7}\\)',
     }
   },
   {
@@ -1797,7 +1797,7 @@ export const questions: Question[] = [
     marks: 4,
     examStyle: false,
     yearCreated: 2026,
-    tags: ['rationalising', 'conjugate', 'two surds in denominator'],
+    tags: [],
     workedSolution: {
       steps: [
         {
@@ -1831,7 +1831,7 @@ export const questions: Question[] = [
     marks: 4,
     examStyle: false,
     yearCreated: 2026,
-    tags: ['rationalising', 'conjugate', 'two surds in denominator'],
+    tags: [],
     workedSolution: {
       steps: [
         {
@@ -1859,7 +1859,7 @@ export const questions: Question[] = [
           explanation: 'Divide each term in the numerator by 3.'
         }
       ],
-      finalAnswer: '\\(\\frac{\\sqrt{5} + \\sqrt{2}}{3\\)',
+      finalAnswer: '\\(\\frac{\\sqrt{5} + \\sqrt{2}}{3}\\)',
     }
   },
 

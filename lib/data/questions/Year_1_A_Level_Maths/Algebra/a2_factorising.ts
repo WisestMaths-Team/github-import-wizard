@@ -165,7 +165,7 @@ export const questions: Question[] = [
           explanation: 'Set up the difference of two squares using a square root.',
         }
       ],
-      finalAnswer: '\\((m - \\sqrt{7)(m + \\sqrt{7})\\)',
+      finalAnswer: '\\((m - \\sqrt{7})(m + \\sqrt{7})\\)',
     }
   },
   {
@@ -446,7 +446,7 @@ export const questions: Question[] = [
           explanation: 'Distribute the \\( x \\) inside the square brackets.',
         }
       ],
-      finalAnswer: 'x(1-y)(x - xy + 2)',
+      finalAnswer: '\\(x(1-y)(x - xy + 2)\\)',
     }
   },
 
@@ -688,7 +688,7 @@ export const questions: Question[] = [
   {
     id: 'a2-026',
     topicRef: 'a2',
-    topicTitle: 'Factorising 25',
+    topicTitle: 'Factorising 26',
     difficulty: 'Foundation',
     questionText: 'Express as the product of factors: \\( x(x-4) - 3(x-4) \\)',
     marks: 2,

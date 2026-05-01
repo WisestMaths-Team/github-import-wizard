@@ -123,7 +123,7 @@ export const questions: Question[] = [
           explanation: "Multiply each term in the first bracket by each term in the second, then collect like terms.",
         },
       ],
-      finalAnswer: "\\(x^3 + x^3y + x^2y + xy^2 + xy^3 + \\frac{x^4{y} - \\frac{y}{x} - \\frac{y^2}{x} - 1\\)",
+      finalAnswer: "\\(x^3 + x^3y + x^2y + xy^2 + xy^3 + \\frac{x^4}{y} - \\frac{y}{x} - \\frac{y^2}{x} - 1\\)",
     },
   },
 
@@ -157,7 +157,7 @@ export const questions: Question[] = [
     topicTitle: "Expanding Brackets 07",
     difficulty: "Foundation",
     questionText:
-      "Expand \\(  (a+b-c)(a-b+c) + (b-c-a)(b-c+a) \\).",
+      "Expand \\(  (a+b-c)(a-b+c) + (b+c-a)(b-c+a) \\).",
     marks: 4,
     examStyle: false,
     yearCreated: 2026,
@@ -167,8 +167,8 @@ export const questions: Question[] = [
         {
           stepNumber: 1,
           description: "Expand the brackets",
-          workingLatex: "\\text{Expand the brackets:} \\\\[1em] \\begin{aligned} (a+b-c)(a-b+c)+(b+c-a)(b-c+a) \\ &= (a+(b-c))(a-(b-c))+(b+(c-a))(b-(c-a)) \\ &= a(a-(b-c))+(b-c)(a-(b-c))+(b+(c-a))(b-(c-a)) \\ &= a^2-a(b-c)+(b-c)a-(b-c)^2+b(b-(c-a))+(c-a)(b-(c-a)) \\\\ & = a^2-(b-c)^2+b^2-b(c-a)+(c-a)b-(c-a)^2 \\ & = a^2-(b-c)^2+b^2-bc+ab+bc-ab-(c-a)^2 \\ & = a^2-(b-c)^2+b^2-(c-a)^2 \\ & = a^2-(b^2-2bc+c^2)+b^2-(c^2-2ac+a^2) \\ & = a^2-b^2+2bc-c^2+b^2-c^2+2ac-a^2 \\ & = 2bc-2c^2+2ac \\ & = 2c(a+b-c) \end{aligned}",
-          explanation: "Start by expanding both sets of brackets, then collect like terms.",
+          workingLatex: "\\begin{aligned} &(a+b-c)(a-b+c)+(b+c-a)(b-c+a) \\\\ &= (a+(b-c))(a-(b-c))+(b+(c-a))(b-(c-a)) \\\\ &= a^2-(b-c)^2+b^2-(c-a)^2 \\\\ &= a^2-(b^2-2bc+c^2)+b^2-(c^2-2ac+a^2) \\\\ &= a^2-b^2+2bc-c^2+b^2-c^2+2ac-a^2 \\\\ &= 2bc-2c^2+2ac \\\\ &= 2c(a+b-c) \\end{aligned}",
+          explanation: "Recognise that (a+b-c)(a-b+c) = a²-(b-c)² using the difference of two squares. Similarly for the second pair. Then expand and collect like terms.",
         },
       ],
       finalAnswer: "\\(2c(a+b-c)\\)",
@@ -190,9 +190,9 @@ export const questions: Question[] = [
       steps: [
         {
           stepNumber: 1,
-          description: "Expand the brackets",
-          workingLatex: "\\text{Expand the brackets:} \\\\[1em] \\begin{aligned} (2x-3y^2)^3 & = (2x-3y^2)\\Big( (2x-3y^2)(2x-3y^2)  \\Big) \\ &= (2x-3y^2)\\Big( 4x^2-6xy^2-6xy^2+9y^4 \\ &= (2x-3y^2)\\Big( 4x^2-12xy^2+9y^4 \\ &= 8x^3-24x^2y^2+18xy^4-12x^2y^2+36xy^4-27y^6 \\ &= 8x^3-36x^2y^2+54xy^4-27y^6 \end{aligned}",
-          explanation: "Start by expanding the last two brackets, then multiply the result by the remaining bracket.",
+          description: "Expand step by step, showing each term multiplying out",
+          workingLatex: "\\begin{aligned} (2x-3y^2)^3 &= (2x-3y^2)\\Big[(2x-3y^2)(2x-3y^2)\\Big] \\\\ &= (2x-3y^2)\\Big[2x(2x-3y^2)-3y^2(2x-3y^2)\\Big] \\\\ &= (2x-3y^2)\\Big[4x^2-6xy^2-6xy^2+9y^4\\Big] \\\\ &= (2x-3y^2)(4x^2-12xy^2+9y^4) \\\\ &= 2x(4x^2-12xy^2+9y^4)-3y^2(4x^2-12xy^2+9y^4) \\\\ &= 8x^3-24x^2y^2+18xy^4-12x^2y^2+36xy^4-27y^6 \\\\ &= 8x^3-36x^2y^2+54xy^4-27y^6 \\end{aligned}",
+          explanation: "First expand the inner two brackets showing a(c+d)+b(c+d), collect like terms, then multiply the result by the remaining bracket using the same method.",
         },
       ],
       finalAnswer: "\\(8x^3-36x^2y^2+54xy^4-27y^6\\)",
@@ -200,9 +200,7 @@ export const questions: Question[] = [
   },
 
   {
-    id: "a1-009",
-    topicRef: "a1",
-    topicTitle: "Expanding Brackets 09",
+    id: "a1-009", topicRef: "a1", topicTitle: "Expanding Brackets 09",
     difficulty: "Foundation",
     questionText:
       "Expand \\(  (m+n)(m^3-mn^2+n^3) \\).",
@@ -215,7 +213,7 @@ export const questions: Question[] = [
         {
           stepNumber: 1,
           description: "Expand the brackets",
-          workingLatex: "\\text{Expand the brackets:} \\\\[1em] \\begin{aligned} (m+n)(m^3-mn^2+n^3) & = m(m^3-mn^2+n^3)+n(m^3-mn^2+n^3) \\ &= m^4-m^2n^2+mn^3+m^3n-mn^3+n^4 \\ &= m^4+m^3n-m^2n^2+n^4 \end{aligned}",
+          workingLatex: "\\text{Expand the brackets:} \\\\[1em] \\begin{aligned} (m+n)(m^3-mn^2+n^3) & = m(m^3-mn^2+n^3)+n(m^3-mn^2+n^3) \\\\ &= m^4-m^2n^2+mn^3+m^3n-mn^3+n^4 \\\\ &= m^4+m^3n-m^2n^2+n^4 \\end{aligned}",
           explanation: "Expand the first term in the first bracket with the last bracket, and then the second term in the first bracket with the last bracket.",
         },
       ],
@@ -239,7 +237,7 @@ export const questions: Question[] = [
         {
           stepNumber: 1,
           description: "Expand the brackets",
-          workingLatex: "\\text{Expand the brackets:} \\\\[1em] \\begin{aligned} pq(q^2-2p+3q)+rs(r^2-2s+3r) & = pq^3-2p^2q+3pq^2+r^3s-2rs^2+3r^2s \end{aligned}",
+          workingLatex: "\\text{Expand the brackets:} \\\\[1em] \\begin{aligned} pq(q^2-2p+3q)+rs(r^2-2s+3r) & = pq^3-2p^2q+3pq^2+r^3s-2rs^2+3r^2s \\end{aligned}",
           explanation: "Expand each bracket separately, then collect like terms.",
         },
       ],
@@ -262,7 +260,7 @@ export const questions: Question[] = [
         {
           stepNumber: 1,
           description: "Expand the brackets",
-          workingLatex: "\\text{Expand the brackets:} \\\\[1em] \\begin{aligned} (x+y+z)(x-y-z) & = x(x-y-z)+y(x-y-z)+z(x-y-z) \ &= x^2-xy-xz+xy-y^2-yz+xz-yz-z^2 \ &= x^2-y^2-z^2-2yz \end{aligned}",
+          workingLatex: "\\text{Expand the brackets:} \\\\[1em] \\begin{aligned} (x+y+z)(x-y-z) & = x(x-y-z)+y(x-y-z)+z(x-y-z) \\\\ &= x^2-xy-xz+xy-y^2-yz+xz-yz-z^2 \\\\ &= x^2-y^2-z^2-2yz \\end{aligned}",
           explanation: "Expand each bracket separately, then collect like terms.",
         },
       ],
@@ -271,9 +269,7 @@ export const questions: Question[] = [
   },
 
   {
-    id: "a1-012",
-    topicRef: "a1",
-    topicTitle: "Expanding Brackets 12",
+    id: "a1-012", topicRef: "a1", topicTitle: "Expanding Brackets 12",
     difficulty: "Foundation",
     questionText:
       "Expand \\(  (x+1)(2x-1)^2 + (x-1)(3x-2)^2 \\).",
@@ -286,8 +282,8 @@ export const questions: Question[] = [
         {
           stepNumber: 1,
           description: "Expand the brackets",
-          workingLatex: "\\text{Expand the brackets:} \\\\[1em] \\begin{aligned} (x+1)(2x-1)^2 + (x-1)(3x-2)^2 \\\\ & = (x+1)\\Big( (2x-1)(2x-1) \\Big + (x-1)\\Big( (3x-2)(3x-2) \\Big) \\\\ &= (x+1)(4x^2-4x+1)+(x-1)(9x^2-12x+4) \\\\ &= x(4x^2-4x+1)+1(4x^2-4x+1)+x(9x^2-12x+4)-1(9x^2-12x+4) \\\\ &= (4x^3-4x^2+x+4x^2-4x+1)+(9x^3-12x^2+4x-9x^2+12x-4) \\\\ &= (4x^3-3x+1)+(9x^3-21x^2+16x-4) \\\\ &= 13x^3-21x^2+13x-3 \end{aligned}",
-          explanation: "Expand each bracket separately, then collect like terms.",
+          workingLatex: "\\begin{aligned} &(x+1)(2x-1)^2 + (x-1)(3x-2)^2 \\\\ &= (x+1)\\Big(2x(2x-1)-1(2x-1)\\Big) + (x-1)\\Big(3x(3x-2)-2(3x-2)\\Big) \\\\ &= (x+1)(4x^2-4x+1)+(x-1)(9x^2-12x+4) \\\\ &= x(4x^2-4x+1)+1(4x^2-4x+1)+x(9x^2-12x+4)-1(9x^2-12x+4) \\\\ &= (4x^3-4x^2+x+4x^2-4x+1)+(9x^3-12x^2+4x-9x^2+12x-4) \\\\ &= (4x^3-3x+1)+(9x^3-21x^2+16x-4) \\\\ &= 13x^3-21x^2+13x-3 \\end{aligned}",
+          explanation: "Expand each squared bracket using a(c+d)+b(c+d), then multiply out and collect like terms.",
         },
       ],
       finalAnswer: "\\(13x^3-21x^2+13x-3\\)",
@@ -300,7 +296,7 @@ export const questions: Question[] = [
     topicTitle: "Expanding Brackets 13",
     difficulty: "Foundation",
     questionText:
-      "Expand \\(  (x+1)(2x-1)^2 + (x-1)(3x-2)^2 \\).",
+      "Expand \\(  (x+2)(3x+1)^2 - (x-1)(2x+3)^2 \\).",
     marks: 4,
     examStyle: false,
     yearCreated: 2026,
@@ -309,12 +305,12 @@ export const questions: Question[] = [
       steps: [
         {
           stepNumber: 1,
-          description: "Expand the brackets",
-          workingLatex: "\\text{Expand the brackets:} \\\\[1em] \\begin{aligned} (x+1)(2x-1)^2 + (x-1)(3x-2)^2 \\\\ & = (x+1)\\Big( (2x-1)(2x-1) \\Big + (x-1)\\Big( (3x-2)(3x-2) \\Big) \\\\ &= (x+1)(4x^2-4x+1)+(x-1)(9x^2-12x+4) \\\\ &= x(4x^2-4x+1)+1(4x^2-4x+1)+x(9x^2-12x+4)-1(9x^2-12x+4) \\\\ &= (4x^3-4x^2+x+4x^2-4x+1)+(9x^3-12x^2+4x-9x^2+12x-4) \\\\ &= (4x^3-3x+1)+(9x^3-21x^2+16x-4) \\\\ &= 13x^3-21x^2+13x-3 \end{aligned}",
-          explanation: "Expand each bracket separately, then collect like terms.",
+          description: "Expand each squared bracket, then multiply out",
+          workingLatex: "\\begin{aligned} &(x+2)(3x+1)^2 - (x-1)(2x+3)^2 \\\\ &= (x+2)\\Big(3x(3x+1)+1(3x+1)\\Big) - (x-1)\\Big(2x(2x+3)+3(2x+3)\\Big) \\\\ &= (x+2)(9x^2+6x+1) - (x-1)(4x^2+12x+9) \\\\ &= x(9x^2+6x+1)+2(9x^2+6x+1) - \\Big[x(4x^2+12x+9)-1(4x^2+12x+9)\\Big] \\\\ &= (9x^3+6x^2+x+18x^2+12x+2) - (4x^3+12x^2+9x-4x^2-12x-9) \\\\ &= (9x^3+24x^2+13x+2) - (4x^3+8x^2-3x-9) \\\\ &= 9x^3+24x^2+13x+2-4x^3-8x^2+3x+9 \\\\ &= 5x^3+16x^2+16x+11 \\end{aligned}",
+          explanation: "Expand each squared bracket using a(c+d)+b(c+d), multiply out both products, then subtract and collect like terms.",
         },
       ],
-      finalAnswer: "\\(13x^3-21x^2+13x-3\\)",
+      finalAnswer: "\\(5x^3+16x^2+16x+11\\)",
     },
   },
 
@@ -454,15 +450,9 @@ export const questions: Question[] = [
       steps: [
         {
           stepNumber: 1,
-          description: "Set up the area calculation",
-          workingLatex: "\\text{Area} = \\text{length} \\times \\text{width} = (2x + 5)(x - 3)",
-          explanation: "To find the area of a rectangle, multiply the expressions for length and width.",
-        },
-        {
-          stepNumber: 2,
-          description: "Expand the brackets",
-          workingLatex: "\\begin{aligned} (2x + 5)(x - 3) &= 2x(x-3) + 5(x-3) \\\\ &= 2x^2 - 6x + 5x - 15 \\\\ &= 2x^2 - x - 15 \\end{aligned}",
-          explanation: "Expand the brackets and then collect the middle $x$ terms.",
+          description: "Set up and expand",
+          workingLatex: "\\begin{aligned} \\text{Area} &= (2x + 5)(x - 3) \\\\ &= 2x(x-3) + 5(x-3) \\\\ &= 2x^2 - 6x + 5x - 15 \\\\ &= 2x^2 - x - 15 \\end{aligned}",
+          explanation: "The area of a rectangle is length times width. Expand the brackets and collect like terms.",
         },
       ],
       finalAnswer: "\\(2x^2 - x - 15\\)",
@@ -509,8 +499,8 @@ export const questions: Question[] = [
         {
           stepNumber: 1,
           description: "Expand the single and double brackets",
-          workingLatex: "\\begin{aligned} 2x(x + 3)-(x+1)(x+2) &= 2x^2 + 6x - x(x+2)-1(x+2) \\\\ &= 2x^2 + 6x - x^2 - 2x - x - 2 \\\\ &= x^2 + 3x - 2 \end{aligned}",
-          explanation: "Expand the first part by distributing $2x$, and expand the brackets of the second part.",
+          workingLatex: "\\begin{aligned} 2x(x + 3)-(x+1)(x+2) &= 2x^2 + 6x - x(x+2)-1(x+2) \\\\ &= 2x^2 + 6x - x^2 - 2x - x - 2 \\\\ &= x^2 + 3x - 2 \\end{aligned}",
+          explanation: "Expand the first part by distributing \\(2x\\), and expand the brackets of the second part.",
         },
       ],
       finalAnswer: "\\(x^2 + 3x - 2\\)",
@@ -533,8 +523,8 @@ export const questions: Question[] = [
         {
           stepNumber: 1,
           description: "Expand both squared brackets",
-          workingLatex: "\\begin{aligned} (a+b)^2 - (a-b)^2 &= \\\\ (a+b)(a+b)-(a-b)(a-b) \\\\ a(a+b)+b(a+b)-a(a-b)-b(a-b) \\\\ a^2+ab+ab+b^2-a^2+ab+ab-b^2 \\\\ a^2+2ab+b^2-a^2+2ab-b^2 \\\\ 4ab \\end{aligned}",
-          explanation: "Expand the brackets and then collect the middle $x$ terms.",
+          workingLatex: "\\begin{aligned} (a+b)^2 - (a-b)^2 &= (a+b)(a+b)-(a-b)(a-b) \\\\ &= a(a+b)+b(a+b) - \\Big[a(a-b)-b(a-b)\\Big] \\\\ &= a^2+ab+ab+b^2-(a^2-ab-ab+b^2) \\\\ &= a^2+2ab+b^2-a^2+2ab-b^2 \\\\ &= 4ab \\end{aligned}",
+          explanation: "Expand each squared bracket using a(c+d)+b(c+d), then subtract and collect like terms.",
         },
       ],
       finalAnswer: "\\(4ab\\)",
@@ -557,7 +547,7 @@ export const questions: Question[] = [
         {
           stepNumber: 1,
           description: "Simplify the expression inside the square brackets first",
-          workingLatex: "\\begin{aligned} x(3(x + 2) - 4) &= x(3x+6-4) \\ &= x(3x+2) \\ &= 3x^2+2x \\end{aligned}",
+          workingLatex: "\\begin{aligned} x(3(x + 2) - 4) &= x(3x+6-4) \\\\ &= x(3x+2) \\\\ &= 3x^2+2x \\end{aligned}",
           explanation: "Start from the inner-most brackets and work outward.",
         },
       ],
@@ -581,11 +571,11 @@ export const questions: Question[] = [
         {
           stepNumber: 1,
           description: "Expand the brackets",
-          workingLatex: "\\text{Expand:} \\\\[1em] \\begin{aligned} \\left( x + \\frac{1}{x^2}\\right)\\left(y - \\frac{1}{z^2}\\right) &= x\\left(y-\\frac{1}{z^2}\\right) +\\frac{1}{x^2}\\left( y - \\frac{1}{z^2}\\right) \\\\ &= x\\left(y-\\frac{1}{z^2}\\right) + \\frac{1}{x^2}\\left( y - \\frac{1}{z^2}\\right) \\\\ &= xy - \\frac{x}{z^2} + \\frac{y}{x^2} - \\frac{1}{x^2z^2} \\\\ \\end{aligned}",
+          workingLatex: "\\begin{aligned} \\left( x + \\frac{1}{x^2}\\right)\\left(y - \\frac{1}{z^2}\\right) &= x\\left(y-\\frac{1}{z^2}\\right) +\\frac{1}{x^2}\\left( y - \\frac{1}{z^2}\\right) \\\\ &= xy - \\frac{x}{z^2} + \\frac{y}{x^2} - \\frac{1}{x^2z^2} \\end{aligned}",
           explanation: "Multiply each term in the first bracket by each term in the second. Since all variables are different, no terms can be combined.",
         },
       ],
-      finalAnswer: "xy \\(- \\frac{x{z^2} + \\frac{y}{x^2} - \\frac{1}{x^2z^2\\)",
+      finalAnswer: "\\(xy - \\frac{x}{z^2} + \\frac{y}{x^2} - \\frac{1}{x^2z^2}\\)",
     },
   },
 
@@ -605,8 +595,8 @@ export const questions: Question[] = [
         {
           stepNumber: 1,
           description: "Expand the brackets",
-          workingLatex: "\\text{Expand:} \\\\[1em] \\begin{aligned} (a+b)(a^2-b^2) &= a(a^2-b^2) + b(a^2-b^2) \\\\a(a^2) + a(-b^2) + b(a^2) + b(-b^2) \\\\ &= a^3 - ab^2 + a^2b - b^3 \\end{aligned}",
-          explanation: "Distribute the $a$ and the $b$ across the second bracket. Remember to add the indices for the same bases ($a \\times a^2 = a^3$).",
+          workingLatex: "\\begin{aligned} (a+b)(a^2-b^2) &= a(a^2-b^2) + b(a^2-b^2) \\\\ &= a^3 - ab^2 + a^2b - b^3 \\\\ &= a^3 + a^2b - ab^2 - b^3 \\end{aligned}",
+          explanation: "Distribute the \\(a\\) and the \\(b\\) across the second bracket. Remember to add the indices for the same bases (\\(a \\times a^2 = a^3\\)).",
         },
       ],
       finalAnswer: "\\(a^3 + a^2b - ab^2 - b^3\\)",
@@ -629,8 +619,8 @@ export const questions: Question[] = [
         {
           stepNumber: 1,
           description: "Expand each part of the expression",
-          workingLatex: "\\begin{aligned} p(p + q) - pq(p^2-pq) &= p^2+pq-p^3q+p^2q^2 \\\\ p^2 + pq-p^3q + p^2q^2 \\end{aligned}",
-          explanation: "Be careful with the second part; multiplying $-pq$ by $-pq$ results in a positive $+p^2q^2$.",
+          workingLatex: "\\begin{aligned} p(p + q) - pq(p^2-pq) &= p(p) + p(q) - pq(p^2) - pq(-pq) \\\\ &= p^2 + pq - p^3q + p^2q^2 \\end{aligned}",
+          explanation: "Be careful with the second part; multiplying \\(-pq\\) by \\(-pq\\) results in a positive \\(+p^2q^2\\).",
         },
       ],
       finalAnswer: "\\(p^2 + pq - p^3q + p^2q^2\\)",
@@ -653,11 +643,11 @@ export const questions: Question[] = [
         {
           stepNumber: 1,
           description: "Distribute the fractional terms",
-          workingLatex: "\\text{Expand:} \\\\[1em] \\begin{aligned} \\left(\frac{3}{x} - \\frac{4}{x^2}\right)\\left(x^2+3x\\right) & = \\frac{3}{x}(x^2+3x)-\\frac{4}{x^2}(x^2+3x) \\\\ & = 3x+9 -4-\\frac{12}{x}\\\\ & = 3x+2-\\frac{12}{x} \\end{aligned}",
+          workingLatex: "\\begin{aligned} \\left(\\frac{3}{x} - \\frac{4}{x^2}\\right)\\left(x^2+3x\\right) &= \\frac{3}{x}(x^2+3x)-\\frac{4}{x^2}(x^2+3x) \\\\ &= 3x+9-4-\\frac{12}{x} \\\\ &= 3x+5-\\frac{12}{x} \\end{aligned}",
           explanation: "Multiply each term in the first bracket by each term in the second.",
         },
       ],
-      finalAnswer: "\\(3x + 5 - \\frac{12{x\\)",
+      finalAnswer: "\\(3x + 5 - \\frac{12}{x}\\)",
     },
   },
 
@@ -677,11 +667,11 @@ export const questions: Question[] = [
         {
           stepNumber: 1,
           description: "Expand the brackets",
-          workingLatex: "\\begin{aligned} (x^2-1)\\left( 1 +\\frac{1}{x}\\right) &= x^2\\left( 1 +\\frac{1}{x}\\right) -1\\left( 1 +\\frac{1}{x}\\right) \\ &= x^2 + x - 1 - \\frac{1}{x} \\end{aligned}",
-          explanation: "Multiply through and simplify $x^2 \\times \\frac{1}{x}$ to get $x$.",
+          workingLatex: "\\begin{aligned} (x^2-1)\\left( 1 +\\frac{1}{x}\\right) &= x^2\\left( 1 +\\frac{1}{x}\\right) -1\\left( 1 +\\frac{1}{x}\\right) \\\\ &= x^2 + x - 1 - \\frac{1}{x} \\end{aligned}",
+          explanation: "Multiply through and simplify \\(x^2 \\times \\frac{1}{x}\\) to get \\(x\\).",
         },
       ],
-      finalAnswer: "\\(x^2 + x - 1 - \\frac{1{x\\)",
+      finalAnswer: "\\(x^2 + x - 1 - \\frac{1}{x}\\)",
     },
   },
 
@@ -702,12 +692,12 @@ export const questions: Question[] = [
         {
           stepNumber: 1,
           description: "Expand the brackets and simplify the powers",
-          workingLatex: "\\begin{aligned} \\left(y^2 + \\frac{1}{y}\\right)(y^3 - 2) &= y^2(y^3 - 2) + \\frac{1}{y}(y^3 - 2) \\\\ &= y^5 - 2y^2 + \\frac{y^3}{y} - \\frac{2}{y} \\\\ &= y^5 - 2y^2 + y^2 - \\frac{2}{y} \\\\ &= y^5 - 2y^2 + y^2 -\\frac{2}{y} \\end{aligned}",
+          workingLatex: "\\begin{aligned} \\left(y^2 + \\frac{1}{y}\\right)(y^3 - 2) &= y^2(y^3 - 2) + \\frac{1}{y}(y^3 - 2) \\\\ &= y^5 - 2y^2 + \\frac{y^3}{y} - \\frac{2}{y} \\\\ &= y^5 - 2y^2 + y^2 - \\frac{2}{y} \\\\ &= y^5 - y^2 - \\frac{2}{y} \\end{aligned}",
           explanation: "Multiply both terms in the first bracket by both terms in the second. Simplify \\( \\frac{y^3}{y} \\) to \\( y^2 \\) using index laws.",
         },
 
       ],
-      finalAnswer: "\\(y^5 - y^2 - \\frac{2{y\\)",
+      finalAnswer: "\\(y^5 - y^2 - \\frac{2}{y}\\)",
     },
   },
 
@@ -726,15 +716,9 @@ export const questions: Question[] = [
       steps: [
         {
           stepNumber: 1,
-          description: "Expand each single bracket",
-          workingLatex: "\\begin{aligned} 2ab(a - b) - a^2(2b - 1) &= (2a^2b - 2ab^2) - (2a^2b - a^2) \\\\ &= 2a^2b - 2ab^2 - 2a^2b + a^2 \\end{aligned}",
-          explanation: "Distribute the terms outside the brackets. Be careful with the negative sign outside the second bracket; it changes the sign of both terms inside.",
-        },
-        {
-          stepNumber: 2,
-          description: "Collect like terms",
-          workingLatex: "\\begin{aligned} 2a^2b - 2a^2b - 2ab^2 + a^2 &= a^2 - 2ab^2 \\end{aligned}",
-          explanation: "The \\( 2a^2b \\) and \\( -2a^2b \\) terms cancel each other out.",
+          description: "Expand and simplify",
+          workingLatex: "\\begin{aligned} 2ab(a - b) - a^2(2b - 1) &= 2a^2b - 2ab^2 - 2a^2b + a^2 \\\\ &= a^2 - 2ab^2 \\end{aligned}",
+          explanation: "Distribute each term, then the \\(2a^2b\\) and \\(-2a^2b\\) cancel, leaving \\(a^2 - 2ab^2\\).",
         },
       ],
       finalAnswer: "\\(a^2 - 2ab^2\\)",
@@ -756,18 +740,12 @@ export const questions: Question[] = [
       steps: [
         {
           stepNumber: 1,
-          description: "Expand the brackets using FOIL",
-          workingLatex: "\\begin{aligned} \\left(\\frac{x}{2} + 4\\right)\\left(\\frac{4}{x} - 2\\right) &= \\frac{x}{2}\\left(\\frac{4}{x}\\right) + \\frac{x}{2}(-2) + 4\\left(\\frac{4}{x}\\right) + 4(-2) \\\\ &= \\frac{4x}{2x} - \\frac{2x}{2} + \\frac{16}{x} - 8 \\end{aligned}",
-          explanation: "Multiply the first, outer, inner, and last terms.",
-        },
-        {
-          stepNumber: 2,
-          description: "Simplify each term and collect constants",
-          workingLatex: "\\begin{aligned} 2 - x + \\frac{16}{x} - 8 &= -x + \\frac{16}{x} - 6 \\end{aligned}",
-          explanation: "Simplify \\( \\frac{4x}{2x} \\) to 2 and \\( \\frac{2x}{2} \\) to \\( x \\). Then combine 2 and -8.",
+          description: "Expand and simplify",
+          workingLatex: "\\begin{aligned} \\left(\\frac{x}{2} + 4\\right)\\left(\\frac{4}{x} - 2\\right) &= \\frac{x}{2}\\left(\\frac{4}{x} - 2\\right) + 4\\left(\\frac{4}{x} - 2\\right) \\\\ &= \\frac{4x}{2x} - \\frac{2x}{2} + \\frac{16}{x} - 8 \\\\ &= 2 - x + \\frac{16}{x} - 8 \\\\ &= \\frac{16}{x} - x - 6 \\end{aligned}",
+          explanation: "Distribute each term in the first bracket across the second bracket, simplify the fractions, then collect like terms.",
         },
       ],
-      finalAnswer: "\\(\\frac{16{x} - x - 6\\)",
+      finalAnswer: "\\(\\frac{16}{x} - x - 6\\)",
     },
   },
 
@@ -786,15 +764,9 @@ export const questions: Question[] = [
       steps: [
         {
           stepNumber: 1,
-          description: "Expand both sets of brackets",
-          workingLatex: "\\begin{aligned} m^2n(m + n) - n^2m(n + m) &= (m^3n + m^2n^2) - (n^3m + n^2m^2) \\\\ &= m^3n + m^2n^2 - n^3m - n^2m^2 \\end{aligned}",
-          explanation: "Multiply the terms outside by each term inside. Note that \\( n^2m^2 \\) is the same as \\( m^2n^2 \\).",
-        },
-        {
-          stepNumber: 2,
-          description: "Collect like terms",
-          workingLatex: "\\begin{aligned} m^3n + m^2n^2 - n^2m^2 - mn^3 &= m^3n - mn^3 \\end{aligned}",
-          explanation: "The terms \\( m^2n^2 \\) and \\( -n^2m^2 \\) are identical and cancel out.",
+          description: "Expand and simplify",
+          workingLatex: "\\begin{aligned} m^2n(m + n) - n^2m(n + m) &= m^3n + m^2n^2 - n^3m - n^2m^2 \\\\ &= m^3n - mn^3 \\end{aligned}",
+          explanation: "Distribute each term, then \\(m^2n^2\\) and \\(-n^2m^2\\) cancel, leaving \\(m^3n - mn^3\\).",
         },
       ],
       finalAnswer: "\\(m^3n - mn^3\\)",
@@ -816,15 +788,9 @@ export const questions: Question[] = [
       steps: [
         {
           stepNumber: 1,
-          description: "Expand the brackets",
-          workingLatex: "\\begin{aligned} 1(x^2 + 2x) - \\frac{2}{x}(x^2 + 2x) &= x^2 + 2x - \\left(\\frac{2x^2}{x} + \\frac{4x}{x}\\right) \\\\ &= x^2 + 2x - (2x + 4) \\end{aligned}",
-          explanation: "Distribute each term. Simplify the second part by dividing each term by \\( x \\).",
-        },
-        {
-          stepNumber: 2,
-          description: "Remove brackets and simplify",
-          workingLatex: "\\begin{aligned} x^2 + 2x - 2x - 4 &= x^2 - 4 \\end{aligned}",
-          explanation: "The \\( 2x \\) and \\( -2x \\) cancel out, leaving a difference of squares result.",
+          description: "Expand and simplify",
+          workingLatex: "\\begin{aligned} \\left(1 - \\frac{2}{x}\\right)(x^2 + 2x) &= 1(x^2 + 2x) - \\frac{2}{x}(x^2 + 2x) \\\\ &= x^2 + 2x - 2x - 4 \\\\ &= x^2 - 4 \\end{aligned}",
+          explanation: "Distribute each term. The \\(2x\\) terms cancel, leaving \\(x^2 - 4\\).",
         },
       ],
       finalAnswer: "\\(x^2 - 4\\)",
@@ -846,11 +812,11 @@ export const questions: Question[] = [
         {
           stepNumber: 1,
           description: "Expand the brackets",
-          workingLatex: "\\begin{aligned} \\left(xyz - \\frac{y^2}{xz}\\right)\\left(x^2z^2 + \\frac{x}{yz} \\right) &=xyz(x^2z^2 + \\frac{x}{yz}) - \\frac{y^2}{xz}(x^2z^2 + \\frac{x}{yz}) \\ &= x^3yz^3 + \\frac{x^2yz}{yz} - \\frac{x^2y^2z^2}{xz} - \\frac{xy^3}{x^2yz} \\ &= x^3yz^3 + x^2 - xy^2z - \\frac{y^2}{xz} \\end{aligned}",
+          workingLatex: "\\begin{aligned} \\left(xyz - \\frac{y^2}{xz}\\right)\\left(x^2z^2 + \\frac{x}{yz} \\right) &= xyz\\left(x^2z^2 + \\frac{x}{yz}\\right) - \\frac{y^2}{xz}\\left(x^2z^2 + \\frac{x}{yz}\\right) \\\\ &= x^3yz^3 + \\frac{x^2yz}{yz} - \\frac{x^2y^2z^2}{xz} - \\frac{xy^2}{xyz^2} \\\\ &= x^3yz^3 + x^2 - xy^2z - \\frac{y}{z^2} \\end{aligned}",
           explanation: "Distribute each term. Simplify the second part by dividing each term by \\( x \\).",
         },
       ],
-      finalAnswer: "\\(x^3yz^3 + x^2 - xy^2z - \\frac{y^2{xz\\)",
+      finalAnswer: "\\(x^3yz^3 + x^2 - xy^2z - \\frac{y}{z^2}\\)",
     },
   }
   ,
@@ -870,18 +836,12 @@ export const questions: Question[] = [
       steps: [
         {
           stepNumber: 1,
-          description: "Expand the first two brackets",
-          workingLatex: "\\begin{aligned} \\left( x - \\frac{1}{x} \\right)\\left( x^2 + 1 + \\frac{1}{x^2} \\right) &= x\\left( x^2+1+\\frac{1}{x^2} \\right) -\\frac{1}{x}\\left( x^2+1+\\frac{1}{x^2} \\right) \\\\ &= x^3 + x + \\frac{1}{x} - x - \\frac{1}{x} - \\frac{1}{x^3} \\\\ &= x^3 - \\frac{1}{x^3} \\end{aligned}",
-          explanation: "Multiply every term in the first bracket by every term in the second. Notice that the middle terms cancel out, leaving a difference of cubes.",
-        },
-        {
-          stepNumber: 2,
-          description: "Multiply the result by the final bracket",
-          workingLatex: "\\begin{aligned} \\left( x^3 - \\frac{1}{x^3} \\right)\\left( x^3 + \\frac{1}{x} \\right) &= x^3\\left( x^3 + \\frac{1}{x}\\right) -\\frac{1}{x^3}\\left( x^3 + \\frac{1}{x} \\right)  \\\\ & = x^6 + x^2 - 1 - \\frac{1}{x^4} \\end{aligned}",
-          explanation: "Expand the resulting term with the last bracket and simplify each term.",
+          description: "Expand the first two brackets, then multiply by the third",
+          workingLatex: "\\begin{aligned} &\\left( x - \\frac{1}{x} \\right)\\left( x^2 + 1 + \\frac{1}{x^2} \\right)\\left( x^3 + \\frac{1}{x} \\right) \\\\ &= \\left[ x\\left( x^2+1+\\frac{1}{x^2} \\right) -\\frac{1}{x}\\left( x^2+1+\\frac{1}{x^2} \\right) \\right]\\left( x^3 + \\frac{1}{x} \\right) \\\\ &= \\left[ x^3 + x + \\frac{1}{x} - x - \\frac{1}{x} - \\frac{1}{x^3} \\right]\\left( x^3 + \\frac{1}{x} \\right) \\\\ &= \\left( x^3 - \\frac{1}{x^3} \\right)\\left( x^3 + \\frac{1}{x} \\right) \\\\ &= x^3\\left( x^3 + \\frac{1}{x}\\right) -\\frac{1}{x^3}\\left( x^3 + \\frac{1}{x} \\right) \\\\ &= x^6 + x^2 - 1 - \\frac{1}{x^4} \\end{aligned}",
+          explanation: "Expand the first two brackets — the middle terms cancel giving a difference of cubes. Then multiply the result by the third bracket.",
         },
       ],
-      finalAnswer: "\\(x^6 + x^2 - 1 - \\frac{1{x^4\\)",
+      finalAnswer: "\\(x^6 + x^2 - 1 - \\frac{1}{x^4}\\)",
     },
   },
 
@@ -900,7 +860,7 @@ export const questions: Question[] = [
         {
           stepNumber: 1,
           description: "Expand the brackets",
-          workingLatex: "\\begin{aligned} \\left(\\frac{2}{y} - 3\\right)\\left(\\frac{y}{2} + 1\\right) &= \\frac{2}{y}\\left(\\frac{y}{2}+1\\right) - 3\\left(\\frac{y}{2}+1\\right \\\\ &= \\frac{2y}{2y} + \\frac{2}{y} - \\frac{3y}{2} - 3 \\\\ & = 1 +\\frac{2}{y} - \\frac{3y}{2} - 3 \\\\ & = \\frac{2}{y} - \\frac{3y}{2} - 2 \\end{aligned}",
+          workingLatex: "\\begin{aligned} \\left(\\frac{2}{y} - 3\\right)\\left(\\frac{y}{2} + 1\\right) &= \\frac{2}{y}\\left(\\frac{y}{2}+1\\right) - 3\\left(\\frac{y}{2}+1\\right) \\\\ &= \\frac{2y}{2y} + \\frac{2}{y} - \\frac{3y}{2} - 3 \\\\ & = 1 +\\frac{2}{y} - \\frac{3y}{2} - 3 \\\\ & = \\frac{2}{y} - \\frac{3y}{2} - 2 \\end{aligned}",
           explanation: "Multiply the first, outer, inner, and last terms."
         },
 
@@ -945,11 +905,11 @@ export const questions: Question[] = [
         {
           stepNumber: 1,
           description: "Expand using the difference of two squares identity",
-          workingLatex: "\\begin{aligned} \\left(2x + \\frac{3}{x}\\right)\\left(2x - \\frac{3}{x}\\right) & = 2x\\left( 2x - \\frac{3}{x}\\right) + \\\frac{3}{x}\\left( 2x - \\frac{3}{x}\\right) \\ & = 4x^2 - \\frac{6x}{x} + \\frac{6x}{x} - \\frac{9}{x^2} \\ & = 4x^2 - 6 + 6 - \\frac{9}{x^2} \\ & = 4x^2 - \\frac{9}{x^2} \\end{aligned}",
+          workingLatex: "\\begin{aligned} \\left(2x + \\frac{3}{x}\\right)\\left(2x - \\frac{3}{x}\\right) & = 2x\\left( 2x - \\frac{3}{x}\\right) + \\frac{3}{x}\\left( 2x - \\frac{3}{x}\\right) \\\\ & = 4x^2 - \\frac{6x}{x} + \\frac{6x}{x} - \\frac{9}{x^2} \\\\ & = 4x^2 - 6 + 6 - \\frac{9}{x^2} \\\\ & = 4x^2 - \\frac{9}{x^2} \\end{aligned}",
           explanation: "Recognize the pattern \\( (a+b)(a-b) = a^2 - b^2 \\). Alternatively, expanding fully shows the middle terms cancel out: \\( 4x^2 - \\frac{6x}{x} + \\frac{6x}{x} - \\frac{9}{x^2} \\)."
         }
       ],
-      finalAnswer: "\\(4x^2 - \\frac{9{x^2\\)",
+      finalAnswer: "\\(4x^2 - \\frac{9}{x^2}\\)",
     }
   },
   {
@@ -971,7 +931,7 @@ export const questions: Question[] = [
           explanation: "Multiply every term in the first bracket by every term in the second bracket."
         },
       ],
-      finalAnswer: "\\(x^2 + 4 + \\frac{4{x^2\\)",
+      finalAnswer: "\\(x^2 + 4 + \\frac{4}{x^2}\\)",
     }
   },
   {
@@ -993,7 +953,7 @@ export const questions: Question[] = [
           explanation: "Distribute each term from the first bracket into the second bracket."
         },
       ],
-      finalAnswer: "\\(-x^4 + x^2 + x - \\frac{1{x\\)",
+      finalAnswer: "\\(-x^4 + x^2 + x - \\frac{1}{x}\\)",
     }
   },
   {
@@ -1010,18 +970,12 @@ export const questions: Question[] = [
       steps: [
         {
           stepNumber: 1,
-          description: "Expand the first two brackets",
-          workingLatex: "\\begin{aligned} \\left(p - \\frac{1}{p}\\right)\\left(p + \\frac{1}{p}\\right) &= p\\left(p+\\frac{1}{p} \\right) - \\frac{1}{p}\\left(p+\\frac{1}{p}\\right) \\\\ &= p^2 + \\frac{p}{p} - \\frac{p}{p} - \\frac{1}{p^2}\\\\ & = p^2 - \\frac{1}{p^2} \\end{aligned}",
-          explanation: "Recognize the difference of two squares. The middle terms cancel out."
-        },
-        {
-          stepNumber: 2,
-          description: "Multiply the result by the final bracket",
-          workingLatex: "\\begin{aligned} \\left(p^2 - \\frac{1}{p^2}\\right)\\left(p^2 + \\frac{1}{p^2}\\right) &= p^2\lleft( p^2 + \\frac{1}{p^2} \\right) -\\frac{1}{p^2}\\left( p^2 +\\frac{1}{p^2}\\right) \\\\ & = p^4 + \\frac{p^2}{p^2} - \\frac{p^2}{p^2} - \\frac{1}{p^4} \\\\ & = p^4 - \\frac{1}{p^4} \\end{aligned}",
-          explanation: "This forms another difference of two squares. Expanding fully shows the middle terms cancel once again."
+          description: "Expand the first two brackets, then multiply by the third",
+          workingLatex: "\\begin{aligned} &\\left(p - \\frac{1}{p}\\right)\\left(p + \\frac{1}{p}\\right)\\left(p^2 + \\frac{1}{p^2}\\right) \\\\ &= \\left[ p\\left(p+\\frac{1}{p}\\right) - \\frac{1}{p}\\left(p+\\frac{1}{p}\\right) \\right]\\left(p^2 + \\frac{1}{p^2}\\right) \\\\ &= \\left( p^2 - \\frac{1}{p^2} \\right)\\left(p^2 + \\frac{1}{p^2}\\right) \\\\ &= p^2\\left( p^2 + \\frac{1}{p^2} \\right) -\\frac{1}{p^2}\\left( p^2 +\\frac{1}{p^2}\\right) \\\\ &= p^4 + 1 - 1 - \\frac{1}{p^4} \\\\ &= p^4 - \\frac{1}{p^4} \\end{aligned}",
+          explanation: "The first two brackets form a difference of two squares. The result multiplied by the third bracket forms another difference of two squares.",
         }
       ],
-      finalAnswer: "\\(p^4 - \\frac{1{p^4\\)",
+      finalAnswer: "\\(p^4 - \\frac{1}{p^4}\\)",
     }
   },
 
@@ -1087,7 +1041,7 @@ export const questions: Question[] = [
         {
           stepNumber: 1,
           description: "Expand the brackets",
-          workingLatex: "\\begin{aligned} (ab+cd)(ac-bd) & = ab(ac-bd)+cd(ac-bd) \\ & = a^2bc-ab^2d+ac^2d-bcd^2 \\end{aligned}",
+          workingLatex: "\\begin{aligned} (ab+cd)(ac-bd) & = ab(ac-bd)+cd(ac-bd) \\\\ & = a^2bc-ab^2d+ac^2d-bcd^2 \\end{aligned}",
           explanation: "Multiply each term in the first bracket by each term in the second bracket."
         },
 
@@ -1111,7 +1065,7 @@ export const questions: Question[] = [
         {
           stepNumber: 1,
           description: "Expand the brackets",
-          workingLatex: "\\begin{aligned} (2x-1)^2(x+3) & = (2x-1)(2x-1)(x+3) \\ & = \\Big( 2x(2x-1) -1(2x-1) \\Big) (x+3) \\ & = \\Big( 4x^2-2x-2x+1 \\Big) (x+3) \\ & = \\Big( 4x^2-4x+1 \\Big) (x+3) \\ & = 4x^2(x+3)-4x(x+3)+1(x+3) \\ & = 4x^3+12x^2-4x^2-12x+x+3 \\ & = 4x^3+8x^2-11x+3 \end{aligned}",
+          workingLatex: "\\begin{aligned} (2x-1)^2(x+3) & = (2x-1)(2x-1)(x+3) \\\\ & = \\Big( 2x(2x-1) -1(2x-1) \\Big) (x+3) \\\\ & = \\Big( 4x^2-2x-2x+1 \\Big) (x+3) \\\\ & = \\Big( 4x^2-4x+1 \\Big) (x+3) \\\\ & = 4x^2(x+3)-4x(x+3)+1(x+3) \\\\ & = 4x^3+12x^2-4x^2-12x+x+3 \\\\ & = 4x^3+8x^2-11x+3 \\end{aligned}",
           explanation: "Multiply each term in the first bracket by each term in the second bracket."
         },
 

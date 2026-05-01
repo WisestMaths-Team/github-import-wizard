@@ -4,35 +4,35 @@
 
 @layer base {
   :root {
-    --background: 240 14% 3%;
-    --foreground: 240 5% 96%;
-    --card: 232 21% 7%;
-    --card-foreground: 240 5% 96%;
-    --popover: 232 21% 7%;
-    --popover-foreground: 240 5% 96%;
-    --primary: 233 24% 6%;
-    --primary-foreground: 240 5% 96%;
-    --secondary: 187 85% 53%;
-    --secondary-foreground: 233 24% 6%;
-    --muted: 233 16% 13%;
-    --muted-foreground: 240 5% 65%;
-    --accent: 234 89% 74%;
-    --accent-foreground: 233 24% 6%;
-    --destructive: 0 85% 70%;
-    --destructive-foreground: 233 24% 6%;
-    --border: 234 16% 16%;
-    --input: 234 16% 16%;
-    --ring: 234 89% 74%;
+    --background: 35 30% 93%;
+    --foreground: 30 10% 16%;
+    --card: 35 33% 97%;
+    --card-foreground: 30 10% 16%;
+    --popover: 35 33% 97%;
+    --popover-foreground: 30 10% 16%;
+    --primary: 35 33% 97%;
+    --primary-foreground: 30 10% 16%;
+    --secondary: 14 53% 59%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 33 22% 91%;
+    --muted-foreground: 33 6% 52%;
+    --accent: 174 83% 29%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 33 22% 85%;
+    --input: 33 22% 85%;
+    --ring: 174 83% 29%;
     --radius: 12px;
 
-    --sidebar-background: 233 24% 6%;
-    --sidebar-foreground: 240 5% 90%;
-    --sidebar-primary: 234 89% 74%;
-    --sidebar-primary-foreground: 233 24% 6%;
-    --sidebar-accent: 233 16% 13%;
-    --sidebar-accent-foreground: 240 5% 96%;
-    --sidebar-border: 234 16% 16%;
-    --sidebar-ring: 234 89% 74%;
+    --sidebar-background: 35 33% 97%;
+    --sidebar-foreground: 33 8% 28%;
+    --sidebar-primary: 174 83% 29%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 33 22% 91%;
+    --sidebar-accent-foreground: 30 10% 16%;
+    --sidebar-border: 33 22% 85%;
+    --sidebar-ring: 174 83% 29%;
   }
 }
 
@@ -44,13 +44,10 @@
     @apply bg-background text-foreground antialiased;
     font-family: "Inter", system-ui, sans-serif;
     font-feature-settings: "cv11", "ss01", "ss03";
-    color-scheme: dark;
+    color-scheme: light;
   }
   body {
-    background:
-      radial-gradient(ellipse 1200px 700px at 15% -5%, rgba(129,140,248,0.10), transparent 60%),
-      radial-gradient(ellipse 900px 600px at 95% 100%, rgba(34,211,238,0.06), transparent 55%),
-      #05060a;
+    background: #f5f0e8;
     min-height: 100vh;
   }
   h1, h2, h3, h4, h5, h6 {
@@ -58,18 +55,18 @@
     letter-spacing: -0.02em;
   }
   ::selection {
-    background: rgba(129,140,248,0.35);
-    color: #fff;
+    background: rgba(13,148,136,0.2);
+    color: #2d2a26;
   }
 }
 
 /* ── Scrollbar ──────────────────────────────────── */
 ::-webkit-scrollbar { width: 10px; height: 10px; }
 ::-webkit-scrollbar-track { background: transparent; }
-::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.08); border-radius: 8px; }
-::-webkit-scrollbar-thumb:hover { background: rgba(255,255,255,0.15); }
+::-webkit-scrollbar-thumb { background: rgba(0,0,0,0.1); border-radius: 8px; }
+::-webkit-scrollbar-thumb:hover { background: rgba(0,0,0,0.18); }
 
-/* ── KaTeX (inherit current text colour so it never goes black) ── */
+/* ── KaTeX (inherit current text colour) ── */
 .katex, .katex * { color: currentColor !important; }
 .katex { font-size: 1.1em; }
 .katex-display { margin: 1em 0; }
@@ -98,30 +95,30 @@
 .aurora-bg::before {
   top: -30%;
   left: -10%;
-  background: radial-gradient(circle, rgba(129,140,248,0.35), transparent 65%);
+  background: radial-gradient(circle, rgba(13,148,136,0.1), transparent 65%);
   animation: aurora-shift 18s ease-in-out infinite;
 }
 .aurora-bg::after {
   bottom: -30%;
   right: -10%;
-  background: radial-gradient(circle, rgba(34,211,238,0.25), transparent 65%);
+  background: radial-gradient(circle, rgba(212,119,92,0.08), transparent 65%);
   animation: aurora-shift-2 22s ease-in-out infinite;
 }
 
 @keyframes aurora-shift {
-  0%, 100% { transform: translate(0, 0) rotate(0deg); opacity: 0.6; }
-  50% { transform: translate(-10%, 5%) rotate(4deg); opacity: 0.85; }
+  0%, 100% { transform: translate(0, 0) rotate(0deg); opacity: 0.5; }
+  50% { transform: translate(-10%, 5%) rotate(4deg); opacity: 0.7; }
 }
 @keyframes aurora-shift-2 {
-  0%, 100% { transform: translate(0, 0) rotate(0deg); opacity: 0.55; }
-  50% { transform: translate(8%, -6%) rotate(-4deg); opacity: 0.75; }
+  0%, 100% { transform: translate(0, 0) rotate(0deg); opacity: 0.4; }
+  50% { transform: translate(8%, -6%) rotate(-4deg); opacity: 0.6; }
 }
 
 /* ── Grid pattern for hero (fine) ──────────────── */
 .hero-grid {
   background-image:
-    linear-gradient(rgba(255,255,255,.035) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255,255,255,.035) 1px, transparent 1px);
+    linear-gradient(rgba(0,0,0,.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,0,0,.03) 1px, transparent 1px);
   background-size: 56px 56px;
   mask-image: radial-gradient(ellipse 80% 60% at 50% 40%, black 40%, transparent 100%);
   -webkit-mask-image: radial-gradient(ellipse 80% 60% at 50% 40%, black 40%, transparent 100%);
@@ -129,15 +126,15 @@
 
 /* ── Dot pattern alternative ──────────────────── */
 .dot-grid {
-  background-image: radial-gradient(rgba(255,255,255,0.06) 1px, transparent 1px);
+  background-image: radial-gradient(rgba(0,0,0,0.06) 1px, transparent 1px);
   background-size: 24px 24px;
 }
 
 /* ── Floating math symbols ──────────────────────── */
 @keyframes float-up {
   0% { transform: translateY(100%) translateX(0) rotate(0deg); opacity: 0; }
-  10% { opacity: 0.22; }
-  90% { opacity: 0.22; }
+  10% { opacity: 0.15; }
+  90% { opacity: 0.15; }
   100% { transform: translateY(-120vh) translateX(40px) rotate(35deg); opacity: 0; }
 }
 @keyframes drift {
@@ -148,31 +145,31 @@
   position: absolute;
   bottom: -40px;
   font-family: "KaTeX_Main", "Times New Roman", serif;
-  color: rgba(199,210,254,0.6);
+  color: rgba(13,148,136,0.25);
   opacity: 0;
   pointer-events: none;
   animation: float-up linear infinite;
   will-change: transform, opacity;
-  text-shadow: 0 0 24px rgba(129,140,248,0.4);
+  text-shadow: 0 0 24px rgba(13,148,136,0.15);
 }
 
 /* ── Glass card ─────────────────────────────── */
 .glass {
-  background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.01));
-  border: 1px solid rgba(255,255,255,0.08);
+  background: rgba(250,247,242,0.7);
+  border: 1px solid rgba(0,0,0,0.06);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
 }
 .glass-strong {
-  background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02));
-  border: 1px solid rgba(255,255,255,0.1);
+  background: rgba(250,247,242,0.85);
+  border: 1px solid rgba(0,0,0,0.08);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
 }
 
 /* ── Gradient text ────────────────────────── */
 .text-gradient {
-  background: linear-gradient(120deg, #c7d2fe 0%, #818cf8 40%, #22d3ee 100%);
+  background: linear-gradient(120deg, #0f766e 0%, #0d9488 40%, #d4775c 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -180,7 +177,7 @@
 }
 
 .text-gradient-cool {
-  background: linear-gradient(120deg, #f4f4f5 0%, #a5b4fc 100%);
+  background: linear-gradient(120deg, #2d2a26 0%, #0d9488 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -199,7 +196,7 @@
   inset: -1px;
   border-radius: inherit;
   padding: 1px;
-  background: linear-gradient(135deg, rgba(129,140,248,0), rgba(129,140,248,0), rgba(34,211,238,0));
+  background: linear-gradient(135deg, rgba(13,148,136,0), rgba(13,148,136,0), rgba(212,119,92,0));
   -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
   -webkit-mask-composite: xor;
           mask-composite: exclude;
@@ -207,11 +204,11 @@
   transition: background 0.4s ease;
 }
 .card-glow:hover::before {
-  background: linear-gradient(135deg, rgba(129,140,248,0.5), rgba(167,139,250,0.3), rgba(34,211,238,0.5));
+  background: linear-gradient(135deg, rgba(13,148,136,0.35), rgba(15,118,110,0.2), rgba(212,119,92,0.3));
 }
 .card-glow:hover {
   transform: translateY(-4px);
-  box-shadow: 0 20px 60px -20px rgba(99,102,241,0.35);
+  box-shadow: 0 20px 60px -20px rgba(13,148,136,0.18);
 }
 
 /* ── Shiny CTA button ─────────────────── */
@@ -224,7 +221,7 @@
   position: absolute;
   inset: 0;
   transform: translateX(-100%);
-  background: linear-gradient(110deg, transparent 30%, rgba(255,255,255,0.18) 50%, transparent 70%);
+  background: linear-gradient(110deg, transparent 30%, rgba(255,255,255,0.3) 50%, transparent 70%);
   animation: shimmer 3s ease-in-out infinite;
   pointer-events: none;
 }
@@ -259,7 +256,7 @@
   top: 44px;
   bottom: -20px;
   width: 2px;
-  background: linear-gradient(to bottom, #818cf8, transparent);
+  background: linear-gradient(to bottom, #0d9488, transparent);
 }
 
 /* ── Tables in question text ─────────────── */
@@ -271,18 +268,18 @@
 }
 .question-text th,
 .question-text td {
-  border: 1px solid rgba(255,255,255,0.12);
+  border: 1px solid rgba(0,0,0,0.1);
   padding: 0.45rem 0.85rem;
   text-align: center;
-  color: #e4e4e7;
+  color: #4a453e;
 }
 .question-text th {
-  background: rgba(255,255,255,0.04);
+  background: rgba(0,0,0,0.03);
   font-weight: 600;
-  color: #f4f4f5;
+  color: #2d2a26;
 }
 
-/* ── Input / textarea dark styling ─────── */
+/* ── Input / textarea styling ─────── */
 input, textarea, select {
-  color-scheme: dark;
+  color-scheme: light;
 }

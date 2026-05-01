@@ -10,6 +10,7 @@ const studentLinks = [
   { href: "/student/dashboard", label: "Dashboard", icon: "📊" },
   { href: "/student/topics", label: "Topics", icon: "📚" },
   { href: "/student/questions", label: "Questions", icon: "✏️" },
+  { href: "/student/tutor", label: "AI Tutor", icon: "🤖" },
 ];
 
 function CourseGuard({ children }: { children: React.ReactNode }) {

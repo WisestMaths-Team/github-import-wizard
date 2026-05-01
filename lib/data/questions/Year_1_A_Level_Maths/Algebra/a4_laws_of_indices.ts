@@ -27,7 +27,7 @@ export const questions: Question[] = [
     marks: 1,
     examStyle: false,
     yearCreated: 2026,
-    tags: ['indices', 'multiplication law', 'simplifying'],
+    tags: [],
     workedSolution: {
       steps: [
         {
@@ -43,7 +43,7 @@ export const questions: Question[] = [
           explanation: '\\( 3 + 4 = 7 \\).'
         }
       ],
-      finalAnswer: '\\(5^{7\\)',
+      finalAnswer: '\\(5^{7}\\)',
     }
   },
   {
@@ -55,7 +55,7 @@ export const questions: Question[] = [
     marks: 1,
     examStyle: false,
     yearCreated: 2026,
-    tags: ['indices', 'division law', 'simplifying'],
+    tags: [],
     workedSolution: {
       steps: [
         {
@@ -71,7 +71,7 @@ export const questions: Question[] = [
           explanation: '\\( 5 - 2 = 3 \\).'
         }
       ],
-      finalAnswer: '\\(8^{3\\)',
+      finalAnswer: '\\(8^{3}\\)',
     }
   },
   {
@@ -83,7 +83,7 @@ export const questions: Question[] = [
     marks: 1,
     examStyle: false,
     yearCreated: 2026,
-    tags: ['indices', 'power of a power', 'simplifying'],
+    tags: [],
     workedSolution: {
       steps: [
         {
@@ -99,7 +99,7 @@ export const questions: Question[] = [
           explanation: '\\( 3 \\times 2 = 6 \\).'
         }
       ],
-      finalAnswer: '\\(6^{6\\)',
+      finalAnswer: '\\(6^{6}\\)',
     }
   },
   {
@@ -111,7 +111,7 @@ export const questions: Question[] = [
     marks: 2,
     examStyle: false,
     yearCreated: 2026,
-    tags: ['indices', 'multiplication law', 'negative indices', 'algebra'],
+    tags: [],
     workedSolution: {
       steps: [
         {
@@ -127,7 +127,7 @@ export const questions: Question[] = [
           explanation: '\\( -1 + 2 + 3 = 4 \\).'
         }
       ],
-      finalAnswer: '\\(y^{4\\)',
+      finalAnswer: '\\(y^{4}\\)',
     }
   },
   {
@@ -139,7 +139,7 @@ export const questions: Question[] = [
     marks: 1,
     examStyle: false,
     yearCreated: 2026,
-    tags: ['indices', 'division law', 'simplifying'],
+    tags: [],
     workedSolution: {
       steps: [
         {
@@ -155,7 +155,7 @@ export const questions: Question[] = [
           explanation: '\\( 11 - 6 = 5 \\).'
         }
       ],
-      finalAnswer: '\\(6^{5\\)',
+      finalAnswer: '\\(6^{5}\\)',
     }
   },
   {
@@ -167,7 +167,7 @@ export const questions: Question[] = [
     marks: 1,
     examStyle: false,
     yearCreated: 2026,
-    tags: ['indices', 'division law', 'negative indices', 'algebra'],
+    tags: [],
     workedSolution: {
       steps: [
         {
@@ -183,7 +183,7 @@ export const questions: Question[] = [
           explanation: '\\( 2 - 6 = -4 \\). A negative exponent is perfectly valid here.'
         }
       ],
-      finalAnswer: '\\(r^{-4\\)',
+      finalAnswer: '\\(r^{-4}\\)',
     }
   },
   {
@@ -195,7 +195,7 @@ export const questions: Question[] = [
     marks: 1,
     examStyle: false,
     yearCreated: 2026,
-    tags: ['indices', 'power of a power', 'negative indices'],
+    tags: [],
     workedSolution: {
       steps: [
         {
@@ -211,7 +211,7 @@ export const questions: Question[] = [
           explanation: '\\( -2 \\times 5 = -10 \\).'
         }
       ],
-      finalAnswer: '\\(k^{-10\\)',
+      finalAnswer: '\\(k^{-10}\\)',
     }
   },
   {
@@ -223,7 +223,7 @@ export const questions: Question[] = [
     marks: 2,
     examStyle: false,
     yearCreated: 2026,
-    tags: ['indices', 'fractional indices', 'multiplication law', 'evaluating'],
+    tags: [],
     workedSolution: {
       steps: [
         {
@@ -251,7 +251,7 @@ export const questions: Question[] = [
     marks: 2,
     examStyle: false,
     yearCreated: 2026,
-    tags: ['indices', 'division law', 'evaluating'],
+    tags: [],
     workedSolution: {
       steps: [
         {
@@ -279,7 +279,7 @@ export const questions: Question[] = [
     marks: 2,
     examStyle: false,
     yearCreated: 2026,
-    tags: ['indices', 'power of a power', 'division law', 'evaluating'],
+    tags: [],
     workedSolution: {
       steps: [
         {
@@ -313,7 +313,7 @@ export const questions: Question[] = [
     marks: 1,
     examStyle: false,
     yearCreated: 2026,
-    tags: ['indices', 'zero exponent', 'evaluating'],
+    tags: [],
     workedSolution: {
       steps: [
         {
@@ -335,7 +335,7 @@ export const questions: Question[] = [
     marks: 1,
     examStyle: false,
     yearCreated: 2026,
-    tags: ['indices', 'zero exponent', 'evaluating'],
+    tags: [],
     workedSolution: {
       steps: [
         {
@@ -357,7 +357,7 @@ export const questions: Question[] = [
     marks: 1,
     examStyle: false,
     yearCreated: 2026,
-    tags: ['indices', 'fractional indices', 'square root', 'evaluating'],
+    tags: [],
     workedSolution: {
       steps: [
         {
@@ -385,7 +385,7 @@ export const questions: Question[] = [
     marks: 1,
     examStyle: false,
     yearCreated: 2026,
-    tags: ['indices', 'fractional indices', 'cube root', 'evaluating'],
+    tags: [],
     workedSolution: {
       steps: [
         {
@@ -413,7 +413,7 @@ export const questions: Question[] = [
     marks: 1,
     examStyle: false,
     yearCreated: 2026,
-    tags: ['indices', 'fractional indices', 'cube root', 'evaluating'],
+    tags: [],
     workedSolution: {
       steps: [
         {
@@ -441,7 +441,7 @@ export const questions: Question[] = [
     marks: 2,
     examStyle: false,
     yearCreated: 2026,
-    tags: ['indices', 'fractional indices', 'evaluating'],
+    tags: [],
     workedSolution: {
       steps: [
         {
@@ -475,7 +475,7 @@ export const questions: Question[] = [
     marks: 2,
     examStyle: false,
     yearCreated: 2026,
-    tags: ['indices', 'fractional indices', 'evaluating'],
+    tags: [],
     workedSolution: {
       steps: [
         {
@@ -509,7 +509,7 @@ export const questions: Question[] = [
     marks: 2,
     examStyle: false,
     yearCreated: 2026,
-    tags: ['indices', 'fractional indices', 'evaluating'],
+    tags: [],
     workedSolution: {
       steps: [
         {
@@ -543,7 +543,7 @@ export const questions: Question[] = [
     marks: 2,
     examStyle: false,
     yearCreated: 2026,
-    tags: ['indices', 'negative indices', 'fractional indices', 'evaluating'],
+    tags: [],
     workedSolution: {
       steps: [
         {
@@ -565,7 +565,7 @@ export const questions: Question[] = [
           explanation: 'Substituting back gives \\( \\frac{1}{2} \\).'
         }
       ],
-      finalAnswer: '\\(\\frac{1}{2\\)',
+      finalAnswer: '\\(\\frac{1}{2}\\)',
     }
   },
   {
@@ -577,7 +577,7 @@ export const questions: Question[] = [
     marks: 3,
     examStyle: false,
     yearCreated: 2026,
-    tags: ['indices', 'negative indices', 'fractional indices', 'evaluating'],
+    tags: [],
     workedSolution: {
       steps: [
         {
@@ -599,7 +599,7 @@ export const questions: Question[] = [
           explanation: 'So \\( 27^{-\\frac{2}{3}} = \\frac{1}{9} \\).'
         }
       ],
-      finalAnswer: '\\(\\frac{1}{9\\)',
+      finalAnswer: '\\(\\frac{1}{9}\\)',
     }
   },
   {
@@ -611,7 +611,7 @@ export const questions: Question[] = [
     marks: 1,
     examStyle: false,
     yearCreated: 2026,
-    tags: ['indices', 'negative indices', 'expressing'],
+    tags: [],
     workedSolution: {
       steps: [
         {
@@ -621,7 +621,7 @@ export const questions: Question[] = [
           explanation: 'By definition, \\( a^{-1} = \\frac{1}{a} \\).'
         }
       ],
-      finalAnswer: '\\(m^{-1\\)',
+      finalAnswer: '\\(m^{-1}\\)',
     }
   },
   {
@@ -633,7 +633,7 @@ export const questions: Question[] = [
     marks: 1,
     examStyle: false,
     yearCreated: 2026,
-    tags: ['indices', 'fractional indices', 'expressing'],
+    tags: [],
     workedSolution: {
       steps: [
         {
@@ -643,7 +643,7 @@ export const questions: Question[] = [
           explanation: 'The \\( q \\)th root of a number is the same as raising it to the power \\( \\frac{1}{q} \\).'
         }
       ],
-      finalAnswer: '\\(n^{\\frac{1}{3\\)',
+      finalAnswer: '\\(n^{\\frac{1}{3}}\\)',
     }
   },
   {
@@ -655,7 +655,7 @@ export const questions: Question[] = [
     marks: 2,
     examStyle: false,
     yearCreated: 2026,
-    tags: ['indices', 'negative indices', 'fractional indices', 'expressing'],
+    tags: [],
     workedSolution: {
       steps: [
         {
@@ -671,7 +671,7 @@ export const questions: Question[] = [
           explanation: '\\( \\frac{1}{a^n} = a^{-n} \\).'
         }
       ],
-      finalAnswer: '\\(t^{-\\frac{1}{2\\)',
+      finalAnswer: '\\(t^{-\\frac{1}{2}}\\)',
     }
   },
   {
@@ -683,7 +683,7 @@ export const questions: Question[] = [
     marks: 2,
     examStyle: false,
     yearCreated: 2026,
-    tags: ['indices', 'negative indices', 'fractional indices', 'power of a power', 'expressing'],
+    tags: [],
     workedSolution: {
       steps: [
         {
@@ -699,7 +699,7 @@ export const questions: Question[] = [
           explanation: 'Multiply the exponents: \\( -\\frac{1}{3} \\times 2 = -\\frac{2}{3} \\).'
         }
       ],
-      finalAnswer: '\\(x^{-\\frac{2}{3\\)',
+      finalAnswer: '\\(x^{-\\frac{2}{3}}\\)',
     }
   },
   {
@@ -711,7 +711,7 @@ export const questions: Question[] = [
     marks: 1,
     examStyle: false,
     yearCreated: 2026,
-    tags: ['indices', 'fractional indices', 'power of a power', 'simplifying'],
+    tags: [],
     workedSolution: {
       steps: [
         {
@@ -721,7 +721,7 @@ export const questions: Question[] = [
           explanation: '\\( 4 \\times \\frac{1}{2} = 2 \\). Taking the square root of \\( z^4 \\) gives \\( z^2 \\).'
         }
       ],
-      finalAnswer: '\\(z^{2\\)',
+      finalAnswer: '\\(z^{2}\\)',
     }
   },
   {
@@ -733,7 +733,7 @@ export const questions: Question[] = [
     marks: 2,
     examStyle: false,
     yearCreated: 2026,
-    tags: ['indices', 'negative indices', 'fractional indices', 'power of a power'],
+    tags: [],
     workedSolution: {
       steps: [
         {
@@ -749,7 +749,7 @@ export const questions: Question[] = [
           explanation: '\\( 8^2 = 64 \\), so the answer is \\( \\frac{1}{64} \\).'
         }
       ],
-      finalAnswer: '\\(\\frac{1}{64\\)',
+      finalAnswer: '\\(\\frac{1}{64}\\)',
     }
   },
   {
@@ -761,7 +761,7 @@ export const questions: Question[] = [
     marks: 2,
     examStyle: false,
     yearCreated: 2026,
-    tags: ['indices', 'multiplication law', 'division law', 'evaluating'],
+    tags: [],
     workedSolution: {
       steps: [
         {
@@ -783,7 +783,7 @@ export const questions: Question[] = [
           explanation: 'A power of \\( -1 \\) means the reciprocal.'
         }
       ],
-      finalAnswer: '\\(\\frac{1}{2\\)',
+      finalAnswer: '\\(\\frac{1}{2}\\)',
     }
   },
   {
@@ -795,7 +795,7 @@ export const questions: Question[] = [
     marks: 2,
     examStyle: false,
     yearCreated: 2026,
-    tags: ['indices', 'multiplication law', 'division law', 'evaluating'],
+    tags: [],
     workedSolution: {
       steps: [
         {
@@ -823,7 +823,7 @@ export const questions: Question[] = [
     marks: 2,
     examStyle: false,
     yearCreated: 2026,
-    tags: ['indices', 'power of a power', 'division law', 'evaluating'],
+    tags: [],
     workedSolution: {
       steps: [
         {
@@ -857,7 +857,7 @@ export const questions: Question[] = [
     marks: 3,
     examStyle: false,
     yearCreated: 2026,
-    tags: ['indices', 'power of a power', 'multiplication law', 'division law', 'evaluating'],
+    tags: [],
     workedSolution: {
       steps: [
         {
@@ -885,7 +885,7 @@ export const questions: Question[] = [
           explanation: '\\( 2^9 = 512 \\).'
         }
       ],
-      finalAnswer: '\\(\\frac{1}{512\\)',
+      finalAnswer: '\\(\\frac{1}{512}\\)',
     }
   },
   {
@@ -897,7 +897,7 @@ export const questions: Question[] = [
     marks: 2,
     examStyle: false,
     yearCreated: 2026,
-    tags: ['indices', 'multiplication law', 'division law', 'algebra', 'simplifying'],
+    tags: [],
     workedSolution: {
       steps: [
         {
@@ -925,7 +925,7 @@ export const questions: Question[] = [
     marks: 2,
     examStyle: false,
     yearCreated: 2026,
-    tags: ['indices', 'division law', 'fractional indices', 'algebra', 'simplifying'],
+    tags: [],
     workedSolution: {
       steps: [
         {
@@ -941,7 +941,7 @@ export const questions: Question[] = [
           explanation: '\\( 4 - (-1) = 5 \\) and \\( \\frac{1}{2} - 3 = -\\frac{5}{2} \\).'
         }
       ],
-      finalAnswer: '\\(c^{5 d^{-\\frac{5}{2\\)',
+      finalAnswer: '\\(c^{5} d^{-\\frac{5}{2}}\\)',
     }
   },
   {
@@ -953,7 +953,7 @@ export const questions: Question[] = [
     marks: 2,
     examStyle: false,
     yearCreated: 2026,
-    tags: ['indices', 'division law', 'fractional indices', 'algebra', 'simplifying'],
+    tags: [],
     workedSolution: {
       steps: [
         {
@@ -969,7 +969,7 @@ export const questions: Question[] = [
           explanation: '\\( \\frac{12}{4} = 3 \\), \\( y^0 = 1 \\), and \\( \\frac{1}{3} - \\frac{1}{2} = \\frac{2-3}{6} = -\\frac{1}{6} \\).'
         }
       ],
-      finalAnswer: '\\(3z^{-\\frac{1}{6\\)',
+      finalAnswer: '\\(3z^{-\\frac{1}{6}}\\)',
     }
   },
   {
@@ -981,7 +981,7 @@ export const questions: Question[] = [
     marks: 2,
     examStyle: false,
     yearCreated: 2026,
-    tags: ['indices', 'power of a power', 'algebra', 'simplifying'],
+    tags: [],
     workedSolution: {
       steps: [
         {
@@ -997,7 +997,7 @@ export const questions: Question[] = [
           explanation: '\\( 2 \\times 3 = 6 \\).'
         }
       ],
-      finalAnswer: '\\(a^3 b^{6\\)',
+      finalAnswer: '\\(a^3 b^{6}\\)',
     }
   },
   {
@@ -1009,7 +1009,7 @@ export const questions: Question[] = [
     marks: 2,
     examStyle: false,
     yearCreated: 2026,
-    tags: ['indices', 'power of a power', 'fractional indices', 'algebra', 'simplifying'],
+    tags: [],
     workedSolution: {
       steps: [
         {
@@ -1025,7 +1025,7 @@ export const questions: Question[] = [
           explanation: '\\( \\frac{1}{2} \\times 4 = 2 \\).'
         }
       ],
-      finalAnswer: '\\(m^4 n^{2\\)',
+      finalAnswer: '\\(m^4 n^{2}\\)',
     }
   },
   {
@@ -1037,7 +1037,7 @@ export const questions: Question[] = [
     marks: 2,
     examStyle: false,
     yearCreated: 2026,
-    tags: ['indices', 'division law', 'negative indices', 'algebra', 'simplifying'],
+    tags: [],
     workedSolution: {
       steps: [
         {
@@ -1053,7 +1053,7 @@ export const questions: Question[] = [
           explanation: '\\( 3 - 5 = -2 \\) and \\( 4 - 1 = 3 \\).'
         }
       ],
-      finalAnswer: '\\(p^{-2 q^{3\\)',
+      finalAnswer: '\\(p^{-2} q^{3}\\)',
     }
   },
   {
@@ -1065,7 +1065,7 @@ export const questions: Question[] = [
     marks: 3,
     examStyle: false,
     yearCreated: 2026,
-    tags: ['indices', 'power of a power', 'multiplication law', 'negative indices', 'evaluating'],
+    tags: [],
     workedSolution: {
       steps: [
         {
@@ -1087,7 +1087,7 @@ export const questions: Question[] = [
           explanation: 'Take the reciprocal, then root-before-power: \\( \\sqrt{4} = 2 \\), then \\( 2^3 = 8 \\).'
         }
       ],
-      finalAnswer: '\\(\\frac{1}{8\\)',
+      finalAnswer: '\\(\\frac{1}{8}\\)',
     }
   },
   {
@@ -1099,7 +1099,7 @@ export const questions: Question[] = [
     marks: 2,
     examStyle: false,
     yearCreated: 2026,
-    tags: ['indices', 'fractional indices', 'finding unknowns'],
+    tags: [],
     workedSolution: {
       steps: [
         {
@@ -1115,7 +1115,7 @@ export const questions: Question[] = [
           explanation: 'If \\( a^x = a^y \\) then \\( x = y \\).'
         }
       ],
-      finalAnswer: '\\(x = \\frac{1}{2\\)',
+      finalAnswer: '\\(x = \\frac{1}{2}\\)',
     }
   },
   {
@@ -1127,7 +1127,7 @@ export const questions: Question[] = [
     marks: 3,
     examStyle: false,
     yearCreated: 2026,
-    tags: ['indices', 'negative indices', 'finding unknowns'],
+    tags: [],
     workedSolution: {
       steps: [
         {
@@ -1149,7 +1149,7 @@ export const questions: Question[] = [
           explanation: 'Divide both sides by 2.'
         }
       ],
-      finalAnswer: '\\(x = -\\frac{1}{2\\)',
+      finalAnswer: '\\(x = -\\frac{1}{2}\\)',
     }
   },
   {
@@ -1161,7 +1161,7 @@ export const questions: Question[] = [
     marks: 2,
     examStyle: false,
     yearCreated: 2026,
-    tags: ['indices', 'fractional indices', 'multiplication law', 'finding unknowns'],
+    tags: [],
     workedSolution: {
       steps: [
         {
@@ -1183,7 +1183,7 @@ export const questions: Question[] = [
           explanation: 'Both sides have base 5, so the exponents must be equal.'
         }
       ],
-      finalAnswer: '\\(x = \\frac{7}{2\\)',
+      finalAnswer: '\\(x = \\frac{7}{2}\\)',
     }
   },
   {
@@ -1195,7 +1195,7 @@ export const questions: Question[] = [
     marks: 1,
     examStyle: false,
     yearCreated: 2026,
-    tags: ['indices', 'multiplication law', 'negative indices', 'simplifying'],
+    tags: [],
     workedSolution: {
       steps: [
         {
@@ -1211,7 +1211,7 @@ export const questions: Question[] = [
           explanation: '\\( 6 - 2 = 4 \\).'
         }
       ],
-      finalAnswer: '\\(10^{4\\)',
+      finalAnswer: '\\(10^{4}\\)',
     }
   },
   {
@@ -1223,7 +1223,7 @@ export const questions: Question[] = [
     marks: 1,
     examStyle: false,
     yearCreated: 2026,
-    tags: ['indices', 'fractional indices', 'cube root', 'evaluating'],
+    tags: [],
     workedSolution: {
       steps: [
         {
@@ -1251,7 +1251,7 @@ export const questions: Question[] = [
     marks: 2,
     examStyle: false,
     yearCreated: 2026,
-    tags: ['indices', 'division law', 'negative indices', 'algebra', 'simplifying'],
+    tags: [],
     workedSolution: {
       steps: [
         {
@@ -1267,7 +1267,7 @@ export const questions: Question[] = [
           explanation: '\\( 7 - (-3) = 7 + 3 = 10 \\).'
         }
       ],
-      finalAnswer: '\\(w^{10\\)',
+      finalAnswer: '\\(w^{10}\\)',
     }
   },
   {
@@ -1279,7 +1279,7 @@ export const questions: Question[] = [
     marks: 2,
     examStyle: false,
     yearCreated: 2026,
-    tags: ['indices', 'fractional indices', 'evaluating'],
+    tags: [],
     workedSolution: {
       steps: [
         {
@@ -1313,7 +1313,7 @@ export const questions: Question[] = [
     marks: 2,
     examStyle: false,
     yearCreated: 2026,
-    tags: ['indices', 'power of a power', 'division law', 'simplifying'],
+    tags: [],
     workedSolution: {
       steps: [
         {
@@ -1347,7 +1347,7 @@ export const questions: Question[] = [
     marks: 1,
     examStyle: false,
     yearCreated: 2026,
-    tags: ['indices', 'negative indices', 'evaluating'],
+    tags: [],
     workedSolution: {
       steps: [
         {
@@ -1363,7 +1363,7 @@ export const questions: Question[] = [
           explanation: '\\( 2 \\times 2 \\times 2 = 8 \\).'
         }
       ],
-      finalAnswer: '\\(\\frac{1}{8\\)',
+      finalAnswer: '\\(\\frac{1}{8}\\)',
     }
   },
   {
@@ -1375,7 +1375,7 @@ export const questions: Question[] = [
     marks: 2,
     examStyle: false,
     yearCreated: 2026,
-    tags: ['indices', 'fractional indices', 'multiplication law', 'algebra', 'simplifying'],
+    tags: [],
     workedSolution: {
       steps: [
         {
@@ -1391,7 +1391,7 @@ export const questions: Question[] = [
           explanation: '\\( \\frac{1}{2} + \\frac{3}{2} = \\frac{4}{2} = 2 \\).'
         }
       ],
-      finalAnswer: '\\(d^{2\\)',
+      finalAnswer: '\\(d^{2}\\)',
     }
   },
   {
@@ -1403,7 +1403,7 @@ export const questions: Question[] = [
     marks: 2,
     examStyle: false,
     yearCreated: 2026,
-    tags: ['indices', 'finding unknowns', 'evaluating'],
+    tags: [],
     workedSolution: {
       steps: [
         {
@@ -1431,7 +1431,7 @@ export const questions: Question[] = [
     marks: 2,
     examStyle: false,
     yearCreated: 2026,
-    tags: ['indices', 'multiplication law', 'division law', 'negative indices', 'simplifying'],
+    tags: [],
     workedSolution: {
       steps: [
         {
@@ -1453,7 +1453,7 @@ export const questions: Question[] = [
           explanation: 'A power of \\( -1 \\) means the reciprocal.'
         }
       ],
-      finalAnswer: '\\(\\frac{1}{5\\)',
+      finalAnswer: '\\(\\frac{1}{5}\\)',
     }
   },
   {
@@ -1465,7 +1465,7 @@ export const questions: Question[] = [
     marks: 2,
     examStyle: false,
     yearCreated: 2026,
-    tags: ['indices', 'fractional indices', 'evaluating'],
+    tags: [],
     workedSolution: {
       steps: [
         {

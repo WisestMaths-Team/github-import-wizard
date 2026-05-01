@@ -67,11 +67,24 @@ import { questions as v1 } from "./Year_1_A_Level_Maths/Vectors/v1_vectors_intro
 import { questions as v2 } from "./Year_1_A_Level_Maths/Vectors/v2_calculating_vectors";
 import { questions as v3 } from "./Year_1_A_Level_Maths/Vectors/v3_modelling_with_vectors";
 
+import { questions as y1k1 } from "./Year_1_A_Level_Maths/Mechanics/k1_kinematics";
+import { questions as y1k2 } from "./Year_1_A_Level_Maths/Mechanics/k2_variable_acceleration";
+import { questions as f1 } from "./Year_1_A_Level_Maths/Mechanics/f1_forces_and_motion";
+import { questions as f2 } from "./Year_1_A_Level_Maths/Mechanics/f2_connected_particles";
+
 import { questions as s1 } from "./Year_1_A_Level_Maths/Statistics/s1_sampling_and_data_interpretation";
 import { questions as s2 } from "./Year_1_A_Level_Maths/Statistics/s2_Representing_Data";
 import { questions as s3 } from "./Year_1_A_Level_Maths/Statistics/s3_means_median_mode";
 import { questions as s4 } from "./Year_1_A_Level_Maths/Statistics/s4_dispersion_of_data";
 import { questions as s5 } from "./Year_1_A_Level_Maths/Statistics/s5_sampling_corrleation";
+import { questions as prob1 } from "./Year_1_A_Level_Maths/Statistics/p1_simple_probability";
+import { questions as sd1 } from "./Year_1_A_Level_Maths/Statistics/sd1_discrete_random_variables";
+import { questions as sd2 } from "./Year_1_A_Level_Maths/Statistics/sd2_binomial_distribution";
+import { questions as sd3 } from "./Year_1_A_Level_Maths/Statistics/sd3_cumulative_binomial";
+import { questions as sd4 } from "./Year_1_A_Level_Maths/Statistics/sd4_modelling_with_binomial";
+import { questions as ht1 } from "./Year_1_A_Level_Maths/Statistics/ht1_hypothesis_test_concepts";
+import { questions as ht2 } from "./Year_1_A_Level_Maths/Statistics/ht2_binomial_hypothesis_tests";
+import { questions as ht3 } from "./Year_1_A_Level_Maths/Statistics/ht3_critical_regions";
 
 /*
  * ── Year 2 A-Level Maths (Edexcel Pure Year 2) ──────────────────
@@ -149,7 +162,8 @@ export const questions: Question[] = [
   ...d1, ...d2, ...d3, ...d4, ...d5,
   ...i1, ...i2,
   ...v1, ...v2, ...v3,
-  ...s1, ...s2, ...s3, ...s4, ...s5,
+  ...y1k1, ...y1k2, ...f1, ...f2,
+  ...s1, ...s2, ...s3, ...s4, ...s5, ...prob1, ...sd1, ...sd2, ...sd3, ...sd4, ...ht1, ...ht2, ...ht3,
   // Year 2
   ...y2am1, ...y2am2, ...y2am3, ...y2am4, ...y2am5,
   ...y2fg1, ...y2fg2, ...y2fg3, ...y2fg4, ...y2fg5, ...y2fg6, ...y2fg7,

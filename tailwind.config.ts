@@ -11,65 +11,65 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        // Core surfaces — near-black with subtle tonal shifts
-        background: "#05060a",
-        foreground: "#f4f4f5",
+        // Core surfaces — warm cream theme (from Wisest Maths brand)
+        background: "#f5f0e8",
+        foreground: "#2d2a26",
         primary: {
-          DEFAULT: "#0a0b12",
-          foreground: "#f4f4f5",
+          DEFAULT: "#faf7f2",
+          foreground: "#2d2a26",
         },
-        // Signature accent: electric indigo-violet with cyan counter
+        // Signature accent: teal (Wisest Maths brand)
         accent: {
-          DEFAULT: "#818cf8",
-          foreground: "#0a0b12",
-          light: "#c7d2fe",
-          glow: "#6366f1",
+          DEFAULT: "#0d9488",
+          foreground: "#ffffff",
+          light: "#ccfbf1",
+          glow: "#0f766e",
         },
         secondary: {
-          DEFAULT: "#22d3ee",
-          foreground: "#0a0b12",
+          DEFAULT: "#d4775c",
+          foreground: "#ffffff",
         },
-        // Glassy elevated surfaces
+        // Elevated surfaces
         surface: {
-          DEFAULT: "#0d0e17",
-          alt: "#12131d",
-          raised: "#1a1b27",
+          DEFAULT: "#faf7f2",
+          alt: "#f0ebe3",
+          raised: "#e8e0d4",
         },
-        border: "#22232f",
+        border: "#e0d8cc",
         muted: {
-          DEFAULT: "#1a1b27",
-          foreground: "#a1a1aa",
+          DEFAULT: "#f0ebe3",
+          foreground: "#8a857d",
         },
         destructive: {
-          DEFAULT: "#f87171",
-          foreground: "#0a0b12",
+          DEFAULT: "#ef4444",
+          foreground: "#ffffff",
         },
-        ring: "#818cf8",
-        input: "#22232f",
+        ring: "#0d9488",
+        input: "#e0d8cc",
         card: {
-          DEFAULT: "#0d0e17",
-          foreground: "#f4f4f5",
+          DEFAULT: "#faf7f2",
+          foreground: "#2d2a26",
         },
         popover: {
-          DEFAULT: "#0d0e17",
-          foreground: "#f4f4f5",
+          DEFAULT: "#faf7f2",
+          foreground: "#2d2a26",
         },
         sidebar: {
-          DEFAULT: "#0a0b12",
-          foreground: "#e4e4e7",
-          primary: "#818cf8",
-          "primary-foreground": "#0a0b12",
-          accent: "#1a1b27",
-          "accent-foreground": "#f4f4f5",
-          border: "#22232f",
-          ring: "#818cf8",
+          DEFAULT: "#faf7f2",
+          foreground: "#4a453e",
+          primary: "#0d9488",
+          "primary-foreground": "#ffffff",
+          accent: "#f0ebe3",
+          "accent-foreground": "#2d2a26",
+          border: "#e0d8cc",
+          ring: "#0d9488",
         },
         chart: {
-          "1": "#818cf8",
-          "2": "#22d3ee",
-          "3": "#a78bfa",
-          "4": "#34d399",
-          "5": "#f472b6",
+          "1": "#0d9488",
+          "2": "#d4775c",
+          "3": "#c4a35a",
+          "4": "#059669",
+          "5": "#e07c6b",
         },
       },
       fontFamily: {
@@ -86,18 +86,18 @@ const config: Config = {
         "2xl": "20px",
       },
       boxShadow: {
-        sm: "0 1px 2px rgba(0,0,0,0.4), 0 0 0 1px rgba(255,255,255,0.03)",
-        md: "0 4px 20px rgba(0,0,0,0.4), 0 0 0 1px rgba(255,255,255,0.04)",
-        lg: "0 10px 40px rgba(0,0,0,0.5), 0 0 0 1px rgba(255,255,255,0.05)",
-        glow: "0 0 40px rgba(129,140,248,0.25), 0 0 80px rgba(99,102,241,0.15)",
-        "glow-sm": "0 0 20px rgba(129,140,248,0.2)",
-        "inner-glow": "inset 0 1px 0 0 rgba(255,255,255,0.06)",
+        sm: "0 1px 2px rgba(0,0,0,0.06), 0 0 0 1px rgba(0,0,0,0.04)",
+        md: "0 4px 20px rgba(0,0,0,0.08), 0 0 0 1px rgba(0,0,0,0.04)",
+        lg: "0 10px 40px rgba(0,0,0,0.1), 0 0 0 1px rgba(0,0,0,0.05)",
+        glow: "0 0 40px rgba(13,148,136,0.18), 0 0 80px rgba(15,118,110,0.08)",
+        "glow-sm": "0 0 20px rgba(13,148,136,0.12)",
+        "inner-glow": "inset 0 1px 0 0 rgba(255,255,255,0.8)",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic": "conic-gradient(var(--tw-gradient-stops))",
-        "aurora": "linear-gradient(125deg, #818cf8 0%, #a78bfa 40%, #22d3ee 100%)",
-        "subtle-gradient": "linear-gradient(180deg, rgba(129,140,248,0.08) 0%, transparent 60%)",
+        "aurora": "linear-gradient(125deg, #0d9488 0%, #0f766e 40%, #d4775c 100%)",
+        "subtle-gradient": "linear-gradient(180deg, rgba(13,148,136,0.06) 0%, transparent 60%)",
       },
       keyframes: {
         "aurora-shift": {

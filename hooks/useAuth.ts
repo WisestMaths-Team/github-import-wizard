@@ -54,7 +54,12 @@ export function useAuthProvider(): AuthState {
   useEffect(() => {
     try {
       const stored = localStorage.getItem(AUTH_KEY);
-      if (stored) setUser(JSON.parse(stored));
+      if (stored) {
+        const parsed = JSON.parse(stored);
+        setUser(parsed);
+        // Sync cookie with localStorage on load
+        document.cookie = `mathsapp-session=${encodeURIComponent(stored)}; path=/; max-age=${60 * 60 * 24 * 30}; SameSite=Lax`;
+      }
     } catch {
       // ignore
     }
@@ -66,6 +71,8 @@ export function useAuthProvider(): AuthState {
       const role = deriveRole(email);
       const authUser: AuthUser = { email, name: deriveName(email), role };
       localStorage.setItem(AUTH_KEY, JSON.stringify(authUser));
+      // Set HTTP cookie so server-side middleware can verify auth
+      document.cookie = `mathsapp-session=${encodeURIComponent(JSON.stringify(authUser))}; path=/; max-age=${60 * 60 * 24 * 30}; SameSite=Lax`;
       setUser(authUser);
       router.push(role === "teacher" ? "/teacher/dashboard" : "/courses");
     },
@@ -75,6 +82,8 @@ export function useAuthProvider(): AuthState {
   const logout = useCallback(() => {
     localStorage.removeItem(AUTH_KEY);
     localStorage.removeItem("mathsapp-course");
+    // Clear the auth cookie
+    document.cookie = "mathsapp-session=; path=/; max-age=0";
     setUser(null);
     router.push("/login");
   }, [router]);

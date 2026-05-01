@@ -26,9 +26,7 @@ export default function ALevelMathsYearPage() {
   const { user, loading: authLoading } = useAuth();
   const router = useRouter();
 
-  useEffect(() => {
-    if (!authLoading && !user) router.replace("/login");
-  }, [user, authLoading, router]);
+  // Auth handled by courses layout RouteGuard
 
   if (authLoading) {
     return (
@@ -69,7 +67,7 @@ export default function ALevelMathsYearPage() {
             const inner = (
               <>
                 <div className="pointer-events-none absolute -top-16 -right-16 h-40 w-40 rounded-full bg-accent/10 blur-3xl transition-opacity group-hover:bg-accent/20" />
-                <div className="relative flex h-14 w-14 items-center justify-center rounded-xl bg-gradient-to-br from-accent/20 to-secondary/20 text-xl font-bold text-foreground shadow-inner-glow ring-1 ring-white/10">
+                <div className="relative flex h-14 w-14 items-center justify-center rounded-xl bg-gradient-to-br from-accent/20 to-secondary/20 text-xl font-bold text-foreground shadow-inner-glow ring-1 ring-black/10">
                   {y.id === "year-1" ? "1" : "2"}
                 </div>
                 <h2 className="relative mt-5 text-lg font-bold text-foreground">
@@ -79,7 +77,7 @@ export default function ALevelMathsYearPage() {
                   {y.description}
                 </p>
                 {!y.available ? (
-                  <span className="relative mt-4 inline-flex items-center gap-1.5 rounded-full border border-white/10 bg-white/[0.03] px-2.5 py-1 text-[11px] font-medium text-foreground/60">
+                  <span className="relative mt-4 inline-flex items-center gap-1.5 rounded-full border border-black/10 bg-black/[0.03] px-2.5 py-1 text-[11px] font-medium text-foreground/60">
                     <span className="h-1 w-1 rounded-full bg-foreground/40" />
                     Coming Soon
                   </span>
@@ -94,7 +92,7 @@ export default function ALevelMathsYearPage() {
               </>
             );
 
-            const cls = `card-glow group relative overflow-hidden rounded-2xl border border-white/10 bg-surface p-7 text-left transition-all ${
+            const cls = `card-glow group relative overflow-hidden rounded-2xl border border-black/10 bg-white p-7 text-left transition-all ${
               y.available
                 ? "cursor-pointer hover:border-accent/40"
                 : "opacity-50 cursor-not-allowed"

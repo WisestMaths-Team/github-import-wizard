@@ -44,7 +44,7 @@ export const questions: Question[] = [
                     explanation: '\\( \\sqrt{4} = 2 \\), so the surd simplifies to \\( 2\\sqrt{3} \\).',
                 }
             ],
-            finalAnswer: '\\(2\\sqrt{3\\)',
+            finalAnswer: '\\(2\\sqrt{3}\\)',
         },
     },
     {
@@ -72,7 +72,7 @@ export const questions: Question[] = [
                     explanation: '\\( \\sqrt{9} = 3 \\).',
                 }
             ],
-            finalAnswer: '\\(3\\sqrt{2\\)',
+            finalAnswer: '\\(3\\sqrt{2}\\)',
         },
     },
     {
@@ -100,7 +100,7 @@ export const questions: Question[] = [
                     explanation: '\\( \\sqrt{9} = 3 \\).',
                 }
             ],
-            finalAnswer: '\\(3\\sqrt{5\\)',
+            finalAnswer: '\\(3\\sqrt{5}\\)',
         },
     },
     {
@@ -128,7 +128,7 @@ export const questions: Question[] = [
                     explanation: '\\( \\sqrt{25} = 5 \\).',
                 }
             ],
-            finalAnswer: '\\(5\\sqrt{3\\)',
+            finalAnswer: '\\(5\\sqrt{3}\\)',
         },
     },
     {
@@ -156,7 +156,7 @@ export const questions: Question[] = [
                     explanation: '\\( \\sqrt{49} = 7 \\).',
                 }
             ],
-            finalAnswer: '\\(7\\sqrt{2\\)',
+            finalAnswer: '\\(7\\sqrt{2}\\)',
         },
     },
     {
@@ -184,7 +184,7 @@ export const questions: Question[] = [
                     explanation: '\\( \\sqrt{4} = 2 \\). The numerator \\( \\sqrt{7} \\) cannot be simplified further.',
                 }
             ],
-            finalAnswer: '\\(\\frac{\\sqrt{7}}{2\\)',
+            finalAnswer: '\\(\\frac{\\sqrt{7}}{2}\\)',
         },
     },
     {
@@ -212,7 +212,7 @@ export const questions: Question[] = [
                     explanation: '\\( \\sqrt{9} = 3 \\) and \\( \\sqrt{25} = 5 \\). Both are perfect squares, so the answer is rational.',
                 }
             ],
-            finalAnswer: '\\(\\frac{3}{5\\)',
+            finalAnswer: '\\(\\frac{3}{5}\\)',
         },
     },
     {
@@ -240,7 +240,7 @@ export const questions: Question[] = [
                     explanation: '\\( \\sqrt{16} = 4 \\). The numerator stays as \\( \\sqrt{11} \\).',
                 }
             ],
-            finalAnswer: '\\(\\frac{\\sqrt{11}}{4\\)',
+            finalAnswer: '\\(\\frac{\\sqrt{11}}{4}\\)',
         },
     },
     {
@@ -340,7 +340,7 @@ export const questions: Question[] = [
                     explanation: '\\( 2 \\times 4 = 8 \\) and \\( \\sqrt{3} \\times \\sqrt{7} = \\sqrt{21} \\). Since 21 has no square factors, this is fully simplified.',
                 }
             ],
-            finalAnswer: '\\(8\\sqrt{21\\)',
+            finalAnswer: '\\(8\\sqrt{21}\\)',
         },
     },
     {
@@ -530,7 +530,7 @@ export const questions: Question[] = [
                     explanation: '\\( \\frac{12}{6} = 2 \\) and \\( \\frac{\\sqrt{10}}{\\sqrt{5}} = \\sqrt{2} \\).',
                 }
             ],
-            finalAnswer: '\\(2\\sqrt{2\\)',
+            finalAnswer: '\\(2\\sqrt{2}\\)',
         },
     },
     {
@@ -564,7 +564,7 @@ export const questions: Question[] = [
                     explanation: '\\( \\frac{2}{3} \\times \\frac{2}{3} = \\frac{4}{9} \\).',
                 }
             ],
-            finalAnswer: '\\(\\frac{4}{9\\)',
+            finalAnswer: '\\(\\frac{4}{9}\\)',
         },
     },
     {
@@ -592,7 +592,7 @@ export const questions: Question[] = [
                     explanation: 'These are like surds (both \\( \\sqrt{3} \\)), so add the coefficients: \\( 4 + 3 = 7 \\).',
                 }
             ],
-            finalAnswer: '\\(7\\sqrt{3\\)',
+            finalAnswer: '\\(7\\sqrt{3}\\)',
         },
     },
     {
@@ -620,7 +620,7 @@ export const questions: Question[] = [
                     explanation: 'Subtract the coefficients: \\( 5 - 2 = 3 \\).',
                 }
             ],
-            finalAnswer: '\\(3\\sqrt{2\\)',
+            finalAnswer: '\\(3\\sqrt{2}\\)',
         },
     },
     {
@@ -648,7 +648,7 @@ export const questions: Question[] = [
                     explanation: '\\( 6 - 10 = -4 \\). A negative answer is perfectly valid here.',
                 }
             ],
-            finalAnswer: '\\(-4\\sqrt{3\\)',
+            finalAnswer: '\\(-4\\sqrt{3}\\)',
         },
     },
     {
@@ -676,7 +676,7 @@ export const questions: Question[] = [
                     explanation: '\\( 6 + 15 = 21 \\).',
                 }
             ],
-            finalAnswer: '\\(21\\sqrt{2\\)',
+            finalAnswer: '\\(21\\sqrt{2}\\)',
         },
     },
     {
@@ -704,7 +704,7 @@ export const questions: Question[] = [
                     explanation: '\\( 10 + 9 - 2 = 17 \\).',
                 }
             ],
-            finalAnswer: '\\(17\\sqrt{7\\)',
+            finalAnswer: '\\(17\\sqrt{7}\\)',
         },
     },
     {
@@ -732,7 +732,7 @@ export const questions: Question[] = [
                     explanation: '\\( 4 + 9 + 4 = 17 \\).',
                 }
             ],
-            finalAnswer: '\\(17\\sqrt{5\\)',
+            finalAnswer: '\\(17\\sqrt{5}\\)',
         },
     },
     {
@@ -749,24 +749,12 @@ export const questions: Question[] = [
             steps: [
                 {
                     stepNumber: 1,
-                    description: 'Expand the double brackets using FOIL (First, Outside, Inside, Last).',
-                    workingLatex: '2 \\times 4 + 2 \\times \\sqrt{3} + \\sqrt{3} \\times 4 + \\sqrt{3} \\times \\sqrt{3}',
-                    explanation: 'Multiply every term in the first bracket by every term in the second bracket.',
-                },
-                {
-                    stepNumber: 2,
-                    description: 'Simplify each product.',
-                    workingLatex: '8 + 2\\sqrt{3} + 4\\sqrt{3} + 3',
-                    explanation: '\\( \\sqrt{3} \\times \\sqrt{3} = 3 \\).',
-                },
-                {
-                    stepNumber: 3,
-                    description: 'Collect like terms.',
-                    workingLatex: '11 + 6\\sqrt{3}',
-                    explanation: 'Rational parts: \\( 8 + 3 = 11 \\). Surd parts: \\( 2\\sqrt{3} + 4\\sqrt{3} = 6\\sqrt{3} \\).',
+                    description: 'Expand and simplify',
+                    workingLatex: '\\begin{aligned} (2+\\sqrt{3})(4+\\sqrt{3}) &= 2(4+\\sqrt{3})+\\sqrt{3}(4+\\sqrt{3}) \\\\ &= 8+2\\sqrt{3}+4\\sqrt{3}+3 \\\\ &= 11 + 6\\sqrt{3} \\end{aligned}',
+                    explanation: 'Distribute each term in the first bracket across the second. Then collect rational parts (\\(8+3=11\\)) and surd parts (\\(2\\sqrt{3}+4\\sqrt{3}=6\\sqrt{3}\\)).',
                 }
             ],
-            finalAnswer: '\\(11 + 6\\sqrt{3\\)',
+            finalAnswer: '\\(11 + 6\\sqrt{3}\\)',
         },
     },
     {
@@ -783,24 +771,12 @@ export const questions: Question[] = [
             steps: [
                 {
                     stepNumber: 1,
-                    description: 'Expand the double brackets.',
-                    workingLatex: '5 \\times 3 + 5 \\times (-\\sqrt{7}) + 2\\sqrt{7} \\times 3 + 2\\sqrt{7} \\times (-\\sqrt{7})',
-                    explanation: 'Multiply every term in the first bracket by every term in the second.',
-                },
-                {
-                    stepNumber: 2,
-                    description: 'Simplify each product.',
-                    workingLatex: '15 - 5\\sqrt{7} + 6\\sqrt{7} - 2 \\times 7',
-                    explanation: '\\( 2\\sqrt{7} \\times \\sqrt{7} = 2 \\times 7 = 14 \\).',
-                },
-                {
-                    stepNumber: 3,
-                    description: 'Collect like terms.',
-                    workingLatex: '15 - 14 + (-5\\sqrt{7} + 6\\sqrt{7}) = 1 + \\sqrt{7}',
-                    explanation: 'Rational parts: \\( 15 - 14 = 1 \\). Surd parts: \\( -5\\sqrt{7} + 6\\sqrt{7} = \\sqrt{7} \\).',
+                    description: 'Expand and simplify',
+                    workingLatex: '\\begin{aligned} (5+2\\sqrt{7})(3-\\sqrt{7}) &= 5(3-\\sqrt{7})+2\\sqrt{7}(3-\\sqrt{7}) \\\\ &= 15-5\\sqrt{7}+6\\sqrt{7}-2(7) \\\\ &= 15-14-5\\sqrt{7}+6\\sqrt{7} \\\\ &= 1 + \\sqrt{7} \\end{aligned}',
+                    explanation: 'Distribute each term. Note \\(2\\sqrt{7} \\times \\sqrt{7} = 2 \\times 7 = 14\\). Then collect rational and surd parts.',
                 }
             ],
-            finalAnswer: '\\(1 + \\sqrt{7\\)',
+            finalAnswer: '\\(1 + \\sqrt{7}\\)',
         },
     },
     {
@@ -817,24 +793,12 @@ export const questions: Question[] = [
             steps: [
                 {
                     stepNumber: 1,
-                    description: 'Expand the double brackets.',
-                    workingLatex: '\\sqrt{5} \\times \\sqrt{5} + \\sqrt{5} \\times (-1) + 3 \\times \\sqrt{5} + 3 \\times (-1)',
-                    explanation: 'FOIL: multiply each pair of terms.',
-                },
-                {
-                    stepNumber: 2,
-                    description: 'Simplify each product.',
-                    workingLatex: '5 - \\sqrt{5} + 3\\sqrt{5} - 3',
-                    explanation: '\\( \\sqrt{5} \\times \\sqrt{5} = 5 \\).',
-                },
-                {
-                    stepNumber: 3,
-                    description: 'Collect like terms.',
-                    workingLatex: '2 + 2\\sqrt{5}',
-                    explanation: 'Rational: \\( 5 - 3 = 2 \\). Surds: \\( -\\sqrt{5} + 3\\sqrt{5} = 2\\sqrt{5} \\).',
+                    description: 'Expand and simplify',
+                    workingLatex: '\\begin{aligned} (\\sqrt{5}+3)(\\sqrt{5}-1) &= \\sqrt{5}(\\sqrt{5}-1)+3(\\sqrt{5}-1) \\\\ &= 5-\\sqrt{5}+3\\sqrt{5}-3 \\\\ &= 2 + 2\\sqrt{5} \\end{aligned}',
+                    explanation: 'Distribute each term. Rational parts: \\(5-3=2\\). Surd parts: \\(-\\sqrt{5}+3\\sqrt{5}=2\\sqrt{5}\\).',
                 }
             ],
-            finalAnswer: '\\(2 + 2\\sqrt{5\\)',
+            finalAnswer: '\\(2 + 2\\sqrt{5}\\)',
         },
     },
     {
@@ -907,24 +871,12 @@ export const questions: Question[] = [
             steps: [
                 {
                     stepNumber: 1,
-                    description: 'Write the square as a product of two identical brackets.',
-                    workingLatex: '(\\sqrt{3} + 2)(\\sqrt{3} + 2)',
-                    explanation: 'Squaring means multiplying by itself.',
-                },
-                {
-                    stepNumber: 2,
-                    description: 'Expand the brackets.',
-                    workingLatex: '(\\sqrt{3})^2 + 2 \\times \\sqrt{3} \\times 2 + 2^2 = 3 + 4\\sqrt{3} + 4',
-                    explanation: 'Use \\( (a+b)^2 = a^2 + 2ab + b^2 \\).',
-                },
-                {
-                    stepNumber: 3,
-                    description: 'Collect like terms.',
-                    workingLatex: '7 + 4\\sqrt{3}',
-                    explanation: '\\( 3 + 4 = 7 \\).',
+                    description: 'Expand and simplify',
+                    workingLatex: '\\begin{aligned} (\\sqrt{3}+2)^2 &= (\\sqrt{3}+2)(\\sqrt{3}+2) \\\\ &= \\sqrt{3}(\\sqrt{3}+2)+2(\\sqrt{3}+2) \\\\ &= 3+2\\sqrt{3}+2\\sqrt{3}+4 \\\\ &= 7 + 4\\sqrt{3} \\end{aligned}',
+                    explanation: 'Write the square as two identical brackets, then distribute each term.',
                 }
             ],
-            finalAnswer: '\\(7 + 4\\sqrt{3\\)',
+            finalAnswer: '\\(7 + 4\\sqrt{3}\\)',
         },
     },
     {
@@ -941,24 +893,12 @@ export const questions: Question[] = [
             steps: [
                 {
                     stepNumber: 1,
-                    description: 'Write the square as a product of two identical brackets and expand.',
-                    workingLatex: '(2\\sqrt{5})^2 - 2 \\times 2\\sqrt{5} \\times 3 + 3^2',
-                    explanation: 'Use \\( (a - b)^2 = a^2 - 2ab + b^2 \\) with \\( a = 2\\sqrt{5} \\) and \\( b = 3 \\).',
-                },
-                {
-                    stepNumber: 2,
-                    description: 'Evaluate each part.',
-                    workingLatex: '4 \\times 5 - 12\\sqrt{5} + 9 = 20 - 12\\sqrt{5} + 9',
-                    explanation: '\\( (2\\sqrt{5})^2 = 4 \\times 5 = 20 \\), the middle term is \\( 12\\sqrt{5} \\), and \\( 3^2 = 9 \\).',
-                },
-                {
-                    stepNumber: 3,
-                    description: 'Collect like terms.',
-                    workingLatex: '29 - 12\\sqrt{5}',
-                    explanation: '\\( 20 + 9 = 29 \\).',
+                    description: 'Expand and simplify',
+                    workingLatex: '\\begin{aligned} (2\\sqrt{5}-3)^2 &= (2\\sqrt{5}-3)(2\\sqrt{5}-3) \\\\ &= 2\\sqrt{5}(2\\sqrt{5}-3)-3(2\\sqrt{5}-3) \\\\ &= 4(5)-6\\sqrt{5}-6\\sqrt{5}+9 \\\\ &= 20-12\\sqrt{5}+9 \\\\ &= 29 - 12\\sqrt{5} \\end{aligned}',
+                    explanation: 'Write the square as two identical brackets, then distribute each term. Note \\(2\\sqrt{5} \\times 2\\sqrt{5} = 4 \\times 5 = 20\\).',
                 }
             ],
-            finalAnswer: '\\(29 - 12\\sqrt{5\\)',
+            finalAnswer: '\\(29 - 12\\sqrt{5}\\)',
         },
     },
     {
@@ -975,24 +915,12 @@ export const questions: Question[] = [
             steps: [
                 {
                     stepNumber: 1,
-                    description: 'Expand using FOIL.',
-                    workingLatex: '4 \\times 1 + 4 \\times (-2\\sqrt{2}) + 3\\sqrt{2} \\times 1 + 3\\sqrt{2} \\times (-2\\sqrt{2})',
-                    explanation: 'Multiply each term in the first bracket by each term in the second.',
-                },
-                {
-                    stepNumber: 2,
-                    description: 'Simplify each product.',
-                    workingLatex: '4 - 8\\sqrt{2} + 3\\sqrt{2} - 6 \\times 2',
-                    explanation: '\\( 3\\sqrt{2} \\times 2\\sqrt{2} = 6 \\times 2 = 12 \\).',
-                },
-                {
-                    stepNumber: 3,
-                    description: 'Collect like terms.',
-                    workingLatex: '4 - 12 + (-8\\sqrt{2} + 3\\sqrt{2}) = -8 - 5\\sqrt{2}',
-                    explanation: 'Rational: \\( 4 - 12 = -8 \\). Surds: \\( -8\\sqrt{2} + 3\\sqrt{2} = -5\\sqrt{2} \\).',
+                    description: 'Expand and simplify',
+                    workingLatex: '\\begin{aligned} (4+3\\sqrt{2})(1-2\\sqrt{2}) &= 4(1-2\\sqrt{2})+3\\sqrt{2}(1-2\\sqrt{2}) \\\\ &= 4-8\\sqrt{2}+3\\sqrt{2}-6(2) \\\\ &= 4-8\\sqrt{2}+3\\sqrt{2}-12 \\\\ &= -8 - 5\\sqrt{2} \\end{aligned}',
+                    explanation: 'Distribute each term. Note \\(3\\sqrt{2} \\times 2\\sqrt{2} = 6 \\times 2 = 12\\). Then collect rational and surd parts.',
                 }
             ],
-            finalAnswer: '\\(-8 - 5\\sqrt{2\\)',
+            finalAnswer: '\\(-8 - 5\\sqrt{2}\\)',
         },
     },
     {
@@ -1048,7 +976,7 @@ export const questions: Question[] = [
                     explanation: '\\( \\sqrt{100} = 10 \\).',
                 }
             ],
-            finalAnswer: '\\(10\\sqrt{2\\)',
+            finalAnswer: '\\(10\\sqrt{2}\\)',
         },
     },
     {
@@ -1076,7 +1004,7 @@ export const questions: Question[] = [
                     explanation: '\\( \\sqrt{49} = 7 \\).',
                 }
             ],
-            finalAnswer: '\\(7\\sqrt{3\\)',
+            finalAnswer: '\\(7\\sqrt{3}\\)',
         },
     },
     {
@@ -1121,24 +1049,12 @@ export const questions: Question[] = [
             steps: [
                 {
                     stepNumber: 1,
-                    description: 'Expand using FOIL.',
-                    workingLatex: '1 \\times 3 + 1 \\times 2\\sqrt{6} + \\sqrt{6} \\times 3 + \\sqrt{6} \\times 2\\sqrt{6}',
-                    explanation: 'Multiply every term in the first bracket by every term in the second.',
-                },
-                {
-                    stepNumber: 2,
-                    description: 'Simplify each product.',
-                    workingLatex: '3 + 2\\sqrt{6} + 3\\sqrt{6} + 2 \\times 6',
-                    explanation: '\\( \\sqrt{6} \\times 2\\sqrt{6} = 2 \\times 6 = 12 \\).',
-                },
-                {
-                    stepNumber: 3,
-                    description: 'Collect like terms.',
-                    workingLatex: '3 + 12 + (2\\sqrt{6} + 3\\sqrt{6}) = 15 + 5\\sqrt{6}',
-                    explanation: 'Rational: \\( 3 + 12 = 15 \\). Surds: \\( 2\\sqrt{6} + 3\\sqrt{6} = 5\\sqrt{6} \\).',
+                    description: 'Expand and simplify',
+                    workingLatex: '\\begin{aligned} (1+\\sqrt{6})(3+2\\sqrt{6}) &= 1(3+2\\sqrt{6})+\\sqrt{6}(3+2\\sqrt{6}) \\\\ &= 3+2\\sqrt{6}+3\\sqrt{6}+2(6) \\\\ &= 3+2\\sqrt{6}+3\\sqrt{6}+12 \\\\ &= 15 + 5\\sqrt{6} \\end{aligned}',
+                    explanation: 'Distribute each term. Note \\(\\sqrt{6} \\times 2\\sqrt{6} = 2 \\times 6 = 12\\). Then collect rational and surd parts.',
                 }
             ],
-            finalAnswer: '\\(15 + 5\\sqrt{6\\)',
+            finalAnswer: '\\(15 + 5\\sqrt{6}\\)',
         },
     },
     {
@@ -1172,7 +1088,7 @@ export const questions: Question[] = [
                     explanation: '16 is the largest square factor of 96, and \\( \\sqrt{16} = 4 \\).',
                 },
             ],
- finalAnswer: '\\(4\\sqrt{6 cm\\)',
+ finalAnswer: '\\(4\\sqrt{6}\\) cm',
         },
     },
 ];

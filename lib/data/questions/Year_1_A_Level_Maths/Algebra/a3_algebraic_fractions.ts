@@ -43,7 +43,7 @@ export const questions: Question[] = [
           explanation: 'Divide the top and bottom by 2.'
         }
       ],
-      finalAnswer: '\\(\\frac{x + 5}{3\\)',
+      finalAnswer: '\\(\\frac{x + 5}{3}\\)',
     }
   },
   {
@@ -99,7 +99,7 @@ export const questions: Question[] = [
           explanation: 'Combine the like terms on the top line.'
         }
       ],
-      finalAnswer: '\\(\\frac{7x}{12\\)',
+      finalAnswer: '\\(\\frac{7x}{12}\\)',
     }
   },
   {
@@ -127,7 +127,7 @@ export const questions: Question[] = [
           explanation: 'Combine the terms on the top line into a single expression.'
         }
       ],
-      finalAnswer: '\\(\\frac{5q - 2p{10pq\\)',
+      finalAnswer: '\\(\\frac{5q - 2p}{10pq}\\)',
     }
   },
   {
@@ -161,7 +161,7 @@ export const questions: Question[] = [
           explanation: 'Neaten the top line to get the final answer.'
         }
       ],
-      finalAnswer: '\\(\\frac{8y - 13{(y-1)(y-2)\\)',
+      finalAnswer: '\\(\\frac{8y - 13}{(y-1)(y-2)}\\)',
     }
   },
   {
@@ -195,7 +195,7 @@ export const questions: Question[] = [
           explanation: 'Combine the \\( r \\) terms and the number terms.'
         }
       ],
-      finalAnswer: '\\(\\frac{3r + 41{(r-5)(r+3)\\)',
+      finalAnswer: '\\(\\frac{3r + 41}{(r-5)(r+3)}\\)',
     }
   },
   {
@@ -229,7 +229,7 @@ export const questions: Question[] = [
           explanation: 'Divide the top and bottom by the shared bracket.'
         }
       ], // Added closing bracket for the array of steps
-      finalAnswer: '\\(\\frac{4(g-h)}{g\\)',
+      finalAnswer: '\\(\\frac{4(g-h)}{g}\\)',
     }
   },
   {
@@ -347,7 +347,7 @@ export const questions: Question[] = [
           explanation: '\\( q^1 \\div q^2 = q^{-1} \\), which places a single \\( q \\) in the denominator.'
         }
       ],
-      finalAnswer: '\\(\\frac{4p^2}{q\\)',
+      finalAnswer: '\\(\\frac{4p^2}{q}\\)',
     }
   },
   {
@@ -415,7 +415,7 @@ export const questions: Question[] = [
           explanation: 'Collect the like terms: \\( 3x + 2x = 5x \\).'
         }
       ],
-      finalAnswer: '\\(\\frac{5x}{6\\)',
+      finalAnswer: '\\(\\frac{5x}{6}\\)',
     }
   },
   {
@@ -483,7 +483,7 @@ export const questions: Question[] = [
           explanation: 'Divide both the top and bottom by 2 and cancel out the \\( x \\).'
         }
       ],
-      finalAnswer: '\\(\\frac{5}{6\\)',
+      finalAnswer: '\\(\\frac{5}{6}\\)',
     }
   },
   {
@@ -517,7 +517,7 @@ export const questions: Question[] = [
           explanation: '\\( \\frac{3}{6} \\) simplifies to \\( \\frac{1}{2} \\). \\( \\frac{a}{a^2} \\) leaves \\( a \\) on the bottom. \\( \\frac{b^2}{b} \\) leaves \\( b \\) on the top.'
         }
       ],
-      finalAnswer: '\\(\\frac{b}{2a\\)',
+      finalAnswer: '\\(\\frac{b}{2a}\\)',
     }
   },
   {
@@ -557,7 +557,7 @@ export const questions: Question[] = [
           explanation: '\\( 5x - 2x = 3x \\) and \\( -10 - 2 = -12 \\).'
         }
       ],
-      finalAnswer: '\\(\\frac{3x - 12{(x+1)(x-2)\\)',
+      finalAnswer: '\\(\\frac{3x - 12}{(x+1)(x-2)}\\)',
     }
   },
   {
@@ -591,7 +591,7 @@ export const questions: Question[] = [
           explanation: 'Divide the top and bottom by their shared bracket.'
         }
       ],
-      finalAnswer: '\\(\\frac{x + 3}{x + 4\\)',
+      finalAnswer: '\\(\\frac{x + 3}{x + 4}\\)',
     }
   },
   {
@@ -625,7 +625,7 @@ export const questions: Question[] = [
           explanation: 'Evaluate \\( 4 + 3 \\).'
         }
       ],
-      finalAnswer: '\\(\\frac{7}{2x\\)',
+      finalAnswer: '\\(\\frac{7}{2x}\\)',
     }
   },
   {
@@ -665,7 +665,7 @@ export const questions: Question[] = [
           explanation: 'Combine what is left after cancelling.'
         }
       ],
-      finalAnswer: '\\(\\frac{3}{x-2\\)',
+      finalAnswer: '\\(\\frac{3}{x-2}\\)',
     }
   },
   {
@@ -699,7 +699,7 @@ export const questions: Question[] = [
           explanation: 'Divide the top and bottom by \\( (x - 5) \\).'
         }
       ],
-      finalAnswer: '\\(-\\frac{1}{x + 5\\)',
+      finalAnswer: '\\(-\\frac{1}{x + 5}\\)',
     }
   },
   {
@@ -733,7 +733,7 @@ export const questions: Question[] = [
           explanation: '\\( 10x + 3x = 13x \\), and \\( -5 + 12 = 7 \\).'
         }
       ],
-      finalAnswer: '\\(\\frac{13x + 7}{15\\)',
+      finalAnswer: '\\(\\frac{13x + 7}{15}\\)',
     }
   },
   {
@@ -761,7 +761,7 @@ export const questions: Question[] = [
           explanation: 'Divide the 2 on the top and the 6 on the bottom by 2.'
         }
       ],
-      finalAnswer: '\\(\\frac{x+5}{3\\)',
+      finalAnswer: '\\(\\frac{x+5}{3}\\)',
     }
   },
   {
@@ -857,7 +857,7 @@ export const questions: Question[] = [
           explanation: '\\( 5y + 3y = 8y \\) and \\( -10 - 3 = -13 \\).'
         }
       ],
-      finalAnswer: '\\(\\frac{8y - 13{(y-1)(y-2)\\)',
+      finalAnswer: '\\(\\frac{8y - 13}{(y-1)(y-2)}\\)',
     }
   },
   {
@@ -897,7 +897,7 @@ export const questions: Question[] = [
           explanation: '\\( 7r - 4r = 3r \\) and \\( 21 + 20 = 41 \\).'
         }
       ],
-      finalAnswer: '\\(\\frac{3r + 41{(r-5)(r+3)\\)',
+      finalAnswer: '\\(\\frac{3r + 41}{(r-5)(r+3)}\\)',
     }
   },
   {
@@ -937,7 +937,7 @@ export const questions: Question[] = [
           explanation: '\\( z^2 - z^2 = 0 \\), \\( 5z - 5z = 0 \\), and \\( 4 - 6 = -2 \\).'
         }
       ],
-      finalAnswer: '\\(\\frac{-2{(z+2)(z+4)\\)',
+      finalAnswer: '\\(\\frac{-2}{(z+2)(z+4)}\\)',
     }
   },
   {
@@ -965,7 +965,7 @@ export const questions: Question[] = [
           explanation: 'Since the variables are different, you cannot collect the terms any further.'
         }
       ],
-      finalAnswer: '\\(\\frac{2r^2 + 13t{tr^2\\)',
+      finalAnswer: '\\(\\frac{2r^2 + 13t}{tr^2}\\)',
     }
   },
   {
@@ -1005,7 +1005,7 @@ export const questions: Question[] = [
           explanation: '\\( 8p - 1p = 7p \\).'
         }
       ],
-      finalAnswer: '\\(\\frac{7p - 24{p(p-3)\\)',
+      finalAnswer: '\\(\\frac{7p - 24}{p(p-3)}\\)',
     }
   },
   {
@@ -1033,7 +1033,7 @@ export const questions: Question[] = [
           explanation: 'Divide the \\( 10 \\) on the top and bottom to get 1. Dividing \\( z \\) by \\( z^2 \\) leaves a single \\( z \\) on the denominator.'
         }
       ],
-      finalAnswer: '\\(\\frac{y(1 - 4y^2 + 6yz^2)}{z\\)',
+      finalAnswer: '\\(\\frac{y(1 - 4y^2 + 6yz^2)}{z}\\)',
     }
   },
   {
@@ -1061,7 +1061,7 @@ export const questions: Question[] = [
           explanation: 'Dividing the numerator and denominator by \\( t \\) removes it entirely.'
         }
       ],
-      finalAnswer: '\\(\\frac{4s + 6s^2 + 9s^3}{2\\)',
+      finalAnswer: '\\(\\frac{4s + 6s^2 + 9s^3}{2}\\)',
     }
   },
   {
@@ -1101,7 +1101,7 @@ export const questions: Question[] = [
           explanation: '\\( q + 3q = 4q \\) and \\( -2 + 3 = 1 \\).'
         }
       ],
-      finalAnswer: '\\(\\frac{4q + 1{(q+1)(q-2)\\)',
+      finalAnswer: '\\(\\frac{4q + 1}{(q+1)(q-2)}\\)',
     }
   },
   {
@@ -1141,7 +1141,7 @@ export const questions: Question[] = [
           explanation: '\\( -xz + 2xz = xz \\).'
         }
       ],
-      finalAnswer: '\\(\\frac{x^2 + xz + 2z^2{(x+z)(x-z)\\)',
+      finalAnswer: '\\(\\frac{x^2 + xz + 2z^2}{(x+z)(x-z)}\\)',
     }
   },
   {
@@ -1169,7 +1169,7 @@ export const questions: Question[] = [
           explanation: 'Subtract the numerators. These are not like terms, so they cannot be simplified further.'
         }
       ],
-      finalAnswer: '\\(\\frac{5q - 2p{10pq\\)',
+      finalAnswer: '\\(\\frac{5q - 2p}{10pq}\\)',
     }
   },
   {
@@ -1203,7 +1203,7 @@ export const questions: Question[] = [
           explanation: 'Subtract the second numerator from the first.'
         }
       ],
-      finalAnswer: '\\(\\frac{2a^2 - 9b^2{a^3b^3\\)',
+      finalAnswer: '\\(\\frac{2a^2 - 9b^2}{a^3b^3}\\)',
     }
   },
   {
@@ -1243,7 +1243,7 @@ export const questions: Question[] = [
           explanation: '\\( w^2 + 6w^2 = 7w^2 \\) and \\( -7w - 12w = -19w \\).'
         }
       ],
-      finalAnswer: '\\(\\frac{7w^2 - 19w{2(w-2)(w-7)\\)',
+      finalAnswer: '\\(\\frac{7w^2 - 19w}{2(w-2)(w-7)}\\)',
     }
   },
   {
@@ -1271,7 +1271,7 @@ export const questions: Question[] = [
           explanation: 'Dividing 12 by 3 leaves 4 on the denominator. Dividing \\( c^2 \\) by \\( c \\) leaves \\( c \\), and the \\( d \\) is removed entirely.'
         }
       ],
-      finalAnswer: '\\(\\frac{4 - 2c + c^2d{4ce\\)',
+      finalAnswer: '\\(\\frac{4 - 2c + c^2d}{4ce}\\)',
     }
   },
   {
@@ -1305,7 +1305,7 @@ export const questions: Question[] = [
           explanation: 'Since these are not like terms, they cannot be simplified further.'
         }
       ],
-      finalAnswer: '\\(\\frac{2 - 3m^2 + n^3{mn\\)',
+      finalAnswer: '\\(\\frac{2 - 3m^2 + n^3}{mn}\\)',
     }
   },
   {
@@ -1345,7 +1345,7 @@ export const questions: Question[] = [
           explanation: '\\( 3y - 6y = -3y \\) and \\( -xy - 4xy = -5xy \\). You can also factorise out a \\( -y \\) on top to get \\( \\frac{-y(3+5x)}{(2x+3)(3-x)} \\).'
         }
       ],
-      finalAnswer: '\\(\\frac{-3y - 5xy{(2x+3)(3-x)\\)',
+      finalAnswer: '\\(\\frac{-3y - 5xy}{(2x+3)(3-x)}\\)',
     }
   },
   {
@@ -1379,7 +1379,7 @@ export const questions: Question[] = [
           explanation: 'Add the terms together. They are not like terms, so the expression is complete.'
         }
       ],
-      finalAnswer: '\\(\\frac{xy + 2x^3 + 4y{x^2y\\)',
+      finalAnswer: '\\(\\frac{xy + 2x^3 + 4y}{x^2y}\\)',
     }
   },
   {
@@ -1413,7 +1413,7 @@ export const questions: Question[] = [
           explanation: 'Add the numerators together.'
         }
       ],
-      finalAnswer: '\\(\\frac{a^2b^2 + b^2c^2 + c^2a^2{abc\\)',
+      finalAnswer: '\\(\\frac{a^2b^2 + b^2c^2 + c^2a^2}{abc}\\)',
     }
   },
   {
@@ -1447,7 +1447,7 @@ export const questions: Question[] = [
           explanation: 'Add and subtract the terms as written.'
         }
       ],
-      finalAnswer: '\\(\\frac{2a^3b + a^5 - 2b^2{a^3b\\)',
+      finalAnswer: '\\(\\frac{2a^3b + a^5 - 2b^2}{a^3b}\\)',
     }
   },
   {
@@ -1481,7 +1481,7 @@ export const questions: Question[] = [
           explanation: 'Divide the top and bottom by \\( x \\).'
         }
       ],
-      finalAnswer: '\\(\\frac{2 + xy - x}{x + 3\\)',
+      finalAnswer: '\\(\\frac{2 + xy - x}{x + 3}\\)',
     }
   },
   {
@@ -1509,7 +1509,7 @@ export const questions: Question[] = [
           explanation: 'Dividing 12 by 3 leaves 4 on the denominator. Dividing \\( c^2 \\) by \\( c \\) leaves a single \\( c \\), and the \\( d \\) cancels entirely. The \\( e \\) is unaffected.'
         }
       ],
-      finalAnswer: '\\(\\frac{4 - 2c + c^2d{4ce\\)',
+      finalAnswer: '\\(\\frac{4 - 2c + c^2d}{4ce}\\)',
     }
   },
   {
@@ -1517,8 +1517,8 @@ export const questions: Question[] = [
     topicRef: 'a3',
     topicTitle: 'Algebraic Fractions 46',
     difficulty: 'Foundation',
-    questionText: 'Simplify the following using the laws of indices: \\( (ab^2)^4 \\)',
-    marks: 2,
+    questionText: 'Simplify fully: \\( \\frac{x^2 - 9}{x^2 + 5x + 6} \\)',
+    marks: 3,
     examStyle: false,
     yearCreated: 2026,
     tags: [],
@@ -1526,18 +1526,12 @@ export const questions: Question[] = [
       steps: [
         {
           stepNumber: 1,
-          description: 'Apply the power outside the bracket to every individual term inside the bracket.',
-          workingLatex: 'a^4(b^2)^4',
-          explanation: 'Both the \\( a \\) and the \\( b^2 \\) must be raised to the power of 4.'
-        },
-        {
-          stepNumber: 2,
-          description: 'Use the rule \\( (a^m)^n = a^{mn} \\) to simplify the \\( b \\) term.',
-          workingLatex: 'a^4b^8',
-          explanation: 'Multiply the inner power by the outer power: \\( 2 \\times 4 = 8 \\).'
+          description: 'Factorise the numerator and denominator separately, then cancel.',
+          workingLatex: '\\begin{aligned} \\frac{x^2 - 9}{x^2 + 5x + 6} &= \\frac{(x-3)(x+3)}{(x+2)(x+3)} \\\\ &= \\frac{x-3}{x+2} \\end{aligned}',
+          explanation: 'The numerator is a difference of two squares. The denominator factorises as a quadratic. Cancel the common factor \\((x+3)\\).'
         }
       ],
-      finalAnswer: '\\(a^4b^8\\)',
+      finalAnswer: '\\(\\frac{x-3}{x+2}\\)',
     }
   },
   {
@@ -1565,7 +1559,7 @@ export const questions: Question[] = [
           explanation: 'Dividing the top and bottom by \\( a \\) simplifies the fraction.'
         }
       ],
-      finalAnswer: '\\(\\frac{x+y}{z\\)',
+      finalAnswer: '\\(\\frac{x+y}{z}\\)',
     }
   },
   {
@@ -1599,7 +1593,7 @@ export const questions: Question[] = [
           explanation: 'Collect the like terms: \\( 4x + 3x = 7x \\).'
         }
       ],
-      finalAnswer: '\\(\\frac{7x}{12\\)',
+      finalAnswer: '\\(\\frac{7x}{12}\\)',
     }
   },
   {
@@ -1667,7 +1661,7 @@ export const questions: Question[] = [
           explanation: '\\( 2x - x = x \\) and \\( -2 - 3 = -5 \\).'
         }
       ],
-      finalAnswer: '\\(\\frac{x - 5{(x+3)(x-1)\\)',
+      finalAnswer: '\\(\\frac{x - 5}{(x+3)(x-1)}\\)',
     }
   },
   {
@@ -1701,7 +1695,7 @@ export const questions: Question[] = [
           explanation: 'Combine the constants: \\( -6 + 2 = -4 \\).'
         }
       ],
-      finalAnswer: '\\(\\frac{3x - 4}{x-2\\)',
+      finalAnswer: '\\(\\frac{3x - 4}{x-2}\\)',
     }
   },
   {
@@ -1735,7 +1729,7 @@ export const questions: Question[] = [
           explanation: 'Divide the top and bottom by the shared bracket to leave the final simplified fraction.'
         }
       ],
-      finalAnswer: '\\(\\frac{x-4}{4\\)',
+      finalAnswer: '\\(\\frac{x-4}{4}\\)',
     }
   }
 ];

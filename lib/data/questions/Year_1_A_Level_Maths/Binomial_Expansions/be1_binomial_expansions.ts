@@ -22,13 +22,13 @@ export const questions: Question[] = [
             steps: [
                 {
                     stepNumber: 1,
-                    description: 'Step 1',
-                    explanation: 'Use the binomial theorem: \\( (1+x)^5 = \\sum_{r=0}^{5} \\binom{5}{r} x^r \\).',
+                    description: 'Apply the binomial theorem: \\((a+b)^n = \\sum_{r=0}^{n} \\binom{n}{r} a^{n-r} b^r\\).',
+                    explanation: 'With \\(a = 1\\), \\(b = x\\), \\(n = 5\\), this simplifies to \\((1+x)^5 = \\sum_{r=0}^{5} \\binom{5}{r} x^r\\).',
                     workingLatex: '(1+x)^5 = \\binom{5}{0} + \\binom{5}{1}x + \\binom{5}{2}x^2 + \\binom{5}{3}x^3 + \\binom{5}{4}x^4 + \\binom{5}{5}x^5'
                 },
                 {
                     stepNumber: 2,
-                    description: 'Step 2',
+                    description: 'Evaluate each term.',
                     explanation: 'Evaluate the binomial coefficients: \\(\\binom{5}{0}=1,\\ \\binom{5}{1}=5,\\ \\binom{5}{2}=10,\\ \\binom{5}{3}=10,\\ \\binom{5}{4}=5,\\ \\binom{5}{5}=1\\).',
                     workingLatex: '= 1 + 5x + 10x^2 + 10x^3 + 5x^4 + x^5'
                 }
@@ -51,24 +51,12 @@ export const questions: Question[] = [
             steps: [
                 {
                     stepNumber: 1,
-                    description: 'Step 1',
-                    explanation: 'Apply the binomial theorem with \\(a = x\\), \\(b = 3\\), \\(n = 4\\).',
-                    workingLatex: '(x+3)^4 = \\binom{4}{0}x^4 + \\binom{4}{1}x^3(3) + \\binom{4}{2}x^2(3)^2 + \\binom{4}{3}x(3)^3 + \\binom{4}{4}(3)^4'
-                },
-                {
-                    stepNumber: 2,
-                    description: 'Step 2',
-                    explanation: 'Evaluate coefficients: \\(\\binom{4}{0}=1,\\ \\binom{4}{1}=4,\\ \\binom{4}{2}=6,\\ \\binom{4}{3}=4,\\ \\binom{4}{4}=1\\) and powers of 3.',
-                    workingLatex: '= x^4 + 4(3)x^3 + 6(9)x^2 + 4(27)x + 81'
-                },
-                {
-                    stepNumber: 3,
-                    description: 'Step 3',
-                    explanation: 'Simplify each term.',
-                    workingLatex: '= x^4 + 12x^3 + 54x^2 + 108x + 81'
+                    description: 'Apply the binomial theorem.',
+                    explanation: 'The binomial theorem states \\((a+b)^n = \\sum_{r=0}^{n} \\binom{n}{r} a^{n-r} b^r\\). Here \\(a = x\\), \\(b = 3\\), \\(n = 4\\). Since the question asks for ascending powers of \\(x\\), write the terms starting from the constant.',
+                    workingLatex: '\\begin{aligned} (x+3)^4 &= \\binom{4}{0}(3)^4 + \\binom{4}{1}(3)^3 x + \\binom{4}{2}(3)^2 x^2 + \\binom{4}{3}(3) x^3 + \\binom{4}{4} x^4 \\\\ &= 81 + 4(27)x + 6(9)x^2 + 4(3)x^3 + x^4 \\\\ &= 81 + 108x + 54x^2 + 12x^3 + x^4 \\end{aligned}'
                 }
             ],
-            finalAnswer: 'x^4 + 12x^3 + 54x^2 + 108x + 81'
+            finalAnswer: '\\(81 + 108x + 54x^2 + 12x^3 + x^4\\)'
         }
     },
 
@@ -86,13 +74,13 @@ export const questions: Question[] = [
             steps: [
                 {
                     stepNumber: 1,
-                    description: 'Step 1',
+                    description: 'Apply the binomial theorem: \\((a+b)^n = \\sum_{r=0}^{n} \\binom{n}{r} a^{n-r} b^r\\).',
                     explanation: 'Write out the expansion with \\(a = 2\\), \\(b = x\\), \\(n = 4\\).',
                     workingLatex: '(2+x)^4 = \\binom{4}{0}(2)^4 + \\binom{4}{1}(2)^3 x + \\binom{4}{2}(2)^2 x^2 + \\binom{4}{3}(2)x^3 + \\binom{4}{4}x^4'
                 },
                 {
                     stepNumber: 2,
-                    description: 'Step 2',
+                    description: 'Evaluate each term.',
                     explanation: 'Compute each term: \\(1 \\times 16,\\ 4 \\times 8,\\ 6 \\times 4,\\ 4 \\times 2,\\ 1 \\times 1\\).',
                     workingLatex: '= 16 + 32x + 24x^2 + 8x^3 + x^4'
                 }
@@ -115,24 +103,12 @@ export const questions: Question[] = [
             steps: [
                 {
                     stepNumber: 1,
-                    description: 'Step 1',
-                    explanation: 'Use \\(a=1\\), \\(b=-2x\\), \\(n=5\\).',
-                    workingLatex: '(1-2x)^5 = \\binom{5}{0}(1)^5 + \\binom{5}{1}(1)^4(-2x) + \\binom{5}{2}(1)^3(-2x)^2 + \\binom{5}{3}(1)^2(-2x)^3 + \\binom{5}{4}(1)(-2x)^4 + \\binom{5}{5}(-2x)^5'
-                },
-                {
-                    stepNumber: 2,
-                    description: 'Step 2',
-                    explanation: 'Evaluate powers of \\(-2x\\): \\((-2x)^2 = 4x^2\\), \\((-2x)^3 = -8x^3\\), \\((-2x)^4 = 16x^4\\), \\((-2x)^5 = -32x^5\\).',
-                    workingLatex: '= 1 + 5(-2x) + 10(4x^2) + 10(-8x^3) + 5(16x^4) + (-32x^5)'
-                },
-                {
-                    stepNumber: 3,
-                    description: 'Step 3',
-                    explanation: 'Simplify.',
-                    workingLatex: '= 1 - 10x + 40x^2 - 80x^3 + 80x^4 - 32x^5'
+                    description: 'Apply the binomial theorem.',
+                    explanation: 'The binomial theorem: \\((a+b)^n = \\sum_{r=0}^{n} \\binom{n}{r} a^{n-r} b^r\\). Here \\(a = 1\\), \\(b = -2x\\), \\(n = 5\\). Be careful with the signs — each power of \\(-2x\\) alternates sign.',
+                    workingLatex: '\\begin{aligned} (1-2x)^5 &= \\binom{5}{0} + \\binom{5}{1}(-2x) + \\binom{5}{2}(-2x)^2 + \\binom{5}{3}(-2x)^3 + \\binom{5}{4}(-2x)^4 + \\binom{5}{5}(-2x)^5 \\\\ &= 1 + 5(-2x) + 10(4x^2) + 10(-8x^3) + 5(16x^4) + (-32x^5) \\\\ &= 1 - 10x + 40x^2 - 80x^3 + 80x^4 - 32x^5 \\end{aligned}'
                 }
             ],
-            finalAnswer: '1 - 10x + 40x^2 - 80x^3 + 80x^4 - 32x^5'
+            finalAnswer: '\\(1 - 10x + 40x^2 - 80x^3 + 80x^4 - 32x^5\\)'
         }
     },
 
@@ -150,18 +126,12 @@ export const questions: Question[] = [
             steps: [
                 {
                     stepNumber: 1,
-                    description: 'Step 1',
-                    explanation: 'Use \\(a = 3x\\), \\(b = -1\\), \\(n = 4\\).',
-                    workingLatex: '(3x-1)^4 = \\binom{4}{0}(3x)^4 + \\binom{4}{1}(3x)^3(-1) + \\binom{4}{2}(3x)^2(-1)^2 + \\binom{4}{3}(3x)(-1)^3 + \\binom{4}{4}(-1)^4'
-                },
-                {
-                    stepNumber: 2,
-                    description: 'Step 2',
-                    explanation: 'Compute each term: \\(81x^4\\), \\(4(27x^3)(-1)\\), \\(6(9x^2)(1)\\), \\(4(3x)(-1)\\), \\(1\\).',
-                    workingLatex: '= 81x^4 - 108x^3 + 54x^2 - 12x + 1'
+                    description: 'Apply the binomial theorem in ascending powers of \\(x\\).',
+                    explanation: 'The binomial theorem: \\((a+b)^n = \\sum_{r=0}^{n} \\binom{n}{r} a^{n-r} b^r\\). Here \\(a = -1\\), \\(b = 3x\\), \\(n = 4\\). Writing \\(b = 3x\\) as the ascending term ensures ascending powers of \\(x\\).',
+                    workingLatex: '\\begin{aligned} (3x-1)^4 &= \\binom{4}{0}(-1)^4 + \\binom{4}{1}(-1)^3(3x) + \\binom{4}{2}(-1)^2(3x)^2 + \\binom{4}{3}(-1)(3x)^3 + \\binom{4}{4}(3x)^4 \\\\ &= 1 - 4(3x) + 6(9x^2) - 4(27x^3) + 81x^4 \\\\ &= 1 - 12x + 54x^2 - 108x^3 + 81x^4 \\end{aligned}'
                 }
             ],
-            finalAnswer: '81x^4 - 108x^3 + 54x^2 - 12x + 1'
+            finalAnswer: '\\(1 - 12x + 54x^2 - 108x^3 + 81x^4\\)'
         }
     },
 
@@ -179,13 +149,13 @@ export const questions: Question[] = [
             steps: [
                 {
                     stepNumber: 1,
-                    description: 'Step 1',
+                    description: 'Apply the binomial theorem: \((a+b)^n = \sum_{r=0}^{n} \binom{n}{r} a^{n-r} b^r\).',
                     explanation: 'Apply the binomial theorem with \\(a = 2x\\), \\(b = y\\), \\(n = 3\\).',
                     workingLatex: '(2x+y)^3 = \\binom{3}{0}(2x)^3 + \\binom{3}{1}(2x)^2(y) + \\binom{3}{2}(2x)(y)^2 + \\binom{3}{3}(y)^3'
                 },
                 {
                     stepNumber: 2,
-                    description: 'Step 2',
+                    description: 'Evaluate each term.',
                     explanation: 'Evaluate: \\(1 \\times 8x^3 + 3 \\times 4x^2 y + 3 \\times 2xy^2 + 1 \\times y^3\\).',
                     workingLatex: '= 8x^3 + 12x^2 y + 6xy^2 + y^3'
                 }
@@ -208,19 +178,19 @@ export const questions: Question[] = [
             steps: [
                 {
                     stepNumber: 1,
-                    description: 'Step 1',
+                    description: 'Apply the binomial theorem: \\((a+b)^n = \\sum_{r=0}^{n} \\binom{n}{r} a^{n-r} b^r\\).',
                     explanation: 'Write the first four terms of the expansion with \\(b = 3x\\).',
                     workingLatex: '(1+3x)^6 \\approx \\binom{6}{0} + \\binom{6}{1}(3x) + \\binom{6}{2}(3x)^2 + \\binom{6}{3}(3x)^3'
                 },
                 {
                     stepNumber: 2,
-                    description: 'Step 2',
+                    description: 'Evaluate each term.',
                     explanation: 'Compute: \\(\\binom{6}{1}=6\\), \\(\\binom{6}{2}=15\\), \\(\\binom{6}{3}=20\\); and \\((3x)^2 = 9x^2\\), \\((3x)^3 = 27x^3\\).',
                     workingLatex: '= 1 + 6(3x) + 15(9x^2) + 20(27x^3)'
                 },
                 {
                     stepNumber: 3,
-                    description: 'Step 3',
+                    description: 'Simplify.',
                     explanation: 'Simplify.',
                     workingLatex: '= 1 + 18x + 135x^2 + 540x^3 + \\ldots'
                 }
@@ -245,13 +215,13 @@ export const questions: Question[] = [
             steps: [
                 {
                     stepNumber: 1,
-                    description: 'Step 1',
+                    description: 'Use the formula \\(\\binom{n}{r} = \\frac{n!}{r!(n-r)!}\\).',
                     explanation: 'Use the formula \\( \\binom{n}{r} = \\dfrac{n!}{r!(n-r)!} \\).',
                     workingLatex: '\\binom{7}{3} = \\frac{7!}{3! \\times 4!} = \\frac{7 \\times 6 \\times 5}{3 \\times 2 \\times 1}'
                 },
                 {
                     stepNumber: 2,
-                    description: 'Step 2',
+                    description: 'Simplify each term.',
                     explanation: 'Cancel and simplify.',
                     workingLatex: '= \\frac{210}{6} = 35'
                 }
@@ -274,13 +244,13 @@ export const questions: Question[] = [
             steps: [
                 {
                     stepNumber: 1,
-                    description: 'Step 1',
+                    description: 'Use the formula \\(\\binom{n}{r} = \\frac{n!}{r!(n-r)!}\\).',
                     explanation: 'Apply the formula.',
                     workingLatex: '\\binom{9}{2} = \\frac{9!}{2! \\times 7!} = \\frac{9 \\times 8}{2 \\times 1}'
                 },
                 {
                     stepNumber: 2,
-                    description: 'Step 2',
+                    description: 'Simplify.',
                     explanation: 'Simplify.',
                     workingLatex: '= \\frac{72}{2} = 36'
                 }
@@ -303,13 +273,13 @@ export const questions: Question[] = [
             steps: [
                 {
                     stepNumber: 1,
-                    description: 'Step 1',
+                    description: 'Use the formula \\(\\binom{n}{r} = \\frac{n!}{r!(n-r)!}\\).',
                     explanation: 'Apply the formula.',
                     workingLatex: '\\binom{10}{4} = \\frac{10 \\times 9 \\times 8 \\times 7}{4 \\times 3 \\times 2 \\times 1}'
                 },
                 {
                     stepNumber: 2,
-                    description: 'Step 2',
+                    description: 'Evaluate each term.',
                     explanation: 'Compute numerator and denominator.',
                     workingLatex: '= \\frac{5040}{24} = 210'
                 }
@@ -332,7 +302,7 @@ export const questions: Question[] = [
             steps: [
                 {
                     stepNumber: 1,
-                    description: 'Step 1',
+                    description: 'Use the formula \\(\\binom{n}{r} = \\frac{n!}{r!(n-r)!}\\).',
                     explanation: 'Use the symmetry property: \\( \\binom{8}{5} = \\binom{8}{3} \\).',
                     workingLatex: '\\binom{8}{3} = \\frac{8 \\times 7 \\times 6}{3 \\times 2 \\times 1} = \\frac{336}{6} = 56'
                 }
@@ -355,7 +325,7 @@ export const questions: Question[] = [
             steps: [
                 {
                     stepNumber: 1,
-                    description: 'Step 1',
+                    description: 'Use the formula \\(\\binom{n}{r} = \\frac{n!}{r!(n-r)!}\\).',
                     explanation: 'Apply the formula.',
                     workingLatex: '\\binom{12}{3} = \\frac{12 \\times 11 \\times 10}{3 \\times 2 \\times 1} = \\frac{1320}{6} = 220'
                 }
@@ -378,7 +348,7 @@ export const questions: Question[] = [
             steps: [
                 {
                     stepNumber: 1,
-                    description: 'Step 1',
+                    description: 'Use the formula \\(\\binom{n}{r} = \\frac{n!}{r!(n-r)!}\\).',
                     explanation: 'Substitute \\(n = 6\\) into the formula.',
                     workingLatex: '\\binom{6}{2} = \\frac{6 \\times 5}{2 \\times 1} = \\frac{30}{2} = 15'
                 }
@@ -401,13 +371,13 @@ export const questions: Question[] = [
             steps: [
                 {
                     stepNumber: 1,
-                    description: 'Step 1',
+                    description: 'Use the formula \\(\\binom{n}{r} = \\frac{n!}{r!(n-r)!}\\).',
                     explanation: 'Write out the formula.',
                     workingLatex: '\\binom{11}{4} = \\frac{11!}{4! \\times 7!} = \\frac{11 \\times 10 \\times 9 \\times 8}{4 \\times 3 \\times 2 \\times 1}'
                 },
                 {
                     stepNumber: 2,
-                    description: 'Step 2',
+                    description: 'Evaluate each term.',
                     explanation: 'Compute numerator: \\(11 \\times 10 = 110\\), \\(110 \\times 9 = 990\\), \\(990 \\times 8 = 7920\\). Denominator: \\(4! = 24\\).',
                     workingLatex: '\\binom{11}{4} = \\frac{7920}{24} = 330'
                 }
@@ -432,12 +402,12 @@ export const questions: Question[] = [
             steps: [
                 {
                     stepNumber: 1,
-                    description: 'Step 1',
-                    explanation: 'The general term is \\( \\binom{8}{r} x^r \\). For \\(x^3\\), set \\(r = 3\\).',
-                    workingLatex: '\\text{Coefficient} = \\binom{8}{3} = \\frac{8 \\times 7 \\times 6}{3!} = \\frac{336}{6} = 56'
+                    description: 'Use the binomial theorem to identify the general term.',
+                    explanation: 'By the binomial theorem, \\((1+x)^n = \\sum_{r=0}^{n} \\binom{n}{r} x^r\\). The general term is \\(\\binom{n}{r} x^r\\). To find the coefficient of \\(x^3\\), set \\(r = 3\\).',
+                    workingLatex: '\\text{Coefficient of } x^3 = \\binom{8}{3} = \\frac{8 \\times 7 \\times 6}{3!} = \\frac{336}{6} = 56'
                 }
             ],
-            finalAnswer: '56'
+            finalAnswer: '\\(56\\)'
         }
     },
 
@@ -455,13 +425,13 @@ export const questions: Question[] = [
             steps: [
                 {
                     stepNumber: 1,
-                    description: 'Step 1',
+                    description: 'The general term of \\((a+b)^n\\) is \\(\\binom{n}{r} a^{n-r} b^r\\). Identify the term with the required power.',
                     explanation: 'The general term is \\( \\binom{10}{r}(-x)^r = \\binom{10}{r}(-1)^r x^r \\). For \\(x^4\\), set \\(r = 4\\).',
                     workingLatex: '\\text{Term} = \\binom{10}{4}(-1)^4 x^4 = 210 \\times 1 \\times x^4'
                 },
                 {
                     stepNumber: 2,
-                    description: 'Step 2',
+                    description: 'Simplify each term.',
                     explanation: 'The coefficient is therefore \\(+210\\).',
                     workingLatex: '\\text{Coefficient of } x^4 = 210'
                 }
@@ -484,7 +454,7 @@ export const questions: Question[] = [
             steps: [
                 {
                     stepNumber: 1,
-                    description: 'Step 1',
+                    description: 'The general term of \\((a+b)^n\\) is \\(\\binom{n}{r} a^{n-r} b^r\\). Identify the term with the required power.',
                     explanation: 'General term: \\( \\binom{11}{r}(3x)^r \\). For \\(x^2\\), set \\(r = 2\\).',
                     workingLatex: '\\text{Term} = \\binom{11}{2}(3x)^2 = 55 \\times 9x^2 = 495x^2'
                 }
@@ -507,7 +477,7 @@ export const questions: Question[] = [
             steps: [
                 {
                     stepNumber: 1,
-                    description: 'Step 1',
+                    description: 'The general term of \\((a+b)^n\\) is \\(\\binom{n}{r} a^{n-r} b^r\\). Identify the term with the required power.',
                     explanation: 'General term: \\( \\binom{9}{r}(-2x)^r \\). For \\(x^3\\), set \\(r = 3\\).',
                     workingLatex: '\\text{Term} = \\binom{9}{3}(-2)^3 x^3 = 84 \\times (-8) x^3 = -672x^3'
                 }
@@ -530,7 +500,7 @@ export const questions: Question[] = [
             steps: [
                 {
                     stepNumber: 1,
-                    description: 'Step 1',
+                    description: 'The general term of \\((a+b)^n\\) is \\(\\binom{n}{r} a^{n-r} b^r\\). Identify the term with the required power.',
                     explanation: 'General term: \\( \\binom{6}{r}(2)^{6-r} x^r \\). For \\(x^2\\), set \\(r = 2\\).',
                     workingLatex: '\\text{Term} = \\binom{6}{2}(2)^4 x^2 = 15 \\times 16 \\times x^2 = 240x^2'
                 }
@@ -553,7 +523,7 @@ export const questions: Question[] = [
             steps: [
                 {
                     stepNumber: 1,
-                    description: 'Step 1',
+                    description: 'The general term of \\((a+b)^n\\) is \\(\\binom{n}{r} a^{n-r} b^r\\). Identify the term with the required power.',
                     explanation: 'General term: \\( \\binom{5}{r}(3)^{5-r}(2x)^r \\). For \\(x^3\\), set \\(r = 3\\).',
                     workingLatex: '\\text{Term} = \\binom{5}{3}(3)^2(2)^3 x^3 = 10 \\times 9 \\times 8 \\times x^3 = 720x^3'
                 }
@@ -576,7 +546,7 @@ export const questions: Question[] = [
             steps: [
                 {
                     stepNumber: 1,
-                    description: 'Step 1',
+                    description: 'The general term of \\((a+b)^n\\) is \\(\\binom{n}{r} a^{n-r} b^r\\). Identify the term with the required power.',
                     explanation: 'General term: \\( \\binom{7}{r} x^r \\). For \\(x^5\\), set \\(r = 5\\). Use symmetry: \\( \\binom{7}{5} = \\binom{7}{2} \\).',
                     workingLatex: '\\binom{7}{2} = \\frac{7 \\times 6}{2} = 21'
                 }
@@ -599,13 +569,13 @@ export const questions: Question[] = [
             steps: [
                 {
                     stepNumber: 1,
-                    description: 'Step 1',
+                    description: 'The general term of \\((a+b)^n\\) is \\(\\binom{n}{r} a^{n-r} b^r\\). Identify the term with the required power.',
                     explanation: 'The coefficient of \\(x^2\\) in \\((1+ax)^6\\) is \\( \\binom{6}{2} a^2 \\).',
                     workingLatex: '\\binom{6}{2} a^2 = 15a^2'
                 },
                 {
                     stepNumber: 2,
-                    description: 'Step 2',
+                    description: 'Set the power of \\(x\\) to zero.',
                     explanation: 'Set this equal to 60 and solve.',
                     workingLatex: '15a^2 = 60 \\implies a^2 = 4 \\implies a = \\pm 2'
                 }
@@ -630,24 +600,24 @@ export const questions: Question[] = [
             steps: [
                 {
                     stepNumber: 1,
-                    description: 'Step 1',
-                    explanation: 'The general term is \\( \\binom{6}{r}(x)^{6-r}\\left(-\\dfrac{1}{x}\\right)^r = \\binom{6}{r}(-1)^r x^{6-r} \\cdot x^{-r} = \\binom{6}{r}(-1)^r x^{6-2r} \\).',
-                    workingLatex: 'T_{r+1} = \\binom{6}{r}(-1)^r x^{6-2r}'
+                    description: 'Write the general term using the binomial theorem.',
+                    explanation: 'By the binomial theorem, \\((a+b)^n = \\sum_{r=0}^{n} \\binom{n}{r} a^{n-r} b^r\\). Here \\(a = x\\), \\(b = -\\frac{1}{x}\\), \\(n = 6\\). Combine the powers of \\(x\\) into a single exponent.',
+                    workingLatex: 'T_{r+1} = \\binom{6}{r}(x)^{6-r}\\left(-\\frac{1}{x}\\right)^r = \\binom{6}{r}(-1)^r x^{6-2r}'
                 },
                 {
                     stepNumber: 2,
-                    description: 'Step 2',
-                    explanation: 'For the term independent of \\(x\\), set the power of \\(x\\) to zero: \\(6 - 2r = 0 \\Rightarrow r = 3\\).',
-                    workingLatex: 'r = 3'
+                    description: 'Set the power of \\(x\\) to zero to find the term independent of \\(x\\).',
+                    explanation: 'The term independent of \\(x\\) is the term where the exponent of \\(x\\) equals zero.',
+                    workingLatex: '6 - 2r = 0 \\quad\\quad \\Rightarrow \\quad\\quad r = 3'
                 },
                 {
                     stepNumber: 3,
-                    description: 'Step 3',
-                    explanation: 'Substitute \\(r = 3\\):',
+                    description: 'Substitute \\(r = 3\\) into the general term.',
+                    explanation: '',
                     workingLatex: 'T_4 = \\binom{6}{3}(-1)^3 = 20 \\times (-1) = -20'
                 }
             ],
-            finalAnswer: '-20'
+            finalAnswer: '\\(-20\\)'
         }
     },
 
@@ -665,19 +635,19 @@ export const questions: Question[] = [
             steps: [
                 {
                     stepNumber: 1,
-                    description: 'Step 1',
+                    description: 'Write the general term using \\((a+b)^n = \\sum \\binom{n}{r} a^{n-r} b^r\\) and set the power of \\(x\\) to zero.',
                     explanation: 'General term: \\( \\binom{4}{r}(x)^{4-r}\\left(\\dfrac{2}{x}\\right)^r = \\binom{4}{r} 2^r x^{4-r} x^{-r} = \\binom{4}{r} 2^r x^{4-2r} \\).',
                     workingLatex: 'T_{r+1} = \\binom{4}{r} 2^r x^{4-2r}'
                 },
                 {
                     stepNumber: 2,
-                    description: 'Step 2',
+                    description: 'Set the power of \\(x\\) to zero.',
                     explanation: 'Set \\(4 - 2r = 0 \\Rightarrow r = 2\\).',
                     workingLatex: 'r = 2'
                 },
                 {
                     stepNumber: 3,
-                    description: 'Step 3',
+                    description: 'Substitute and evaluate.',
                     explanation: 'Substitute: \\(\\binom{4}{2} \\times 2^2 = 6 \\times 4 = 24\\).',
                     workingLatex: 'T_3 = 24'
                 }
@@ -700,19 +670,19 @@ export const questions: Question[] = [
             steps: [
                 {
                     stepNumber: 1,
-                    description: 'Step 1',
+                    description: 'Write the general term using \\((a+b)^n = \\sum \\binom{n}{r} a^{n-r} b^r\\) and set the power of \\(x\\) to zero.',
                     explanation: 'General term: \\( \\binom{6}{r}(2x)^{6-r}\\left(-\\dfrac{1}{x^2}\\right)^r = \\binom{6}{r} 2^{6-r}(-1)^r x^{6-r} \\cdot x^{-2r} \\).',
                     workingLatex: 'T_{r+1} = \\binom{6}{r} 2^{6-r}(-1)^r x^{6-3r}'
                 },
                 {
                     stepNumber: 2,
-                    description: 'Step 2',
+                    description: 'Find the required term.',
                     explanation: 'For independence from \\(x\\): \\(6 - 3r = 0 \\Rightarrow r = 2\\).',
                     workingLatex: 'r = 2'
                 },
                 {
                     stepNumber: 3,
-                    description: 'Step 3',
+                    description: 'Substitute and evaluate.',
                     explanation: 'Substitute: \\(\\binom{6}{2} \\times 2^4 \\times (-1)^2 = 15 \\times 16 \\times 1 = 240\\).',
                     workingLatex: 'T_3 = 240'
                 }
@@ -735,19 +705,19 @@ export const questions: Question[] = [
             steps: [
                 {
                     stepNumber: 1,
-                    description: 'Step 1',
+                    description: 'Write the general term using \\((a+b)^n = \\sum \\binom{n}{r} a^{n-r} b^r\\) and set the power of \\(x\\) to zero.',
                     explanation: 'General term: \\( \\binom{6}{r}(x^2)^{6-r}\\left(\\dfrac{1}{x}\\right)^r = \\binom{6}{r} x^{12-2r} \\cdot x^{-r} = \\binom{6}{r} x^{12-3r} \\).',
                     workingLatex: 'T_{r+1} = \\binom{6}{r} x^{12-3r}'
                 },
                 {
                     stepNumber: 2,
-                    description: 'Step 2',
+                    description: 'Set the power of \\(x\\) to zero.',
                     explanation: 'Set \\(12 - 3r = 0 \\Rightarrow r = 4\\).',
                     workingLatex: 'r = 4'
                 },
                 {
                     stepNumber: 3,
-                    description: 'Step 3',
+                    description: 'Substitute and evaluate.',
                     explanation: 'Substitute: \\(\\binom{6}{4} = \\binom{6}{2} = 15\\).',
                     workingLatex: 'T_5 = 15'
                 }
@@ -770,19 +740,19 @@ export const questions: Question[] = [
             steps: [
                 {
                     stepNumber: 1,
-                    description: 'Step 1',
+                    description: 'Write the general term using \\((a+b)^n = \\sum \\binom{n}{r} a^{n-r} b^r\\) and set the power of \\(x\\) to zero.',
                     explanation: 'General term: \\( \\binom{8}{r}(x)^{8-r}\\left(-\\dfrac{3}{x}\\right)^r = \\binom{8}{r}(-3)^r x^{8-2r} \\).',
                     workingLatex: 'T_{r+1} = \\binom{8}{r}(-3)^r x^{8-2r}'
                 },
                 {
                     stepNumber: 2,
-                    description: 'Step 2',
+                    description: 'Set the power of \\(x\\) to zero.',
                     explanation: 'Set \\(8 - 2r = 0 \\Rightarrow r = 4\\).',
                     workingLatex: 'r = 4'
                 },
                 {
                     stepNumber: 3,
-                    description: 'Step 3',
+                    description: 'Substitute and evaluate.',
                     explanation: 'Substitute: \\(\\binom{8}{4} \\times (-3)^4 = 70 \\times 81 = 5670\\).',
                     workingLatex: 'T_5 = 5670'
                 }
@@ -805,19 +775,19 @@ export const questions: Question[] = [
             steps: [
                 {
                     stepNumber: 1,
-                    description: 'Step 1',
+                    description: 'Write the general term using \\((a+b)^n = \\sum \\binom{n}{r} a^{n-r} b^r\\) and set the power of \\(x\\) to zero.',
                     explanation: 'General term: \\( \\binom{9}{r}(3x)^{9-r}\\left(\\dfrac{1}{x^2}\\right)^r = \\binom{9}{r} 3^{9-r} x^{9-r} x^{-2r} = \\binom{9}{r} 3^{9-r} x^{9-3r} \\).',
                     workingLatex: 'T_{r+1} = \\binom{9}{r} 3^{9-r} x^{9-3r}'
                 },
                 {
                     stepNumber: 2,
-                    description: 'Step 2',
+                    description: 'Set the power of \\(x\\) to zero.',
                     explanation: 'Set \\(9 - 3r = 0 \\Rightarrow r = 3\\).',
                     workingLatex: 'r = 3'
                 },
                 {
                     stepNumber: 3,
-                    description: 'Step 3',
+                    description: 'Substitute and evaluate.',
                     explanation: 'Substitute: \\(\\binom{9}{3} \\times 3^6 = 84 \\times 729 = 61236\\).',
                     workingLatex: 'T_4 = 61236'
                 }
@@ -846,19 +816,19 @@ export const questions: Question[] = [
             steps: [
                 {
                     stepNumber: 1,
-                    description: 'Step 1',
+                    description: 'Apply the binomial theorem: \\((a+b)^n = \\sum_{r=0}^{n} \\binom{n}{r} a^{n-r} b^r\\). Write the first few terms.',
                     explanation: '(a) The first three terms are:',
                     workingLatex: '(1+x)^{10} \\approx 1 + 10x + \\binom{10}{2}x^2 = 1 + 10x + 45x^2'
                 },
                 {
                     stepNumber: 2,
-                    description: 'Step 2',
+                    description: 'Simplify each term.',
                     explanation: '(b) Substitute \\(x = 0.01\\):',
                     workingLatex: '1 + 10(0.01) + 45(0.01)^2 = 1 + 0.1 + 45 \\times 0.0001 = 1 + 0.1 + 0.0045 = 1.1045'
                 },
                 {
                     stepNumber: 3,
-                    description: 'Step 3',
+                    description: 'Collect and simplify.',
                     explanation: '(c) Percentage error:',
                     workingLatex: '\\text{\\% error} = \\frac{|1.1045 - 1.10462|}{1.10462} \\times 100 = \\frac{0.00012}{1.10462} \\times 100 \\approx 0.011\\%'
                 }
@@ -883,19 +853,19 @@ export const questions: Question[] = [
             steps: [
                 {
                     stepNumber: 1,
-                    description: 'Step 1',
+                    description: 'Apply the binomial theorem: \\((a+b)^n = \\sum_{r=0}^{n} \\binom{n}{r} a^{n-r} b^r\\).',
                     explanation: '(a) Write out the first four terms with \\(a=2\\), \\(b=-x\\):',
                     workingLatex: '(2-x)^5 = \\binom{5}{0}2^5 + \\binom{5}{1}2^4(-x) + \\binom{5}{2}2^3(-x)^2 + \\binom{5}{3}2^2(-x)^3 + \\ldots'
                 },
                 {
                     stepNumber: 2,
-                    description: 'Step 2',
+                    description: 'Evaluate each term.',
                     explanation: 'Compute each term:',
                     workingLatex: '= 32 - 80x + 80x^2 - 40x^3 + \\ldots'
                 },
                 {
                     stepNumber: 3,
-                    description: 'Step 3',
+                    description: 'Collect and simplify.',
                     explanation: '(b) Substitute \\(x = 0.1\\):',
                     workingLatex: '1.9^5 \\approx 32 - 80(0.1) + 80(0.01) - 40(0.001) = 32 - 8 + 0.8 - 0.04 = 24.76'
                 }
@@ -920,19 +890,19 @@ export const questions: Question[] = [
             steps: [
                 {
                     stepNumber: 1,
-                    description: 'Step 1',
+                    description: 'Apply the binomial theorem: \\((a+b)^n = \\sum_{r=0}^{n} \\binom{n}{r} a^{n-r} b^r\\). Write the first few terms.',
                     explanation: '(a) The general term is \\(\\binom{7}{r}(-3x)^r\\). Write the first four terms:',
                     workingLatex: '(1-3x)^7 \\approx 1 - 21x + 189x^2 - 945x^3 + \\ldots'
                 },
                 {
                     stepNumber: 2,
-                    description: 'Step 2',
+                    description: 'Simplify each term.',
                     explanation: '(b) We need \\(0.97^7\\). Set \\(1 - 3x = 0.97 \\Rightarrow x = 0.01\\).',
                     workingLatex: '0.97^7 \\approx 1 - 21(0.01) + 189(0.0001) - 945(0.000001)'
                 },
                 {
                     stepNumber: 3,
-                    description: 'Step 3',
+                    description: 'Collect and simplify.',
                     explanation: 'Compute:',
                     workingLatex: '= 1 - 0.21 + 0.0189 - 0.000945 = 0.8080 \\text{ (to 4 d.p.)}'
                 }
@@ -959,25 +929,25 @@ export const questions: Question[] = [
             steps: [
                 {
                     stepNumber: 1,
-                    description: 'Step 1',
+                    description: 'Apply the binomial theorem: \\((a+b)^n = \\sum_{r=0}^{n} \\binom{n}{r} a^{n-r} b^r\\).',
                     explanation: '(a) Use \\(a=1\\), \\(b=2x\\), \\(n=5\\):',
                     workingLatex: '(1+2x)^5 = 1 + 10x + 40x^2 + 80x^3 + 80x^4 + 32x^5'
                 },
                 {
                     stepNumber: 2,
-                    description: 'Step 2',
+                    description: 'Simplify each term.',
                     explanation: '(b) Substitute \\(x = 0.01\\) (using all terms up to \\(x^3\\) for the estimate):',
                     workingLatex: '\\approx 1 + 10(0.01) + 40(0.0001) + 80(0.000001) = 1 + 0.1 + 0.004 + 0.00008 = 1.10408'
                 },
                 {
                     stepNumber: 3,
-                    description: 'Step 3',
+                    description: 'Collect and simplify.',
                     explanation: '(c) Percentage error:',
                     workingLatex: '\\text{\\% error} = \\frac{|1.10408 - 1.10408|}{1.10408} \\times 100 \\approx 0\\%'
                 },
                 {
                     stepNumber: 4,
-                    description: 'Step 4',
+                    description: 'Final simplification.',
                     explanation: 'In this case the approximation is very close (essentially exact to 5 s.f.) because the higher power terms are negligible.',
                     workingLatex: '\\text{Percentage error} < 0.001\\%'
                 }
@@ -1004,25 +974,25 @@ export const questions: Question[] = [
             steps: [
                 {
                     stepNumber: 1,
-                    description: 'Step 1',
+                    description: 'Use the formula \\(\\binom{n}{r} = \\frac{n!}{r!(n-r)!}\\).',
                     explanation: '(a) The first four terms are:',
                     workingLatex: '(1+x)^{12} \\approx 1 + 12x + 66x^2 + 220x^3 + \\ldots'
                 },
                 {
                     stepNumber: 2,
-                    description: 'Step 2',
+                    description: 'Simplify each term.',
                     explanation: '(b) Multiply \\((1 + x + x^2)\\) by \\((1 + 12x + 66x^2 + 220x^3 + \\ldots)\\). Collect terms up to \\(x^3\\):',
                     workingLatex: '1 \\times (1 + 12x + 66x^2 + 220x^3) + x \\times (1 + 12x + 66x^2) + x^2 \\times (1 + 12x)'
                 },
                 {
                     stepNumber: 3,
-                    description: 'Step 3',
+                    description: 'Collect and simplify.',
                     explanation: 'Combine like terms:',
                     workingLatex: '= (1) + (12 + 1)x + (66 + 12 + 1)x^2 + (220 + 66 + 12)x^3 + \\ldots'
                 },
                 {
                     stepNumber: 4,
-                    description: 'Step 4',
+                    description: 'Final simplification.',
                     explanation: 'Simplify:',
                     workingLatex: '= 1 + 13x + 79x^2 + 298x^3 + \\ldots'
                 }
@@ -1049,31 +1019,31 @@ export const questions: Question[] = [
             steps: [
                 {
                     stepNumber: 1,
-                    description: 'Step 1',
+                    description: 'Apply the binomial theorem: \\((a+b)^n = \\sum_{r=0}^{n} \\binom{n}{r} a^{n-r} b^r\\). Write the first few terms.',
                     explanation: '(a) General term: \\(\\binom{6}{r} 2^{6-r} x^r\\). First four terms (\\(r = 0, 1, 2, 3\\)):',
                     workingLatex: '(2+x)^6 = 64 + 6 \\times 32 x + 15 \\times 16 x^2 + 20 \\times 8 x^3 + \\ldots'
                 },
                 {
                     stepNumber: 2,
-                    description: 'Step 2',
+                    description: 'Simplify.',
                     explanation: 'Simplify:',
                     workingLatex: '= 64 + 192x + 240x^2 + 160x^3 + \\ldots'
                 },
                 {
                     stepNumber: 3,
-                    description: 'Step 3',
+                    description: 'Collect and simplify.',
                     explanation: '(b) This confirms the four-term approximation for small \\(x\\). ✓',
                     workingLatex: ''
                 },
                 {
                     stepNumber: 4,
-                    description: 'Step 4',
+                    description: 'Final simplification.',
                     explanation: '(c) Substitute \\(x = 0.1\\):',
                     workingLatex: '2.1^6 \\approx 64 + 192(0.1) + 240(0.01) + 160(0.001) = 64 + 19.2 + 2.4 + 0.16 = 85.76'
                 },
                 {
                     stepNumber: 5,
-                    description: 'Step 5',
+                    description: 'Final answer.',
                     explanation: 'Round to 3 significant figures:',
                     workingLatex: '2.1^6 \\approx 85.8'
                 }
@@ -1100,31 +1070,31 @@ export const questions: Question[] = [
             steps: [
                 {
                     stepNumber: 1,
-                    description: 'Step 1',
+                    description: 'Apply the binomial theorem: \\((a+b)^n = \\sum_{r=0}^{n} \\binom{n}{r} a^{n-r} b^r\\). Write the first few terms.',
                     explanation: '(a) Use \\(b = -x\\), \\(n = 8\\):',
                     workingLatex: '(1-x)^8 = 1 - 8x + 28x^2 - 56x^3 + \\ldots'
                 },
                 {
                     stepNumber: 2,
-                    description: 'Step 2',
+                    description: 'Simplify each term.',
                     explanation: '(b) Multiply \\((3 + x)\\) by \\((1 - 8x + 28x^2 - 56x^3 + \\ldots)\\):',
                     workingLatex: '3(1 - 8x + 28x^2 - 56x^3) + x(1 - 8x + 28x^2)'
                 },
                 {
                     stepNumber: 3,
-                    description: 'Step 3',
+                    description: 'Collect and simplify.',
                     explanation: 'Collect terms:',
                     workingLatex: '= 3 + (-24 + 1)x + (84 - 8)x^2 + (-168 + 28)x^3 + \\ldots'
                 },
                 {
                     stepNumber: 4,
-                    description: 'Step 4',
+                    description: 'Final simplification.',
                     explanation: 'Simplify:',
                     workingLatex: '= 3 - 23x + 76x^2 - 140x^3 + \\ldots'
                 },
                 {
                     stepNumber: 5,
-                    description: 'Step 5',
+                    description: 'Final answer.',
                     explanation: '(c) The coefficient of \\(x^2\\) is \\(76\\).',
                     workingLatex: '\\text{Coefficient of } x^2 = 76'
                 }
@@ -1754,5 +1724,144 @@ export const questions: Question[] = [
             ],
             finalAnswer: '84'
         }
+    },
+
+    // ─── CHALLENGE QUESTIONS (Q71–85) ─────────────────────────────────────────
+
+    {
+        id: 'be-071', topicRef: 'BE', topicTitle: 'Binomial Expansion 71', difficulty: 'Challenge',
+        questionText: 'In the expansion of \\( (1 + ax)^{10} \\), the coefficient of \\( x^2 \\) is twice the coefficient of \\( x \\). Find the value of \\( a \\).',
+        marks: 4, examStyle: true, yearCreated: 2026, tags: [],
+        workedSolution: { steps: [
+            { stepNumber: 1, description: 'Apply the binomial theorem: \\((1+ax)^{10} = \\sum_{r=0}^{10} \\binom{10}{r} (ax)^r\\).', explanation: 'The coefficient of \\(x\\) is \\(\\binom{10}{1}a = 10a\\). The coefficient of \\(x^2\\) is \\(\\binom{10}{2}a^2 = 45a^2\\).', workingLatex: '\\begin{aligned} \\text{Coeff of } x &= 10a \\\\ \\text{Coeff of } x^2 &= 45a^2 \\end{aligned}' },
+            { stepNumber: 2, description: 'Set up and solve the equation.', explanation: 'The coefficient of \\(x^2\\) is twice the coefficient of \\(x\\).', workingLatex: '\\begin{aligned} 45a^2 &= 2(10a) \\\\ 45a^2 &= 20a \\\\ 45a^2 - 20a &= 0 \\\\ 5a(9a - 4) &= 0 \\\\ a &= \\frac{4}{9} \\end{aligned}' },
+        ], finalAnswer: '\\(a = \\frac{4}{9}\\)', commonMistakes: ['\\(a = 0\\) is a trivial solution (all coefficients zero) so we discard it.'] }
+    },
+    {
+        id: 'be-072', topicRef: 'BE', topicTitle: 'Binomial Expansion 72', difficulty: 'Challenge',
+        questionText: 'Find the coefficient of \\( x^4 \\) in the expansion of \\( (1 + x)^5(1 - x)^5 \\).',
+        marks: 4, examStyle: true, yearCreated: 2026, tags: [],
+        workedSolution: { steps: [
+            { stepNumber: 1, description: 'Simplify the product first using the difference of two squares.', explanation: '\\((1+x)^5(1-x)^5 = [(1+x)(1-x)]^5 = (1-x^2)^5\\). This is much simpler than expanding each separately.', workingLatex: '(1+x)^5(1-x)^5 = (1-x^2)^5' },
+            { stepNumber: 2, description: 'Apply the binomial theorem: \\((1+u)^n = \\sum \\binom{n}{r} u^r\\) with \\(u = -x^2\\).', explanation: 'We need the coefficient of \\(x^4\\), which corresponds to \\((-x^2)^2\\), i.e. \\(r = 2\\).', workingLatex: '\\begin{aligned} \\text{Coeff of } x^4 &= \\binom{5}{2}(-1)^2 \\\\ &= 10 \\end{aligned}' },
+        ], finalAnswer: '\\(10\\)' }
+    },
+    {
+        id: 'be-073', topicRef: 'BE', topicTitle: 'Binomial Expansion 73', difficulty: 'Challenge',
+        questionText: 'The first three terms of \\( (1 + px)^n \\) are \\( 1 + 20x + 160x^2 \\). Find \\( p \\) and \\( n \\).',
+        marks: 5, examStyle: true, yearCreated: 2026, tags: [],
+        workedSolution: { steps: [
+            { stepNumber: 1, description: 'Apply the binomial theorem: \\((1+px)^n = 1 + npx + \\frac{n(n-1)}{2}p^2x^2 + \\ldots\\)', explanation: 'Match coefficients of \\(x\\) and \\(x^2\\) to form simultaneous equations.', workingLatex: '\\begin{aligned} np &= 20 \\quad \\cdots (1) \\\\ \\frac{n(n-1)}{2}p^2 &= 160 \\quad \\cdots (2) \\end{aligned}' },
+            { stepNumber: 2, description: 'Solve the simultaneous equations.', explanation: 'From (1): \\(p = \\frac{20}{n}\\). Substitute into (2).', workingLatex: '\\begin{aligned} \\frac{n(n-1)}{2} \\cdot \\frac{400}{n^2} &= 160 \\\\ \\frac{200(n-1)}{n} &= 160 \\\\ 200n - 200 &= 160n \\\\ 40n &= 200 \\\\ n &= 5,\\quad p = 4 \\end{aligned}' },
+        ], finalAnswer: '\\(n = 5\\), \\(p = 4\\)' }
+    },
+    {
+        id: 'be-074', topicRef: 'BE', topicTitle: 'Binomial Expansion 74', difficulty: 'Challenge',
+        questionText: 'Find the term independent of \\( x \\) in \\( \\left(2x^2 + \\dfrac{3}{x}\\right)^6 \\).',
+        marks: 5, examStyle: true, yearCreated: 2026, tags: [],
+        workedSolution: { steps: [
+            { stepNumber: 1, description: 'Write the general term using the binomial theorem: \\((a+b)^n = \\sum \\binom{n}{r} a^{n-r} b^r\\).', explanation: 'Here \\(a = 2x^2\\), \\(b = \\frac{3}{x}\\), \\(n = 6\\). Combine powers of \\(x\\).', workingLatex: 'T_{r+1} = \\binom{6}{r}(2x^2)^{6-r}\\left(\\frac{3}{x}\\right)^r = \\binom{6}{r} 2^{6-r} \\cdot 3^r \\cdot x^{12-2r-r} = \\binom{6}{r} 2^{6-r} 3^r x^{12-3r}' },
+            { stepNumber: 2, description: 'Set the power of \\(x\\) to zero.', explanation: '', workingLatex: '12 - 3r = 0 \\quad\\quad \\Rightarrow \\quad\\quad r = 4' },
+            { stepNumber: 3, description: 'Substitute \\(r = 4\\).', explanation: '', workingLatex: '\\begin{aligned} T_5 &= \\binom{6}{4} \\cdot 2^2 \\cdot 3^4 \\\\ &= 15 \\times 4 \\times 81 \\\\ &= 4860 \\end{aligned}' },
+        ], finalAnswer: '\\(4860\\)' }
+    },
+    {
+        id: 'be-075', topicRef: 'BE', topicTitle: 'Binomial Expansion 75', difficulty: 'Challenge',
+        questionText: 'Given that \\( (1 + kx)^8 = 1 + 12x + ax^2 + bx^3 + \\ldots \\), find the values of \\( k \\), \\( a \\) and \\( b \\).',
+        marks: 5, examStyle: true, yearCreated: 2026, tags: [],
+        workedSolution: { steps: [
+            { stepNumber: 1, description: 'Apply the binomial theorem: \\((1+kx)^8 = 1 + 8kx + \\binom{8}{2}k^2x^2 + \\binom{8}{3}k^3x^3 + \\ldots\\)', explanation: 'Match the coefficient of \\(x\\) to find \\(k\\).', workingLatex: '8k = 12 \\quad\\quad \\Rightarrow \\quad\\quad k = \\frac{3}{2}' },
+            { stepNumber: 2, description: 'Find \\(a\\) and \\(b\\).', explanation: 'Substitute \\(k = \\frac{3}{2}\\) into the coefficients of \\(x^2\\) and \\(x^3\\).', workingLatex: '\\begin{aligned} a &= \\binom{8}{2}\\left(\\frac{3}{2}\\right)^2 = 28 \\times \\frac{9}{4} = 63 \\\\ b &= \\binom{8}{3}\\left(\\frac{3}{2}\\right)^3 = 56 \\times \\frac{27}{8} = 189 \\end{aligned}' },
+        ], finalAnswer: '\\(k = \\frac{3}{2}\\), \\(a = 63\\), \\(b = 189\\)' }
+    },
+    {
+        id: 'be-076', topicRef: 'BE', topicTitle: 'Binomial Expansion 76', difficulty: 'Challenge',
+        questionText: 'Show that \\( (1 + \\sqrt{2})^4 + (1 - \\sqrt{2})^4 = 34 \\).',
+        marks: 5, examStyle: true, yearCreated: 2026, tags: [],
+        workedSolution: { steps: [
+            { stepNumber: 1, description: 'Expand both using the binomial theorem: \\((a+b)^4 = a^4 + 4a^3b + 6a^2b^2 + 4ab^3 + b^4\\).', explanation: 'When we add the two expansions, all odd-powered terms in \\(\\sqrt{2}\\) cancel.', workingLatex: '\\begin{aligned} (1+\\sqrt{2})^4 &= 1 + 4\\sqrt{2} + 6(2) + 4(2\\sqrt{2}) + 4 \\\\ &= 1 + 4\\sqrt{2} + 12 + 8\\sqrt{2} + 4 = 17 + 12\\sqrt{2} \\\\ (1-\\sqrt{2})^4 &= 1 - 4\\sqrt{2} + 12 - 8\\sqrt{2} + 4 = 17 - 12\\sqrt{2} \\end{aligned}' },
+            { stepNumber: 2, description: 'Add the two expansions.', explanation: 'The surd terms cancel.', workingLatex: '(17 + 12\\sqrt{2}) + (17 - 12\\sqrt{2}) = 34 \\quad \\checkmark' },
+        ], finalAnswer: '\\(34\\) (shown)' }
+    },
+    {
+        id: 'be-077', topicRef: 'BE', topicTitle: 'Binomial Expansion 77', difficulty: 'Challenge',
+        questionText: 'The coefficient of \\( x^3 \\) in \\( (2 + x)^5(1 - x)^3 \\) is to be found. Expand each bracket up to \\( x^3 \\) and multiply.',
+        marks: 6, examStyle: true, yearCreated: 2026, tags: [],
+        workedSolution: { steps: [
+            { stepNumber: 1, description: 'Expand \\((2+x)^5\\) up to \\(x^3\\) using \\((a+b)^n = \\sum \\binom{n}{r} a^{n-r} b^r\\).', explanation: '', workingLatex: '(2+x)^5 = 32 + 80x + 80x^2 + 40x^3 + \\ldots' },
+            { stepNumber: 2, description: 'Expand \\((1-x)^3\\) fully.', explanation: '', workingLatex: '(1-x)^3 = 1 - 3x + 3x^2 - x^3' },
+            { stepNumber: 3, description: 'Collect all products that give \\(x^3\\).', explanation: 'The \\(x^3\\) terms come from: \\(32 \\times (-x^3)\\), \\(80x \\times 3x^2\\), \\(80x^2 \\times (-3x)\\), \\(40x^3 \\times 1\\).', workingLatex: '\\begin{aligned} &32(-1) + 80(3) + 80(-3) + 40(1) \\\\ &= -32 + 240 - 240 + 40 = 8 \\end{aligned}' },
+        ], finalAnswer: '\\(8\\)' }
+    },
+    {
+        id: 'be-078', topicRef: 'BE', topicTitle: 'Binomial Expansion 78', difficulty: 'Challenge',
+        questionText: 'Find the value of \\( \\sum_{r=0}^{6} \\binom{6}{r} \\).',
+        marks: 3, examStyle: true, yearCreated: 2026, tags: [],
+        workedSolution: { steps: [
+            { stepNumber: 1, description: 'Use the binomial theorem: \\((1+x)^n = \\sum_{r=0}^{n} \\binom{n}{r} x^r\\).', explanation: 'Setting \\(x = 1\\) gives \\(\\sum_{r=0}^{n} \\binom{n}{r} = 2^n\\). This is because each element is either included or excluded from a subset.', workingLatex: '\\sum_{r=0}^{6} \\binom{6}{r} = (1+1)^6 = 2^6 = 64' },
+        ], finalAnswer: '\\(64\\)' }
+    },
+    {
+        id: 'be-079', topicRef: 'BE', topicTitle: 'Binomial Expansion 79', difficulty: 'Challenge',
+        questionText: 'In the expansion of \\( (1 + x)^n \\), the coefficients of \\( x^4 \\) and \\( x^5 \\) are equal. Find \\( n \\).',
+        marks: 4, examStyle: true, yearCreated: 2026, tags: [],
+        workedSolution: { steps: [
+            { stepNumber: 1, description: 'Apply the binomial theorem. The coefficients are \\(\\binom{n}{4}\\) and \\(\\binom{n}{5}\\).', explanation: 'Set them equal and use the formula \\(\\binom{n}{r} = \\frac{n!}{r!(n-r)!}\\).', workingLatex: '\\begin{aligned} \\binom{n}{4} &= \\binom{n}{5} \\\\ \\frac{n!}{4!(n-4)!} &= \\frac{n!}{5!(n-5)!} \\\\ \\frac{1}{(n-4)!} \\cdot \\frac{5!}{4!} &= \\frac{1}{(n-5)!} \\\\ 5 &= n - 4 \\\\ n &= 9 \\end{aligned}' },
+        ], finalAnswer: '\\(n = 9\\)' }
+    },
+    {
+        id: 'be-080', topicRef: 'BE', topicTitle: 'Binomial Expansion 80', difficulty: 'Challenge',
+        questionText: 'Find the coefficient of \\( x^2 \\) in \\( (1 + 2x)^5 - (1 - 2x)^5 \\).',
+        marks: 4, examStyle: true, yearCreated: 2026, tags: [],
+        workedSolution: { steps: [
+            { stepNumber: 1, description: 'Apply the binomial theorem to each expansion up to \\(x^2\\).', explanation: 'When subtracting \\((1+2x)^5 - (1-2x)^5\\), the even-powered terms cancel and odd-powered terms double.', workingLatex: '\\begin{aligned} (1+2x)^5 &= 1 + 10x + 40x^2 + \\ldots \\\\ (1-2x)^5 &= 1 - 10x + 40x^2 - \\ldots \\\\ \\text{Difference:} \\quad &20x + 0x^2 + \\ldots \\end{aligned}' },
+            { stepNumber: 2, description: 'The coefficient of \\(x^2\\) is zero.', explanation: 'The \\(x^2\\) terms are identical in both expansions (both \\(+40x^2\\)), so they cancel when subtracted.', workingLatex: '\\text{Coefficient of } x^2 = 40 - 40 = 0' },
+        ], finalAnswer: '\\(0\\)' }
+    },
+    {
+        id: 'be-081', topicRef: 'BE', topicTitle: 'Binomial Expansion 81', difficulty: 'Challenge',
+        questionText: 'The constant term in the expansion of \\( \\left(x^2 - \\dfrac{k}{x}\\right)^9 \\) is \\( 672 \\). Find the possible values of \\( k \\).',
+        marks: 5, examStyle: true, yearCreated: 2026, tags: [],
+        workedSolution: { steps: [
+            { stepNumber: 1, description: 'Write the general term using the binomial theorem.', explanation: 'Here \\(a = x^2\\), \\(b = -\\frac{k}{x}\\), \\(n = 9\\).', workingLatex: 'T_{r+1} = \\binom{9}{r}(x^2)^{9-r}\\left(-\\frac{k}{x}\\right)^r = \\binom{9}{r}(-k)^r x^{18-2r-r} = \\binom{9}{r}(-k)^r x^{18-3r}' },
+            { stepNumber: 2, description: 'Set the power of \\(x\\) to zero for the constant term.', explanation: '', workingLatex: '18 - 3r = 0 \\quad\\quad \\Rightarrow \\quad\\quad r = 6' },
+            { stepNumber: 3, description: 'Substitute \\(r = 6\\) and set equal to 672.', explanation: '', workingLatex: '\\begin{aligned} \\binom{9}{6}(-k)^6 &= 672 \\\\ 84k^6 &= 672 \\\\ k^6 &= 8 \\\\ k &= \\sqrt[6]{8} = \\sqrt{2} \\end{aligned}' },
+        ], finalAnswer: '\\(k = \\sqrt{2}\\) or \\(k = -\\sqrt{2}\\)', commonMistakes: ['Since \\((-k)^6 = k^6\\), both positive and negative values of \\(k\\) give the same constant term.'] }
+    },
+    {
+        id: 'be-082', topicRef: 'BE', topicTitle: 'Binomial Expansion 82', difficulty: 'Challenge',
+        questionText: 'Use the binomial expansion to show that \\( (1+x)^n + (1-x)^n = 2\\left[1 + \\binom{n}{2}x^2 + \\binom{n}{4}x^4 + \\ldots\\right] \\).',
+        marks: 4, examStyle: true, yearCreated: 2026, tags: [],
+        workedSolution: { steps: [
+            { stepNumber: 1, description: 'Expand both using the binomial theorem: \\((1+x)^n = \\sum_{r=0}^{n} \\binom{n}{r} x^r\\).', explanation: 'In \\((1-x)^n\\), the sign of each term alternates: \\(\\binom{n}{r}(-x)^r = (-1)^r \\binom{n}{r} x^r\\).', workingLatex: '\\begin{aligned} (1+x)^n &= \\binom{n}{0} + \\binom{n}{1}x + \\binom{n}{2}x^2 + \\binom{n}{3}x^3 + \\ldots \\\\ (1-x)^n &= \\binom{n}{0} - \\binom{n}{1}x + \\binom{n}{2}x^2 - \\binom{n}{3}x^3 + \\ldots \\end{aligned}' },
+            { stepNumber: 2, description: 'Add the two expansions.', explanation: 'The odd-powered terms have opposite signs and cancel. The even-powered terms are identical and double.', workingLatex: '(1+x)^n + (1-x)^n = 2\\left[1 + \\binom{n}{2}x^2 + \\binom{n}{4}x^4 + \\ldots\\right] \\quad \\checkmark' },
+        ], finalAnswer: 'Shown' }
+    },
+    {
+        id: 'be-083', topicRef: 'BE', topicTitle: 'Binomial Expansion 83', difficulty: 'Challenge',
+        questionText: 'Find the coefficient of \\( x^6 \\) in \\( (1 + x + x^2)^5 \\).',
+        marks: 6, examStyle: true, yearCreated: 2026, tags: [],
+        workedSolution: { steps: [
+            { stepNumber: 1, description: 'Write \\((1 + x + x^2)^5 = [(1+x) + x^2]^5\\) and apply the binomial theorem.', explanation: 'Let \\(a = 1+x\\), \\(b = x^2\\). Then \\((a+b)^5 = \\sum_{r=0}^{5} \\binom{5}{r} (1+x)^{5-r} (x^2)^r\\).', workingLatex: '= \\sum_{r=0}^{5} \\binom{5}{r} (1+x)^{5-r} x^{2r}' },
+            { stepNumber: 2, description: 'For \\(x^6\\), we need \\(2r + k = 6\\) where \\(k\\) is the power from \\((1+x)^{5-r}\\).', explanation: 'Check each valid \\(r\\):', workingLatex: '\\begin{aligned} r=0:& \\quad k=6,\\; \\text{but } (1+x)^5 \\text{ max power is 5. Skip.} \\\\ r=1:& \\quad k=4,\\; \\binom{5}{1}\\binom{4}{4} = 5 \\\\ r=2:& \\quad k=2,\\; \\binom{5}{2}\\binom{3}{2} = 10 \\times 3 = 30 \\\\ r=3:& \\quad k=0,\\; \\binom{5}{3}\\binom{2}{0} = 10 \\end{aligned}' },
+            { stepNumber: 3, description: 'Sum the contributions.', explanation: '', workingLatex: '5 + 30 + 10 = 45' },
+        ], finalAnswer: '\\(45\\)' }
+    },
+    {
+        id: 'be-084', topicRef: 'BE', topicTitle: 'Binomial Expansion 84', difficulty: 'Challenge',
+        questionText: 'The ratio of the coefficient of \\( x^3 \\) to the coefficient of \\( x^4 \\) in \\( (1 + 2x)^n \\) is \\( 2:3 \\). Find \\( n \\).',
+        marks: 5, examStyle: true, yearCreated: 2026, tags: [],
+        workedSolution: { steps: [
+            { stepNumber: 1, description: 'Apply the binomial theorem: the general term is \\(\\binom{n}{r}(2x)^r\\).', explanation: 'The coefficients of \\(x^3\\) and \\(x^4\\) are \\(\\binom{n}{3} \\cdot 8\\) and \\(\\binom{n}{4} \\cdot 16\\).', workingLatex: '\\begin{aligned} \\text{Coeff of } x^3 &= 8\\binom{n}{3} \\\\ \\text{Coeff of } x^4 &= 16\\binom{n}{4} \\end{aligned}' },
+            { stepNumber: 2, description: 'Set up the ratio and solve.', explanation: 'Use \\(\\binom{n}{4} = \\frac{n-3}{4} \\binom{n}{3}\\).', workingLatex: '\\begin{aligned} \\frac{8\\binom{n}{3}}{16\\binom{n}{4}} &= \\frac{2}{3} \\\\ \\frac{8}{16} \\cdot \\frac{4}{n-3} &= \\frac{2}{3} \\\\ \\frac{2}{n-3} &= \\frac{2}{3} \\\\ n - 3 &= 3 \\\\ n &= 6 \\end{aligned}' },
+        ], finalAnswer: '\\(n = 6\\)' }
+    },
+    {
+        id: 'be-085', topicRef: 'BE', topicTitle: 'Binomial Expansion 85', difficulty: 'Challenge',
+        questionText: 'Use the expansion of \\( (1 + x)^{10} \\) with a suitable value of \\( x \\) to find \\( \\sum_{r=0}^{10} (-1)^r \\binom{10}{r} 3^r \\).',
+        marks: 4, examStyle: true, yearCreated: 2026, tags: [],
+        workedSolution: { steps: [
+            { stepNumber: 1, description: 'Recognise the sum as a binomial expansion.', explanation: 'By the binomial theorem, \\((1+x)^{10} = \\sum_{r=0}^{10} \\binom{10}{r} x^r\\). The given sum has \\((-1)^r \\cdot 3^r = (-3)^r\\), so set \\(x = -3\\).', workingLatex: '\\begin{aligned} \\sum_{r=0}^{10} (-1)^r \\binom{10}{r} 3^r &= \\sum_{r=0}^{10} \\binom{10}{r} (-3)^r \\\\ &= (1 + (-3))^{10} \\\\ &= (-2)^{10} = 1024 \\end{aligned}' },
+        ], finalAnswer: '\\(1024\\)' }
     },
 ];

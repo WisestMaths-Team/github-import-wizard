@@ -17,7 +17,7 @@ export function WorkedSolutionPanel({ solution }: { solution: WS }) {
           {idx < solution.steps.length - 1 && (
             <div className="absolute left-[15px] top-[34px] bottom-[-20px] w-[2px] bg-accent/15" />
           )}
-          <span className="relative z-10 flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-accent to-secondary text-xs font-bold text-primary shadow-glow-sm">
+          <span className="relative z-10 flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-accent to-secondary text-xs font-bold text-white shadow-glow-sm">
             {s.stepNumber}
           </span>
           <div className="min-w-0 flex-1 pb-1">
@@ -27,7 +27,7 @@ export function WorkedSolutionPanel({ solution }: { solution: WS }) {
               </p>
             )}
             {s.workingLatex && (
-              <div className="my-2.5 overflow-x-auto rounded-lg border border-white/10 bg-white/[0.03] px-4 py-3 katex-left">
+              <div className="my-2.5 overflow-x-auto rounded-lg border border-black/10 bg-black/[0.03] px-4 py-3 katex-left">
                 <BlockMath math={s.workingLatex} />
               </div>
             )}
@@ -58,15 +58,15 @@ export function WorkedSolutionPanel({ solution }: { solution: WS }) {
       </div>
 
       {solution.commonMistakes && solution.commonMistakes.length > 0 && (
-        <div className="rounded-xl border border-amber-400/25 bg-amber-400/[0.05] p-5">
-          <p className="mb-2.5 text-[11px] font-bold uppercase tracking-[0.22em] text-amber-300">
+        <div className="rounded-xl border border-amber-300/40 bg-amber-50 p-5">
+          <p className="mb-2.5 text-[11px] font-bold uppercase tracking-[0.22em] text-amber-700">
             Common Mistakes
           </p>
           <ul className="space-y-2">
             {solution.commonMistakes.map((m, i) => (
-              <li key={i} className="flex gap-2.5 text-sm text-amber-100/85 leading-relaxed">
-                <span className="mt-0.5 shrink-0 text-amber-300">&#x26A0;</span>
-                {m}
+              <li key={i} className="flex gap-2.5 text-sm text-amber-900/80 leading-relaxed">
+                <span className="mt-0.5 shrink-0 text-amber-600">&#x26A0;</span>
+                <span><MathText text={m} /></span>
               </li>
             ))}
           </ul>
@@ -122,16 +122,16 @@ export function WorkedSolution({ solution }: { solution: WS }) {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="mt-3 overflow-hidden rounded-lg border border-white/10 bg-surface/50">
+    <div className="mt-3 overflow-hidden rounded-lg border border-black/10 bg-white/80">
       <button
         onClick={() => setOpen(!open)}
-        className="flex w-full items-center justify-between px-4 py-3 text-sm font-semibold text-foreground hover:bg-white/[0.03] transition-colors"
+        className="flex w-full items-center justify-between px-4 py-3 text-sm font-semibold text-foreground hover:bg-black/[0.03] transition-colors"
       >
         Worked Solution
         <span className="text-foreground/50">{open ? "\u2212" : "+"}</span>
       </button>
       {open && (
-        <div className="border-t border-white/5 px-4 py-4">
+        <div className="border-t border-black/5 px-4 py-4">
           <WorkedSolutionPanel solution={solution} />
         </div>
       )}

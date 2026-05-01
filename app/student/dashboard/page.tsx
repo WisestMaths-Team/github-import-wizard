@@ -39,9 +39,9 @@ export default function StudentDashboard() {
   return (
     <div className="mx-auto max-w-6xl">
       {/* Welcome banner */}
-      <div className="rounded-xl bg-gradient-to-br from-primary via-primary to-primary/80 p-7 text-white shadow-lg">
+      <div className="rounded-xl bg-gradient-to-br from-accent via-accent to-accent/80 p-7 text-white shadow-lg">
         <h1 className="text-2xl font-bold">Welcome back, Student!</h1>
-        <p className="mt-1 text-sm text-white/65">
+        <p className="mt-1 text-sm text-white/75">
           {completedCount > 0
             ? `You've completed ${completedCount} topic${completedCount !== 1 ? "s" : ""} so far. Keep going!`
             : "Start watching videos and track your progress across every topic."}

@@ -17,7 +17,7 @@ const courses: {
     id: "a-level-maths",
     title: "A-Level Maths",
     description:
-      "OCR B (MEI) — Pure Maths, Statistics, and Mechanics.",
+      "Pure Maths, Statistics, and Mechanics.",
     icon: "\u222B",
     available: true,
   },
@@ -25,7 +25,7 @@ const courses: {
     id: "a-level-further-maths",
     title: "A-Level Further Maths",
     description:
-      "OCR B (MEI) — Further Pure, Further Mechanics, and more.",
+      "Further Pure, Further Mechanics, and more.",
     icon: "\u2211",
     available: true,
   },
@@ -36,9 +36,7 @@ export default function CourseSelectionPage() {
   const { course, selectCourse, loading: courseLoading } = useCourse();
   const router = useRouter();
 
-  useEffect(() => {
-    if (!authLoading && !user) router.replace("/login");
-  }, [user, authLoading, router]);
+  // Auth handled by courses layout RouteGuard
 
   if (authLoading || courseLoading) {
     return (
@@ -55,7 +53,7 @@ export default function CourseSelectionPage() {
       </div>
 
       <div className="w-full max-w-3xl text-center">
-        <div className="fade-up mb-3 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.03] px-3.5 py-1.5 text-xs font-medium text-foreground/70 backdrop-blur">
+        <div className="fade-up mb-3 inline-flex items-center gap-2 rounded-full border border-black/10 bg-white/60 px-3.5 py-1.5 text-xs font-medium text-foreground/70 backdrop-blur">
           <span className="flex h-1.5 w-1.5 rounded-full bg-secondary animate-glow-pulse" />
           Select your specification
         </div>
@@ -76,7 +74,7 @@ export default function CourseSelectionPage() {
                 router.push(`/courses/${c.id}`);
               }}
               disabled={!c.available}
-              className={`card-glow group relative overflow-hidden rounded-2xl border border-white/10 bg-surface p-7 text-left transition-all ${
+              className={`card-glow group relative overflow-hidden rounded-2xl border border-black/10 bg-white p-7 text-left transition-all ${
                 c.available
                   ? "cursor-pointer hover:border-accent/40"
                   : "opacity-50 cursor-not-allowed"
@@ -86,7 +84,7 @@ export default function CourseSelectionPage() {
               {/* subtle corner gradient */}
               <div className="pointer-events-none absolute -top-16 -right-16 h-40 w-40 rounded-full bg-accent/10 blur-3xl transition-opacity group-hover:bg-accent/20" />
 
-              <div className="relative flex h-14 w-14 items-center justify-center rounded-xl bg-gradient-to-br from-accent/20 to-secondary/20 text-2xl font-bold text-foreground shadow-inner-glow ring-1 ring-white/10">
+              <div className="relative flex h-14 w-14 items-center justify-center rounded-xl bg-gradient-to-br from-accent/20 to-secondary/20 text-2xl font-bold text-foreground shadow-inner-glow ring-1 ring-black/10">
                 {c.icon}
               </div>
               <h2 className="relative mt-5 text-lg font-bold text-foreground">
@@ -96,7 +94,7 @@ export default function CourseSelectionPage() {
                 {c.description}
               </p>
               {!c.available ? (
-                <span className="relative mt-4 inline-flex items-center gap-1.5 rounded-full border border-white/10 bg-white/[0.03] px-2.5 py-1 text-[11px] font-medium text-foreground/60">
+                <span className="relative mt-4 inline-flex items-center gap-1.5 rounded-full border border-black/10 bg-black/[0.03] px-2.5 py-1 text-[11px] font-medium text-foreground/60">
                   <span className="h-1 w-1 rounded-full bg-foreground/40" />
                   Coming Soon
                 </span>

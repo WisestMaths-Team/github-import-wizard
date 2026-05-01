@@ -7,9 +7,9 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "MathsApp | A-Level Maths Revision",
+  title: "Wisest Maths | A-Level Maths Revision",
   description:
-    "A-Level Maths and Further Maths revision for the OCR B (MEI) specification. Video lessons, question bank, and AI-powered assessment.",
+    "A-Level Maths and Further Maths revision. Video lessons, question bank, and AI-powered assessment.",
   icons: { icon: "/favicon.svg" },
 };
 
@@ -27,7 +27,7 @@ export default function RootLayout({
           href="https://tikzjax.com/v1/fonts.css"
         />
       </head>
-      <body className={`${inter.className} bg-primary`}>
+      <body className={`${inter.className} bg-background`}>
         <ClientProviders>{children}</ClientProviders>
       </body>
     </html>

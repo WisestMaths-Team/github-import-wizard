@@ -68,7 +68,7 @@ export default function TopicsPage() {
     <div className="mx-auto max-w-5xl">
       <h1 className="text-2xl font-bold text-foreground">Topics</h1>
       <p className="mt-1 text-sm text-muted-foreground">
-        All {topics.length} OCR B (MEI) topics &mdash; search, filter, and explore.
+        All {topics.length} topics &mdash; search, filter, and explore.
       </p>
 
       {/* Search */}

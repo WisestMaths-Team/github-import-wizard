@@ -20,7 +20,7 @@ export function AppSidebar({ links, title = "Menu", extra }: SidebarProps) {
   const pathname = usePathname();
 
   return (
-    <aside className="sticky top-16 hidden h-[calc(100vh-4rem)] w-60 shrink-0 border-r border-white/5 bg-surface/50 backdrop-blur-sm lg:block">
+    <aside className="sticky top-16 hidden h-[calc(100vh-4rem)] w-60 shrink-0 border-r border-black/5 bg-white/80 backdrop-blur-sm lg:block">
       <div className="flex h-full flex-col p-5">
         <h2 className="mb-4 text-[10px] font-semibold uppercase tracking-[0.2em] text-foreground/40">
           {title}
@@ -37,7 +37,7 @@ export function AppSidebar({ links, title = "Menu", extra }: SidebarProps) {
                   "group relative flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm font-medium transition-all",
                   active
                     ? "bg-gradient-to-r from-accent/15 to-transparent text-foreground"
-                    : "text-foreground/60 hover:bg-white/[0.03] hover:text-foreground",
+                    : "text-foreground/60 hover:bg-black/[0.03] hover:text-foreground",
                 )}
               >
                 {active && (
@@ -55,14 +55,14 @@ export function AppSidebar({ links, title = "Menu", extra }: SidebarProps) {
           })}
         </nav>
 
-        {extra && <div className="mt-auto pt-4 border-t border-white/5">{extra}</div>}
+        {extra && <div className="mt-auto pt-4 border-t border-black/5">{extra}</div>}
 
-        <div className={cn("pt-4 border-t border-white/5", !extra && "mt-auto")}>
+        <div className={cn("pt-4 border-t border-black/5", !extra && "mt-auto")}>
           <Link
             href="/student/topics"
-            className="flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm font-medium text-foreground/50 hover:bg-white/[0.03] hover:text-foreground transition-colors"
+            className="flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm font-medium text-foreground/50 hover:bg-black/[0.03] hover:text-foreground transition-colors"
           >
-            <span className="flex h-5 w-5 items-center justify-center rounded-full border border-white/15 text-[11px]">?</span>
+            <span className="flex h-5 w-5 items-center justify-center rounded-full border border-black/15 text-[11px]">?</span>
             Need help?
           </Link>
         </div>

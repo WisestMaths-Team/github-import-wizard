@@ -30,7 +30,7 @@ export const questions: Question[] = [
         marks: 2,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['straight line', 'gradient', 'y-intercept', 'y = mx + c'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -40,7 +40,7 @@ export const questions: Question[] = [
                     explanation: 'The coefficient of \\( x \\) is the gradient; the constant is the \\( y \\)-intercept.'
                 }
             ],
-            finalAnswer: 'Gradient  = 3 ,  y -intercept  = (0, -7) '
+            finalAnswer: 'Gradient = \\(3\\), y-intercept = \\((0, -7)\\)'
         }
     },
 
@@ -53,7 +53,7 @@ export const questions: Question[] = [
         marks: 2,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['straight line', 'gradient', 'y-intercept', 'y = mx + c'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -63,7 +63,7 @@ export const questions: Question[] = [
                     explanation: 'The gradient is the coefficient of \\( x \\), which is negative here.'
                 }
             ],
-            finalAnswer: 'Gradient  = -2 ,  y -intercept  = (0, 5) '
+            finalAnswer: 'Gradient = \\(-2\\), y-intercept = \\((0, 5)\\)'
         }
     },
 
@@ -76,7 +76,7 @@ export const questions: Question[] = [
         marks: 2,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['straight line', 'gradient', 'y-intercept', 'fractional gradient'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -86,7 +86,7 @@ export const questions: Question[] = [
                     explanation: 'The gradient is the fraction \\( \\frac{1}{3} \\) and the \\( y \\)-intercept is 4.'
                 }
             ],
-            finalAnswer: 'Gradient  = \\dfrac{1}{3} ,  y -intercept  = (0, 4) '
+            finalAnswer: 'Gradient = \\(\\dfrac{1}{3}\\), y-intercept = \\((0, 4)\\)'
         }
     },
 
@@ -101,7 +101,7 @@ export const questions: Question[] = [
         marks: 2,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['straight line', 'y = mx + c', 'gradient', 'y-intercept'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -111,7 +111,7 @@ export const questions: Question[] = [
                     explanation: 'Direct substitution gives the equation.'
                 }
             ],
-            finalAnswer: ' y = 4x - 1 '
+            finalAnswer: '\\(y = 4x - 1\\)'
         }
     },
 
@@ -124,7 +124,7 @@ export const questions: Question[] = [
         marks: 2,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['straight line', 'y = mx + c', 'fractional gradient'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -134,7 +134,7 @@ export const questions: Question[] = [
                     explanation: 'Direct substitution.'
                 }
             ],
-            finalAnswer: ' y = -\\dfrac{2}{3}x + 6 '
+            finalAnswer: '\\(y = -\\dfrac{2}{3}x + 6\\)'
         }
     },
 
@@ -147,7 +147,7 @@ export const questions: Question[] = [
         marks: 2,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['straight line', 'y = mx + c', 'decimal gradient'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -157,7 +157,7 @@ export const questions: Question[] = [
                     explanation: 'Direct substitution gives the equation.'
                 }
             ],
-            finalAnswer: ' y = 0.5x - 3 '
+            finalAnswer: '\\(y = 0.5x - 3\\)'
         }
     },
 
@@ -172,23 +172,18 @@ export const questions: Question[] = [
         marks: 3,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['straight line', 'two points', 'gradient', 'y - y1 = m(x - x1)'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
                     stepNumber: 1,
-                    description: 'Find the gradient.',
-                    workingLatex: 'm = \\dfrac{13 - 5}{6 - 2} = \\dfrac{8}{4} = 2',
-                    explanation: 'Use \\( m = \\frac{y_2 - y_1}{x_2 - x_1} \\).'
-                },
-                {
-                    stepNumber: 2,
-                    description: 'Write the equation using point \\( (2, 5) \\).',
-                    workingLatex: 'y - 5 = 2(x - 2)',
-                    explanation: 'Substitute \\( m = 2 \\), \\( x_1 = 2 \\), \\( y_1 = 5 \\) into the formula.'
+                    description: 'Find the gradient and write the equation.',
+                    workingLatex: '\\begin{aligned} m &= \\dfrac{13 - 5}{6 - 2} = \\dfrac{8}{4} = 2 \\end{aligned}',
+                    explanation: 'Use \\( m = \\frac{y_2 - y_1}{x_2 - x_1} \\). Then substitute into \\( y - y_1 = m(x - x_1) \\) using either point.'
                 }
             ],
-            finalAnswer: ' y - 5 = 2(x - 2) '
+            finalAnswer: '\\(y - 5 = 2(x - 2)\\) or equivalently \\(y - 13 = 2(x - 6)\\)',
+            commonMistakes: ['Both answers are equally valid — you can use either point in the formula.'],
         }
     },
 
@@ -201,23 +196,18 @@ export const questions: Question[] = [
         marks: 3,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['straight line', 'two points', 'negative gradient'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
                     stepNumber: 1,
-                    description: 'Find the gradient.',
-                    workingLatex: 'm = \\dfrac{1 - 7}{4 - 1} = \\dfrac{-6}{3} = -2',
-                    explanation: 'The gradient is negative, meaning the line slopes downward.'
-                },
-                {
-                    stepNumber: 2,
-                    description: 'Write the equation using point \\( (1, 7) \\).',
-                    workingLatex: 'y - 7 = -2(x - 1)',
-                    explanation: 'Substitute into \\( y - y_1 = m(x - x_1) \\).'
+                    description: 'Find the gradient and write the equation.',
+                    workingLatex: '\\begin{aligned} m &= \\dfrac{1 - 7}{4 - 1} = \\dfrac{-6}{3} = -2 \\end{aligned}',
+                    explanation: 'The gradient is negative, meaning the line slopes downward. Substitute into \\( y - y_1 = m(x - x_1) \\) using either point.'
                 }
             ],
-            finalAnswer: ' y - 7 = -2(x - 1) '
+            finalAnswer: '\\(y - 7 = -2(x - 1)\\) or equivalently \\(y - 1 = -2(x - 4)\\)',
+            commonMistakes: ['Both answers are equally valid — you can use either point in the formula.'],
         }
     },
 
@@ -230,7 +220,7 @@ export const questions: Question[] = [
         marks: 4,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['straight line', 'two points', 'y = mx + c'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -243,7 +233,7 @@ export const questions: Question[] = [
                     stepNumber: 2,
                     description: 'Use \\( y = 2x + c \\) and substitute in \\( (4, 15) \\).',
                     workingLatex: '15 = 2(4) + c \\implies c = 7',
-                    explanation: 'Substitute known point to find \\( c \\).'
+                    explanation: 'You can substitute either point to find \\( c \\) — both give the same result.'
                 },
                 {
                     stepNumber: 3,
@@ -252,7 +242,8 @@ export const questions: Question[] = [
                     explanation: ''
                 }
             ],
-            finalAnswer: ' y = 2x + 7 '
+            finalAnswer: '\\(y = 2x + 7\\)',
+            commonMistakes: ['Either point can be substituted to find \\(c\\). Using \\((-2, 3)\\): \\(3 = 2(-2) + c \\implies c = 7\\) gives the same answer.'],
         }
     },
 
@@ -265,7 +256,7 @@ export const questions: Question[] = [
         marks: 3,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['straight line', 'two points', 'y-intercept given'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -287,7 +278,7 @@ export const questions: Question[] = [
                     explanation: ''
                 }
             ],
-            finalAnswer: ' y = 2x - 4 '
+            finalAnswer: '\\(y = 2x - 4\\)'
         }
     },
 
@@ -300,7 +291,7 @@ export const questions: Question[] = [
         marks: 4,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['straight line', 'two points', 'y = mx + c', 'negative coordinates'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -322,7 +313,7 @@ export const questions: Question[] = [
                     explanation: ''
                 }
             ],
-            finalAnswer: ' y = x + 2 '
+            finalAnswer: '\\(y = x + 2\\)'
         }
     },
 
@@ -335,7 +326,7 @@ export const questions: Question[] = [
         marks: 4,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['straight line', 'two points', 'negative gradient', 'y = mx + c'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -348,7 +339,7 @@ export const questions: Question[] = [
                     stepNumber: 2,
                     description: 'Use \\( y = -2x + c \\) and substitute \\( (3, -5) \\).',
                     workingLatex: '-5 = -2(3) + c \\implies -5 = -6 + c \\implies c = 1',
-                    explanation: ''
+                    explanation: 'You can substitute either point to find \\( c \\) — both give the same result.'
                 },
                 {
                     stepNumber: 3,
@@ -357,7 +348,8 @@ export const questions: Question[] = [
                     explanation: ''
                 }
             ],
-            finalAnswer: ' y = -2x + 1 '
+            finalAnswer: '\\(y = -2x + 1\\)',
+            commonMistakes: ['Either point can be substituted to find \\(c\\). Using \\((-5, 11)\\): \\(11 = -2(-5) + c \\implies c = 1\\) gives the same answer.'],
         }
     },
 
@@ -372,23 +364,18 @@ export const questions: Question[] = [
         marks: 2,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['straight line', 'ax + by + c = 0', 'rearranging'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
                     stepNumber: 1,
-                    description: 'Move all terms to the left-hand side.',
-                    workingLatex: 'y - 3x + 4 = 0',
-                    explanation: 'Subtract \\( y \\) from both sides to start, then rearrange.'
-                },
-                {
-                    stepNumber: 2,
-                    description: 'Rewrite with \\( x \\) term first.',
-                    workingLatex: '-3x + y + 4 = 0 \\quad \\Longrightarrow \\quad 3x - y - 4 = 0',
-                    explanation: 'Multiply through by \\(-1\\) to make \\( a \\) positive.'
+                    description: 'Move all terms to one side.',
+                    workingLatex: 'y = 3x - 4 \\quad\\quad \\Rightarrow \\quad\\quad y - 3x + 4 = 0',
+                    explanation: 'Move all terms to one side. Multiplying through by \\(-1\\) gives the equivalent form \\(3x - y - 4 = 0\\).'
                 }
             ],
-            finalAnswer: ' 3x - y - 4 = 0 '
+            finalAnswer: '\\(y - 3x + 4 = 0\\), or equivalently \\(3x - y - 4 = 0\\)',
+            commonMistakes: ['Both forms are equally valid. Multiplying through by \\(-1\\) gives the other form. Convention is usually to make the \\(x\\) coefficient positive, but both are correct.'],
         }
     },
 
@@ -401,23 +388,18 @@ export const questions: Question[] = [
         marks: 3,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['straight line', 'ax + by + c = 0', 'clearing fractions'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
                     stepNumber: 1,
-                    description: 'Multiply every term by 2 to clear the fraction.',
-                    workingLatex: '2y = x + 6',
-                    explanation: 'Multiplying \\( y = \\frac{1}{2}x + 3 \\) by 2 gives \\( 2y = x + 6 \\).'
-                },
-                {
-                    stepNumber: 2,
-                    description: 'Rearrange into \\( ax + by + c = 0 \\) form.',
-                    workingLatex: 'x - 2y + 6 = 0',
-                    explanation: 'Subtract \\( 2y \\) from both sides.'
+                    description: 'Multiply by 2 to clear the fraction, then rearrange.',
+                    workingLatex: 'y = \\dfrac{1}{2}x + 3 \\quad\\quad \\Rightarrow \\quad\\quad 2y = x + 6 \\quad\\quad \\Rightarrow \\quad\\quad x - 2y + 6 = 0',
+                    explanation: 'Multiply through by 2 first, then move all terms to one side.'
                 }
             ],
-            finalAnswer: ' x - 2y + 6 = 0 '
+            finalAnswer: '\\(x - 2y + 6 = 0\\) or equivalently \\(-x + 2y - 6 = 0\\)',
+            commonMistakes: ['Both forms are equally valid. Multiplying through by \\(-1\\) gives the other form.'],
         }
     },
 
@@ -430,29 +412,18 @@ export const questions: Question[] = [
         marks: 4,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['straight line', 'gradient', 'one point', 'ax + by + c = 0'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
                     stepNumber: 1,
-                    description: 'Use \\( y - y_1 = m(x - x_1) \\) with \\( m = -\\frac{5}{2} \\), \\( (x_1, y_1) = (3, -8) \\).',
-                    workingLatex: 'y + 8 = -\\dfrac{5}{2}(x - 3)',
-                    explanation: ''
-                },
-                {
-                    stepNumber: 2,
-                    description: 'Multiply through by 2 to clear the fraction.',
-                    workingLatex: '2y + 16 = -5(x - 3) = -5x + 15',
-                    explanation: ''
-                },
-                {
-                    stepNumber: 3,
-                    description: 'Rearrange.',
-                    workingLatex: '5x + 2y + 16 - 15 = 0 \\implies 5x + 2y + 1 = 0',
-                    explanation: 'Move all terms to one side.'
+                    description: 'Find the equation and rearrange.',
+                    workingLatex: 'y + 8 = -\\dfrac{5}{2}(x - 3) \\quad\\quad \\Rightarrow \\quad\\quad 2y + 16 = -5x + 15 \\quad\\quad \\Rightarrow \\quad\\quad 5x + 2y + 1 = 0',
+                    explanation: 'Substitute into \\(y - y_1 = m(x - x_1)\\), multiply by 2 to clear the fraction, then collect all terms on one side.'
                 }
             ],
-            finalAnswer: ' 5x + 2y + 1 = 0 '
+            finalAnswer: '\\(5x + 2y + 1 = 0\\) or equivalently \\(-5x - 2y - 1 = 0\\)',
+            commonMistakes: ['Both forms are equally valid. Multiplying through by \\(-1\\) gives the other form.'],
         }
     },
 
@@ -465,7 +436,7 @@ export const questions: Question[] = [
         marks: 3,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['straight line', 'rearranging', 'gradient', 'y-intercept'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -481,7 +452,7 @@ export const questions: Question[] = [
                     explanation: 'The equation is now in \\( y = mx + c \\) form.'
                 }
             ],
-            finalAnswer: ' y = \\dfrac{1}{2}x - 2 ; gradient  = \\dfrac{1}{2} ,  y -intercept  = (0, -2) '
+            finalAnswer: '\\(y = \\dfrac{1}{2}x - 2\\); gradient = \\(\\dfrac{1}{2}\\), y-intercept = \\((0, -2)\\)'
         }
     },
 
@@ -494,7 +465,7 @@ export const questions: Question[] = [
         marks: 3,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['straight line', 'ax + by + c = 0', 'rearranging', 'gradient'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -504,7 +475,7 @@ export const questions: Question[] = [
                     explanation: 'Subtract \\(3x\\), add 12 to both sides, then divide by 6.'
                 }
             ],
-            finalAnswer: 'Gradient  = -\\dfrac{1}{2} ,  y -intercept  = (0, 2) '
+            finalAnswer: 'Gradient = \\(-\\dfrac{1}{2}\\), y-intercept = \\((0, 2)\\)'
         }
     },
 
@@ -519,7 +490,7 @@ export const questions: Question[] = [
         marks: 3,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['straight line', 'one point', 'gradient', 'y = mx + c'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -535,7 +506,7 @@ export const questions: Question[] = [
                     explanation: ''
                 }
             ],
-            finalAnswer: ' y = 2x - 7 '
+            finalAnswer: '\\(y = 2x - 7\\)'
         }
     },
 
@@ -548,7 +519,7 @@ export const questions: Question[] = [
         marks: 3,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['straight line', 'one point', 'negative gradient', 'y = mx + c'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -564,7 +535,7 @@ export const questions: Question[] = [
                     explanation: ''
                 }
             ],
-            finalAnswer: ' y = -3x + 10 '
+            finalAnswer: '\\(y = -3x + 10\\)'
         }
     },
 
@@ -577,7 +548,7 @@ export const questions: Question[] = [
         marks: 4,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['straight line', 'fractional gradient', 'one point', 'y = mx + c'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -593,7 +564,7 @@ export const questions: Question[] = [
                     explanation: ''
                 }
             ],
-            finalAnswer: ' y = \\dfrac{3}{4}x + 4 '
+            finalAnswer: '\\(y = \\dfrac{3}{4}x + 4\\)'
         }
     },
 
@@ -608,7 +579,7 @@ export const questions: Question[] = [
         marks: 2,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['straight line', 'verify point', 'substitution'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -624,7 +595,7 @@ export const questions: Question[] = [
                     explanation: ''
                 }
             ],
-            finalAnswer: 'Yes,  (2, 7)  lies on the line.'
+            finalAnswer: 'Yes, \\((2, 7)\\) lies on the line.'
         }
     },
 
@@ -637,7 +608,7 @@ export const questions: Question[] = [
         marks: 4,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['straight line', 'two points', 'verify point'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -659,7 +630,7 @@ export const questions: Question[] = [
                     explanation: 'The point satisfies the equation.'
                 }
             ],
-            finalAnswer: 'Yes,  (10, 21)  lies on the line.'
+            finalAnswer: 'Yes, \\((10, 21)\\) lies on the line.'
         }
     },
 
@@ -672,7 +643,7 @@ export const questions: Question[] = [
         marks: 4,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['straight line', 'verify point', 'gradient', 'one point'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -688,7 +659,7 @@ export const questions: Question[] = [
                     explanation: 'Points with \\( x=2 \\), \\( x=0 \\) and \\( x=3 \\) satisfy the equation; \\( (-1, 9) \\) does not.'
                 }
             ],
-            finalAnswer: ' (2, 1) ,  (0, 9)  and  (3, -3)  lie on the line.  (-1, 9)  does not.'
+            finalAnswer: '\\((2, 1)\\), \\((0, 9)\\) and \\((3, -3)\\) lie on the line. \\((-1, 9)\\) does not.'
         }
     },
 
@@ -703,7 +674,7 @@ export const questions: Question[] = [
         marks: 2,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['midpoint', 'line segment', 'coordinate geometry'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -713,7 +684,7 @@ export const questions: Question[] = [
                     explanation: 'Add the coordinates and halve each.'
                 }
             ],
-            finalAnswer: ' M = (5, 10) '
+            finalAnswer: '\\(M = (5, 10)\\)'
         }
     },
 
@@ -726,7 +697,7 @@ export const questions: Question[] = [
         marks: 2,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['midpoint', 'line segment', 'negative coordinates'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -736,7 +707,7 @@ export const questions: Question[] = [
                     explanation: 'Take care with the negative values.'
                 }
             ],
-            finalAnswer: ' M = (1, 3) '
+            finalAnswer: '\\(M = (1, 3)\\)'
         }
     },
 
@@ -749,7 +720,7 @@ export const questions: Question[] = [
         marks: 3,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['midpoint', 'find endpoint', 'coordinate geometry'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -765,7 +736,7 @@ export const questions: Question[] = [
                     explanation: ''
                 }
             ],
-            finalAnswer: ' B = (7, -5) '
+            finalAnswer: '\\(B = (7, -5)\\)'
         }
     },
 
@@ -778,7 +749,7 @@ export const questions: Question[] = [
         marks: 5,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['midpoint', 'find coordinates from line equation', 'coordinate geometry'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -800,7 +771,7 @@ export const questions: Question[] = [
                     explanation: ''
                 }
             ],
-            finalAnswer: ' M = (4, 9) '
+            finalAnswer: '\\(M = (4, 9)\\)'
         }
     },
 
@@ -815,7 +786,7 @@ export const questions: Question[] = [
         marks: 5,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['modelling', 'straight line', 'real world', 'gradient', 'y-intercept'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -837,7 +808,7 @@ export const questions: Question[] = [
                     explanation: 'The taxi travelled 8 km.'
                 }
             ],
-            finalAnswer: '(a)  C = 1.5k + 2 ; (b) £20; (c) 8 km'
+            finalAnswer: '(a) \\(C = 1.5k + 2\\); (b) £20; (c) 8 km'
         }
     },
 
@@ -850,7 +821,7 @@ export const questions: Question[] = [
         marks: 6,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['modelling', 'straight line', 'real world', 'negative gradient'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -878,7 +849,7 @@ export const questions: Question[] = [
                     explanation: 'The candle burns out after 10 hours.'
                 }
             ],
-            finalAnswer: '(a)  h = -2t + 20 ; (b) 8 cm; (c) after 10 hours'
+            finalAnswer: '(a) \\(h = -2t + 20\\); (b) 8 cm; (c) after 10 hours'
         }
     },
 
@@ -891,7 +862,7 @@ export const questions: Question[] = [
         marks: 6,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['modelling', 'simultaneous equations', 'straight line', 'real world'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -913,7 +884,7 @@ export const questions: Question[] = [
                     explanation: 'Contract B is cheaper above 300 minutes.'
                 }
             ],
-            finalAnswer: '(a)  C_A = 0.05m + 10 ,  C_B = 25 ; (b) 300 minutes; (c) Contract B'
+            finalAnswer: '(a) \\(C_A = 0.05m + 10\\), \\(C_B = 25\\); (b) 300 minutes; (c) Contract B'
         }
     },
 
@@ -928,7 +899,7 @@ export const questions: Question[] = [
         marks: 3,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['parallel lines', 'gradient', 'straight line', 'y = mx + c'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -950,7 +921,7 @@ export const questions: Question[] = [
                     explanation: ''
                 }
             ],
-            finalAnswer: ' y = 3x + 1 '
+            finalAnswer: '\\(y = 3x + 1\\)'
         }
     },
 
@@ -963,7 +934,7 @@ export const questions: Question[] = [
         marks: 4,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['perpendicular lines', 'gradient', 'straight line'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -985,7 +956,7 @@ export const questions: Question[] = [
                     explanation: ''
                 }
             ],
-            finalAnswer: ' y = -\\dfrac{1}{2}x + 5 '
+            finalAnswer: '\\(y = -\\dfrac{1}{2}x + 5\\)'
         }
     },
 
@@ -998,7 +969,7 @@ export const questions: Question[] = [
         marks: 5,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['perpendicular lines', 'two points', 'straight line'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -1026,7 +997,7 @@ export const questions: Question[] = [
                     explanation: ''
                 }
             ],
-            finalAnswer: ' y = -\\dfrac{1}{2}x + 4 '
+            finalAnswer: '\\(y = -\\dfrac{1}{2}x + 4\\)'
         }
     },
 
@@ -1041,7 +1012,7 @@ export const questions: Question[] = [
         marks: 8,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['straight line', 'multi-part', 'gradient', 'ax + by + c = 0', 'midpoint'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -1059,7 +1030,7 @@ export const questions: Question[] = [
                 {
                     stepNumber: 3,
                     description: 'Multiply through by 2 and rearrange into \\( ax + by + c = 0 \\).',
-                    workingLatex: '2y = -x + 11 \\implies x + 2y - 11 = 0',
+                    workingLatex: '2y = -x + 11 \\quad\\quad \\Rightarrow \\quad\\quad x + 2y - 11 = 0',
                     explanation: ''
                 },
                 {
@@ -1075,7 +1046,7 @@ export const questions: Question[] = [
                     explanation: ''
                 }
             ],
-            finalAnswer: '(a) -\\dfrac{1}{2}; (b) x + 2y - 11 = 0; (c) y = -1; (d) M = (4,\\ 3.5)'
+            finalAnswer: '(a) \\(-\\dfrac{1}{2}\\); (b) \\(x + 2y - 11 = 0\\); (c) \\(y = -1\\); (d) \\(M = (4,\\ 3.5)\\)'
         }
     },
 
@@ -1088,7 +1059,7 @@ export const questions: Question[] = [
         marks: 9,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['straight line', 'multi-part', 'find unknown', 'midpoint', 'perpendicular'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -1110,7 +1081,7 @@ export const questions: Question[] = [
                     explanation: 'A line perpendicular to a horizontal line is vertical, passing through \\( x = 4 \\).'
                 }
             ],
-            finalAnswer: '(a) k = 1; (b) M = (4, 1); (c) x = 4 (a vertical line)'
+            finalAnswer: '(a) \\(k = 1\\); (b) \\(M = (4, 1)\\); (c) \\(x = 4\\) (a vertical line)'
         }
     },
 
@@ -1123,7 +1094,7 @@ export const questions: Question[] = [
         workedSolution: { steps: [
             { stepNumber: 1, description: 'Use y - y1 = m(x - x1)', workingLatex: 'y - 5 = 3(x - 1) = 3x - 3', explanation: 'Substitute gradient and point.' },
             { stepNumber: 2, description: 'Rearrange', workingLatex: 'y = 3x + 2', explanation: 'Add 5 to both sides.' }
-        ], finalAnswer: 'y = 3x + 2' }
+        ], finalAnswer: '\\(y = 3x + 2\\)' }
     },
     {
         id: 'cg1-037', topicRef: 'CG1', topicTitle: 'Equation of a Straight Line 37', difficulty: 'Foundation',
@@ -1131,8 +1102,8 @@ export const questions: Question[] = [
         marks: 3, examStyle: false, yearCreated: 2026, tags: [],
         workedSolution: { steps: [
             { stepNumber: 1, description: 'Find gradient', workingLatex: 'm = \\frac{3 - 7}{6 - 2} = \\frac{-4}{4} = -1', explanation: 'Change in y over change in x.' },
-            { stepNumber: 2, description: 'Use point-slope form', workingLatex: 'y - 7 = -1(x - 2) \\implies y = -x + 9', explanation: 'Substitute into y - y1 = m(x - x1).' }
-        ], finalAnswer: 'y = -x + 9' }
+            { stepNumber: 2, description: 'Use point-slope form', workingLatex: 'y - 7 = -1(x - 2) \\implies y = -x + 9', explanation: 'Substitute into \\(y - y_1 = m(x - x_1)\\) using either point.' }
+        ], finalAnswer: '\\(y = -x + 9\\)', commonMistakes: ['Using either point gives the same final equation. With \\((6,3)\\): \\(y - 3 = -1(x - 6) \\implies y = -x + 9\\).'] }
     },
     {
         id: 'cg1-038', topicRef: 'CG1', topicTitle: 'Equation of a Straight Line 38', difficulty: 'Foundation',
@@ -1140,7 +1111,7 @@ export const questions: Question[] = [
         marks: 2, examStyle: false, yearCreated: 2026, tags: [],
         workedSolution: { steps: [
             { stepNumber: 1, description: 'Rearrange to y = mx + c', workingLatex: '2y = -5x + 8 \\implies y = -\\frac{5}{2}x + 4', explanation: 'Isolate y.' }
-        ], finalAnswer: '-\\frac{5}{2}' }
+        ], finalAnswer: '\\(-\\frac{5}{2}\\)' }
     },
     {
         id: 'cg1-039', topicRef: 'CG1', topicTitle: 'Equation of a Straight Line 39', difficulty: 'Foundation',
@@ -1149,16 +1120,16 @@ export const questions: Question[] = [
         workedSolution: { steps: [
             { stepNumber: 1, description: 'Find equation', workingLatex: 'y - 1 = \\frac{2}{3}(x + 3) = \\frac{2}{3}x + 2', explanation: 'Point-slope form.' },
             { stepNumber: 2, description: 'Simplify', workingLatex: 'y = \\frac{2}{3}x + 3', explanation: 'y-intercept is (0, 3).' }
-        ], finalAnswer: '(0, 3)' }
+        ], finalAnswer: '\\((0, 3)\\)' }
     },
     {
         id: 'cg1-040', topicRef: 'CG1', topicTitle: 'Equation of a Straight Line 40', difficulty: 'Foundation',
         questionText: 'Find the equation of the line through \\( (0, -2) \\) and \\( (4, 6) \\). Give your answer in the form \\( ax + by + c = 0 \\).',
         marks: 3, examStyle: false, yearCreated: 2026, tags: [],
         workedSolution: { steps: [
-            { stepNumber: 1, description: 'Find gradient', workingLatex: 'm = \\frac{6 - (-2)}{4 - 0} = \\frac{8}{4} = 2', explanation: '' },
-            { stepNumber: 2, description: 'Equation', workingLatex: 'y = 2x - 2 \\implies 2x - y - 2 = 0', explanation: 'Rearrange to standard form.' }
-        ], finalAnswer: '2x - y - 2 = 0' }
+            { stepNumber: 1, description: 'Find gradient', workingLatex: 'm = \\frac{6 - (-2)}{4 - 0} = \\frac{8}{4} = 2', explanation: 'Either point can be used in the gradient formula.' },
+            { stepNumber: 2, description: 'Equation', workingLatex: 'y = 2x - 2 \\quad\\quad \\Rightarrow \\quad\\quad 2x - y - 2 = 0', explanation: 'Rearrange to standard form.' }
+        ], finalAnswer: '\\(2x - y - 2 = 0\\) or equivalently \\(-2x + y + 2 = 0\\)', commonMistakes: ['Both forms are equally valid. Multiplying through by \\(-1\\) gives the other form.'] }
     },
     {
         id: 'cg1-041', topicRef: 'CG1', topicTitle: 'Equation of a Straight Line 41', difficulty: 'Foundation',
@@ -1166,7 +1137,7 @@ export const questions: Question[] = [
         marks: 2, examStyle: false, yearCreated: 2026, tags: [],
         workedSolution: { steps: [
             { stepNumber: 1, description: 'Apply midpoint formula', workingLatex: 'M = \\left(\\frac{3+7}{2}, \\frac{-1+5}{2}\\right) = (5, 2)', explanation: 'Average the coordinates.' }
-        ], finalAnswer: '(5, 2)' }
+        ], finalAnswer: '\\((5, 2)\\)' }
     },
     {
         id: 'cg1-042', topicRef: 'CG1', topicTitle: 'Equation of a Straight Line 42', difficulty: 'Foundation',
@@ -1174,7 +1145,7 @@ export const questions: Question[] = [
         marks: 2, examStyle: false, yearCreated: 2026, tags: [],
         workedSolution: { steps: [
             { stepNumber: 1, description: 'Apply distance formula', workingLatex: 'PQ = \\sqrt{(4-1)^2 + (7-3)^2} = \\sqrt{9 + 16} = \\sqrt{25} = 5', explanation: '' }
-        ], finalAnswer: '5' }
+        ], finalAnswer: '\\(5\\)' }
     },
     {
         id: 'cg1-043', topicRef: 'CG1', topicTitle: 'Equation of a Straight Line 43', difficulty: 'Foundation',
@@ -1183,7 +1154,7 @@ export const questions: Question[] = [
         workedSolution: { steps: [
             { stepNumber: 1, description: 'Parallel lines have equal gradients', workingLatex: 'm = 2', explanation: 'Same gradient as y = 2x - 3.' },
             { stepNumber: 2, description: 'Use point-slope', workingLatex: 'y - 4 = 2(x - 1) \\implies y = 2x + 2', explanation: '' }
-        ], finalAnswer: 'y = 2x + 2' }
+        ], finalAnswer: '\\(y = 2x + 2\\)' }
     },
     {
         id: 'cg1-044', topicRef: 'CG1', topicTitle: 'Equation of a Straight Line 44', difficulty: 'Foundation',
@@ -1192,7 +1163,7 @@ export const questions: Question[] = [
         workedSolution: { steps: [
             { stepNumber: 1, description: 'Perpendicular gradient', workingLatex: 'm = -\\frac{1}{\\frac{1}{2}} = -2', explanation: 'Negative reciprocal.' },
             { stepNumber: 2, description: 'Equation', workingLatex: 'y - 1 = -2(x - 3) \\implies y = -2x + 7', explanation: '' }
-        ], finalAnswer: 'y = -2x + 7' }
+        ], finalAnswer: '\\(y = -2x + 7\\)' }
     },
     {
         id: 'cg1-045', topicRef: 'CG1', topicTitle: 'Equation of a Straight Line 45', difficulty: 'Foundation',
@@ -1201,7 +1172,7 @@ export const questions: Question[] = [
         workedSolution: { steps: [
             { stepNumber: 1, description: 'Set equal', workingLatex: '3x - 1 = -x + 7 \\implies 4x = 8 \\implies x = 2', explanation: '' },
             { stepNumber: 2, description: 'Find y', workingLatex: 'y = 3(2) - 1 = 5', explanation: '' }
-        ], finalAnswer: '(2, 5)' }
+        ], finalAnswer: '\\((2, 5)\\)' }
     },
     {
         id: 'cg1-046', topicRef: 'CG1', topicTitle: 'Equation of a Straight Line 46', difficulty: 'Foundation',
@@ -1220,7 +1191,7 @@ export const questions: Question[] = [
             { stepNumber: 1, description: 'Midpoint', workingLatex: 'M = (4, 2)', explanation: '' },
             { stepNumber: 2, description: 'Gradient of AB', workingLatex: 'm_{AB} = \\frac{0-4}{6-2} = -1', explanation: '' },
             { stepNumber: 3, description: 'Perpendicular gradient and equation', workingLatex: 'm_{\\perp} = 1; \\quad y - 2 = 1(x - 4) \\implies y = x - 2', explanation: '' }
-        ], finalAnswer: 'y = x - 2' }
+        ], finalAnswer: '\\(y = x - 2\\)' }
     },
     {
         id: 'cg1-048', topicRef: 'CG1', topicTitle: 'Equation of a Straight Line 48', difficulty: 'Foundation',
@@ -1229,7 +1200,7 @@ export const questions: Question[] = [
         workedSolution: { steps: [
             { stepNumber: 1, description: 'Equation', workingLatex: 'y - 5 = -4(x + 1) \\implies y = -4x + 1', explanation: '' },
             { stepNumber: 2, description: 'Set y = 0', workingLatex: '0 = -4x + 1 \\implies x = \\frac{1}{4}', explanation: '' }
-        ], finalAnswer: '\\left(\\frac{1}{4}, 0\\right)' }
+        ], finalAnswer: '\\(\\left(\\frac{1}{4}, 0\\right)\\)' }
     },
     {
         id: 'cg1-049', topicRef: 'CG1', topicTitle: 'Equation of a Straight Line 49', difficulty: 'Foundation',
@@ -1238,7 +1209,7 @@ export const questions: Question[] = [
         workedSolution: { steps: [
             { stepNumber: 1, description: 'Set up gradient equation', workingLatex: '\\frac{7-3}{k-2} = \\frac{4}{3}', explanation: '' },
             { stepNumber: 2, description: 'Solve', workingLatex: '\\frac{4}{k-2} = \\frac{4}{3} \\implies k - 2 = 3 \\implies k = 5', explanation: '' }
-        ], finalAnswer: 'k = 5' }
+        ], finalAnswer: '\\(k = 5\\)' }
     },
     {
         id: 'cg1-050', topicRef: 'CG1', topicTitle: 'Equation of a Straight Line 50', difficulty: 'Foundation',
@@ -1248,16 +1219,16 @@ export const questions: Question[] = [
             { stepNumber: 1, description: 'Find A (y=0)', workingLatex: '3x + 6 = 0 \\implies x = -2, \\quad A = (-2, 0)', explanation: '' },
             { stepNumber: 2, description: 'Find B (x=0)', workingLatex: '-2y + 6 = 0 \\implies y = 3, \\quad B = (0, 3)', explanation: '' },
             { stepNumber: 3, description: 'Area', workingLatex: '\\text{Area} = \\frac{1}{2} \\times 2 \\times 3 = 3', explanation: 'Base = 2, height = 3.' }
-        ], finalAnswer: '3 \\text{ square units}' }
+        ], finalAnswer: '\\(3\\) square units' }
     },
     {
         id: 'cg1-051', topicRef: 'CG1', topicTitle: 'Equation of a Straight Line 51', difficulty: 'Foundation',
         questionText: 'Find the equation of the line through \\( (-2, 5) \\) and \\( (4, -1) \\) in the form \\( ax + by + c = 0 \\).',
         marks: 3, examStyle: false, yearCreated: 2026, tags: [],
         workedSolution: { steps: [
-            { stepNumber: 1, description: 'Gradient', workingLatex: 'm = \\frac{-1-5}{4-(-2)} = \\frac{-6}{6} = -1', explanation: '' },
-            { stepNumber: 2, description: 'Equation', workingLatex: 'y - 5 = -(x + 2) \\implies x + y - 3 = 0', explanation: '' }
-        ], finalAnswer: 'x + y - 3 = 0' }
+            { stepNumber: 1, description: 'Gradient', workingLatex: 'm = \\frac{-1-5}{4-(-2)} = \\frac{-6}{6} = -1', explanation: 'Either point can be used in the gradient formula.' },
+            { stepNumber: 2, description: 'Equation', workingLatex: 'y - 5 = -(x + 2) \\quad\\quad \\Rightarrow \\quad\\quad x + y - 3 = 0', explanation: 'Either point can be used in \\(y - y_1 = m(x - x_1)\\). Using \\((4, -1)\\): \\(y + 1 = -(x - 4) \\Rightarrow x + y - 3 = 0\\) gives the same result.' }
+        ], finalAnswer: '\\(x + y - 3 = 0\\) or equivalently \\(-x - y + 3 = 0\\)', commonMistakes: ['Both forms are equally valid. Multiplying through by \\(-1\\) gives the other form. Either point gives the same equation.'] }
     },
     {
         id: 'cg1-052', topicRef: 'CG1', topicTitle: 'Equation of a Straight Line 52', difficulty: 'Foundation',
@@ -1266,25 +1237,25 @@ export const questions: Question[] = [
         workedSolution: { steps: [
             { stepNumber: 1, description: 'Find original gradient', workingLatex: '3y = 4x + 12 \\implies m = \\frac{4}{3}', explanation: '' },
             { stepNumber: 2, description: 'Perpendicular gradient', workingLatex: 'm_{\\perp} = -\\frac{3}{4}', explanation: 'Negative reciprocal.' }
-        ], finalAnswer: '-\\frac{3}{4}' }
+        ], finalAnswer: '\\(-\\frac{3}{4}\\)' }
     },
     {
         id: 'cg1-053', topicRef: 'CG1', topicTitle: 'Equation of a Straight Line 53', difficulty: 'Foundation',
-        questionText: 'A triangle has vertices \\( A(0, 0) \\), \\( B(6, 0) \\) and \\( C(3, 4) \\). Find the equation of the median from \\( C \\).',
+        questionText: 'A triangle has vertices \\( A(0, 0) \\), \\( B(6, 0) \\) and \\( C(3, 4) \\). Find the equation of the median from \\( C \\).\n\n(A median of a triangle is a line segment joining a vertex to the midpoint of the opposite side.)',
         marks: 3, examStyle: false, yearCreated: 2026, tags: [],
         workedSolution: { steps: [
-            { stepNumber: 1, description: 'Midpoint of AB', workingLatex: 'M = (3, 0)', explanation: '' },
-            { stepNumber: 2, description: 'Line through C(3,4) and M(3,0)', workingLatex: 'x = 3', explanation: 'Both have x = 3, so the line is vertical.' }
-        ], finalAnswer: 'x = 3' }
+            { stepNumber: 1, description: 'Find the midpoint of the opposite side AB, then find the line through C and that midpoint.', workingLatex: '\\begin{aligned} M &= \\left(\\frac{0+6}{2},\\ \\frac{0+0}{2}\\right) = (3,\\ 0) \\end{aligned}', explanation: 'The median from C goes to the midpoint of AB.' },
+            { stepNumber: 2, description: 'The line through C(3, 4) and M(3, 0) is vertical since both points have the same x-coordinate.', workingLatex: 'x = 3', explanation: 'When two points share the same \\(x\\)-coordinate, the line between them is vertical.' }
+        ], finalAnswer: '\\(x = 3\\)' }
     },
     {
         id: 'cg1-054', topicRef: 'CG1', topicTitle: 'Equation of a Straight Line 54', difficulty: 'Foundation',
         questionText: 'The line \\( y = 2x + k \\) is a tangent to the circle \\( x^2 + y^2 = 5 \\). Find the possible values of \\( k \\).',
         marks: 4, examStyle: false, yearCreated: 2026, tags: [],
         workedSolution: { steps: [
-            { stepNumber: 1, description: 'Substitute y = 2x + k', workingLatex: 'x^2 + (2x+k)^2 = 5 \\implies 5x^2 + 4kx + k^2 - 5 = 0', explanation: '' },
-            { stepNumber: 2, description: 'Tangent: discriminant = 0', workingLatex: '16k^2 - 20(k^2-5) = 0 \\implies -4k^2 + 100 = 0 \\implies k = \\pm 5', explanation: '' }
-        ], finalAnswer: 'k = 5 \\text{ or } k = -5' }
+            { stepNumber: 1, description: 'Substitute the equation of the line into the equation of the circle.', workingLatex: 'x^2 + (2x+k)^2 = 5 \\quad\\quad \\Rightarrow \\quad\\quad 5x^2 + 4kx + k^2 - 5 = 0', explanation: 'Replace \\(y\\) in the circle equation with \\(2x + k\\) and expand to get a quadratic in \\(x\\).' },
+            { stepNumber: 2, description: 'A line is tangent to a circle when it touches the circle at exactly one point. This means the quadratic formed by substituting the line into the circle must have exactly one solution — so the discriminant must equal zero.', workingLatex: '\\begin{aligned} b^2 - 4ac &= 0 \\\\ (4k)^2 - 4(5)(k^2-5) &= 0 \\\\ 16k^2 - 20k^2 + 100 &= 0 \\\\ -4k^2 + 100 &= 0 \\\\ k^2 &= 25 \\\\ k &= \\pm 5 \\end{aligned}', explanation: 'If the discriminant were positive, the line would cross the circle at two points (a secant). If negative, the line would miss the circle entirely. Only when the discriminant is zero does the line touch the circle at exactly one point (a tangent).' }
+        ], finalAnswer: '\\(k = 5\\) or \\(k = -5\\)' }
     },
     {
         id: 'cg1-055', topicRef: 'CG1', topicTitle: 'Equation of a Straight Line 55', difficulty: 'Foundation',
@@ -1292,7 +1263,7 @@ export const questions: Question[] = [
         marks: 2, examStyle: false, yearCreated: 2026, tags: [],
         workedSolution: { steps: [
             { stepNumber: 1, description: 'Distance formula', workingLatex: 'd = \\frac{|3(0) + 4(0) - 10|}{\\sqrt{9+16}} = \\frac{10}{5} = 2', explanation: '' }
-        ], finalAnswer: '2' }
+        ], finalAnswer: '\\(2\\)' }
     },
     {
         id: 'cg1-056', topicRef: 'CG1', topicTitle: 'Equation of a Straight Line 56', difficulty: 'Foundation',
@@ -1301,7 +1272,7 @@ export const questions: Question[] = [
         workedSolution: { steps: [
             { stepNumber: 1, description: 'Two points: (4,0) and (0,-3)', workingLatex: 'm = \\frac{-3-0}{0-4} = \\frac{3}{4}', explanation: '' },
             { stepNumber: 2, description: 'Equation', workingLatex: 'y = \\frac{3}{4}x - 3', explanation: 'y-intercept is -3.' }
-        ], finalAnswer: 'y = \\frac{3}{4}x - 3' }
+        ], finalAnswer: '\\(y = \\frac{3}{4}x - 3\\)' }
     },
     {
         id: 'cg1-057', topicRef: 'CG1', topicTitle: 'Equation of a Straight Line 57', difficulty: 'Foundation',
@@ -1316,28 +1287,29 @@ export const questions: Question[] = [
         questionText: 'The line \\( L_1 \\) has equation \\( y = 3x - 2 \\). The line \\( L_2 \\) passes through \\( (6, 1) \\) and is perpendicular to \\( L_1 \\). Find where \\( L_1 \\) and \\( L_2 \\) intersect.',
         marks: 5, examStyle: false, yearCreated: 2026, tags: [],
         workedSolution: { steps: [
-            { stepNumber: 1, description: 'L2 gradient', workingLatex: 'm_2 = -\\frac{1}{3}', explanation: 'Negative reciprocal of 3.' },
-            { stepNumber: 2, description: 'L2 equation', workingLatex: 'y - 1 = -\\frac{1}{3}(x - 6) \\implies y = -\\frac{1}{3}x + 3', explanation: '' },
-            { stepNumber: 3, description: 'Solve simultaneously', workingLatex: '3x - 2 = -\\frac{1}{3}x + 3 \\implies \\frac{10}{3}x = 5 \\implies x = \\frac{3}{2}, y = \\frac{5}{2}', explanation: '' }
-        ], finalAnswer: '\\left(\\frac{3}{2}, \\frac{5}{2}\\right)' }
+            { stepNumber: 1, description: 'Find the gradient of \\(L_2\\).', workingLatex: 'm_2 = -\\frac{1}{3}', explanation: 'Perpendicular lines have gradients that are negative reciprocals of each other. Since \\(L_1\\) has gradient 3, \\(L_2\\) has gradient \\(-\\frac{1}{3}\\).' },
+            { stepNumber: 2, description: 'Find the equation of \\(L_2\\).', workingLatex: 'y - 1 = -\\frac{1}{3}(x - 6) \\quad\\quad \\Rightarrow \\quad\\quad y = -\\frac{1}{3}x + 3', explanation: 'Substitute the gradient and the point \\((6, 1)\\) into \\(y - y_1 = m(x - x_1)\\), then simplify.' },
+            { stepNumber: 3, description: 'Set the two equations equal to find the \\(x\\)-coordinate of intersection.', workingLatex: '\\begin{aligned} 3x - 2 &= -\\frac{1}{3}x + 3 \\\\ 3x + \\frac{1}{3}x &= 5 \\\\ \\frac{10}{3}x &= 5 \\\\ x &= \\frac{3}{2} \\end{aligned}', explanation: 'At the point of intersection, both lines have the same \\(y\\)-value, so set the right-hand sides equal and solve for \\(x\\).' },
+            { stepNumber: 4, description: 'Substitute \\(x = \\frac{3}{2}\\) back into either equation to find \\(y\\).', workingLatex: '\\begin{aligned} y &= 3\\left(\\frac{3}{2}\\right) - 2 \\\\ &= \\frac{9}{2} - 2 \\\\ &= \\frac{5}{2} \\end{aligned}', explanation: 'Substituting into \\(L_1\\): \\(y = 3x - 2\\). You could equally use \\(L_2\\) and get the same result.' }
+        ], finalAnswer: '\\(\\left(\\frac{3}{2},\\ \\frac{5}{2}\\right)\\)' }
     },
     {
         id: 'cg1-059', topicRef: 'CG1', topicTitle: 'Equation of a Straight Line 59', difficulty: 'Foundation',
-        questionText: 'A line passes through \\( (a, 2a) \\) and \\( (3a, 5a) \\). Find the equation in terms of \\( x \\) and \\( y \\) only.',
+        questionText: 'A line passes through \\( (a, 2a) \\) and \\( (3a, 5a) \\). Find the equation of the line.',
         marks: 3, examStyle: false, yearCreated: 2026, tags: [],
         workedSolution: { steps: [
             { stepNumber: 1, description: 'Gradient', workingLatex: 'm = \\frac{5a - 2a}{3a - a} = \\frac{3a}{2a} = \\frac{3}{2}', explanation: 'The a cancels.' },
             { stepNumber: 2, description: 'Equation', workingLatex: 'y - 2a = \\frac{3}{2}(x - a) \\implies 2y - 4a = 3x - 3a \\implies 3x - 2y + a = 0', explanation: 'Cannot eliminate a fully without more info, so express using a.' }
-        ], finalAnswer: 'y = \\frac{3}{2}x + \\frac{a}{2}' }
+        ], finalAnswer: '\\(y = \\frac{3}{2}x + \\frac{a}{2}\\)' }
     },
     {
         id: 'cg1-060', topicRef: 'CG1', topicTitle: 'Equation of a Straight Line 60', difficulty: 'Foundation',
         questionText: 'Find the equation of the line through \\( (5, -2) \\) that makes an angle of \\( 45° \\) with the positive x-axis.',
         marks: 2, examStyle: false, yearCreated: 2026, tags: [],
         workedSolution: { steps: [
-            { stepNumber: 1, description: 'Gradient from angle', workingLatex: 'm = \\tan 45° = 1', explanation: '' },
-            { stepNumber: 2, description: 'Equation', workingLatex: 'y + 2 = 1(x - 5) \\implies y = x - 7', explanation: '' }
-        ], finalAnswer: 'y = x - 7' }
+            { stepNumber: 1, description: 'Find the gradient from the angle.', workingLatex: 'm = \\tan 45° = 1', explanation: 'The gradient of a line is equal to the tangent of the angle it makes with the positive \\(x\\)-axis. Since \\(\\tan 45° = 1\\), the gradient is 1.' },
+            { stepNumber: 2, description: 'Substitute the gradient and the point into the equation of a straight line.', workingLatex: 'y - (-2) = 1(x - 5) \\quad\\quad \\Rightarrow \\quad\\quad y + 2 = x - 5 \\quad\\quad \\Rightarrow \\quad\\quad y = x - 7', explanation: 'Using \\(y - y_1 = m(x - x_1)\\) with \\(m = 1\\) and \\((5, -2)\\), then simplify.' }
+        ], finalAnswer: '\\(y = x - 7\\)' }
     },
     {
         id: 'cg1-061', topicRef: 'CG1', topicTitle: 'Equation of a Straight Line 61', difficulty: 'Foundation',
@@ -1353,34 +1325,34 @@ export const questions: Question[] = [
         questionText: 'Find the reflection of the point \\( (3, 7) \\) in the line \\( y = x \\).',
         marks: 2, examStyle: false, yearCreated: 2026, tags: [],
         workedSolution: { steps: [
-            { stepNumber: 1, description: 'Reflection in y = x swaps coordinates', workingLatex: '(3, 7) \\to (7, 3)', explanation: '' }
-        ], finalAnswer: '(7, 3)' }
+            { stepNumber: 1, description: 'Reflecting a point in the line \\(y = x\\) swaps the \\(x\\)- and \\(y\\)-coordinates.', workingLatex: '(3, 7) \\to (7, 3)', explanation: 'The line \\(y = x\\) acts as a mirror. Every point \\((a, b)\\) reflects to \\((b, a)\\), because the line \\(y = x\\) is the set of all points where \\(x = y\\). Swapping the coordinates reflects the point across this line.' }
+        ], finalAnswer: '\\((7, 3)\\)' }
     },
     {
         id: 'cg1-063', topicRef: 'CG1', topicTitle: 'Equation of a Straight Line 63', difficulty: 'Foundation',
         questionText: 'The line \\( y = mx + 4 \\) passes through \\( (2, 10) \\). Find \\( m \\).',
         marks: 2, examStyle: false, yearCreated: 2026, tags: [],
         workedSolution: { steps: [
-            { stepNumber: 1, description: 'Substitute', workingLatex: '10 = 2m + 4 \\implies m = 3', explanation: '' }
-        ], finalAnswer: 'm = 3' }
+            { stepNumber: 1, description: 'Since the point \\((2, 10)\\) lies on the line, substitute \\(x = 2\\) and \\(y = 10\\) into the equation and solve for \\(m\\).', workingLatex: '10 = 2m + 4 \\quad\\quad \\Rightarrow \\quad\\quad 2m = 6 \\quad\\quad \\Rightarrow \\quad\\quad m = 3', explanation: 'If a point lies on a line, its coordinates must satisfy the equation of that line. Substituting gives a simple linear equation in \\(m\\).' }
+        ], finalAnswer: '\\(m = 3\\)' }
     },
     {
         id: 'cg1-064', topicRef: 'CG1', topicTitle: 'Equation of a Straight Line 64', difficulty: 'Foundation',
         questionText: 'Find the equation of the line that is equidistant from \\( A(1, 3) \\) and \\( B(5, 7) \\).',
         marks: 4, examStyle: false, yearCreated: 2026, tags: [],
         workedSolution: { steps: [
-            { stepNumber: 1, description: 'Midpoint', workingLatex: 'M = (3, 5)', explanation: '' },
-            { stepNumber: 2, description: 'Gradient of AB', workingLatex: 'm_{AB} = \\frac{7-3}{5-1} = 1', explanation: '' },
-            { stepNumber: 3, description: 'Perpendicular bisector', workingLatex: 'm_{\\perp} = -1; \\quad y - 5 = -(x - 3) \\implies y = -x + 8', explanation: '' }
-        ], finalAnswer: 'y = -x + 8' }
+            { stepNumber: 1, description: 'Find the midpoint of \\(AB\\).', workingLatex: 'M = \\left(\\frac{1+5}{2},\\ \\frac{3+7}{2}\\right) = (3,\\ 5)', explanation: 'The line equidistant from two points is the perpendicular bisector of the line segment joining them. It passes through the midpoint of \\(AB\\).' },
+            { stepNumber: 2, description: 'Find the gradient of \\(AB\\).', workingLatex: 'm_{AB} = \\frac{7-3}{5-1} = \\frac{4}{4} = 1', explanation: 'We need this to find the gradient of the perpendicular bisector.' },
+            { stepNumber: 3, description: 'The perpendicular bisector has a gradient that is the negative reciprocal of \\(m_{AB}\\). Use this with the midpoint to find the equation.', workingLatex: 'm_{\\perp} = -1 \\quad\\quad \\Rightarrow \\quad\\quad y - 5 = -(x - 3) \\quad\\quad \\Rightarrow \\quad\\quad y = -x + 8', explanation: 'The perpendicular bisector passes through \\(M(3, 5)\\) with gradient \\(-1\\). Every point on this line is equidistant from \\(A\\) and \\(B\\).' }
+        ], finalAnswer: '\\(y = -x + 8\\)' }
     },
     {
         id: 'cg1-065', topicRef: 'CG1', topicTitle: 'Equation of a Straight Line 65', difficulty: 'Foundation',
         questionText: 'Find the area of the triangle with vertices \\( (0, 0) \\), \\( (5, 0) \\) and \\( (2, 6) \\).',
         marks: 2, examStyle: false, yearCreated: 2026, tags: [],
         workedSolution: { steps: [
-            { stepNumber: 1, description: 'Area formula', workingLatex: '\\text{Area} = \\frac{1}{2} |x_1(y_2 - y_3) + x_2(y_3 - y_1) + x_3(y_1 - y_2)| = \\frac{1}{2}|0 + 30 + 0| = 15', explanation: '' }
-        ], finalAnswer: '15 \\text{ square units}' }
+            { stepNumber: 1, description: 'Find the base and height of the triangle.', workingLatex: '\\begin{aligned} \\text{Area} &= \\frac{1}{2} \\times \\text{base} \\times \\text{height} \\\\ &= \\frac{1}{2} \\times 5 \\times 6 \\\\ &= 15 \\end{aligned}', explanation: 'Two vertices \\((0,0)\\) and \\((5,0)\\) lie on the \\(x\\)-axis, so the base is the distance between them: \\(5\\). The height is the perpendicular distance from the third vertex \\((2,6)\\) to the \\(x\\)-axis, which is its \\(y\\)-coordinate: \\(6\\).' }
+        ], finalAnswer: '\\(15\\) square units' }
     },
     {
         id: 'cg1-066', topicRef: 'CG1', topicTitle: 'Equation of a Straight Line 66', difficulty: 'Foundation',
@@ -1388,7 +1360,7 @@ export const questions: Question[] = [
         marks: 2, examStyle: false, yearCreated: 2026, tags: [],
         workedSolution: { steps: [
             { stepNumber: 1, description: 'Substitute', workingLatex: '3p - (2p+1) + 5 = 0 \\implies p + 4 = 0 \\implies p = -4', explanation: '' }
-        ], finalAnswer: 'p = -4' }
+        ], finalAnswer: '\\(p = -4\\)' }
     },
     {
         id: 'cg1-067', topicRef: 'CG1', topicTitle: 'Equation of a Straight Line 67', difficulty: 'Foundation',
@@ -1397,7 +1369,7 @@ export const questions: Question[] = [
         workedSolution: { steps: [
             { stepNumber: 1, description: 'Check perpendicular', workingLatex: 'm_1 \\times m_2 = 2 \\times (-\\tfrac{1}{2}) = -1 \\checkmark', explanation: 'Product of gradients is -1.' },
             { stepNumber: 2, description: 'Solve', workingLatex: '2x + 1 = -\\frac{1}{2}x + 6 \\implies \\frac{5}{2}x = 5 \\implies x = 2, y = 5', explanation: '' }
-        ], finalAnswer: 'Perpendicular; intersection at (2, 5)' }
+        ], finalAnswer: 'Perpendicular; intersection at \\((2, 5)\\)' }
     },
     {
         id: 'cg1-068', topicRef: 'CG1', topicTitle: 'Equation of a Straight Line 68', difficulty: 'Foundation',
@@ -1405,26 +1377,29 @@ export const questions: Question[] = [
         marks: 2, examStyle: false, yearCreated: 2026, tags: [],
         workedSolution: { steps: [
             { stepNumber: 1, description: 'Rearrange', workingLatex: 'y = 5 - \\frac{5x}{3} = -\\frac{5}{3}x + 5', explanation: '' }
-        ], finalAnswer: 'Gradient = -\\frac{5}{3}, y-intercept = 5' }
+        ], finalAnswer: 'Gradient = \\(-\\frac{5}{3}\\), y-intercept = \\((0, 5)\\)' }
     },
     {
         id: 'cg1-069', topicRef: 'CG1', topicTitle: 'Equation of a Straight Line 69', difficulty: 'Foundation',
         questionText: 'Find the shortest distance from \\( P(4, 1) \\) to the line \\( y = 2x + 3 \\).',
         marks: 4, examStyle: false, yearCreated: 2026, tags: [],
         workedSolution: { steps: [
-            { stepNumber: 1, description: 'Rewrite as ax + by + c = 0', workingLatex: '2x - y + 3 = 0', explanation: '' },
-            { stepNumber: 2, description: 'Distance formula', workingLatex: 'd = \\frac{|2(4) - 1 + 3|}{\\sqrt{4+1}} = \\frac{10}{\\sqrt{5}} = 2\\sqrt{5}', explanation: '' }
-        ], finalAnswer: '2\\sqrt{5}' }
+            { stepNumber: 1, description: 'The shortest distance from a point to a line is along the perpendicular. Find the equation of the line through \\(P(4, 1)\\) that is perpendicular to \\(y = 2x + 3\\).', workingLatex: '\\begin{aligned} m_{\\perp} &= -\\frac{1}{2} \\\\ y - 1 &= -\\frac{1}{2}(x - 4) \\\\ y &= -\\frac{1}{2}x + 3 \\end{aligned}', explanation: 'The given line has gradient 2, so the perpendicular has gradient \\(-\\frac{1}{2}\\) (negative reciprocal). Substitute \\(P(4, 1)\\) to find the equation.' },
+            { stepNumber: 2, description: 'Find the point of intersection between the original line and the perpendicular line by solving simultaneously.', workingLatex: '\\begin{aligned} 2x + 3 &= -\\frac{1}{2}x + 3 \\\\ 2x + \\frac{1}{2}x &= 0 \\\\ \\frac{5}{2}x &= 0 \\\\ x &= 0 \\end{aligned}', explanation: 'Set the two equations equal. The \\(+3\\) cancels from both sides.' },
+            { stepNumber: 3, description: 'Find the \\(y\\)-coordinate of the intersection point.', workingLatex: 'y = 2(0) + 3 = 3', explanation: 'Substitute \\(x = 0\\) into either equation. The intersection point is \\((0, 3)\\).' },
+            { stepNumber: 4, description: 'Calculate the distance from \\(P(4, 1)\\) to the intersection point \\((0, 3)\\).', workingLatex: '\\begin{aligned} d &= \\sqrt{(4-0)^2 + (1-3)^2} \\\\ &= \\sqrt{16 + 4} \\\\ &= \\sqrt{20} \\\\ &= 2\\sqrt{5} \\end{aligned}', explanation: 'Use the distance formula \\(d = \\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}\\). This is the shortest distance because it is measured along the perpendicular.' }
+        ], finalAnswer: '\\(2\\sqrt{5}\\)' }
     },
     {
         id: 'cg1-070', topicRef: 'CG1', topicTitle: 'Equation of a Straight Line 70', difficulty: 'Foundation',
         questionText: 'The line \\( L \\) passes through \\( A(1, -3) \\) and \\( B(5, 5) \\). Find: (a) the equation of \\( L \\); (b) the length of \\( AB \\); (c) the equation of the perpendicular bisector of \\( AB \\).',
         marks: 7, examStyle: false, yearCreated: 2026, tags: [],
         workedSolution: { steps: [
-            { stepNumber: 1, description: '(a) Gradient', workingLatex: 'm = \\frac{5-(-3)}{5-1} = 2', explanation: '' },
-            { stepNumber: 2, description: 'Equation', workingLatex: 'y + 3 = 2(x - 1) \\implies y = 2x - 5', explanation: '' },
-            { stepNumber: 3, description: '(b) Length', workingLatex: 'AB = \\sqrt{16 + 64} = \\sqrt{80} = 4\\sqrt{5}', explanation: '' },
-            { stepNumber: 4, description: '(c) Midpoint and perpendicular', workingLatex: 'M = (3, 1); \\quad m_{\\perp} = -\\frac{1}{2}; \\quad y - 1 = -\\frac{1}{2}(x-3) \\implies y = -\\frac{1}{2}x + \\frac{5}{2}', explanation: '' }
-        ], finalAnswer: '(a) y = 2x - 5; (b) 4\\sqrt{5}; (c) y = -\\frac{1}{2}x + \\frac{5}{2}' }
+            { stepNumber: 1, description: '(a) Find the gradient of \\(L\\).', workingLatex: 'm = \\frac{5-(-3)}{5-1} = \\frac{8}{4} = 2', explanation: 'Use \\(m = \\frac{y_2 - y_1}{x_2 - x_1}\\). Take care with the negative: \\(5 - (-3) = 8\\).' },
+            { stepNumber: 2, description: 'Write the equation of \\(L\\).', workingLatex: 'y - (-3) = 2(x - 1) \\quad\\quad \\Rightarrow \\quad\\quad y + 3 = 2x - 2 \\quad\\quad \\Rightarrow \\quad\\quad y = 2x - 5', explanation: 'Substitute the gradient and either point into \\(y - y_1 = m(x - x_1)\\), then simplify. Using \\(B(5, 5)\\) gives the same result.' },
+            { stepNumber: 3, description: '(b) Find the length of \\(AB\\).', workingLatex: '\\begin{aligned} AB &= \\sqrt{(5-1)^2 + (5-(-3))^2} \\\\ &= \\sqrt{16 + 64} \\\\ &= \\sqrt{80} = 4\\sqrt{5} \\end{aligned}', explanation: 'Use the distance formula \\(d = \\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}\\). Simplify \\(\\sqrt{80} = \\sqrt{16 \\times 5} = 4\\sqrt{5}\\).' },
+            { stepNumber: 4, description: '(c) Find the midpoint of \\(AB\\).', workingLatex: 'M = \\left(\\frac{1+5}{2},\\ \\frac{-3+5}{2}\\right) = (3,\\ 1)', explanation: 'The perpendicular bisector passes through the midpoint of \\(AB\\).' },
+            { stepNumber: 5, description: 'Find the equation of the perpendicular bisector.', workingLatex: 'm_{\\perp} = -\\frac{1}{2} \\quad\\quad \\Rightarrow \\quad\\quad y - 1 = -\\frac{1}{2}(x - 3) \\quad\\quad \\Rightarrow \\quad\\quad y = -\\frac{1}{2}x + \\frac{5}{2}', explanation: 'The perpendicular bisector has gradient \\(-\\frac{1}{2}\\) (negative reciprocal of 2) and passes through \\(M(3, 1)\\). Substitute into \\(y - y_1 = m(x - x_1)\\) and simplify.' }
+        ], finalAnswer: '(a) \\(y = 2x - 5\\); (b) \\(4\\sqrt{5}\\); (c) \\(y = -\\frac{1}{2}x + \\frac{5}{2}\\)' }
     },
 ];
