@@ -45,12 +45,14 @@ export class NotFoundError extends Error {
 // In production, these query the database directly.
 
 async function findUserById(userId: string): Promise<UserRecord | null> {
+  void userId;
   // TODO: Replace with Prisma query
   // return prisma.user.findUnique({ where: { id: userId } });
   return null; // Placeholder
 }
 
 async function findContentById(contentId: string): Promise<ContentRecord | null> {
+  void contentId;
   // TODO: Replace with Prisma query
   // return prisma.content.findUnique({ where: { id: contentId } });
   return null; // Placeholder
@@ -60,6 +62,8 @@ async function checkPurchasedContent(
   userId: string,
   contentId: string
 ): Promise<boolean> {
+  void userId;
+  void contentId;
   // TODO: Replace with Prisma query
   // const record = await prisma.purchasedContent.findFirst({
   //   where: { userId, contentId },

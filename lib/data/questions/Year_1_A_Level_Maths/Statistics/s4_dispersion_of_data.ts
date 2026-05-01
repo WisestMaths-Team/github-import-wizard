@@ -372,7 +372,7 @@ export const questions: Question[] = [
                     workingLatex:
                         '\\text{CF: } 50, 115, 173, 200 \\qquad n = 200',
                     explanation: 'Plot at (11, 0), (13, 50), (15, 115), (17, 173), (19, 200).',
-                    tikzCode: `\\begin{tikzpicture}
+                    tikz: `\\begin{tikzpicture}
 \\begin{axis}[
   xlabel={Age (years)},
   ylabel={Cumulative frequency},
@@ -427,7 +427,7 @@ export const questions: Question[] = [
                     workingLatex:
                         '\\text{CF: } 1, 11, 18, 20',
                     explanation: 'Plot at (0, 0), (2, 1), (4, 11), (6, 18), (8, 20).',
-                    tikzCode: `\\begin{tikzpicture}
+                    tikz: `\\begin{tikzpicture}
 \\begin{axis}[
   xlabel={Distance (km)},
   ylabel={Cumulative frequency},
@@ -568,7 +568,7 @@ export const questions: Question[] = [
                     description: 'Part (c): Draw box plot.',
                     workingLatex: '',
                     explanation: 'Min = 4, Q₁ = 16, Q₂ = 24, Q₃ = 37, Max = 49.',
-                    tikzCode: `\\begin{tikzpicture}
+                    tikz: `\\begin{tikzpicture}
 \\draw[->] (0,0) -- (10,0) node[right] {};
 \\foreach \\x/\\l in {0.4/0, 1.4/10, 2.4/20, 3.4/30, 4.4/40, 5.4/50} {
   \\draw (\\x, -0.15) -- (\\x, 0.15) node[below=4pt, font=\\small] {\\l};
@@ -629,7 +629,7 @@ export const questions: Question[] = [
                     description: 'Draw box plot. Whiskers end at 105 (lowest non-outlier) and 134 (highest non-outlier). Outliers at 93 and 144 marked with ×.',
                     workingLatex: '',
                     explanation: '',
-                    tikzCode: `\\begin{tikzpicture}
+                    tikz: `\\begin{tikzpicture}
 \\draw[->] (0,0) -- (12,0);
 \\foreach \\x/\\l in {0.6/90, 2/100, 3.4/110, 4.8/120, 6.2/130, 7.6/140, 9/150} {
   \\draw (\\x, -0.15) -- (\\x, 0.15) node[below=4pt, font=\\small] {\\l};
@@ -687,7 +687,7 @@ export const questions: Question[] = [
                     description: 'Part (b): Box plot.',
                     workingLatex: '',
                     explanation: 'Min = 14, Q₁ = 20, Q₂ = 34, Q₃ = 44, Max = 52.',
-                    tikzCode: `\\begin{tikzpicture}
+                    tikz: `\\begin{tikzpicture}
 \\draw[->] (0,0) -- (9,0);
 \\foreach \\x/\\l in {0.7/10, 1.7/20, 2.7/30, 3.7/40, 4.7/50, 5.7/60} {
   \\draw (\\x, -0.15) -- (\\x, 0.15) node[below=4pt, font=\\small] {\\l};
@@ -742,7 +742,7 @@ export const questions: Question[] = [
                     description: 'Part (b): Box plot. Whisker ends at 50 (highest non-outlier). 75 marked with ×.',
                     workingLatex: '',
                     explanation: '',
-                    tikzCode: `\\begin{tikzpicture}
+                    tikz: `\\begin{tikzpicture}
 \\draw[->] (0,0) -- (10,0);
 \\foreach \\x/\\l in {0/0, 1.2/10, 2.4/20, 3.6/30, 4.8/40, 6/50, 7.2/60, 8.4/70, 9.6/80} {
   \\draw (\\x, -0.15) -- (\\x, 0.15) node[below=4pt, font=\\tiny] {\\l};
@@ -1295,7 +1295,7 @@ export const questions: Question[] = [
                     workingLatex: '',
                     explanation:
                         'The median for Harvest 1 (50 g) is higher than Harvest 2 (45 g), so the tomatoes in Harvest 1 were generally heavier.',
-                    tikzCode: `\\begin{tikzpicture}
+                    tikz: `\\begin{tikzpicture}
 \\draw[->] (0,0) -- (10,0);
 \\foreach \\x/\\l in {0/0, 1/10, 2/20, 3/30, 4/40, 5/50, 6/60, 7/70, 8/80, 9/90} {
   \\draw (\\x,-0.1) -- (\\x,0.1) node[below=3pt, font=\\tiny] {\\l};

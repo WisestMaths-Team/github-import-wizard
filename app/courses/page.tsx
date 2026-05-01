@@ -3,7 +3,6 @@
 import { useAuth } from "@/hooks/useAuth";
 import { useCourse } from "@/hooks/useCourse";
 import { useRouter } from "next/navigation";
-import { useEffect } from "react";
 import type { Course } from "@/lib/types";
 
 const courses: {
@@ -32,8 +31,8 @@ const courses: {
 ];
 
 export default function CourseSelectionPage() {
-  const { user, loading: authLoading } = useAuth();
-  const { course, selectCourse, loading: courseLoading } = useCourse();
+  const { loading: authLoading } = useAuth();
+  const { selectCourse, loading: courseLoading } = useCourse();
   const router = useRouter();
 
   // Auth handled by courses layout RouteGuard

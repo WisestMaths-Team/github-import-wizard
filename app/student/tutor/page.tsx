@@ -5,7 +5,7 @@ import { MathText, MathTextInline } from "@/components/questions/MathText";
 import { Badge } from "@/components/ui/badge";
 import { year1TopicCards, year2TopicCards } from "@/lib/data/topicCards";
 import { getTopicsForCourse, getQuestionsForCourse } from "@/lib/data/courseData";
-import type { Question, Topic, Course } from "@/lib/types";
+import type { Question, Course } from "@/lib/types";
 import type { TurnEvaluation } from "@/lib/ai/socratic/types";
 
 type View = "course" | "year" | "category" | "topics" | "subtopics" | "questions" | "attempt";
@@ -62,20 +62,6 @@ function CorrectWorkingPanel({ text }: { text: string }) {
       </div>
     </div>
   );
-}
-
-function getSubcategoryData(topics: Topic[], allQuestions: Question[]) {
-  const questionsByRef = new Map<string, number>();
-  for (const q of allQuestions) questionsByRef.set(q.topicRef, (questionsByRef.get(q.topicRef) || 0) + 1);
-  const subcatMap = new Map<string, { name: string; count: number; topicCount: number }>();
-  for (const t of topics) {
-    const existing = subcatMap.get(t.subcategory) || { name: t.subcategory, count: 0, topicCount: 0 };
-    const qCount = questionsByRef.get(t.ref) || 0;
-    existing.count += qCount;
-    if (qCount > 0) existing.topicCount += 1;
-    subcatMap.set(t.subcategory, existing);
-  }
-  return Array.from(subcatMap.values()).sort((a, b) => a.name.localeCompare(b.name));
 }
 
 export default function SocraticTutorPage() {

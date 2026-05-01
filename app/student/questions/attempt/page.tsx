@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { useSearchParams, useRouter } from "next/navigation";
+import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 import { getQuestionById } from "@/lib/data/questions";
 import { MathText, MathTextInline } from "@/components/questions/MathText";
@@ -17,7 +17,6 @@ const diffBadge: Record<string, string> = {
 };
 
 export default function AttemptPage() {
-  const router = useRouter();
   const searchParams = useSearchParams();
   const questionId = searchParams.get("id");
   const question = questionId ? getQuestionById(questionId) : null;

@@ -70,8 +70,8 @@ export default function TeacherQuestionBank() {
   }, [router]);
 
   const { course } = useCourse();
-  const topics = course ? getTopicsForCourse(course) : [];
-  const questions = course ? getQuestionsForCourse(course) : [];
+  const topics = useMemo(() => course ? getTopicsForCourse(course) : [], [course]);
+  const questions = useMemo(() => course ? getQuestionsForCourse(course) : [], [course]);
 
   /* ── filter state ───────────────────────────────────── */
   const [search, setSearch] = useState("");
@@ -92,7 +92,7 @@ export default function TeacherQuestionBank() {
     const m: Record<string, (typeof topics)[0]> = {};
     topics.forEach((t) => (m[t.ref] = t));
     return m;
-  }, []);
+  }, [topics]);
 
   /* matching topics for dropdown */
   const matchingTopics = useMemo(() => {
@@ -106,7 +106,7 @@ export default function TeacherQuestionBank() {
           t.subcategory.toLowerCase().includes(q),
       )
       .slice(0, 8);
-  }, [topicSearch]);
+  }, [topicSearch, topics]);
 
   /* filtered + sorted questions */
   const results = useMemo(() => {
@@ -147,7 +147,7 @@ export default function TeacherQuestionBank() {
       if (sortBy === "topic") return a.topicRef.localeCompare(b.topicRef);
       return a.marks - b.marks;
     });
-  }, [search, topicFilter, diffs, moduleFilter, examOnly, sortBy, topicMap]);
+  }, [search, topicFilter, diffs, moduleFilter, examOnly, sortBy, topicMap, questions]);
 
   const uniqueTopicCount = new Set(results.map((q) => q.topicRef)).size;
 

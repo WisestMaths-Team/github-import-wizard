@@ -10,9 +10,27 @@
  * Difficulty: 9 Foundation / 14 Standard / 7 Challenge
  */
 
-import { Question } from "@/lib/types";
+import type { Question, QuestionDifficulty } from "@/lib/types";
 
-export const questions: Question[] = [
+interface LegacyQuestion {
+    id: string;
+    topicRef: string;
+    topicTitle: string;
+    yearCreated: number;
+    examStyle: boolean;
+    marks: number;
+    difficulty: QuestionDifficulty;
+    tags: string[];
+    questionLatex: string;
+    finalAnswer: string;
+    solutionSteps: Array<{
+        description: string;
+        workingLatex: string;
+        explanation: string;
+    }>;
+}
+
+const rawQuestions: LegacyQuestion[] = [
     // ── Identifying population and sample in context ────
     { id: "y1st1a-001", topicRef: "y1st1a", topicTitle: "Sampling: Definitions 01", yearCreated: 2026, examStyle: false, marks: 2, difficulty: "Foundation", tags: ["population", "sample", "context"], questionLatex: "A biologist measures the wing-spans of 40 butterflies caught in Richmond Park to estimate the mean wing-span of butterflies in the park. State (a) the population and (b) the sample.", finalAnswer: "(a) All butterflies in Richmond Park. (b) The 40 butterflies whose wing-spans were measured.", solutionSteps: [{ description: "State the population.", workingLatex: "\\(\\text{Population: all butterflies in Richmond Park.}\\)", explanation: "" }, { description: "State the sample.", workingLatex: "\\(\\text{Sample: the 40 butterflies that were measured.}\\)", explanation: "" }] },
     { id: "y1st1a-002", topicRef: "y1st1a", topicTitle: "Sampling: Definitions 02", yearCreated: 2026, examStyle: false, marks: 2, difficulty: "Foundation", tags: ["population", "sample", "context"], questionLatex: "A quality control officer at a biscuit factory tests 50 biscuits from a day's production of 80 000 to estimate the proportion that are broken. Identify (a) the population and (b) the sample.", finalAnswer: "(a) All 80 000 biscuits produced that day. (b) The 50 biscuits tested.", solutionSteps: [{ description: "State the population.", workingLatex: "\\(\\text{Population: all 80\\,000 biscuits produced that day.}\\)", explanation: "" }, { description: "State the sample.", workingLatex: "\\(\\text{Sample: the 50 biscuits tested.}\\)", explanation: "" }] },
@@ -53,3 +71,22 @@ export const questions: Question[] = [
     { id: "y1st1a-029", topicRef: "y1st1a", topicTitle: "Sampling: Definitions 29", yearCreated: 2026, examStyle: true, marks: 3, difficulty: "Standard", tags: ["sampling variability", "definition"], questionLatex: "Explain what is meant by sampling variability, and state the typical effect on sampling variability of (i) increasing the sample size, (ii) reducing the sample size.", finalAnswer: "Sampling variability: different random samples from the same population generally give different values of a sample statistic (e.g. different sample means). (i) Larger samples reduce sampling variability — sample statistics cluster more tightly around the true parameter. (ii) Smaller samples increase sampling variability.", solutionSteps: [{ description: "Definition.", workingLatex: "\\(\\text{Different random samples give different sample statistics — this spread is sampling variability.}\\)", explanation: "" }, { description: "Effect of larger sample.", workingLatex: "\\(\\text{Larger } n \\Rightarrow \\text{less variability; statistics cluster nearer the parameter.}\\)", explanation: "" }, { description: "Effect of smaller sample.", workingLatex: "\\(\\text{Smaller } n \\Rightarrow \\text{more variability.}\\)", explanation: "" }] },
     { id: "y1st1a-030", topicRef: "y1st1a", topicTitle: "Sampling: Definitions 30", yearCreated: 2026, examStyle: true, marks: 4, difficulty: "Challenge", tags: ["bias", "sampling variability", "synoptic", "vocabulary"], questionLatex: "Two students each take a simple random sample of 25 students from the same school of 1000 to estimate the mean number of hours of homework done per week. (a) Explain why the two students may obtain different sample means. (b) State whether this difference is due to bias or to sampling variability, and explain. (c) Suggest one way the students could reduce this difference.", finalAnswer: "(a) Each student selects a different 25 from the 1000, so different individual values are recorded; sample means therefore differ. (b) Sampling variability — both samples are unbiased (SRS), but random selection naturally produces variation between samples. There is no systematic over- or under-estimation. (c) Increase the sample size: larger samples reduce sampling variability, so the two estimates will tend to be closer together.", solutionSteps: [{ description: "Why means differ.", workingLatex: "\\(\\text{Different randomly chosen 25 students contain different individual values.}\\)", explanation: "" }, { description: "Bias or variability?", workingLatex: "\\(\\text{Sampling variability — SRS is unbiased; the variation is the natural spread between samples.}\\)", explanation: "" }, { description: "Reduce difference.", workingLatex: "\\(\\text{Increase } n \\text{; larger samples have lower variability.}\\)", explanation: "" }, { description: "State result.", workingLatex: "\\(\\text{Sample means cluster more tightly around } \\mu \\text{ for larger } n.\\)", explanation: "" }] },
 ];
+
+export const questions: Question[] = rawQuestions.map((question) => ({
+    id: question.id,
+    topicRef: question.topicRef,
+    topicTitle: question.topicTitle,
+    difficulty: question.difficulty,
+    questionText: question.questionLatex,
+    marks: question.marks,
+    workedSolution: {
+        steps: question.solutionSteps.map((step, index) => ({
+            stepNumber: index + 1,
+            ...step,
+        })),
+        finalAnswer: question.finalAnswer,
+    },
+    examStyle: question.examStyle,
+    yearCreated: question.yearCreated,
+    tags: question.tags,
+}));

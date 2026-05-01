@@ -37,7 +37,7 @@ export const questions: Question[] = [
                     description: 'Part (a): Plot age on the horizontal axis and height on the vertical axis. Plot the eight points.',
                     workingLatex: '',
                     explanation: '',
-                    tikzCode: `\\begin{tikzpicture}
+                    tikz: `\\begin{tikzpicture}
   \\begin{axis}[
     xlabel={Age (years)},
     ylabel={Height (cm)},
@@ -87,7 +87,7 @@ export const questions: Question[] = [
                     description: 'Part (a): Plot age on the x-axis and value on the y-axis.',
                     workingLatex: '',
                     explanation: '',
-                    tikzCode: `\\begin{tikzpicture}
+                    tikz: `\\begin{tikzpicture}
   \\begin{axis}[
     xlabel={Age (years)},
     ylabel={Value (\\pounds 1000s)},
@@ -137,7 +137,7 @@ export const questions: Question[] = [
                     description: 'Part (a): Plot shoe size on the x-axis and test score on the y-axis.',
                     workingLatex: '',
                     explanation: '',
-                    tikzCode: `\\begin{tikzpicture}
+                    tikz: `\\begin{tikzpicture}
   \\begin{axis}[
     xlabel={Shoe size},
     ylabel={Test score},
@@ -187,7 +187,7 @@ export const questions: Question[] = [
                     description: 'Part (a): Plot exercise hours on the x-axis and race time on the y-axis.',
                     workingLatex: '',
                     explanation: '',
-                    tikzCode: `\\begin{tikzpicture}
+                    tikz: `\\begin{tikzpicture}
   \\begin{axis}[
     xlabel={Exercise (hours)},
     ylabel={Race time (min)},
@@ -503,7 +503,7 @@ export const questions: Question[] = [
                     description: 'Part (a): Plot length on the x-axis and circumference on the y-axis.',
                     workingLatex: '',
                     explanation: '',
-                    tikzCode: `\\begin{tikzpicture}
+                    tikz: `\\begin{tikzpicture}
   \\begin{axis}[
     xlabel={Length (cm)},
     ylabel={Circumference (cm)},
@@ -1244,7 +1244,7 @@ export const questions: Question[] = [
                     description: 'Part (a): Find two points on the line.',
                     workingLatex: '\\text{At } x = 1: \\; y = 65 + 48(1) = 113 \\qquad \\text{At } x = 3: \\; y = 65 + 48(3) = 209',
                     explanation: 'Plot (1, 113) and (3, 209) and draw a straight line through them.',
-                    tikzCode: `\\begin{tikzpicture}
+                    tikz: `\\begin{tikzpicture}
   \\begin{axis}[
     xlabel={Engine size (litres)},
     ylabel={CO$_2$ emissions (g/km)},

@@ -2,8 +2,6 @@
 
 import Link from "next/link";
 import { useAuth } from "@/hooks/useAuth";
-import { useRouter } from "next/navigation";
-import { useEffect } from "react";
 
 const years = [
   {
@@ -23,8 +21,7 @@ const years = [
 ];
 
 export default function ALevelMathsYearPage() {
-  const { user, loading: authLoading } = useAuth();
-  const router = useRouter();
+  const { loading: authLoading } = useAuth();
 
   // Auth handled by courses layout RouteGuard
 

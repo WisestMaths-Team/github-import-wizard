@@ -31,7 +31,7 @@ function getStore(): Map<string, SocraticSession> {
   }
 
   // 2. Try loading from file (survives full server restarts)
-  let map = new Map<string, SocraticSession>();
+  const map = new Map<string, SocraticSession>();
   try {
     if (fs.existsSync(SESSION_FILE)) {
       const data = JSON.parse(fs.readFileSync(SESSION_FILE, "utf-8"));

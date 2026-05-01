@@ -5,9 +5,8 @@ import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 import { getTopicsForCourse, getQuestionsForCourse } from "@/lib/data/courseData";
 import { useCourse } from "@/hooks/useCourse";
-import type { Question, Topic, Course } from "@/lib/types";
+import type { Course } from "@/lib/types";
 import { MathText, MathTextInline } from "@/components/questions/MathText";
-import { WorkedSolutionPanel } from "@/components/questions/WorkedSolution";
 import { Badge } from "@/components/ui/badge";
 import { year1TopicCards, year2TopicCards } from "@/lib/data/topicCards";
 
@@ -32,22 +31,6 @@ const year2Components = [
 ];
 
 
-function getSubcategoryData(topics: Topic[], allQuestions: Question[]) {
-  const questionsByRef = new Map<string, number>();
-  for (const q of allQuestions) {
-    questionsByRef.set(q.topicRef, (questionsByRef.get(q.topicRef) || 0) + 1);
-  }
-  const subcatMap = new Map<string, { name: string; count: number; topicCount: number }>();
-  for (const t of topics) {
-    const existing = subcatMap.get(t.subcategory) || { name: t.subcategory, count: 0, topicCount: 0 };
-    const qCount = questionsByRef.get(t.ref) || 0;
-    existing.count += qCount;
-    if (qCount > 0) existing.topicCount += 1;
-    subcatMap.set(t.subcategory, existing);
-  }
-  return Array.from(subcatMap.values()).sort((a, b) => a.name.localeCompare(b.name));
-}
-
 export default function StudentQuestionBank() {
   const { course } = useCourse();
   const searchParams = useSearchParams();
@@ -59,23 +42,11 @@ export default function StudentQuestionBank() {
   const componentParam = searchParams.get("component");
 
   const allTopics = useMemo(() => (course ? getTopicsForCourse(course) : []), [course]);
-  const topics = useMemo(() => {
-    return allTopics.filter((t) => {
-      if (subcategoryFilter && t.subcategory !== subcategoryFilter) return false;
-      if (moduleFilter && t.module !== moduleFilter) return false;
-      return true;
-    });
-  }, [allTopics, subcategoryFilter, moduleFilter]);
-  const allQuestions = useMemo(() => (course ? getQuestionsForCourse(course) : []), [course]);
-
   const topicRefSubcategory = useMemo(() => {
     if (!topicRefParam) return null;
     const t = allTopics.find((t) => t.ref === topicRefParam);
     return t?.subcategory ?? null;
   }, [topicRefParam, allTopics]);
-
-  // Determine initial view based on URL params
-  const initialView: ViewLevel = topicRefParam ? "questions" : subcategoryFilter ? "topics" : course ? "course" : "course";
 
   const hasDeepLink = !!(topicRefParam || subcategoryFilter || componentParam);
   const [selectedCourse, setSelectedCourse] = useState<Course | null>(hasDeepLink ? course : null);
