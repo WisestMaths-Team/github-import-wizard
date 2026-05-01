@@ -515,7 +515,7 @@ export const questions: Question[] = [
     questionText: 'Find the range of values of \\( x \\) for which \\( y = x^3 - 12x + 1 \\) is decreasing.',
     marks: 4,
     examStyle: false,
-    yearCreated: 'Foundation',
+    yearCreated: 2026,
     tags: ['decreasing function', 'inequality', 'cubic'],
     workedSolution: {
       steps: [

@@ -289,7 +289,7 @@ export const year1TopicCards: TopicCardData[] = [
           </marker>
         </defs>
         {/* Block */}
-        <rect x="85" y="55" width="70" height="45" rx="6" fill="#2d2a26" opacity="0.08" stroke="#2d2a26" strokeWidth="1.5" opacity="0.2" />
+        <rect x="85" y="55" width="70" height="45" rx="6" fill="#2d2a26" stroke="#2d2a26" strokeWidth="1.5" opacity="0.2" />
         <text x="120" y="82" fontSize="14" fill="#2d2a26" fontFamily="Georgia,serif" fontStyle="italic" textAnchor="middle" opacity="0.4">m</text>
         {/* Force arrow right */}
         <line x1="155" y1="77" x2="210" y2="77" stroke="#0d9488" strokeWidth="2.5" markerEnd="url(#arrowF)" />

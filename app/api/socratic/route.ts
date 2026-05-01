@@ -24,7 +24,7 @@ import { validateGeminiOutput, getGenericErrorResponse } from "@/lib/ai/socratic
 import { createSession, validateSession, recordTurn } from "@/lib/ai/socratic/sessionStore";
 import { SOCRATIC_SYSTEM_INSTRUCTIONS } from "@/lib/ai/socratic/systemInstructions";
 import { checkRateLimit } from "@/lib/rateLimit";
-import type { SocraticTurn, SocraticResponse } from "@/lib/ai/socratic/types";
+import type { SocraticTurn, SocraticResponse, TurnEvaluation } from "@/lib/ai/socratic/types";
 
 // ── LaTeX fix helper ─────────────────────────────────────────────────
 // After JSON parsing with doubled backslashes, LaTeX commands like
@@ -46,6 +46,28 @@ function fixLaTeX(text: string): string {
   // which JSON.stringify correctly outputs as \\( and \\frac,
   // and the browser's JSON.parse converts to \( and \frac for KaTeX.
   return text.replace(/\*\*([^*]+)\*\*/g, "$1");
+}
+
+function normaliseEvaluation(evaluation: {
+  answerCorrect: boolean;
+  reasoningSound: boolean;
+  feedback: string;
+  mentalModelCorrection?: string | null;
+  correctWorking?: string | null;
+  score: number;
+}): TurnEvaluation {
+  return {
+    answerCorrect: evaluation.answerCorrect,
+    reasoningSound: evaluation.reasoningSound,
+    feedback: fixLaTeX(evaluation.feedback),
+    mentalModelCorrection: evaluation.mentalModelCorrection
+      ? fixLaTeX(evaluation.mentalModelCorrection)
+      : null,
+    correctWorking: evaluation.correctWorking
+      ? fixLaTeX(evaluation.correctWorking)
+      : null,
+    score: evaluation.score,
+  };
 }
 
 // ── Request schemas (Zod) ────────────────────────────────────────────
@@ -300,8 +322,6 @@ export async function POST(request: NextRequest) {
       }
 
       let rawResponse = await callGemini(conversationHistory, prompt);
-      // Dump full response to file for debugging
-      try { require("fs").writeFileSync(require("path").join(process.cwd(), ".socratic-last-response.txt"), rawResponse); } catch {};
 
       // ── 7. Output validation ───────────────────────────────────
       let validation = validateGeminiOutput(rawResponse, currentQ);
@@ -310,7 +330,6 @@ export async function POST(request: NextRequest) {
       if (validation.valid && validation.parsed && !validation.parsed.evaluation) {
         const retryPrompt = `You did not include an evaluation in your previous response. You MUST evaluate the student's answer now.\n\nThe student answered: "${sanitised.sanitisedAnswer}"\nTheir reasoning: "${sanitised.sanitisedReasoning}"\n\nProvide a JSON response with the evaluation object (answerCorrect, reasoningSound, feedback, correctWorking if wrong, score 0-10) AND the next question in questionText. Set questionNumber to ${currentQ}. Raw JSON only.`;
         rawResponse = await callGemini(conversationHistory, retryPrompt);
-        try { require("fs").writeFileSync(require("path").join(process.cwd(), ".socratic-last-response.txt"), rawResponse); } catch {};
         validation = validateGeminiOutput(rawResponse, currentQ);
       }
 
@@ -319,6 +338,16 @@ export async function POST(request: NextRequest) {
       }
 
       const geminiData = validation.parsed;
+      const evaluation: TurnEvaluation = geminiData.evaluation
+        ? normaliseEvaluation(geminiData.evaluation)
+        : {
+            answerCorrect: false,
+            reasoningSound: false,
+            feedback: "Unable to evaluate your answer at this time. Please review the topic and try the next question.",
+            mentalModelCorrection: null,
+            correctWorking: null,
+            score: 0,
+          };
 
       // Record the turn
       const turn: SocraticTurn = {
@@ -326,28 +355,10 @@ export async function POST(request: NextRequest) {
         questionText: `Question ${currentQ}`,
         studentAnswer: sanitised.sanitisedAnswer!,
         studentReasoning: sanitised.sanitisedReasoning!,
-        evaluation: geminiData.evaluation ?? {
-          answerCorrect: false,
-          reasoningSound: false,
-          feedback: "Unable to evaluate your answer at this time. Please review the topic and try the next question.",
-          mentalModelCorrection: null,
-          correctWorking: null,
-          score: 0,
-        },
+        evaluation,
       };
       recordTurn(payload.sessionId, turn);
 
-      // Fix LaTeX in evaluation strings — the JSON backslash fixer doubles
-      // backslashes, so \\( becomes \\\\( in the parsed strings. Restore them.
-      if (geminiData.evaluation) {
-        geminiData.evaluation.feedback = fixLaTeX(geminiData.evaluation.feedback);
-        if (geminiData.evaluation.correctWorking) {
-          geminiData.evaluation.correctWorking = fixLaTeX(geminiData.evaluation.correctWorking);
-        }
-        if (geminiData.evaluation.mentalModelCorrection) {
-          geminiData.evaluation.mentalModelCorrection = fixLaTeX(geminiData.evaluation.mentalModelCorrection);
-        }
-      }
       if (geminiData.questionText) {
         geminiData.questionText = fixLaTeX(geminiData.questionText);
       }
@@ -356,7 +367,7 @@ export async function POST(request: NextRequest) {
       const response: SocraticResponse = {
         questionNumber: currentQ,
         totalQuestions: 5,
-        evaluation: geminiData.evaluation,
+        evaluation,
         nextQuestion: geminiData.questionText ?? null,
         sessionComplete: geminiData.sessionComplete,
         overallFeedback: geminiData.overallFeedback ?? null,
@@ -386,7 +397,6 @@ Evaluate their answer and reasoning. Your JSON response MUST include the evaluat
 Set questionNumber to 1, questionText to null, sessionComplete to false. Respond with raw JSON only, no markdown fences.`;
 
       const rawResponse = await callGemini([], prompt);
-      try { require("fs").writeFileSync(require("path").join(process.cwd(), ".socratic-last-response.txt"), rawResponse); } catch {};
 
       const validation = validateGeminiOutput(rawResponse, 1);
 
@@ -403,10 +413,7 @@ Set questionNumber to 1, questionText to null, sessionComplete to false. Respond
         });
       }
 
-      const eval_ = validation.parsed.evaluation;
-      eval_.feedback = fixLaTeX(eval_.feedback);
-      if (eval_.correctWorking) eval_.correctWorking = fixLaTeX(eval_.correctWorking);
-      if (eval_.mentalModelCorrection) eval_.mentalModelCorrection = fixLaTeX(eval_.mentalModelCorrection);
+      const eval_ = normaliseEvaluation(validation.parsed.evaluation);
 
       return NextResponse.json({ evaluation: eval_ });
     }

@@ -20,10 +20,6 @@ const INJECTION_PATTERNS: RegExp[] = [
   /\b(import|require)\s*\(/i, // Module injection
 ];
 
-// ── Character whitelist for mathematical answers ─────────────────────
-// Alphanumeric, whitespace, maths operators, LaTeX commands, Greek letters
-const SAFE_ANSWER_CHARS = /^[a-zA-Z0-9\s+\-*/^=<>()[\]{},.:;!?'"|\\√∫∑∏πθαβγδεφσω°±×÷≤≥≠≈∞∂∇]+$/;
-
 // ── Max lengths ──────────────────────────────────────────────────────
 const MAX_ANSWER_LENGTH = 2000;
 const MAX_EXPLANATION_LENGTH = 5000;

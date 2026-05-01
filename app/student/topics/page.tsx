@@ -26,7 +26,7 @@ export default function TopicsPage() {
   const [filter, setFilter] = useState("all");
   const [openSections, setOpenSections] = useState<Record<string, boolean>>({});
   const { course } = useCourse();
-  const topics = course ? getTopicsForCourse(course) : [];
+  const topics = useMemo(() => course ? getTopicsForCourse(course) : [], [course]);
   const { loaded, isCompleted, getWatchCount } = useTopicProgress();
 
   const filtered = useMemo(() => {
@@ -48,7 +48,7 @@ export default function TopicsPage() {
     }
 
     return result;
-  }, [search, filter]);
+  }, [search, filter, topics]);
 
   const grouped = useMemo(() => {
     const map = new Map<string, typeof topics>();

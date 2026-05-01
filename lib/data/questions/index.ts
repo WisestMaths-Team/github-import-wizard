@@ -34,8 +34,8 @@ import { questions as qc11 } from "./Year_1_A_Level_Maths/Quadratic_and_Cubics/q
 import { questions as be1 } from "./Year_1_A_Level_Maths/Binomial_Expansions/be1_binomial_expansions";
 
 import { questions as cg1 } from "./Year_1_A_Level_Maths/Coordinate_Geometry/cg1_equations_of_straight_line";
-import { questions as cg2 } from "./Year_1_A_Level_Maths/Coordinate_Geometry/cg2_line_segments";
-import { questions as cg3 } from "./Year_1_A_Level_Maths/Coordinate_Geometry/cg3_parallel_and_perpendicular_lines";
+import { questions as cg2 } from "./Year_1_A_Level_Maths/Coordinate_Geometry/cg2_Line_Segments";
+import { questions as cg3 } from "./Year_1_A_Level_Maths/Coordinate_Geometry/cg3_Parallel_and_Perpendicular_Lines";
 import { questions as cg4 } from "./Year_1_A_Level_Maths/Coordinate_Geometry/cg4_proportion";
 import { questions as cg5 } from "./Year_1_A_Level_Maths/Coordinate_Geometry/cg5_curve_sketching";
 

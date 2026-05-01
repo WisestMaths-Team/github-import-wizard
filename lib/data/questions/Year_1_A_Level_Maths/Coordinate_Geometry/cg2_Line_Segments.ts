@@ -706,13 +706,13 @@ export const questions: Question[] = [
     },
     {
         id: 'cg2-034', topicRef: 'CG2', topicTitle: 'Line Segments 34', difficulty: 'Foundation',
-        questionText: 'Show that the points \\( A(2, 3) \\), \\( B(5, 7) \\), \\( C(8, 3) \\) form a right-angled triangle at \\( B \\).',
+        questionText: 'Show that the points \\( A(2, 3) \\), \\( B(5, 7) \\), \\( C(9, 4) \\) form a right-angled triangle at \\( B \\).',
         marks: 4, examStyle: false, yearCreated: 2026, tags: [],
         workedSolution: { steps: [
-            { stepNumber: 1, description: 'Find lengths squared', workingLatex: 'AB^2 = 9+16 = 25, \\quad BC^2 = 9+16 = 25, \\quad AC^2 = 36+0 = 36', explanation: 'Working with squared lengths avoids square roots and makes comparison easier.' },
-            { stepNumber: 2, description: 'Check Pythagoras', workingLatex: 'AB^2 + BC^2 = 50 \\neq AC^2 = 36', explanation: 'For a right angle at B, we would need AB^2 + BC^2 = AC^2 (Pythagoras), but 50 is not equal to 36.' },
-            { stepNumber: 3, description: 'Check perpendicular gradients', workingLatex: 'm_{AB} = \\frac{4}{3}, \\quad m_{BC} = \\frac{-4}{3}, \\quad m_{AB} \\times m_{BC} = -\\frac{16}{9} \\neq -1', explanation: 'Two lines are perpendicular only if the product of their gradients equals -1. Since -16/9 is not -1, the angle at B is not a right angle. This triangle is isosceles, not right-angled.' }
-        ], finalAnswer: 'AB = BC = 5, AC = 6. Isosceles triangle (not right-angled at B).' }
+            { stepNumber: 1, description: 'Find lengths squared', workingLatex: 'AB^2 = 3^2+4^2 = 25, \\quad BC^2 = 4^2+(-3)^2 = 25, \\quad AC^2 = 7^2+1^2 = 50', explanation: 'Working with squared lengths avoids square roots and lets us check Pythagoras directly.' },
+            { stepNumber: 2, description: 'Check Pythagoras', workingLatex: 'AB^2 + BC^2 = 25 + 25 = 50 = AC^2', explanation: 'Since the two shorter sides meet at B and their squares add to the square of AC, the right angle is at B.' },
+            { stepNumber: 3, description: 'Check perpendicular gradients', workingLatex: 'm_{AB} = \\frac{4}{3}, \\quad m_{BC} = \\frac{-3}{4}, \\quad m_{AB} \\times m_{BC} = -1', explanation: 'The gradients are negative reciprocals, so AB is perpendicular to BC. This confirms the right angle at B.' }
+        ], finalAnswer: 'Right-angled at \\(B\\), with \\(AB = BC = 5\\) and \\(AC = 5\\sqrt{2}\\).' }
     },
     {
         id: 'cg2-035', topicRef: 'CG2', topicTitle: 'Line Segments 35', difficulty: 'Foundation',
@@ -730,7 +730,7 @@ export const questions: Question[] = [
             { stepNumber: 1, description: 'Midpoint', workingLatex: 'M = (-1, -1)', explanation: 'Using the midpoint formula: average the x-coordinates and average the y-coordinates separately.' },
             { stepNumber: 2, description: 'Gradient of AB', workingLatex: 'm = \\frac{-8-6}{2-(-4)} = \\frac{-14}{6} = -\\frac{7}{3}', explanation: 'Gradient = rise over run. Be careful with double negatives: \\(2 - (-4) = 6\\), not \\(2\\).' },
             { stepNumber: 3, description: 'Perpendicular bisector', workingLatex: 'm_{\\perp} = \\frac{3}{7}; \\quad y + 1 = \\frac{3}{7}(x + 1) \\implies 7y = 3x - 4', explanation: 'The perpendicular gradient is the negative reciprocal. Then use \\(y - y_1 = m(x - x_1)\\) with the midpoint as \\((x_1, y_1)\\).' }
-        ], finalAnswer: '\\(Gradient: -\\frac{7}{3}\\); \\(Perp bisector: 3x - 7y - 4 = 0\\)' }
+        ], finalAnswer: 'Gradient of \\(AB\\): \\(-\\frac{7}{3}\\); perpendicular bisector: \\(3x - 7y - 4 = 0\\)' }
     },
     {
         id: 'cg2-037', topicRef: 'CG2', topicTitle: 'Line Segments 37', difficulty: 'Foundation',

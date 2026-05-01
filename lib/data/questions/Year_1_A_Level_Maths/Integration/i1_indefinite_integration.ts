@@ -382,7 +382,7 @@ export const questions: Question[] = [
         questionText: 'Find \\( \\displaystyle\\int \\frac{x^3 - 4x}{x} \\, \\mathrm{d}x \\).',
         marks: 3,
         examStyle: false,
-        yearCreated: 'Foundation',
+        yearCreated: 2026,
         tags: ['indefinite integration', 'simplify fraction', 'polynomial'],
         workedSolution: {
             steps: [
