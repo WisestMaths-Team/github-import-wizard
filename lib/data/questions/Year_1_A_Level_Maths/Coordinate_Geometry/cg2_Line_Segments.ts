@@ -719,7 +719,7 @@ export const questions: Question[] = [
         questionText: 'Find the distance between \\( A(1, -2) \\) and \\( B(-3, 1) \\). Leave your answer as a surd.',
         marks: 2, examStyle: false, yearCreated: 2026, tags: [],
         workedSolution: { steps: [
-            { stepNumber: 1, description: 'Distance formula', workingLatex: 'AB = \\sqrt{(-3-1)^2 + (1-(-2))^2} = \\sqrt{16+9} = 5', explanation: '' }
+            { stepNumber: 1, description: 'Distance formula', workingLatex: 'AB = \\sqrt{(-3-1)^2 + (1-(-2))^2} = \\sqrt{16+9} = 5', explanation: 'Note that (-3-1)^2 = 16 and (1-(-2))^2 = 9. The answer is a whole number (3-4-5 triple), so no surd is needed despite the question asking for one.' }
         ], finalAnswer: '\\(5\\)' }
     },
     {
