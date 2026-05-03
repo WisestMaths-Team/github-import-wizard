@@ -169,9 +169,52 @@ export function MathText({ text }: { text: string }) {
 }
 
 /**
+ * Detects a lettered/numbered list (a) ... b) ... or (i) ... (ii) ...) and
+ * renders it as a clean styled list with proper spacing.
+ */
+function LetterList({ items }: { items: { label: string; content: string }[] }) {
+  return (
+    <div className="mt-2 mb-1 space-y-2">
+      {items.map((item, i) => (
+        <div key={i} className="flex gap-2.5 items-baseline">
+          <span className="shrink-0 w-6 text-right font-semibold text-accent text-sm">{item.label}</span>
+          <span className="flex-1"><MathTextInline text={item.content} /></span>
+        </div>
+      ))}
+    </div>
+  );
+}
+
+/**
  * Renders text with math delimiters and newline handling.
  */
 function MathTextWithBreaks({ text }: { text: string }) {
+  // Check if text contains a lettered list like "a) ... \nb) ..."
+  const listMatch = text.match(/^([\s\S]*?)\n\n?((?:[a-z]\)|(?:\([a-z]\)))[\s\S]*)$/);
+  if (listMatch) {
+    const preamble = listMatch[1].trim();
+    const listPart = listMatch[2];
+    const items: { label: string; content: string }[] = [];
+    const itemRegex = /(?:^|\n)\s*(?:([a-z])\)|(\([a-z]\)))\s*(.*?)(?=\n\s*(?:[a-z]\)|\([a-z]\))|\s*$)/gs;
+    let m;
+    while ((m = itemRegex.exec(listPart)) !== null) {
+      const label = m[1] ? m[1] + ")" : m[2];
+      items.push({ label, content: m[3].trim() });
+    }
+    if (items.length >= 2) {
+      return (
+        <>
+          {preamble && <MathTextWithBreaksInner text={preamble} />}
+          <LetterList items={items} />
+        </>
+      );
+    }
+  }
+
+  return <MathTextWithBreaksInner text={text} />;
+}
+
+function MathTextWithBreaksInner({ text }: { text: string }) {
   const segments: { type: "text" | "math" | "display-math"; value: string }[] = [];
   let cursor = 0;
 

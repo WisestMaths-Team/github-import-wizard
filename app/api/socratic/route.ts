@@ -31,21 +31,83 @@ import type { SocraticTurn, SocraticResponse, TurnEvaluation } from "@/lib/ai/so
 // \\frac become \\\\frac. This restores them to single-backslash form
 // and ensures \( \) delimiters are correct for KaTeX rendering.
 function fixLaTeX(text: string): string {
-  // After JSON parsing with fixBackslashes, strings have doubled backslashes:
-  //   \\( -> needs to be \(    (for MathText to find LaTeX delimiters)
-  //   \\\\frac -> needs to be \\frac  (\\frac from Gemini was quadrupled)
-  //   \\frac -> needs to be \frac     (\frac from Gemini was doubled)
-  //
-  // Since JSON.stringify will convert \ to \\, and the frontend JSON.parse
-  // will convert \\ back to \, we just need the strings to have \( and \frac.
-  //
-  // After our fixBackslashes + JSON.parse, strings have \\( and \\frac.
-  // Convert all \\\\ to \\ first (quadrupled to doubled), then \\ to \ (doubled to single).
-  // Only strip markdown bold — do NOT touch backslashes.
-  // The strings from fixBackslashes + JSON.parse have \\( and \\frac
-  // which JSON.stringify correctly outputs as \\( and \\frac,
-  // and the browser's JSON.parse converts to \( and \frac for KaTeX.
-  return text.replace(/\*\*([^*]+)\*\*/g, "$1");
+  // Strip markdown bold
+  let result = text.replace(/\*\*([^*]+)\*\*/g, "$1");
+
+  // Replace $...$ delimiters with \(...\) for MathText compatibility
+  result = result.replace(/\$([^$]+)\$/g, "\\($1\\)");
+
+  // Detect bare LaTeX commands NOT inside \(...\) and wrap them.
+  // Common LaTeX commands that indicate undelimited math:
+  const latexCmds = /\\(?:frac|dfrac|tfrac|sqrt|left|right|text|begin|end|int|sum|prod|lim|sin|cos|tan|log|ln|infty|alpha|beta|theta|pi|pm|mp|times|div|cdot|leq|geq|neq|approx|equiv|implies|Rightarrow|Leftarrow|quad|qquad|binom|overline|underline|vec|hat|bar|dot|ddot)\b/;
+
+  if (latexCmds.test(result) && !result.includes("\\(")) {
+    // The entire text has LaTeX but no \( \) delimiters.
+    // Wrap sequences containing LaTeX in \( \).
+    // Split by newlines, process each line.
+    const lines = result.split("\n");
+    result = lines.map(line => {
+      if (!latexCmds.test(line)) return line;
+      // Check if this line already has \( \) — if so, skip
+      if (line.includes("\\(")) return line;
+      // Find the LaTeX-heavy portion and wrap it
+      // Strategy: find the first LaTeX command and wrap from there to end of math
+      const match = line.match(/(.*?)(\\.+)/);
+      if (match) {
+        // Wrap everything after the text prefix that contains LaTeX
+        const textPart = line.match(/^((?:Step\s+)?\d+[.:]\s*(?:[A-Z][a-z]*(?:\s+[a-z]+)*[.:])?\s*)/i);
+        if (textPart) {
+          const prefix = textPart[1];
+          const mathPart = line.slice(prefix.length);
+          if (latexCmds.test(mathPart)) {
+            return prefix + "\\(" + mathPart + "\\)";
+          }
+        }
+        // If no clear prefix, wrap the whole line
+        return "\\(" + line + "\\)";
+      }
+      return line;
+    }).join("\n");
+  }
+
+  // Also handle partially delimited text: if some parts have \( \) but
+  // there are bare LaTeX commands outside them, wrap those too.
+  if (latexCmds.test(result) && result.includes("\\(")) {
+    // Process segments outside \(...\) delimiters
+    const parts: string[] = [];
+    let cursor = 0;
+    while (cursor < result.length) {
+      const open = result.indexOf("\\(", cursor);
+      if (open === -1) {
+        // Rest is plain text — check for bare LaTeX
+        const rest = result.slice(cursor);
+        parts.push(wrapBareLaTeX(rest));
+        break;
+      }
+      // Text before the delimiter
+      if (open > cursor) {
+        parts.push(wrapBareLaTeX(result.slice(cursor, open)));
+      }
+      // Find matching \)
+      const close = result.indexOf("\\)", open + 2);
+      if (close === -1) {
+        parts.push(result.slice(open));
+        break;
+      }
+      parts.push(result.slice(open, close + 2));
+      cursor = close + 2;
+    }
+    result = parts.join("");
+  }
+
+  return result;
+}
+
+function wrapBareLaTeX(text: string): string {
+  const latexCmds = /\\(?:frac|dfrac|tfrac|sqrt|left|right|begin|end|int|sum|prod|lim|sin|cos|tan|log|ln|infty|alpha|beta|theta|pi|pm|mp|times|div|cdot|leq|geq|neq|approx|equiv|implies|Rightarrow|binom|overline|vec)\b/;
+  if (!latexCmds.test(text)) return text;
+  // Wrap the math portion
+  return text.replace(/((?:\\(?:frac|dfrac|tfrac|sqrt|left|right|begin|end|int|sum|prod|lim|sin|cos|tan|log|ln|infty|alpha|beta|theta|pi|pm|mp|times|div|cdot|leq|geq|neq|approx|equiv|implies|Rightarrow|binom|overline|vec)\b[^,.\n]*)+)/g, "\\($1\\)");
 }
 
 function normaliseEvaluation(evaluation: {

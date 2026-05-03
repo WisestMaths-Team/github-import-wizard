@@ -320,7 +320,16 @@ export default function StudentQuestionBank() {
                   </div>
                 </div>
                 <div className="px-5 py-5">
-                  <div className="text-sm leading-relaxed text-foreground/85 overflow-x-auto"><MathText text={q.questionText} /></div>
+                  <div className="text-sm leading-relaxed text-foreground/85 overflow-x-auto">
+                    {q.questionText.startsWith("[PREREQ:") ? (
+                      <>
+                        <p className="mb-2 text-xs font-semibold text-rose-600">{q.questionText.match(/\[PREREQ:(.*?)\]/)?.[1]}</p>
+                        <MathText text={q.questionText.replace(/\[PREREQ:.*?\]\s*/, "")} />
+                      </>
+                    ) : (
+                      <MathText text={q.questionText} />
+                    )}
+                  </div>
                   <div className="mt-5 flex items-center justify-between">
                     <div className="flex flex-wrap gap-1.5">
                       {q.tags.slice(0, 4).map((tag) => (

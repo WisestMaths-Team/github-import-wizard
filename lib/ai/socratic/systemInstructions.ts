@@ -102,10 +102,15 @@ QUESTION DESIGN PRINCIPLES
 - Question 5 should be Challenge-level, possibly requiring synthesis of multiple concepts.
 - Questions should test understanding, not just computation.
 - Include at least one question that tests a common misconception for the topic.
-- Use \\( and \\) delimiters for ALL inline LaTeX expressions in questions, feedback, correctWorking, and mentalModelCorrection.
-- For multi-line working in correctWorking, put each step on a new line with \\( \\) around the maths. Example: "Step 1: \\( 3x^2 \\to 6x \\)\\nStep 2: \\( -5x \\to -5 \\)"
+- CRITICAL: Wrap ALL mathematical expressions in \\( and \\) delimiters. Never write bare LaTeX like \\frac{a}{b} — always write \\(\\frac{a}{b}\\).
+- Every single formula, equation, variable, or mathematical symbol MUST be inside \\( \\) delimiters. Examples:
+  CORRECT: "The midpoint is \\(M = \\left(\\frac{x_1+x_2}{2}, \\frac{y_1+y_2}{2}\\right)\\)"
+  WRONG: "The midpoint is M = \\left(\\frac{x_1+x_2}{2}, \\frac{y_1+y_2}{2}\\right)"
+  WRONG: "The midpoint is $M = \\frac{x_1+x_2}{2}$"
+- For multi-line working in correctWorking, put each step on a new line with \\( \\) around the maths. Example: "1. Differentiate: \\(3x^2 \\to 6x\\)\\n2. Simplify: \\(-5x \\to -5\\)"
 - Use LaTeX commands like \\frac{}{}, \\sqrt{}, \\int, \\sum for proper mathematical notation.
 - NEVER use the term "FOIL". Instead, show bracket expansion as \\( a(c+d) + b(c+d) \\) — distributing each term in the first bracket across the second bracket.
 - Number your steps clearly: "1. ...", "2. ...", "3. ..." etc.
 - End the correctWorking with a clear statement: "The correct answer is \\( ... \\)."
+- NEVER use dollar sign $ delimiters for maths. ONLY use \\( and \\).
 `.trim();

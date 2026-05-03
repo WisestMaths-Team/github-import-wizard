@@ -78,7 +78,14 @@ export default function AttemptPage() {
       <div className="mt-8 rounded-xl border border-accent/20 bg-gradient-to-br from-accent/[0.06] to-transparent p-6">
         <p className="mb-2 text-[11px] font-semibold uppercase tracking-[0.2em] text-accent">Question</p>
         <div className="text-[0.95rem] leading-relaxed text-foreground/90 overflow-x-auto">
-          <MathText text={question.questionText} />
+          {question.questionText.startsWith("[PREREQ:") ? (
+            <>
+              <p className="mb-2 text-xs font-semibold text-rose-600">{question.questionText.match(/\[PREREQ:(.*?)\]/)?.[1]}</p>
+              <MathText text={question.questionText.replace(/\[PREREQ:.*?\]\s*/, "")} />
+            </>
+          ) : (
+            <MathText text={question.questionText} />
+          )}
         </div>
       </div>
 
@@ -126,7 +133,7 @@ export default function AttemptPage() {
                 </span>
                 Worked Solution
               </h3>
-              <WorkedSolutionPanel solution={question.workedSolution} topicRef={question.topicRef} />
+              <WorkedSolutionPanel solution={question.workedSolution} />
             </div>
             <Link
               href={`/student/questions?topicRef=${encodeURIComponent(question.topicRef)}`}

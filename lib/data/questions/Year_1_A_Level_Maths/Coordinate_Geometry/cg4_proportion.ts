@@ -30,7 +30,7 @@ export const questions: Question[] = [
         marks: 3,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['proportion', 'direct proportion', 'constant of proportionality'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -65,7 +65,7 @@ export const questions: Question[] = [
         marks: 3,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['proportion', 'direct proportion', 'find x'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -100,7 +100,7 @@ export const questions: Question[] = [
         marks: 3,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['proportion', 'direct proportion', 'real-world', 'petrol'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -135,7 +135,7 @@ export const questions: Question[] = [
         marks: 4,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['proportion', 'direct proportion', 'unknown constant', 'algebra'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -170,7 +170,7 @@ export const questions: Question[] = [
         marks: 3,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['proportion', 'direct proportion', 'real-world', 'charges'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -205,7 +205,7 @@ export const questions: Question[] = [
         marks: 3,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['proportion', 'direct proportion', 'find unknown'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -234,7 +234,7 @@ export const questions: Question[] = [
         marks: 3,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['proportion', 'direct proportion', 'real-world', 'printing'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -263,7 +263,7 @@ export const questions: Question[] = [
         marks: 5,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['proportion', 'direct proportion', 'Hooke\'s law', 'multi-part'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -306,7 +306,7 @@ export const questions: Question[] = [
         marks: 3,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['proportion', 'inverse proportion', 'constant of proportionality'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -341,7 +341,7 @@ export const questions: Question[] = [
         marks: 3,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['proportion', 'inverse proportion'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -370,7 +370,7 @@ export const questions: Question[] = [
         marks: 3,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['proportion', 'inverse proportion', 'real-world', 'speed'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -399,7 +399,7 @@ export const questions: Question[] = [
         marks: 3,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['proportion', 'inverse proportion', 'find unknown'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -428,7 +428,7 @@ export const questions: Question[] = [
         marks: 4,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['proportion', 'inverse proportion', 'real-world', 'multi-part'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -463,7 +463,7 @@ export const questions: Question[] = [
         marks: 4,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['proportion', 'inverse proportion', 'unknown constant', 'algebra'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -504,7 +504,7 @@ export const questions: Question[] = [
         marks: 3,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['proportion', 'inverse proportion', 'real-world', 'Boyle\'s law', 'gas'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -535,7 +535,7 @@ export const questions: Question[] = [
         marks: 3,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['proportion', 'direct proportion', 'squared', 'y proportional to x squared'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -564,7 +564,7 @@ export const questions: Question[] = [
         marks: 3,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['proportion', 'y proportional to x squared', 'real-world', 'sphere', 'surface area'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -593,7 +593,7 @@ export const questions: Question[] = [
         marks: 4,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['proportion', 'y proportional to x squared', 'find x', 'square root'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -628,7 +628,7 @@ export const questions: Question[] = [
         marks: 6,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['proportion', 'y proportional to x squared', 'real-world', 'braking distance', 'multi-part'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -669,7 +669,7 @@ export const questions: Question[] = [
         marks: 4,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['proportion', 'y proportional to x squared', 'graph', 'sketch'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -710,7 +710,7 @@ export const questions: Question[] = [
         marks: 3,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['proportion', 'y proportional to x squared', 'real-world', 'physics', 'power'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -741,7 +741,7 @@ export const questions: Question[] = [
         marks: 3,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['proportion', 'inverse proportion', 'y proportional to 1 over x squared'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -770,7 +770,7 @@ export const questions: Question[] = [
         marks: 3,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['proportion', 'inverse square law', 'real-world', 'light intensity'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -799,7 +799,7 @@ export const questions: Question[] = [
         marks: 4,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['proportion', 'inverse proportion', 'y proportional to 1 over x squared', 'find x'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -834,7 +834,7 @@ export const questions: Question[] = [
         marks: 5,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['proportion', 'inverse square law', 'gravity', 'real-world', 'reasoning'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -869,7 +869,7 @@ export const questions: Question[] = [
         marks: 3,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['proportion', 'inverse proportion', 'y proportional to 1 over x squared'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -900,7 +900,7 @@ export const questions: Question[] = [
         marks: 3,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['proportion', 'y proportional to square root of x', 'surd'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -929,7 +929,7 @@ export const questions: Question[] = [
         marks: 4,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['proportion', 'y proportional to square root of x', 'find x', 'exact value'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -964,7 +964,7 @@ export const questions: Question[] = [
         marks: 4,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['proportion', 'proof', 'direct proportion', 'algebraic reasoning'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -999,7 +999,7 @@ export const questions: Question[] = [
         marks: 4,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['proportion', 'proof', 'inverse proportion', 'algebraic reasoning'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -1034,7 +1034,7 @@ export const questions: Question[] = [
         marks: 4,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['proportion', 'y proportional to square root of x', 'real-world', 'pendulum'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -1065,7 +1065,7 @@ export const questions: Question[] = [
         marks: 8,
         examStyle: true,
         yearCreated: 2026,
-        tags: ['proportion', 'combined proportion', 'real-world', 'resistance', 'exam-style'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -1106,7 +1106,7 @@ export const questions: Question[] = [
         marks: 7,
         examStyle: true,
         yearCreated: 2026,
-        tags: ['proportion', 'y proportional to x squared', 'multi-part', 'exam-style', 'reasoning'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -1147,7 +1147,7 @@ export const questions: Question[] = [
         marks: 8,
         examStyle: true,
         yearCreated: 2026,
-        tags: ['proportion', 'combined proportion', 'inverse proportion', 'direct proportion', 'multi-part', 'exam-style'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -1188,7 +1188,7 @@ export const questions: Question[] = [
         marks: 10,
         examStyle: true,
         yearCreated: 2026,
-        tags: ['proportion', 'inverse square', 'multi-part', 'exam-style', 'chain of proportionality'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -1320,9 +1320,9 @@ export const questions: Question[] = [
         questionText: 'If \\( x \\) is doubled, what happens to \\( y \\) when: (a) \\( y \\propto x \\); (b) \\( y \\propto x^2 \\); (c) \\( y \\propto \\frac{1}{x} \\)?',
         marks: 3, examStyle: false, yearCreated: 2026, tags: [],
         workedSolution: { steps: [
-            { stepNumber: 1, description: '(a) y = kx', workingLatex: 'y_{\\text{new}} = k(2x) = 2kx = 2y', explanation: 'y doubles.' },
-            { stepNumber: 2, description: '(b) y = kx^2', workingLatex: 'y_{\\text{new}} = k(2x)^2 = 4kx^2 = 4y', explanation: 'y quadruples.' },
-            { stepNumber: 3, description: '(c) y = k/x', workingLatex: 'y_{\\text{new}} = \\frac{k}{2x} = \\frac{y}{2}', explanation: 'y halves.' }
+            { stepNumber: 1, description: '(a) \\( y = kx \\)', workingLatex: 'y_{\\text{new}} = k(2x) = 2kx = 2y', explanation: '\\( y \\) doubles.' },
+            { stepNumber: 2, description: '(b) \\( y = kx^2 \\)', workingLatex: 'y_{\\text{new}} = k(2x)^2 = 4kx^2 = 4y', explanation: '\\( y \\) quadruples.' },
+            { stepNumber: 3, description: '(c) \\( y = \\frac{k}{x} \\)', workingLatex: 'y_{\\text{new}} = \\frac{k}{2x} = \\frac{y}{2}', explanation: '\\( y \\) halves.' }
         ], finalAnswer: '(a) doubles; (b) quadruples; (c) halves' }
     },
     {
@@ -1358,7 +1358,7 @@ export const questions: Question[] = [
         marks: 4, examStyle: false, yearCreated: 2026, tags: [],
         workedSolution: { steps: [
             { stepNumber: 1, description: 'Find k', workingLatex: '8 = \\frac{k}{3} \\implies k = 24', explanation: '' },
-            { stepNumber: 2, description: 'Set y = x', workingLatex: 'x = \\frac{24}{x} \\implies x^2 = 24 \\implies x = \\sqrt{24} = 2\\sqrt{6}', explanation: 'Taking positive root.' }
+            { stepNumber: 2, description: 'Set \\( y = x \\)', workingLatex: 'x = \\frac{24}{x} \\implies x^2 = 24 \\implies x = \\sqrt{24} = 2\\sqrt{6}', explanation: 'Taking positive root.' }
         ], finalAnswer: 'x = 2\\sqrt{6}' }
     },
     {
