@@ -22,13 +22,13 @@ export const questions: Question[] = [
     {
         id: 'el5-001',
         topicRef: 'el5',
-        topicTitle: 'Modelling Exponential Growth and Decay 01',
+        topicTitle: 'Modelling Exponential Growth and Decay',
         difficulty: 'Foundation',
         questionText: 'A colony of bacteria is modelled by \\( B = 200e^{0.05t} \\), where \\( B \\) is the number of bacteria and \\( t \\) is the time in hours.\n\n (a) Write down the initial number of bacteria.\n\n (b) Predict the number of bacteria after 10 hours. Give your answer to the nearest whole number.',
         marks: 3,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['exponential growth', 'modelling', 'substitute', 'bacteria'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -50,13 +50,13 @@ export const questions: Question[] = [
     {
         id: 'el5-002',
         topicRef: 'el5',
-        topicTitle: 'Modelling Exponential Growth and Decay 02',
+        topicTitle: 'Modelling Exponential Growth and Decay',
         difficulty: 'Foundation',
         questionText: 'The mass \\( M \\) (grams) of a radioactive sample after \\( t \\) years is given by \\( M = 500e^{-0.03t} \\).\n\n (a) State the initial mass.\n\n (b) Find the mass remaining after 20 years. Give your answer to 3 significant figures.',
         marks: 3,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['exponential decay', 'modelling', 'radioactive', 'substitute'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -78,13 +78,13 @@ export const questions: Question[] = [
     {
         id: 'el5-003',
         topicRef: 'el5',
-        topicTitle: 'Modelling Exponential Growth and Decay 03',
+        topicTitle: 'Modelling Exponential Growth and Decay',
         difficulty: 'Foundation',
         questionText: 'An oven is preheating. Its temperature \\( T\\,^\\circ\\!\\text{C} \\) after \\( t \\) minutes is given by \\( T = 220 - 200e^{-0.1t} \\).\n\n (a) What was the initial temperature of the oven?\n\n (b) What is the temperature after 8 minutes? Give your answer to 3 s.f.',
         marks: 3,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['exponential growth', 'modelling', 'temperature', 'substitute'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -106,13 +106,13 @@ export const questions: Question[] = [
     {
         id: 'el5-004',
         topicRef: 'el5',
-        topicTitle: 'Modelling Exponential Growth and Decay 04',
+        topicTitle: 'Modelling Exponential Growth and Decay',
         difficulty: 'Foundation',
         questionText: 'The value \\( V \\) (£) of a motorbike \\( t \\) years after purchase is modelled by \\( V = 8000e^{-0.15t} \\).\n\n (a) State the purchase price.\n\n (b) Find the value after 4 years. Give your answer to the nearest pound.',
         marks: 3,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['exponential decay', 'modelling', 'depreciation', 'substitute'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -134,13 +134,13 @@ export const questions: Question[] = [
     {
         id: 'el5-005',
         topicRef: 'el5',
-        topicTitle: 'Modelling Exponential Growth and Decay 05',
+        topicTitle: 'Modelling Exponential Growth and Decay',
         difficulty: 'Foundation',
         questionText: 'A savings account earns compound interest. The amount \\( A \\) (£) after \\( t \\) years is modelled by \\( A = 2500 \\times 1.04^t \\).\n\n (a) Write down the initial amount invested.\n\n (b) Find the amount in the account after 6 years. Give your answer to the nearest penny.',
         marks: 3,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['exponential growth', 'modelling', 'compound interest', 'substitute'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -162,13 +162,13 @@ export const questions: Question[] = [
     {
         id: 'el5-006',
         topicRef: 'el5',
-        topicTitle: 'Modelling Exponential Growth and Decay 06',
+        topicTitle: 'Modelling Exponential Growth and Decay',
         difficulty: 'Foundation',
         questionText: 'A drug concentration \\( C \\) (mg/litre) in a patient\'s bloodstream after \\( t \\) hours is modelled by \\( C = 4e^{-0.2t} \\).\n\n (a) State the initial concentration.\n\n (b) Find the concentration after 3 hours. Give your answer to 3 s.f.',
         marks: 3,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['exponential decay', 'modelling', 'drug concentration', 'substitute'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -191,13 +191,13 @@ export const questions: Question[] = [
     {
         id: 'el5-007',
         topicRef: 'el5',
-        topicTitle: 'Modelling Exponential Growth and Decay 07',
+        topicTitle: 'Modelling Exponential Growth and Decay',
         difficulty: 'Foundation',
         questionText: 'A population of insects is modelled by \\( P = 150e^{0.06t} \\), where \\( t \\) is the time in days.\n\n Find the value of \\( t \\) when the population first reaches 500. Give your answer to 3 significant figures.',
         marks: 4,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['exponential growth', 'modelling', 'solve for t', 'natural log'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -225,13 +225,13 @@ export const questions: Question[] = [
     {
         id: 'el5-008',
         topicRef: 'el5',
-        topicTitle: 'Modelling Exponential Growth and Decay 08',
+        topicTitle: 'Modelling Exponential Growth and Decay',
         difficulty: 'Foundation',
         questionText: 'The mass \\( M \\) grams of a substance decays according to \\( M = 800e^{-0.04t} \\), where \\( t \\) is in years.\n\n Find the time taken for the mass to reduce to 200 g. Give your answer to 3 s.f.',
         marks: 4,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['exponential decay', 'modelling', 'solve for t', 'natural log'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -259,13 +259,13 @@ export const questions: Question[] = [
     {
         id: 'el5-009',
         topicRef: 'el5',
-        topicTitle: 'Modelling Exponential Growth and Decay 09',
+        topicTitle: 'Modelling Exponential Growth and Decay',
         difficulty: 'Foundation',
         questionText: 'A savings account is modelled by \\( A = 1000 \\times 1.025^t \\), where \\( A \\) is the amount (£) and \\( t \\) is the number of years.\n\n Find the number of complete years required for the account to exceed £1500.',
         marks: 4,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['exponential growth', 'modelling', 'compound interest', 'solve for t', 'inequality'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -299,13 +299,13 @@ export const questions: Question[] = [
     {
         id: 'el5-010',
         topicRef: 'el5',
-        topicTitle: 'Modelling Exponential Growth and Decay 10',
+        topicTitle: 'Modelling Exponential Growth and Decay',
         difficulty: 'Foundation',
         questionText: 'A car depreciates in value according to \\( V = 12000 \\times 0.88^t \\), where \\( V \\) is the value (£) and \\( t \\) is the time in years.\n\n Find the number of complete years before the car is worth less than £5000.',
         marks: 4,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['exponential decay', 'modelling', 'depreciation', 'inequality', 'solve for t'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -339,13 +339,13 @@ export const questions: Question[] = [
     {
         id: 'el5-011',
         topicRef: 'el5',
-        topicTitle: 'Modelling Exponential Growth and Decay 11',
+        topicTitle: 'Modelling Exponential Growth and Decay',
         difficulty: 'Foundation',
         questionText: 'A drug concentration \\( C \\) mg/litre decays according to \\( C = 8e^{-0.35t} \\), where \\( t \\) is in hours.\n\n Find the time at which the concentration first falls below 1 mg/litre. Give your answer to 3 s.f.',
         marks: 4,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['exponential decay', 'modelling', 'drug concentration', 'solve for t'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -373,13 +373,13 @@ export const questions: Question[] = [
     {
         id: 'el5-012',
         topicRef: 'el5',
-        topicTitle: 'Modelling Exponential Growth and Decay 12',
+        topicTitle: 'Modelling Exponential Growth and Decay',
         difficulty: 'Foundation',
         questionText: 'An oven cools after being switched off. Its temperature \\( T\\,^\\circ\\!\\text{C} \\) after \\( t \\) minutes satisfies \\( T = 180e^{-0.08t} + 20 \\).\n\n Find the time for the oven to cool to 60°C. Give your answer to 3 s.f.',
         marks: 4,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['exponential decay', 'modelling', 'temperature', 'solve for t'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -407,13 +407,13 @@ export const questions: Question[] = [
     {
         id: 'el5-013',
         topicRef: 'el5',
-        topicTitle: 'Modelling Exponential Growth and Decay 13',
+        topicTitle: 'Modelling Exponential Growth and Decay',
         difficulty: 'Foundation',
         questionText: 'The number of views \\( V \\) of a viral video after \\( t \\) days is modelled by \\( V = 500 \\times 3^t \\).\n\n Find the number of complete days before the video exceeds 1 000 000 views.',
         marks: 4,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['exponential growth', 'modelling', 'solve for t', 'take logs'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -448,13 +448,13 @@ export const questions: Question[] = [
     {
         id: 'el5-014',
         topicRef: 'el5',
-        topicTitle: 'Modelling Exponential Growth and Decay 14',
+        topicTitle: 'Modelling Exponential Growth and Decay',
         difficulty: 'Foundation',
         questionText: 'A population \\( P \\) of rabbits is modelled by \\( P = Ae^{kt} \\). Initially there are 80 rabbits. After 5 years there are 200 rabbits.\n\n Find the values of \\( A \\) and \\( k \\). Give \\( k \\) to 3 s.f.',
         marks: 4,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['exponential growth', 'modelling', 'find constants', 'A and k'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -482,13 +482,13 @@ export const questions: Question[] = [
     {
         id: 'el5-015',
         topicRef: 'el5',
-        topicTitle: 'Modelling Exponential Growth and Decay 15',
+        topicTitle: 'Modelling Exponential Growth and Decay',
         difficulty: 'Foundation',
         questionText: 'The mass \\( M \\) grams of a substance decays according to \\( M = Ae^{kt} \\). The initial mass is 600 g and after 10 years the mass is 350 g.\n\n Find \\( A \\) and \\( k \\). Give \\( k \\) to 3 s.f.',
         marks: 4,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['exponential decay', 'modelling', 'find constants', 'A and k'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -516,13 +516,13 @@ export const questions: Question[] = [
     {
         id: 'el5-016',
         topicRef: 'el5',
-        topicTitle: 'Modelling Exponential Growth and Decay 16',
+        topicTitle: 'Modelling Exponential Growth and Decay',
         difficulty: 'Foundation',
         questionText: 'A fungus grows according to \\( F = F_0 e^{gt} \\). Initially it covers 3 mm². After 8 hours it covers 18 mm².\n\n (a) Find \\( F_0 \\) and \\( g \\). Give \\( g \\) to 3 s.f.\n\n (b) Predict the area covered after 15 hours.',
         marks: 5,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['exponential growth', 'modelling', 'find constants', 'predict'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -556,13 +556,13 @@ export const questions: Question[] = [
     {
         id: 'el5-017',
         topicRef: 'el5',
-        topicTitle: 'Modelling Exponential Growth and Decay 17',
+        topicTitle: 'Modelling Exponential Growth and Decay',
         difficulty: 'Foundation',
         questionText: 'The number of users \\( N \\) of a new app after \\( t \\) months satisfies \\( N = N_0 e^{kt} \\). After 2 months there are 5000 users and after 6 months there are 25000 users.\n\n Find the values of \\( N_0 \\) and \\( k \\). Give your answers to 3 s.f.',
         marks: 5,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['exponential growth', 'modelling', 'find constants', 'two data points'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -597,13 +597,13 @@ export const questions: Question[] = [
     {
         id: 'el5-018',
         topicRef: 'el5',
-        topicTitle: 'Modelling Exponential Growth and Decay 18',
+        topicTitle: 'Modelling Exponential Growth and Decay',
         difficulty: 'Foundation',
         questionText: 'A radioactive substance has a half-life of 15 years. Its decay is modelled by \\( A = A_0 e^{kt} \\).\n\n (a) Show that \\( k = -\\dfrac{\\ln 2}{15} \\).\n\n (b) Find the value of \\( k \\) to 3 s.f.',
         marks: 4,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['exponential decay', 'modelling', 'half-life', 'find k'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -631,13 +631,13 @@ export const questions: Question[] = [
     {
         id: 'el5-019',
         topicRef: 'el5',
-        topicTitle: 'Modelling Exponential Growth and Decay 19',
+        topicTitle: 'Modelling Exponential Growth and Decay',
         difficulty: 'Foundation',
         questionText: 'A radioactive substance has a half-life of 20 years and an initial activity of 640 Bq. Its activity is modelled by \\( A = A_0 e^{kt} \\).\n\n (a) Find \\( k \\) to 3 s.f.\n\n (b) Find the activity after 30 years.\n\n (c) After how many years does the activity first fall below 50 Bq? Give your answer to 3 s.f.',
         marks: 6,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['exponential decay', 'modelling', 'half-life', 'find k', 'solve for t'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -671,13 +671,13 @@ export const questions: Question[] = [
     {
         id: 'el5-020',
         topicRef: 'el5',
-        topicTitle: 'Modelling Exponential Growth and Decay 20',
+        topicTitle: 'Modelling Exponential Growth and Decay',
         difficulty: 'Foundation',
         questionText: 'A substance has a half-life of 8 years. The initial activity is 1000 Bq.\n\n After how many years is the substance reduced to a quarter of its original activity?',
         marks: 3,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['exponential decay', 'modelling', 'half-life', 'quarter activity'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -700,13 +700,13 @@ export const questions: Question[] = [
     {
         id: 'el5-021',
         topicRef: 'el5',
-        topicTitle: 'Modelling Exponential Growth and Decay 21',
+        topicTitle: 'Modelling Exponential Growth and Decay',
         difficulty: 'Foundation',
         questionText: 'The temperature \\( T\\,^\\circ\\!\\text{C} \\) of a room \\( t \\) minutes after the heating is turned on is modelled by \\( T = 22 - 16e^{-0.05t} \\).\n\n (a) State the initial temperature of the room.\n\n (b) Explain what happens to \\( T \\) as \\( t \\to \\infty \\).\n\n (c) Explain why this model has an upper limit and state what it is.',
         marks: 4,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['exponential growth', 'modelling', 'interpret', 'upper limit', 'describe features'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -734,13 +734,13 @@ export const questions: Question[] = [
     {
         id: 'el5-022',
         topicRef: 'el5',
-        topicTitle: 'Modelling Exponential Growth and Decay 22',
+        topicTitle: 'Modelling Exponential Growth and Decay',
         difficulty: 'Foundation',
         questionText: 'The penguin population \\( P \\) of an island is modelled by \\( P = 3000e^{0.02t} \\), where \\( t \\) is the number of years after a survey.\n\n (a) State the initial population.\n\n (b) Explain why this model may not be appropriate for large values of \\( t \\).',
         marks: 3,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['exponential growth', 'modelling', 'interpret', 'limitation'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -768,13 +768,13 @@ export const questions: Question[] = [
     {
         id: 'el5-023',
         topicRef: 'el5',
-        topicTitle: 'Modelling Exponential Growth and Decay 23',
+        topicTitle: 'Modelling Exponential Growth and Decay',
         difficulty: 'Foundation',
         questionText: 'A car\'s value (£) \\( t \\) years after purchase is modelled by \\( V = 2000 + 11000e^{-0.2t} \\).\n\n (a) State the purchase price.\n\n (b) Explain the significance of the value 2000 in the model.\n\n (c) After how many complete years is the car worth less than £4000? Give your answer to 3 s.f.',
         marks: 6,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['exponential decay', 'modelling', 'interpret', 'lower limit', 'depreciation'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -808,13 +808,13 @@ export const questions: Question[] = [
     {
         id: 'el5-024',
         topicRef: 'el5',
-        topicTitle: 'Modelling Exponential Growth and Decay 24',
+        topicTitle: 'Modelling Exponential Growth and Decay',
         difficulty: 'Foundation',
         questionText: 'A forest fire spreads so that the burnt area \\( H \\) hectares after \\( t \\) hours satisfies \\( H = 10e^{bt} \\).\n\n (a) Interpret the value 10 in this model.\n\n (b) After 2 hours the burnt area is 40 hectares. Find the value of \\( b \\).\n\n (c) Find the area burned after 5 hours. Give your answer to 3 s.f.',
         marks: 5,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['exponential growth', 'modelling', 'find constants', 'interpret', 'real-world'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -842,13 +842,13 @@ export const questions: Question[] = [
     {
         id: 'el5-025',
         topicRef: 'el5',
-        topicTitle: 'Modelling Exponential Growth and Decay 25',
+        topicTitle: 'Modelling Exponential Growth and Decay',
         difficulty: 'Foundation',
         questionText: 'Describe one limitation of using the model \\( H = 10e^{0.693t} \\) to predict the area burned by a forest fire over a long period.',
         marks: 2,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['exponential growth', 'modelling', 'limitation'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -871,13 +871,13 @@ export const questions: Question[] = [
     {
         id: 'el5-026',
         topicRef: 'el5',
-        topicTitle: 'Modelling Exponential Growth and Decay 26',
+        topicTitle: 'Modelling Exponential Growth and Decay',
         difficulty: 'Foundation',
         questionText: 'Two populations of bacteria are modelled by \\( B_1 = 400e^{0.03t} \\) and \\( B_2 = 100e^{0.08t} \\), where \\( t \\) is in hours.\n\n (a) Which population is larger initially?\n\n (b) Find the time at which both populations are equal. Give your answer to 3 s.f.',
         marks: 5,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['exponential growth', 'modelling', 'compare models', 'solve for t'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -911,13 +911,13 @@ export const questions: Question[] = [
     {
         id: 'el5-027',
         topicRef: 'el5',
-        topicTitle: 'Modelling Exponential Growth and Decay 27',
+        topicTitle: 'Modelling Exponential Growth and Decay',
         difficulty: 'Foundation',
         questionText: 'Two cars depreciate as follows: Car A: \\( V = 20000e^{-0.1t} \\); Car B: \\( V = 15000e^{-0.06t} \\), where \\( t \\) is in years.\n\n (a) Which car costs more initially?\n\n (b) After how many years are both cars worth the same amount? Give your answer to 3 s.f.',
         marks: 5,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['exponential decay', 'modelling', 'compare models', 'depreciation'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -952,13 +952,13 @@ export const questions: Question[] = [
     {
         id: 'el5-028',
         topicRef: 'el5',
-        topicTitle: 'Modelling Exponential Growth and Decay 28',
+        topicTitle: 'Modelling Exponential Growth and Decay',
         difficulty: 'Foundation',
         questionText: 'A population of fish is modelled by \\( P = 600e^{0.04t} \\), where \\( t \\) is in years.\n\n (a) Find the rate of growth \\( \\dfrac{\\mathrm{d}P}{\\mathrm{d}t} \\) in terms of \\( t \\).\n\n (b) Evaluate the rate of growth when \\( t = 5 \\). Give your answer to 3 s.f.\n\n (c) Show that the rate of growth is proportional to the population.',
         marks: 5,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['exponential growth', 'modelling', 'rate of change', 'gradient'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -986,13 +986,13 @@ export const questions: Question[] = [
     {
         id: 'el5-029',
         topicRef: 'el5',
-        topicTitle: 'Modelling Exponential Growth and Decay 29',
+        topicTitle: 'Modelling Exponential Growth and Decay',
         difficulty: 'Foundation',
         questionText: 'A radioactive substance decays according to \\( M = 250e^{-0.05t} \\) grams, where \\( t \\) is in years.\n\n (a) Find the rate of decay \\( \\dfrac{\\mathrm{d}M}{\\mathrm{d}t} \\).\n\n (b) Find the rate of decay when \\( t = 10 \\). Give your answer to 3 s.f.',
         marks: 4,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['exponential decay', 'modelling', 'rate of change', 'gradient'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -1015,13 +1015,13 @@ export const questions: Question[] = [
     {
         id: 'el5-030',
         topicRef: 'el5',
-        topicTitle: 'Modelling Exponential Growth and Decay 30',
+        topicTitle: 'Modelling Exponential Growth and Decay',
         difficulty: 'Foundation',
         questionText: '£500 is invested in an account paying 2.5% compound interest per year. No further deposits or withdrawals are made.\n\n (a) Write a model for the amount \\( A \\) (£) in the account after \\( t \\) years.\n\n (b) Find the amount after 10 years. Give your answer to the nearest penny.\n\n (c) Find the number of complete years before the account holds more than £800.',
         marks: 6,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['exponential growth', 'modelling', 'compound interest', 'exam-style'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -1055,13 +1055,13 @@ export const questions: Question[] = [
     {
         id: 'el5-031',
         topicRef: 'el5',
-        topicTitle: 'Modelling Exponential Growth and Decay 31',
+        topicTitle: 'Modelling Exponential Growth and Decay',
         difficulty: 'Foundation',
         questionText: 'A patient is given a dose of medicine. The concentration \\( C \\) mg/litre in their bloodstream after \\( t \\) hours satisfies \\( C = Ae^{kt} \\). Initially the concentration is 5 mg/litre. After 4 hours it is 2 mg/litre.\n\n (a) Find \\( A \\) and \\( k \\). Give \\( k \\) to 3 s.f.\n\n (b) Find the concentration after 6 hours. Give your answer to 3 s.f.\n\n (c) The medicine is effective when \\( C \\geq 0.5 \\) mg/litre. Find the length of time for which the medicine is effective.',
         marks: 7,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['exponential decay', 'modelling', 'drug concentration', 'find constants', 'exam-style'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -1101,13 +1101,13 @@ export const questions: Question[] = [
     {
         id: 'el5-032',
         topicRef: 'el5',
-        topicTitle: 'Modelling Exponential Growth and Decay 32',
+        topicTitle: 'Modelling Exponential Growth and Decay',
         difficulty: 'Foundation',
         questionText: 'A radioactive isotope has a half-life of 25 years. A sample initially has an activity of 480 Bq. The activity is modelled by \\( A = 480e^{kt} \\).\n\n (a) Show that \\( k = -\\dfrac{\\ln 2}{25} \\).\n\n (b) Find the activity after 50 years.\n\n (c) Find the original activity if the activity after 10 years is 300 Bq. Give your answer to 3 s.f.',
         marks: 6,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['exponential decay', 'modelling', 'half-life', 'show that', 'exam-style'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -1141,13 +1141,13 @@ export const questions: Question[] = [
     {
         id: 'el5-033',
         topicRef: 'el5',
-        topicTitle: 'Modelling Exponential Growth and Decay 33',
+        topicTitle: 'Modelling Exponential Growth and Decay',
         difficulty: 'Foundation',
         questionText: 'A town\'s population \\( P \\) is modelled by \\( P = 45000e^{0.012t} \\), where \\( t \\) is the number of years after 2020.\n\n (a) Estimate the population in 2030.\n\n (b) Estimate the year in which the population first exceeds 60 000.\n\n (c) Give one reason why the model may not be reliable in the long term.',
         marks: 5,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['exponential growth', 'modelling', 'population', 'solve for t', 'limitation', 'exam-style'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -1181,13 +1181,13 @@ export const questions: Question[] = [
     {
         id: 'el5-034',
         topicRef: 'el5',
-        topicTitle: 'Modelling Exponential Growth and Decay 34',
+        topicTitle: 'Modelling Exponential Growth and Decay',
         difficulty: 'Foundation',
         questionText: 'The number of subscribers \\( S \\) to a YouTube channel after \\( t \\) weeks satisfies \\( S = S_0 e^{kt} \\). After 3 weeks there are 8000 subscribers and after 9 weeks there are 50000 subscribers.\n\n (a) Find \\( S_0 \\) and \\( k \\). Give \\( k \\) to 3 s.f.\n\n (b) Predict the number of subscribers after 15 weeks.\n\n (c) Describe one limitation of this model.',
         marks: 7,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['exponential growth', 'modelling', 'find constants', 'two data points', 'exam-style'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -1227,13 +1227,13 @@ export const questions: Question[] = [
     {
         id: 'el5-035',
         topicRef: 'el5',
-        topicTitle: 'Modelling Exponential Growth and Decay 35',
+        topicTitle: 'Modelling Exponential Growth and Decay',
         difficulty: 'Foundation',
         questionText: 'A Newton\'s Law of Cooling model gives the temperature \\( T\\,^\\circ\\!\\text{C} \\) of a hot drink after \\( t \\) minutes as \\( T = 65e^{-0.04t} + 20 \\).\n\n (a) State the initial temperature.\n\n (b) Find the temperature after 10 minutes. Give your answer to 3 s.f.\n\n (c) Find the time at which the drink cools to 35°C. Give your answer to 3 s.f.\n\n (d) Explain what the value 20 represents and state the long-term behaviour of \\( T \\).',
         marks: 7,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['exponential decay', 'modelling', 'temperature', 'Newton cooling', 'interpret', 'exam-style'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -1274,7 +1274,7 @@ export const questions: Question[] = [
     // ─── Q36–70: Additional Modelling Questions ──────────────────────
 
     {
-        id: 'el5-036', topicRef: 'el5', topicTitle: 'Modelling Growth/Decay 36', difficulty: 'Foundation',
+        id: 'el5-036', topicRef: 'el5', topicTitle: 'Modelling Growth/Decay', difficulty: 'Foundation',
         questionText: 'A colony of bacteria doubles every 4 hours. Starting with 200, find the population after 20 hours.',
         marks: 3, examStyle: false, yearCreated: 2026, tags: [],
         workedSolution: { steps: [
@@ -1283,7 +1283,7 @@ export const questions: Question[] = [
         ], finalAnswer: '6400 bacteria' }
     },
     {
-        id: 'el5-037', topicRef: 'el5', topicTitle: 'Modelling Growth/Decay 37', difficulty: 'Foundation',
+        id: 'el5-037', topicRef: 'el5', topicTitle: 'Modelling Growth/Decay', difficulty: 'Foundation',
         questionText: 'A radioactive substance has half-life 5 years. If the initial mass is 80 g, find the mass after 15 years.',
         marks: 3, examStyle: false, yearCreated: 2026, tags: [],
         workedSolution: { steps: [
@@ -1292,7 +1292,7 @@ export const questions: Question[] = [
         ], finalAnswer: '10 g' }
     },
     {
-        id: 'el5-038', topicRef: 'el5', topicTitle: 'Modelling Growth/Decay 38', difficulty: 'Foundation',
+        id: 'el5-038', topicRef: 'el5', topicTitle: 'Modelling Growth/Decay', difficulty: 'Foundation',
         questionText: 'A population is modelled by \\( P = 1000e^{0.05t} \\). Find: (a) the initial population; (b) the population after 10 years.',
         marks: 3, examStyle: false, yearCreated: 2026, tags: [],
         workedSolution: { steps: [
@@ -1301,7 +1301,7 @@ export const questions: Question[] = [
         ], finalAnswer: '(a) 1000 (b) 1649' }
     },
     {
-        id: 'el5-039', topicRef: 'el5', topicTitle: 'Modelling Growth/Decay 39', difficulty: 'Foundation',
+        id: 'el5-039', topicRef: 'el5', topicTitle: 'Modelling Growth/Decay', difficulty: 'Foundation',
         questionText: 'The mass of a substance decays according to \\( m = 50e^{-0.1t} \\). Find when the mass is 25 g.',
         marks: 3, examStyle: false, yearCreated: 2026, tags: [],
         workedSolution: { steps: [
@@ -1310,7 +1310,7 @@ export const questions: Question[] = [
         ], finalAnswer: 't = 6.93 units' }
     },
     {
-        id: 'el5-040', topicRef: 'el5', topicTitle: 'Modelling Growth/Decay 40', difficulty: 'Foundation',
+        id: 'el5-040', topicRef: 'el5', topicTitle: 'Modelling Growth/Decay', difficulty: 'Foundation',
         questionText: 'A car depreciates at 15% per year. Its initial value is \\( \\pounds 20000 \\). Find its value after 5 years.',
         marks: 3, examStyle: false, yearCreated: 2026, tags: [],
         workedSolution: { steps: [
@@ -1318,7 +1318,7 @@ export const questions: Question[] = [
         ], finalAnswer: '8874 pounds' }
     },
     {
-        id: 'el5-041', topicRef: 'el5', topicTitle: 'Modelling Growth/Decay 41', difficulty: 'Foundation',
+        id: 'el5-041', topicRef: 'el5', topicTitle: 'Modelling Growth/Decay', difficulty: 'Foundation',
         questionText: 'An investment grows at 3% compound interest per year. How long until it doubles?',
         marks: 4, examStyle: false, yearCreated: 2026, tags: [],
         workedSolution: { steps: [
@@ -1327,7 +1327,7 @@ export const questions: Question[] = [
         ], finalAnswer: 'Approximately 24 years' }
     },
     {
-        id: 'el5-042', topicRef: 'el5', topicTitle: 'Modelling Growth/Decay 42', difficulty: 'Foundation',
+        id: 'el5-042', topicRef: 'el5', topicTitle: 'Modelling Growth/Decay', difficulty: 'Foundation',
         questionText: 'The temperature of a cooling body is \\( T = 15 + 70e^{-0.03t} \\). Find the initial temperature and the temperature after 30 minutes.',
         marks: 4, examStyle: false, yearCreated: 2026, tags: [],
         workedSolution: { steps: [
@@ -1336,7 +1336,7 @@ export const questions: Question[] = [
         ], finalAnswer: 'Initial: 85 degrees; after 30 min: 43.5 degrees' }
     },
     {
-        id: 'el5-043', topicRef: 'el5', topicTitle: 'Modelling Growth/Decay 43', difficulty: 'Foundation',
+        id: 'el5-043', topicRef: 'el5', topicTitle: 'Modelling Growth/Decay', difficulty: 'Foundation',
         questionText: 'A population of 5000 increases at 2% per year. Write a model and find the population after 20 years.',
         marks: 3, examStyle: false, yearCreated: 2026, tags: [],
         workedSolution: { steps: [
@@ -1344,7 +1344,7 @@ export const questions: Question[] = [
         ], finalAnswer: 'P = 5000 x 1.02^t; after 20 years: 7430' }
     },
     {
-        id: 'el5-044', topicRef: 'el5', topicTitle: 'Modelling Growth/Decay 44', difficulty: 'Foundation',
+        id: 'el5-044', topicRef: 'el5', topicTitle: 'Modelling Growth/Decay', difficulty: 'Foundation',
         questionText: 'A substance decays so that \\( m = m_0 e^{-kt} \\). After 8 hours, 75% remains. Find \\( k \\).',
         marks: 4, examStyle: false, yearCreated: 2026, tags: [],
         workedSolution: { steps: [
@@ -1353,7 +1353,7 @@ export const questions: Question[] = [
         ], finalAnswer: 'k = 0.0360' }
     },
     {
-        id: 'el5-045', topicRef: 'el5', topicTitle: 'Modelling Growth/Decay 45', difficulty: 'Foundation',
+        id: 'el5-045', topicRef: 'el5', topicTitle: 'Modelling Growth/Decay', difficulty: 'Foundation',
         questionText: 'The number of fish in a lake is modelled by \\( N = \\frac{2000}{1 + 9e^{-0.5t}} \\). Find: (a) N when t = 0; (b) N as t approaches infinity.',
         marks: 4, examStyle: false, yearCreated: 2026, tags: [],
         workedSolution: { steps: [
@@ -1362,7 +1362,7 @@ export const questions: Question[] = [
         ], finalAnswer: '(a) 200 (b) 2000' }
     },
     {
-        id: 'el5-046', topicRef: 'el5', topicTitle: 'Modelling Growth/Decay 46', difficulty: 'Foundation',
+        id: 'el5-046', topicRef: 'el5', topicTitle: 'Modelling Growth/Decay', difficulty: 'Foundation',
         questionText: 'Carbon-14 has a half-life of 5730 years. A sample has 40% of its original C-14. How old is it?',
         marks: 5, examStyle: false, yearCreated: 2026, tags: [],
         workedSolution: { steps: [
@@ -1371,7 +1371,7 @@ export const questions: Question[] = [
         ], finalAnswer: 'Approximately 7573 years old' }
     },
     {
-        id: 'el5-047', topicRef: 'el5', topicTitle: 'Modelling Growth/Decay 47', difficulty: 'Foundation',
+        id: 'el5-047', topicRef: 'el5', topicTitle: 'Modelling Growth/Decay', difficulty: 'Foundation',
         questionText: 'A drug is eliminated from the body so that the amount \\( A \\) mg after \\( t \\) hours is \\( A = 400e^{-0.2t} \\). Find when less than 50 mg remains.',
         marks: 4, examStyle: false, yearCreated: 2026, tags: [],
         workedSolution: { steps: [
@@ -1380,7 +1380,7 @@ export const questions: Question[] = [
         ], finalAnswer: 'After 10.4 hours' }
     },
     {
-        id: 'el5-048', topicRef: 'el5', topicTitle: 'Modelling Growth/Decay 48', difficulty: 'Foundation',
+        id: 'el5-048', topicRef: 'el5', topicTitle: 'Modelling Growth/Decay', difficulty: 'Foundation',
         questionText: 'The value of a painting increases according to \\( V = 500e^{0.08t} \\). Find: (a) the value after 10 years; (b) when it reaches \\( \\pounds 2000 \\).',
         marks: 5, examStyle: false, yearCreated: 2026, tags: [],
         workedSolution: { steps: [
@@ -1389,7 +1389,7 @@ export const questions: Question[] = [
         ], finalAnswer: '(a) 1113 pounds (b) 17.3 years' }
     },
     {
-        id: 'el5-049', topicRef: 'el5', topicTitle: 'Modelling Growth/Decay 49', difficulty: 'Foundation',
+        id: 'el5-049', topicRef: 'el5', topicTitle: 'Modelling Growth/Decay', difficulty: 'Foundation',
         questionText: 'A cup of tea cools from \\( 90^\\circ \\)C in a room at \\( 20^\\circ \\)C. After 5 minutes it is \\( 70^\\circ \\)C. Find \\( k \\) in \\( T = 20 + 70e^{-kt} \\).',
         marks: 4, examStyle: false, yearCreated: 2026, tags: [],
         workedSolution: { steps: [
@@ -1398,7 +1398,7 @@ export const questions: Question[] = [
         ], finalAnswer: 'k = 0.0673' }
     },
     {
-        id: 'el5-050', topicRef: 'el5', topicTitle: 'Modelling Growth/Decay 50', difficulty: 'Foundation',
+        id: 'el5-050', topicRef: 'el5', topicTitle: 'Modelling Growth/Decay', difficulty: 'Foundation',
         questionText: 'The spread of a rumour is modelled by \\( N = 500(1 - e^{-0.1t}) \\) where \\( N \\) is the number who have heard it after \\( t \\) hours. Find: (a) N after 5 hours; (b) when 400 people have heard it.',
         marks: 5, examStyle: false, yearCreated: 2026, tags: [],
         workedSolution: { steps: [
@@ -1407,7 +1407,7 @@ export const questions: Question[] = [
         ], finalAnswer: '(a) 197 people (b) 16.1 hours' }
     },
     {
-        id: 'el5-051', topicRef: 'el5', topicTitle: 'Modelling Growth/Decay 51', difficulty: 'Foundation',
+        id: 'el5-051', topicRef: 'el5', topicTitle: 'Modelling Growth/Decay', difficulty: 'Foundation',
         questionText: 'A machine loses 12% of its value each year. After how many years is it worth less than a quarter of its original value?',
         marks: 4, examStyle: false, yearCreated: 2026, tags: [],
         workedSolution: { steps: [
@@ -1416,7 +1416,7 @@ export const questions: Question[] = [
         ], finalAnswer: 'After 11 years' }
     },
     {
-        id: 'el5-052', topicRef: 'el5', topicTitle: 'Modelling Growth/Decay 52', difficulty: 'Foundation',
+        id: 'el5-052', topicRef: 'el5', topicTitle: 'Modelling Growth/Decay', difficulty: 'Foundation',
         questionText: 'The pressure \\( P \\) at height \\( h \\) km is modelled by \\( P = 101e^{-0.12h} \\). Find the pressure at 10 km.',
         marks: 2, examStyle: false, yearCreated: 2026, tags: [],
         workedSolution: { steps: [
@@ -1424,7 +1424,7 @@ export const questions: Question[] = [
         ], finalAnswer: '30.4 kPa' }
     },
     {
-        id: 'el5-053', topicRef: 'el5', topicTitle: 'Modelling Growth/Decay 53', difficulty: 'Foundation',
+        id: 'el5-053', topicRef: 'el5', topicTitle: 'Modelling Growth/Decay', difficulty: 'Foundation',
         questionText: 'The number of cases of a disease grows according to \\( N = 50e^{0.15t} \\). How long until there are 500 cases?',
         marks: 3, examStyle: false, yearCreated: 2026, tags: [],
         workedSolution: { steps: [
@@ -1432,7 +1432,7 @@ export const questions: Question[] = [
         ], finalAnswer: '15.4 days' }
     },
     {
-        id: 'el5-054', topicRef: 'el5', topicTitle: 'Modelling Growth/Decay 54', difficulty: 'Foundation',
+        id: 'el5-054', topicRef: 'el5', topicTitle: 'Modelling Growth/Decay', difficulty: 'Foundation',
         questionText: 'Show that if \\( y = Ae^{kt} \\), then \\( \\ln y \\) is a linear function of \\( t \\). State the gradient and y-intercept.',
         marks: 3, examStyle: false, yearCreated: 2026, tags: [],
         workedSolution: { steps: [
@@ -1440,7 +1440,7 @@ export const questions: Question[] = [
         ], finalAnswer: 'Gradient = k, y-intercept = ln A' }
     },
     {
-        id: 'el5-055', topicRef: 'el5', topicTitle: 'Modelling Growth/Decay 55', difficulty: 'Foundation',
+        id: 'el5-055', topicRef: 'el5', topicTitle: 'Modelling Growth/Decay', difficulty: 'Foundation',
         questionText: 'A capacitor discharges: \\( V = 12e^{-t/RC} \\) where \\( R = 1000 \\), \\( C = 0.001 \\). Find \\( V \\) after 2 seconds.',
         marks: 3, examStyle: false, yearCreated: 2026, tags: [],
         workedSolution: { steps: [
@@ -1448,7 +1448,7 @@ export const questions: Question[] = [
         ], finalAnswer: '1.62 V' }
     },
     {
-        id: 'el5-056', topicRef: 'el5', topicTitle: 'Modelling Growth/Decay 56', difficulty: 'Foundation',
+        id: 'el5-056', topicRef: 'el5', topicTitle: 'Modelling Growth/Decay', difficulty: 'Foundation',
         questionText: 'A town has population 8000 growing at 1.5% per year. In how many years will it exceed 10000?',
         marks: 4, examStyle: false, yearCreated: 2026, tags: [],
         workedSolution: { steps: [
@@ -1457,7 +1457,7 @@ export const questions: Question[] = [
         ], finalAnswer: '15 years' }
     },
     {
-        id: 'el5-057', topicRef: 'el5', topicTitle: 'Modelling Growth/Decay 57', difficulty: 'Foundation',
+        id: 'el5-057', topicRef: 'el5', topicTitle: 'Modelling Growth/Decay', difficulty: 'Foundation',
         questionText: 'Two populations: \\( P_1 = 3000e^{0.02t} \\) and \\( P_2 = 5000e^{-0.01t} \\). When are they equal?',
         marks: 5, examStyle: false, yearCreated: 2026, tags: [],
         workedSolution: { steps: [
@@ -1466,7 +1466,7 @@ export const questions: Question[] = [
         ], finalAnswer: 't = 17.0 years' }
     },
     {
-        id: 'el5-058', topicRef: 'el5', topicTitle: 'Modelling Growth/Decay 58', difficulty: 'Foundation',
+        id: 'el5-058', topicRef: 'el5', topicTitle: 'Modelling Growth/Decay', difficulty: 'Foundation',
         questionText: 'A lake contains 100 kg of pollutant. Each year 20% is removed naturally. How long until less than 10 kg remains?',
         marks: 4, examStyle: false, yearCreated: 2026, tags: [],
         workedSolution: { steps: [
@@ -1475,7 +1475,7 @@ export const questions: Question[] = [
         ], finalAnswer: 'After 11 years' }
     },
     {
-        id: 'el5-059', topicRef: 'el5', topicTitle: 'Modelling Growth/Decay 59', difficulty: 'Foundation',
+        id: 'el5-059', topicRef: 'el5', topicTitle: 'Modelling Growth/Decay', difficulty: 'Foundation',
         questionText: 'The temperature of a freezer item placed in a room is \\( T = 22 - 40e^{-0.05t} \\). Find when T = 10.',
         marks: 4, examStyle: false, yearCreated: 2026, tags: [],
         workedSolution: { steps: [
@@ -1484,7 +1484,7 @@ export const questions: Question[] = [
         ], finalAnswer: 't = 24.1 minutes' }
     },
     {
-        id: 'el5-060', topicRef: 'el5', topicTitle: 'Modelling Growth/Decay 60', difficulty: 'Foundation',
+        id: 'el5-060', topicRef: 'el5', topicTitle: 'Modelling Growth/Decay', difficulty: 'Foundation',
         questionText: 'A savings account pays 5% interest compounded annually. Find the annual equivalent rate if compounded continuously.',
         marks: 3, examStyle: false, yearCreated: 2026, tags: [],
         workedSolution: { steps: [
@@ -1492,7 +1492,7 @@ export const questions: Question[] = [
         ], finalAnswer: 'r = 4.88% continuous rate' }
     },
     {
-        id: 'el5-061', topicRef: 'el5', topicTitle: 'Modelling Growth/Decay 61', difficulty: 'Foundation',
+        id: 'el5-061', topicRef: 'el5', topicTitle: 'Modelling Growth/Decay', difficulty: 'Foundation',
         questionText: 'A rumour spreads so that after \\( t \\) hours, the fraction who know is \\( f = 1 - e^{-0.3t} \\). After how many hours do 90% know?',
         marks: 3, examStyle: false, yearCreated: 2026, tags: [],
         workedSolution: { steps: [
@@ -1500,7 +1500,7 @@ export const questions: Question[] = [
         ], finalAnswer: 't = 7.68 hours' }
     },
     {
-        id: 'el5-062', topicRef: 'el5', topicTitle: 'Modelling Growth/Decay 62', difficulty: 'Foundation',
+        id: 'el5-062', topicRef: 'el5', topicTitle: 'Modelling Growth/Decay', difficulty: 'Foundation',
         questionText: 'Light intensity decreases with depth: \\( I = I_0 e^{-0.4d} \\) where \\( d \\) is in metres. At what depth is the intensity 1% of the surface value?',
         marks: 3, examStyle: false, yearCreated: 2026, tags: [],
         workedSolution: { steps: [
@@ -1508,7 +1508,7 @@ export const questions: Question[] = [
         ], finalAnswer: 'd = 11.5 metres' }
     },
     {
-        id: 'el5-063', topicRef: 'el5', topicTitle: 'Modelling Growth/Decay 63', difficulty: 'Foundation',
+        id: 'el5-063', topicRef: 'el5', topicTitle: 'Modelling Growth/Decay', difficulty: 'Foundation',
         questionText: 'The rate of decay of a substance is proportional to the amount present. Write the differential equation and its solution.',
         marks: 3, examStyle: false, yearCreated: 2026, tags: [],
         workedSolution: { steps: [
@@ -1517,7 +1517,7 @@ export const questions: Question[] = [
         ], finalAnswer: 'dm/dt = -km; solution m = m_0 e^{-kt}' }
     },
     {
-        id: 'el5-064', topicRef: 'el5', topicTitle: 'Modelling Growth/Decay 64', difficulty: 'Foundation',
+        id: 'el5-064', topicRef: 'el5', topicTitle: 'Modelling Growth/Decay', difficulty: 'Foundation',
         questionText: 'House prices increase by 6% per year. A house costs \\( \\pounds 200000 \\) now. What will it cost in 8 years?',
         marks: 2, examStyle: false, yearCreated: 2026, tags: [],
         workedSolution: { steps: [
@@ -1525,7 +1525,7 @@ export const questions: Question[] = [
         ], finalAnswer: '318800 pounds' }
     },
     {
-        id: 'el5-065', topicRef: 'el5', topicTitle: 'Modelling Growth/Decay 65', difficulty: 'Foundation',
+        id: 'el5-065', topicRef: 'el5', topicTitle: 'Modelling Growth/Decay', difficulty: 'Foundation',
         questionText: 'The charge on a capacitor builds up: \\( Q = Q_0(1 - e^{-t/RC}) \\). If \\( Q_0 = 100 \\), \\( RC = 5 \\), find Q after 10 seconds.',
         marks: 3, examStyle: false, yearCreated: 2026, tags: [],
         workedSolution: { steps: [
@@ -1533,7 +1533,7 @@ export const questions: Question[] = [
         ], finalAnswer: '86.5 units' }
     },
     {
-        id: 'el5-066', topicRef: 'el5', topicTitle: 'Modelling Growth/Decay 66', difficulty: 'Foundation',
+        id: 'el5-066', topicRef: 'el5', topicTitle: 'Modelling Growth/Decay', difficulty: 'Foundation',
         questionText: 'Data suggests \\( y = ab^x \\). When \\( x = 0, y = 3 \\) and when \\( x = 4, y = 48 \\). Find \\( a \\) and \\( b \\).',
         marks: 4, examStyle: false, yearCreated: 2026, tags: [],
         workedSolution: { steps: [
@@ -1542,7 +1542,7 @@ export const questions: Question[] = [
         ], finalAnswer: 'a = 3, b = 2' }
     },
     {
-        id: 'el5-067', topicRef: 'el5', topicTitle: 'Modelling Growth/Decay 67', difficulty: 'Foundation',
+        id: 'el5-067', topicRef: 'el5', topicTitle: 'Modelling Growth/Decay', difficulty: 'Foundation',
         questionText: 'A ball bounces to 80% of its previous height. Dropped from 2 m, after how many bounces is it below 0.5 m?',
         marks: 4, examStyle: false, yearCreated: 2026, tags: [],
         workedSolution: { steps: [
@@ -1551,7 +1551,7 @@ export const questions: Question[] = [
         ], finalAnswer: 'After 7 bounces' }
     },
     {
-        id: 'el5-068', topicRef: 'el5', topicTitle: 'Modelling Growth/Decay 68', difficulty: 'Foundation',
+        id: 'el5-068', topicRef: 'el5', topicTitle: 'Modelling Growth/Decay', difficulty: 'Foundation',
         questionText: 'Show that a quantity with constant percentage growth rate \\( r\\% \\) per unit time can be written as \\( Q = Q_0 e^{kt} \\) where \\( k = \\ln(1 + r/100) \\).',
         marks: 3, examStyle: false, yearCreated: 2026, tags: [],
         workedSolution: { steps: [
@@ -1559,7 +1559,7 @@ export const questions: Question[] = [
         ], finalAnswer: 'Shown: k = ln(1 + r/100)' }
     },
     {
-        id: 'el5-069', topicRef: 'el5', topicTitle: 'Modelling Growth/Decay 69', difficulty: 'Foundation',
+        id: 'el5-069', topicRef: 'el5', topicTitle: 'Modelling Growth/Decay', difficulty: 'Foundation',
         questionText: 'Bacteria grow from 100 to 300 in 6 hours. Assuming exponential growth \\( N = 100e^{kt} \\), find: (a) k; (b) the population after 10 hours.',
         marks: 5, examStyle: false, yearCreated: 2026, tags: [],
         workedSolution: { steps: [
@@ -1568,7 +1568,7 @@ export const questions: Question[] = [
         ], finalAnswer: '(a) k = 0.183 (b) 623 bacteria' }
     },
     {
-        id: 'el5-070', topicRef: 'el5', topicTitle: 'Modelling Growth/Decay 70', difficulty: 'Foundation',
+        id: 'el5-070', topicRef: 'el5', topicTitle: 'Modelling Growth/Decay', difficulty: 'Foundation',
         questionText: 'A radioactive element has decay constant \\( k = 0.005 \\) per year. Find: (a) the half-life; (b) the time for 90% to decay; (c) the percentage remaining after 100 years.',
         marks: 7, examStyle: false, yearCreated: 2026, tags: [],
         workedSolution: { steps: [

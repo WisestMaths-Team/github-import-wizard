@@ -174,10 +174,10 @@ export function MathText({ text }: { text: string }) {
  */
 function LetterList({ items }: { items: { label: string; content: string }[] }) {
   return (
-    <div className="mt-2 mb-1 space-y-2">
+    <div className="mt-3 mb-1 space-y-3">
       {items.map((item, i) => (
-        <div key={i} className="flex gap-2.5 items-baseline">
-          <span className="shrink-0 w-6 text-right font-semibold text-accent text-sm">{item.label}</span>
+        <div key={i} className="flex gap-3 items-baseline">
+          <span className="shrink-0 w-6 text-right font-bold text-accent">{item.label}</span>
           <span className="flex-1"><MathTextInline text={item.content} /></span>
         </div>
       ))}
@@ -189,23 +189,33 @@ function LetterList({ items }: { items: { label: string; content: string }[] }) 
  * Renders text with math delimiters and newline handling.
  */
 function MathTextWithBreaks({ text }: { text: string }) {
-  // Check if text contains a lettered list like "a) ... \nb) ..."
-  const listMatch = text.match(/^([\s\S]*?)\n\n?((?:[a-z]\)|(?:\([a-z]\)))[\s\S]*)$/);
+  // Check if text contains a lettered list like "a) ... \nb) ..." or roman numeral "i) ... \nii) ..."
+  const listMatch = text.match(/^([\s\S]*?)\n\n?\s*((?:[a-z]\)|(?:\([a-z]\))|(?:i{1,3}v?)\))[\s\S]*)$/);
   if (listMatch) {
     const preamble = listMatch[1].trim();
     const listPart = listMatch[2];
     const items: { label: string; content: string }[] = [];
-    const itemRegex = /(?:^|\n)\s*(?:([a-z])\)|(\([a-z]\)))\s*(.*?)(?=\n\s*(?:[a-z]\)|\([a-z]\))|\s*$)/gs;
+    const itemRegex = /(?:^|\n)\s*(?:([a-z])\)|(\([a-z]\))|(i{1,3}v?)\))\s*(.*?)(?=\n\s*(?:[a-z]\)|\([a-z]\)|(?:i{1,3}v?)\))|\s*$)/gs;
     let m;
     while ((m = itemRegex.exec(listPart)) !== null) {
-      const label = m[1] ? m[1] + ")" : m[2];
-      items.push({ label, content: m[3].trim() });
+      const label = m[1] ? m[1] + ")" : m[2] ? m[2] : m[3] + ")";
+      const content = m[4] || "";
+      items.push({ label, content: content.trim() });
     }
     if (items.length >= 2) {
+      // Check if the last item has trailing text after a double newline (text after the list)
+      let postList = "";
+      const lastItem = items[items.length - 1];
+      const trailingMatch = lastItem.content.match(/^(.*?)\n\n([\s\S]+)$/);
+      if (trailingMatch) {
+        lastItem.content = trailingMatch[1].trim();
+        postList = trailingMatch[2].trim();
+      }
       return (
         <>
           {preamble && <MathTextWithBreaksInner text={preamble} />}
           <LetterList items={items} />
+          {postList && <MathTextWithBreaksInner text={postList} />}
         </>
       );
     }

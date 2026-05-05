@@ -22,13 +22,13 @@ export const questions: Question[] = [
     {
         id: 'el6-001',
         topicRef: 'el6',
-        topicTitle: 'Using Logarithmic Graphs 01',
+        topicTitle: 'Using Logarithmic Graphs',
         difficulty: 'Foundation',
         questionText: 'A relationship between \\( x \\) and \\( y \\) is believed to follow \\( y = ax^n \\).\n\n Show that taking \\( \\log_{10} \\) of both sides gives a straight-line equation of the form \\( \\log y = n\\log x + \\log a \\), and state what the gradient and vertical intercept represent.',
         marks: 3,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['logarithmic graphs', 'linearise', 'y = ax^n', 'log y vs log x'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -56,13 +56,13 @@ export const questions: Question[] = [
     {
         id: 'el6-002',
         topicRef: 'el6',
-        topicTitle: 'Using Logarithmic Graphs 02',
+        topicTitle: 'Using Logarithmic Graphs',
         difficulty: 'Foundation',
         questionText: 'A straight-line graph is obtained by plotting \\( \\log_{10} y \\) against \\( \\log_{10} x \\). The gradient is 3 and the vertical intercept is 0.5.\n\n Find the values of \\( a \\) and \\( n \\) in the relationship \\( y = ax^n \\).',
         marks: 3,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['logarithmic graphs', 'y = ax^n', 'find a and n', 'log y vs log x'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -84,13 +84,13 @@ export const questions: Question[] = [
     {
         id: 'el6-003',
         topicRef: 'el6',
-        topicTitle: 'Using Logarithmic Graphs 03',
+        topicTitle: 'Using Logarithmic Graphs',
         difficulty: 'Foundation',
         questionText: 'A graph of \\( \\log_{10} y \\) against \\( \\log_{10} x \\) passes through the points \\( (0, 1.2) \\) and \\( (2, 3.2) \\).\n\n Find the values of \\( a \\) and \\( n \\) in the equation \\( y = ax^n \\).',
         marks: 4,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['logarithmic graphs', 'y = ax^n', 'find a and n', 'two points'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -112,13 +112,13 @@ export const questions: Question[] = [
     {
         id: 'el6-004',
         topicRef: 'el6',
-        topicTitle: 'Using Logarithmic Graphs 04',
+        topicTitle: 'Using Logarithmic Graphs',
         difficulty: 'Foundation',
         questionText: 'A graph of \\( \\log_{10} y \\) against \\( \\log_{10} x \\) passes through \\( (1, 2.6) \\) and \\( (3, 4.0) \\).\n\n Find \\( a \\) and \\( n \\) in \\( y = ax^n \\). Give your answers to 3 s.f.',
         marks: 4,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['logarithmic graphs', 'y = ax^n', 'find a and n', 'two points'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -140,13 +140,13 @@ export const questions: Question[] = [
     {
         id: 'el6-005',
         topicRef: 'el6',
-        topicTitle: 'Using Logarithmic Graphs 05',
+        topicTitle: 'Using Logarithmic Graphs',
         difficulty: 'Foundation',
         questionText: 'The table below shows values of \\( x \\) and \\( y \\) that are thought to satisfy \\( y = ax^n \\).\n\n\\(\\begin{array}{|c|c|c|c|c|}\\hline x & 4 & 9 & 16 & 25 \\\\ \\hline y & 24 & 81 & 192 & 375 \\\\ \\hline \\end{array}\\)\n\nBy plotting \\( \\log y \\) against \\( \\log x \\), find \\( a \\) and \\( n \\).',
         marks: 4,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['logarithmic graphs', 'y = ax^n', 'table of values', 'log y vs log x'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -174,13 +174,13 @@ export const questions: Question[] = [
     {
         id: 'el6-006',
         topicRef: 'el6',
-        topicTitle: 'Using Logarithmic Graphs 06',
+        topicTitle: 'Using Logarithmic Graphs',
         difficulty: 'Foundation',
         questionText: 'The radius \\( r \\) cm and height \\( h \\) cm of several cylinders are thought to satisfy \\( h = ar^n \\). A graph of \\( \\log h \\) against \\( \\log r \\) gives a straight line with gradient \\( -2 \\) and vertical intercept \\( 3 \\).\n\n Write down the relationship between \\( h \\) and \\( r \\).',
         marks: 3,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['logarithmic graphs', 'y = ax^n', 'find a and n', 'negative power'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -209,13 +209,13 @@ export const questions: Question[] = [
     {
         id: 'el6-007',
         topicRef: 'el6',
-        topicTitle: 'Using Logarithmic Graphs 07',
+        topicTitle: 'Using Logarithmic Graphs',
         difficulty: 'Foundation',
         questionText: 'A relationship between \\( x \\) and \\( y \\) is believed to follow \\( y = kb^x \\).\n\n Show that taking \\( \\log_{10} \\) of both sides gives a straight-line equation of the form \\( \\log y = x\\log b + \\log k \\), and state what the gradient and vertical intercept represent.',
         marks: 3,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['logarithmic graphs', 'linearise', 'y = kb^x', 'log y vs x'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -243,13 +243,13 @@ export const questions: Question[] = [
     {
         id: 'el6-008',
         topicRef: 'el6',
-        topicTitle: 'Using Logarithmic Graphs 08',
+        topicTitle: 'Using Logarithmic Graphs',
         difficulty: 'Foundation',
         questionText: 'A graph of \\( \\log_{10} y \\) against \\( x \\) is a straight line with gradient \\( 0.3 \\) and vertical intercept \\( 1.7 \\).\n\n Find the values of \\( k \\) and \\( b \\) in the equation \\( y = kb^x \\). Give your answers to 3 s.f.',
         marks: 3,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['logarithmic graphs', 'y = kb^x', 'find k and b', 'log y vs x'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -271,13 +271,13 @@ export const questions: Question[] = [
     {
         id: 'el6-009',
         topicRef: 'el6',
-        topicTitle: 'Using Logarithmic Graphs 09',
+        topicTitle: 'Using Logarithmic Graphs',
         difficulty: 'Foundation',
         questionText: 'A graph of \\( \\log_{10} y \\) against \\( x \\) passes through the points \\( (0, 2) \\) and \\( (5, 3.5) \\).\n\n Find \\( k \\) and \\( b \\) in \\( y = kb^x \\). Give your answers to 3 s.f.',
         marks: 4,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['logarithmic graphs', 'y = kb^x', 'find k and b', 'two points'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -299,13 +299,13 @@ export const questions: Question[] = [
     {
         id: 'el6-010',
         topicRef: 'el6',
-        topicTitle: 'Using Logarithmic Graphs 10',
+        topicTitle: 'Using Logarithmic Graphs',
         difficulty: 'Foundation',
         questionText: 'A graph of \\( \\log_{10} y \\) against \\( x \\) passes through \\( (2, 1.4) \\) and \\( (6, 2.8) \\).\n\n Find \\( k \\) and \\( b \\) in \\( y = kb^x \\). Give your answers to 3 s.f.',
         marks: 4,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['logarithmic graphs', 'y = kb^x', 'find k and b', 'two points'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -327,13 +327,13 @@ export const questions: Question[] = [
     {
         id: 'el6-011',
         topicRef: 'el6',
-        topicTitle: 'Using Logarithmic Graphs 11',
+        topicTitle: 'Using Logarithmic Graphs',
         difficulty: 'Foundation',
         questionText: 'The equation \\( y = kb^x \\) can also be written as \\( y = ke^{cx} \\) for some constant \\( c \\).\n\n A graph of \\( \\ln y \\) against \\( x \\) has gradient \\( 0.4 \\) and vertical intercept \\( 3 \\).\n\n Write down the values of \\( k \\) and \\( c \\) in \\( y = ke^{cx} \\).',
         marks: 3,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['logarithmic graphs', 'y = ke^cx', 'ln y vs x', 'find k and c'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -355,13 +355,13 @@ export const questions: Question[] = [
     {
         id: 'el6-012',
         topicRef: 'el6',
-        topicTitle: 'Using Logarithmic Graphs 12',
+        topicTitle: 'Using Logarithmic Graphs',
         difficulty: 'Foundation',
         questionText: 'A graph of \\( \\ln y \\) against \\( x \\) passes through \\( (0, 1.5) \\) and \\( (4, 3.9) \\).\n\n Find \\( k \\) and \\( c \\) in \\( y = ke^{cx} \\). Give your answers to 3 s.f.',
         marks: 4,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['logarithmic graphs', 'y = ke^cx', 'ln y vs x', 'find k and c'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -384,13 +384,13 @@ export const questions: Question[] = [
     {
         id: 'el6-013',
         topicRef: 'el6',
-        topicTitle: 'Using Logarithmic Graphs 13',
+        topicTitle: 'Using Logarithmic Graphs',
         difficulty: 'Foundation',
         questionText: 'The table below gives values of \\( t \\) and \\( y \\) which satisfy \\( y = kb^t \\).\n\n\n\n \\(\\begin{array}{|c|c|c|c|c|}\\hline t & 1 & 3 & 5 & 7 \\\\\\hline y & 6 & 30 & 150 & 750 \\\\\\hline\\end{array}\\)\n\n\n\n (a) Copy and complete the table of \\( \\log_{10} y \\) values.\n\n (b) State the gradient and vertical intercept of the graph of \\( \\log y \\) against \\( t \\).\n\n (c) Hence find \\( k \\) and \\( b \\).',
         marks: 5,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['logarithmic graphs', 'y = kb^t', 'table', 'find k and b'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -424,13 +424,13 @@ export const questions: Question[] = [
     {
         id: 'el6-014',
         topicRef: 'el6',
-        topicTitle: 'Using Logarithmic Graphs 14',
+        topicTitle: 'Using Logarithmic Graphs',
         difficulty: 'Foundation',
         questionText: 'The table below gives values of \\( x \\) and \\( y \\) which satisfy \\( y = ax^n \\).\n\n\n\n \\(\\begin{array}{|c|c|c|c|c|}\\hline x & 2 & 4 & 8 & 16 \\\\\\hline y & 12 & 34 & 96 & 271 \\\\\\hline\\end{array}\\)\n\n\n\n (a) Complete the table of \\( \\log x \\) and \\( \\log y \\) values.\n\n (b) Find the gradient and vertical intercept of \\( \\log y \\) against \\( \\log x \\).\n\n (c) Find \\( a \\) and \\( n \\) to 3 s.f.',
         marks: 5,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['logarithmic graphs', 'y = ax^n', 'table', 'find a and n'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -464,13 +464,13 @@ export const questions: Question[] = [
     {
         id: 'el6-015',
         topicRef: 'el6',
-        topicTitle: 'Using Logarithmic Graphs 15',
+        topicTitle: 'Using Logarithmic Graphs',
         difficulty: 'Foundation',
         questionText: 'The activity \\( x \\) (Bq) of a radioactive substance at time \\( t \\) (days) satisfies \\( x = kb^t \\). The measurements are:\n\n\n\n \\(\\begin{array}{|c|c|c|c|c|}\\hline t & 10 & 20 & 40 & 80 \\\\\\hline x & 500 & 250 & 62.5 & 15.6 \\\\\\hline\\end{array}\\)\n\n\n\n (a) Find \\( \\log_{10} x \\) for each value of \\( t \\).\n\n (b) Plot \\( \\log x \\) against \\( t \\) and draw a line of best fit.\n\n (c) Find \\( k \\) and \\( b \\). Give your answers to 3 s.f.',
         marks: 5,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['logarithmic graphs', 'y = kb^t', 'radioactive decay', 'table', 'find k and b'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -505,13 +505,13 @@ export const questions: Question[] = [
     {
         id: 'el6-016',
         topicRef: 'el6',
-        topicTitle: 'Using Logarithmic Graphs 16',
+        topicTitle: 'Using Logarithmic Graphs',
         difficulty: 'Foundation',
         questionText: 'A graph of \\( \\log y \\) against \\( \\log x \\) gives a straight line with equation \\( \\log y = 2\\log x + 0.6 \\).\n\n (a) Find \\( y \\) when \\( x = 5 \\).\n\n (b) Find \\( x \\) when \\( y = 200 \\). Give your answers to 3 s.f.',
         marks: 4,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['logarithmic graphs', 'predict', 'find x from y', 'log y vs log x'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -539,13 +539,13 @@ export const questions: Question[] = [
     {
         id: 'el6-017',
         topicRef: 'el6',
-        topicTitle: 'Using Logarithmic Graphs 17',
+        topicTitle: 'Using Logarithmic Graphs',
         difficulty: 'Foundation',
         questionText: 'A graph of \\( \\log y \\) against \\( x \\) gives the equation \\( \\log y = 0.2x + 1.3 \\).\n\n (a) Find \\( y \\) when \\( x = 3 \\).\n\n (b) Find \\( x \\) when \\( y = 1000 \\). Give your answers to 3 s.f.',
         marks: 4,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['logarithmic graphs', 'y = kb^x', 'predict', 'find x from y'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -567,13 +567,13 @@ export const questions: Question[] = [
     {
         id: 'el6-018',
         topicRef: 'el6',
-        topicTitle: 'Using Logarithmic Graphs 18',
+        topicTitle: 'Using Logarithmic Graphs',
         difficulty: 'Foundation',
         questionText: 'The number of subscribers \\( S \\) to a blog after \\( t \\) weeks satisfies \\( S = at^b \\). A graph of \\( \\log S \\) against \\( \\log t \\) is a straight line passing through \\( (0.5, 2.1) \\) and \\( (1.5, 3.3) \\).\n\n (a) Find \\( a \\) and \\( b \\).\n\n (b) Predict the number of subscribers after 20 weeks.',
         marks: 5,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['logarithmic graphs', 'y = ax^n', 'predict', 'subscribers model'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -601,13 +601,13 @@ export const questions: Question[] = [
     {
         id: 'el6-019',
         topicRef: 'el6',
-        topicTitle: 'Using Logarithmic Graphs 19',
+        topicTitle: 'Using Logarithmic Graphs',
         difficulty: 'Foundation',
         questionText: 'The value £\\( V \\) of a machine \\( t \\) years after purchase satisfies \\( V = pq^t \\). A graph of \\( \\log V \\) against \\( t \\) passes through \\( (0, 4.3) \\) and \\( (10, 3.1) \\).\n\n (a) Find \\( p \\) and \\( q \\) to 3 s.f.\n\n (b) Find the value of the machine after 7 years.',
         marks: 5,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['logarithmic graphs', 'y = kb^x', 'depreciation', 'predict'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -635,13 +635,13 @@ export const questions: Question[] = [
     {
         id: 'el6-020',
         topicRef: 'el6',
-        topicTitle: 'Using Logarithmic Graphs 20',
+        topicTitle: 'Using Logarithmic Graphs',
         difficulty: 'Foundation',
         questionText: 'The pressure \\( P \\) (Pa) and volume \\( V \\) (m³) of a gas satisfy \\( P = kV^n \\). A graph of \\( \\log P \\) against \\( \\log V \\) has gradient \\( -1.4 \\) and passes through the point \\( (0.5, 3.8) \\).\n\n (a) Find \\( k \\) and \\( n \\).\n\n (b) Find \\( P \\) when \\( V = 0.2 \\). Give your answer to 3 s.f.',
         marks: 5,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['logarithmic graphs', 'y = ax^n', 'find k and n', 'predict'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -670,13 +670,13 @@ export const questions: Question[] = [
     {
         id: 'el6-021',
         topicRef: 'el6',
-        topicTitle: 'Using Logarithmic Graphs 21',
+        topicTitle: 'Using Logarithmic Graphs',
         difficulty: 'Foundation',
         questionText: 'The relationship between \\( x \\) and \\( y \\) is \\( y = 5 \\times 4^x \\).\n\n (a) Show that a graph of \\( \\log y \\) against \\( x \\) will be a straight line.\n\n (b) State the gradient and vertical intercept of this straight line.',
         marks: 3,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['logarithmic graphs', 'y = kb^x', 'linearise', 'state gradient and intercept'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -704,13 +704,13 @@ export const questions: Question[] = [
     {
         id: 'el6-022',
         topicRef: 'el6',
-        topicTitle: 'Using Logarithmic Graphs 22',
+        topicTitle: 'Using Logarithmic Graphs',
         difficulty: 'Foundation',
         questionText: 'The height \\( h \\) (m) and mass \\( m \\) (kg) of several trees satisfy \\( h = 2m^{0.4} \\).\n\n (a) Write the equation in linear form suitable for plotting \\( \\log h \\) against \\( \\log m \\).\n\n (b) State the gradient and vertical intercept.\n\n (c) Describe the graph of \\( h \\) against \\( m \\).',
         marks: 4,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['logarithmic graphs', 'y = ax^n', 'linearise', 'describe original graph'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -738,13 +738,13 @@ export const questions: Question[] = [
     {
         id: 'el6-023',
         topicRef: 'el6',
-        topicTitle: 'Using Logarithmic Graphs 23',
+        topicTitle: 'Using Logarithmic Graphs',
         difficulty: 'Foundation',
         questionText: 'A tank is being filled with water. After \\( s \\) seconds the height \\( h \\) mm of water satisfies \\( h = 3 \\times 2^s \\).\n\n (a) Write this in linear form for a graph of \\( \\log h \\) against \\( s \\).\n\n (b) Explain which graph — \\( h \\) against \\( s \\) or \\( \\log h \\) against \\( s \\) — is more useful for calculations.',
         marks: 3,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['logarithmic graphs', 'y = kb^x', 'linearise', 'which graph is more useful'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -766,13 +766,13 @@ export const questions: Question[] = [
     {
         id: 'el6-024',
         topicRef: 'el6',
-        topicTitle: 'Using Logarithmic Graphs 24',
+        topicTitle: 'Using Logarithmic Graphs',
         difficulty: 'Foundation',
         questionText: 'The population \\( p \\) of bacteria after \\( t \\) hours satisfies \\( p = 50e^{0.3t} \\).\n\n (a) Write this in linear form for a graph of \\( \\ln p \\) against \\( t \\).\n\n (b) State the gradient and vertical intercept of the straight-line graph.',
         marks: 3,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['logarithmic graphs', 'y = ke^ct', 'ln y vs x', 'linearise'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -795,13 +795,13 @@ export const questions: Question[] = [
     {
         id: 'el6-025',
         topicRef: 'el6',
-        topicTitle: 'Using Logarithmic Graphs 25',
+        topicTitle: 'Using Logarithmic Graphs',
         difficulty: 'Foundation',
         questionText: 'Two populations are modelled by \\( \\ln P \\) against \\( t \\) graphs.\n\n Population A: \\( \\ln P = 0.2t + 4 \\)\n\n Population B: \\( \\ln P = -0.1t + 7 \\)\n\n (a) Find the time \\( t \\) when the populations are equal.\n\n (b) Find the common population at this time. Give your answer to 3 s.f.',
         marks: 5,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['logarithmic graphs', 'two models', 'intersection', 'ln y vs x'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -829,13 +829,13 @@ export const questions: Question[] = [
     {
         id: 'el6-026',
         topicRef: 'el6',
-        topicTitle: 'Using Logarithmic Graphs 26',
+        topicTitle: 'Using Logarithmic Graphs',
         difficulty: 'Foundation',
         questionText: 'Two rival blogs have subscriber counts modelled as follows (where \\( t \\) is days):\n\n Blog A (growing): \\( \\log S = 0.08t + 2 \\)\n\n Blog B (declining): \\( \\log S = -0.04t + 3.5 \\)\n\n (a) Find the number of subscribers each blog starts with.\n\n (b) Find the day on which both blogs have the same number of subscribers.',
         marks: 5,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['logarithmic graphs', 'two models', 'intersection', 'log y vs x'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -857,13 +857,13 @@ export const questions: Question[] = [
     {
         id: 'el6-027',
         topicRef: 'el6',
-        topicTitle: 'Using Logarithmic Graphs 27',
+        topicTitle: 'Using Logarithmic Graphs',
         difficulty: 'Foundation',
         questionText: 'Two animal populations on an island are modelled by \\( \\ln N \\) against \\( t \\) (years) graphs:\n\n Deer: \\( \\ln N = 0.15t + 5 \\)\n\n Wolves: \\( \\ln N = 0.25t + 3 \\)\n\n (a) Find the initial population of each species.\n\n (b) Find the year \\( t \\) when the wolf population overtakes the deer population.\n\n (c) Find the combined population at this point. Give your answer to the nearest whole number.',
         marks: 6,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['logarithmic graphs', 'two models', 'intersection', 'combined population'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -897,13 +897,13 @@ export const questions: Question[] = [
     {
         id: 'el6-028',
         topicRef: 'el6',
-        topicTitle: 'Using Logarithmic Graphs 28',
+        topicTitle: 'Using Logarithmic Graphs',
         difficulty: 'Foundation',
         questionText: 'A graph of \\( \\log y \\) against \\( \\log x \\) is a straight line passing through \\( (0.4, 1.0) \\) and \\( (1.2, 2.6) \\).\n\n (a) Find the equation of the line.\n\n (b) Hence write down the equation relating \\( y \\) and \\( x \\) in the form \\( y = ax^n \\).\n\n (c) Find \\( y \\) when \\( x = 50 \\). Give your answer to 3 s.f.',
         marks: 5,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['logarithmic graphs', 'y = ax^n', 'find equation of line', 'predict'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -944,13 +944,13 @@ export const questions: Question[] = [
     {
         id: 'el6-029',
         topicRef: 'el6',
-        topicTitle: 'Using Logarithmic Graphs 29',
+        topicTitle: 'Using Logarithmic Graphs',
         difficulty: 'Foundation',
         questionText: 'A model \\( y = 10 \\times 3^x \\) is used to predict the number of users \\( y \\) of a social network after \\( x \\) months.\n\n (a) Write the model in the form \\( \\log y = mx + c \\).\n\n (b) Describe one limitation of this model over a long time period.',
         marks: 3,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['logarithmic graphs', 'linearise', 'limitation', 'y = kb^x'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -972,13 +972,13 @@ export const questions: Question[] = [
     {
         id: 'el6-030',
         topicRef: 'el6',
-        topicTitle: 'Using Logarithmic Graphs 30',
+        topicTitle: 'Using Logarithmic Graphs',
         difficulty: 'Foundation',
         questionText: 'A student plots \\( \\log y \\) against \\( \\log x \\) for a data set and obtains a straight line. They conclude the data follows \\( y = ax^n \\).\n\n Another student plots \\( \\log y \\) against \\( x \\) for the same data and also obtains a straight line. They conclude the data follows \\( y = kb^x \\).\n\n (a) Explain how both students can be correct.\n\n (b) Describe how you would distinguish between the two models experimentally.',
         marks: 4,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['logarithmic graphs', 'compare models', 'interpret', 'distinguish'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -1001,13 +1001,13 @@ export const questions: Question[] = [
     {
         id: 'el6-031',
         topicRef: 'el6',
-        topicTitle: 'Using Logarithmic Graphs 31',
+        topicTitle: 'Using Logarithmic Graphs',
         difficulty: 'Foundation',
         questionText: 'The number of employees \\( p \\) in a company \\( t \\) years after it was founded is modelled by \\( p = at^b \\). The table of values below is given:\n\n\n\n \\(\\begin{array}{|c|c|c|c|c|c|}\\hline t & 2 & 5 & 10 & 20 & 40 \\\\\\hline p & 15 & 28 & 45 & 72 & 114 \\\\\\hline\\end{array}\\)\n\n\n\n (a) Copy and complete a table of \\( \\log t \\) and \\( \\log p \\) values to 3 d.p.\n\n (b) Plot a linear graph and draw a line of best fit.\n\n (c) Find the values of \\( a \\) and \\( b \\).\n\n (d) Predict the number of employees after 60 years.',
         marks: 7,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['logarithmic graphs', 'y = ax^n', 'table', 'find a and b', 'predict', 'exam-style'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -1041,13 +1041,13 @@ export const questions: Question[] = [
     {
         id: 'el6-032',
         topicRef: 'el6',
-        topicTitle: 'Using Logarithmic Graphs 32',
+        topicTitle: 'Using Logarithmic Graphs',
         difficulty: 'Foundation',
         questionText: 'The value £\\( V \\) of a piece of equipment \\( t \\) years old is modelled by \\( V = pq^t \\). A graph of \\( \\log V \\) against \\( t \\) has gradient \\( -\\frac{1}{5} \\) and passes through \\( (0, 4) \\).\n\n (a) Find \\( p \\) and \\( q \\) to 3 s.f.\n\n (b) Find the age at which the equipment is worth less than £1000.\n\n (c) Write an equation for the linear graph and state the axes that should be plotted.',
         marks: 6,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['logarithmic graphs', 'y = kb^x', 'depreciation', 'solve for t', 'exam-style'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -1081,13 +1081,13 @@ export const questions: Question[] = [
     {
         id: 'el6-033',
         topicRef: 'el6',
-        topicTitle: 'Using Logarithmic Graphs 33',
+        topicTitle: 'Using Logarithmic Graphs',
         difficulty: 'Foundation',
         questionText: 'The number of bacteria \\( p \\) (in thousands) in a petri dish after \\( t \\) days satisfies \\( p = at^b \\). Observations give:\n\n\n\n \\(\\begin{array}{|c|c|c|c|c|}\\hline t & 1 & 3 & 6 & 9 \\\\\\hline p & 2 & 14 & 44 & 88 \\\\\\hline\\end{array}\\)\n\n\n\n (a) Plot a linear graph of \\( \\log p \\) against \\( \\log t \\) using the data.\n\n (b) Find \\( a \\) and \\( b \\) to 3 s.f.\n\n (c) Predict the number of bacteria after 15 days.\n\n (d) Describe one reason why the model may not be appropriate after many days.',
         marks: 7,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['logarithmic graphs', 'y = ax^n', 'bacteria', 'table', 'limitation', 'exam-style'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -1127,13 +1127,13 @@ export const questions: Question[] = [
     {
         id: 'el6-034',
         topicRef: 'el6',
-        topicTitle: 'Using Logarithmic Graphs 34',
+        topicTitle: 'Using Logarithmic Graphs',
         difficulty: 'Foundation',
         questionText: 'A scientist measures the speed \\( v \\) (m/s) of a chemical reaction at temperature \\( T \\) (K). She believes \\( v = aT^n \\). A graph of \\( \\log v \\) against \\( \\log T \\) gives a straight line with equation \\( \\log v = 2.5\\log T - 5.4 \\).\n\n (a) Find \\( a \\) and \\( n \\) to 3 s.f.\n\n (b) Find \\( v \\) when \\( T = 400 \\) K.\n\n (c) Find \\( T \\) when \\( v = 80 \\). Give your answer to 3 s.f.',
         marks: 6,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['logarithmic graphs', 'y = ax^n', 'given line equation', 'find a and n', 'predict', 'exam-style'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -1161,13 +1161,13 @@ export const questions: Question[] = [
     {
         id: 'el6-035',
         topicRef: 'el6',
-        topicTitle: 'Using Logarithmic Graphs 35',
+        topicTitle: 'Using Logarithmic Graphs',
         difficulty: 'Foundation',
         questionText: 'The populations (in thousands) of rabbits \\( R \\) and foxes \\( F \\) on an island are modelled by straight-line graphs of \\( \\ln N \\) against \\( t \\) (years):\n\n Rabbits: \\( \\ln R = -0.08t + 8 \\)\n\n Foxes: \\( \\ln F = 0.12t + 4 \\)\n\n (a) Find the initial population of each species. Give your answers to 3 s.f.\n\n (b) Find the year \\( t \\) when both populations are equal.\n\n (c) Find the combined population at this time. Give your answer to 3 s.f.\n\n (d) Explain why the rabbit model may not be appropriate for large \\( t \\).',
         marks: 7,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['logarithmic graphs', 'two models', 'ln y vs x', 'intersection', 'combined population', 'limitation', 'exam-style'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -1208,7 +1208,7 @@ export const questions: Question[] = [
     // ─── Q36–70: Additional Using Logarithmic Graphs ──────────────────────
 
     {
-        id: 'el6-036', topicRef: 'el6', topicTitle: 'Using Logarithmic Graphs 36', difficulty: 'Foundation',
+        id: 'el6-036', topicRef: 'el6', topicTitle: 'Using Logarithmic Graphs', difficulty: 'Foundation',
         questionText: 'A graph of \\( \\log y \\) against \\( \\log x \\) is a straight line with gradient 2 and y-intercept 0.5. Write down the equation connecting \\( y \\) and \\( x \\).',
         marks: 3, examStyle: false, yearCreated: 2026, tags: [],
         workedSolution: { steps: [
@@ -1217,7 +1217,7 @@ export const questions: Question[] = [
         ], finalAnswer: 'y = \\sqrt{10} \\cdot x^2' }
     },
     {
-        id: 'el6-037', topicRef: 'el6', topicTitle: 'Using Logarithmic Graphs 37', difficulty: 'Foundation',
+        id: 'el6-037', topicRef: 'el6', topicTitle: 'Using Logarithmic Graphs', difficulty: 'Foundation',
         questionText: 'A graph of \\( \\log y \\) against \\( x \\) is a straight line with gradient 0.2 and y-intercept 1. Find \\( k \\) and \\( b \\) in \\( y = kb^x \\).',
         marks: 3, examStyle: false, yearCreated: 2026, tags: [],
         workedSolution: { steps: [
@@ -1226,7 +1226,7 @@ export const questions: Question[] = [
         ], finalAnswer: 'k = 10, b = 1.585' }
     },
     {
-        id: 'el6-038', topicRef: 'el6', topicTitle: 'Using Logarithmic Graphs 38', difficulty: 'Foundation',
+        id: 'el6-038', topicRef: 'el6', topicTitle: 'Using Logarithmic Graphs', difficulty: 'Foundation',
         questionText: 'Explain why plotting \\( \\log y \\) against \\( \\log x \\) for data following \\( y = ax^n \\) gives a straight line.',
         marks: 3, examStyle: false, yearCreated: 2026, tags: [],
         workedSolution: { steps: [
@@ -1235,7 +1235,7 @@ export const questions: Question[] = [
         ], finalAnswer: 'Linear form: log y = n log x + log a; gradient n, intercept log a' }
     },
     {
-        id: 'el6-039', topicRef: 'el6', topicTitle: 'Using Logarithmic Graphs 39', difficulty: 'Foundation',
+        id: 'el6-039', topicRef: 'el6', topicTitle: 'Using Logarithmic Graphs', difficulty: 'Foundation',
         questionText: 'Explain why plotting \\( \\log y \\) against \\( x \\) for data following \\( y = kb^x \\) gives a straight line.',
         marks: 3, examStyle: false, yearCreated: 2026, tags: [],
         workedSolution: { steps: [
@@ -1244,7 +1244,7 @@ export const questions: Question[] = [
         ], finalAnswer: 'Linear form: log y = (log b)x + log k' }
     },
     {
-        id: 'el6-040', topicRef: 'el6', topicTitle: 'Using Logarithmic Graphs 40', difficulty: 'Foundation',
+        id: 'el6-040', topicRef: 'el6', topicTitle: 'Using Logarithmic Graphs', difficulty: 'Foundation',
         questionText: 'A graph of \\( \\ln y \\) against \\( x \\) has gradient 0.5 and passes through \\( (0, 2) \\). Find the equation in the form \\( y = ke^{cx} \\).',
         marks: 3, examStyle: false, yearCreated: 2026, tags: [],
         workedSolution: { steps: [
@@ -1253,7 +1253,7 @@ export const questions: Question[] = [
         ], finalAnswer: 'y = e^2 \\cdot e^{0.5x}; k = e^2, c = 0.5' }
     },
     {
-        id: 'el6-041', topicRef: 'el6', topicTitle: 'Using Logarithmic Graphs 41', difficulty: 'Foundation',
+        id: 'el6-041', topicRef: 'el6', topicTitle: 'Using Logarithmic Graphs', difficulty: 'Foundation',
         questionText: 'A graph of \\( \\log y \\) against \\( \\log x \\) passes through \\( (0.5, 1.2) \\) and \\( (2.0, 3.0) \\). Find \\( a \\) and \\( n \\) in \\( y = ax^n \\).',
         marks: 4, examStyle: false, yearCreated: 2026, tags: [],
         workedSolution: { steps: [
@@ -1262,7 +1262,7 @@ export const questions: Question[] = [
         ], finalAnswer: 'n = 1.2, a = 3.98' }
     },
     {
-        id: 'el6-042', topicRef: 'el6', topicTitle: 'Using Logarithmic Graphs 42', difficulty: 'Foundation',
+        id: 'el6-042', topicRef: 'el6', topicTitle: 'Using Logarithmic Graphs', difficulty: 'Foundation',
         questionText: 'A graph of \\( \\log y \\) against \\( x \\) passes through \\( (0, 1.5) \\) and \\( (4, 3.5) \\). Find \\( k \\) and \\( b \\) in \\( y = kb^x \\).',
         marks: 4, examStyle: false, yearCreated: 2026, tags: [],
         workedSolution: { steps: [
@@ -1271,7 +1271,7 @@ export const questions: Question[] = [
         ], finalAnswer: 'k = 31.6, b = 3.16' }
     },
     {
-        id: 'el6-043', topicRef: 'el6', topicTitle: 'Using Logarithmic Graphs 43', difficulty: 'Foundation',
+        id: 'el6-043', topicRef: 'el6', topicTitle: 'Using Logarithmic Graphs', difficulty: 'Foundation',
         questionText: 'Data: \\( x = 2, y = 20 \\); \\( x = 5, y = 125 \\). Verify these satisfy \\( y = ax^n \\) and find \\( a \\) and \\( n \\).',
         marks: 4, examStyle: false, yearCreated: 2026, tags: [],
         workedSolution: { steps: [
@@ -1281,7 +1281,7 @@ export const questions: Question[] = [
         ], finalAnswer: 'y = 5x^2' }
     },
     {
-        id: 'el6-044', topicRef: 'el6', topicTitle: 'Using Logarithmic Graphs 44', difficulty: 'Foundation',
+        id: 'el6-044', topicRef: 'el6', topicTitle: 'Using Logarithmic Graphs', difficulty: 'Foundation',
         questionText: 'Data: \\( x = 1, y = 6 \\); \\( x = 3, y = 54 \\). These satisfy \\( y = kb^x \\). Find \\( k \\) and \\( b \\).',
         marks: 4, examStyle: false, yearCreated: 2026, tags: [],
         workedSolution: { steps: [
@@ -1291,7 +1291,7 @@ export const questions: Question[] = [
         ], finalAnswer: 'k = 2, b = 3; y = 2 \\times 3^x' }
     },
     {
-        id: 'el6-045', topicRef: 'el6', topicTitle: 'Using Logarithmic Graphs 45', difficulty: 'Foundation',
+        id: 'el6-045', topicRef: 'el6', topicTitle: 'Using Logarithmic Graphs', difficulty: 'Foundation',
         questionText: 'The equation \\( \\log y = 0.3x + 1.2 \\) relates \\( x \\) and \\( y \\). Find \\( y \\) when \\( x = 5 \\).',
         marks: 3, examStyle: false, yearCreated: 2026, tags: [],
         workedSolution: { steps: [
@@ -1300,7 +1300,7 @@ export const questions: Question[] = [
         ], finalAnswer: 'y = 501' }
     },
     {
-        id: 'el6-046', topicRef: 'el6', topicTitle: 'Using Logarithmic Graphs 46', difficulty: 'Foundation',
+        id: 'el6-046', topicRef: 'el6', topicTitle: 'Using Logarithmic Graphs', difficulty: 'Foundation',
         questionText: 'The equation \\( \\log y = 1.5\\log x + 0.8 \\) relates \\( x \\) and \\( y \\). Find \\( y \\) when \\( x = 4 \\).',
         marks: 3, examStyle: false, yearCreated: 2026, tags: [],
         workedSolution: { steps: [
@@ -1309,7 +1309,7 @@ export const questions: Question[] = [
         ], finalAnswer: 'y = 50.4' }
     },
     {
-        id: 'el6-047', topicRef: 'el6', topicTitle: 'Using Logarithmic Graphs 47', difficulty: 'Foundation',
+        id: 'el6-047', topicRef: 'el6', topicTitle: 'Using Logarithmic Graphs', difficulty: 'Foundation',
         questionText: 'Given \\( \\ln y = 2x + 3 \\), express \\( y \\) in the form \\( y = Ae^{Bx} \\).',
         marks: 2, examStyle: false, yearCreated: 2026, tags: [],
         workedSolution: { steps: [
@@ -1317,7 +1317,7 @@ export const questions: Question[] = [
         ], finalAnswer: 'y = e^3 e^{2x}; A = e^3, B = 2' }
     },
     {
-        id: 'el6-048', topicRef: 'el6', topicTitle: 'Using Logarithmic Graphs 48', difficulty: 'Foundation',
+        id: 'el6-048', topicRef: 'el6', topicTitle: 'Using Logarithmic Graphs', difficulty: 'Foundation',
         questionText: 'A straight line on a \\( \\log y \\) vs \\( \\log x \\) graph has equation \\( \\log y = -2\\log x + 3 \\). Write \\( y \\) as a function of \\( x \\).',
         marks: 3, examStyle: false, yearCreated: 2026, tags: [],
         workedSolution: { steps: [
@@ -1325,7 +1325,7 @@ export const questions: Question[] = [
         ], finalAnswer: 'y = 1000/x^2' }
     },
     {
-        id: 'el6-049', topicRef: 'el6', topicTitle: 'Using Logarithmic Graphs 49', difficulty: 'Foundation',
+        id: 'el6-049', topicRef: 'el6', topicTitle: 'Using Logarithmic Graphs', difficulty: 'Foundation',
         questionText: 'A relationship \\( y = 3 \\times 2^x \\) is plotted as \\( \\log y \\) against \\( x \\). Find the gradient and y-intercept of the resulting line.',
         marks: 3, examStyle: false, yearCreated: 2026, tags: [],
         workedSolution: { steps: [
@@ -1333,7 +1333,7 @@ export const questions: Question[] = [
         ], finalAnswer: 'Gradient = 0.301, y-intercept = 0.477' }
     },
     {
-        id: 'el6-050', topicRef: 'el6', topicTitle: 'Using Logarithmic Graphs 50', difficulty: 'Foundation',
+        id: 'el6-050', topicRef: 'el6', topicTitle: 'Using Logarithmic Graphs', difficulty: 'Foundation',
         questionText: 'A relationship \\( y = 5x^3 \\) is plotted as \\( \\log y \\) against \\( \\log x \\). Find the gradient and y-intercept.',
         marks: 3, examStyle: false, yearCreated: 2026, tags: [],
         workedSolution: { steps: [
@@ -1341,7 +1341,7 @@ export const questions: Question[] = [
         ], finalAnswer: 'Gradient = 3, y-intercept = 0.699' }
     },
     {
-        id: 'el6-051', topicRef: 'el6', topicTitle: 'Using Logarithmic Graphs 51', difficulty: 'Foundation',
+        id: 'el6-051', topicRef: 'el6', topicTitle: 'Using Logarithmic Graphs', difficulty: 'Foundation',
         questionText: 'A student plots \\( \\log y \\) against \\( \\log x \\) and gets gradient 0.5 and intercept 1. What is the relationship?',
         marks: 3, examStyle: false, yearCreated: 2026, tags: [],
         workedSolution: { steps: [
@@ -1349,7 +1349,7 @@ export const questions: Question[] = [
         ], finalAnswer: 'y = 10 sqrt(x)' }
     },
     {
-        id: 'el6-052', topicRef: 'el6', topicTitle: 'Using Logarithmic Graphs 52', difficulty: 'Foundation',
+        id: 'el6-052', topicRef: 'el6', topicTitle: 'Using Logarithmic Graphs', difficulty: 'Foundation',
         questionText: 'A student plots \\( \\log y \\) against \\( x \\) and gets a straight line. Another plots \\( \\log y \\) against \\( \\log x \\) and gets a curve. What type of relationship does the data follow?',
         marks: 2, examStyle: false, yearCreated: 2026, tags: [],
         workedSolution: { steps: [
@@ -1357,7 +1357,7 @@ export const questions: Question[] = [
         ], finalAnswer: 'Exponential: y = kb^x' }
     },
     {
-        id: 'el6-053', topicRef: 'el6', topicTitle: 'Using Logarithmic Graphs 53', difficulty: 'Foundation',
+        id: 'el6-053', topicRef: 'el6', topicTitle: 'Using Logarithmic Graphs', difficulty: 'Foundation',
         questionText: 'Given the line \\( \\log y = -0.5\\log x + 2 \\), find \\( x \\) when \\( y = 50 \\).',
         marks: 4, examStyle: false, yearCreated: 2026, tags: [],
         workedSolution: { steps: [
@@ -1366,7 +1366,7 @@ export const questions: Question[] = [
         ], finalAnswer: 'x = 4' }
     },
     {
-        id: 'el6-054', topicRef: 'el6', topicTitle: 'Using Logarithmic Graphs 54', difficulty: 'Foundation',
+        id: 'el6-054', topicRef: 'el6', topicTitle: 'Using Logarithmic Graphs', difficulty: 'Foundation',
         questionText: 'Given \\( \\log y = 0.4x + 0.8 \\), find \\( x \\) when \\( y = 1000 \\).',
         marks: 3, examStyle: false, yearCreated: 2026, tags: [],
         workedSolution: { steps: [
@@ -1374,7 +1374,7 @@ export const questions: Question[] = [
         ], finalAnswer: 'x = 5.5' }
     },
     {
-        id: 'el6-055', topicRef: 'el6', topicTitle: 'Using Logarithmic Graphs 55', difficulty: 'Foundation',
+        id: 'el6-055', topicRef: 'el6', topicTitle: 'Using Logarithmic Graphs', difficulty: 'Foundation',
         questionText: 'The speed \\( v \\) and distance \\( d \\) of planets satisfy \\( v = kd^n \\). A plot of \\( \\log v \\) against \\( \\log d \\) gives gradient \\( -0.5 \\) and intercept \\( 2.1 \\). Find \\( k \\) and \\( n \\).',
         marks: 3, examStyle: false, yearCreated: 2026, tags: [],
         workedSolution: { steps: [
@@ -1382,7 +1382,7 @@ export const questions: Question[] = [
         ], finalAnswer: 'n = -0.5, k = 126' }
     },
     {
-        id: 'el6-056', topicRef: 'el6', topicTitle: 'Using Logarithmic Graphs 56', difficulty: 'Foundation',
+        id: 'el6-056', topicRef: 'el6', topicTitle: 'Using Logarithmic Graphs', difficulty: 'Foundation',
         questionText: 'A relationship \\( y = 4e^{-0.3x} \\) is plotted as \\( \\ln y \\) against \\( x \\). State the gradient and intercept.',
         marks: 2, examStyle: false, yearCreated: 2026, tags: [],
         workedSolution: { steps: [
@@ -1390,7 +1390,7 @@ export const questions: Question[] = [
         ], finalAnswer: 'Gradient = -0.3, intercept = ln 4 = 1.386' }
     },
     {
-        id: 'el6-057', topicRef: 'el6', topicTitle: 'Using Logarithmic Graphs 57', difficulty: 'Foundation',
+        id: 'el6-057', topicRef: 'el6', topicTitle: 'Using Logarithmic Graphs', difficulty: 'Foundation',
         questionText: 'Two points on a \\( \\ln y \\) vs \\( x \\) graph are \\( (2, 3.4) \\) and \\( (8, 6.4) \\). Find \\( k \\) and \\( c \\) in \\( y = ke^{cx} \\).',
         marks: 4, examStyle: false, yearCreated: 2026, tags: [],
         workedSolution: { steps: [
@@ -1399,7 +1399,7 @@ export const questions: Question[] = [
         ], finalAnswer: 'k = 11.0, c = 0.5' }
     },
     {
-        id: 'el6-058', topicRef: 'el6', topicTitle: 'Using Logarithmic Graphs 58', difficulty: 'Foundation',
+        id: 'el6-058', topicRef: 'el6', topicTitle: 'Using Logarithmic Graphs', difficulty: 'Foundation',
         questionText: 'A decay process has data: \\( t = 0, y = 100 \\); \\( t = 10, y = 37 \\). Find the equation \\( y = Ae^{-kt} \\).',
         marks: 4, examStyle: false, yearCreated: 2026, tags: [],
         workedSolution: { steps: [
@@ -1408,7 +1408,7 @@ export const questions: Question[] = [
         ], finalAnswer: 'y = 100e^{-0.0994t}' }
     },
     {
-        id: 'el6-059', topicRef: 'el6', topicTitle: 'Using Logarithmic Graphs 59', difficulty: 'Foundation',
+        id: 'el6-059', topicRef: 'el6', topicTitle: 'Using Logarithmic Graphs', difficulty: 'Foundation',
         questionText: 'Which graph type would you plot to test if data follows: (a) \\( y = ax^n \\); (b) \\( y = kb^x \\); (c) \\( y = ke^{cx} \\)?',
         marks: 3, examStyle: false, yearCreated: 2026, tags: [],
         workedSolution: { steps: [
@@ -1416,7 +1416,7 @@ export const questions: Question[] = [
         ], finalAnswer: '(a) log y vs log x; (b) log y vs x; (c) ln y vs x' }
     },
     {
-        id: 'el6-060', topicRef: 'el6', topicTitle: 'Using Logarithmic Graphs 60', difficulty: 'Foundation',
+        id: 'el6-060', topicRef: 'el6', topicTitle: 'Using Logarithmic Graphs', difficulty: 'Foundation',
         questionText: 'A graph of \\( \\log y \\) against \\( \\log x \\) gives gradient 3 and passes through \\( (1, 2) \\). Find the equation and evaluate \\( y \\) when \\( x = 10 \\).',
         marks: 4, examStyle: false, yearCreated: 2026, tags: [],
         workedSolution: { steps: [
@@ -1425,7 +1425,7 @@ export const questions: Question[] = [
         ], finalAnswer: 'y = 0.1x^3; y(10) = 100' }
     },
     {
-        id: 'el6-061', topicRef: 'el6', topicTitle: 'Using Logarithmic Graphs 61', difficulty: 'Foundation',
+        id: 'el6-061', topicRef: 'el6', topicTitle: 'Using Logarithmic Graphs', difficulty: 'Foundation',
         questionText: 'Convert \\( y = 7 \\times 5^x \\) into the form \\( \\log y = mx + c \\) and state \\( m \\) and \\( c \\).',
         marks: 2, examStyle: false, yearCreated: 2026, tags: [],
         workedSolution: { steps: [
@@ -1433,7 +1433,7 @@ export const questions: Question[] = [
         ], finalAnswer: 'm = 0.699, c = 0.845' }
     },
     {
-        id: 'el6-062', topicRef: 'el6', topicTitle: 'Using Logarithmic Graphs 62', difficulty: 'Foundation',
+        id: 'el6-062', topicRef: 'el6', topicTitle: 'Using Logarithmic Graphs', difficulty: 'Foundation',
         questionText: 'Convert \\( y = 8x^{2.5} \\) into the form \\( \\log y = n\\log x + \\log a \\) and state \\( n \\) and \\( \\log a \\).',
         marks: 2, examStyle: false, yearCreated: 2026, tags: [],
         workedSolution: { steps: [
@@ -1441,7 +1441,7 @@ export const questions: Question[] = [
         ], finalAnswer: 'n = 2.5, log a = 0.903' }
     },
     {
-        id: 'el6-063', topicRef: 'el6', topicTitle: 'Using Logarithmic Graphs 63', difficulty: 'Foundation',
+        id: 'el6-063', topicRef: 'el6', topicTitle: 'Using Logarithmic Graphs', difficulty: 'Foundation',
         questionText: 'The line \\( \\log y = 2\\log x + 0.3 \\) intersects the line \\( \\log y = 3 \\). Find the value of \\( x \\) at the intersection.',
         marks: 3, examStyle: false, yearCreated: 2026, tags: [],
         workedSolution: { steps: [
@@ -1449,7 +1449,7 @@ export const questions: Question[] = [
         ], finalAnswer: 'x = 22.4' }
     },
     {
-        id: 'el6-064', topicRef: 'el6', topicTitle: 'Using Logarithmic Graphs 64', difficulty: 'Foundation',
+        id: 'el6-064', topicRef: 'el6', topicTitle: 'Using Logarithmic Graphs', difficulty: 'Foundation',
         questionText: 'A graph of \\( \\log P \\) against \\( \\log V \\) for a gas gives a straight line with gradient \\( -1.4 \\) and intercept 2.5. Find \\( P \\) when \\( V = 10 \\).',
         marks: 3, examStyle: false, yearCreated: 2026, tags: [],
         workedSolution: { steps: [
@@ -1458,7 +1458,7 @@ export const questions: Question[] = [
         ], finalAnswer: 'P = 12.6' }
     },
     {
-        id: 'el6-065', topicRef: 'el6', topicTitle: 'Using Logarithmic Graphs 65', difficulty: 'Foundation',
+        id: 'el6-065', topicRef: 'el6', topicTitle: 'Using Logarithmic Graphs', difficulty: 'Foundation',
         questionText: 'A graph of \\( \\log y \\) against \\( x \\) has equation \\( \\log y = -0.15x + 4 \\). Find the half-life (when y = half initial value).',
         marks: 4, examStyle: false, yearCreated: 2026, tags: [],
         workedSolution: { steps: [
@@ -1467,7 +1467,7 @@ export const questions: Question[] = [
         ], finalAnswer: 'Half-life = 2.01 units' }
     },
     {
-        id: 'el6-066', topicRef: 'el6', topicTitle: 'Using Logarithmic Graphs 66', difficulty: 'Foundation',
+        id: 'el6-066', topicRef: 'el6', topicTitle: 'Using Logarithmic Graphs', difficulty: 'Foundation',
         questionText: 'Show that \\( y = 2x^3 \\) and \\( y = 8x \\) intersect when \\( x = 2 \\) by using logarithmic methods.',
         marks: 3, examStyle: false, yearCreated: 2026, tags: [],
         workedSolution: { steps: [
@@ -1476,7 +1476,7 @@ export const questions: Question[] = [
         ], finalAnswer: 'x = 2 (verified)' }
     },
     {
-        id: 'el6-067', topicRef: 'el6', topicTitle: 'Using Logarithmic Graphs 67', difficulty: 'Foundation',
+        id: 'el6-067', topicRef: 'el6', topicTitle: 'Using Logarithmic Graphs', difficulty: 'Foundation',
         questionText: 'The time \\( t \\) (s) for a pendulum to swing depends on length \\( l \\) (m): \\( t = al^n \\). A plot of \\( \\log t \\) vs \\( \\log l \\) gives gradient 0.5 and intercept 0.3. Find \\( a \\) and \\( n \\), and find \\( t \\) when \\( l = 4 \\).',
         marks: 5, examStyle: false, yearCreated: 2026, tags: [],
         workedSolution: { steps: [
@@ -1485,7 +1485,7 @@ export const questions: Question[] = [
         ], finalAnswer: 'a = 2, n = 0.5; t(4) = 4 s' }
     },
     {
-        id: 'el6-068', topicRef: 'el6', topicTitle: 'Using Logarithmic Graphs 68', difficulty: 'Foundation',
+        id: 'el6-068', topicRef: 'el6', topicTitle: 'Using Logarithmic Graphs', difficulty: 'Foundation',
         questionText: 'A graph of \\( \\ln N \\) against \\( t \\) has equation \\( \\ln N = 0.2t + 5 \\). Find: (a) the initial value; (b) the doubling time.',
         marks: 5, examStyle: false, yearCreated: 2026, tags: [],
         workedSolution: { steps: [
@@ -1494,7 +1494,7 @@ export const questions: Question[] = [
         ], finalAnswer: '(a) 148.4 (b) 3.47 time units' }
     },
     {
-        id: 'el6-069', topicRef: 'el6', topicTitle: 'Using Logarithmic Graphs 69', difficulty: 'Foundation',
+        id: 'el6-069', topicRef: 'el6', topicTitle: 'Using Logarithmic Graphs', difficulty: 'Foundation',
         questionText: 'Two models are proposed for data: Model A \\( y = ax^n \\) and Model B \\( y = kb^x \\). Plotting \\( \\log y \\) vs \\( \\log x \\) gives a curve but \\( \\log y \\) vs \\( x \\) gives a line. Which model fits?',
         marks: 2, examStyle: false, yearCreated: 2026, tags: [],
         workedSolution: { steps: [
@@ -1502,7 +1502,7 @@ export const questions: Question[] = [
         ], finalAnswer: 'Model B: y = kb^x' }
     },
     {
-        id: 'el6-070', topicRef: 'el6', topicTitle: 'Using Logarithmic Graphs 70', difficulty: 'Foundation',
+        id: 'el6-070', topicRef: 'el6', topicTitle: 'Using Logarithmic Graphs', difficulty: 'Foundation',
         questionText: 'A graph of \\( \\log y \\) against \\( \\log x \\) passes through \\( (0, 1.5) \\) and \\( (2, 4.5) \\). Find the equation \\( y = ax^n \\), then find: (a) \\( y \\) when \\( x = 100 \\); (b) \\( x \\) when \\( y = 1000 \\).',
         marks: 6, examStyle: false, yearCreated: 2026, tags: [],
         workedSolution: { steps: [
