@@ -41,6 +41,8 @@ import { questions as cg5 } from "./Year_1_A_Level_Maths/Coordinate_Geometry/cg5
 
 import { questions as ise1 } from "./Year_1_A_Level_Maths/Inequalities_and_Simltaneous_Equations/ise1_Inequalities";
 import { questions as ise2 } from "./Year_1_A_Level_Maths/Inequalities_and_Simltaneous_Equations/ise2_Simultaneous_Equations_Linear";
+import { questions as ise3 } from "./Year_1_A_Level_Maths/Inequalities_and_Simltaneous_Equations/ise3_Quadratic_Inequalities";
+import { questions as ise4 } from "./Year_1_A_Level_Maths/Inequalities_and_Simltaneous_Equations/ise4_Simultaneous_Equations_Quadratic";
 
 import { questions as t1 } from "./Year_1_A_Level_Maths/Trigonometry/t1_the_sine_and_cosine_rule";
 import { questions as t2 } from "./Year_1_A_Level_Maths/Trigonometry/t2_trigonometric_identities";
@@ -156,7 +158,7 @@ export const questions: Question[] = [
   ...qc1, ...qc2, ...qc3, ...qc4, ...qc5, ...qc6, ...qc7, ...qc8, ...qc9, ...qc10, ...qc11,
   ...be1,
   ...cg1, ...cg2, ...cg3, ...cg4, ...cg5,
-  ...ise1, ...ise2,
+  ...ise1, ...ise2, ...ise3, ...ise4,
   ...t1, ...t2, ...t3, ...t4,
   ...el1, ...el2, ...el3, ...el4, ...el5, ...el6,
   ...d1, ...d2, ...d3, ...d4, ...d5,

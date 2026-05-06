@@ -277,11 +277,11 @@ export const questions: Question[] = [
                 {
                     stepNumber: 5,
                     description: 'Divide both sides by 2 to find \\( x \\).',
-                    workingLatex: 'x = \\frac{1.957}{2} \\approx 0.978',
-                    explanation: 'Dividing by 2 gives \\( x \\approx 0.978 \\) to 3 significant figures, which completes the solution.'
+                    workingLatex: 'x = \\frac{1.957}{2} \\approx 0.979',
+                    explanation: 'Dividing by 2 gives \\( x \\approx 0.979 \\) to 3 significant figures, which completes the solution.'
                 }
             ],
-            finalAnswer: '\\( x \\approx 0.978 \\)'
+            finalAnswer: '\\( x \\approx 0.979 \\)'
         }
     },
     // TYPE B (Q7–10): Equations with a^x on both sides (different bases)

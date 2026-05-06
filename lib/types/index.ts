@@ -61,6 +61,11 @@ export interface CurveDiagramConfig {
     color?: string;
     r?: number;
   }>;
+  fills?: Array<{
+    points: Array<[number, number]>;
+    color?: string;
+    opacity?: number;
+  }>;
 }
 
 export interface SolutionStep {
@@ -90,6 +95,7 @@ export interface Question {
   examStyle: boolean;
   yearCreated: number;
   tags: string[];
+  diagram?: CurveDiagramConfig;
 }
 
 export interface Video {

@@ -1,8 +1,8 @@
-import { Question } from "@/lib/types";
+import { Question } from '@/lib/types';
 
 /**
- * Topic: The Discriminant
- * Ref:   a3
+ * Topic: Simultaneous Equations (Linear)
+ * Ref:   ise2
  */
 export const questions: Question[] = [
 
@@ -17,7 +17,7 @@ export const questions: Question[] = [
         marks: 4,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['simultaneous equations', 'linear', 'elimination', 'add equations'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -45,7 +45,7 @@ export const questions: Question[] = [
                     explanation: 'Both values satisfy the first equation.'
                 }
             ],
-            finalAnswer: ' x = 2,\\; y = 3 '
+            finalAnswer: '\\( x = 2,\\; y = 3 \\)'
         }
     },
 
@@ -58,53 +58,35 @@ export const questions: Question[] = [
         marks: 4,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['simultaneous equations', 'linear', 'elimination', 'multiply one equation'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
                     stepNumber: 1,
                     description: 'Label the equations.',
                     workingLatex: '\\textcircled{1}\\; 4x + y = 14 \\qquad \\textcircled{2}\\; 2x - 3y = -8',
-                    explanation: 'Choose to eliminate \\( x \\): multiply \\( \\textcircled{2} \\) by 2.'
+                    explanation: 'Multiply \\( \\textcircled{1} \\) by 3 so the \\( y \\)-coefficients become \\( +3 \\) and \\( -3 \\).'
                 },
                 {
                     stepNumber: 2,
-                    description: 'Multiply equation \\( \\textcircled{2} \\) by 2.',
-                    workingLatex: '\\textcircled{3}\\; 4x - 6y = -16',
-                    explanation: 'Now the \\( x \\)-coefficients match in both equations.'
-                },
-                {
-                    stepNumber: 3,
-                    description: 'Subtract \\( \\textcircled{3} \\) from \\( \\textcircled{1} \\) to eliminate \\( x \\).',
-                    workingLatex: '(4x + y) - (4x - 6y) = 14 - (-16) \\implies 7y = 30 \\implies y = \\tfrac{30}{7}',
-                    explanation: 'Subtracting removes the \\( x \\) terms. Actually recheck: \\( 7y = 30 \\). Let us pick better numbers.'
-                },
-                {
-                    stepNumber: 3,
-                    description: 'Re-eliminate: multiply \\( \\textcircled{1} \\) by 3 instead and add.',
+                    description: 'Multiply \\( \\textcircled{1} \\) by 3.',
                     workingLatex: '\\textcircled{3}\\; 12x + 3y = 42',
-                    explanation: 'This makes the \\( y \\)-coefficients \\( +3 \\) and \\( -3 \\), so adding eliminates \\( y \\).'
+                    explanation: 'The \\( y \\)-coefficients are now \\( +3 \\) and \\( -3 \\), so adding will eliminate \\( y \\).'
+                },
+                {
+                    stepNumber: 3,
+                    description: 'Add \\( \\textcircled{3} \\) and \\( \\textcircled{2} \\) to eliminate \\( y \\).',
+                    workingLatex: '(12x + 3y) + (2x - 3y) = 42 + (-8) \\implies 14x = 34 \\implies x = \\tfrac{17}{7}',
+                    explanation: 'The \\( y \\) terms cancel, leaving a single equation in \\( x \\).'
                 },
                 {
                     stepNumber: 4,
-                    description: 'Add \\( \\textcircled{3} \\) and \\( \\textcircled{2} \\).',
-                    workingLatex: '(12x + 3y) + (2x - 3y) = 42 + (-8) \\implies 14x = 34 \\implies x = \\tfrac{17}{7}',
-                    explanation: 'Hmm — let us use cleaner numbers by solving directly. From \\( \\textcircled{1} \\): \\( y = 14 - 4x \\).'
-                },
-                {
-                    stepNumber: 5,
-                    description: 'Substitute \\( y = 14 - 4x \\) into \\( \\textcircled{2} \\).',
-                    workingLatex: '2x - 3(14 - 4x) = -8 \\implies 2x - 42 + 12x = -8 \\implies 14x = 34 \\implies x = \\tfrac{17}{7}',
-                    explanation: 'This gives a non-integer answer, which is valid.'
-                },
-                {
-                    stepNumber: 6,
-                    description: 'Find \\( y \\).',
-                    workingLatex: 'y = 14 - 4 \\times \\tfrac{17}{7} = 14 - \\tfrac{68}{7} = \\tfrac{98 - 68}{7} = \\tfrac{30}{7}',
-                    explanation: 'Substitute back into the rearranged equation.'
+                    description: 'Substitute \\( x = \\tfrac{17}{7} \\) into \\( \\textcircled{1} \\) to find \\( y \\).',
+                    workingLatex: '4 \\times \\tfrac{17}{7} + y = 14 \\implies \\tfrac{68}{7} + y = 14 \\implies y = 14 - \\tfrac{68}{7} = \\tfrac{98 - 68}{7} = \\tfrac{30}{7}',
+                    explanation: 'Rearrange to isolate \\( y \\), converting 14 to \\( \\tfrac{98}{7} \\) to subtract the fractions.'
                 }
             ],
-            finalAnswer: ' x = \\dfrac{17}{7},\\; y = \\dfrac{30}{7} '
+            finalAnswer: '\\( x = \\dfrac{17}{7},\\; y = \\dfrac{30}{7} \\)'
         }
     },
 
@@ -117,7 +99,7 @@ export const questions: Question[] = [
         marks: 4,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['simultaneous equations', 'linear', 'elimination', 'multiply one equation'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -151,7 +133,7 @@ export const questions: Question[] = [
                     explanation: 'The solution satisfies the first equation.'
                 }
             ],
-            finalAnswer: ' x = 2,\\; y = 1 '
+            finalAnswer: '\\( x = 2,\\; y = 1 \\)'
         }
     },
 
@@ -164,7 +146,7 @@ export const questions: Question[] = [
         marks: 4,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['simultaneous equations', 'linear', 'elimination', 'multiply both equations'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -181,36 +163,18 @@ export const questions: Question[] = [
                 },
                 {
                     stepNumber: 3,
-                    description: 'Add \\( \\textcircled{3} \\) and \\( \\textcircled{4} \\).',
+                    description: 'Add \\( \\textcircled{3} \\) and \\( \\textcircled{4} \\) to eliminate \\( y \\).',
                     workingLatex: '47x = 154 \\implies x = \\frac{154}{47}',
-                    explanation: 'That gives a messy answer. Use \\( x \\)-elimination instead: multiply \\( \\textcircled{1} \\) by 4 and \\( \\textcircled{2} \\) by 7.'
-                },
-                {
-                    stepNumber: 3,
-                    description: 'Multiply \\( \\textcircled{1} \\) by 4 and \\( \\textcircled{2} \\) by 7.',
-                    workingLatex: '\\textcircled{3}\\; 28x - 12y = 44 \\qquad \\textcircled{4}\\; 28x + 35y = 231',
-                    explanation: '\\( x \\)-coefficients now both equal 28.'
+                    explanation: 'The \\( y \\) terms cancel. The result is not an integer, but this is valid.'
                 },
                 {
                     stepNumber: 4,
-                    description: 'Subtract \\( \\textcircled{3} \\) from \\( \\textcircled{4} \\).',
-                    workingLatex: '(28x + 35y) - (28x - 12y) = 231 - 44 \\implies 47y = 187 \\implies y = \\frac{187}{47}',
-                    explanation: 'Checking: \\( 187 = 47 \\times 4 - 1 \\). Recheck arithmetic: \\( 47 \\times 4 = 188 \\neq 187 \\). Let us verify by back-substitution.'
-                },
-                {
-                    stepNumber: 5,
-                    description: 'Solve cleanly: from \\( \\textcircled{2} \\), multiply by 3 and \\( \\textcircled{1} \\) by 5.',
-                    workingLatex: '\\textcircled{3}: 35x - 15y = 55; \\quad \\textcircled{4}: 12x + 15y = 99',
-                    explanation: 'Add to eliminate \\( y \\): \\( 47x = 154 \\). This is not integer — rechoose: \\( \\textcircled{1}\\times 5 + \\textcircled{2}\\times 3 \\).'
-                },
-                {
-                    stepNumber: 6,
-                    description: 'Add \\( \\textcircled{3} + \\textcircled{4} \\): \\( 47x = 154 \\). Use substitution to get \\( y \\).',
-                    workingLatex: 'x = \\frac{154}{47}',
-                    explanation: 'The solution involves fractions. From \\(\\textcircled{1}\\): \\( y = \\frac{7x-11}{3} = \\frac{7 \\cdot \\frac{154}{47}-11}{3} = \\frac{\\frac{1078-517}{47}}{3} = \\frac{561}{141} = \\frac{187}{47} \\approx 3.98 \\). Integer answer check: try \\( x=2, y=1 \\): \\(14-3=11\\checkmark\\), \\(8+5=13\\neq 33\\). Try \\( x=4, y=5 \\): \\(28-15=13\\neq11\\). These equations produce non-integer solutions.'
+                    description: 'Substitute \\( x = \\tfrac{154}{47} \\) into \\( \\textcircled{1} \\) to find \\( y \\).',
+                    workingLatex: '7 \\times \\tfrac{154}{47} - 3y = 11 \\implies \\tfrac{1078}{47} - 3y = 11 \\implies 3y = \\tfrac{1078 - 517}{47} = \\tfrac{561}{47} \\implies y = \\tfrac{187}{47}',
+                    explanation: 'Convert 11 to \\( \\tfrac{517}{47} \\) and solve for \\( y \\).'
                 }
             ],
-            finalAnswer: ' x = \\dfrac{154}{47},\\; y = \\dfrac{187}{47} '
+            finalAnswer: '\\( x = \\dfrac{154}{47},\\; y = \\dfrac{187}{47} \\)'
         }
     },
 
@@ -223,7 +187,7 @@ export const questions: Question[] = [
         marks: 4,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['simultaneous equations', 'linear', 'elimination', 'multiply one equation'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -257,7 +221,7 @@ export const questions: Question[] = [
                     explanation: 'Verified.'
                 }
             ],
-            finalAnswer: ' x = \\dfrac{3}{4},\\; y = \\dfrac{7}{2} '
+            finalAnswer: '\\( x = \\dfrac{3}{4},\\; y = \\dfrac{7}{2} \\)'
         }
     },
 
@@ -270,7 +234,7 @@ export const questions: Question[] = [
         marks: 4,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['simultaneous equations', 'linear', 'elimination', 'negative solution'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -287,30 +251,18 @@ export const questions: Question[] = [
                 },
                 {
                     stepNumber: 3,
-                    description: 'Add \\( \\textcircled{1} \\) and \\( \\textcircled{3} \\).',
-                    workingLatex: '11x = -17 \\implies x = -\\tfrac{17}{11}',
-                    explanation: 'Non-integer — let us try eliminating \\( x \\) instead. Multiply \\( \\textcircled{1} \\) by 2 and \\( \\textcircled{2} \\) by 5.'
-                },
-                {
-                    stepNumber: 3,
-                    description: 'Multiply \\( \\textcircled{1} \\) by 2 and \\( \\textcircled{2} \\) by 5.',
-                    workingLatex: '\\textcircled{3}\\; 10x + 6y = 14 \\qquad \\textcircled{4}\\; 10x - 5y = -40',
-                    explanation: '\\( x \\)-coefficients both equal 10.'
+                    description: 'Add \\( \\textcircled{1} \\) and \\( \\textcircled{3} \\) to eliminate \\( y \\).',
+                    workingLatex: '(5x + 3y) + (6x - 3y) = 7 + (-24) \\implies 11x = -17 \\implies x = -\\tfrac{17}{11}',
+                    explanation: 'The \\( y \\) terms cancel, leaving a single equation in \\( x \\).'
                 },
                 {
                     stepNumber: 4,
-                    description: 'Subtract \\( \\textcircled{4} \\) from \\( \\textcircled{3} \\).',
-                    workingLatex: '11y = 54 \\implies y = \\tfrac{54}{11}',
-                    explanation: 'Substituting back gives non-integer values. The solution is: \\( x = -\\tfrac{17}{11}, y = \\tfrac{54}{11} \\).'
-                },
-                {
-                    stepNumber: 5,
-                    description: 'Check: substitute into \\( \\textcircled{1} \\).',
-                    workingLatex: '5 \\times (-\\tfrac{17}{11}) + 3 \\times \\tfrac{54}{11} = \\tfrac{-85 + 162}{11} = \\tfrac{77}{11} = 7 \\checkmark',
-                    explanation: 'Solution verified.'
+                    description: 'Substitute \\( x = -\\tfrac{17}{11} \\) into \\( \\textcircled{2} \\) to find \\( y \\).',
+                    workingLatex: '2 \\times (-\\tfrac{17}{11}) - y = -8 \\implies -\\tfrac{34}{11} - y = -8 \\implies y = 8 - \\tfrac{34}{11} = \\tfrac{88 - 34}{11} = \\tfrac{54}{11}',
+                    explanation: 'Rearrange to isolate \\( y \\), converting 8 to \\( \\tfrac{88}{11} \\) to subtract the fractions.'
                 }
             ],
-            finalAnswer: ' x = -\\dfrac{17}{11},\\; y = \\dfrac{54}{11} '
+            finalAnswer: '\\( x = -\\dfrac{17}{11},\\; y = \\dfrac{54}{11} \\)'
         }
     },
 
@@ -323,7 +275,7 @@ export const questions: Question[] = [
         marks: 4,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['simultaneous equations', 'linear', 'elimination', 'integer solution'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -340,36 +292,18 @@ export const questions: Question[] = [
                 },
                 {
                     stepNumber: 3,
-                    description: 'Add \\( \\textcircled{3} \\) and \\( \\textcircled{2} \\).',
-                    workingLatex: '7x = 20 \\implies x = \\tfrac{20}{7}',
-                    explanation: 'Non-integer — use substitution from \\( \\textcircled{2} \\): \\( x = 4y - 4 \\).'
-                },
-                {
-                    stepNumber: 3,
-                    description: 'From \\( \\textcircled{2} \\), express \\( x \\) in terms of \\( y \\).',
-                    workingLatex: 'x = 4y - 4',
-                    explanation: 'Rearrange \\( \\textcircled{2} \\).'
+                    description: 'Add \\( \\textcircled{3} \\) and \\( \\textcircled{2} \\) to eliminate \\( y \\).',
+                    workingLatex: '(6x + 4y) + (x - 4y) = 24 + (-4) \\implies 7x = 20 \\implies x = \\tfrac{20}{7}',
+                    explanation: 'The \\( y \\) terms cancel, leaving a single equation in \\( x \\).'
                 },
                 {
                     stepNumber: 4,
-                    description: 'Substitute into \\( \\textcircled{1} \\).',
-                    workingLatex: '3(4y - 4) + 2y = 12 \\implies 12y - 12 + 2y = 12 \\implies 14y = 24 \\implies y = \\tfrac{12}{7}',
-                    explanation: 'Expand and collect like terms.'
-                },
-                {
-                    stepNumber: 5,
-                    description: 'Find \\( x \\).',
-                    workingLatex: 'x = 4 \\times \\tfrac{12}{7} - 4 = \\tfrac{48}{7} - \\tfrac{28}{7} = \\tfrac{20}{7}',
-                    explanation: 'Substitute \\( y \\) back.'
-                },
-                {
-                    stepNumber: 6,
-                    description: 'Check in \\( \\textcircled{1} \\).',
-                    workingLatex: '3 \\times \\tfrac{20}{7} + 2 \\times \\tfrac{12}{7} = \\tfrac{60 + 24}{7} = \\tfrac{84}{7} = 12 \\checkmark',
-                    explanation: 'Verified.'
+                    description: 'Substitute \\( x = \\tfrac{20}{7} \\) into \\( \\textcircled{2} \\) to find \\( y \\).',
+                    workingLatex: '\\tfrac{20}{7} - 4y = -4 \\implies 4y = \\tfrac{20}{7} + 4 = \\tfrac{20 + 28}{7} = \\tfrac{48}{7} \\implies y = \\tfrac{12}{7}',
+                    explanation: 'Rearrange to isolate \\( y \\), converting 4 to \\( \\tfrac{28}{7} \\) to add the fractions.'
                 }
             ],
-            finalAnswer: ' x = \\dfrac{20}{7},\\; y = \\dfrac{12}{7} '
+            finalAnswer: '\\( x = \\dfrac{20}{7},\\; y = \\dfrac{12}{7} \\)'
         }
     },
 
@@ -382,7 +316,7 @@ export const questions: Question[] = [
         marks: 4,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['simultaneous equations', 'linear', 'elimination', 'integer solution'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -416,7 +350,7 @@ export const questions: Question[] = [
                     explanation: 'Solution verified.'
                 }
             ],
-            finalAnswer: ' x = 2,\\; y = 3 '
+            finalAnswer: '\\( x = 2,\\; y = 3 \\)'
         }
     },
 
@@ -429,7 +363,7 @@ export const questions: Question[] = [
         marks: 3,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['simultaneous equations', 'linear', 'intersection', 'y = mx + c'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -457,7 +391,7 @@ export const questions: Question[] = [
                     explanation: 'Both equations give \\( y = 5 \\) at \\( x = 2 \\).'
                 }
             ],
-            finalAnswer: 'Point of intersection:  (2,\\ 5) '
+            finalAnswer: 'Point of intersection: \\( (2,\\ 5) \\)'
         }
     },
 
@@ -470,7 +404,7 @@ export const questions: Question[] = [
         marks: 3,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['simultaneous equations', 'linear', 'intersection', 'y = mx + c'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -498,7 +432,7 @@ export const questions: Question[] = [
                     explanation: 'Verified.'
                 }
             ],
-            finalAnswer: 'Point of intersection:  (2,\\ 6) '
+            finalAnswer: 'Point of intersection: \\( (2,\\ 6) \\)'
         }
     },
 
@@ -511,7 +445,7 @@ export const questions: Question[] = [
         marks: 4,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['simultaneous equations', 'linear', 'rearrange first', 'elimination'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -545,7 +479,7 @@ export const questions: Question[] = [
                     explanation: 'Solution verified.'
                 }
             ],
-            finalAnswer: ' x = \\dfrac{21}{13},\\; y = \\dfrac{19}{13} '
+            finalAnswer: '\\( x = \\dfrac{21}{13},\\; y = \\dfrac{19}{13} \\)'
         }
     },
 
@@ -558,35 +492,53 @@ export const questions: Question[] = [
         marks: 7,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['simultaneous equations', 'linear', 'real-world', 'three lines', 'intersections'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
                     stepNumber: 1,
-                    description: 'Find intersection of \\( A \\) and \\( B \\): \\( 2x + y = 8 \\) and \\( x - y = 1 \\).',
-                    workingLatex: '\\text{Add: } 3x = 9 \\implies x = 3,\\quad y = 3 - 1 = 2',
-                    explanation: 'Adding eliminates \\( y \\) directly.'
+                    description: 'Find intersection of \\( A \\) and \\( B \\): add the two equations.',
+                    workingLatex: '(2x + y) + (x - y) = 8 + 1 \\implies 3x = 9 \\implies x = 3',
+                    explanation: 'Adding \\( A \\) and \\( B \\) eliminates \\( y \\) directly.'
                 },
                 {
                     stepNumber: 2,
-                    description: 'Find intersection of \\( A \\) and \\( C \\): \\( 2x + y = 8 \\) and \\( x + 3y = 12 \\).',
-                    workingLatex: '\\times 3: 6x + 3y = 24; \\quad \\text{subtract }C: 5x = 12 \\implies x = \\tfrac{12}{5},\\quad y = 8 - 2 \\times \\tfrac{12}{5} = \\tfrac{16}{5}',
-                    explanation: 'Multiply \\( A \\) by 3 and subtract \\( C \\).'
+                    description: 'Substitute \\( x = 3 \\) into \\( B \\) to find \\( y \\).',
+                    workingLatex: '3 - y = 1 \\implies y = 2',
+                    explanation: 'So \\( A \\cap B = (3,\\, 2) \\).'
                 },
                 {
                     stepNumber: 3,
-                    description: 'Find intersection of \\( B \\) and \\( C \\): \\( x - y = 1 \\) and \\( x + 3y = 12 \\).',
-                    workingLatex: '\\text{Subtract }B\\text{ from }C: 4y = 11 \\implies y = \\tfrac{11}{4},\\quad x = 1 + \\tfrac{11}{4} = \\tfrac{15}{4}',
-                    explanation: 'Subtracting eliminates \\( x \\).'
+                    description: 'Find intersection of \\( A \\) and \\( C \\): multiply \\( A \\) by 3 to match \\( y \\)-coefficients.',
+                    workingLatex: '6x + 3y = 24',
+                    explanation: 'Now the \\( y \\)-coefficients in the scaled \\( A \\) and \\( C \\) are both \\( 3 \\).'
                 },
                 {
                     stepNumber: 4,
-                    description: 'State all three bench coordinates.',
-                    workingLatex: 'A \\cap B = (3, 2),\\quad A \\cap C = \\left(\\tfrac{12}{5}, \\tfrac{16}{5}\\right),\\quad B \\cap C = \\left(\\tfrac{15}{4}, \\tfrac{11}{4}\\right)',
-                    explanation: 'Three distinct intersection points.'
+                    description: 'Subtract \\( C \\) from the scaled \\( A \\).',
+                    workingLatex: '(6x + 3y) - (x + 3y) = 24 - 12 \\implies 5x = 12 \\implies x = \\tfrac{12}{5}',
+                    explanation: 'The \\( y \\) terms cancel.'
+                },
+                {
+                    stepNumber: 5,
+                    description: 'Substitute \\( x = \\tfrac{12}{5} \\) into \\( A \\) to find \\( y \\).',
+                    workingLatex: '2 \\times \\tfrac{12}{5} + y = 8 \\implies y = 8 - \\tfrac{24}{5} = \\tfrac{16}{5}',
+                    explanation: 'So \\( A \\cap C = \\left(\\tfrac{12}{5},\\, \\tfrac{16}{5}\\right) \\).'
+                },
+                {
+                    stepNumber: 6,
+                    description: 'Find intersection of \\( B \\) and \\( C \\): subtract \\( B \\) from \\( C \\).',
+                    workingLatex: '(x + 3y) - (x - y) = 12 - 1 \\implies 4y = 11 \\implies y = \\tfrac{11}{4}',
+                    explanation: 'Subtracting eliminates \\( x \\).'
+                },
+                {
+                    stepNumber: 7,
+                    description: 'Substitute \\( y = \\tfrac{11}{4} \\) into \\( B \\) to find \\( x \\).',
+                    workingLatex: 'x - \\tfrac{11}{4} = 1 \\implies x = 1 + \\tfrac{11}{4} = \\tfrac{15}{4}',
+                    explanation: 'So \\( B \\cap C = \\left(\\tfrac{15}{4},\\, \\tfrac{11}{4}\\right) \\). Three distinct benches found.'
                 }
             ],
-            finalAnswer: 'Benches at  (3,\\ 2) ,  \\left(\\tfrac{12}{5},\\ \\tfrac{16}{5}\\right) , and  \\left(\\tfrac{15}{4},\\ \\tfrac{11}{4}\\right) .'
+            finalAnswer: 'Benches at \\( (3,\\ 2) \\), \\( \\left(\\tfrac{12}{5},\\ \\tfrac{16}{5}\\right) \\), and \\( \\left(\\tfrac{15}{4},\\ \\tfrac{11}{4}\\right) \\).'
         }
     },
 
@@ -601,7 +553,7 @@ export const questions: Question[] = [
         marks: 5,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['simultaneous equations', 'substitution', 'quadratic', 'linear and quadratic'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -635,7 +587,7 @@ export const questions: Question[] = [
                     explanation: 'Both solutions verified.'
                 }
             ],
-            finalAnswer: ' x = 3,\\; y = 6  and  x = -2,\\; y = 1 '
+            finalAnswer: '\\( x = 3,\\; y = 6 \\) and \\( x = -2,\\; y = 1 \\)'
         }
     },
 
@@ -648,7 +600,7 @@ export const questions: Question[] = [
         marks: 5,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['simultaneous equations', 'substitution', 'quadratic', 'linear and quadratic'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -674,9 +626,15 @@ export const questions: Question[] = [
                     description: 'Find \\( y \\).',
                     workingLatex: 'y = 2(2) - 1 = 3',
                     explanation: 'Substitute \\( x = 2 \\) into the linear equation.'
+                },
+                {
+                    stepNumber: 5,
+                    description: 'Check in the quadratic equation.',
+                    workingLatex: 'y = (2)^2 - 2(2) + 3 = 4 - 4 + 3 = 3 \\checkmark',
+                    explanation: 'The solution satisfies both equations, confirming the line is tangent to the curve at this single point.'
                 }
             ],
-            finalAnswer: ' x = 2,\\; y = 3  (the line is tangent to the curve at this point)'
+            finalAnswer: '\\( x = 2,\\; y = 3 \\) (the line is tangent to the curve at this point)'
         }
     },
 
@@ -689,7 +647,7 @@ export const questions: Question[] = [
         marks: 5,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['simultaneous equations', 'substitution', 'circle', 'linear and quadratic'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -723,7 +681,7 @@ export const questions: Question[] = [
                     explanation: 'Both pairs satisfy the circle equation.'
                 }
             ],
-            finalAnswer: ' x = 1,\\; y = 4  and  x = 4,\\; y = 1 '
+            finalAnswer: '\\( x = 1,\\; y = 4 \\) and \\( x = 4,\\; y = 1 \\)'
         }
     },
 
@@ -736,7 +694,7 @@ export const questions: Question[] = [
         marks: 5,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['simultaneous equations', 'substitution', 'circle', 'linear and quadratic'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -770,7 +728,7 @@ export const questions: Question[] = [
                     explanation: 'Both solutions verified.'
                 }
             ],
-            finalAnswer: ' x = 0,\\; y = -5  and  x = 3,\\; y = 4 '
+            finalAnswer: '\\( x = 0,\\; y = -5 \\) and \\( x = 3,\\; y = 4 \\)'
         }
     },
 
@@ -783,7 +741,7 @@ export const questions: Question[] = [
         marks: 5,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['simultaneous equations', 'substitution', 'circle', 'linear and quadratic'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -817,7 +775,7 @@ export const questions: Question[] = [
                     explanation: 'Solution verified.'
                 }
             ],
-            finalAnswer: ' x = \\dfrac{9}{5},\\; y = \\dfrac{13}{5}  and  x = -1,\\; y = -3 '
+            finalAnswer: '\\( x = \\dfrac{9}{5},\\; y = \\dfrac{13}{5} \\) and \\( x = -1,\\; y = -3 \\)'
         }
     },
 
@@ -830,7 +788,7 @@ export const questions: Question[] = [
         marks: 5,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['simultaneous equations', 'substitution', 'quadratic', 'intersection', 'points of intersection'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -856,9 +814,15 @@ export const questions: Question[] = [
                     description: 'Find \\( y \\)-values using \\( y = 2x + 2 \\).',
                     workingLatex: 'x = -3 \\Rightarrow y = -4; \\quad x = 2 \\Rightarrow y = 6',
                     explanation: 'Substitute each \\( x \\)-value into the linear equation.'
+                },
+                {
+                    stepNumber: 5,
+                    description: 'Check in the curve equation \\( y = x^2 + 3x - 4 \\).',
+                    workingLatex: '(-3)^2 + 3(-3) - 4 = 9 - 9 - 4 = -4 \\checkmark \\quad 2^2 + 3(2) - 4 = 4 + 6 - 4 = 6 \\checkmark',
+                    explanation: 'Both points satisfy the curve equation, confirming they are correct.'
                 }
             ],
-            finalAnswer: 'Points of intersection:  (-3,\\ -4)  and  (2,\\ 6) '
+            finalAnswer: 'Points of intersection: \\( (-3,\\ -4) \\) and \\( (2,\\ 6) \\)'
         }
     },
 
@@ -871,7 +835,7 @@ export const questions: Question[] = [
         marks: 5,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['simultaneous equations', 'substitution', 'circle', 'points of intersection'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -905,7 +869,7 @@ export const questions: Question[] = [
                     explanation: 'Both pairs satisfy the circle equation.'
                 }
             ],
-            finalAnswer: ' (-6,\\ 3)  and  (6,\\ -3) '
+            finalAnswer: '\\( (-6,\\ 3) \\) and \\( (6,\\ -3) \\)'
         }
     },
 
@@ -918,7 +882,7 @@ export const questions: Question[] = [
         marks: 5,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['simultaneous equations', 'substitution', 'quadratic', 'two intersections'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -944,9 +908,15 @@ export const questions: Question[] = [
                     description: 'Find \\( y \\)-values using \\( y = x - 1 \\).',
                     workingLatex: 'x = 1 \\Rightarrow y = 0; \\quad x = 5 \\Rightarrow y = 4',
                     explanation: 'Substitute into the linear equation.'
+                },
+                {
+                    stepNumber: 5,
+                    description: 'Check in the curve equation \\( y = x^2 - 5x + 4 \\).',
+                    workingLatex: '1 - 5 + 4 = 0 \\checkmark \\quad 25 - 25 + 4 = 4 \\checkmark',
+                    explanation: 'Both solutions satisfy the quadratic, confirming they are correct.'
                 }
             ],
-            finalAnswer: ' x = 1,\\; y = 0  and  x = 5,\\; y = 4 '
+            finalAnswer: '\\( x = 1,\\; y = 0 \\) and \\( x = 5,\\; y = 4 \\)'
         }
     },
 
@@ -959,7 +929,7 @@ export const questions: Question[] = [
         marks: 5,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['simultaneous equations', 'substitution', 'product equation', 'quadratic'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -993,7 +963,7 @@ export const questions: Question[] = [
                     explanation: 'Both solutions verified.'
                 }
             ],
-            finalAnswer: ' x = -4,\\; y = -2  and  x = 2,\\; y = 4 '
+            finalAnswer: '\\( x = -4,\\; y = -2 \\) and \\( x = 2,\\; y = 4 \\)'
         }
     },
 
@@ -1006,7 +976,7 @@ export const questions: Question[] = [
         marks: 5,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['simultaneous equations', 'substitution', 'quadratic', 'linear and quadratic'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -1032,9 +1002,15 @@ export const questions: Question[] = [
                     description: 'Find the \\( y \\)-values.',
                     workingLatex: 'y = 3(1 \\pm \\sqrt{2}) - 1 = 2 \\pm 3\\sqrt{2}',
                     explanation: 'Use \\( y = 3x - 1 \\).'
+                },
+                {
+                    stepNumber: 5,
+                    description: 'State both solution pairs.',
+                    workingLatex: '(1+\\sqrt{2},\\; 2+3\\sqrt{2}) \\quad \\text{and} \\quad (1-\\sqrt{2},\\; 2-3\\sqrt{2})',
+                    explanation: 'Each pair satisfies both equations. Since the roots are irrational, exact surd form is the simplest way to express the answers.'
                 }
             ],
-            finalAnswer: ' x = 1 + \\sqrt{2},\\; y = 2 + 3\\sqrt{2}  and  x = 1 - \\sqrt{2},\\; y = 2 - 3\\sqrt{2} '
+            finalAnswer: '\\( x = 1 + \\sqrt{2},\\; y = 2 + 3\\sqrt{2} \\) and \\( x = 1 - \\sqrt{2},\\; y = 2 - 3\\sqrt{2} \\)'
         }
     },
 
@@ -1047,14 +1023,14 @@ export const questions: Question[] = [
         marks: 5,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['simultaneous equations', 'substitution', 'quadratic', 'rearrange', 'intersection'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
                     stepNumber: 1,
                     description: 'Rearrange the linear equation for \\( y \\).',
                     workingLatex: 'y = 3x + 2',
-                    explanation: 'Add \\( y \\) to both sides and subtract \\( 3x \\) and \\( 2 \\).'
+                    explanation: 'Rearrange \\( 3x - y + 2 = 0 \\) by adding \\( y \\) to both sides to obtain \\( y = 3x + 2 \\).'
                 },
                 {
                     stepNumber: 2,
@@ -1073,9 +1049,15 @@ export const questions: Question[] = [
                     description: 'Find the \\( y \\)-values.',
                     workingLatex: 'y = 3 \\times \\frac{1 \\pm \\sqrt{13}}{2} + 2 = \\frac{7 \\pm 3\\sqrt{13}}{2}',
                     explanation: 'Substitute into \\( y = 3x + 2 \\).'
+                },
+                {
+                    stepNumber: 5,
+                    description: 'State the intersection points.',
+                    workingLatex: '\\left(\\frac{1+\\sqrt{13}}{2},\\; \\frac{7+3\\sqrt{13}}{2}\\right) \\quad \\text{and} \\quad \\left(\\frac{1-\\sqrt{13}}{2},\\; \\frac{7-3\\sqrt{13}}{2}\\right)',
+                    explanation: 'Write the two points as coordinate pairs. The discriminant was positive, so two distinct intersection points exist.'
                 }
             ],
-            finalAnswer: ' \\left(\\dfrac{1+\\sqrt{13}}{2},\\ \\dfrac{7+3\\sqrt{13}}{2}\\right)  and  \\left(\\dfrac{1-\\sqrt{13}}{2},\\ \\dfrac{7-3\\sqrt{13}}{2}\\right) '
+            finalAnswer: '\\( \\left(\\dfrac{1+\\sqrt{13}}{2},\\ \\dfrac{7+3\\sqrt{13}}{2}\\right) \\) and \\( \\left(\\dfrac{1-\\sqrt{13}}{2},\\ \\dfrac{7-3\\sqrt{13}}{2}\\right) \\)'
         }
     },
 
@@ -1088,7 +1070,7 @@ export const questions: Question[] = [
         marks: 7,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['simultaneous equations', 'substitution', 'circle', 'geometry', 'multi-part'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -1117,12 +1099,24 @@ export const questions: Question[] = [
                 },
                 {
                     stepNumber: 5,
+                    description: 'Check in the circle equation \\( x^2 + y^2 = 20 \\).',
+                    workingLatex: '4^2 + (-2)^2 = 16 + 4 = 20 \\checkmark',
+                    explanation: 'The solution satisfies the circle equation.'
+                },
+                {
+                    stepNumber: 6,
+                    description: 'Note the repeated root.',
+                    workingLatex: '(x-4)^2 = 0 \\implies \\text{repeated root at } x = 4',
+                    explanation: 'A repeated root means the quadratic touches zero at exactly one point.'
+                },
+                {
+                    stepNumber: 7,
                     description: 'Part b: interpret geometrically.',
-                    workingLatex: '\\text{One solution } \\Rightarrow \\text{ the line is tangent to the circle at } (4, -2)',
-                    explanation: 'A repeated root from the quadratic means the line touches the circle at exactly one point.'
+                    workingLatex: '\\text{One solution } \\Rightarrow \\text{ the line is tangent to the circle at } (4,\\, -2)',
+                    explanation: 'Because there is only one intersection point, the line is a tangent to the circle rather than a secant.'
                 }
             ],
-            finalAnswer: 'a)  x = 4,\\; y = -2  \\quad b) The line is tangent to the circle at the point  (4, -2) .'
+            finalAnswer: 'a) \\( x = 4,\\; y = -2 \\) b) The line is tangent to the circle at the point \\( (4,\\ -2) \\).'
         }
     },
 
@@ -1137,7 +1131,7 @@ export const questions: Question[] = [
         marks: 4,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['simultaneous equations', 'discriminant', 'number of intersections', 'quadratic'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -1157,9 +1151,15 @@ export const questions: Question[] = [
                     description: 'Interpret the discriminant.',
                     workingLatex: '\\Delta = 21 > 0 \\implies \\text{two distinct real intersections}',
                     explanation: 'A positive discriminant means two distinct real roots, hence two points of intersection.'
+                },
+                {
+                    stepNumber: 4,
+                    description: 'State the conclusion.',
+                    workingLatex: '\\Delta > 0 \\implies \\text{two points of intersection}',
+                    explanation: 'Since \\( \\Delta = 21 > 0 \\), the resulting quadratic has two distinct real roots, so the line and curve meet at exactly two points.'
                 }
             ],
-            finalAnswer: 'The line and curve intersect at \\textbf{two} points (since  \\Delta = 21 > 0 ).'
+            finalAnswer: 'The line and curve intersect at two points (since \\( \\Delta = 21 > 0 \\)).'
         }
     },
 
@@ -1172,7 +1172,7 @@ export const questions: Question[] = [
         marks: 4,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['simultaneous equations', 'discriminant', 'number of intersections', 'no real solutions'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -1192,9 +1192,15 @@ export const questions: Question[] = [
                     description: 'Interpret.',
                     workingLatex: '\\Delta = -28 < 0 \\implies \\text{no real intersections}',
                     explanation: 'A negative discriminant means no real roots — the line does not meet the curve.'
+                },
+                {
+                    stepNumber: 4,
+                    description: 'State the conclusion.',
+                    workingLatex: '\\Delta < 0 \\implies \\text{no points of intersection}',
+                    explanation: 'Since \\( \\Delta = -28 < 0 \\), the quadratic has no real solutions, so the line and curve do not intersect.'
                 }
             ],
-            finalAnswer: 'The line and curve do \\textbf{not intersect} (since  \\Delta = -28 < 0 ).'
+            finalAnswer: 'The line and curve do not intersect (since \\( \\Delta = -28 < 0 \\)).'
         }
     },
 
@@ -1207,7 +1213,7 @@ export const questions: Question[] = [
         marks: 4,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['simultaneous equations', 'discriminant', 'tangent', 'one intersection'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -1227,9 +1233,15 @@ export const questions: Question[] = [
                     description: 'Interpret.',
                     workingLatex: '\\Delta = -12 < 0 \\implies \\text{no real intersections}',
                     explanation: 'The line does not touch or cross the curve at any real point.'
+                },
+                {
+                    stepNumber: 4,
+                    description: 'State the geometric significance.',
+                    workingLatex: '\\Delta < 0 \\implies \\text{the line misses the curve entirely}',
+                    explanation: 'Since \\( \\Delta = -12 < 0 \\), there are no real solutions. Geometrically the line does not meet the parabola at any point.'
                 }
             ],
-            finalAnswer: 'No intersections ( \\Delta < 0 ): the line misses the curve entirely.'
+            finalAnswer: 'No intersections (\\( \\Delta = -12 < 0 \\)): the line misses the curve entirely.'
         }
     },
 
@@ -1242,7 +1254,7 @@ export const questions: Question[] = [
         marks: 4,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['simultaneous equations', 'discriminant', 'tangent', 'one intersection'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -1262,9 +1274,15 @@ export const questions: Question[] = [
                     description: 'Interpret.',
                     workingLatex: '\\Delta = -11 < 0 \\implies \\text{no real intersections}',
                     explanation: 'The line and curve do not meet.'
+                },
+                {
+                    stepNumber: 4,
+                    description: 'State the conclusion.',
+                    workingLatex: '\\Delta < 0 \\implies \\text{no points of intersection}',
+                    explanation: 'Since \\( \\Delta = -11 < 0 \\), the quadratic has no real roots, so the line and curve do not intersect at any point.'
                 }
             ],
-            finalAnswer: 'No intersections ( \\Delta = -11 < 0 ).'
+            finalAnswer: 'No intersections (\\( \\Delta = -11 < 0 \\)).'
         }
     },
 
@@ -1279,7 +1297,7 @@ export const questions: Question[] = [
         marks: 6,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['simultaneous equations', 'discriminant', 'tangent', 'unknown parameter', 'exam-style'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -1290,24 +1308,36 @@ export const questions: Question[] = [
                 },
                 {
                     stepNumber: 2,
-                    description: 'For tangency, the discriminant must equal zero.',
-                    workingLatex: '\\Delta = (4+k)^2 - 16 = 0',
-                    explanation: 'A tangent line meets the curve at exactly one point \\( \\Leftrightarrow \\Delta = 0 \\).'
+                    description: 'Identify the quadratic coefficients.',
+                    workingLatex: 'a = 1, \\quad b = -(4+k), \\quad c = 4',
+                    explanation: 'Reading off from \\( x^2 - (4+k)x + 4 = 0 \\).'
                 },
                 {
                     stepNumber: 3,
+                    description: 'For tangency, the discriminant must equal zero.',
+                    workingLatex: '\\Delta = b^2 - 4ac = (4+k)^2 - 4(1)(4) = (4+k)^2 - 16 = 0',
+                    explanation: 'A tangent line meets the curve at exactly one point, so \\( \\Delta = 0 \\).'
+                },
+                {
+                    stepNumber: 4,
                     description: 'Solve for \\( k \\).',
                     workingLatex: '(4+k)^2 = 16 \\implies 4 + k = \\pm 4',
                     explanation: 'Take square roots of both sides.'
                 },
                 {
-                    stepNumber: 4,
+                    stepNumber: 5,
                     description: 'Find both values.',
-                    workingLatex: 'k = 0 \\text{ or } k = -8',
-                    explanation: '\\( 4 + k = 4 \\Rightarrow k = 0 \\); \\quad \\( 4 + k = -4 \\Rightarrow k = -8 \\).'
+                    workingLatex: '4 + k = 4 \\Rightarrow k = 0; \\quad 4 + k = -4 \\Rightarrow k = -8',
+                    explanation: 'Solving each case gives two values of \\( k \\).'
+                },
+                {
+                    stepNumber: 6,
+                    description: 'Verify both solutions.',
+                    workingLatex: 'k=0: y=2 \\text{ meets } y=x^2-4x+6 \\Rightarrow x^2-4x+4=0 \\Rightarrow (x-2)^2=0 \\checkmark',
+                    explanation: 'When \\( k = 0 \\), the line \\( y = 2 \\) touches the curve at one point. When \\( k = -8 \\), \\( y = -8x + 2 \\) similarly gives a repeated root.'
                 }
             ],
-            finalAnswer: ' k = 0  or  k = -8 '
+            finalAnswer: '\\( k = 0 \\) or \\( k = -8 \\)'
         }
     },
 
@@ -1320,7 +1350,7 @@ export const questions: Question[] = [
         marks: 5,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['simultaneous equations', 'product equation', 'real-world', 'quadratic'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -1348,7 +1378,7 @@ export const questions: Question[] = [
                     explanation: 'The two numbers are 4 and 6 (the same pair, just swapped).'
                 }
             ],
-            finalAnswer: 'The two numbers are  4  and  6 .'
+            finalAnswer: 'The two numbers are \\( 4 \\) and \\( 6 \\).'
         }
     },
 
@@ -1361,7 +1391,7 @@ export const questions: Question[] = [
         marks: 5,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['simultaneous equations', 'substitution', 'quadratic', 'linear and quadratic'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -1387,9 +1417,15 @@ export const questions: Question[] = [
                     description: 'Find \\( y \\) for each solution.',
                     workingLatex: 'y = 7 - 3 \\times \\frac{-3 \\pm \\sqrt{41}}{2} = \\frac{14 + 9 \\mp 3\\sqrt{41}}{2} = \\frac{23 \\mp 3\\sqrt{41}}{2}',
                     explanation: 'Substitute each \\( x \\) into \\( y = 7 - 3x \\).'
+                },
+                {
+                    stepNumber: 5,
+                    description: 'State the two solution pairs.',
+                    workingLatex: '\\left(\\frac{-3+\\sqrt{41}}{2},\\; \\frac{23-3\\sqrt{41}}{2}\\right) \\quad \\text{and} \\quad \\left(\\frac{-3-\\sqrt{41}}{2},\\; \\frac{23+3\\sqrt{41}}{2}\\right)',
+                    explanation: 'There are two points of intersection between the line and the parabola.'
                 }
             ],
-            finalAnswer: ' x = \\dfrac{-3+\\sqrt{41}}{2},\\; y = \\dfrac{23-3\\sqrt{41}}{2}  and  x = \\dfrac{-3-\\sqrt{41}}{2},\\; y = \\dfrac{23+3\\sqrt{41}}{2} '
+            finalAnswer: '\\( x = \\dfrac{-3+\\sqrt{41}}{2},\\; y = \\dfrac{23-3\\sqrt{41}}{2} \\) and \\( x = \\dfrac{-3-\\sqrt{41}}{2},\\; y = \\dfrac{23+3\\sqrt{41}}{2} \\)'
         }
     },
 
@@ -1402,7 +1438,7 @@ export const questions: Question[] = [
         marks: 6,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['simultaneous equations', 'real-world', 'rectangle', 'product equation', 'exam-style'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -1431,12 +1467,18 @@ export const questions: Question[] = [
                 },
                 {
                     stepNumber: 5,
+                    description: 'Find corresponding \\( y \\)-values.',
+                    workingLatex: 'x = 6 \\Rightarrow y = 7; \\quad x = 7 \\Rightarrow y = 6',
+                    explanation: 'Substitute each \\( x \\) into \\( y = 13 - x \\).'
+                },
+                {
+                    stepNumber: 6,
                     description: 'State the dimensions.',
-                    workingLatex: 'x = 7,\\ y = 6 \\quad \\text{(or equivalently } x=6, y=7\\text{)}',
-                    explanation: 'Both give the same rectangle: 7 cm by 6 cm.'
+                    workingLatex: '\\text{Length } = 7 \\text{ cm}, \\quad \\text{Width } = 6 \\text{ cm}',
+                    explanation: 'Both pairs give the same rectangle: 7 cm by 6 cm. Check: perimeter \\( = 2(7+6) = 26 \\), area \\( = 7 \\times 6 = 42 \\).'
                 }
             ],
-            finalAnswer: 'a)  x + y = 13  and  xy = 42  \\quad b) Dimensions:  7  cm by  6  cm.'
+            finalAnswer: 'a) \\( x + y = 13 \\) and \\( xy = 42 \\). b) Dimensions: \\( 7 \\) cm by \\( 6 \\) cm.'
         }
     },
 
@@ -1449,7 +1491,7 @@ export const questions: Question[] = [
         marks: 6,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['simultaneous equations', 'substitution', 'circle', 'geometry', 'exam-style'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -1478,12 +1520,18 @@ export const questions: Question[] = [
                 },
                 {
                     stepNumber: 5,
+                    description: 'Verify the solutions.',
+                    workingLatex: '3^2 + 5^2 = 9 + 25 = 34 \\checkmark; \\quad (-5)^2 + (-3)^2 = 25 + 9 = 34 \\checkmark',
+                    explanation: 'Both points satisfy the circle equation \\( x^2 + y^2 = 34 \\) and the line \\( x - y = -2 \\).'
+                },
+                {
+                    stepNumber: 6,
                     description: 'State the geometric meaning.',
                     workingLatex: '\\text{Two intersection points } (3, 5) \\text{ and } (-5, -3)',
                     explanation: 'The line \\( x - y = -2 \\) is a chord of the circle \\( x^2 + y^2 = 34 \\), crossing it at two points.'
                 }
             ],
-            finalAnswer: ' (3,\\ 5)  and  (-5,\\ -3) . The line is a chord of the circle  x^2 + y^2 = 34 .'
+            finalAnswer: '\\( (3,\\ 5) \\) and \\( (-5,\\ -3) \\). The line is a chord of the circle \\( x^2 + y^2 = 34 \\).'
         }
     },
 
@@ -1496,7 +1544,7 @@ export const questions: Question[] = [
         marks: 8,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['simultaneous equations', 'quadratic', 'chord', 'length', 'geometry', 'exam-style'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -1515,7 +1563,7 @@ export const questions: Question[] = [
                     stepNumber: 3,
                     description: 'Solve using the quadratic formula.',
                     workingLatex: 'x = \\frac{-5 \\pm \\sqrt{25 + 48}}{2} = \\frac{-5 \\pm \\sqrt{73}}{2}',
-                    explanation: '\\( \\Delta = 25 + 48 = 73 \\).'
+                    explanation: 'The discriminant is \\( \\Delta = 25 + 48 = 73 \\), which is not a perfect square, so we leave in surd form.'
                 },
                 {
                     stepNumber: 4,
@@ -1525,24 +1573,30 @@ export const questions: Question[] = [
                 },
                 {
                     stepNumber: 5,
-                    description: 'Part b: geometric interpretation.',
-                    workingLatex: '\\text{Two points of intersection} \\Rightarrow \\text{line is a secant to the parabola}',
-                    explanation: 'The line cuts the parabola at two distinct points.'
+                    description: 'State the two solution pairs.',
+                    workingLatex: '\\left(\\frac{-5+\\sqrt{73}}{2},\\; \\frac{23-3\\sqrt{73}}{2}\\right) \\quad \\text{and} \\quad \\left(\\frac{-5-\\sqrt{73}}{2},\\; \\frac{23+3\\sqrt{73}}{2}\\right)',
+                    explanation: 'These are the two points where the line meets the parabola.'
                 },
                 {
                     stepNumber: 6,
-                    description: 'Part c: find the chord length.',
-                    workingLatex: '\\Delta x = \\sqrt{73}, \\quad \\Delta y = -3 \\times \\sqrt{73} / 1 = -3\\sqrt{73}/1',
-                    explanation: 'The difference in \\( x \\) between the two roots is \\( \\sqrt{73} \\); difference in \\( y = -3 \\Delta x \\).'
+                    description: 'Part b: geometric interpretation.',
+                    workingLatex: '\\text{Two points of intersection} \\Rightarrow \\text{line is a secant to the parabola}',
+                    explanation: 'Since the discriminant is positive, the line cuts the parabola at two distinct points, making it a secant.'
                 },
                 {
                     stepNumber: 7,
+                    description: 'Part c: find the difference in \\( x \\)- and \\( y \\)-coordinates.',
+                    workingLatex: '\\Delta x = \\sqrt{73}, \\quad \\Delta y = -3\\sqrt{73}',
+                    explanation: 'The difference in \\( x \\) between the two roots is \\( \\sqrt{73} \\). Since \\( y = 4 - 3x \\), we have \\( \\Delta y = -3 \\Delta x \\).'
+                },
+                {
+                    stepNumber: 8,
                     description: 'Apply the distance formula.',
                     workingLatex: 'd = \\sqrt{(\\Delta x)^2 + (\\Delta y)^2} = \\sqrt{73 + 9 \\times 73} = \\sqrt{10 \\times 73} = \\sqrt{730}',
-                    explanation: '\\( \\Delta y = -3\\Delta x \\) so \\( (\\Delta y)^2 = 9 \\times 73 \\).'
+                    explanation: 'Using \\( (\\Delta y)^2 = 9 \\times 73 \\), the total is \\( 10 \\times 73 = 730 \\).'
                 }
             ],
-            finalAnswer: 'a)  x = \\dfrac{-5 \\pm \\sqrt{73}}{2}  with corresponding  y  values \\quad b) Secant line to the parabola \\quad c) Chord length  = \\sqrt{730} '
+            finalAnswer: 'a) \\( x = \\dfrac{-5 \\pm \\sqrt{73}}{2} \\), \\( y = \\dfrac{23 \\mp 3\\sqrt{73}}{2} \\). b) The line is a secant to the parabola. c) Chord length \\( = \\sqrt{730} \\).'
         }
     },
 
@@ -1555,7 +1609,7 @@ export const questions: Question[] = [
         marks: 10,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['simultaneous equations', 'circle', 'chord', 'midpoint', 'perpendicular', 'exam-style'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -1566,48 +1620,48 @@ export const questions: Question[] = [
                 },
                 {
                     stepNumber: 2,
-                    description: 'Simplify and factorise.',
+                    description: 'Simplify by dividing by 2.',
                     workingLatex: 'x^2 + 2x - 23 = 0',
-                    explanation: 'Divide by 2. This does not factorise neatly — use the quadratic formula.'
-                },
-                {
-                    stepNumber: 2,
-                    description: 'Simplify and solve.',
-                    workingLatex: 'x^2 + 2x - 24 = 0 \\implies (x+6)(x-4) = 0',
-                    explanation: 'Recheck: \\( 2x^2 + 4x - 46 = 0 \\Rightarrow x^2 + 2x - 23 = 0 \\). The discriminant is \\( 4 + 92 = 96 \\neq\\) perfect square. Try original: \\( 2x^2 + 4x + 4 = 50 \\Rightarrow 2x^2 + 4x - 46 = 0 \\Rightarrow x^2 + 2x - 23 = 0 \\). Use formula: \\(x = \\frac{-2\\pm\\sqrt{4+92}}{2} = -1 \\pm\\sqrt{24} = -1 \\pm 2\\sqrt{6}\\).'
+                    explanation: 'Divide every term by 2. This does not factorise over the integers.'
                 },
                 {
                     stepNumber: 3,
-                    description: 'Find the intersection points.',
-                    workingLatex: 'x = -1 + 2\\sqrt{6},\\; y = 1 + 2\\sqrt{6} \\quad \\text{and} \\quad x = -1 - 2\\sqrt{6},\\; y = 1 - 2\\sqrt{6}',
-                    explanation: 'Use \\( y = x + 2 \\) for each \\( x \\).'
+                    description: 'Apply the quadratic formula.',
+                    workingLatex: 'x = \\frac{-2 \\pm \\sqrt{4 + 92}}{2} = \\frac{-2 \\pm \\sqrt{96}}{2} = \\frac{-2 \\pm 4\\sqrt{6}}{2} = -1 \\pm 2\\sqrt{6}',
+                    explanation: 'The discriminant is \\( 4 + 92 = 96 = 16 \\times 6 \\), so \\( \\sqrt{96} = 4\\sqrt{6} \\).'
                 },
                 {
                     stepNumber: 4,
-                    description: 'Part b: find the midpoint.',
-                    workingLatex: 'M = \\left(\\frac{(-1+2\\sqrt{6})+(-1-2\\sqrt{6})}{2},\\ \\frac{(1+2\\sqrt{6})+(1-2\\sqrt{6})}{2}\\right) = (-1, 1)',
-                    explanation: 'The \\( \\sqrt{6} \\) terms cancel in the averages.'
+                    description: 'Find the intersection points.',
+                    workingLatex: 'x = -1 + 2\\sqrt{6},\\; y = 1 + 2\\sqrt{6} \\quad \\text{and} \\quad x = -1 - 2\\sqrt{6},\\; y = 1 - 2\\sqrt{6}',
+                    explanation: 'Use \\( y = x + 2 \\) for each \\( x \\)-value.'
                 },
                 {
                     stepNumber: 5,
-                    description: 'Part c: gradient of chord and gradient of radius to midpoint.',
-                    workingLatex: 'm_{\\text{chord}} = 1 \\quad (\\text{slope of } y = x+2)',
-                    explanation: 'The chord lies along \\( y = x + 2 \\), gradient 1.'
+                    description: 'Part b: find the midpoint.',
+                    workingLatex: 'M = \\left(\\frac{(-1+2\\sqrt{6})+(-1-2\\sqrt{6})}{2},\\ \\frac{(1+2\\sqrt{6})+(1-2\\sqrt{6})}{2}\\right) = (-1, 1)',
+                    explanation: 'The \\( \\sqrt{6} \\) terms cancel in the averages, leaving \\( (-1, 1) \\).'
                 },
                 {
                     stepNumber: 6,
-                    description: 'Gradient of the radius from origin to \\( M(-1,1) \\).',
-                    workingLatex: 'm_{\\text{radius}} = \\frac{1 - 0}{-1 - 0} = -1',
-                    explanation: 'Gradient from \\( (0,0) \\) to \\( (-1,1) \\).'
+                    description: 'Part c: find the gradient of the chord.',
+                    workingLatex: 'm_{\\text{chord}} = 1 \\quad (\\text{slope of } y = x+2)',
+                    explanation: 'The chord lies along \\( y = x + 2 \\), which has gradient 1.'
                 },
                 {
                     stepNumber: 7,
+                    description: 'Find the gradient of the radius from the origin to \\( M(-1,1) \\).',
+                    workingLatex: 'm_{\\text{radius}} = \\frac{1 - 0}{-1 - 0} = -1',
+                    explanation: 'The centre of the circle is \\( (0,0) \\), so the gradient is \\( \\frac{1}{-1} = -1 \\).'
+                },
+                {
+                    stepNumber: 8,
                     description: 'Check perpendicularity.',
                     workingLatex: 'm_{\\text{chord}} \\times m_{\\text{radius}} = 1 \\times (-1) = -1 \\checkmark',
-                    explanation: 'Product of gradients \\( = -1 \\) confirms perpendicularity. \\( \\square \\)'
+                    explanation: 'The product of gradients equals \\( -1 \\), confirming the radius is perpendicular to the chord.'
                 }
             ],
-            finalAnswer: 'a)  (-1+2\\sqrt{6},\\; 1+2\\sqrt{6})  and  (-1-2\\sqrt{6},\\; 1-2\\sqrt{6})  \\quad b) Midpoint  (-1,\\ 1)  \\quad c) Gradients multiply to -1, so radius  \\perp  chord.  \\square '
+            finalAnswer: 'a) \\( (-1+2\\sqrt{6},\\; 1+2\\sqrt{6}) \\) and \\( (-1-2\\sqrt{6},\\; 1-2\\sqrt{6}) \\). b) Midpoint \\( (-1,\\ 1) \\). c) Gradients multiply to \\( -1 \\), so radius \\( \\perp \\) chord. \\( \\square \\)'
         }
     },
 
@@ -1618,147 +1672,158 @@ export const questions: Question[] = [
         questionText: 'Solve: \\( 2x + y = 7 \\) and \\( x - y = 2 \\).',
         marks: 3, examStyle: false, yearCreated: 2026, tags: [],
         workedSolution: { steps: [
-            { stepNumber: 1, description: 'Add equations', workingLatex: '3x = 9 \\implies x = 3', explanation: '' },
-            { stepNumber: 2, description: 'Substitute', workingLatex: 'y = 7 - 6 = 1', explanation: '' }
-        ], finalAnswer: 'x = 3, y = 1' }
+            { stepNumber: 1, description: 'Add the two equations to eliminate \\( y \\).', workingLatex: '(2x + y) + (x - y) = 7 + 2 \\implies 3x = 9 \\implies x = 3', explanation: 'Adding eliminates \\( y \\) because \\( +y \\) and \\( -y \\) cancel.' },
+            { stepNumber: 2, description: 'Substitute \\( x = 3 \\) into the first equation.', workingLatex: '2(3) + y = 7 \\implies y = 7 - 6 = 1', explanation: 'Replace \\( x \\) with 3 and solve for \\( y \\).' },
+            { stepNumber: 3, description: 'State the solution.', workingLatex: 'x = 3, \\quad y = 1', explanation: 'Check: \\( 2(3) + 1 = 7 \\) and \\( 3 - 1 = 2 \\). Both equations are satisfied.' }
+        ], finalAnswer: '\\( x = 3, \\; y = 1 \\)' }
     },
     {
         id: 'ise2-037', topicRef: 'ise2', topicTitle: 'Simultaneous Equations 37', difficulty: 'Foundation',
         questionText: 'Solve: \\( 3x + 2y = 12 \\) and \\( x + 2y = 8 \\).',
         marks: 3, examStyle: false, yearCreated: 2026, tags: [],
         workedSolution: { steps: [
-            { stepNumber: 1, description: 'Subtract', workingLatex: '2x = 4 \\implies x = 2', explanation: '' },
-            { stepNumber: 2, description: 'Substitute', workingLatex: '2 + 2y = 8 \\implies y = 3', explanation: '' }
-        ], finalAnswer: 'x = 2, y = 3' }
+            { stepNumber: 1, description: 'Subtract the second equation from the first to eliminate \\( y \\).', workingLatex: '(3x + 2y) - (x + 2y) = 12 - 8 \\implies 2x = 4 \\implies x = 2', explanation: 'The \\( 2y \\) terms cancel when subtracting.' },
+            { stepNumber: 2, description: 'Substitute \\( x = 2 \\) into the second equation.', workingLatex: '2 + 2y = 8 \\implies 2y = 6 \\implies y = 3', explanation: 'Replace \\( x \\) with 2 and solve for \\( y \\).' },
+            { stepNumber: 3, description: 'State the solution.', workingLatex: 'x = 2, \\quad y = 3', explanation: 'Check: \\( 3(2) + 2(3) = 12 \\) and \\( 2 + 2(3) = 8 \\). Both equations are satisfied.' }
+        ], finalAnswer: '\\( x = 2, \\; y = 3 \\)' }
     },
     {
         id: 'ise2-038', topicRef: 'ise2', topicTitle: 'Simultaneous Equations 38', difficulty: 'Foundation',
         questionText: 'Solve: \\( 4x - 3y = 5 \\) and \\( 2x + 3y = 13 \\).',
         marks: 3, examStyle: false, yearCreated: 2026, tags: [],
         workedSolution: { steps: [
-            { stepNumber: 1, description: 'Add equations', workingLatex: '6x = 18 \\implies x = 3', explanation: '' },
-            { stepNumber: 2, description: 'Substitute', workingLatex: '6 + 3y = 13 \\implies y = \\frac{7}{3}', explanation: '' }
-        ], finalAnswer: 'x = 3, y = \\frac{7}{3}' }
+            { stepNumber: 1, description: 'Add the two equations to eliminate \\( y \\).', workingLatex: '(4x - 3y) + (2x + 3y) = 5 + 13 \\implies 6x = 18 \\implies x = 3', explanation: 'Adding eliminates \\( y \\) because \\( -3y \\) and \\( +3y \\) cancel.' },
+            { stepNumber: 2, description: 'Substitute \\( x = 3 \\) into the second equation.', workingLatex: '2(3) + 3y = 13 \\implies 6 + 3y = 13 \\implies 3y = 7 \\implies y = \\frac{7}{3}', explanation: 'Replace \\( x \\) with 3 and solve for \\( y \\).' },
+            { stepNumber: 3, description: 'State the solution.', workingLatex: 'x = 3, \\quad y = \\frac{7}{3}', explanation: 'Check: \\( 4(3) - 3 \\times \\frac{7}{3} = 12 - 7 = 5 \\) and \\( 2(3) + 3 \\times \\frac{7}{3} = 6 + 7 = 13 \\). Both correct.' }
+        ], finalAnswer: '\\( x = 3, \\; y = \\frac{7}{3} \\)' }
     },
     {
         id: 'ise2-039', topicRef: 'ise2', topicTitle: 'Simultaneous Equations 39', difficulty: 'Foundation',
         questionText: 'Solve: \\( 5x + 4y = 22 \\) and \\( 3x - 4y = 2 \\).',
         marks: 3, examStyle: false, yearCreated: 2026, tags: [],
         workedSolution: { steps: [
-            { stepNumber: 1, description: 'Add equations', workingLatex: '8x = 24 \\implies x = 3', explanation: '' },
-            { stepNumber: 2, description: 'Substitute', workingLatex: '15 + 4y = 22 \\implies y = \\frac{7}{4}', explanation: '' }
-        ], finalAnswer: 'x = 3, y = \\frac{7}{4}' }
+            { stepNumber: 1, description: 'Add the two equations to eliminate \\( y \\).', workingLatex: '(5x + 4y) + (3x - 4y) = 22 + 2 \\implies 8x = 24 \\implies x = 3', explanation: 'Adding eliminates \\( y \\) because \\( +4y \\) and \\( -4y \\) cancel.' },
+            { stepNumber: 2, description: 'Substitute \\( x = 3 \\) into the first equation.', workingLatex: '5(3) + 4y = 22 \\implies 15 + 4y = 22 \\implies 4y = 7 \\implies y = \\frac{7}{4}', explanation: 'Replace \\( x \\) with 3 and solve for \\( y \\).' },
+            { stepNumber: 3, description: 'State the solution.', workingLatex: 'x = 3, \\quad y = \\frac{7}{4}', explanation: 'Check: \\( 5(3) + 4 \\times \\frac{7}{4} = 15 + 7 = 22 \\) and \\( 3(3) - 4 \\times \\frac{7}{4} = 9 - 7 = 2 \\). Both correct.' }
+        ], finalAnswer: '\\( x = 3, \\; y = \\frac{7}{4} \\)' }
     },
     {
         id: 'ise2-040', topicRef: 'ise2', topicTitle: 'Simultaneous Equations 40', difficulty: 'Foundation',
         questionText: 'Solve: \\( x + 3y = 10 \\) and \\( 2x - y = 6 \\).',
         marks: 3, examStyle: false, yearCreated: 2026, tags: [],
         workedSolution: { steps: [
-            { stepNumber: 1, description: 'From eq2: y = 2x - 6. Substitute.', workingLatex: 'x + 3(2x - 6) = 10 \\implies 7x = 28 \\implies x = 4', explanation: '' },
-            { stepNumber: 2, description: 'Find y', workingLatex: 'y = 8 - 6 = 2', explanation: '' }
-        ], finalAnswer: 'x = 4, y = 2' }
+            { stepNumber: 1, description: 'From the second equation, express \\( y \\) in terms of \\( x \\) and substitute.', workingLatex: 'y = 2x - 6 \\implies x + 3(2x - 6) = 10 \\implies 7x - 18 = 10 \\implies 7x = 28 \\implies x = 4', explanation: 'Rearrange the second equation to get \\( y = 2x - 6 \\), then substitute into the first.' },
+            { stepNumber: 2, description: 'Find \\( y \\).', workingLatex: 'y = 2(4) - 6 = 8 - 6 = 2', explanation: 'Substitute \\( x = 4 \\) back into \\( y = 2x - 6 \\).' },
+            { stepNumber: 3, description: 'State the solution.', workingLatex: 'x = 4, \\quad y = 2', explanation: 'Check: \\( 4 + 3(2) = 10 \\) and \\( 2(4) - 2 = 6 \\). Both equations are satisfied.' }
+        ], finalAnswer: '\\( x = 4, \\; y = 2 \\)' }
     },
     {
         id: 'ise2-041', topicRef: 'ise2', topicTitle: 'Simultaneous Equations 41', difficulty: 'Foundation',
         questionText: 'Solve: \\( \\frac{x}{2} + y = 5 \\) and \\( x - 2y = 4 \\).',
         marks: 3, examStyle: false, yearCreated: 2026, tags: [],
         workedSolution: { steps: [
-            { stepNumber: 1, description: 'Multiply eq1 by 2', workingLatex: 'x + 2y = 10', explanation: '' },
-            { stepNumber: 2, description: 'Add with eq2', workingLatex: '2x = 14 \\implies x = 7, \\quad y = \\frac{3}{2}', explanation: '' }
-        ], finalAnswer: 'x = 7, y = \\frac{3}{2}' }
+            { stepNumber: 1, description: 'Multiply the first equation by 2 to clear the fraction.', workingLatex: 'x + 2y = 10', explanation: 'Multiplying every term by 2 removes the denominator.' },
+            { stepNumber: 2, description: 'Add with the second equation to eliminate \\( y \\).', workingLatex: '(x + 2y) + (x - 2y) = 10 + 4 \\implies 2x = 14 \\implies x = 7', explanation: 'The \\( 2y \\) terms cancel when adding.' },
+            { stepNumber: 3, description: 'Find \\( y \\).', workingLatex: 'y = \\frac{10 - 7}{2} = \\frac{3}{2}', explanation: 'Substitute \\( x = 7 \\) into \\( x + 2y = 10 \\) and solve. Check: \\( \\frac{7}{2} + \\frac{3}{2} = 5 \\) and \\( 7 - 3 = 4 \\). Both correct.' }
+        ], finalAnswer: '\\( x = 7, \\; y = \\frac{3}{2} \\)' }
     },
     {
         id: 'ise2-042', topicRef: 'ise2', topicTitle: 'Simultaneous Equations 42', difficulty: 'Foundation',
         questionText: 'Two numbers add to 20 and differ by 6. Find the numbers.',
         marks: 3, examStyle: false, yearCreated: 2026, tags: [],
         workedSolution: { steps: [
-            { stepNumber: 1, description: 'Set up equations', workingLatex: 'x + y = 20; \\quad x - y = 6', explanation: '' },
-            { stepNumber: 2, description: 'Add', workingLatex: '2x = 26 \\implies x = 13, \\quad y = 7', explanation: '' }
-        ], finalAnswer: '13 and 7' }
+            { stepNumber: 1, description: 'Set up the simultaneous equations.', workingLatex: 'x + y = 20, \\quad x - y = 6', explanation: 'Let \\( x \\) and \\( y \\) be the two numbers, where \\( x > y \\).' },
+            { stepNumber: 2, description: 'Add the two equations.', workingLatex: '2x = 26 \\implies x = 13', explanation: 'Adding eliminates \\( y \\).' },
+            { stepNumber: 3, description: 'Find \\( y \\).', workingLatex: 'y = 20 - 13 = 7', explanation: 'Substitute \\( x = 13 \\) into the first equation. Check: \\( 13 + 7 = 20 \\) and \\( 13 - 7 = 6 \\). Both correct.' }
+        ], finalAnswer: 'The two numbers are \\( 13 \\) and \\( 7 \\).' }
     },
     {
         id: 'ise2-043', topicRef: 'ise2', topicTitle: 'Simultaneous Equations 43', difficulty: 'Foundation',
         questionText: 'Solve: \\( 3x + 5y = 21 \\) and \\( 2x + 3y = 13 \\).',
         marks: 4, examStyle: false, yearCreated: 2026, tags: [],
         workedSolution: { steps: [
-            { stepNumber: 1, description: 'Multiply to eliminate y', workingLatex: '3(3x+5y) = 63; \\quad 5(2x+3y) = 65', explanation: '9x+15y = 63 and 10x+15y = 65.' },
-            { stepNumber: 2, description: 'Subtract', workingLatex: 'x = 2, \\quad y = 3', explanation: '' }
-        ], finalAnswer: 'x = 2, y = 3' }
+            { stepNumber: 1, description: 'Multiply both equations to match the \\( y \\) coefficients', workingLatex: '3(3x+5y) = 63; \\quad 5(2x+3y) = 65', explanation: 'Multiplying equation 1 by 3 gives \\( 9x+15y = 63 \\) and multiplying equation 2 by 5 gives \\( 10x+15y = 65 \\).' },
+            { stepNumber: 2, description: 'Subtract the first result from the second to eliminate \\( y \\)', workingLatex: '10x + 15y - 9x - 15y = 65 - 63 \\implies x = 2', explanation: 'Subtracting cancels the \\( y \\) terms, leaving \\( x = 2 \\).' },
+            { stepNumber: 3, description: 'Substitute \\( x = 2 \\) back into equation 2 to find \\( y \\)', workingLatex: '2(2) + 3y = 13 \\implies 3y = 9 \\implies y = 3', explanation: 'Replacing \\( x \\) with 2 and solving gives \\( y = 3 \\).' }
+        ], finalAnswer: '\\( x = 2, \\quad y = 3 \\)' }
     },
     {
         id: 'ise2-044', topicRef: 'ise2', topicTitle: 'Simultaneous Equations 44', difficulty: 'Foundation',
         questionText: 'A cinema sells adult tickets at \\( \\pounds 8 \\) and child tickets at \\( \\pounds 5 \\). 50 tickets are sold for \\( \\pounds 310 \\). How many of each?',
         marks: 4, examStyle: false, yearCreated: 2026, tags: [],
         workedSolution: { steps: [
-            { stepNumber: 1, description: 'Set up', workingLatex: 'a + c = 50; \\quad 8a + 5c = 310', explanation: '' },
-            { stepNumber: 2, description: 'Substitute c = 50 - a', workingLatex: '8a + 5(50-a) = 310 \\implies 3a = 60 \\implies a = 20', explanation: '' },
-            { stepNumber: 3, description: 'Find c', workingLatex: 'c = 30', explanation: '' }
-        ], finalAnswer: '20 adult, 30 child' }
+            { stepNumber: 1, description: 'Let \\( a \\) be adult tickets and \\( c \\) be child tickets, and form two equations', workingLatex: 'a + c = 50; \\quad 8a + 5c = 310', explanation: 'The first equation represents the total number of tickets and the second represents the total revenue.' },
+            { stepNumber: 2, description: 'Substitute \\( c = 50 - a \\) into the second equation', workingLatex: '8a + 5(50-a) = 310 \\implies 8a + 250 - 5a = 310 \\implies 3a = 60 \\implies a = 20', explanation: 'Expanding and simplifying gives \\( a = 20 \\).' },
+            { stepNumber: 3, description: 'Find \\( c \\)', workingLatex: 'c = 50 - 20 = 30', explanation: 'Substituting back gives \\( c = 30 \\).' }
+        ], finalAnswer: '\\( 20 \\) adult, \\( 30 \\) child' }
     },
     {
         id: 'ise2-045', topicRef: 'ise2', topicTitle: 'Simultaneous Equations 45', difficulty: 'Foundation',
         questionText: 'Solve: \\( y = x^2 \\) and \\( y = 2x + 3 \\).',
         marks: 4, examStyle: false, yearCreated: 2026, tags: [],
         workedSolution: { steps: [
-            { stepNumber: 1, description: 'Substitute', workingLatex: 'x^2 = 2x + 3 \\implies x^2 - 2x - 3 = 0', explanation: '' },
-            { stepNumber: 2, description: 'Factorise', workingLatex: '(x-3)(x+1) = 0 \\implies x = 3 \\text{ or } x = -1', explanation: '' },
-            { stepNumber: 3, description: 'Find y', workingLatex: 'x=3: y=9; \\quad x=-1: y=1', explanation: '' }
-        ], finalAnswer: '(3, 9) and (-1, 1)' }
+            { stepNumber: 1, description: 'Set the two expressions for \\( y \\) equal and rearrange', workingLatex: 'x^2 = 2x + 3 \\implies x^2 - 2x - 3 = 0', explanation: 'Substituting gives a quadratic equation in \\( x \\).' },
+            { stepNumber: 2, description: 'Factorise the quadratic', workingLatex: '(x-3)(x+1) = 0 \\implies x = 3 \\text{ or } x = -1', explanation: 'The quadratic factors into two linear brackets.' },
+            { stepNumber: 3, description: 'Find the corresponding \\( y \\) values using \\( y = x^2 \\)', workingLatex: 'x=3: y=9; \\quad x=-1: y=1', explanation: 'Substituting each \\( x \\) value back gives the full coordinate pairs.' }
+        ], finalAnswer: '\\( (3,\\, 9) \\) and \\( (-1,\\, 1) \\)' }
     },
     {
         id: 'ise2-046', topicRef: 'ise2', topicTitle: 'Simultaneous Equations 46', difficulty: 'Foundation',
         questionText: 'Solve: \\( y = x^2 - 4 \\) and \\( y = 3x \\).',
         marks: 4, examStyle: false, yearCreated: 2026, tags: [],
         workedSolution: { steps: [
-            { stepNumber: 1, description: 'Substitute', workingLatex: 'x^2 - 4 = 3x \\implies x^2 - 3x - 4 = 0', explanation: '' },
-            { stepNumber: 2, description: 'Factorise', workingLatex: '(x-4)(x+1) = 0 \\implies x = 4 \\text{ or } x = -1', explanation: '' },
-            { stepNumber: 3, description: 'Find y', workingLatex: 'x=4: y=12; \\quad x=-1: y=-3', explanation: '' }
-        ], finalAnswer: '(4, 12) and (-1, -3)' }
+            { stepNumber: 1, description: 'Set the two expressions for \\( y \\) equal and rearrange', workingLatex: 'x^2 - 4 = 3x \\implies x^2 - 3x - 4 = 0', explanation: 'Substituting gives a quadratic equation in \\( x \\).' },
+            { stepNumber: 2, description: 'Factorise the quadratic', workingLatex: '(x-4)(x+1) = 0 \\implies x = 4 \\text{ or } x = -1', explanation: 'The quadratic factors neatly into two brackets.' },
+            { stepNumber: 3, description: 'Find the corresponding \\( y \\) values using \\( y = 3x \\)', workingLatex: 'x=4: y=12; \\quad x=-1: y=-3', explanation: 'Substituting each \\( x \\) value into the linear equation gives the \\( y \\) coordinates.' }
+        ], finalAnswer: '\\( (4,\\, 12) \\) and \\( (-1,\\, -3) \\)' }
     },
     {
         id: 'ise2-047', topicRef: 'ise2', topicTitle: 'Simultaneous Equations 47', difficulty: 'Foundation',
         questionText: 'Solve: \\( x + y = 5 \\) and \\( x^2 + y^2 = 13 \\).',
         marks: 5, examStyle: false, yearCreated: 2026, tags: [],
         workedSolution: { steps: [
-            { stepNumber: 1, description: 'From eq1: y = 5 - x', workingLatex: 'x^2 + (5-x)^2 = 13', explanation: '' },
-            { stepNumber: 2, description: 'Expand', workingLatex: '2x^2 - 10x + 25 = 13 \\implies 2x^2 - 10x + 12 = 0 \\implies x^2 - 5x + 6 = 0', explanation: '' },
-            { stepNumber: 3, description: 'Solve', workingLatex: '(x-2)(x-3) = 0 \\implies x = 2, y = 3 \\text{ or } x = 3, y = 2', explanation: '' }
-        ], finalAnswer: '(2, 3) and (3, 2)' }
+            { stepNumber: 1, description: 'Rearrange the linear equation to get \\( y = 5 - x \\) and substitute into the second equation', workingLatex: 'x^2 + (5-x)^2 = 13', explanation: 'Replacing \\( y \\) in the quadratic equation eliminates one variable.' },
+            { stepNumber: 2, description: 'Expand \\( (5-x)^2 \\) and simplify', workingLatex: 'x^2 + 25 - 10x + x^2 = 13 \\implies 2x^2 - 10x + 12 = 0', explanation: 'Collecting like terms and moving 13 to the left gives a quadratic.' },
+            { stepNumber: 3, description: 'Divide through by 2 and factorise', workingLatex: 'x^2 - 5x + 6 = 0 \\implies (x-2)(x-3) = 0', explanation: 'Dividing by 2 simplifies the quadratic, which then factorises.' },
+            { stepNumber: 4, description: 'Find the corresponding \\( y \\) values', workingLatex: 'x = 2 \\implies y = 3; \\quad x = 3 \\implies y = 2', explanation: 'Substituting each \\( x \\) back into \\( y = 5 - x \\) gives the two solution pairs.' }
+        ], finalAnswer: '\\( (2,\\, 3) \\) and \\( (3,\\, 2) \\)' }
     },
     {
         id: 'ise2-048', topicRef: 'ise2', topicTitle: 'Simultaneous Equations 48', difficulty: 'Foundation',
         questionText: 'Solve: \\( 2x - 3y = 1 \\) and \\( 4x + y = 15 \\).',
         marks: 3, examStyle: false, yearCreated: 2026, tags: [],
         workedSolution: { steps: [
-            { stepNumber: 1, description: 'From eq2: y = 15 - 4x', workingLatex: '2x - 3(15-4x) = 1 \\implies 14x = 46 \\implies x = \\frac{23}{7}', explanation: '' },
-            { stepNumber: 2, description: 'Find y', workingLatex: 'y = 15 - \\frac{92}{7} = \\frac{13}{7}', explanation: '' }
-        ], finalAnswer: 'x = \\frac{23}{7}, y = \\frac{13}{7}' }
+            { stepNumber: 1, description: 'Rearrange equation 2 to get \\( y = 15 - 4x \\) and substitute into equation 1', workingLatex: '2x - 3(15-4x) = 1 \\implies 2x - 45 + 12x = 1 \\implies 14x = 46 \\implies x = \\frac{23}{7}', explanation: 'Expanding and collecting \\( x \\) terms gives \\( x = \\frac{23}{7} \\).' },
+            { stepNumber: 2, description: 'Substitute back to find \\( y \\)', workingLatex: 'y = 15 - 4 \\cdot \\frac{23}{7} = \\frac{105 - 92}{7} = \\frac{13}{7}', explanation: 'Replacing \\( x \\) in \\( y = 15 - 4x \\) and simplifying gives \\( y = \\frac{13}{7} \\).' }
+        ], finalAnswer: '\\( x = \\frac{23}{7}, \\quad y = \\frac{13}{7} \\)' }
     },
     {
         id: 'ise2-049', topicRef: 'ise2', topicTitle: 'Simultaneous Equations 49', difficulty: 'Foundation',
         questionText: 'Solve: \\( y = x^2 + 1 \\) and \\( y = 5 - x \\).',
         marks: 4, examStyle: false, yearCreated: 2026, tags: [],
         workedSolution: { steps: [
-            { stepNumber: 1, description: 'Substitute', workingLatex: 'x^2 + 1 = 5 - x \\implies x^2 + x - 4 = 0', explanation: '' },
-            { stepNumber: 2, description: 'Quadratic formula', workingLatex: 'x = \\frac{-1 \\pm \\sqrt{17}}{2}', explanation: '' }
-        ], finalAnswer: 'x = \\frac{-1 \\pm \\sqrt{17}}{2}' }
+            { stepNumber: 1, description: 'Set the two expressions for \\( y \\) equal and rearrange', workingLatex: 'x^2 + 1 = 5 - x \\implies x^2 + x - 4 = 0', explanation: 'Substituting gives a quadratic that does not factorise neatly.' },
+            { stepNumber: 2, description: 'Apply the quadratic formula', workingLatex: 'x = \\frac{-1 \\pm \\sqrt{1 + 16}}{2} = \\frac{-1 \\pm \\sqrt{17}}{2}', explanation: 'The discriminant is \\( 17 \\), so the roots are irrational.' },
+            { stepNumber: 3, description: 'Find the corresponding \\( y \\) values using \\( y = 5 - x \\)', workingLatex: 'y = 5 - \\frac{-1 \\pm \\sqrt{17}}{2} = \\frac{11 \\mp \\sqrt{17}}{2}', explanation: 'Substituting each \\( x \\) into the linear equation gives the full coordinate pairs.' }
+        ], finalAnswer: '\\( \\left(\\frac{-1+\\sqrt{17}}{2},\\,\\frac{11-\\sqrt{17}}{2}\\right) \\) and \\( \\left(\\frac{-1-\\sqrt{17}}{2},\\,\\frac{11+\\sqrt{17}}{2}\\right) \\)' }
     },
     {
         id: 'ise2-050', topicRef: 'ise2', topicTitle: 'Simultaneous Equations 50', difficulty: 'Foundation',
         questionText: 'The sum of two numbers is 15 and their product is 54. Find the two numbers.',
         marks: 4, examStyle: false, yearCreated: 2026, tags: [],
         workedSolution: { steps: [
-            { stepNumber: 1, description: 'Set up', workingLatex: 'x + y = 15; \\quad xy = 54', explanation: '' },
-            { stepNumber: 2, description: 'Substitute y = 15 - x', workingLatex: 'x(15-x) = 54 \\implies x^2 - 15x + 54 = 0', explanation: '' },
-            { stepNumber: 3, description: 'Factorise', workingLatex: '(x-6)(x-9) = 0', explanation: '' }
-        ], finalAnswer: '6 and 9' }
+            { stepNumber: 1, description: 'Let the two numbers be \\( x \\) and \\( y \\) and write the equations', workingLatex: 'x + y = 15; \\quad xy = 54', explanation: 'The first equation captures the sum and the second captures the product.' },
+            { stepNumber: 2, description: 'Substitute \\( y = 15 - x \\) into the product equation', workingLatex: 'x(15-x) = 54 \\implies 15x - x^2 = 54 \\implies x^2 - 15x + 54 = 0', explanation: 'Rearranging gives a quadratic in \\( x \\).' },
+            { stepNumber: 3, description: 'Factorise and solve', workingLatex: '(x-6)(x-9) = 0 \\implies x = 6 \\text{ or } x = 9', explanation: 'When \\( x = 6 \\), \\( y = 9 \\) and when \\( x = 9 \\), \\( y = 6 \\). The two numbers are 6 and 9.' }
+        ], finalAnswer: '\\( 6 \\) and \\( 9 \\)' }
     },
     {
         id: 'ise2-051', topicRef: 'ise2', topicTitle: 'Simultaneous Equations 51', difficulty: 'Foundation',
         questionText: 'Solve: \\( 3x - 2y = 4 \\) and \\( 6x - 4y = 8 \\). What do you notice?',
         marks: 2, examStyle: false, yearCreated: 2026, tags: [],
         workedSolution: { steps: [
-            { stepNumber: 1, description: 'Eq2 is 2 times eq1', workingLatex: '\\text{The equations are identical (dependent).}', explanation: 'Infinitely many solutions along y = (3x-4)/2.' }
+            { stepNumber: 1, description: 'Observe that equation 2 is exactly 2 times equation 1', workingLatex: '2(3x - 2y) = 6x - 4y = 8 = 2 \\times 4', explanation: 'Since one equation is a multiple of the other, they represent the same line.' },
+            { stepNumber: 2, description: 'State the conclusion', workingLatex: '\\text{The equations are dependent (identical lines).}', explanation: 'There are infinitely many solutions: any point on \\( 3x - 2y = 4 \\), i.e. \\( y = \\frac{3x-4}{2} \\), is a solution.' }
         ], finalAnswer: 'Infinitely many solutions (same line)' }
     },
     {
@@ -1766,7 +1831,8 @@ export const questions: Question[] = [
         questionText: 'Solve: \\( 2x + 3y = 7 \\) and \\( 4x + 6y = 10 \\). What do you notice?',
         marks: 2, examStyle: false, yearCreated: 2026, tags: [],
         workedSolution: { steps: [
-            { stepNumber: 1, description: 'Multiply eq1 by 2: 4x + 6y = 14', workingLatex: '14 \\neq 10', explanation: 'Contradiction — parallel lines, no intersection.' }
+            { stepNumber: 1, description: 'Multiply equation 1 by 2 and compare with equation 2', workingLatex: '2(2x + 3y) = 4x + 6y = 14 \\neq 10', explanation: 'The left-hand sides are identical but the right-hand sides differ, giving a contradiction.' },
+            { stepNumber: 2, description: 'State the conclusion', workingLatex: '\\text{No solution — the lines are parallel.}', explanation: 'Parallel lines never intersect, so there is no pair \\( (x, y) \\) satisfying both equations.' }
         ], finalAnswer: 'No solution (parallel lines)' }
     },
     {
@@ -1774,165 +1840,185 @@ export const questions: Question[] = [
         questionText: 'Solve: \\( y = 2x^2 - 3 \\) and \\( y = 5x \\).',
         marks: 4, examStyle: false, yearCreated: 2026, tags: [],
         workedSolution: { steps: [
-            { stepNumber: 1, description: 'Substitute', workingLatex: '2x^2 - 3 = 5x \\implies 2x^2 - 5x - 3 = 0', explanation: '' },
-            { stepNumber: 2, description: 'Factorise', workingLatex: '(2x + 1)(x - 3) = 0 \\implies x = -\\frac{1}{2} \\text{ or } x = 3', explanation: '' },
-            { stepNumber: 3, description: 'Find y', workingLatex: 'x = -\\frac{1}{2}: y = -\\frac{5}{2}; \\quad x = 3: y = 15', explanation: '' }
-        ], finalAnswer: '(-\\frac{1}{2}, -\\frac{5}{2}) and (3, 15)' }
+            { stepNumber: 1, description: 'Set the two expressions for \\( y \\) equal and rearrange', workingLatex: '2x^2 - 3 = 5x \\implies 2x^2 - 5x - 3 = 0', explanation: 'Substituting gives a quadratic in \\( x \\).' },
+            { stepNumber: 2, description: 'Factorise the quadratic', workingLatex: '(2x + 1)(x - 3) = 0 \\implies x = -\\frac{1}{2} \\text{ or } x = 3', explanation: 'Splitting the middle term: \\( 2x^2 + x - 6x - 3 = 0 \\) gives these factors.' },
+            { stepNumber: 3, description: 'Find the corresponding \\( y \\) values using \\( y = 5x \\)', workingLatex: 'x = -\\frac{1}{2}: y = -\\frac{5}{2}; \\quad x = 3: y = 15', explanation: 'Substituting each \\( x \\) into \\( y = 5x \\) gives the full coordinate pairs.' }
+        ], finalAnswer: '\\( \\left(-\\frac{1}{2},\\, -\\frac{5}{2}\\right) \\) and \\( (3,\\, 15) \\)' }
     },
     {
         id: 'ise2-054', topicRef: 'ise2', topicTitle: 'Simultaneous Equations 54', difficulty: 'Foundation',
         questionText: 'Find the value of \\( k \\) such that \\( y = kx + 3 \\) is tangent to \\( y = x^2 \\).',
         marks: 5, examStyle: false, yearCreated: 2026, tags: [],
         workedSolution: { steps: [
-            { stepNumber: 1, description: 'Substitute', workingLatex: 'x^2 = kx + 3 \\implies x^2 - kx - 3 = 0', explanation: '' },
-            { stepNumber: 2, description: 'Tangent: discriminant = 0', workingLatex: 'k^2 + 12 = 0', explanation: 'This has no real solution! The line y = kx + 3 has positive y-intercept and y = x^2 opens up from origin, so they always intersect twice. Tangent requires discriminant = 0: k^2 - 4(-3) = k^2 + 12 > 0 always. So no tangent with c = 3. Try y = kx - 3: k^2 - 12 = 0, k = \\pm 2\\sqrt{3}.' }
-        ], finalAnswer: 'k = \\pm 2\\sqrt{3} (for y = kx - 3)' }
+            { stepNumber: 1, description: 'Set the two expressions for \\( y \\) equal', workingLatex: 'x^2 = kx + 3 \\implies x^2 - kx - 3 = 0', explanation: 'Substituting gives a quadratic in \\( x \\) whose coefficients depend on \\( k \\).' },
+            { stepNumber: 2, description: 'For tangency the discriminant must equal zero', workingLatex: 'b^2 - 4ac = (-k)^2 - 4(1)(-3) = k^2 + 12', explanation: 'Using \\( a = 1 \\), \\( b = -k \\), \\( c = -3 \\) in the discriminant formula.' },
+            { stepNumber: 3, description: 'Set the discriminant equal to zero and solve', workingLatex: 'k^2 + 12 = 0', explanation: 'Since \\( k^2 \\geq 0 \\) for all real \\( k \\), we have \\( k^2 + 12 > 0 \\) always. There is no real value of \\( k \\).' },
+            { stepNumber: 4, description: 'Explain why no tangent exists', workingLatex: '\\text{Parabola vertex at } (0,0), \\text{ line crosses } y\\text{-axis at } 3', explanation: 'The line \\( y = kx + 3 \\) always passes above the vertex of \\( y = x^2 \\), so it crosses the curve twice for every gradient. No real \\( k \\) gives tangency.' }
+        ], finalAnswer: 'No real value of \\( k \\) exists; the discriminant \\( k^2 + 12 > 0 \\) for all real \\( k \\)' }
     },
     {
         id: 'ise2-055', topicRef: 'ise2', topicTitle: 'Simultaneous Equations 55', difficulty: 'Foundation',
         questionText: 'Solve: \\( x + 2y = 8 \\) and \\( xy = 6 \\).',
         marks: 4, examStyle: false, yearCreated: 2026, tags: [],
         workedSolution: { steps: [
-            { stepNumber: 1, description: 'From eq1: x = 8 - 2y', workingLatex: '(8-2y)y = 6 \\implies 2y^2 - 8y + 6 = 0 \\implies y^2 - 4y + 3 = 0', explanation: '' },
-            { stepNumber: 2, description: 'Factorise', workingLatex: '(y-1)(y-3) = 0 \\implies y = 1, x = 6 \\text{ or } y = 3, x = 2', explanation: '' }
-        ], finalAnswer: '(6, 1) and (2, 3)' }
+            { stepNumber: 1, description: 'Rearrange equation 1 to get \\( x = 8 - 2y \\) and substitute into equation 2', workingLatex: '(8-2y)y = 6 \\implies 8y - 2y^2 = 6 \\implies 2y^2 - 8y + 6 = 0 \\implies y^2 - 4y + 3 = 0', explanation: 'Expanding and rearranging gives a quadratic in \\( y \\), then dividing by 2 simplifies it.' },
+            { stepNumber: 2, description: 'Factorise and solve for \\( y \\)', workingLatex: '(y-1)(y-3) = 0 \\implies y = 1 \\text{ or } y = 3', explanation: 'The quadratic factorises into two brackets.' },
+            { stepNumber: 3, description: 'Find the corresponding \\( x \\) values using \\( x = 8 - 2y \\)', workingLatex: 'y = 1: x = 6; \\quad y = 3: x = 2', explanation: 'Substituting each \\( y \\) value back gives the two solution pairs.' }
+        ], finalAnswer: '\\( (6,\\, 1) \\) and \\( (2,\\, 3) \\)' }
     },
     {
         id: 'ise2-056', topicRef: 'ise2', topicTitle: 'Simultaneous Equations 56', difficulty: 'Foundation',
         questionText: 'Solve: \\( 7x + 2y = 20 \\) and \\( 3x + 5y = 21 \\).',
         marks: 3, examStyle: false, yearCreated: 2026, tags: [],
         workedSolution: { steps: [
-            { stepNumber: 1, description: 'Multiply to eliminate y', workingLatex: '5(7x+2y) = 100; \\quad 2(3x+5y) = 42', explanation: '35x+10y=100 and 6x+10y=42.' },
-            { stepNumber: 2, description: 'Subtract', workingLatex: '29x = 58 \\implies x = 2, \\quad y = 3', explanation: '' }
-        ], finalAnswer: 'x = 2, y = 3' }
+            { stepNumber: 1, description: 'Multiply both equations to match the \\( y \\) coefficients', workingLatex: '5(7x+2y) = 100; \\quad 2(3x+5y) = 42', explanation: 'Multiplying equation 1 by 5 gives \\( 35x+10y=100 \\) and multiplying equation 2 by 2 gives \\( 6x+10y=42 \\).' },
+            { stepNumber: 2, description: 'Subtract the second from the first to eliminate \\( y \\)', workingLatex: '35x + 10y - 6x - 10y = 100 - 42 \\implies 29x = 58 \\implies x = 2', explanation: 'The \\( y \\) terms cancel, giving \\( x = 2 \\).' },
+            { stepNumber: 3, description: 'Substitute \\( x = 2 \\) back into equation 1 to find \\( y \\)', workingLatex: '7(2) + 2y = 20 \\implies 2y = 6 \\implies y = 3', explanation: 'Replacing \\( x \\) and solving gives \\( y = 3 \\).' }
+        ], finalAnswer: '\\( x = 2, \\quad y = 3 \\)' }
     },
     {
         id: 'ise2-057', topicRef: 'ise2', topicTitle: 'Simultaneous Equations 57', difficulty: 'Foundation',
         questionText: 'A rectangle has perimeter 28 cm. Its length is 4 cm more than its width. Find the dimensions.',
         marks: 3, examStyle: false, yearCreated: 2026, tags: [],
         workedSolution: { steps: [
-            { stepNumber: 1, description: 'Set up', workingLatex: '2l + 2w = 28; \\quad l = w + 4', explanation: '' },
-            { stepNumber: 2, description: 'Substitute', workingLatex: '2(w+4) + 2w = 28 \\implies 4w = 20 \\implies w = 5, l = 9', explanation: '' }
-        ], finalAnswer: 'Width 5 cm, length 9 cm' }
+            { stepNumber: 1, description: 'Set up equations using \\( l \\) for length and \\( w \\) for width', workingLatex: '2l + 2w = 28; \\quad l = w + 4', explanation: 'The perimeter gives the first equation and the relationship between length and width gives the second.' },
+            { stepNumber: 2, description: 'Substitute \\( l = w + 4 \\) into the perimeter equation', workingLatex: '2(w+4) + 2w = 28 \\implies 2w + 8 + 2w = 28 \\implies 4w = 20 \\implies w = 5', explanation: 'Expanding and simplifying gives \\( w = 5 \\).' },
+            { stepNumber: 3, description: 'Find \\( l \\)', workingLatex: 'l = 5 + 4 = 9', explanation: 'Substituting back gives \\( l = 9 \\). Check: \\( 2(9) + 2(5) = 28 \\).' }
+        ], finalAnswer: '\\( w = 5 \\) cm, \\( l = 9 \\) cm' }
     },
     {
         id: 'ise2-058', topicRef: 'ise2', topicTitle: 'Simultaneous Equations 58', difficulty: 'Foundation',
         questionText: 'Solve: \\( y = x^2 - 2x \\) and \\( y + x = 4 \\).',
         marks: 4, examStyle: false, yearCreated: 2026, tags: [],
         workedSolution: { steps: [
-            { stepNumber: 1, description: 'Substitute y = 4 - x', workingLatex: '4 - x = x^2 - 2x \\implies x^2 - x - 4 = 0', explanation: '' },
-            { stepNumber: 2, description: 'Quadratic formula', workingLatex: 'x = \\frac{1 \\pm \\sqrt{17}}{2}', explanation: '' }
-        ], finalAnswer: 'x = \\frac{1 \\pm \\sqrt{17}}{2}' }
+            { stepNumber: 1, description: 'Rearrange the second equation to get \\( y = 4 - x \\) and substitute into the first', workingLatex: '4 - x = x^2 - 2x \\implies x^2 - 2x + x - 4 = 0 \\implies x^2 - x - 4 = 0', explanation: 'This gives a quadratic in \\( x \\).' },
+            { stepNumber: 2, description: 'Apply the quadratic formula', workingLatex: 'x = \\frac{1 \\pm \\sqrt{1 + 16}}{2} = \\frac{1 \\pm \\sqrt{17}}{2}', explanation: 'Here \\( a = 1 \\), \\( b = -1 \\), \\( c = -4 \\), so the discriminant is \\( 1 + 16 = 17 \\).' },
+            { stepNumber: 3, description: 'Find \\( y \\) for each solution', workingLatex: 'y = 4 - x = 4 - \\frac{1 \\pm \\sqrt{17}}{2} = \\frac{7 \\mp \\sqrt{17}}{2}', explanation: 'Substituting each \\( x \\) value back into \\( y = 4 - x \\).' }
+        ], finalAnswer: '\\( \\left(\\frac{1 + \\sqrt{17}}{2},\\, \\frac{7 - \\sqrt{17}}{2}\\right) \\) and \\( \\left(\\frac{1 - \\sqrt{17}}{2},\\, \\frac{7 + \\sqrt{17}}{2}\\right) \\)' }
     },
     {
         id: 'ise2-059', topicRef: 'ise2', topicTitle: 'Simultaneous Equations 59', difficulty: 'Foundation',
         questionText: 'Solve: \\( \\frac{x}{3} + \\frac{y}{4} = 1 \\) and \\( \\frac{x}{2} - \\frac{y}{3} = 1 \\).',
         marks: 4, examStyle: false, yearCreated: 2026, tags: [],
         workedSolution: { steps: [
-            { stepNumber: 1, description: 'Clear fractions', workingLatex: '4x + 3y = 12; \\quad 3x - 2y = 6', explanation: 'Multiply eq1 by 12, eq2 by 6.' },
-            { stepNumber: 2, description: 'Eliminate y', workingLatex: '2(4x+3y) + 3(3x-2y) = 24 + 18 \\implies 17x = 42 \\implies x = \\frac{42}{17}', explanation: '' },
-            { stepNumber: 3, description: 'Find y', workingLatex: 'y = \\frac{12 - 4(\\frac{42}{17})}{3} = \\frac{36}{51} = \\frac{12}{17}', explanation: '' }
-        ], finalAnswer: 'x = \\frac{42}{17}, y = \\frac{12}{17}' }
+            { stepNumber: 1, description: 'Clear fractions', workingLatex: '4x + 3y = 12; \\quad 3x - 2y = 6', explanation: 'Multiply the first equation by 12 and the second by 6 to eliminate denominators.' },
+            { stepNumber: 2, description: 'Eliminate \\( y \\) by combining the equations', workingLatex: '2(4x+3y) + 3(3x-2y) = 24 + 18 \\implies 17x = 42 \\implies x = \\frac{42}{17}', explanation: 'Multiplying the first by 2 and the second by 3 makes the \\( y \\)-coefficients cancel.' },
+            { stepNumber: 3, description: 'Substitute back to find \\( y \\)', workingLatex: '4 \\cdot \\frac{42}{17} + 3y = 12 \\implies 3y = 12 - \\frac{168}{17} = \\frac{36}{17} \\implies y = \\frac{12}{17}', explanation: 'Substituting \\( x = \\frac{42}{17} \\) into the first cleared equation gives \\( y = \\frac{12}{17} \\).' }
+        ], finalAnswer: '\\( x = \\frac{42}{17},\\, y = \\frac{12}{17} \\)' }
     },
     {
         id: 'ise2-060', topicRef: 'ise2', topicTitle: 'Simultaneous Equations 60', difficulty: 'Foundation',
         questionText: 'Find the coordinates where \\( y = x^2 + 2x - 5 \\) meets \\( y = 2x + 3 \\).',
         marks: 4, examStyle: false, yearCreated: 2026, tags: [],
         workedSolution: { steps: [
-            { stepNumber: 1, description: 'Substitute', workingLatex: 'x^2 + 2x - 5 = 2x + 3 \\implies x^2 = 8 \\implies x = \\pm 2\\sqrt{2}', explanation: '' },
-            { stepNumber: 2, description: 'Find y', workingLatex: 'y = 2(2\\sqrt{2}) + 3 = 4\\sqrt{2} + 3 \\text{ or } y = 3 - 4\\sqrt{2}', explanation: '' }
-        ], finalAnswer: '(2\\sqrt{2}, 4\\sqrt{2}+3) and (-2\\sqrt{2}, 3-4\\sqrt{2})' }
+            { stepNumber: 1, description: 'Set the two expressions for \\( y \\) equal', workingLatex: 'x^2 + 2x - 5 = 2x + 3', explanation: 'Since both expressions equal \\( y \\), we can equate them.' },
+            { stepNumber: 2, description: 'Simplify to find \\( x \\)', workingLatex: 'x^2 = 8 \\implies x = \\pm 2\\sqrt{2}', explanation: 'The \\( 2x \\) terms cancel, leaving \\( x^2 = 8 \\).' },
+            { stepNumber: 3, description: 'Find \\( y \\) for each \\( x \\) value using \\( y = 2x + 3 \\)', workingLatex: 'x = 2\\sqrt{2}:\\; y = 4\\sqrt{2} + 3; \\quad x = -2\\sqrt{2}:\\; y = 3 - 4\\sqrt{2}', explanation: 'Substituting each \\( x \\) value into the linear equation gives the corresponding \\( y \\).' }
+        ], finalAnswer: '\\( (2\\sqrt{2},\\, 4\\sqrt{2}+3) \\) and \\( (-2\\sqrt{2},\\, 3-4\\sqrt{2}) \\)' }
     },
     {
         id: 'ise2-061', topicRef: 'ise2', topicTitle: 'Simultaneous Equations 61', difficulty: 'Foundation',
         questionText: 'Solve: \\( 5x - 2y = 11 \\) and \\( 3x + 4y = 1 \\).',
         marks: 3, examStyle: false, yearCreated: 2026, tags: [],
         workedSolution: { steps: [
-            { stepNumber: 1, description: 'Multiply eq1 by 2 and add', workingLatex: '10x - 4y + 3x + 4y = 22 + 1 \\implies 13x = 23 \\implies x = \\frac{23}{13}', explanation: '' },
-            { stepNumber: 2, description: 'Find y', workingLatex: 'y = \\frac{1 - 3(\\frac{23}{13})}{4} = \\frac{-56}{52} = -\\frac{14}{13}', explanation: '' }
-        ], finalAnswer: 'x = \\frac{23}{13}, y = -\\frac{14}{13}' }
+            { stepNumber: 1, description: 'Multiply the first equation by 2 to make the \\( y \\)-coefficients match', workingLatex: '10x - 4y = 22', explanation: 'This gives a \\( -4y \\) term that cancels with the \\( +4y \\) in the second equation.' },
+            { stepNumber: 2, description: 'Add the equations to eliminate \\( y \\)', workingLatex: '10x - 4y + 3x + 4y = 22 + 1 \\implies 13x = 23 \\implies x = \\frac{23}{13}', explanation: 'The \\( y \\) terms cancel, giving \\( x = \\frac{23}{13} \\).' },
+            { stepNumber: 3, description: 'Substitute back to find \\( y \\)', workingLatex: '3 \\cdot \\frac{23}{13} + 4y = 1 \\implies 4y = 1 - \\frac{69}{13} = -\\frac{56}{13} \\implies y = -\\frac{14}{13}', explanation: 'Substituting into the second equation and solving for \\( y \\).' }
+        ], finalAnswer: '\\( x = \\frac{23}{13},\\, y = -\\frac{14}{13} \\)' }
     },
     {
         id: 'ise2-062', topicRef: 'ise2', topicTitle: 'Simultaneous Equations 62', difficulty: 'Foundation',
         questionText: 'The line \\( y = mx + 4 \\) is tangent to \\( y = x^2 + 2 \\). Find \\( m \\).',
         marks: 4, examStyle: false, yearCreated: 2026, tags: [],
         workedSolution: { steps: [
-            { stepNumber: 1, description: 'Substitute', workingLatex: 'x^2 + 2 = mx + 4 \\implies x^2 - mx - 2 = 0', explanation: '' },
-            { stepNumber: 2, description: 'Discriminant = 0', workingLatex: 'm^2 + 8 = 0', explanation: 'No real m! The parabola minimum is 2 but the line has y-int 4, so they always meet. Discriminant = m^2+8 > 0 always. No tangent exists with c = 4.' }
-        ], finalAnswer: 'No real value of m (line always intersects curve twice)' }
+            { stepNumber: 1, description: 'Set the expressions equal and rearrange', workingLatex: 'x^2 + 2 = mx + 4 \\implies x^2 - mx - 2 = 0', explanation: 'Substituting the line into the curve equation gives a quadratic in \\( x \\).' },
+            { stepNumber: 2, description: 'For tangency, set the discriminant equal to zero', workingLatex: '\\Delta = (-m)^2 - 4(1)(-2) = m^2 + 8', explanation: 'The discriminant is \\( m^2 + 8 \\), which is always positive for all real \\( m \\).' },
+            { stepNumber: 3, description: 'Conclude there is no tangent', workingLatex: 'm^2 + 8 > 0 \\text{ for all } m \\in \\mathbb{R}', explanation: 'Since the discriminant is always positive, the line always intersects the curve at two distinct points.' },
+            { stepNumber: 4, description: 'Interpret the result', workingLatex: '\\text{No solution}', explanation: 'The minimum of \\( y = x^2 + 2 \\) is at \\( (0, 2) \\), below the \\( y \\)-intercept of the line at \\( (0, 4) \\), so the line always cuts the parabola twice.' }
+        ], finalAnswer: 'No real value of \\( m \\) (the line always intersects the curve at two points)' }
     },
     {
         id: 'ise2-063', topicRef: 'ise2', topicTitle: 'Simultaneous Equations 63', difficulty: 'Foundation',
         questionText: 'Solve: \\( x^2 + y^2 = 25 \\) and \\( y = x + 1 \\).',
         marks: 4, examStyle: false, yearCreated: 2026, tags: [],
         workedSolution: { steps: [
-            { stepNumber: 1, description: 'Substitute', workingLatex: 'x^2 + (x+1)^2 = 25 \\implies 2x^2 + 2x - 24 = 0 \\implies x^2 + x - 12 = 0', explanation: '' },
-            { stepNumber: 2, description: 'Factorise', workingLatex: '(x+4)(x-3) = 0 \\implies x = -4, y = -3 \\text{ or } x = 3, y = 4', explanation: '' }
-        ], finalAnswer: '(-4, -3) and (3, 4)' }
+            { stepNumber: 1, description: 'Substitute \\( y = x + 1 \\) into the first equation', workingLatex: 'x^2 + (x+1)^2 = 25 \\implies 2x^2 + 2x - 24 = 0', explanation: 'Expanding and simplifying gives a quadratic in \\( x \\).' },
+            { stepNumber: 2, description: 'Divide by 2 and factorise', workingLatex: 'x^2 + x - 12 = 0 \\implies (x+4)(x-3) = 0', explanation: 'The quadratic factors neatly.' },
+            { stepNumber: 3, description: 'Find \\( y \\) for each \\( x \\) value', workingLatex: 'x = -4:\\; y = -3; \\quad x = 3:\\; y = 4', explanation: 'Substituting back into \\( y = x + 1 \\) gives the two solutions.' }
+        ], finalAnswer: '\\( (-4, -3) \\) and \\( (3, 4) \\)' }
     },
     {
         id: 'ise2-064', topicRef: 'ise2', topicTitle: 'Simultaneous Equations 64', difficulty: 'Foundation',
         questionText: 'Three coffees and two teas cost \\( \\pounds 9.50 \\). Two coffees and three teas cost \\( \\pounds 8.50 \\). Find the price of each.',
         marks: 4, examStyle: false, yearCreated: 2026, tags: [],
         workedSolution: { steps: [
-            { stepNumber: 1, description: 'Set up', workingLatex: '3c + 2t = 9.50; \\quad 2c + 3t = 8.50', explanation: '' },
-            { stepNumber: 2, description: 'Eliminate', workingLatex: '3(3c+2t) - 2(2c+3t) = 28.50 - 17 \\implies 5c = 11.50 \\implies c = 2.30', explanation: '' },
-            { stepNumber: 3, description: 'Find t', workingLatex: 't = \\frac{9.50 - 6.90}{2} = 1.30', explanation: '' }
-        ], finalAnswer: 'Coffee \\pounds 2.30, tea \\pounds 1.30' }
+            { stepNumber: 1, description: 'Set up equations using \\( c \\) for coffee and \\( t \\) for tea', workingLatex: '3c + 2t = 9.50; \\quad 2c + 3t = 8.50', explanation: 'Each equation represents the total cost of the drinks.' },
+            { stepNumber: 2, description: 'Eliminate \\( t \\) by multiplying and subtracting', workingLatex: '3(3c+2t) - 2(2c+3t) = 28.50 - 17.00 \\implies 5c = 11.50 \\implies c = 2.30', explanation: 'Multiplying the first equation by 3 and the second by 2, then subtracting eliminates \\( t \\).' },
+            { stepNumber: 3, description: 'Substitute back to find \\( t \\)', workingLatex: '3(2.30) + 2t = 9.50 \\implies 2t = 2.60 \\implies t = 1.30', explanation: 'Substituting \\( c = 2.30 \\) into the first equation gives \\( t = 1.30 \\).' },
+            { stepNumber: 4, description: 'Check in the second equation', workingLatex: '2(2.30) + 3(1.30) = 4.60 + 3.90 = 8.50 \\; \\checkmark', explanation: 'The values satisfy both equations.' }
+        ], finalAnswer: 'Coffee \\( \\pounds 2.30 \\), tea \\( \\pounds 1.30 \\)' }
     },
     {
         id: 'ise2-065', topicRef: 'ise2', topicTitle: 'Simultaneous Equations 65', difficulty: 'Foundation',
         questionText: 'Solve: \\( y = x^2 - 3x + 2 \\) and \\( y = x - 1 \\).',
         marks: 4, examStyle: false, yearCreated: 2026, tags: [],
         workedSolution: { steps: [
-            { stepNumber: 1, description: 'Substitute', workingLatex: 'x^2 - 3x + 2 = x - 1 \\implies x^2 - 4x + 3 = 0', explanation: '' },
-            { stepNumber: 2, description: 'Factorise', workingLatex: '(x-1)(x-3) = 0 \\implies x = 1, y = 0 \\text{ or } x = 3, y = 2', explanation: '' }
-        ], finalAnswer: '(1, 0) and (3, 2)' }
+            { stepNumber: 1, description: 'Set the two expressions for \\( y \\) equal', workingLatex: 'x^2 - 3x + 2 = x - 1 \\implies x^2 - 4x + 3 = 0', explanation: 'Rearranging brings all terms to one side.' },
+            { stepNumber: 2, description: 'Factorise the quadratic', workingLatex: '(x-1)(x-3) = 0 \\implies x = 1 \\text{ or } x = 3', explanation: 'The quadratic factors into two linear factors.' },
+            { stepNumber: 3, description: 'Find \\( y \\) for each \\( x \\) value using \\( y = x - 1 \\)', workingLatex: 'x = 1:\\; y = 0; \\quad x = 3:\\; y = 2', explanation: 'Substituting each \\( x \\) value gives the corresponding \\( y \\).' }
+        ], finalAnswer: '\\( (1, 0) \\) and \\( (3, 2) \\)' }
     },
     {
         id: 'ise2-066', topicRef: 'ise2', topicTitle: 'Simultaneous Equations 66', difficulty: 'Foundation',
         questionText: 'Solve: \\( x - y = 2 \\) and \\( x^2 - y^2 = 12 \\).',
         marks: 3, examStyle: false, yearCreated: 2026, tags: [],
         workedSolution: { steps: [
-            { stepNumber: 1, description: 'Factorise eq2', workingLatex: '(x-y)(x+y) = 12 \\implies 2(x+y) = 12 \\implies x+y = 6', explanation: '' },
-            { stepNumber: 2, description: 'Solve with eq1', workingLatex: '2x = 8 \\implies x = 4, y = 2', explanation: '' }
-        ], finalAnswer: 'x = 4, y = 2' }
+            { stepNumber: 1, description: 'Factorise the second equation using the difference of two squares', workingLatex: '(x-y)(x+y) = 12', explanation: 'Recognising the difference of two squares allows us to use the first equation.' },
+            { stepNumber: 2, description: 'Substitute \\( x - y = 2 \\)', workingLatex: '2(x+y) = 12 \\implies x + y = 6', explanation: 'Since \\( x - y = 2 \\), we now have a pair of linear simultaneous equations.' },
+            { stepNumber: 3, description: 'Add the two linear equations to solve', workingLatex: '(x - y) + (x + y) = 2 + 6 \\implies 2x = 8 \\implies x = 4,\\; y = 2', explanation: 'Adding eliminates \\( y \\), giving \\( x = 4 \\). Then \\( y = 4 - 2 = 2 \\).' }
+        ], finalAnswer: '\\( x = 4,\\, y = 2 \\)' }
     },
     {
         id: 'ise2-067', topicRef: 'ise2', topicTitle: 'Simultaneous Equations 67', difficulty: 'Foundation',
         questionText: 'Find where \\( y = 4 - x^2 \\) meets \\( y = 4 - 2x \\).',
         marks: 3, examStyle: false, yearCreated: 2026, tags: [],
         workedSolution: { steps: [
-            { stepNumber: 1, description: 'Substitute', workingLatex: '4 - x^2 = 4 - 2x \\implies x^2 - 2x = 0 \\implies x(x-2) = 0', explanation: '' },
-            { stepNumber: 2, description: 'Find y', workingLatex: 'x=0: y=4; \\quad x=2: y=0', explanation: '' }
-        ], finalAnswer: '(0, 4) and (2, 0)' }
+            { stepNumber: 1, description: 'Set the two expressions for \\( y \\) equal', workingLatex: '4 - x^2 = 4 - 2x \\implies x^2 - 2x = 0 \\implies x(x-2) = 0', explanation: 'The constant terms cancel, leaving a factorisable quadratic.' },
+            { stepNumber: 2, description: 'Find \\( x \\) values', workingLatex: 'x = 0 \\text{ or } x = 2', explanation: 'Factorising gives two solutions for \\( x \\).' },
+            { stepNumber: 3, description: 'Find \\( y \\) for each \\( x \\) value using \\( y = 4 - 2x \\)', workingLatex: 'x = 0:\\; y = 4; \\quad x = 2:\\; y = 0', explanation: 'Substituting into the linear equation gives the coordinates.' }
+        ], finalAnswer: '\\( (0, 4) \\) and \\( (2, 0) \\)' }
     },
     {
         id: 'ise2-068', topicRef: 'ise2', topicTitle: 'Simultaneous Equations 68', difficulty: 'Foundation',
         questionText: 'Solve: \\( 2x + 3y + z = 9 \\), \\( x + y + z = 4 \\), \\( 3x + 2y - z = 5 \\).',
         marks: 5, examStyle: false, yearCreated: 2026, tags: [],
         workedSolution: { steps: [
-            { stepNumber: 1, description: 'Add eq2 and eq3 to eliminate z', workingLatex: '4x + 3y = 9', explanation: '' },
-            { stepNumber: 2, description: 'Add eq1 and eq3', workingLatex: '5x + 5y = 14 \\implies x + y = 2.8', explanation: '' },
-            { stepNumber: 3, description: 'Solve', workingLatex: '4x + 3(2.8 - x) = 9 \\implies x = 0.6, y = 2.2, z = 1.2', explanation: '' }
-        ], finalAnswer: 'x = 0.6, y = 2.2, z = 1.2' }
+            { stepNumber: 1, description: 'Add eq2 and eq3 to eliminate \\( z \\)', workingLatex: '(x + y + z) + (3x + 2y - z) = 4 + 5 \\implies 4x + 3y = 9', explanation: 'The \\( z \\) terms cancel when we add these two equations.' },
+            { stepNumber: 2, description: 'Add eq1 and eq3 to eliminate \\( z \\)', workingLatex: '(2x + 3y + z) + (3x + 2y - z) = 9 + 5 \\implies 5x + 5y = 14', explanation: 'This gives a second equation in \\( x \\) and \\( y \\) only.' },
+            { stepNumber: 3, description: 'Solve the pair of equations in \\( x \\) and \\( y \\)', workingLatex: 'x + y = \\frac{14}{5}; \\quad 4x + 3\\left(\\frac{14}{5} - x\\right) = 9 \\implies x = \\frac{3}{5}', explanation: 'Substituting \\( y = \\frac{14}{5} - x \\) into \\( 4x + 3y = 9 \\) gives \\( x = 0.6 \\).' },
+            { stepNumber: 4, description: 'Find \\( y \\) and \\( z \\)', workingLatex: 'y = \\frac{14}{5} - \\frac{3}{5} = \\frac{11}{5}; \\quad z = 4 - \\frac{3}{5} - \\frac{11}{5} = \\frac{6}{5}', explanation: 'Substituting back gives \\( y = 2.2 \\) and \\( z = 1.2 \\).' },
+            { stepNumber: 5, description: 'Verify in eq1', workingLatex: '2(0.6) + 3(2.2) + 1.2 = 1.2 + 6.6 + 1.2 = 9 \\; \\checkmark', explanation: 'The solution satisfies all three original equations.' }
+        ], finalAnswer: '\\( x = \\frac{3}{5},\\, y = \\frac{11}{5},\\, z = \\frac{6}{5} \\)' }
     },
     {
         id: 'ise2-069', topicRef: 'ise2', topicTitle: 'Simultaneous Equations 69', difficulty: 'Foundation',
         questionText: 'Solve: \\( y = x^2 \\) and \\( x + y = 6 \\).',
         marks: 4, examStyle: false, yearCreated: 2026, tags: [],
         workedSolution: { steps: [
-            { stepNumber: 1, description: 'Substitute y = 6 - x', workingLatex: 'x^2 + x - 6 = 0 \\implies (x+3)(x-2) = 0', explanation: '' },
-            { stepNumber: 2, description: 'Solutions', workingLatex: 'x = 2, y = 4 \\text{ or } x = -3, y = 9', explanation: '' }
-        ], finalAnswer: '(2, 4) and (-3, 9)' }
+            { stepNumber: 1, description: 'Rearrange the linear equation to get \\( y = 6 - x \\) and substitute', workingLatex: 'x^2 = 6 - x \\implies x^2 + x - 6 = 0', explanation: 'Substituting into \\( y = x^2 \\) gives a quadratic in \\( x \\).' },
+            { stepNumber: 2, description: 'Factorise the quadratic', workingLatex: '(x+3)(x-2) = 0 \\implies x = -3 \\text{ or } x = 2', explanation: 'The quadratic factors neatly into two linear factors.' },
+            { stepNumber: 3, description: 'Find \\( y \\) for each \\( x \\) value', workingLatex: 'x = 2:\\; y = 4; \\quad x = -3:\\; y = 9', explanation: 'Using \\( y = x^2 \\) gives the \\( y \\)-coordinates.' }
+        ], finalAnswer: '\\( (2, 4) \\) and \\( (-3, 9) \\)' }
     },
     {
         id: 'ise2-070', topicRef: 'ise2', topicTitle: 'Simultaneous Equations 70', difficulty: 'Foundation',
         questionText: 'The line \\( y = 2x + k \\) meets the curve \\( y = x^2 + 3 \\) at exactly one point. Find \\( k \\).',
         marks: 4, examStyle: false, yearCreated: 2026, tags: [],
         workedSolution: { steps: [
-            { stepNumber: 1, description: 'Substitute', workingLatex: 'x^2 + 3 = 2x + k \\implies x^2 - 2x + (3-k) = 0', explanation: '' },
-            { stepNumber: 2, description: 'One point: discriminant = 0', workingLatex: '4 - 4(3-k) = 0 \\implies 4k = 8 \\implies k = 2', explanation: '' }
-        ], finalAnswer: 'k = 2' }
+            { stepNumber: 1, description: 'Set the expressions equal and rearrange', workingLatex: 'x^2 + 3 = 2x + k \\implies x^2 - 2x + (3-k) = 0', explanation: 'Substituting the line into the curve equation gives a quadratic in \\( x \\).' },
+            { stepNumber: 2, description: 'For exactly one intersection, set the discriminant equal to zero', workingLatex: '\\Delta = (-2)^2 - 4(1)(3-k) = 4 - 12 + 4k = 4k - 8', explanation: 'Using \\( b^2 - 4ac \\) with \\( a = 1 \\), \\( b = -2 \\), \\( c = 3 - k \\).' },
+            { stepNumber: 3, description: 'Solve \\( \\Delta = 0 \\)', workingLatex: '4k - 8 = 0 \\implies k = 2', explanation: 'Setting the discriminant to zero and solving gives \\( k = 2 \\).' },
+            { stepNumber: 4, description: 'Verify the point of tangency', workingLatex: 'x^2 - 2x + 1 = 0 \\implies (x-1)^2 = 0 \\implies x = 1,\\; y = 4', explanation: 'With \\( k = 2 \\), the quadratic has a repeated root at \\( x = 1 \\), confirming tangency at \\( (1, 4) \\).' }
+        ], finalAnswer: '\\( k = 2 \\)' }
     },
 ];

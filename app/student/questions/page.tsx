@@ -7,6 +7,7 @@ import { getTopicsForCourse, getQuestionsForCourse } from "@/lib/data/courseData
 import { useCourse } from "@/hooks/useCourse";
 import type { Course } from "@/lib/types";
 import { MathText, MathTextInline } from "@/components/questions/MathText";
+import { CurveDiagram } from "@/components/questions/CurveDiagram";
 import { Badge } from "@/components/ui/badge";
 import { year1TopicCards, year2TopicCards } from "@/lib/data/topicCards";
 
@@ -59,6 +60,24 @@ export default function StudentQuestionBank() {
     topicRefSubcategory ?? subcategoryFilter
   );
   const [selectedTopicRef, setSelectedTopicRef] = useState<string | null>(topicRefParam);
+
+  // When deep-linking with topicRef, sync selectedYear, selectedComponent, selectedSubcategory
+  // from the topic data once it loads (course may load async from localStorage)
+  useEffect(() => {
+    if (topicRefParam && course && allTopics.length > 0) {
+      const t = allTopics.find((t) => t.ref === topicRefParam);
+      if (t) {
+        if (!selectedCourse) setSelectedCourse(course);
+        if (!selectedYear) setSelectedYear(t.module);
+        if (!selectedSubcategory) setSelectedSubcategory(t.subcategory);
+        if (!selectedComponent) {
+          // Derive component id from category
+          const categoryMap: Record<string, string> = { "Pure Mathematics": "pure", "Statistics": "statistics", "Mechanics": "mechanics" };
+          setSelectedComponent(categoryMap[t.category] || "pure");
+        }
+      }
+    }
+  }, [topicRefParam, course, allTopics, selectedCourse, selectedYear, selectedSubcategory, selectedComponent]);
 
   // Restore scroll position when returning from attempt page
   useEffect(() => {

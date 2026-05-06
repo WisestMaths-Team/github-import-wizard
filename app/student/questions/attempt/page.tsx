@@ -5,6 +5,7 @@ import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 import { getQuestionById } from "@/lib/data/questions";
 import { MathText, MathTextInline } from "@/components/questions/MathText";
+import { CurveDiagram } from "@/components/questions/CurveDiagram";
 import { WorkedSolutionPanel } from "@/components/questions/WorkedSolution";
 import { Badge } from "@/components/ui/badge";
 import { Label } from "@/components/ui/label";

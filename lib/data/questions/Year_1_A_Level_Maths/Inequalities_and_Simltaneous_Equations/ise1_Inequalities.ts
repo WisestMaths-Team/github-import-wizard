@@ -23,7 +23,7 @@ export const questions: Question[] = [  // Topic: Algebraic Division
         marks: 2,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['linear inequalities', 'solve', 'set of values'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -39,7 +39,7 @@ export const questions: Question[] = [  // Topic: Algebraic Division
                     explanation: 'Dividing by a positive number does not change the direction of the inequality.'
                 }
             ],
-            finalAnswer: ' x < 5 ',
+            finalAnswer: '\\( x < 5 \\)',
         }
     },
 
@@ -52,7 +52,7 @@ export const questions: Question[] = [  // Topic: Algebraic Division
         marks: 2,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['linear inequalities', 'solve', 'set of values'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -68,7 +68,7 @@ export const questions: Question[] = [  // Topic: Algebraic Division
                     explanation: 'Dividing by a positive number keeps the inequality direction unchanged.'
                 }
             ],
-            finalAnswer: ' x \\geq 4 ',
+            finalAnswer: '\\( x \\geq 4 \\)',
         }
     },
 
@@ -81,7 +81,7 @@ export const questions: Question[] = [  // Topic: Algebraic Division
         marks: 2,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['linear inequalities', 'solve', 'set of values'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -97,7 +97,7 @@ export const questions: Question[] = [  // Topic: Algebraic Division
                     explanation: 'Positive divisor — direction unchanged.'
                 }
             ],
-            finalAnswer: ' x > 3 ',
+            finalAnswer: '\\( x > 3 \\)',
         }
     },
 
@@ -110,7 +110,7 @@ export const questions: Question[] = [  // Topic: Algebraic Division
         marks: 2,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['linear inequalities', 'solve', 'set of values'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -126,7 +126,7 @@ export const questions: Question[] = [  // Topic: Algebraic Division
                     explanation: 'Positive divisor — direction unchanged.'
                 }
             ],
-            finalAnswer: ' x \\leq -1 ',
+            finalAnswer: '\\( x \\leq -1 \\)',
         }
     },
 
@@ -139,7 +139,7 @@ export const questions: Question[] = [  // Topic: Algebraic Division
         marks: 2,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['linear inequalities', 'solve', 'negative coefficient'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -155,7 +155,7 @@ export const questions: Question[] = [  // Topic: Algebraic Division
                     explanation: 'Dividing by a negative number reverses the direction of the inequality.'
                 }
             ],
-            finalAnswer: ' x > 3 ',
+            finalAnswer: '\\( x > 3 \\)',
         }
     },
 
@@ -168,7 +168,7 @@ export const questions: Question[] = [  // Topic: Algebraic Division
         marks: 2,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['linear inequalities', 'solve', 'negative coefficient'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -184,7 +184,7 @@ export const questions: Question[] = [  // Topic: Algebraic Division
                     explanation: 'Dividing by a negative number flips the inequality.'
                 }
             ],
-            finalAnswer: ' x \\leq 3 ',
+            finalAnswer: '\\( x \\leq 3 \\)',
         }
     },
 
@@ -197,7 +197,7 @@ export const questions: Question[] = [  // Topic: Algebraic Division
         marks: 2,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['linear inequalities', 'solve', 'negative coefficient'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -213,7 +213,7 @@ export const questions: Question[] = [  // Topic: Algebraic Division
                     explanation: 'Dividing by a negative reverses the inequality.'
                 }
             ],
-            finalAnswer: ' x < 3 ',
+            finalAnswer: '\\( x < 3 \\)',
         }
     },
 
@@ -226,7 +226,7 @@ export const questions: Question[] = [  // Topic: Algebraic Division
         marks: 2,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['linear inequalities', 'solve', 'negative coefficient'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -242,7 +242,7 @@ export const questions: Question[] = [  // Topic: Algebraic Division
                     explanation: 'Dividing by a negative flips the inequality.'
                 }
             ],
-            finalAnswer: ' x \\geq 3 ',
+            finalAnswer: '\\( x \\geq 3 \\)',
         }
     },
 
@@ -255,7 +255,7 @@ export const questions: Question[] = [  // Topic: Algebraic Division
         marks: 2,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['linear inequalities', 'solve', 'x on both sides'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -277,7 +277,7 @@ export const questions: Question[] = [  // Topic: Algebraic Division
                     explanation: 'Positive divisor — direction unchanged.'
                 }
             ],
-            finalAnswer: ' x > 4 ',
+            finalAnswer: '\\( x > 4 \\)',
         }
     },
 
@@ -290,7 +290,7 @@ export const questions: Question[] = [  // Topic: Algebraic Division
         marks: 2,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['linear inequalities', 'solve', 'x on both sides'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -312,7 +312,7 @@ export const questions: Question[] = [  // Topic: Algebraic Division
                     explanation: 'Solution found.'
                 }
             ],
-            finalAnswer: ' x \\leq 5 ',
+            finalAnswer: '\\( x \\leq 5 \\)',
         }
     },
 
@@ -325,7 +325,7 @@ export const questions: Question[] = [  // Topic: Algebraic Division
         marks: 2,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['linear inequalities', 'solve', 'x on both sides'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -347,7 +347,7 @@ export const questions: Question[] = [  // Topic: Algebraic Division
                     explanation: 'Positive divisor — direction unchanged.'
                 }
             ],
-            finalAnswer: ' x < -3 ',
+            finalAnswer: '\\( x < -3 \\)',
         }
     },
 
@@ -360,7 +360,7 @@ export const questions: Question[] = [  // Topic: Algebraic Division
         marks: 2,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['linear inequalities', 'solve', 'x on both sides'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -382,7 +382,7 @@ export const questions: Question[] = [  // Topic: Algebraic Division
                     explanation: 'Rewrite with \\( x \\) on the left.'
                 }
             ],
-            finalAnswer: ' x \\leq 1 ',
+            finalAnswer: '\\( x \\leq 1 \\)',
         }
     },
 
@@ -395,7 +395,7 @@ export const questions: Question[] = [  // Topic: Algebraic Division
         marks: 2,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['linear inequalities', 'solve', 'x on both sides'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -417,7 +417,7 @@ export const questions: Question[] = [  // Topic: Algebraic Division
                     explanation: 'Rewrite with \\( x \\) on the left.'
                 }
             ],
-            finalAnswer: ' x > 3 ',
+            finalAnswer: '\\( x > 3 \\)',
         }
     },
 
@@ -430,7 +430,7 @@ export const questions: Question[] = [  // Topic: Algebraic Division
         marks: 2,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['linear inequalities', 'solve', 'x on both sides'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -452,7 +452,7 @@ export const questions: Question[] = [  // Topic: Algebraic Division
                     explanation: 'Solution found.'
                 }
             ],
-            finalAnswer: ' x \\geq 4 ',
+            finalAnswer: '\\( x \\geq 4 \\)',
         }
     },
 
@@ -465,7 +465,7 @@ export const questions: Question[] = [  // Topic: Algebraic Division
         marks: 2,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['linear inequalities', 'solve', 'x on both sides'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -487,7 +487,7 @@ export const questions: Question[] = [  // Topic: Algebraic Division
                     explanation: 'Rewrite with \\( x \\) on the left.'
                 }
             ],
-            finalAnswer: ' x < -1 ',
+            finalAnswer: '\( x < -1 \)',
         }
     },
 
@@ -504,7 +504,7 @@ export const questions: Question[] = [  // Topic: Algebraic Division
         marks: 3,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['linear inequalities', 'solve', 'number line'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -526,7 +526,7 @@ export const questions: Question[] = [  // Topic: Algebraic Division
                     explanation: 'Open circle because \\( x < 10 \\) (10 is not included).'
                 }
             ],
-            finalAnswer: ' x < 10 ',
+            finalAnswer: '\( x < 10 \)',
         }
     },
 
@@ -539,7 +539,7 @@ export const questions: Question[] = [  // Topic: Algebraic Division
         marks: 3,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['linear inequalities', 'solve', 'number line'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -561,7 +561,7 @@ export const questions: Question[] = [  // Topic: Algebraic Division
                     explanation: 'Open circle because 4 is not included.'
                 }
             ],
-            finalAnswer: ' x > 4 ',
+            finalAnswer: '\( x > 4 \)',
         }
     },
 
@@ -574,7 +574,7 @@ export const questions: Question[] = [  // Topic: Algebraic Division
         marks: 3,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['linear inequalities', 'solve', 'number line'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -596,7 +596,7 @@ export const questions: Question[] = [  // Topic: Algebraic Division
                     explanation: 'Closed circle because \\( x = 4 \\) is included.'
                 }
             ],
-            finalAnswer: ' x \\geq 4 ',
+            finalAnswer: '\( x \\geq 4 \)',
         }
     },
 
@@ -609,7 +609,7 @@ export const questions: Question[] = [  // Topic: Algebraic Division
         marks: 3,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['linear inequalities', 'solve', 'number line'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -631,7 +631,7 @@ export const questions: Question[] = [  // Topic: Algebraic Division
                     explanation: 'Closed circle because \\( x = 2 \\) is included.'
                 }
             ],
-            finalAnswer: ' x \\leq 2 ',
+            finalAnswer: '\( x \\leq 2 \)',
         }
     },
 
@@ -644,7 +644,7 @@ export const questions: Question[] = [  // Topic: Algebraic Division
         marks: 3,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['linear inequalities', 'solve', 'number line', 'negative coefficient'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -666,7 +666,7 @@ export const questions: Question[] = [  // Topic: Algebraic Division
                     explanation: 'Open circle at 3.'
                 }
             ],
-            finalAnswer: ' x > 3 ',
+            finalAnswer: '\( x > 3 \)',
         }
     },
 
@@ -679,7 +679,7 @@ export const questions: Question[] = [  // Topic: Algebraic Division
         marks: 2,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['linear inequalities', 'solve', 'x on both sides'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -701,7 +701,7 @@ export const questions: Question[] = [  // Topic: Algebraic Division
                     explanation: 'Positive divisor — direction unchanged.'
                 }
             ],
-            finalAnswer: ' x < 2 ',
+            finalAnswer: '\( x < 2 \)',
         }
     },
 
@@ -714,7 +714,7 @@ export const questions: Question[] = [  // Topic: Algebraic Division
         marks: 2,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['linear inequalities', 'solve', 'x on both sides'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -736,7 +736,7 @@ export const questions: Question[] = [  // Topic: Algebraic Division
                     explanation: 'Solution found.'
                 }
             ],
-            finalAnswer: ' x < 2 ',
+            finalAnswer: '\( x < 2 \)',
         }
     },
 
@@ -749,7 +749,7 @@ export const questions: Question[] = [  // Topic: Algebraic Division
         marks: 2,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['linear inequalities', 'solve', 'x on both sides'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -771,7 +771,7 @@ export const questions: Question[] = [  // Topic: Algebraic Division
                     explanation: 'Positive divisor — direction unchanged.'
                 }
             ],
-            finalAnswer: ' x \\leq -3 ',
+            finalAnswer: '\( x \\leq -3 \)',
         }
     },
 
@@ -784,7 +784,7 @@ export const questions: Question[] = [  // Topic: Algebraic Division
         marks: 3,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['linear inequalities', 'solve', 'set notation'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -812,7 +812,7 @@ export const questions: Question[] = [  // Topic: Algebraic Division
                     explanation: 'Use curly brackets and a colon for set notation.'
                 }
             ],
-            finalAnswer: ' \\{x : x \\leq \\tfrac{5}{2}\\} ',
+            finalAnswer: '\( \\{x : x \\leq \\tfrac{5}{2}\\} \)',
         }
     },
 
@@ -825,7 +825,7 @@ export const questions: Question[] = [  // Topic: Algebraic Division
         marks: 3,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['linear inequalities', 'solve', 'set notation'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -847,7 +847,7 @@ export const questions: Question[] = [  // Topic: Algebraic Division
                     explanation: 'Positive divisor — direction unchanged.'
                 }
             ],
-            finalAnswer: ' \\{x : x > -\\tfrac{5}{7}\\} ',
+            finalAnswer: '\( \\{x : x > -\\tfrac{5}{7}\\} \)',
         }
     },
 
@@ -864,7 +864,7 @@ export const questions: Question[] = [  // Topic: Algebraic Division
         marks: 3,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['linear inequalities', 'expand brackets', 'solve'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -886,7 +886,7 @@ export const questions: Question[] = [  // Topic: Algebraic Division
                     explanation: 'Solution found.'
                 }
             ],
-            finalAnswer: ' x > 2 ',
+            finalAnswer: '\( x > 2 \)',
         }
     },
 
@@ -899,7 +899,7 @@ export const questions: Question[] = [  // Topic: Algebraic Division
         marks: 3,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['linear inequalities', 'expand brackets', 'solve'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -921,7 +921,7 @@ export const questions: Question[] = [  // Topic: Algebraic Division
                     explanation: 'Solution found.'
                 }
             ],
-            finalAnswer: ' x \\leq 10 ',
+            finalAnswer: '\( x \\leq 10 \)',
         }
     },
 
@@ -934,7 +934,7 @@ export const questions: Question[] = [  // Topic: Algebraic Division
         marks: 3,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['linear inequalities', 'expand brackets', 'set notation'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -956,7 +956,7 @@ export const questions: Question[] = [  // Topic: Algebraic Division
                     explanation: 'Solution expressed in set notation.'
                 }
             ],
-            finalAnswer: ' \\{x : x < 18\\} ',
+            finalAnswer: '\( \\{x : x < 18\\} \)',
         }
     },
 
@@ -969,7 +969,7 @@ export const questions: Question[] = [  // Topic: Algebraic Division
         marks: 3,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['linear inequalities', 'expand brackets', 'solve'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -997,7 +997,7 @@ export const questions: Question[] = [  // Topic: Algebraic Division
                     explanation: 'Positive divisor — direction unchanged.'
                 }
             ],
-            finalAnswer: ' x \\leq \\dfrac{13}{5} ',
+            finalAnswer: '\\( x \\leq \\dfrac{13}{5} \\)',
         }
     },
 
@@ -1010,7 +1010,7 @@ export const questions: Question[] = [  // Topic: Algebraic Division
         marks: 3,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['linear inequalities', 'expand brackets', 'solve'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -1032,7 +1032,7 @@ export const questions: Question[] = [  // Topic: Algebraic Division
                     explanation: 'Positive divisor — direction unchanged.'
                 }
             ],
-            finalAnswer: ' x > 4 ',
+            finalAnswer: '\\( x > 4 \\)',
         }
     },
 
@@ -1045,7 +1045,7 @@ export const questions: Question[] = [  // Topic: Algebraic Division
         marks: 3,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['linear inequalities', 'expand brackets', 'set notation'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -1073,7 +1073,7 @@ export const questions: Question[] = [  // Topic: Algebraic Division
                     explanation: 'Solution expressed in set notation.'
                 }
             ],
-            finalAnswer: ' \\{x : x \\leq 8\\} ',
+            finalAnswer: '\\( \\{x : x \\leq 8\\} \\)',
         }
     },
 
@@ -1086,7 +1086,7 @@ export const questions: Question[] = [  // Topic: Algebraic Division
         marks: 3,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['linear inequalities', 'expand brackets', 'solve'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -1108,7 +1108,7 @@ export const questions: Question[] = [  // Topic: Algebraic Division
                     explanation: 'Rewrite with \\( x \\) on the left.'
                 }
             ],
-            finalAnswer: ' x > 0 ',
+            finalAnswer: '\\( x > 0 \\)',
         }
     },
 
@@ -1121,7 +1121,7 @@ export const questions: Question[] = [  // Topic: Algebraic Division
         marks: 3,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['linear inequalities', 'expand brackets', 'solve'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -1143,7 +1143,7 @@ export const questions: Question[] = [  // Topic: Algebraic Division
                     explanation: 'Positive divisor — direction unchanged.'
                 }
             ],
-            finalAnswer: ' x \\geq 5 ',
+            finalAnswer: '\\( x \\geq 5 \\)',
         }
     },
 
@@ -1156,7 +1156,7 @@ export const questions: Question[] = [  // Topic: Algebraic Division
         marks: 3,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['linear inequalities', 'expand brackets', 'set notation'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -1184,7 +1184,7 @@ export const questions: Question[] = [  // Topic: Algebraic Division
                     explanation: 'Solution in set notation.'
                 }
             ],
-            finalAnswer: ' \\{x : x > 7\\} ',
+            finalAnswer: '\\( \\{x : x > 7\\} \\)',
         }
     },
 
@@ -1197,7 +1197,7 @@ export const questions: Question[] = [  // Topic: Algebraic Division
         marks: 3,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['linear inequalities', 'expand brackets', 'negative coefficient', 'set notation'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -1225,7 +1225,7 @@ export const questions: Question[] = [  // Topic: Algebraic Division
                     explanation: 'Rewrite with \\( x \\) on the left.'
                 }
             ],
-            finalAnswer: ' \\{x : x > 3\\} ',
+            finalAnswer: '\\( \\{x : x > 3\\} \\)',
         }
     },
 
@@ -1242,7 +1242,7 @@ export const questions: Question[] = [  // Topic: Algebraic Division
         marks: 3,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['linear inequalities', 'fractions', 'solve'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -1258,7 +1258,7 @@ export const questions: Question[] = [  // Topic: Algebraic Division
                     explanation: 'Multiplying by a positive number keeps the direction.'
                 }
             ],
-            finalAnswer: ' x < 9 ',
+            finalAnswer: '\\( x < 9 \\)',
         }
     },
 
@@ -1271,7 +1271,7 @@ export const questions: Question[] = [  // Topic: Algebraic Division
         marks: 3,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['linear inequalities', 'fractions', 'solve'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -1293,7 +1293,7 @@ export const questions: Question[] = [  // Topic: Algebraic Division
                     explanation: 'Solution found.'
                 }
             ],
-            finalAnswer: ' x \\geq \\dfrac{13}{2} ',
+            finalAnswer: '\\( x \\geq \\dfrac{13}{2} \\)',
         }
     },
 
@@ -1306,7 +1306,7 @@ export const questions: Question[] = [  // Topic: Algebraic Division
         marks: 3,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['linear inequalities', 'fractions', 'solve'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -1328,7 +1328,7 @@ export const questions: Question[] = [  // Topic: Algebraic Division
                     explanation: 'Solution found.'
                 }
             ],
-            finalAnswer: ' x < 3 ',
+            finalAnswer: '\\( x < 3 \\)',
         }
     },
 
@@ -1341,7 +1341,7 @@ export const questions: Question[] = [  // Topic: Algebraic Division
         marks: 3,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['linear inequalities', 'fractions', 'negative coefficient'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -1363,7 +1363,7 @@ export const questions: Question[] = [  // Topic: Algebraic Division
                     explanation: 'Multiplying by a negative reverses the inequality.'
                 }
             ],
-            finalAnswer: ' x < -1 ',
+            finalAnswer: '\\( x < -1 \\)',
         }
     },
 
@@ -1376,7 +1376,7 @@ export const questions: Question[] = [  // Topic: Algebraic Division
         marks: 4,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['linear inequalities', 'fractions', 'solve'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -1404,7 +1404,7 @@ export const questions: Question[] = [  // Topic: Algebraic Division
                     explanation: 'Rewrite with \\( x \\) on the left.'
                 }
             ],
-            finalAnswer: ' x \\geq 2 ',
+            finalAnswer: '\\( x \\geq 2 \\)',
         }
     },
 
@@ -1417,7 +1417,7 @@ export const questions: Question[] = [  // Topic: Algebraic Division
         marks: 4,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['linear inequalities', 'fractions', 'set notation'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -1445,7 +1445,7 @@ export const questions: Question[] = [  // Topic: Algebraic Division
                     explanation: 'Solution expressed in set notation.'
                 }
             ],
-            finalAnswer: ' \\{x : x > -11\\} ',
+            finalAnswer: '\\( \\{x : x > -11\\} \\)',
         }
     },
 
@@ -1458,7 +1458,7 @@ export const questions: Question[] = [  // Topic: Algebraic Division
         marks: 4,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['linear inequalities', 'fractions', 'solve'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -1486,7 +1486,7 @@ export const questions: Question[] = [  // Topic: Algebraic Division
                     explanation: 'Solution found.'
                 }
             ],
-            finalAnswer: ' x \\leq 10 ',
+            finalAnswer: '\\( x \\leq 10 \\)',
         }
     },
 
@@ -1499,7 +1499,7 @@ export const questions: Question[] = [  // Topic: Algebraic Division
         marks: 4,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['linear inequalities', 'fractions', 'set notation'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -1527,7 +1527,7 @@ export const questions: Question[] = [  // Topic: Algebraic Division
                     explanation: 'Solution in set notation.'
                 }
             ],
-            finalAnswer: ' \\{x : x < -10\\} ',
+            finalAnswer: '\\( \\{x : x < -10\\} \\)',
         }
     },
 
@@ -1540,7 +1540,7 @@ export const questions: Question[] = [  // Topic: Algebraic Division
         marks: 3,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['linear inequalities', 'fractions', 'solve'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -1562,7 +1562,7 @@ export const questions: Question[] = [  // Topic: Algebraic Division
                     explanation: 'Positive divisor — direction unchanged. Rewrite with \\( x \\) on the left.'
                 }
             ],
-            finalAnswer: ' x \\leq -\\dfrac{1}{5} ',
+            finalAnswer: '\\( x \\leq -\\dfrac{1}{5} \\)',
         }
     },
 
@@ -1575,7 +1575,7 @@ export const questions: Question[] = [  // Topic: Algebraic Division
         marks: 4,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['linear inequalities', 'fractions', 'set notation'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -1609,7 +1609,7 @@ export const questions: Question[] = [  // Topic: Algebraic Division
                     explanation: 'Solution in set notation.'
                 }
             ],
-            finalAnswer: ' \\{x : x > -54\\} ',
+            finalAnswer: '\\( \\{x : x > -54\\} \\)',
         }
     },
 
@@ -1626,7 +1626,7 @@ export const questions: Question[] = [  // Topic: Algebraic Division
         marks: 3,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['linear inequalities', 'compound inequality', 'double inequality'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -1642,7 +1642,7 @@ export const questions: Question[] = [  // Topic: Algebraic Division
                     explanation: 'Positive divisor — directions unchanged.'
                 }
             ],
-            finalAnswer: ' -2 < x \\leq 4 ',
+            finalAnswer: '\\( -2 < x \\leq 4 \\)',
         }
     },
 
@@ -1655,7 +1655,7 @@ export const questions: Question[] = [  // Topic: Algebraic Division
         marks: 3,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['linear inequalities', 'compound inequality', 'double inequality'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -1671,7 +1671,7 @@ export const questions: Question[] = [  // Topic: Algebraic Division
                     explanation: 'Positive divisor — directions unchanged.'
                 }
             ],
-            finalAnswer: ' 2 \\leq x < 5 ',
+            finalAnswer: '\\( 2 \\leq x < 5 \\)',
         }
     },
 
@@ -1684,7 +1684,7 @@ export const questions: Question[] = [  // Topic: Algebraic Division
         marks: 3,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['linear inequalities', 'compound inequality', 'negative coefficient', 'set notation'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -1706,7 +1706,7 @@ export const questions: Question[] = [  // Topic: Algebraic Division
                     explanation: 'Write smaller value on the left.'
                 }
             ],
-            finalAnswer: ' \\{x : -2 < x \\leq 3\\} ',
+            finalAnswer: '\\( \\{x : -2 < x \\leq 3\\} \\)',
         }
     },
 
@@ -1719,7 +1719,7 @@ export const questions: Question[] = [  // Topic: Algebraic Division
         marks: 3,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['linear inequalities', 'compound inequality', 'double inequality'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -1735,7 +1735,7 @@ export const questions: Question[] = [  // Topic: Algebraic Division
                     explanation: 'Positive divisor — directions unchanged.'
                 }
             ],
-            finalAnswer: ' -1 < x < 3 ',
+            finalAnswer: '\\( -1 < x < 3 \\)',
         }
     },
 
@@ -1748,7 +1748,7 @@ export const questions: Question[] = [  // Topic: Algebraic Division
         marks: 3,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['linear inequalities', 'compound inequality', 'set notation'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -1764,7 +1764,7 @@ export const questions: Question[] = [  // Topic: Algebraic Division
                     explanation: 'Positive divisor — directions unchanged.'
                 }
             ],
-            finalAnswer: ' \\{x : 3 \\leq x < 6\\} ',
+            finalAnswer: '\\( \\{x : 3 \\leq x < 6\\} \\)',
         }
     },
 
@@ -1777,7 +1777,7 @@ export const questions: Question[] = [  // Topic: Algebraic Division
         marks: 3,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['linear inequalities', 'compound inequality', 'negative coefficient'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -1799,7 +1799,7 @@ export const questions: Question[] = [  // Topic: Algebraic Division
                     explanation: 'Write smaller value on the left.'
                 }
             ],
-            finalAnswer: ' -4 \\leq x < 3 ',
+            finalAnswer: '\\( -4 \\leq x < 3 \\)',
         }
     },
 
@@ -1812,7 +1812,7 @@ export const questions: Question[] = [  // Topic: Algebraic Division
         marks: 3,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['linear inequalities', 'compound inequality', 'set notation'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -1828,7 +1828,7 @@ export const questions: Question[] = [  // Topic: Algebraic Division
                     explanation: 'Positive divisor — directions unchanged.'
                 }
             ],
-            finalAnswer: ' \\{x : -\\tfrac{1}{3} \\leq x \\leq \\tfrac{2}{3}\\} ',
+            finalAnswer: '\\( \\{x : -\\tfrac{1}{3} \\leq x \\leq \\tfrac{2}{3}\\} \\)',
         }
     },
 
@@ -1841,7 +1841,7 @@ export const questions: Question[] = [  // Topic: Algebraic Division
         marks: 3,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['linear inequalities', 'compound inequality', 'negative coefficient'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -1863,7 +1863,7 @@ export const questions: Question[] = [  // Topic: Algebraic Division
                     explanation: 'Write smaller value on the left.'
                 }
             ],
-            finalAnswer: ' -1 < x \\leq 6 ',
+            finalAnswer: '\\( -1 < x \\leq 6 \\)',
         }
     },
 
@@ -1876,7 +1876,7 @@ export const questions: Question[] = [  // Topic: Algebraic Division
         marks: 3,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['linear inequalities', 'compound inequality', 'set notation'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -1892,7 +1892,7 @@ export const questions: Question[] = [  // Topic: Algebraic Division
                     explanation: 'Positive divisor — directions unchanged.'
                 }
             ],
-            finalAnswer: ' \\{x : -1 < x < 9\\} ',
+            finalAnswer: '\\( \\{x : -1 < x < 9\\} \\)',
         }
     },
 
@@ -1905,7 +1905,7 @@ export const questions: Question[] = [  // Topic: Algebraic Division
         marks: 3,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['linear inequalities', 'compound inequality', 'fractions'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -1921,7 +1921,7 @@ export const questions: Question[] = [  // Topic: Algebraic Division
                     explanation: 'Isolate \\( x \\).'
                 }
             ],
-            finalAnswer: ' -9 < x \\leq 5 ',
+            finalAnswer: '\\( -9 < x \\leq 5 \\)',
         }
     },
 
@@ -1934,7 +1934,7 @@ export const questions: Question[] = [  // Topic: Algebraic Division
         marks: 3,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['linear inequalities', 'compound inequality', 'fractions', 'set notation'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -1956,7 +1956,7 @@ export const questions: Question[] = [  // Topic: Algebraic Division
                     explanation: 'Positive divisor — directions unchanged.'
                 }
             ],
-            finalAnswer: ' \\{x : 2 \\leq x < 6\\} ',
+            finalAnswer: '\\( \\{x : 2 \\leq x < 6\\} \\)',
         }
     },
 
@@ -1969,7 +1969,7 @@ export const questions: Question[] = [  // Topic: Algebraic Division
         marks: 3,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['linear inequalities', 'compound inequality', 'negative coefficient'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -1991,7 +1991,7 @@ export const questions: Question[] = [  // Topic: Algebraic Division
                     explanation: 'Write smaller value on the left.'
                 }
             ],
-            finalAnswer: ' -2 < x \\leq \\dfrac{7}{4} ',
+            finalAnswer: '\\( -2 < x \\leq \\dfrac{7}{4} \\)',
         }
     },
 
@@ -2004,7 +2004,7 @@ export const questions: Question[] = [  // Topic: Algebraic Division
         marks: 3,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['linear inequalities', 'compound inequality', 'interval notation'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -2026,7 +2026,7 @@ export const questions: Question[] = [  // Topic: Algebraic Division
                     explanation: 'Round bracket means \\( -\\tfrac{11}{2} \\) is excluded; square bracket means 3 is included.'
                 }
             ],
-            finalAnswer: ' \\left(-\\dfrac{11}{2},\\, 3\\right] ',
+            finalAnswer: '\\( \\left(-\\dfrac{11}{2},\\, 3\\right] \\)',
         }
     },
 
@@ -2039,7 +2039,7 @@ export const questions: Question[] = [  // Topic: Algebraic Division
         marks: 3,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['linear inequalities', 'compound inequality', 'interval notation'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -2061,7 +2061,7 @@ export const questions: Question[] = [  // Topic: Algebraic Division
                     explanation: 'Square brackets on both sides since both endpoints are included.'
                 }
             ],
-            finalAnswer: ' [-4,\\, 5] ',
+            finalAnswer: '\\( [-4,\\, 5] \\)',
         }
     },
 
@@ -2074,7 +2074,7 @@ export const questions: Question[] = [  // Topic: Algebraic Division
         marks: 3,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['linear inequalities', 'compound inequality', 'negative coefficient', 'set notation'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -2096,7 +2096,7 @@ export const questions: Question[] = [  // Topic: Algebraic Division
                     explanation: 'Write smaller value on the left.'
                 }
             ],
-            finalAnswer: ' \\{x : -5 < x \\leq 3\\} ',
+            finalAnswer: '\\( \\{x : -5 < x \\leq 3\\} \\)',
         }
     },
 
@@ -2113,7 +2113,7 @@ export const questions: Question[] = [  // Topic: Algebraic Division
         marks: 4,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['linear inequalities', 'simultaneous inequalities', 'set notation'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -2141,7 +2141,7 @@ export const questions: Question[] = [  // Topic: Algebraic Division
                     explanation: 'Both endpoints are strict (open) inequalities.'
                 }
             ],
-            finalAnswer: ' \\{x : -2 < x < 4\\} ',
+            finalAnswer: '\\( \\{x : -2 < x < 4\\} \\)',
         }
     },
 
@@ -2154,7 +2154,7 @@ export const questions: Question[] = [  // Topic: Algebraic Division
         marks: 4,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['linear inequalities', 'simultaneous inequalities', 'set notation'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -2182,7 +2182,7 @@ export const questions: Question[] = [  // Topic: Algebraic Division
                     explanation: 'Open bracket at 2 (strict), closed at 5 (inclusive).'
                 }
             ],
-            finalAnswer: ' \\{x : 2 < x \\leq 5\\} ',
+            finalAnswer: '\\( \\{x : 2 < x \\leq 5\\} \\)',
         }
     },
 
@@ -2195,7 +2195,7 @@ export const questions: Question[] = [  // Topic: Algebraic Division
         marks: 4,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['linear inequalities', 'simultaneous inequalities', 'set notation'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -2223,7 +2223,7 @@ export const questions: Question[] = [  // Topic: Algebraic Division
                     explanation: 'Both endpoints are inclusive.'
                 }
             ],
-            finalAnswer: ' \\{x : -2 \\leq x \\leq 5\\} ',
+            finalAnswer: '\\( \\{x : -2 \\leq x \\leq 5\\} \\)',
         }
     },
 
@@ -2236,7 +2236,7 @@ export const questions: Question[] = [  // Topic: Algebraic Division
         marks: 4,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['linear inequalities', 'simultaneous inequalities', 'set notation'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -2258,7 +2258,7 @@ export const questions: Question[] = [  // Topic: Algebraic Division
                     explanation: 'Both endpoints are strict (open).'
                 }
             ],
-            finalAnswer: ' \\{x : -3 < x < 4\\} ',
+            finalAnswer: '\\( \\{x : -3 < x < 4\\} \\)',
         }
     },
 
@@ -2271,7 +2271,7 @@ export const questions: Question[] = [  // Topic: Algebraic Division
         marks: 4,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['linear inequalities', 'simultaneous inequalities', 'set notation'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -2293,7 +2293,7 @@ export const questions: Question[] = [  // Topic: Algebraic Division
                     explanation: 'Overlap of \\( x > 1 \\) and \\( x \\leq 2 \\).'
                 }
             ],
-            finalAnswer: ' \\{x : 1 < x \\leq 2\\} ',
+            finalAnswer: '\\( \\{x : 1 < x \\leq 2\\} \\)',
         }
     },
 
@@ -2306,7 +2306,7 @@ export const questions: Question[] = [  // Topic: Algebraic Division
         marks: 4,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['linear inequalities', 'simultaneous inequalities', 'set notation'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -2334,7 +2334,7 @@ export const questions: Question[] = [  // Topic: Algebraic Division
                     explanation: 'Only the stricter condition applies.'
                 }
             ],
-            finalAnswer: ' \\{x : x > 7\\} ',
+            finalAnswer: '\\( \\{x : x > 7\\} \\)',
         }
     },
 
@@ -2347,7 +2347,7 @@ export const questions: Question[] = [  // Topic: Algebraic Division
         marks: 4,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['linear inequalities', 'simultaneous inequalities', 'set notation'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -2369,7 +2369,7 @@ export const questions: Question[] = [  // Topic: Algebraic Division
                     explanation: 'There is no value of \\( x \\) that is simultaneously less than \\(-2\\) and at least 2.'
                 }
             ],
-            finalAnswer: 'No solution — the two inequalities cannot both be satisfied simultaneously.',
+            finalAnswer: '\( No solution — the two inequalities cannot both be satisfied simultaneously. \)',
         }
     },
 
@@ -2382,7 +2382,7 @@ export const questions: Question[] = [  // Topic: Algebraic Division
         marks: 4,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['linear inequalities', 'simultaneous inequalities', 'set notation'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -2404,7 +2404,7 @@ export const questions: Question[] = [  // Topic: Algebraic Division
                     explanation: 'Overlap of \\( x \\geq 3 \\) and \\( x \\leq 5 \\). Both endpoints inclusive.'
                 }
             ],
-            finalAnswer: ' \\{x : 3 \\leq x \\leq 5\\} ',
+            finalAnswer: '\\( \\{x : 3 \\leq x \\leq 5\\} \\)',
         }
     },
 
@@ -2417,29 +2417,41 @@ export const questions: Question[] = [  // Topic: Algebraic Division
         marks: 5,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['linear inequalities', 'simultaneous inequalities', 'expand brackets', 'set notation'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
                     stepNumber: 1,
-                    description: 'Solve \\( 2(x + 3) > x + 8 \\). Expand: \\( 2x + 6 > x + 8 \\).',
-                    workingLatex: 'x > 2',
-                    explanation: 'Subtract \\( x \\) and 6 from both sides.'
+                    description: 'Expand the first inequality \\( 2(x + 3) > x + 8 \\).',
+                    workingLatex: '2x + 6 > x + 8',
+                    explanation: 'Distribute the 2 across the bracket.'
                 },
                 {
                     stepNumber: 2,
-                    description: 'Solve \\( 3(x - 1) \\leq 2(x + 4) \\). Expand: \\( 3x - 3 \\leq 2x + 8 \\).',
-                    workingLatex: 'x \\leq 11',
-                    explanation: 'Subtract \\( 2x \\), add 3 to both sides.'
+                    description: 'Solve for \\( x \\): subtract \\( x \\) and 6 from both sides.',
+                    workingLatex: 'x > 2',
+                    explanation: 'Collect \\( x \\)-terms on the left and constants on the right.'
                 },
                 {
                     stepNumber: 3,
+                    description: 'Expand the second inequality \\( 3(x - 1) \\leq 2(x + 4) \\).',
+                    workingLatex: '3x - 3 \\leq 2x + 8',
+                    explanation: 'Distribute on each side.'
+                },
+                {
+                    stepNumber: 4,
+                    description: 'Solve for \\( x \\): subtract \\( 2x \\) and add 3 to both sides.',
+                    workingLatex: 'x \\leq 11',
+                    explanation: 'Collect \\( x \\)-terms on the left and constants on the right.'
+                },
+                {
+                    stepNumber: 5,
                     description: 'Combine both conditions and write in set notation.',
                     workingLatex: '2 < x \\leq 11 \\quad \\Rightarrow \\quad \\{x : 2 < x \\leq 11\\}',
                     explanation: 'Overlap of \\( x > 2 \\) and \\( x \\leq 11 \\).'
                 }
             ],
-            finalAnswer: ' \\{x : 2 < x \\leq 11\\} ',
+            finalAnswer: '\\( \\{x : 2 < x \\leq 11\\} \\)',
         }
     },
 
@@ -2452,29 +2464,41 @@ export const questions: Question[] = [  // Topic: Algebraic Division
         marks: 5,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['linear inequalities', 'simultaneous inequalities', 'expand brackets', 'fractions', 'set notation'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
                     stepNumber: 1,
-                    description: 'Solve \\( 4(2x - 1) < 3(3x + 2) \\). Expand: \\( 8x - 4 < 9x + 6 \\).',
-                    workingLatex: '-4 - 6 < 9x - 8x \\Rightarrow -10 < x \\Rightarrow x > -10',
-                    explanation: 'Subtract \\( 8x \\) and 6 from both sides.'
+                    description: 'Expand the first inequality \\( 4(2x - 1) < 3(3x + 2) \\).',
+                    workingLatex: '8x - 4 < 9x + 6',
+                    explanation: 'Distribute on each side.'
                 },
                 {
                     stepNumber: 2,
-                    description: 'Solve \\( \\dfrac{x + 5}{2} \\geq x - 1 \\). Multiply both sides by 2: \\( x + 5 \\geq 2x - 2 \\).',
-                    workingLatex: '5 + 2 \\geq 2x - x \\Rightarrow 7 \\geq x \\Rightarrow x \\leq 7',
-                    explanation: 'Subtract \\( x \\) from both sides: \\( 5 \\geq x - 2 \\), then add 2.'
+                    description: 'Solve for \\( x \\): subtract \\( 8x \\) and 6 from both sides.',
+                    workingLatex: '-10 < x \\Rightarrow x > -10',
+                    explanation: 'Collect \\( x \\)-terms on the right and constants on the left.'
                 },
                 {
                     stepNumber: 3,
+                    description: 'Multiply the second inequality \\( \\dfrac{x + 5}{2} \\geq x - 1 \\) through by 2.',
+                    workingLatex: 'x + 5 \\geq 2x - 2',
+                    explanation: 'Eliminate the fraction by multiplying every term by 2.'
+                },
+                {
+                    stepNumber: 4,
+                    description: 'Solve for \\( x \\): subtract \\( x \\) from both sides and add 2.',
+                    workingLatex: '7 \\geq x \\Rightarrow x \\leq 7',
+                    explanation: 'Collect \\( x \\)-terms on one side and constants on the other.'
+                },
+                {
+                    stepNumber: 5,
                     description: 'Combine both conditions and write in set notation.',
                     workingLatex: '-10 < x \\leq 7 \\quad \\Rightarrow \\quad \\{x : -10 < x \\leq 7\\}',
                     explanation: 'Overlap of \\( x > -10 \\) and \\( x \\leq 7 \\).'
                 }
             ],
-            finalAnswer: ' \\{x : -10 < x \\leq 7\\} ',
+            finalAnswer: '\\( \\{x : -10 < x \\leq 7\\} \\)',
         }
     },
 

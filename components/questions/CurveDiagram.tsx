@@ -252,6 +252,22 @@ export function CurveDiagram({ config }: { config: CurveDiagramConfig }) {
             />
           ))}
 
+          {/* filled regions */}
+          {(config.fills ?? []).map((fill, i) => {
+            const d = fill.points
+              .map(([x, y], j) => `${j === 0 ? "M" : "L"} ${sx(x)} ${sy(y)}`)
+              .join(" ") + " Z";
+            return (
+              <path
+                key={`f${i}`}
+                d={d}
+                fill={fill.color ?? "#0d948833"}
+                opacity={fill.opacity ?? 0.25}
+                stroke="none"
+              />
+            );
+          })}
+
           {/* curves */}
           {(config.curves ?? []).map((curve, i) => {
             const d = curve.points
