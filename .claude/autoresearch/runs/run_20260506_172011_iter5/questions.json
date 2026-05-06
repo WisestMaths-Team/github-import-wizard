@@ -1,0 +1,216 @@
+[
+  {
+    "id": "Q1",
+    "topics": [
+      "Differentiation",
+      "Integration",
+      "Coordinate Geometry"
+    ],
+    "questionText": "The curve C has equation y = x\u00b3 \u2212 6x\u00b2 + 9x.\n\n(a) Find the coordinates of the stationary points of C and determine the nature of each. [4]\n\n(b) The curve C meets the x-axis at the origin O and at a further point Q. Find the exact area of the region enclosed between C and the x-axis between O and Q. [3]\n\n(c) The tangent to C at the origin meets C again at the point P. Show that the area of the region enclosed between the chord OP and the curve C is exactly 16 times the area found in part (b). [5]",
+    "parts": [
+      {
+        "label": "(a)",
+        "text": "Find the coordinates of the stationary points of C: y = x\u00b3 \u2212 6x\u00b2 + 9x and determine the nature of each.",
+        "marks": 4
+      },
+      {
+        "label": "(b)",
+        "text": "The curve C meets the x-axis at O and at a further point Q. Find the exact area of the region enclosed between C and the x-axis between O and Q.",
+        "marks": 3
+      },
+      {
+        "label": "(c)",
+        "text": "The tangent to C at the origin meets C again at the point P. Show that the area of the region enclosed between the chord OP and the curve C is exactly 16 times the area found in part (b).",
+        "marks": 5
+      }
+    ],
+    "totalMarks": 12,
+    "insightStep": "Part (c) requires recognising that the tangent y = 9x meets C where x\u00b3 \u2212 6x\u00b2 + 9x = 9x reduces to x\u00b2(x \u2212 6) = 0 \u2014 the repeated root at the origin reflects the tangency, and the simple root x = 6 gives P. The student must realise the tangent revisits the cubic, not just at the touching point.",
+    "difficultyAudit": "A purely mechanical student can do (a) but will likely substitute the tangent equation as a quadratic instead of recognising that the cubic factors with x\u00b2 (the tangent contact). Without this insight (b) and (c) cannot be linked, breaking the 16\u00d7 claim.",
+    "cleanlinessAudit": "Stationary points x = 1, 3 are integers (so substitution into the cubic is integer); integration limits 0, 3 and 0, 6 are integers (so x\u00b3 and x\u2074 evaluate cleanly to 27, 81, 216, 1296); intermediate fraction 27/4 has denominator \u2264 8; final figure 108 is an integer; ratio 16 is integer. No fractional input is raised to power \u2265 2.",
+    "workedSolution": "(a) f(x) = x\u00b3 \u2212 6x\u00b2 + 9x.\nf'(x) = 3x\u00b2 \u2212 12x + 9 = 3(x \u2212 1)(x \u2212 3).\nf'(x) = 0 gives x = 1 or x = 3.\nf(1) = 1 \u2212 6 + 9 = 4 and f(3) = 27 \u2212 54 + 27 = 0.\nf''(x) = 6x \u2212 12; f''(1) = \u22126 < 0 (local maximum), f''(3) = 6 > 0 (local minimum).\nStationary points: (1, 4) local maximum and (3, 0) local minimum.\n\n(b) C meets the x-axis where x\u00b3 \u2212 6x\u00b2 + 9x = 0, i.e. x(x \u2212 3)\u00b2 = 0, so x = 0 or x = 3. Hence Q = (3, 0).\nOn [0, 3], f(x) = x(x \u2212 3)\u00b2 \u2265 0, so the curve lies on or above the x-axis.\nArea = \u222b\u2080\u00b3 (x\u00b3 \u2212 6x\u00b2 + 9x) dx = [x\u2074/4 \u2212 2x\u00b3 + 9x\u00b2/2]\u2080\u00b3\n= 81/4 \u2212 54 + 81/2 = 81/4 \u2212 216/4 + 162/4 = 27/4.\n\n(c) Tangent at O: f'(0) = 9 and f(0) = 0, so tangent T: y = 9x.\nIntersect with C: x\u00b3 \u2212 6x\u00b2 + 9x = 9x \u21d2 x\u00b3 \u2212 6x\u00b2 = 0 \u21d2 x\u00b2(x \u2212 6) = 0.\nSo x = 0 (tangent contact, double root) or x = 6, giving P = (6, 54).\nOn [0, 6], 9x \u2212 (x\u00b3 \u2212 6x\u00b2 + 9x) = \u2212x\u00b3 + 6x\u00b2 = x\u00b2(6 \u2212 x) \u2265 0, so T lies on or above C.\nArea between chord OP and C = \u222b\u2080\u2076 (9x \u2212 (x\u00b3 \u2212 6x\u00b2 + 9x)) dx = \u222b\u2080\u2076 (6x\u00b2 \u2212 x\u00b3) dx\n= [2x\u00b3 \u2212 x\u2074/4]\u2080\u2076 = 432 \u2212 324 = 108.\nRatio = 108 \u00f7 (27/4) = 108 \u00d7 4/27 = 432/27 = 16. Hence the area in (c) is exactly 16 \u00d7 area in (b), as required.",
+    "answers": [
+      "(a) (1, 4) local maximum, (3, 0) local minimum",
+      "(b) 27/4",
+      "(c) Shown: area between chord OP and C is 108 = 16 \u00d7 27/4"
+    ]
+  },
+  {
+    "id": "Q2",
+    "topics": [
+      "Coordinate Geometry",
+      "Algebra & Functions (Discriminant)"
+    ],
+    "questionText": "The circle S has equation x\u00b2 + y\u00b2 \u2212 6x \u2212 4y + 8 = 0.\n\n(a) Show that S has centre (3, 2) and radius \u221a5. [3]\n\n(b) Show that the line y = 2x + c is tangent to S if and only if c\u00b2 + 8c \u2212 9 = 0, and hence find the two values of c for which y = 2x + c is a tangent to S. [5]\n\n(c) Let A and B be the points of tangency of the two tangent lines from part (b). Find the coordinates of A and B and the exact length AB. [4]",
+    "parts": [
+      {
+        "label": "(a)",
+        "text": "Show that x\u00b2 + y\u00b2 \u2212 6x \u2212 4y + 8 = 0 has centre (3, 2) and radius \u221a5.",
+        "marks": 3
+      },
+      {
+        "label": "(b)",
+        "text": "Show that y = 2x + c is tangent to S if and only if c\u00b2 + 8c \u2212 9 = 0, and find the two values of c.",
+        "marks": 5
+      },
+      {
+        "label": "(c)",
+        "text": "Find the coordinates of the points of tangency A and B and the exact length AB.",
+        "marks": 4
+      }
+    ],
+    "totalMarks": 12,
+    "insightStep": "Part (b) fuses coordinate geometry with algebra by reformulating tangency as 'discriminant of the resulting quadratic equals zero'. Part (c) requires noticing that the perpendicular from the centre to a tangent meets it at the tangency point, so the line through the centre with gradient \u22121/2 cuts both tangents at A and B, which are then diametrically opposite.",
+    "difficultyAudit": "A mechanical student can complete the square in (a) but must abandon the substitute-and-solve algorithm in (c): there is no point of intersection of the two tangents (they are parallel), so the student must reframe \u2014 drop a perpendicular from the centre, intersect with each tangent, and recognise A, B as endpoints of a diameter. Choosing this approach is the non-routine step.",
+    "cleanlinessAudit": "All circle data integer; quadratic in c factorises to give integer c = 1, c = \u22129; perpendicular line x + 2y = 7 has integer coefficients; A = (1, 3) and B = (5, 1) are integer pairs; AB = 2\u221a5 is a clean surd. No value is raised to a power \u2265 2 except integers and \u221a5 (whose square is 5).",
+    "workedSolution": "(a) x\u00b2 + y\u00b2 \u2212 6x \u2212 4y + 8 = 0.\nComplete the square: (x \u2212 3)\u00b2 \u2212 9 + (y \u2212 2)\u00b2 \u2212 4 + 8 = 0 \u21d2 (x \u2212 3)\u00b2 + (y \u2212 2)\u00b2 = 5.\nThis is a circle with centre (3, 2) and radius \u221a5.\n\n(b) Substitute y = 2x + c into (x \u2212 3)\u00b2 + (y \u2212 2)\u00b2 = 5:\n(x \u2212 3)\u00b2 + (2x + c \u2212 2)\u00b2 = 5\nx\u00b2 \u2212 6x + 9 + 4x\u00b2 + 4(c \u2212 2)x + (c \u2212 2)\u00b2 = 5\n5x\u00b2 + (4c \u2212 14)x + (c\u00b2 \u2212 4c + 8) = 0.\nTangency requires discriminant = 0:\n(4c \u2212 14)\u00b2 \u2212 20(c\u00b2 \u2212 4c + 8) = 0\n16c\u00b2 \u2212 112c + 196 \u2212 20c\u00b2 + 80c \u2212 160 = 0\n\u22124c\u00b2 \u2212 32c + 36 = 0\nc\u00b2 + 8c \u2212 9 = 0.\nFactorise: (c + 9)(c \u2212 1) = 0, so c = 1 or c = \u22129.\n\n(c) The two tangents are y = 2x + 1 and y = 2x \u2212 9 (parallel, gradient 2).\nThe line through the centre (3, 2) perpendicular to both has gradient \u22121/2:\ny \u2212 2 = \u22121/2(x \u2212 3) \u21d2 x + 2y = 7.\nIntersection with y = 2x + 1: x + 2(2x + 1) = 7 \u21d2 5x = 5 \u21d2 x = 1, y = 3. So A = (1, 3).\nIntersection with y = 2x \u2212 9: x + 2(2x \u2212 9) = 7 \u21d2 5x = 25 \u21d2 x = 5, y = 1. So B = (5, 1).\nAB = \u221a((5 \u2212 1)\u00b2 + (1 \u2212 3)\u00b2) = \u221a(16 + 4) = \u221a20 = 2\u221a5.\n(Note: AB equals the diameter, confirming A and B are diametrically opposite.)",
+    "answers": [
+      "(a) Shown: centre (3, 2), radius \u221a5",
+      "(b) c = 1 or c = \u22129",
+      "(c) A = (1, 3), B = (5, 1), AB = 2\u221a5"
+    ]
+  },
+  {
+    "id": "Q3",
+    "topics": [
+      "Sequences & Series (Geometric)",
+      "Exponentials & Logarithms"
+    ],
+    "questionText": "The first three terms of a geometric sequence have sum 28. The sum of the logarithms (base 2) of these three terms is 9.\n\n(a) Show that the common ratio r satisfies 2r\u00b2 \u2212 5r + 2 = 0, and hence find the two possible values of r. [5]\n\n(b) Write down the first three terms of the sequence in each of the two cases. [2]\n\n(c) For the sequence with r > 1, find the smallest positive integer n such that the sum of the first n terms exceeds 4000. [4]",
+    "parts": [
+      {
+        "label": "(a)",
+        "text": "Show that the common ratio r satisfies 2r\u00b2 \u2212 5r + 2 = 0 and find the two possible values of r.",
+        "marks": 5
+      },
+      {
+        "label": "(b)",
+        "text": "Write down the first three terms in each of the two cases.",
+        "marks": 2
+      },
+      {
+        "label": "(c)",
+        "text": "For the sequence with r > 1, find the smallest positive integer n such that the sum of the first n terms exceeds 4000.",
+        "marks": 4
+      }
+    ],
+    "totalMarks": 11,
+    "insightStep": "In (a), recognising that log\u2082(a) + log\u2082(ar) + log\u2082(ar\u00b2) = log\u2082(a\u00b3r\u00b3) = 3 log\u2082(ar) collapses the three log terms into a single product condition ar = 8 \u2014 a one-line algebraic compression that turns two unknowns into a one-equation problem. Mechanically writing out the three logs as separate terms gives the same answer but is the obvious route; the elegant insight is that the log-sum is a log-product.",
+    "difficultyAudit": "A student following an algorithm could grind out the system but must still spot the log-sum-to-product simplification or face an ugly algebraic mess. Part (c) requires combining the geometric sum formula with reasoning about powers of 2 (n found by checking 2\u2079 < 1001 < 2\u00b9\u2070), which an algorithmic 'apply S_n formula' student may not link cleanly.",
+    "cleanlinessAudit": "ar = 8 (integer); 2r\u00b2 \u2212 5r + 2 factorises with integer/half rational roots r = 1/2, 2 \u2014 the half is never raised to a power in subsequent working (we use r = 2 in part (c)); a = 4 or 16 (integer); all sequence terms 4, 8, 16 are integers; powers of 2 throughout part (c). No fractional input is raised to a power.",
+    "workedSolution": "(a) Let the three terms be a, ar, ar\u00b2. Then\nlog\u2082(a) + log\u2082(ar) + log\u2082(ar\u00b2) = log\u2082(a \u00b7 ar \u00b7 ar\u00b2) = log\u2082(a\u00b3r\u00b3) = 3 log\u2082(ar) = 9,\nso log\u2082(ar) = 3, giving ar = 8 (i.e. a = 8/r).\nThe sum condition gives a(1 + r + r\u00b2) = 28, so substituting a = 8/r:\n8(1 + r + r\u00b2)/r = 28 \u21d2 8 + 8r + 8r\u00b2 = 28r \u21d2 8r\u00b2 \u2212 20r + 8 = 0 \u21d2 2r\u00b2 \u2212 5r + 2 = 0.\nFactorise: (2r \u2212 1)(r \u2212 2) = 0, giving r = 1/2 or r = 2.\n\n(b) If r = 2, then a = 8/2 = 4, giving terms 4, 8, 16.\nIf r = 1/2, then a = 8/(1/2) = 16, giving terms 16, 8, 4.\n\n(c) Take r = 2 (since r > 1) and a = 4.\nS_n = a(r\u207f \u2212 1)/(r \u2212 1) = 4(2\u207f \u2212 1)/(2 \u2212 1) = 4(2\u207f \u2212 1).\nRequire S_n > 4000:\n4(2\u207f \u2212 1) > 4000 \u21d2 2\u207f > 1001.\n2\u2079 = 512 < 1001 and 2\u00b9\u2070 = 1024 > 1001, so n \u2265 10.\nCheck: S\u2081\u2080 = 4(1024 \u2212 1) = 4092 > 4000 \u2713; S\u2089 = 4(512 \u2212 1) = 2044 < 4000.\nSmallest n = 10.",
+    "answers": [
+      "(a) r = 1/2 or r = 2",
+      "(b) For r = 2: 4, 8, 16. For r = 1/2: 16, 8, 4.",
+      "(c) n = 10"
+    ]
+  },
+  {
+    "id": "Q4",
+    "topics": [
+      "Binomial Expansion",
+      "Differentiation",
+      "Algebra & Functions (Factor Theorem)"
+    ],
+    "questionText": "The curve C has equation y = (1 + x)\u2074.\n\n(a) Find the binomial expansion of (1 + x)\u2074 in ascending powers of x. [2]\n\n(b) Find the equation of the tangent T to C at the point where x = 1. [4]\n\n(c) Show that\n  x\u2074 + 4x\u00b3 + 6x\u00b2 \u2212 28x + 17 = (x \u2212 1)\u00b2(x\u00b2 + 6x + 17),\nand hence prove that the tangent T from part (b) does not meet C at any point other than the tangency point. [5]",
+    "parts": [
+      {
+        "label": "(a)",
+        "text": "Find the binomial expansion of (1 + x)\u2074 in ascending powers of x.",
+        "marks": 2
+      },
+      {
+        "label": "(b)",
+        "text": "Find the equation of the tangent T to C: y = (1 + x)\u2074 at x = 1.",
+        "marks": 4
+      },
+      {
+        "label": "(c)",
+        "text": "Show that x\u2074 + 4x\u00b3 + 6x\u00b2 \u2212 28x + 17 = (x \u2212 1)\u00b2(x\u00b2 + 6x + 17), and hence prove that T does not meet C at any other points.",
+        "marks": 5
+      }
+    ],
+    "totalMarks": 11,
+    "insightStep": "Part (c) requires recognising why x = 1 must be a double root of (1 + x)\u2074 \u2212 (32x \u2212 16) = 0: the tangency itself forces it, so (x \u2212 1)\u00b2 is a forced factor without a single algebraic computation. The student must then complete the polynomial division, then check the discriminant of the quadratic factor to argue 'no further real intersections'. This is geometry \u2192 algebra \u2192 algebra fusion in one chain.",
+    "difficultyAudit": "A mechanical student would expand (1 + x)\u2074 = 32x \u2212 16 into a quartic and try to solve directly, getting stuck. The non-routine step is realising tangency forces the double root (x \u2212 1)\u00b2, which is a geometric-algebraic insight; the discriminant argument at the end is also non-trivial.",
+    "cleanlinessAudit": "Binomial coefficients 1, 4, 6, 4, 1 (integers); tangent gradient 32 and tangent y = 32x \u2212 16 (integers); resulting polynomial has integer coefficients; quotient quadratic x\u00b2 + 6x + 17 has integer coefficients; discriminant \u221232 (integer). No fraction is raised to any power.",
+    "workedSolution": "(a) (1 + x)\u2074 = \u2074C\u2080 + \u2074C\u2081 x + \u2074C\u2082 x\u00b2 + \u2074C\u2083 x\u00b3 + \u2074C\u2084 x\u2074 = 1 + 4x + 6x\u00b2 + 4x\u00b3 + x\u2074.\n\n(b) dy/dx = 4(1 + x)\u00b3.\nAt x = 1: gradient = 4(2)\u00b3 = 32 and y = 2\u2074 = 16.\nTangent T: y \u2212 16 = 32(x \u2212 1), i.e. y = 32x \u2212 16.\n\n(c) Set (1 + x)\u2074 = 32x \u2212 16, using the expansion from (a):\n1 + 4x + 6x\u00b2 + 4x\u00b3 + x\u2074 = 32x \u2212 16\nx\u2074 + 4x\u00b3 + 6x\u00b2 + 4x \u2212 32x + 1 + 16 = 0\nx\u2074 + 4x\u00b3 + 6x\u00b2 \u2212 28x + 17 = 0.    (*)\nSince T is tangent to C at x = 1, x = 1 is a double root of (*), so (x \u2212 1)\u00b2 is a factor.\nDivide x\u2074 + 4x\u00b3 + 6x\u00b2 \u2212 28x + 17 by (x \u2212 1)\u00b2 = x\u00b2 \u2212 2x + 1:\n\u2022 x\u2074 \u00f7 x\u00b2 = x\u00b2; x\u00b2(x\u00b2 \u2212 2x + 1) = x\u2074 \u2212 2x\u00b3 + x\u00b2. Remainder: 6x\u00b3 + 5x\u00b2 \u2212 28x + 17.\n\u2022 6x\u00b3 \u00f7 x\u00b2 = 6x; 6x(x\u00b2 \u2212 2x + 1) = 6x\u00b3 \u2212 12x\u00b2 + 6x. Remainder: 17x\u00b2 \u2212 34x + 17.\n\u2022 17x\u00b2 \u00f7 x\u00b2 = 17; 17(x\u00b2 \u2212 2x + 1) = 17x\u00b2 \u2212 34x + 17. Remainder: 0.\nHence x\u2074 + 4x\u00b3 + 6x\u00b2 \u2212 28x + 17 = (x \u2212 1)\u00b2(x\u00b2 + 6x + 17), as required.\nFor x\u00b2 + 6x + 17, discriminant = 36 \u2212 68 = \u221232 < 0, so this quadratic has no real roots.\nTherefore (*) has only x = 1 as a real solution, so T meets C only at the tangency point. \u25a1",
+    "answers": [
+      "(a) 1 + 4x + 6x\u00b2 + 4x\u00b3 + x\u2074",
+      "(b) y = 32x \u2212 16",
+      "(c) Shown: factorisation gives (x \u2212 1)\u00b2(x\u00b2 + 6x + 17); the quadratic factor has discriminant \u221232 < 0, so x = 1 is the only real intersection."
+    ]
+  },
+  {
+    "id": "Q5",
+    "topics": [
+      "Trigonometry",
+      "Algebra & Functions (Quadratic in disguise)",
+      "Integration"
+    ],
+    "questionText": "(a) Show that the equation 2cos\u00b2\u03b8 + 5sin\u03b8 \u2212 4 = 0 can be written as 2sin\u00b2\u03b8 \u2212 5sin\u03b8 + 2 = 0. [2]\n\n(b) Hence find all solutions to 2cos\u00b2\u03b8 + 5sin\u03b8 \u2212 4 = 0 in the interval 0 \u2264 \u03b8 \u2264 2\u03c0, giving exact answers. [4]\n\n(c) Find all solutions to 2cos\u00b2(2x) + 5sin(2x) \u2212 4 = 0 in the interval 0 \u2264 x \u2264 2\u03c0, giving exact answers. [5]",
+    "parts": [
+      {
+        "label": "(a)",
+        "text": "Show that 2cos\u00b2\u03b8 + 5sin\u03b8 \u2212 4 = 0 can be written as 2sin\u00b2\u03b8 \u2212 5sin\u03b8 + 2 = 0.",
+        "marks": 2
+      },
+      {
+        "label": "(b)",
+        "text": "Hence find all solutions of 2cos\u00b2\u03b8 + 5sin\u03b8 \u2212 4 = 0 in 0 \u2264 \u03b8 \u2264 2\u03c0, giving exact answers.",
+        "marks": 4
+      },
+      {
+        "label": "(c)",
+        "text": "Find all solutions of 2cos\u00b2(2x) + 5sin(2x) \u2212 4 = 0 in 0 \u2264 x \u2264 2\u03c0, giving exact answers.",
+        "marks": 5
+      }
+    ],
+    "totalMarks": 11,
+    "insightStep": "Part (c) requires the student to spot that substituting \u03c6 = 2x converts the equation into the same Pythagorean-quadratic form as part (a) \u2014 the identity is unchanged, only the variable interval is doubled. The non-routine step is realising that x \u2208 [0, 2\u03c0] forces \u03c6 \u2208 [0, 4\u03c0], so each period of sin\u03c6 = 1/2 contributes two solutions, giving four x-values rather than two.",
+    "difficultyAudit": "A purely algorithmic student treating part (c) as 'a separate trig equation' would solve 2cos\u00b2u + 5sinu \u2212 4 = 0 only on [0, 2\u03c0] and miss half the solutions. The fusion is recognising that the identity from (a) carries through unchanged but the interval analysis must be redone.",
+    "cleanlinessAudit": "Coefficients 2, 5, 4 in the trig equation are integers; the quadratic in sin\u03b8 factorises with rational roots 1/2 and 2; angles \u03c0/6, 5\u03c0/6, 13\u03c0/6, 17\u03c0/6 are clean fractions of \u03c0 with denominators \u2264 12, and the corresponding x values \u03c0/12, 5\u03c0/12, 13\u03c0/12, 17\u03c0/12 also have denominator 12 (clean expressions in \u03c0). No fractional value is raised to a power \u2265 2 in the working.",
+    "workedSolution": "(a) Use cos\u00b2\u03b8 = 1 \u2212 sin\u00b2\u03b8:\n2(1 \u2212 sin\u00b2\u03b8) + 5sin\u03b8 \u2212 4 = 0\n2 \u2212 2sin\u00b2\u03b8 + 5sin\u03b8 \u2212 4 = 0\n\u22122sin\u00b2\u03b8 + 5sin\u03b8 \u2212 2 = 0\nMultiply by \u22121: 2sin\u00b2\u03b8 \u2212 5sin\u03b8 + 2 = 0, as required.\n\n(b) Let s = sin\u03b8. Then 2s\u00b2 \u2212 5s + 2 = 0, so (2s \u2212 1)(s \u2212 2) = 0, giving s = 1/2 or s = 2. Reject s = 2 since |sin\u03b8| \u2264 1.\nsin\u03b8 = 1/2 in [0, 2\u03c0] gives \u03b8 = \u03c0/6 or \u03b8 = 5\u03c0/6.\n\n(c) Let \u03c6 = 2x. The equation becomes 2cos\u00b2\u03c6 + 5sin\u03c6 \u2212 4 = 0, which by part (a) is equivalent to 2sin\u00b2\u03c6 \u2212 5sin\u03c6 + 2 = 0, hence sin\u03c6 = 1/2 (rejecting sin\u03c6 = 2).\nx \u2208 [0, 2\u03c0] means \u03c6 = 2x \u2208 [0, 4\u03c0].\nIn [0, 4\u03c0], sin\u03c6 = 1/2 at \u03c6 = \u03c0/6, 5\u03c0/6, 2\u03c0 + \u03c0/6 = 13\u03c0/6, 2\u03c0 + 5\u03c0/6 = 17\u03c0/6.\nHence 2x = \u03c0/6, 5\u03c0/6, 13\u03c0/6, 17\u03c0/6, giving\nx = \u03c0/12, 5\u03c0/12, 13\u03c0/12, 17\u03c0/12.",
+    "answers": [
+      "(a) Shown using cos\u00b2\u03b8 = 1 \u2212 sin\u00b2\u03b8",
+      "(b) \u03b8 = \u03c0/6, 5\u03c0/6",
+      "(c) x = \u03c0/12, 5\u03c0/12, 13\u03c0/12, 17\u03c0/12"
+    ]
+  },
+  {
+    "id": "Q6",
+    "topics": [
+      "Coordinate Geometry",
+      "Algebra & Functions (Discriminant)",
+      "Integration"
+    ],
+    "questionText": "The curve C has equation y = x\u00b2 + 4x + 8.\n\n(a) Show that the line y = mx + 4 is tangent to C for exactly two values of m, and find those values. [4]\n\n(b) Find the coordinates of the two points of tangency P (for the smaller value of m) and Q (for the larger value of m). [3]\n\n(c) Find the exact area of the finite region enclosed between the curve C and the chord PQ. [5]",
+    "parts": [
+      {
+        "label": "(a)",
+        "text": "Show that y = mx + 4 is tangent to C: y = x\u00b2 + 4x + 8 for exactly two values of m, and find them.",
+        "marks": 4
+      },
+      {
+        "label": "(b)",
+        "text": "Find the coordinates of the two points of tangency P (smaller m) and Q (larger m).",
+        "marks": 3
+      },
+      {
+        "label": "(c)",
+        "text": "Find the exact area of the finite region enclosed between C and the chord PQ.",
+        "marks": 5
+      }
+    ],
+    "totalMarks": 12,
+    "insightStep": "Part (a) requires reformulating tangency of a sliding-gradient line as the algebraic condition 'discriminant of the resulting quadratic equals 0', producing a quadratic in m. The non-routine recognition is that the family y = mx + 4 (fixed y-intercept, variable gradient) generically intersects a parabola twice, and tangency is a condition not on (x, y) but on m. Part (c) then re-uses P and Q as integration limits.",
+    "difficultyAudit": "A mechanical student would attempt to find tangents by setting derivative = m, getting 2x + 4 = m and substituting back, which works but is easier to slip on. The discriminant route forces algebraic insight. Part (c) requires noticing that chord-minus-curve simplifies to the clean expression 4 \u2212 x\u00b2 before integrating \u2014 without this, the student integrates the full chord and curve separately and risks arithmetic error.",
+    "cleanlinessAudit": "Curve has integer coefficients; (4 \u2212 m)\u00b2 = 16 gives integer m = 0, 8; tangency points P = (\u22122, 4), Q = (2, 20) both integer; chord y = 4x + 12 integer; integrand simplifies to 4 \u2212 x\u00b2 (integer coefficients), with limits \u00b12 (integer); evaluating x\u00b3/3 at \u00b12 gives \u00b18/3 (denominator 3 \u2264 8); final answer 32/3 (denominator 3 \u2264 8). No fractional input raised to any power: integration of x\u00b2 uses integer limits \u00b12, so no power-trap.",
+    "workedSolution": "(a) Substitute y = mx + 4 into y = x\u00b2 + 4x + 8:\nx\u00b2 + 4x + 8 = mx + 4\nx\u00b2 + (4 \u2212 m)x + 4 = 0.\nThe line is tangent to C iff this quadratic has a repeated root, i.e. discriminant = 0:\n(4 \u2212 m)\u00b2 \u2212 16 = 0 \u21d2 (4 \u2212 m)\u00b2 = 16 \u21d2 4 \u2212 m = \u00b14 \u21d2 m = 0 or m = 8.\nThis gives exactly two values of m, as required.\n\n(b) For m = 0: x\u00b2 + 4x + 4 = 0 \u21d2 (x + 2)\u00b2 = 0 \u21d2 x = \u22122; y = 0(\u22122) + 4 = 4. So P = (\u22122, 4).\nFor m = 8: x\u00b2 \u2212 4x + 4 = 0 \u21d2 (x \u2212 2)\u00b2 = 0 \u21d2 x = 2; y = 8(2) + 4 = 20. So Q = (2, 20).\n\n(c) Chord PQ has gradient (20 \u2212 4)/(2 \u2212 (\u22122)) = 16/4 = 4 and passes through (\u22122, 4):\ny \u2212 4 = 4(x + 2) \u21d2 y = 4x + 12.\nOn the interval [\u22122, 2], chord minus curve = (4x + 12) \u2212 (x\u00b2 + 4x + 8) = 4 \u2212 x\u00b2, which is \u2265 0 throughout (since |x| \u2264 2), so the chord lies on or above the curve.\nArea = \u222b_{\u22122}^{2} (4 \u2212 x\u00b2) dx = [4x \u2212 x\u00b3/3]_{\u22122}^{2}\n     = (8 \u2212 8/3) \u2212 (\u22128 + 8/3)\n     = 16 \u2212 16/3\n     = 32/3.",
+    "answers": [
+      "(a) m = 0 or m = 8",
+      "(b) P = (\u22122, 4), Q = (2, 20)",
+      "(c) 32/3"
+    ]
+  }
+]

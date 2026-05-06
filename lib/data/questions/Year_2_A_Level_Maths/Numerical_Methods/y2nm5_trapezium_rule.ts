@@ -3,7 +3,7 @@ import { Question } from "@/lib/types";
 /**
  * Year 2 — Numerical Methods § 10.5 The Trapezium Rule
  * Ref: y2nm5
- * 70 questions on the trapezium rule for estimating \(\int_{a}^{b} y\,dx\):
+ * 70 questions on the trapezium rule for estimating \(\\int_{a}^{b} y\,dx\):
  *   T = (h/2)[y_0 + 2(y_1 + y_2 + ... + y_{n-1}) + y_n],  h = (b - a)/n.
  * Covers: the formula, counting strips vs ordinates, applying the rule to
  * polynomial/trig/exp/log integrands, comparing with the exact value,

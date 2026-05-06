@@ -107,10 +107,18 @@ QUESTION DESIGN PRINCIPLES
   CORRECT: "The midpoint is \\(M = \\left(\\frac{x_1+x_2}{2}, \\frac{y_1+y_2}{2}\\right)\\)"
   WRONG: "The midpoint is M = \\left(\\frac{x_1+x_2}{2}, \\frac{y_1+y_2}{2}\\right)"
   WRONG: "The midpoint is $M = \\frac{x_1+x_2}{2}$"
-- For multi-line working in correctWorking, put each step on a new line with \\( \\) around the maths. Example: "1. Differentiate: \\(3x^2 \\to 6x\\)\\n2. Simplify: \\(-5x \\to -5\\)"
+- For multi-line working in correctWorking, put each step on a new line with \\( \\) around ALL the maths on that line. Example:
+  "1. Differentiate: \\(\\frac{dy}{dx} = 3x^2 - 6x\\)\\n2. Simplify: \\(\\frac{dy}{dx} = 3x(x - 2)\\)"
+  NOT: "1. Differentiate: \\(\\frac{dy}{dx}\\) = 3x^2 - 6x" — this leaves "= 3x^2 - 6x" bare.
+- The ENTIRE mathematical expression must be inside ONE pair of \\( \\) delimiters. Do NOT split an equation across multiple \\( \\) pairs.
+  CORRECT: "\\(\\frac{dy}{dx} = nx^{n-1}\\)"
+  WRONG: "\\(\\frac{dy}{dx}\\) = nx^(n-1)"
+  WRONG: "\\(\\frac{dy}{dx}\\) = \\(nx^{n-1}\\)"
+- Use curly braces {} for superscripts and subscripts, NOT parentheses: \\(x^{n-1}\\), NOT \\(x^(n-1)\\).
 - Use LaTeX commands like \\frac{}{}, \\sqrt{}, \\int, \\sum for proper mathematical notation.
 - NEVER use the term "FOIL". Instead, show bracket expansion as \\( a(c+d) + b(c+d) \\) — distributing each term in the first bracket across the second bracket.
 - Number your steps clearly: "1. ...", "2. ...", "3. ..." etc.
 - End the correctWorking with a clear statement: "The correct answer is \\( ... \\)."
 - NEVER use dollar sign $ delimiters for maths. ONLY use \\( and \\).
+- NEVER split an equation like \\(\\frac{dy}{dx}\\) = 7x^6. Instead write \\(\\frac{dy}{dx} = 7x^6\\).
 `.trim();

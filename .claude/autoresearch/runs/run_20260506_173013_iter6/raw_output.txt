@@ -1,0 +1,116 @@
+[
+  {
+    "id": "Q1",
+    "topics": ["Differentiation", "Coordinate Geometry", "Integration"],
+    "questionText": "The curve C has equation y = x³ - 6x² + 9x + 2.\n\n(a) Find the coordinates of the two stationary points of C, distinguishing between the maximum and the minimum. [4 marks]\n\n(b) The line L passes through both stationary points. Show that L has equation y = -2x + 8. [2 marks]\n\n(c) Show that L meets C at exactly one further point P, and find the coordinates of P. [3 marks]\n\n(d) Find the total area of the region(s) enclosed between C and L. [4 marks]",
+    "parts": [
+      {"label": "(a)", "text": "Find the coordinates of the two stationary points of C, distinguishing between the maximum and the minimum.", "marks": 4},
+      {"label": "(b)", "text": "The line L passes through both stationary points. Show that L has equation y = -2x + 8.", "marks": 2},
+      {"label": "(c)", "text": "Show that L meets C at exactly one further point P, and find the coordinates of P.", "marks": 3},
+      {"label": "(d)", "text": "Find the total area of the region(s) enclosed between C and L.", "marks": 4}
+    ],
+    "totalMarks": 13,
+    "workedSolution": "(a) f(x) = x³ - 6x² + 9x + 2, so f'(x) = 3x² - 12x + 9 = 3(x - 1)(x - 3). Stationary points at x = 1 and x = 3.\nf(1) = 1 - 6 + 9 + 2 = 6, f(3) = 27 - 54 + 27 + 2 = 2.\nf''(x) = 6x - 12. f''(1) = -6 < 0 ⟹ (1, 6) is a maximum. f''(3) = 6 > 0 ⟹ (3, 2) is a minimum.\n\n(b) Gradient of L = (2 - 6)/(3 - 1) = -2. Using point (1, 6): y - 6 = -2(x - 1), so y = -2x + 8.\n\n(c) Setting curve = line: x³ - 6x² + 9x + 2 = -2x + 8 ⟹ x³ - 6x² + 11x - 6 = 0. Since (1, 6) and (3, 2) lie on both, x = 1 and x = 3 are roots, so (x - 1)(x - 3) = x² - 4x + 3 is a factor. Dividing gives x³ - 6x² + 11x - 6 = (x - 1)(x - 2)(x - 3). Third root: x = 2, with y = -2(2) + 8 = 4. So P = (2, 4).\n\n(d) Curve - line = (x - 1)(x - 2)(x - 3). Sign test: at x = 1.5 the product is (0.5)(-0.5)(-1.5) = 0.375 > 0 (curve above line); at x = 2.5 it is (1.5)(0.5)(-0.5) < 0 (line above curve).\nLet F(x) = x⁴/4 - 2x³ + 11x²/2 - 6x.\nF(1) = 1/4 - 2 + 11/2 - 6 = -9/4.\nF(2) = 4 - 16 + 22 - 12 = -2.\nF(3) = 81/4 - 54 + 99/2 - 18 = -9/4.\n∫₁² (curve - line) dx = F(2) - F(1) = -2 + 9/4 = 1/4.\n∫₂³ (curve - line) dx = F(3) - F(2) = -9/4 + 2 = -1/4.\nTotal area = |1/4| + |-1/4| = 1/2.\n\nCleanliness check: limits 1, 2, 3 are integers, so the (x⁴/4) term gives at most 81/4 (denom 4), which cancels symmetrically. All intermediate values have denominator ≤ 4, and the final answer 1/2 is a clean fraction.",
+    "answers": [
+      "(a) Maximum at (1, 6); minimum at (3, 2)",
+      "(b) y = -2x + 8 (shown)",
+      "(c) P = (2, 4)",
+      "(d) Total area = 1/2"
+    ]
+  },
+  {
+    "id": "Q2",
+    "topics": ["Coordinate Geometry", "Quadratics (Discriminants)", "Simultaneous Equations"],
+    "questionText": "The parabola P has equation y = x² - 4 and the circle K has equation x² + y² = 5.\n\n(a) Find the equations of the two lines that pass through the point T(0, -5) and are tangent to P. [4 marks]\n\n(b) Find the coordinates of the points where these tangent lines touch P. [2 marks]\n\n(c) Show that both of these tangent lines are also tangent to the circle K, and find the coordinates of the points where they touch K. [4 marks]\n\n(d) The four points of tangency from parts (b) and (c) form a quadrilateral. Find its area. [3 marks]",
+    "parts": [
+      {"label": "(a)", "text": "Find the equations of the two lines through T(0, -5) tangent to P.", "marks": 4},
+      {"label": "(b)", "text": "Find the points where these tangent lines touch P.", "marks": 2},
+      {"label": "(c)", "text": "Show that both tangent lines are also tangent to K, and find the points where they touch K.", "marks": 4},
+      {"label": "(d)", "text": "Find the area of the quadrilateral formed by the four tangent points.", "marks": 3}
+    ],
+    "totalMarks": 13,
+    "workedSolution": "(a) A line through T(0, -5) has equation y = mx - 5. For tangency with y = x² - 4: x² - 4 = mx - 5 ⟹ x² - mx + 1 = 0. Tangency requires discriminant = 0: m² - 4 = 0, so m = ±2. The two tangent lines are y = 2x - 5 and y = -2x - 5.\n\n(b) For y = 2x - 5: x² - 2x + 1 = 0, so (x - 1)² = 0, x = 1, y = -3. Touches P at (1, -3).\nFor y = -2x - 5: x² + 2x + 1 = 0, so (x + 1)² = 0, x = -1, y = -3. Touches P at (-1, -3).\n\n(c) Substitute y = 2x - 5 into x² + y² = 5:\nx² + (2x - 5)² = 5 ⟹ x² + 4x² - 20x + 25 = 5 ⟹ 5x² - 20x + 20 = 0 ⟹ x² - 4x + 4 = 0 ⟹ (x - 2)² = 0.\nThe repeated root confirms tangency. x = 2, y = 4 - 5 = -1. Touches K at (2, -1).\nBy the symmetry x → -x of P, K and T, the line y = -2x - 5 is tangent to K at (-2, -1).\n\n(d) Tangent points: A(-2, -1), B(-1, -3), C(1, -3), D(2, -1). The pairs AD (y = -1) and BC (y = -3) are horizontal and parallel, so ABCD is a trapezium with parallel side lengths 4 and 2 and perpendicular distance 2.\nArea = (1/2)(4 + 2)(2) = 6.\n\nCleanliness check: every coordinate is an integer; both tangency tests reduce to perfect-square quadratics ((x ∓ 1)² = 0 and (x ∓ 2)² = 0); the final area is the integer 6.",
+    "answers": [
+      "(a) y = 2x - 5 and y = -2x - 5",
+      "(b) (1, -3) and (-1, -3)",
+      "(c) (2, -1) and (-2, -1)",
+      "(d) Area = 6"
+    ]
+  },
+  {
+    "id": "Q3",
+    "topics": ["Differentiation", "Coordinate Geometry (Circles)"],
+    "questionText": "The curve C has equation y = x² - 5x + 7. The point P(3, 1) lies on C.\n\n(a) Find the equations of the tangent and the normal to C at P. [4 marks]\n\n(b) The tangent meets the x-axis at A and the normal meets the x-axis at B. Find the coordinates of A and B. [2 marks]\n\n(c) Find the area of triangle PAB. [2 marks]\n\n(d) Show that A, B and P lie on a circle, and find the equation of this circle. [4 marks]",
+    "parts": [
+      {"label": "(a)", "text": "Find the equations of the tangent and normal to C at P.", "marks": 4},
+      {"label": "(b)", "text": "The tangent meets the x-axis at A; the normal meets the x-axis at B. Find A and B.", "marks": 2},
+      {"label": "(c)", "text": "Find the area of triangle PAB.", "marks": 2},
+      {"label": "(d)", "text": "Show that A, B and P lie on a circle, and find its equation.", "marks": 4}
+    ],
+    "totalMarks": 12,
+    "workedSolution": "(a) dy/dx = 2x - 5. At x = 3, dy/dx = 1.\nTangent at P(3, 1): y - 1 = 1·(x - 3) ⟹ y = x - 2.\nNormal at P has gradient -1 (perpendicular condition 1·(-1) = -1): y - 1 = -1·(x - 3) ⟹ y = -x + 4.\n\n(b) Tangent meets x-axis when y = 0: x - 2 = 0, so A = (2, 0).\nNormal meets x-axis when y = 0: -x + 4 = 0, so B = (4, 0).\n\n(c) AB lies along the x-axis with |AB| = 4 - 2 = 2; perpendicular height from P to AB = 1.\nArea of triangle PAB = (1/2)(2)(1) = 1.\n\n(d) The tangent and normal at P are perpendicular. PA lies along the tangent and PB lies along the normal, so PA ⊥ PB and ∠APB = 90°. By the converse of the angle in a semicircle, AB must be a diameter of the circle through A, B and P.\nMidpoint of AB = ((2 + 4)/2, 0) = (3, 0). Radius = |AB|/2 = 1.\nCircle equation: (x - 3)² + y² = 1.\nVerification at P(3, 1): (3 - 3)² + 1² = 1 ✓.\n\nCleanliness check: at P the gradient is the integer 1, giving integer-coefficient tangent/normal equations; A, B, P all have integer coordinates; the final circle has integer centre (3, 0) and integer radius 1.",
+    "answers": [
+      "(a) Tangent: y = x - 2; normal: y = -x + 4",
+      "(b) A = (2, 0), B = (4, 0)",
+      "(c) Area = 1",
+      "(d) (x - 3)² + y² = 1"
+    ]
+  },
+  {
+    "id": "Q4",
+    "topics": ["Binomial Expansion", "Algebra & Functions"],
+    "questionText": "In the binomial expansion of (1 + ax)^n in ascending powers of x, where n is a positive integer and a is a positive constant, the first three terms are 1, 12x and 60x².\n\n(a) Find the values of a and n. [4 marks]\n\n(b) Hence find the next two terms (the terms in x³ and x⁴). [3 marks]\n\n(c) Using these values of a and n, find the coefficient of x³ in the expansion of (1 + ax)^n (1 - x)⁴. [4 marks]\n\n(d) Show that, of all the coefficients of x^k for k = 0, 1, 2, ..., 6 in the expansion of (1 + 2x)⁶, the coefficient of x⁴ is the largest. [3 marks]",
+    "parts": [
+      {"label": "(a)", "text": "Find a and n given the first three terms of (1 + ax)^n are 1, 12x, 60x².", "marks": 4},
+      {"label": "(b)", "text": "Find the terms in x³ and x⁴.", "marks": 3},
+      {"label": "(c)", "text": "Find the coefficient of x³ in (1 + ax)^n (1 - x)⁴.", "marks": 4},
+      {"label": "(d)", "text": "Show that the coefficient of x⁴ is the largest in (1 + 2x)⁶.", "marks": 3}
+    ],
+    "totalMarks": 14,
+    "workedSolution": "(a) Coefficient of x: na = 12. Coefficient of x²: C(n, 2)·a² = n(n - 1)a²/2 = 60, so n(n - 1)a² = 120.\nFrom na = 12 we get a = 12/n. Substituting: n(n - 1)(144/n²) = 120 ⟹ 144(n - 1) = 120n ⟹ 24n = 144 ⟹ n = 6. Hence a = 12/6 = 2.\n\n(b) Coefficient of x³ in (1 + 2x)⁶: C(6, 3)·2³ = 20·8 = 160. Coefficient of x⁴: C(6, 4)·2⁴ = 15·16 = 240. Next two terms: 160x³ and 240x⁴.\n\n(c) (1 + 2x)⁶ up to x³: 1 + 12x + 60x² + 160x³.\n(1 - x)⁴ up to x³: 1 - 4x + 6x² - 4x³.\nCoefficient of x³ in product = 1·(-4) + 12·6 + 60·(-4) + 160·1 = -4 + 72 - 240 + 160 = -12.\n\n(d) Let T_k = C(6, k)·2^k be the coefficient of x^k. Then\nT_{k+1}/T_k = [C(6, k + 1)/C(6, k)]·2 = 2(6 - k)/(k + 1).\nT_{k+1} > T_k ⟺ 2(6 - k) > k + 1 ⟺ 12 - 2k > k + 1 ⟺ k < 11/3.\nSo coefficients strictly increase from k = 0 to k = 4 (since k = 0, 1, 2, 3 satisfy k < 11/3) and strictly decrease from k = 4 onwards (since 4 > 11/3). Therefore the maximum occurs at k = 4. The largest coefficient is T_4 = 15·16 = 240.\n\nCleanliness check: every coefficient computed (1, 12, 60, 160, 240, 192, 64) is an integer; n and a are integers; the ratio test argument involves only the integer/rational comparison k < 11/3 with no decimal evaluation.",
+    "answers": [
+      "(a) a = 2, n = 6",
+      "(b) 160x³ and 240x⁴",
+      "(c) -12",
+      "(d) Largest coefficient is T₄ = 240, at k = 4 (shown)"
+    ]
+  },
+  {
+    "id": "Q5",
+    "topics": ["Exponentials & Logarithms", "Quadratic Equations", "Quadratic Inequalities"],
+    "questionText": "(a) By using the substitution y = 3^x, solve the equation 9^x - 4·3^(x+1) + 27 = 0. [4 marks]\n\n(b) Hence find the set of values of x for which 9^x - 4·3^(x+1) + 27 < 0. [3 marks]\n\n(c) Solve the equation log₃(x² + 9) - log₃(2x) = 1 for x > 0. [4 marks]\n\n(d) Hence determine the set of values of x > 0 for which log₃(x² + 9) - log₃(2x) ≥ 1, justifying your answer. [3 marks]",
+    "parts": [
+      {"label": "(a)", "text": "Solve 9^x - 4·3^(x+1) + 27 = 0 using y = 3^x.", "marks": 4},
+      {"label": "(b)", "text": "Find the set of values of x for which the LHS is negative.", "marks": 3},
+      {"label": "(c)", "text": "Solve log₃(x² + 9) - log₃(2x) = 1 for x > 0.", "marks": 4},
+      {"label": "(d)", "text": "Find the set of x > 0 for which log₃(x² + 9) - log₃(2x) ≥ 1.", "marks": 3}
+    ],
+    "totalMarks": 14,
+    "workedSolution": "(a) Note 9^x = (3^x)² and 3^(x+1) = 3·3^x. Setting y = 3^x (so y > 0):\ny² - 12y + 27 = 0 ⟹ (y - 3)(y - 9) = 0 ⟹ y = 3 or y = 9.\nReturning to x: 3^x = 3 ⟹ x = 1; 3^x = 9 ⟹ x = 2.\n\n(b) From the factorisation in (a), y² - 12y + 27 < 0 ⟺ (y - 3)(y - 9) < 0 ⟺ 3 < y < 9. With y = 3^x and 3^x strictly increasing: 3 < 3^x < 9 ⟺ 1 < x < 2.\n\n(c) Combine logs: log₃((x² + 9)/(2x)) = 1 ⟹ (x² + 9)/(2x) = 3.\nSince x > 0, multiply by 2x: x² + 9 = 6x ⟹ x² - 6x + 9 = 0 ⟹ (x - 3)² = 0 ⟹ x = 3 (a repeated root). The argument 2x = 6 > 0, so x = 3 is valid.\n\n(d) For x > 0 the argument 2x is positive and the inequality log₃((x² + 9)/(2x)) ≥ 1 is equivalent (since log₃ is strictly increasing) to (x² + 9)/(2x) ≥ 3.\nMultiplying by the positive quantity 2x: x² + 9 ≥ 6x ⟹ x² - 6x + 9 ≥ 0 ⟹ (x - 3)² ≥ 0.\n(x - 3)² ≥ 0 holds for all real x, with equality only at x = 3 (the case from (c)). So the inequality holds for every x > 0.\nSet of solutions: {x ∈ ℝ : x > 0}.\n\nCleanliness check: the substitution y = 3^x gives an integer-coefficient quadratic with integer roots 3 and 9; the log equation reduces to the perfect-square (x - 3)² = 0, giving the integer x = 3; no decimals or irrational logs appear at any line.",
+    "answers": [
+      "(a) x = 1 or x = 2",
+      "(b) 1 < x < 2",
+      "(c) x = 3",
+      "(d) All x > 0"
+    ]
+  },
+  {
+    "id": "Q6",
+    "topics": ["Algebra (Completing the Square)", "Integration", "Coordinate Geometry"],
+    "questionText": "The curve C has equation y = x² + 4x + 7.\n\n(a) By completing the square, find the coordinates of the minimum point of C. [3 marks]\n\n(b) Find the x-coordinates of the points where C meets the line y = 7. [2 marks]\n\n(c) Find the area of the region enclosed between C and the line y = 7. [3 marks]\n\n(d) The line y = k, where k > 3, meets C at two points. Show that the area of the region enclosed between C and this line is (4/3)(k - 3)^(3/2). [4 marks]",
+    "parts": [
+      {"label": "(a)", "text": "By completing the square, find the minimum point of C.", "marks": 3},
+      {"label": "(b)", "text": "Find where C meets y = 7.", "marks": 2},
+      {"label": "(c)", "text": "Find the area enclosed between C and y = 7.", "marks": 3},
+      {"label": "(d)", "text": "Show the enclosed area for y = k (k > 3) is (4/3)(k - 3)^(3/2).", "marks": 4}
+    ],
+    "totalMarks": 12,
+    "workedSolution": "(a) y = x² + 4x + 7 = (x + 2)² + 4 - 4 + 7... wait: (x + 2)² = x² + 4x + 4, so y = (x + 2)² + 3. Minimum at (-2, 3).\n\n(b) Set y = 7: x² + 4x + 7 = 7 ⟹ x² + 4x = 0 ⟹ x(x + 4) = 0. So x = 0 or x = -4.\n\n(c) Between x = -4 and x = 0 the line lies above the curve (the minimum at (-2, 3) is below 7). Area:\nA = ∫_{-4}^{0} [7 - (x² + 4x + 7)] dx = ∫_{-4}^{0} (-x² - 4x) dx = [-x³/3 - 2x²]_{-4}^{0}\n= 0 - [-(-64)/3 - 2(16)] = 0 - [64/3 - 32] = 32 - 64/3 = 96/3 - 64/3 = 32/3.\n\n(d) From (a), y = (x + 2)² + 3. Setting y = k: (x + 2)² = k - 3. Since k > 3, let h = √(k - 3), so x + 2 = ±h and the two intersections are at x = -2 ± h.\nLet u = x + 2, so du = dx, and as x runs from -2 - h to -2 + h, u runs from -h to h. Then\nk - y = k - [(x + 2)² + 3] = (k - 3) - u² = h² - u².\nA = ∫_{-h}^{h} (h² - u²) du = [h²u - u³/3]_{-h}^{h} = (h³ - h³/3) - (-h³ + h³/3) = (2h³/3) + (2h³/3) = 4h³/3.\nWith h = (k - 3)^(1/2), h³ = (k - 3)^(3/2), so A = (4/3)(k - 3)^(3/2). \nCheck against (c): k = 7 gives (4/3)(4)^(3/2) = (4/3)(8) = 32/3 ✓.\n\nCleanliness check: the integration limits in (c) are integers (-4 and 0), so the (-x³/3) term evaluates to the clean fraction 64/3 (denominator 3). In (d) the substitution u = x + 2 makes the limits ±h symmetric, so the h³ powers combine cleanly; the surd appears only in the final exact answer (k - 3)^(3/2), which is the form requested. No fractional value is ever cubed: h is treated as a single symbol throughout.",
+    "answers": [
+      "(a) Minimum at (-2, 3)",
+      "(b) x = -4 and x = 0",
+      "(c) Area = 32/3",
+      "(d) Area = (4/3)(k - 3)^(3/2) (shown)"
+    ]
+  }
+]

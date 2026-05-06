@@ -738,13 +738,13 @@ export const questions: Question[] = [
                     stepNumber: 6,
                     description: 'Set the factor equal to zero.',
                     workingLatex: '(3 - x)^3 = 0 \\implies 3 - x = 0 \\implies x = 3 \\quad (\\text{triple root})',
-                    explanation: 'The factor \\((3 - x)\\) appears three times, so \\(x = 3\\) is a triple root. A triple root means the curve still crosses the \\(x\\)-axis (unlike a double root which only touches), but it flattens out as it crosses, creating a point of inflection on the axis.'
+                    explanation: 'The factor \\((3 - x)\\) appears three times, so \\(x = 3\\) is a triple root. A triple root means the curve still crosses the \\(x\\)-axis (unlike a double root which only touches), but it flattens out as it crosses.'
                 },
                 {
                     stepNumber: 7,
                     description: 'Summarise the sketch.',
-                    workingLatex: '\\text{Root: } x = 3 \\text{ (triple, crosses with inflection)}; \\quad y\\text{-intercept } (0, 27); \\quad \\text{top-left to bottom-right}',
-                    explanation: 'The curve enters from the top-left, passes through \\((0, 27)\\), then flattens and crosses the \\(x\\)-axis at \\(x = 3\\) with an inflection-type crossing, before falling to the bottom-right. A common mistake is thinking a triple root means the curve touches but does not cross.',
+                    workingLatex: '\\text{Root: } x = 3 \\text{ (triple, crosses and flattens)}; \\quad y\\text{-intercept } (0, 27); \\quad \\text{top-left to bottom-right}',
+                    explanation: 'The curve enters from the top-left, passes through \\((0, 27)\\), then flattens and crosses the \\(x\\)-axis at \\(x = 3\\), before falling to the bottom-right. A common mistake is thinking a triple root means the curve touches but does not cross — it does cross, but flattens out as it does so.',
                     diagram: { xMin: -1, xMax: 6, yMin: -30, yMax: 70, xTicks: [0, 1, 2, 3, 4, 5], yTicks: [-20, 0, 20, 40, 60], curves: [{ points: sample(x => Math.pow(3 - x, 3), -1, 6), color: "#0d9488", width: 2.5 }], points: [{ at: [0, 27], label: "(0, 27)", labelAnchor: "e", color: "#d4775c" }, { at: [3, 0], label: "(3, 0)", labelAnchor: "n", color: "#d4775c" }] }
                 }
             ],
@@ -2874,24 +2874,24 @@ export const questions: Question[] = [
     },
     {
         id: 'cg5-047', topicRef: 'cg5', topicTitle: 'Curve Sketching 47', difficulty: 'Foundation',
-        questionText: 'Sketch \\( y = |x - 3| \\).',
-        marks: 3, examStyle: false, yearCreated: 2026, tags: [],
+        questionText: 'Sketch \\( y = (x + 1)^2(x - 2)^2 \\), showing all intercepts and describing the behaviour at each root.',
+        marks: 4, examStyle: false, yearCreated: 2026, tags: [],
         workedSolution: { steps: [
-            { stepNumber: 1, description: 'Find the vertex of the V-shape', workingLatex: 'x - 3 = 0 \\implies x = 3', explanation: 'The modulus expression equals zero when \\(x = 3\\), giving the vertex at \\((3, 0)\\).' },
-            { stepNumber: 2, description: 'Find the \\(y\\)-intercept', workingLatex: 'x = 0: \\quad y = |0 - 3| = |-3| = 3', explanation: 'Substitute \\(x = 0\\). The \\(y\\)-intercept is \\((0, 3)\\).' },
-            { stepNumber: 3, description: 'Write the piecewise definition', workingLatex: 'y = \\begin{cases} x - 3 & \\text{if } x \\geq 3 \\\\ 3 - x & \\text{if } x < 3 \\end{cases}', explanation: 'For x >= 3 the expression inside is non-negative. For x < 3 it is negative, so we negate it.' },
-            { stepNumber: 4, description: 'Describe the shape', workingLatex: '\\text{Gradient } -1 \\text{ for } x < 3; \\quad \\text{gradient } +1 \\text{ for } x > 3', explanation: 'The left arm slopes down and the right arm slopes up, forming a V-shape symmetric about \\(x = 3\\).',
+            { stepNumber: 1, description: 'Identify the leading term.', workingLatex: 'y = x^2 \\cdot x^2 + \\cdots = x^4 + \\cdots', explanation: 'The leading term is \\(x^4\\) with positive coefficient, so the curve has a u-shape overall.' },
+            { stepNumber: 2, description: 'Find the \\(x\\)-intercepts.', workingLatex: '(x+1)^2 = 0 \\implies x = -1; \\quad (x-2)^2 = 0 \\implies x = 2', explanation: 'Both roots are repeated (double), so the curve touches the \\(x\\)-axis at each one without crossing.' },
+            { stepNumber: 3, description: 'Find the \\(y\\)-intercept.', workingLatex: 'y(0) = (0+1)^2(0-2)^2 = (1)(4) = 4', explanation: 'Substitute \\(x = 0\\). The \\(y\\)-intercept is at \\((0, 4)\\).' },
+            { stepNumber: 4, description: 'Describe the sketch.', workingLatex: '\\text{Quartic, u-shape; touches at } x = -1 \\text{ and } x = 2; \\quad y\\text{-int } (0, 4)', explanation: 'The curve enters from top-left, touches at \\(x = -1\\), rises through \\((0, 4)\\), touches at \\(x = 2\\), then rises to top-right. The curve never goes below the \\(x\\)-axis since it is a product of two squares.',
                 diagram: {
-                    xMin: -2, xMax: 8, yMin: -1, yMax: 7,
-                    xTicks: [-1, 1, 2, 3, 4, 5, 6, 7], yTicks: [1, 2, 3, 4, 5, 6],
-                    curves: [{ points: sample((x) => Math.abs(x - 3), -1.5, 7.5, 80), color: '#0d9488' }],
+                    xMin: -3, xMax: 4, yMin: -2, yMax: 10,
+                    xTicks: [-2, -1, 0, 1, 2, 3], yTicks: [2, 4, 6, 8],
+                    curves: [{ points: sample(x => (x+1)*(x+1)*(x-2)*(x-2), -2.5, 3.5, 80), color: '#0d9488', width: 2.5 }],
                     points: [
-                        { at: [3, 0], label: '(3, 0)', labelAnchor: 'n', color: '#d4775c', r: 4 },
-                        { at: [0, 3], label: '(0, 3)', labelAnchor: 'e', color: '#d4775c', r: 4 },
-                        { at: [6, 3], label: '(6, 3)', labelAnchor: 'w', color: '#d4775c', r: 4 }
+                        { at: [-1, 0], label: '(-1, 0)', labelAnchor: 'ne', color: '#d4775c', r: 4 },
+                        { at: [2, 0], label: '(2, 0)', labelAnchor: 'nw', color: '#d4775c', r: 4 },
+                        { at: [0, 4], label: '(0, 4)', labelAnchor: 'e', color: '#d4775c', r: 4 }
                     ]
                 } }
-        ], finalAnswer: 'V-shape; vertex \\((3, 0)\\); \\(y\\)-int \\((0, 3)\\); symmetric about \\(x = 3\\).' }
+        ], finalAnswer: 'Quartic touching at \\(x = -1\\) and \\(x = 2\\); \\(y\\)-intercept at \\((0, 4)\\); u-shape, never below \\(x\\)-axis.' }
     },
     {
         id: 'cg5-048', topicRef: 'cg5', topicTitle: 'Curve Sketching 48', difficulty: 'Foundation',
@@ -2976,13 +2976,13 @@ export const questions: Question[] = [
     },
     {
         id: 'cg5-051', topicRef: 'cg5', topicTitle: 'Curve Sketching 51', difficulty: 'Foundation',
-        questionText: 'Sketch \\( y = (x+2)^3 \\), stating the point of inflection.',
+        questionText: 'Sketch \\( y = (x+2)^3 \\), showing where the curve meets the axes.',
         marks: 3, examStyle: false, yearCreated: 2026, tags: [],
         workedSolution: { steps: [
-            { stepNumber: 1, description: 'Identify the transformation from \\(y = x^3\\)', workingLatex: 'y = (x + 2)^3 \\text{ is } y = x^3 \\text{ translated 2 units left}', explanation: 'Replacing \\(x\\) with \\((x + 2)\\) shifts the graph 2 units to the left.' },
-            { stepNumber: 2, description: 'Find the point of inflection', workingLatex: '\\text{Inflection of } y = x^3 \\text{ at } (0, 0) \\to (-2, 0)', explanation: 'The inflection point of \\(y = x^3\\) at the origin moves to \\((-2, 0)\\) after the translation.' },
-            { stepNumber: 3, description: 'Find the \\(y\\)-intercept', workingLatex: 'x = 0: \\quad y = (0 + 2)^3 = 2^3 = 8', explanation: 'Substitute \\(x = 0\\). The \\(y\\)-intercept is \\((0, 8)\\).' },
-            { stepNumber: 4, description: 'Determine the end behaviour', workingLatex: 'x \\to +\\infty: y \\to +\\infty; \\quad x \\to -\\infty: y \\to -\\infty', explanation: 'The leading term is \\(x^3\\) with positive coefficient, so the S-shape runs from bottom-left to top-right, centred at \\((-2, 0)\\).',
+            { stepNumber: 1, description: 'Identify the transformation from \\(y = x^3\\).', workingLatex: 'y = (x + 2)^3 \\text{ is } y = x^3 \\text{ translated 2 units left}', explanation: 'Replacing \\(x\\) with \\((x + 2)\\) shifts the graph 2 units to the left.' },
+            { stepNumber: 2, description: 'Find the \\(x\\)-intercept.', workingLatex: '(x + 2)^3 = 0 \\implies x = -2', explanation: 'This is a triple root, so the curve crosses the \\(x\\)-axis at \\((-2, 0)\\) and flattens out as it does so.' },
+            { stepNumber: 3, description: 'Find the \\(y\\)-intercept.', workingLatex: 'x = 0: \\quad y = (0 + 2)^3 = 2^3 = 8', explanation: 'Substitute \\(x = 0\\). The \\(y\\)-intercept is \\((0, 8)\\).' },
+            { stepNumber: 4, description: 'Determine the end behaviour.', workingLatex: 'x \\to +\\infty: y \\to +\\infty; \\quad x \\to -\\infty: y \\to -\\infty', explanation: 'The leading term is \\(x^3\\) with positive coefficient, so the S-shape runs from bottom-left to top-right, centred at \\((-2, 0)\\).',
                 diagram: {
                     xMin: -5, xMax: 2, yMin: -15, yMax: 15,
                     xTicks: [-4, -3, -2, -1, 1], yTicks: [-10, -5, 5, 8, 10],
@@ -2992,7 +2992,7 @@ export const questions: Question[] = [
                         { at: [0, 8], label: '(0, 8)', labelAnchor: 'e', color: '#d4775c', r: 4 }
                     ]
                 } }
-        ], finalAnswer: 'Cubic S-shape; inflection at \\((-2, 0)\\); \\(y\\)-int \\((0, 8)\\).' }
+        ], finalAnswer: 'Cubic S-shape; crosses at \\((-2, 0)\\) (triple root, flattens); \\(y\\)-int \\((0, 8)\\).' }
     },
     {
         id: 'cg5-052', topicRef: 'cg5', topicTitle: 'Curve Sketching 52', difficulty: 'Foundation',
@@ -3212,8 +3212,8 @@ export const questions: Question[] = [
                     curves: [{ points: sample(x => -x*(x-1)*(x-4)*(x+2), -3, 5), color: '#0d9488', width: 2.5 }],
                     points: [
                         { at: [-2, 0], label: '(-2, 0)', labelAnchor: 'nw', color: '#d4775c', r: 4 },
-                        { at: [0, 0], label: '(0, 0)', labelAnchor: 'ne', color: '#d4775c', r: 4 },
-                        { at: [1, 0], label: '(1, 0)', labelAnchor: 'nw', color: '#d4775c', r: 4 },
+                        { at: [0, 0], label: '(0, 0)', labelAnchor: 'sw', color: '#d4775c', r: 4 },
+                        { at: [1, 0], label: '(1, 0)', labelAnchor: 'se', color: '#d4775c', r: 4 },
                         { at: [4, 0], label: '(4, 0)', labelAnchor: 'ne', color: '#d4775c', r: 4 }
                     ]
                 } }
@@ -3241,25 +3241,25 @@ export const questions: Question[] = [
     },
     {
         id: 'cg5-064', topicRef: 'cg5', topicTitle: 'Curve Sketching 64', difficulty: 'Foundation',
-        questionText: 'Sketch \\( y = |2x - 4| \\), showing the vertex and intercepts.',
-        marks: 3, examStyle: false, yearCreated: 2026, tags: [],
+        questionText: 'Sketch \\( y = -(x + 1)(x - 2)(x - 5) \\), showing where the curve meets the axes.',
+        marks: 4, examStyle: false, yearCreated: 2026, tags: [],
         workedSolution: { steps: [
-            { stepNumber: 1, description: 'Find where the expression is zero', workingLatex: '2x - 4 = 0 \\implies x = 2', explanation: 'The modulus function equals zero when the expression inside is zero. This gives the vertex of the V-shape at \\(x = 2\\).' },
-            { stepNumber: 2, description: 'State the vertex', workingLatex: '\\text{vertex} = (2, 0)', explanation: 'At \\(x = 2\\), \\(y = |0| = 0\\), so the vertex (the lowest point of the V-shape) is at \\((2, 0)\\).' },
-            { stepNumber: 3, description: 'Find the \\(y\\)-intercept', workingLatex: 'x = 0: \\quad y = |2(0) - 4| = |-4| = 4', explanation: 'Substituting \\(x = 0\\) gives \\(y = 4\\). The \\(y\\)-intercept is at \\((0, 4)\\).' },
-            { stepNumber: 4, description: 'Determine the gradient of each arm', workingLatex: 'x > 2: \\; y = 2x - 4, \\; \\text{gradient } 2; \\quad x < 2: \\; y = -(2x-4) = 4-2x, \\; \\text{gradient } {-2}', explanation: 'The right arm has gradient \\(+2\\) and the left arm has gradient \\(-2\\). The V-shape is steeper than \\(|x|\\) because the coefficient of \\(x\\) is 2.',
+            { stepNumber: 1, description: 'Identify the leading term.', workingLatex: 'y = (-1)(x)(x)(x) + \\cdots = -x^3 + \\cdots', explanation: 'The leading term is \\(-x^3\\), negative coefficient with odd degree, so the curve goes from top-left to bottom-right.' },
+            { stepNumber: 2, description: 'Find the \\(x\\)-intercepts.', workingLatex: 'x + 1 = 0 \\implies x = -1; \\quad x - 2 = 0 \\implies x = 2; \\quad x - 5 = 0 \\implies x = 5', explanation: 'Set each factor equal to zero. All three are single roots, so the curve crosses the \\(x\\)-axis at each.' },
+            { stepNumber: 3, description: 'Find the \\(y\\)-intercept.', workingLatex: 'y(0) = -(0+1)(0-2)(0-5) = -(1)(-2)(-5) = -10', explanation: 'Substitute \\(x = 0\\). Be careful with signs: \\((1)(-2) = -2\\), then \\((-2)(-5) = 10\\), then \\(-(10) = -10\\).' },
+            { stepNumber: 4, description: 'Describe the sketch.', workingLatex: '\\text{Negative cubic; crosses at } x = -1, 2, 5; \\quad y\\text{-int } (0, -10)', explanation: 'The curve enters from the top-left, crosses at \\(x = -1\\), falls through \\((0, -10)\\), crosses at \\(x = 2\\), rises and crosses at \\(x = 5\\), then falls to the bottom-right.',
                     diagram: {
-                        xMin: -1, xMax: 6, yMin: -1, yMax: 9,
-                        xTicks: [1, 2, 3, 4, 5], yTicks: [1, 2, 3, 4, 5, 6, 7, 8],
-                        curves: [
-                            { points: sample((x) => Math.abs(2 * x - 4), -1, 6), color: '#0d9488', width: 2 }
-                        ],
+                        xMin: -2, xMax: 6, yMin: -15, yMax: 15,
+                        xTicks: [-1, 0, 1, 2, 3, 4, 5], yTicks: [-10, -5, 0, 5, 10],
+                        curves: [{ points: sample(x => -(x+1)*(x-2)*(x-5), -2, 6, 80), color: '#0d9488', width: 2.5 }],
                         points: [
-                            { at: [2, 0], label: '(2,\\,0)', labelAnchor: 'n', color: '#d4775c', r: 4 },
-                            { at: [0, 4], label: '(0,\\,4)', labelAnchor: 'e', color: '#d4775c', r: 4 }
+                            { at: [-1, 0], label: '(-1, 0)', labelAnchor: 'ne', color: '#d4775c', r: 4 },
+                            { at: [2, 0], label: '(2, 0)', labelAnchor: 'n', color: '#d4775c', r: 4 },
+                            { at: [5, 0], label: '(5, 0)', labelAnchor: 'nw', color: '#d4775c', r: 4 },
+                            { at: [0, -10], label: '(0, -10)', labelAnchor: 'e', color: '#d4775c', r: 4 }
                         ]
                     } }
-        ], finalAnswer: 'V-shape; vertex \\((2, 0)\\); \\(y\\)-int \\((0, 4)\\); gradient \\(\\pm 2\\).' }
+        ], finalAnswer: 'Negative cubic crossing at \\(x = -1, 2, 5\\); \\(y\\)-intercept at \\((0, -10)\\); top-left to bottom-right.' }
     },
     {
         id: 'cg5-065', topicRef: 'cg5', topicTitle: 'Curve Sketching 65', difficulty: 'Foundation',
@@ -3338,28 +3338,25 @@ export const questions: Question[] = [
     },
     {
         id: 'cg5-068', topicRef: 'cg5', topicTitle: 'Curve Sketching 68', difficulty: 'Foundation',
-        questionText: 'Sketch \\( y = \\sin x \\) for \\( 0 \\leq x \\leq 2\\pi \\).',
-        marks: 2, examStyle: false, yearCreated: 2026, tags: [],
+        questionText: 'Sketch \\( y = (2 - x)(x + 1)(x + 3) \\), showing where the curve meets the axes.',
+        marks: 4, examStyle: false, yearCreated: 2026, tags: [],
         workedSolution: { steps: [
-            { stepNumber: 1, description: 'State the starting value', workingLatex: 'x = 0: \\quad \\sin 0 = 0', explanation: 'The sine curve starts at the origin when \\(x = 0\\).' },
-            { stepNumber: 2, description: 'Find the maximum point', workingLatex: 'x = \\frac{\\pi}{2}: \\quad \\sin\\frac{\\pi}{2} = 1', explanation: 'The sine function reaches its maximum value of 1 at \\(x = \\pi/2\\).' },
-            { stepNumber: 3, description: 'Find the next zero and minimum', workingLatex: 'x = \\pi: \\quad \\sin \\pi = 0; \\quad x = \\frac{3\\pi}{2}: \\quad \\sin\\frac{3\\pi}{2} = -1', explanation: 'The curve returns to zero at \\(x = \\pi\\), then reaches its minimum value of \\(-1\\) at \\(x = 3\\pi/2\\).' },
-            { stepNumber: 4, description: 'State the endpoint', workingLatex: 'x = 2\\pi: \\quad \\sin 2\\pi = 0', explanation: 'The curve completes one full cycle, returning to 0 at \\(x = 2\\pi\\). The period of \\(\\sin x\\) is \\(2\\pi\\).',
-                    diagram: {
-                        xMin: -0.5, xMax: 7, yMin: -1.5, yMax: 1.5,
-                        xTicks: [1.571, 3.142, 4.712, 6.283], yTicks: [-1, 1],
-                        curves: [
-                            { points: sample((x) => Math.sin(x), 0, 6.2832, 60), color: '#0d9488', width: 2 }
-                        ],
-                        points: [
-                            { at: [0, 0], label: '0', labelAnchor: 'ne', color: '#d4775c', r: 4 },
-                            { at: [1.5708, 1], label: '(\\frac{\\pi}{2},\\,1)', labelAnchor: 'n', color: '#d4775c', r: 4 },
-                            { at: [3.1416, 0], label: '\\pi', labelAnchor: 'n', color: '#d4775c', r: 4 },
-                            { at: [4.7124, -1], label: '(\\frac{3\\pi}{2},\\,-1)', labelAnchor: 's', color: '#d4775c', r: 4 },
-                            { at: [6.2832, 0], label: '2\\pi', labelAnchor: 'nw', color: '#d4775c', r: 4 }
-                        ]
-                    } }
-        ], finalAnswer: 'Sine wave from \\(0\\) to \\(2\\pi\\); max 1, min -1.' }
+            { stepNumber: 1, description: 'Identify the leading term.', workingLatex: 'y = (-x)(x)(x) + \\cdots = -x^3 + \\cdots', explanation: 'The factor \\((2 - x)\\) contributes \\(-x\\) as the leading part. Multiplying by \\(x \\cdot x\\) from the other factors gives \\(-x^3\\). Negative odd degree means top-left to bottom-right.' },
+            { stepNumber: 2, description: 'Find the \\(x\\)-intercepts.', workingLatex: '2 - x = 0 \\implies x = 2; \\quad x + 1 = 0 \\implies x = -1; \\quad x + 3 = 0 \\implies x = -3', explanation: 'Set each factor equal to zero. All three are single roots, so the curve crosses the \\(x\\)-axis at each.' },
+            { stepNumber: 3, description: 'Find the \\(y\\)-intercept.', workingLatex: 'y(0) = (2 - 0)(0 + 1)(0 + 3) = (2)(1)(3) = 6', explanation: 'Substitute \\(x = 0\\). All factors are positive, so the \\(y\\)-intercept is at \\((0, 6)\\).' },
+            { stepNumber: 4, description: 'Describe the sketch.', workingLatex: '\\text{Negative cubic; crosses at } x = -3, -1, 2; \\quad y\\text{-int } (0, 6)', explanation: 'The curve enters from the top-left, crosses at \\(x = -3\\), dips below, crosses at \\(x = -1\\), rises through \\((0, 6)\\), crosses at \\(x = 2\\), then falls to the bottom-right.',
+                diagram: {
+                    xMin: -4, xMax: 3, yMin: -10, yMax: 15,
+                    xTicks: [-3, -2, -1, 0, 1, 2], yTicks: [-5, 0, 5, 10],
+                    curves: [{ points: sample(x => (2-x)*(x+1)*(x+3), -4, 3, 80), color: '#0d9488', width: 2.5 }],
+                    points: [
+                        { at: [-3, 0], label: '(-3, 0)', labelAnchor: 'ne', color: '#d4775c', r: 4 },
+                        { at: [-1, 0], label: '(-1, 0)', labelAnchor: 'nw', color: '#d4775c', r: 4 },
+                        { at: [2, 0], label: '(2, 0)', labelAnchor: 'nw', color: '#d4775c', r: 4 },
+                        { at: [0, 6], label: '(0, 6)', labelAnchor: 'e', color: '#d4775c', r: 4 }
+                    ]
+                } }
+        ], finalAnswer: 'Negative cubic crossing at \\(x = -3, -1, 2\\); \\(y\\)-intercept at \\((0, 6)\\); top-left to bottom-right.' }
     },
     {
         id: 'cg5-069', topicRef: 'cg5', topicTitle: 'Curve Sketching 69', difficulty: 'Foundation',

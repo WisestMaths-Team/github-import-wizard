@@ -1,0 +1,114 @@
+[
+  {
+    "id": "Q1",
+    "topics": ["Coordinate Geometry", "Differentiation"],
+    "questionText": "The curve C has equation y = x² − 4x + 5. The circle Γ has equation (x − p)² + y² = 20, where p is a constant.\n\n(a) Find the coordinates of the minimum point of C, justifying that it is a minimum. [3]\n(b) Show that the tangent to C at the point where x = 1 has equation y = −2x + 4. [3]\n(c) Given that this tangent is also tangent to Γ, find the two possible values of p. [4]\n(d) For the value of p with p > 0, find the coordinates of the point of contact between the tangent and Γ. [3]",
+    "parts": [
+      {"label": "(a)", "text": "Find the coordinates of the minimum point of C, justifying that it is a minimum.", "marks": 3},
+      {"label": "(b)", "text": "Show that the tangent to C at the point where x = 1 has equation y = −2x + 4.", "marks": 3},
+      {"label": "(c)", "text": "Given that this tangent is also tangent to Γ, find the two possible values of p.", "marks": 4},
+      {"label": "(d)", "text": "For the value of p with p > 0, find the coordinates of the point of contact between the tangent and Γ.", "marks": 3}
+    ],
+    "totalMarks": 13,
+    "workedSolution": "(a) Let f(x) = x² − 4x + 5. Then f'(x) = 2x − 4. Setting f'(x) = 0 gives x = 2, and f(2) = 4 − 8 + 5 = 1. Since f''(x) = 2 > 0, the point (2, 1) is a minimum.\n\n(b) At x = 1: y = 1 − 4 + 5 = 2, so the point of contact is (1, 2). The gradient is f'(1) = 2(1) − 4 = −2. Tangent: y − 2 = −2(x − 1), giving y = −2x + 4, equivalently 2x + y − 4 = 0.\n\n(c) The tangent line is 2x + y − 4 = 0. The centre of Γ is (p, 0) and the radius is √20 = 2√5. For the line to be tangent to Γ, the perpendicular distance from (p, 0) to the line must equal the radius:\n  |2p + 0 − 4| / √(2² + 1²) = 2√5\n  |2p − 4| / √5 = 2√5\n  |2p − 4| = 2√5 · √5 = 10\nSo 2p − 4 = 10 giving p = 7, or 2p − 4 = −10 giving p = −3.\n\n(d) Take p = 7. The point of contact lies on the perpendicular from (7, 0) to the tangent. The tangent has gradient −2, so the perpendicular has gradient 1/2, giving the line y = (x − 7)/2. Substituting into 2x + y = 4:\n  2x + (x − 7)/2 = 4\nMultiplying by 2: 4x + x − 7 = 8, so 5x = 15, giving x = 3. Then y = (3 − 7)/2 = −2. Point of contact: (3, −2). Check: (3 − 7)² + (−2)² = 16 + 4 = 20. ✓",
+    "answers": [
+      "(a) Minimum at (2, 1)",
+      "(b) Shown",
+      "(c) p = 7 or p = −3",
+      "(d) (3, −2)"
+    ]
+  },
+  {
+    "id": "Q2",
+    "topics": ["Differentiation", "Integration", "Coordinate Geometry"],
+    "questionText": "The curve C has equation y = x³ − 6x² + 9x.\n\n(a) Find the stationary points of C and determine the nature of each. [5]\n(b) Show that the chord joining the two stationary points has equation y = −2x + 6. [3]\n(c) Find the total area of the region enclosed between C and this chord. [5]",
+    "parts": [
+      {"label": "(a)", "text": "Find the stationary points of C and determine the nature of each.", "marks": 5},
+      {"label": "(b)", "text": "Show that the chord joining the two stationary points has equation y = −2x + 6.", "marks": 3},
+      {"label": "(c)", "text": "Find the total area of the region enclosed between C and this chord.", "marks": 5}
+    ],
+    "totalMarks": 13,
+    "workedSolution": "(a) f(x) = x³ − 6x² + 9x. f'(x) = 3x² − 12x + 9 = 3(x − 1)(x − 3). Stationary points at x = 1 and x = 3.\nf(1) = 1 − 6 + 9 = 4 and f(3) = 27 − 54 + 27 = 0.\nf''(x) = 6x − 12. f''(1) = −6 < 0, so (1, 4) is a local maximum. f''(3) = 6 > 0, so (3, 0) is a local minimum.\n\n(b) Gradient of chord: (0 − 4)/(3 − 1) = −2. Through (3, 0): y − 0 = −2(x − 3), so y = −2x + 6.\n\n(c) The signed difference is\n  curve − chord = (x³ − 6x² + 9x) − (−2x + 6) = x³ − 6x² + 11x − 6.\nTesting x = 1, 2, 3 gives 0 in each case, so x³ − 6x² + 11x − 6 = (x − 1)(x − 2)(x − 3).\nOn [1, 2] the product (x − 1)(x − 2)(x − 3) is positive (curve above chord); on [2, 3] it is negative (chord above curve).\nLet F(x) = ∫(x³ − 6x² + 11x − 6) dx = x⁴/4 − 2x³ + 11x²/2 − 6x.\nUsing common denominator 4:\n  F(1) = 1/4 − 8/4 + 22/4 − 24/4 = −9/4.\n  F(2) = 16/4 − 16 + 22 − 12 = 4 − 16 + 22 − 12 = −2 = −8/4.\n  F(3) = 81/4 − 216/4 + 198/4 − 72/4 = −9/4.\nSo ∫₁² (curve − chord) dx = F(2) − F(1) = −8/4 − (−9/4) = 1/4.\nAnd ∫₂³ (curve − chord) dx = F(3) − F(2) = −9/4 − (−8/4) = −1/4.\nTotal area = |1/4| + |−1/4| = 1/2.",
+    "answers": [
+      "(a) Local max (1, 4); local min (3, 0)",
+      "(b) Shown",
+      "(c) 1/2"
+    ]
+  },
+  {
+    "id": "Q3",
+    "topics": ["Logarithms", "Sequences"],
+    "questionText": "(a) Show that if log a, log b, log c (with the same base) form an arithmetic progression, then a, b, c form a geometric progression. [3]\n(b) The numbers log₂(p), log₂(p + 6), log₂(p + 18), in that order, form an arithmetic progression. Given that p > 0, find the value of p. [5]\n(c) For this value of p, find the common difference d of the AP. [2]\n(d) Hence find the sum of the first 10 terms of this AP, giving your answer in the form a + b log₂ c, where a and b are integers and c is the smallest possible positive integer. [4]",
+    "parts": [
+      {"label": "(a)", "text": "Show that if log a, log b, log c (with the same base) form an arithmetic progression, then a, b, c form a geometric progression.", "marks": 3},
+      {"label": "(b)", "text": "Given log₂(p), log₂(p + 6), log₂(p + 18) form an AP and p > 0, find p.", "marks": 5},
+      {"label": "(c)", "text": "Find the common difference d of the AP.", "marks": 2},
+      {"label": "(d)", "text": "Hence find the sum of the first 10 terms in the form a + b log₂ c.", "marks": 4}
+    ],
+    "totalMarks": 14,
+    "workedSolution": "(a) If log a, log b, log c are in AP, then 2 log b = log a + log c. Using log laws: log(b²) = log(ac), so b² = ac. This is precisely the condition for a, b, c to be in GP (with common ratio b/a = c/b).\n\n(b) Applying (a) with the three terms p, p + 6, p + 18:\n  (p + 6)² = p(p + 18)\n  p² + 12p + 36 = p² + 18p\n  36 = 6p\n  p = 6.\nSince p = 6 > 0, this is valid.\n\n(c) The three terms become log₂ 6, log₂ 12, log₂ 24. Common difference:\n  d = log₂ 12 − log₂ 6 = log₂(12/6) = log₂ 2 = 1.\n\n(d) Using S_n = (n/2)(2a + (n − 1)d) with n = 10, a = log₂ 6, d = 1:\n  S₁₀ = (10/2)(2 log₂ 6 + 9) = 5(2 log₂ 6 + 9) = 10 log₂ 6 + 45.\nNow 10 log₂ 6 = 10 log₂(2 · 3) = 10(log₂ 2 + log₂ 3) = 10 + 10 log₂ 3.\nTherefore S₁₀ = 45 + 10 + 10 log₂ 3 = 55 + 10 log₂ 3.",
+    "answers": [
+      "(a) Shown",
+      "(b) p = 6",
+      "(c) d = 1",
+      "(d) 55 + 10 log₂ 3"
+    ]
+  },
+  {
+    "id": "Q4",
+    "topics": ["Trigonometry", "Integration"],
+    "questionText": "(a) Starting from the identity cos 2x = 1 − 2 sin² x, show that sin² x = (1 − cos 2x)/2. [2]\n(b) Hence find the exact value of ∫₀^{π/2} sin² x dx. [4]\n(c) The curve C has equation y = sin x cos x for 0 ≤ x ≤ π. Show that y = (1/2) sin 2x and find the values of x at which C crosses the x-axis. [3]\n(d) Find the total area enclosed between C and the x-axis on the interval 0 ≤ x ≤ π. [4]",
+    "parts": [
+      {"label": "(a)", "text": "Show that sin² x = (1 − cos 2x)/2 starting from cos 2x = 1 − 2 sin² x.", "marks": 2},
+      {"label": "(b)", "text": "Hence find the exact value of ∫₀^{π/2} sin² x dx.", "marks": 4},
+      {"label": "(c)", "text": "Show that sin x cos x = (1/2) sin 2x and find where C crosses the x-axis on [0, π].", "marks": 3},
+      {"label": "(d)", "text": "Find the total area enclosed between C and the x-axis on [0, π].", "marks": 4}
+    ],
+    "totalMarks": 13,
+    "workedSolution": "(a) From cos 2x = 1 − 2 sin² x, rearranging gives 2 sin² x = 1 − cos 2x, so sin² x = (1 − cos 2x)/2.\n\n(b) Using (a):\n  ∫₀^{π/2} sin² x dx = ∫₀^{π/2} (1 − cos 2x)/2 dx = [x/2 − sin(2x)/4]₀^{π/2}.\nAt x = π/2: (π/4) − sin(π)/4 = π/4 − 0 = π/4.\nAt x = 0: 0 − 0 = 0.\nSo ∫₀^{π/2} sin² x dx = π/4.\n\n(c) sin 2x = 2 sin x cos x, so sin x cos x = (1/2) sin 2x. Crossings: (1/2) sin 2x = 0 means sin 2x = 0, so 2x = 0, π, 2π, giving x = 0, π/2, π.\n\n(d) On [0, π/2], sin 2x ≥ 0, so y ≥ 0. On [π/2, π], sin 2x ≤ 0, so y ≤ 0. Total area is the sum of the absolute values of the two integrals.\n  ∫₀^{π/2} (1/2) sin 2x dx = [−(1/4) cos 2x]₀^{π/2} = −(1/4) cos π + (1/4) cos 0 = 1/4 + 1/4 = 1/2.\n  ∫_{π/2}^{π} (1/2) sin 2x dx = [−(1/4) cos 2x]_{π/2}^{π} = −(1/4) cos 2π + (1/4) cos π = −1/4 − 1/4 = −1/2.\nTotal area = 1/2 + |−1/2| = 1.",
+    "answers": [
+      "(a) Shown",
+      "(b) π/4",
+      "(c) Crosses at x = 0, π/2, π",
+      "(d) 1"
+    ]
+  },
+  {
+    "id": "Q5",
+    "topics": ["Binomial Expansion", "Differentiation", "Coordinate Geometry"],
+    "questionText": "The function f(x) = (1 + ax)⁴, where a is a constant. The coefficient of x² in the expansion of f(x) is 24.\n\n(a) Show that a² = 4 and write down the two possible values of a. [3]\n(b) Taking the positive value of a, find the gradient of the curve y = f(x) at the point where x = 1/2. [4]\n(c) Find the equation of the tangent to y = f(x) at the point where x = 1/2, giving your answer in the form y = mx + c. [3]\n(d) The tangent meets the x-axis at the point P and the y-axis at the point Q. Find the area of the triangle OPQ, where O is the origin. [3]",
+    "parts": [
+      {"label": "(a)", "text": "Show that a² = 4 and write down the two possible values of a.", "marks": 3},
+      {"label": "(b)", "text": "Taking the positive value of a, find the gradient of y = f(x) at x = 1/2.", "marks": 4},
+      {"label": "(c)", "text": "Find the equation of the tangent at x = 1/2 in the form y = mx + c.", "marks": 3},
+      {"label": "(d)", "text": "Find the area of the triangle OPQ formed by the tangent and the axes.", "marks": 3}
+    ],
+    "totalMarks": 13,
+    "workedSolution": "(a) (1 + ax)⁴ = 1 + 4(ax) + 6(ax)² + 4(ax)³ + (ax)⁴ = 1 + 4ax + 6a²x² + 4a³x³ + a⁴x⁴. The coefficient of x² is 6a² = 24, so a² = 4. Hence a = 2 or a = −2.\n\n(b) For a > 0, a = 2 and f(x) = (1 + 2x)⁴. By the chain rule, f'(x) = 4(1 + 2x)³ · 2 = 8(1 + 2x)³. At x = 1/2: 1 + 2(1/2) = 2 (integer), so f'(1/2) = 8 · 2³ = 8 · 8 = 64.\n\n(c) f(1/2) = (1 + 1)⁴ = 2⁴ = 16, so the tangent passes through (1/2, 16) with gradient 64. Equation: y − 16 = 64(x − 1/2), giving y = 64x − 32 + 16 = 64x − 16.\n\n(d) x-intercept P: set y = 0, so 64x = 16, giving x = 1/4. Hence P = (1/4, 0).\ny-intercept Q: set x = 0, so y = −16. Hence Q = (0, −16).\nTriangle OPQ has perpendicular legs along the axes of length 1/4 and 16.\nArea = (1/2) · (1/4) · 16 = (1/2)(16) · (1/4) = 8 · (1/4) = 2.",
+    "answers": [
+      "(a) a = 2 or a = −2",
+      "(b) 64",
+      "(c) y = 64x − 16",
+      "(d) Area = 2"
+    ]
+  },
+  {
+    "id": "Q6",
+    "topics": ["Coordinate Geometry", "Quadratic Inequalities"],
+    "questionText": "The line ℓ has equation y = kx + 2, where k is a real constant. The circle C has equation x² + y² = 2.\n\n(a) Show that ℓ is tangent to C if and only if k² = 1, stating the two values of k for which this occurs. [4]\n(b) Find the values of k for which ℓ intersects C at two distinct points. [3]\n(c) For the case k = 1, find the coordinates of the point at which ℓ is tangent to C. [3]\n(d) The two tangent lines from part (a) and the x-axis enclose a triangle. Find the area of this triangle. [3]",
+    "parts": [
+      {"label": "(a)", "text": "Show that ℓ is tangent to C if and only if k² = 1, stating the two values of k.", "marks": 4},
+      {"label": "(b)", "text": "Find the values of k for which ℓ intersects C at two distinct points.", "marks": 3},
+      {"label": "(c)", "text": "For k = 1, find the coordinates of the point of tangency.", "marks": 3},
+      {"label": "(d)", "text": "Find the area of the triangle enclosed by the two tangent lines from (a) and the x-axis.", "marks": 3}
+    ],
+    "totalMarks": 13,
+    "workedSolution": "(a) Substituting y = kx + 2 into x² + y² = 2:\n  x² + (kx + 2)² = 2\n  x² + k²x² + 4kx + 4 = 2\n  (1 + k²)x² + 4kx + 2 = 0.\nFor tangency, this quadratic in x has a repeated root, so its discriminant is zero:\n  (4k)² − 4(1 + k²)(2) = 0\n  16k² − 8(1 + k²) = 0\n  8k² − 8 = 0\n  k² = 1.\nHence k = 1 or k = −1.\n\n(b) Two distinct intersection points require positive discriminant:\n  8k² − 8 > 0\n  k² > 1\n  k < −1 or k > 1.\n\n(c) For k = 1, the quadratic in x becomes 2x² + 4x + 2 = 0, i.e. x² + 2x + 1 = 0, so (x + 1)² = 0, giving x = −1. Then y = (1)(−1) + 2 = 1. Point of tangency: (−1, 1). Check: (−1)² + 1² = 2. ✓\n\n(d) The two tangent lines are y = x + 2 (k = 1) and y = −x + 2 (k = −1).\nIntersections with the x-axis (y = 0): for y = x + 2, x = −2, giving (−2, 0); for y = −x + 2, x = 2, giving (2, 0).\nThe two tangents meet where x + 2 = −x + 2, so x = 0 and y = 2, giving (0, 2).\nTriangle vertices: (−2, 0), (2, 0), (0, 2). Base along x-axis = 4, perpendicular height = 2.\nArea = (1/2) · 4 · 2 = 4.",
+    "answers": [
+      "(a) k = 1 or k = −1",
+      "(b) k < −1 or k > 1",
+      "(c) (−1, 1)",
+      "(d) Area = 4"
+    ]
+  }
+]

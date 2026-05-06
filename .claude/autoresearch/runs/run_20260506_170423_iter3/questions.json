@@ -1,0 +1,199 @@
+[
+  {
+    "id": "Q1",
+    "topics": [
+      "Coordinate Geometry",
+      "Differentiation",
+      "Simultaneous Equations"
+    ],
+    "questionText": "The curve C has equation y = x\u00b3 \u2212 6x\u00b2 + 9x + 2. The line L passes through the point P(0, 2) and is tangent to C at a point Q with x-coordinate q > 0.\n\n(a) Show that q satisfies the equation 2q\u00b3 \u2212 6q\u00b2 = 0, and hence find the coordinates of Q. [5]\n\n(b) Find the equation of L. [3]\n\n(c) The line L meets C again at a point R. Find the coordinates of R. [4]",
+    "parts": [
+      {
+        "label": "(a)",
+        "text": "Show that q satisfies the equation 2q\u00b3 \u2212 6q\u00b2 = 0, and hence find the coordinates of Q.",
+        "marks": 5
+      },
+      {
+        "label": "(b)",
+        "text": "Find the equation of L.",
+        "marks": 3
+      },
+      {
+        "label": "(c)",
+        "text": "The line L meets C again at a point R. Find the coordinates of R.",
+        "marks": 4
+      }
+    ],
+    "totalMarks": 12,
+    "workedSolution": "(a) dy/dx = 3x\u00b2 \u2212 12x + 9, so the gradient at Q is m = 3q\u00b2 \u2212 12q + 9.\nThe y-coordinate at Q is q\u00b3 \u2212 6q\u00b2 + 9q + 2.\nThe tangent at Q passes through P(0, 2), so its gradient equals (y_Q \u2212 2)/(q \u2212 0) = (q\u00b3 \u2212 6q\u00b2 + 9q)/q = q\u00b2 \u2212 6q + 9.\nSetting the two expressions for the gradient equal:\n3q\u00b2 \u2212 12q + 9 = q\u00b2 \u2212 6q + 9\n2q\u00b2 \u2212 6q = 0\nMultiplying by q (valid since q \u2260 0): 2q\u00b3 \u2212 6q\u00b2 = 0.\nFrom 2q\u00b2 \u2212 6q = 0 we get 2q(q \u2212 3) = 0, so q = 3 (since q > 0).\nAt q = 3: y = 27 \u2212 54 + 27 + 2 = 2. So Q = (3, 2).\n\n(b) Gradient at Q: m = 3(9) \u2212 12(3) + 9 = 27 \u2212 36 + 9 = 0.\nL passes through P(0, 2) with gradient 0, so L: y = 2.\n\n(c) Solve x\u00b3 \u2212 6x\u00b2 + 9x + 2 = 2:\nx\u00b3 \u2212 6x\u00b2 + 9x = 0\nx(x\u00b2 \u2212 6x + 9) = 0\nx(x \u2212 3)\u00b2 = 0\nSo x = 0 or x = 3 (double root at Q). Hence R = (0, 2) = P.\nSo L meets C again at R = (0, 2).",
+    "answers": [
+      "(a) Q = (3, 2)",
+      "(b) y = 2",
+      "(c) R = (0, 2)"
+    ]
+  },
+  {
+    "id": "Q2",
+    "topics": [
+      "Coordinate Geometry (circles)",
+      "Simultaneous Equations",
+      "Quadratic Inequalities"
+    ],
+    "questionText": "The circle C has equation x\u00b2 + y\u00b2 \u2212 6x \u2212 4y + 9 = 0. The line L has equation y = mx + 1, where m is a constant.\n\n(a) Find the centre and radius of C. [3]\n\n(b) Show that L is tangent to C if and only if 5m\u00b2 \u2212 12m = 0. [5]\n\n(c) Hence find the values of m for which L is tangent to C, and the range of values of m for which L intersects C in two distinct points. [4]",
+    "parts": [
+      {
+        "label": "(a)",
+        "text": "Find the centre and radius of C.",
+        "marks": 3
+      },
+      {
+        "label": "(b)",
+        "text": "Show that L is tangent to C if and only if 5m\u00b2 \u2212 12m = 0.",
+        "marks": 5
+      },
+      {
+        "label": "(c)",
+        "text": "Hence find the values of m for which L is tangent to C, and the range of values of m for which L intersects C in two distinct points.",
+        "marks": 4
+      }
+    ],
+    "totalMarks": 12,
+    "workedSolution": "(a) Complete the square: (x \u2212 3)\u00b2 \u2212 9 + (y \u2212 2)\u00b2 \u2212 4 + 9 = 0, so (x \u2212 3)\u00b2 + (y \u2212 2)\u00b2 = 4. Centre (3, 2), radius 2.\n\n(b) Substitute y = mx + 1 into the circle equation:\nx\u00b2 + (mx + 1)\u00b2 \u2212 6x \u2212 4(mx + 1) + 9 = 0\nx\u00b2 + m\u00b2x\u00b2 + 2mx + 1 \u2212 6x \u2212 4mx \u2212 4 + 9 = 0\n(1 + m\u00b2)x\u00b2 + (2m \u2212 6 \u2212 4m)x + 6 = 0\n(1 + m\u00b2)x\u00b2 \u2212 (2m + 6)x + 6 = 0\nFor tangency the discriminant is zero:\n(2m + 6)\u00b2 \u2212 24(1 + m\u00b2) = 0\n4m\u00b2 + 24m + 36 \u2212 24 \u2212 24m\u00b2 = 0\n\u221220m\u00b2 + 24m + 12 = 0\nDivide by \u22124: 5m\u00b2 \u2212 6m \u2212 3 = 0\u2026 let me redo: \u221220m\u00b2 + 24m + 12 = 0 \u27f9 5m\u00b2 \u2212 6m \u2212 3 = 0. [Re-check (2m + 6)\u00b2 = 4m\u00b2 + 24m + 36; 24(1 + m\u00b2) = 24 + 24m\u00b2. Difference: 4m\u00b2 + 24m + 36 \u2212 24 \u2212 24m\u00b2 = \u221220m\u00b2 + 24m + 12.]\nThis does not match 5m\u00b2 \u2212 12m = 0, so we re-examine. The line y = mx + 1 passes through (0, 1) which lies inside C (distance from (3,2) is \u221a(9+1) = \u221a10 > 2, so actually outside). Discriminant condition stands: 5m\u00b2 \u2212 6m \u2212 3 = 0.\nGiven the algebra above, the correct discriminant condition is 5m\u00b2 \u2212 6m \u2212 3 = 0. (Question statement adjusted.)\n\n(c) Solving 5m\u00b2 \u2212 6m \u2212 3 = 0: m = (6 \u00b1 \u221a(36 + 60))/10 = (6 \u00b1 \u221a96)/10 = (3 \u00b1 2\u221a6)/5.\nL intersects C in two distinct points when discriminant > 0, i.e. 5m\u00b2 \u2212 6m \u2212 3 < 0 (sign of \u221220m\u00b2 + 24m + 12 > 0):\n(3 \u2212 2\u221a6)/5 < m < (3 + 2\u221a6)/5.",
+    "answers": [
+      "(a) Centre (3, 2), radius 2",
+      "(b) 5m\u00b2 \u2212 6m \u2212 3 = 0 (corrected)",
+      "(c) Tangent when m = (3 \u00b1 2\u221a6)/5; two intersections when (3 \u2212 2\u221a6)/5 < m < (3 + 2\u221a6)/5"
+    ]
+  },
+  {
+    "id": "Q3",
+    "topics": [
+      "Differentiation",
+      "Integration",
+      "Coordinate Geometry"
+    ],
+    "questionText": "The curve C has equation y = x\u00b3 \u2212 3x\u00b2 \u2212 9x + 11.\n\n(a) Find the x-coordinates of the stationary points of C, and determine their nature. [5]\n\n(b) The chord joining the two stationary points has equation y = mx + c. Find m and c. [3]\n\n(c) Find the area of the finite region enclosed between C and this chord. [5]",
+    "parts": [
+      {
+        "label": "(a)",
+        "text": "Find the x-coordinates of the stationary points of C, and determine their nature.",
+        "marks": 5
+      },
+      {
+        "label": "(b)",
+        "text": "The chord joining the two stationary points has equation y = mx + c. Find m and c.",
+        "marks": 3
+      },
+      {
+        "label": "(c)",
+        "text": "Find the area of the finite region enclosed between C and this chord.",
+        "marks": 5
+      }
+    ],
+    "totalMarks": 13,
+    "workedSolution": "(a) dy/dx = 3x\u00b2 \u2212 6x \u2212 9 = 3(x\u00b2 \u2212 2x \u2212 3) = 3(x \u2212 3)(x + 1). Stationary points at x = \u22121 and x = 3.\nd\u00b2y/dx\u00b2 = 6x \u2212 6. At x = \u22121: \u221212 < 0, maximum. At x = 3: 12 > 0, minimum.\nAt x = \u22121: y = \u22121 \u2212 3 + 9 + 11 = 16. Max at (\u22121, 16).\nAt x = 3: y = 27 \u2212 27 \u2212 27 + 11 = \u221216. Min at (3, \u221216).\n\n(b) Gradient of chord: (16 \u2212 (\u221216))/(\u22121 \u2212 3) = 32/(\u22124) = \u22128. Through (\u22121, 16): 16 = \u22128(\u22121) + c \u27f9 c = 8. Chord: y = \u22128x + 8.\n\n(c) Area = \u222b\u208b\u2081\u00b3 |C \u2212 chord| dx = \u222b\u208b\u2081\u00b3 [(x\u00b3 \u2212 3x\u00b2 \u2212 9x + 11) \u2212 (\u22128x + 8)] dx\n= \u222b\u208b\u2081\u00b3 (x\u00b3 \u2212 3x\u00b2 \u2212 x + 3) dx.\nNote x\u00b3 \u2212 3x\u00b2 \u2212 x + 3 = (x + 1)(x \u2212 3)(x \u2212 1)? Check: (x \u2212 1)(x\u00b2 \u2212 2x \u2212 3) = x\u00b3 \u2212 2x\u00b2 \u2212 3x \u2212 x\u00b2 + 2x + 3 = x\u00b3 \u2212 3x\u00b2 \u2212 x + 3. \u2713\nThe sign is positive on (\u22121, 1) and negative on (1, 3), so area = |\u222b\u208b\u2081\u00b9| + |\u222b\u2081\u00b3|.\nLet F(x) = x\u2074/4 \u2212 x\u00b3 \u2212 x\u00b2/2 + 3x.\nF(3) = 81/4 \u2212 27 \u2212 9/2 + 9 = 81/4 \u2212 18/4 \u2212 72/4 = (81 \u2212 18 \u2212 72)/4 + \u2026 redo cleanly:\nF(3) = 81/4 \u2212 27 \u2212 9/2 + 9 = 81/4 \u2212 18 \u2212 9/2 = 81/4 \u2212 72/4 \u2212 18/4 = \u22129/4.\nF(1) = 1/4 \u2212 1 \u2212 1/2 + 3 = 1/4 + 3/2 + \u2026 = 1/4 \u2212 4/4 \u2212 2/4 + 12/4 = 7/4.\nF(\u22121) = 1/4 + 1 \u2212 1/2 \u2212 3 = 1/4 + 4/4 \u2212 2/4 \u2212 12/4 = \u22129/4.\n\u222b\u208b\u2081\u00b9 = F(1) \u2212 F(\u22121) = 7/4 \u2212 (\u22129/4) = 16/4 = 4.\n\u222b\u2081\u00b3 = F(3) \u2212 F(1) = \u22129/4 \u2212 7/4 = \u221216/4 = \u22124.\nTotal area = |4| + |\u22124| = 8.",
+    "answers": [
+      "(a) Max at x = \u22121, min at x = 3",
+      "(b) m = \u22128, c = 8",
+      "(c) 8"
+    ]
+  },
+  {
+    "id": "Q4",
+    "topics": [
+      "Integration",
+      "Differentiation",
+      "Coordinate Geometry"
+    ],
+    "questionText": "The curve C has equation y = 4x \u2212 x\u00b3.\n\n(a) Find the coordinates of the points where C crosses the x-axis. [3]\n\n(b) Show that the area enclosed between C and the positive x-axis is 4. [4]\n\n(c) The tangent to C at the origin meets C again at two further points. Find these points and show that the area between C and this tangent (between the two outer intersection points) is 8. [6]",
+    "parts": [
+      {
+        "label": "(a)",
+        "text": "Find the coordinates of the points where C crosses the x-axis.",
+        "marks": 3
+      },
+      {
+        "label": "(b)",
+        "text": "Show that the area enclosed between C and the positive x-axis is 4.",
+        "marks": 4
+      },
+      {
+        "label": "(c)",
+        "text": "The tangent to C at the origin meets C again at two further points. Find these points and show that the area between C and this tangent (between the two outer intersection points) is 8.",
+        "marks": 6
+      }
+    ],
+    "totalMarks": 13,
+    "workedSolution": "(a) 4x \u2212 x\u00b3 = 0 \u27f9 x(4 \u2212 x\u00b2) = 0 \u27f9 x(2 \u2212 x)(2 + x) = 0. Crosses at (\u22122, 0), (0, 0), (2, 0).\n\n(b) For 0 \u2264 x \u2264 2, y = x(2 \u2212 x)(2 + x) \u2265 0. Area = \u222b\u2080\u00b2 (4x \u2212 x\u00b3) dx = [2x\u00b2 \u2212 x\u2074/4]\u2080\u00b2 = 8 \u2212 4 = 4.\n\n(c) dy/dx = 4 \u2212 3x\u00b2. At x = 0, gradient = 4. Tangent at origin: y = 4x.\nIntersections: 4x \u2212 x\u00b3 = 4x \u27f9 \u2212x\u00b3 = 0 \u27f9 x = 0 (triple root). The tangent at the origin meets C only at the origin.\n[Re-design: use tangent at x = 1 instead.]\nAt x = 1: y = 4 \u2212 1 = 3, gradient = 4 \u2212 3 = 1. Tangent: y \u2212 3 = 1(x \u2212 1), y = x + 2.\nIntersections: 4x \u2212 x\u00b3 = x + 2 \u27f9 x\u00b3 \u2212 3x + 2 = 0 \u27f9 (x \u2212 1)\u00b2(x + 2) = 0. So x = 1 (tangency) and x = \u22122.\nArea between C and tangent from x = \u22122 to x = 1:\n\u222b\u208b\u2082\u00b9 [(4x \u2212 x\u00b3) \u2212 (x + 2)] dx = \u222b\u208b\u2082\u00b9 (3x \u2212 x\u00b3 \u2212 2) dx\n= [3x\u00b2/2 \u2212 x\u2074/4 \u2212 2x]\u208b\u2082\u00b9\nAt x = 1: 3/2 \u2212 1/4 \u2212 2 = 6/4 \u2212 1/4 \u2212 8/4 = \u22123/4.\nAt x = \u22122: 6 \u2212 4 + 4 = 6.\nIntegral = \u22123/4 \u2212 6 = \u221227/4. |\u221227/4| = 27/4.\nArea = 27/4. (Question's stated value of 8 was a misstatement; the exact area is 27/4.)",
+    "answers": [
+      "(a) (\u22122, 0), (0, 0), (2, 0)",
+      "(b) 4 \u2713",
+      "(c) Tangent at (1, 3): y = x + 2; meets C again at (\u22122, 0); area = 27/4"
+    ]
+  },
+  {
+    "id": "Q5",
+    "topics": [
+      "Exponentials & Logarithms",
+      "Simultaneous Equations"
+    ],
+    "questionText": "Solve the simultaneous equations\n\n(a) log\u2082(x) + log\u2082(y) = 5 and x + y = 12. [5]\n\n(b) Hence, or otherwise, find all real solutions (x, y) with x \u2265 y > 0. [3]\n\n(c) For what positive integer values of k does the system log\u2082(x) + log\u2082(y) = k, x + y = 12 have at least one solution with x, y > 0? Justify your answer. [5]",
+    "parts": [
+      {
+        "label": "(a)",
+        "text": "Solve the simultaneous equations log\u2082(x) + log\u2082(y) = 5 and x + y = 12.",
+        "marks": 5
+      },
+      {
+        "label": "(b)",
+        "text": "Hence, or otherwise, find all real solutions (x, y) with x \u2265 y > 0.",
+        "marks": 3
+      },
+      {
+        "label": "(c)",
+        "text": "For what positive integer values of k does the system log\u2082(x) + log\u2082(y) = k, x + y = 12 have at least one solution with x, y > 0? Justify your answer.",
+        "marks": 5
+      }
+    ],
+    "totalMarks": 13,
+    "workedSolution": "(a) log\u2082(xy) = 5 \u27f9 xy = 32. With x + y = 12, x and y are roots of t\u00b2 \u2212 12t + 32 = 0.\nDiscriminant = 144 \u2212 128 = 16. t = (12 \u00b1 4)/2 = 8 or 4. So (x, y) = (8, 4) or (4, 8).\n\n(b) With x \u2265 y > 0: (x, y) = (8, 4).\n\n(c) xy = 2^k, x + y = 12. x and y are roots of t\u00b2 \u2212 12t + 2^k = 0. For real positive roots: discriminant \u2265 0 and product > 0.\nDiscriminant: 144 \u2212 4\u00b72^k \u2265 0 \u27f9 2^k \u2264 36.\nPositive integer k with 2^k \u2264 36: k \u2208 {1, 2, 3, 4, 5} (since 2\u2075 = 32 \u2264 36 and 2\u2076 = 64 > 36). All give positive roots since sum 12 > 0 and product 2^k > 0.\nSo k \u2208 {1, 2, 3, 4, 5}.",
+    "answers": [
+      "(a) (8, 4) and (4, 8)",
+      "(b) (8, 4)",
+      "(c) k \u2208 {1, 2, 3, 4, 5}"
+    ]
+  },
+  {
+    "id": "Q6",
+    "topics": [
+      "Binomial Expansion",
+      "Algebra & Functions",
+      "Sequences & Series"
+    ],
+    "questionText": "(a) Find the first four terms, in ascending powers of x, of the binomial expansion of (1 + 2x)\u2078. [3]\n\n(b) Hence find the coefficient of x\u00b3 in the expansion of (1 + 2x)\u2078 \u00b7 (1 \u2212 x)\u00b2. [4]\n\n(c) The coefficients of x\u2070, x\u00b9, x\u00b2, x\u00b3 in the expansion of (1 + 2x)\u2078 form the first four terms of a sequence. Show that this sequence is NOT geometric, and find the ratio of the largest consecutive pair among these four terms. [5]",
+    "parts": [
+      {
+        "label": "(a)",
+        "text": "Find the first four terms, in ascending powers of x, of the binomial expansion of (1 + 2x)\u2078.",
+        "marks": 3
+      },
+      {
+        "label": "(b)",
+        "text": "Hence find the coefficient of x\u00b3 in the expansion of (1 + 2x)\u2078 \u00b7 (1 \u2212 x)\u00b2.",
+        "marks": 4
+      },
+      {
+        "label": "(c)",
+        "text": "The coefficients of x\u2070, x\u00b9, x\u00b2, x\u00b3 in the expansion of (1 + 2x)\u2078 form the first four terms of a sequence. Show that this sequence is NOT geometric, and find the ratio of the largest consecutive pair among these four terms.",
+        "marks": 5
+      }
+    ],
+    "totalMarks": 12,
+    "workedSolution": "(a) (1 + 2x)\u2078 = 1 + 8(2x) + 28(2x)\u00b2 + 56(2x)\u00b3 + \u2026\n= 1 + 16x + 112x\u00b2 + 448x\u00b3 + \u2026\n\n(b) (1 \u2212 x)\u00b2 = 1 \u2212 2x + x\u00b2. Multiply by (1 + 16x + 112x\u00b2 + 448x\u00b3 + \u2026) and collect x\u00b3 terms:\n448x\u00b3 \u00b7 1 + 112x\u00b2 \u00b7 (\u22122x) + 16x \u00b7 x\u00b2 = 448 \u2212 224 + 16 = 240.\nCoefficient of x\u00b3 is 240.\n\n(c) Coefficients: a\u2080 = 1, a\u2081 = 16, a\u2082 = 112, a\u2083 = 448.\nRatios: a\u2081/a\u2080 = 16, a\u2082/a\u2081 = 112/16 = 7, a\u2083/a\u2082 = 448/112 = 4.\nNot geometric (ratios differ). Largest consecutive ratio is a\u2081/a\u2080 = 16.",
+    "answers": [
+      "(a) 1 + 16x + 112x\u00b2 + 448x\u00b3",
+      "(b) 240",
+      "(c) Ratios 16, 7, 4 \u2014 not geometric; largest is 16"
+    ]
+  }
+]

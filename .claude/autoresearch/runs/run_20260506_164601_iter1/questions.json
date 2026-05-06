@@ -1,0 +1,222 @@
+[
+  {
+    "id": "Q1",
+    "topics": [
+      "Algebra & Functions",
+      "Differentiation",
+      "Coordinate Geometry"
+    ],
+    "questionText": "The curve C has equation y = x\u00b2 - 4x + 7.\n\n(a) By completing the square, show that C has a minimum point at (2, 3). [3]\n(b) Find the equation of the tangent to C at the point where x = 4. [4]\n(c) The tangent from part (b), the y-axis, and the horizontal line y = 3 enclose a triangle T. Find the exact area of T. [3]",
+    "parts": [
+      {
+        "label": "(a)",
+        "text": "By completing the square, show that C has a minimum point at (2, 3).",
+        "marks": 3
+      },
+      {
+        "label": "(b)",
+        "text": "Find the equation of the tangent to C at the point where x = 4.",
+        "marks": 4
+      },
+      {
+        "label": "(c)",
+        "text": "The tangent from part (b), the y-axis, and the horizontal line y = 3 enclose a triangle T. Find the exact area of T.",
+        "marks": 3
+      }
+    ],
+    "totalMarks": 10,
+    "workedSolution": "(a) y = x\u00b2 - 4x + 7 = (x - 2)\u00b2 - 4 + 7 = (x - 2)\u00b2 + 3. Since (x - 2)\u00b2 \u2265 0 with equality at x = 2, the minimum value of y is 3, occurring at x = 2. Hence the minimum point is (2, 3). \u2713\n\n(b) At x = 4: y = 16 - 16 + 7 = 7, so the point of tangency is (4, 7).\n   dy/dx = 2x - 4. At x = 4, gradient = 2(4) - 4 = 4.\n   Tangent: y - 7 = 4(x - 4)  \u21d2  y = 4x - 9.\n\n(c) The tangent y = 4x - 9 meets the y-axis when x = 0, giving (0, -9).\n   The tangent meets y = 3 when 4x - 9 = 3 \u21d2 x = 3, giving (3, 3).\n   The line y = 3 meets the y-axis at (0, 3).\n   Triangle vertices: (0, -9), (0, 3), (3, 3).\n   The side along the y-axis has length |3 - (-9)| = 12. The perpendicular distance from (3, 3) to the y-axis is 3.\n   Area = \u00bd \u00d7 12 \u00d7 3 = 18.",
+    "answers": [
+      "(a) y = (x-2)\u00b2 + 3, minimum at (2, 3)",
+      "(b) y = 4x - 9",
+      "(c) Area = 18"
+    ]
+  },
+  {
+    "id": "Q2",
+    "topics": [
+      "Integration",
+      "Coordinate Geometry",
+      "Algebra & Functions"
+    ],
+    "questionText": "The curve C has equation y = x\u00b2 - 6x + 8 and the line L has equation y = -2x + 8.\n\n(a) Find the coordinates of the points where C meets the x-axis. [2]\n(b) Find the coordinates of the points where C and L intersect. [3]\n(c) Find the exact area of the finite region enclosed between C and L. [5]",
+    "parts": [
+      {
+        "label": "(a)",
+        "text": "Find the coordinates of the points where C meets the x-axis.",
+        "marks": 2
+      },
+      {
+        "label": "(b)",
+        "text": "Find the coordinates of the points where C and L intersect.",
+        "marks": 3
+      },
+      {
+        "label": "(c)",
+        "text": "Find the exact area of the finite region enclosed between C and L.",
+        "marks": 5
+      }
+    ],
+    "totalMarks": 10,
+    "workedSolution": "(a) Set y = 0: x\u00b2 - 6x + 8 = 0 \u21d2 (x - 2)(x - 4) = 0 \u21d2 x = 2 or x = 4.\n   x-intercepts: (2, 0) and (4, 0).\n\n(b) Set the equations equal: x\u00b2 - 6x + 8 = -2x + 8 \u21d2 x\u00b2 - 4x = 0 \u21d2 x(x - 4) = 0 \u21d2 x = 0 or x = 4.\n   x = 0: y = -2(0) + 8 = 8 \u21d2 (0, 8).\n   x = 4: y = -2(4) + 8 = 0 \u21d2 (4, 0).\n   Intersection points: (0, 8) and (4, 0).\n\n(c) On 0 \u2264 x \u2264 4, L lies above C (e.g. at x = 2: L = 4, C = 0).\n   Area = \u222b\u2080\u2074 [(-2x + 8) - (x\u00b2 - 6x + 8)] dx = \u222b\u2080\u2074 (4x - x\u00b2) dx\n        = [2x\u00b2 - x\u00b3/3]\u2080\u2074 = (32 - 64/3) - 0 = 96/3 - 64/3 = 32/3.",
+    "answers": [
+      "(a) (2, 0) and (4, 0)",
+      "(b) (0, 8) and (4, 0)",
+      "(c) Area = 32/3"
+    ]
+  },
+  {
+    "id": "Q3",
+    "topics": [
+      "Simultaneous Equations",
+      "Quadratic Inequalities",
+      "Coordinate Geometry"
+    ],
+    "questionText": "The line L has equation y = 2x - k, where k is a constant, and the curve C has equation y = x\u00b2 - 4x + 7.\n\n(a) Show that the x-coordinates of any points of intersection of L and C satisfy x\u00b2 - 6x + (7 + k) = 0. [2]\n(b) Find the value of k for which L is a tangent to C. [3]\n(c) Find the range of values of k for which L meets C at two distinct points. [3]\n(d) When k = -2, find the exact distance between the two points of intersection of L and C. [4]",
+    "parts": [
+      {
+        "label": "(a)",
+        "text": "Show that the x-coordinates of any points of intersection of L and C satisfy x\u00b2 - 6x + (7 + k) = 0.",
+        "marks": 2
+      },
+      {
+        "label": "(b)",
+        "text": "Find the value of k for which L is a tangent to C.",
+        "marks": 3
+      },
+      {
+        "label": "(c)",
+        "text": "Find the range of values of k for which L meets C at two distinct points.",
+        "marks": 3
+      },
+      {
+        "label": "(d)",
+        "text": "When k = -2, find the exact distance between the two points of intersection of L and C.",
+        "marks": 4
+      }
+    ],
+    "totalMarks": 12,
+    "workedSolution": "(a) Equating: x\u00b2 - 4x + 7 = 2x - k \u21d2 x\u00b2 - 4x - 2x + 7 + k = 0 \u21d2 x\u00b2 - 6x + (7 + k) = 0. \u2713\n\n(b) For tangency, the discriminant equals zero:\n   (-6)\u00b2 - 4(1)(7 + k) = 0\n   36 - 28 - 4k = 0\n   8 - 4k = 0 \u21d2 k = 2.\n\n(c) For two distinct intersections, discriminant > 0:\n   36 - 4(7 + k) > 0\n   8 - 4k > 0 \u21d2 k < 2.\n\n(d) With k = -2: x\u00b2 - 6x + 5 = 0 \u21d2 (x - 1)(x - 5) = 0 \u21d2 x = 1 or x = 5.\n   y-values from y = 2x - (-2) = 2x + 2:\n     x = 1: y = 4 \u21d2 (1, 4).\n     x = 5: y = 12 \u21d2 (5, 12).\n   Distance\u00b2 = (5 - 1)\u00b2 + (12 - 4)\u00b2 = 16 + 64 = 80.\n   Distance = \u221a80 = 4\u221a5.",
+    "answers": [
+      "(a) Shown",
+      "(b) k = 2",
+      "(c) k < 2",
+      "(d) 4\u221a5"
+    ]
+  },
+  {
+    "id": "Q4",
+    "topics": [
+      "Trigonometry",
+      "Algebra & Functions"
+    ],
+    "questionText": "(a) Solve the equation 2sin\u00b2\u03b8 - 3cos\u03b8 = 0 for 0\u00b0 \u2264 \u03b8 \u2264 360\u00b0. [4]\n(b) In triangle ABC, AB = 8 cm, BC = 5 cm, and angle ABC = \u03b1, where \u03b1 is the acute solution from part (a). Find the exact length of AC. [3]\n(c) Find the exact area of triangle ABC. [2]\n(d) Find the exact perpendicular distance from C to the line AB. [3]",
+    "parts": [
+      {
+        "label": "(a)",
+        "text": "Solve the equation 2sin\u00b2\u03b8 - 3cos\u03b8 = 0 for 0\u00b0 \u2264 \u03b8 \u2264 360\u00b0.",
+        "marks": 4
+      },
+      {
+        "label": "(b)",
+        "text": "In triangle ABC, AB = 8 cm, BC = 5 cm, and angle ABC = \u03b1, where \u03b1 is the acute solution from part (a). Find the exact length of AC.",
+        "marks": 3
+      },
+      {
+        "label": "(c)",
+        "text": "Find the exact area of triangle ABC.",
+        "marks": 2
+      },
+      {
+        "label": "(d)",
+        "text": "Find the exact perpendicular distance from C to the line AB.",
+        "marks": 3
+      }
+    ],
+    "totalMarks": 12,
+    "workedSolution": "(a) Use sin\u00b2\u03b8 = 1 - cos\u00b2\u03b8:\n   2(1 - cos\u00b2\u03b8) - 3cos\u03b8 = 0\n   -2cos\u00b2\u03b8 - 3cos\u03b8 + 2 = 0\n   2cos\u00b2\u03b8 + 3cos\u03b8 - 2 = 0\n   (2cos\u03b8 - 1)(cos\u03b8 + 2) = 0\n   cos\u03b8 = 2 has no solution; cos\u03b8 = \u00bd.\n   In 0\u00b0 \u2264 \u03b8 \u2264 360\u00b0: \u03b8 = 60\u00b0 or \u03b8 = 300\u00b0.\n\n(b) The acute solution is \u03b1 = 60\u00b0. By the cosine rule:\n   AC\u00b2 = AB\u00b2 + BC\u00b2 - 2\u00b7AB\u00b7BC\u00b7cos\u03b1 = 64 + 25 - 2(8)(5)(\u00bd) = 89 - 40 = 49.\n   AC = 7 cm.\n\n(c) Area = \u00bd\u00b7AB\u00b7BC\u00b7sin\u03b1 = \u00bd(8)(5)sin60\u00b0 = 20\u00b7(\u221a3/2) = 10\u221a3 cm\u00b2.\n\n(d) Let h be the perpendicular distance from C to AB. Then Area = \u00bd\u00b7AB\u00b7h:\n   10\u221a3 = \u00bd(8)h \u21d2 10\u221a3 = 4h \u21d2 h = (5\u221a3)/2 cm.",
+    "answers": [
+      "(a) \u03b8 = 60\u00b0, 300\u00b0",
+      "(b) AC = 7 cm",
+      "(c) Area = 10\u221a3 cm\u00b2",
+      "(d) h = 5\u221a3/2 cm"
+    ]
+  },
+  {
+    "id": "Q5",
+    "topics": [
+      "Exponentials & Logarithms",
+      "Integration",
+      "Differentiation"
+    ],
+    "questionText": "(a) Solve 4^x - 5\u00b72^x + 4 = 0. [3]\n(b) Let p and q be the two solutions from (a) with p < q. Evaluate \u222b_p^q (x\u00b2 - 4x + 5) dx, giving your answer as an exact fraction. [3]\n(c) The curve y = x\u00b2 - 4x + 5 has a minimum point M. By completing the square, find the coordinates of M. [3]\n(d) Find the equation of the tangent to the curve y = x\u00b2 - 4x + 5 at the point where x = p (the smaller solution from (a)). [3]",
+    "parts": [
+      {
+        "label": "(a)",
+        "text": "Solve 4^x - 5\u00b72^x + 4 = 0.",
+        "marks": 3
+      },
+      {
+        "label": "(b)",
+        "text": "Let p and q be the two solutions from (a) with p < q. Evaluate \u222b_p^q (x\u00b2 - 4x + 5) dx, giving your answer as an exact fraction.",
+        "marks": 3
+      },
+      {
+        "label": "(c)",
+        "text": "The curve y = x\u00b2 - 4x + 5 has a minimum point M. By completing the square, find the coordinates of M.",
+        "marks": 3
+      },
+      {
+        "label": "(d)",
+        "text": "Find the equation of the tangent to the curve y = x\u00b2 - 4x + 5 at the point where x = p (the smaller solution from (a)).",
+        "marks": 3
+      }
+    ],
+    "totalMarks": 12,
+    "workedSolution": "(a) Note 4^x = (2^x)\u00b2. Let u = 2^x:\n   u\u00b2 - 5u + 4 = 0 \u21d2 (u - 1)(u - 4) = 0 \u21d2 u = 1 or u = 4.\n   2^x = 1 \u21d2 x = 0;  2^x = 4 \u21d2 x = 2.\n   Solutions: x = 0 and x = 2.\n\n(b) p = 0, q = 2.\n   \u222b\u2080\u00b2 (x\u00b2 - 4x + 5) dx = [x\u00b3/3 - 2x\u00b2 + 5x]\u2080\u00b2 = (8/3 - 8 + 10) - 0 = 8/3 + 2 = 14/3.\n\n(c) y = x\u00b2 - 4x + 5 = (x - 2)\u00b2 - 4 + 5 = (x - 2)\u00b2 + 1.\n   Minimum at M = (2, 1).\n\n(d) p = 0. At x = 0: y = 0 - 0 + 5 = 5, so the point is (0, 5).\n   dy/dx = 2x - 4. At x = 0: gradient = -4.\n   Tangent: y - 5 = -4(x - 0) \u21d2 y = -4x + 5.",
+    "answers": [
+      "(a) x = 0 or x = 2",
+      "(b) 14/3",
+      "(c) M = (2, 1)",
+      "(d) y = -4x + 5"
+    ]
+  },
+  {
+    "id": "Q6",
+    "topics": [
+      "Sequences & Series",
+      "Algebra & Functions"
+    ],
+    "questionText": "The first three terms of a geometric sequence are (k - 1), (k + 3), and (3k + 1), where k is a constant.\n\n(a) Show that 2k\u00b2 - 8k - 10 = 0 and hence find the two possible values of k. [4]\n(b) For each value of k, write down the first three terms of the sequence and state the common ratio. [3]\n(c) For the case k = 5, find the sum of the first 10 terms of the sequence. [3]\n(d) For the case k = 5, find the smallest integer n such that the sum of the first n terms exceeds 5000. [3]",
+    "parts": [
+      {
+        "label": "(a)",
+        "text": "Show that 2k\u00b2 - 8k - 10 = 0 and hence find the two possible values of k.",
+        "marks": 4
+      },
+      {
+        "label": "(b)",
+        "text": "For each value of k, write down the first three terms of the sequence and state the common ratio.",
+        "marks": 3
+      },
+      {
+        "label": "(c)",
+        "text": "For the case k = 5, find the sum of the first 10 terms of the sequence.",
+        "marks": 3
+      },
+      {
+        "label": "(d)",
+        "text": "For the case k = 5, find the smallest integer n such that the sum of the first n terms exceeds 5000.",
+        "marks": 3
+      }
+    ],
+    "totalMarks": 13,
+    "workedSolution": "(a) For a GP, (term 2)\u00b2 = (term 1)(term 3):\n   (k + 3)\u00b2 = (k - 1)(3k + 1)\n   k\u00b2 + 6k + 9 = 3k\u00b2 + k - 3k - 1 = 3k\u00b2 - 2k - 1\n   0 = 2k\u00b2 - 8k - 10. \u2713\n   Divide by 2: k\u00b2 - 4k - 5 = 0 \u21d2 (k - 5)(k + 1) = 0 \u21d2 k = 5 or k = -1.\n\n(b) k = 5: terms are 4, 8, 16; common ratio r = 8/4 = 2.\n   k = -1: terms are -2, 2, -2; common ratio r = 2/(-2) = -1.\n\n(c) k = 5: a = 4, r = 2.\n   S\u2081\u2080 = a(r\u207f - 1)/(r - 1) = 4(2\u00b9\u2070 - 1)/(2 - 1) = 4(1024 - 1) = 4(1023) = 4092.\n\n(d) Need 4(2\u207f - 1) > 5000 \u21d2 2\u207f - 1 > 1250 \u21d2 2\u207f > 1251.\n   2\u00b9\u2070 = 1024 < 1251, 2\u00b9\u00b9 = 2048 > 1251.\n   Smallest n = 11.",
+    "answers": [
+      "(a) k = 5 or k = -1",
+      "(b) k = 5: 4, 8, 16, r = 2;  k = -1: -2, 2, -2, r = -1",
+      "(c) S\u2081\u2080 = 4092",
+      "(d) n = 11"
+    ]
+  }
+]

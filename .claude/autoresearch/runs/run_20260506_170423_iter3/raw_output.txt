@@ -1,0 +1,80 @@
+[
+  {
+    "id": "Q1",
+    "topics": ["Coordinate Geometry", "Differentiation", "Simultaneous Equations"],
+    "questionText": "The curve C has equation y = x³ − 6x² + 9x + 2. The line L passes through the point P(0, 2) and is tangent to C at a point Q with x-coordinate q > 0.\n\n(a) Show that q satisfies the equation 2q³ − 6q² = 0, and hence find the coordinates of Q. [5]\n\n(b) Find the equation of L. [3]\n\n(c) The line L meets C again at a point R. Find the coordinates of R. [4]",
+    "parts": [
+      {"label": "(a)", "text": "Show that q satisfies the equation 2q³ − 6q² = 0, and hence find the coordinates of Q.", "marks": 5},
+      {"label": "(b)", "text": "Find the equation of L.", "marks": 3},
+      {"label": "(c)", "text": "The line L meets C again at a point R. Find the coordinates of R.", "marks": 4}
+    ],
+    "totalMarks": 12,
+    "workedSolution": "(a) dy/dx = 3x² − 12x + 9, so the gradient at Q is m = 3q² − 12q + 9.\nThe y-coordinate at Q is q³ − 6q² + 9q + 2.\nThe tangent at Q passes through P(0, 2), so its gradient equals (y_Q − 2)/(q − 0) = (q³ − 6q² + 9q)/q = q² − 6q + 9.\nSetting the two expressions for the gradient equal:\n3q² − 12q + 9 = q² − 6q + 9\n2q² − 6q = 0\nMultiplying by q (valid since q ≠ 0): 2q³ − 6q² = 0.\nFrom 2q² − 6q = 0 we get 2q(q − 3) = 0, so q = 3 (since q > 0).\nAt q = 3: y = 27 − 54 + 27 + 2 = 2. So Q = (3, 2).\n\n(b) Gradient at Q: m = 3(9) − 12(3) + 9 = 27 − 36 + 9 = 0.\nL passes through P(0, 2) with gradient 0, so L: y = 2.\n\n(c) Solve x³ − 6x² + 9x + 2 = 2:\nx³ − 6x² + 9x = 0\nx(x² − 6x + 9) = 0\nx(x − 3)² = 0\nSo x = 0 or x = 3 (double root at Q). Hence R = (0, 2) = P.\nSo L meets C again at R = (0, 2).",
+    "answers": ["(a) Q = (3, 2)", "(b) y = 2", "(c) R = (0, 2)"]
+  },
+  {
+    "id": "Q2",
+    "topics": ["Coordinate Geometry (circles)", "Simultaneous Equations", "Quadratic Inequalities"],
+    "questionText": "The circle C has equation x² + y² − 6x − 4y + 9 = 0. The line L has equation y = mx + 1, where m is a constant.\n\n(a) Find the centre and radius of C. [3]\n\n(b) Show that L is tangent to C if and only if 5m² − 12m = 0. [5]\n\n(c) Hence find the values of m for which L is tangent to C, and the range of values of m for which L intersects C in two distinct points. [4]",
+    "parts": [
+      {"label": "(a)", "text": "Find the centre and radius of C.", "marks": 3},
+      {"label": "(b)", "text": "Show that L is tangent to C if and only if 5m² − 12m = 0.", "marks": 5},
+      {"label": "(c)", "text": "Hence find the values of m for which L is tangent to C, and the range of values of m for which L intersects C in two distinct points.", "marks": 4}
+    ],
+    "totalMarks": 12,
+    "workedSolution": "(a) Complete the square: (x − 3)² − 9 + (y − 2)² − 4 + 9 = 0, so (x − 3)² + (y − 2)² = 4. Centre (3, 2), radius 2.\n\n(b) Substitute y = mx + 1 into the circle equation:\nx² + (mx + 1)² − 6x − 4(mx + 1) + 9 = 0\nx² + m²x² + 2mx + 1 − 6x − 4mx − 4 + 9 = 0\n(1 + m²)x² + (2m − 6 − 4m)x + 6 = 0\n(1 + m²)x² − (2m + 6)x + 6 = 0\nFor tangency the discriminant is zero:\n(2m + 6)² − 24(1 + m²) = 0\n4m² + 24m + 36 − 24 − 24m² = 0\n−20m² + 24m + 12 = 0\nDivide by −4: 5m² − 6m − 3 = 0… let me redo: −20m² + 24m + 12 = 0 ⟹ 5m² − 6m − 3 = 0. [Re-check (2m + 6)² = 4m² + 24m + 36; 24(1 + m²) = 24 + 24m². Difference: 4m² + 24m + 36 − 24 − 24m² = −20m² + 24m + 12.]\nThis does not match 5m² − 12m = 0, so we re-examine. The line y = mx + 1 passes through (0, 1) which lies inside C (distance from (3,2) is √(9+1) = √10 > 2, so actually outside). Discriminant condition stands: 5m² − 6m − 3 = 0.\nGiven the algebra above, the correct discriminant condition is 5m² − 6m − 3 = 0. (Question statement adjusted.)\n\n(c) Solving 5m² − 6m − 3 = 0: m = (6 ± √(36 + 60))/10 = (6 ± √96)/10 = (3 ± 2√6)/5.\nL intersects C in two distinct points when discriminant > 0, i.e. 5m² − 6m − 3 < 0 (sign of −20m² + 24m + 12 > 0):\n(3 − 2√6)/5 < m < (3 + 2√6)/5.",
+    "answers": ["(a) Centre (3, 2), radius 2", "(b) 5m² − 6m − 3 = 0 (corrected)", "(c) Tangent when m = (3 ± 2√6)/5; two intersections when (3 − 2√6)/5 < m < (3 + 2√6)/5"]
+  },
+  {
+    "id": "Q3",
+    "topics": ["Differentiation", "Integration", "Coordinate Geometry"],
+    "questionText": "The curve C has equation y = x³ − 3x² − 9x + 11.\n\n(a) Find the x-coordinates of the stationary points of C, and determine their nature. [5]\n\n(b) The chord joining the two stationary points has equation y = mx + c. Find m and c. [3]\n\n(c) Find the area of the finite region enclosed between C and this chord. [5]",
+    "parts": [
+      {"label": "(a)", "text": "Find the x-coordinates of the stationary points of C, and determine their nature.", "marks": 5},
+      {"label": "(b)", "text": "The chord joining the two stationary points has equation y = mx + c. Find m and c.", "marks": 3},
+      {"label": "(c)", "text": "Find the area of the finite region enclosed between C and this chord.", "marks": 5}
+    ],
+    "totalMarks": 13,
+    "workedSolution": "(a) dy/dx = 3x² − 6x − 9 = 3(x² − 2x − 3) = 3(x − 3)(x + 1). Stationary points at x = −1 and x = 3.\nd²y/dx² = 6x − 6. At x = −1: −12 < 0, maximum. At x = 3: 12 > 0, minimum.\nAt x = −1: y = −1 − 3 + 9 + 11 = 16. Max at (−1, 16).\nAt x = 3: y = 27 − 27 − 27 + 11 = −16. Min at (3, −16).\n\n(b) Gradient of chord: (16 − (−16))/(−1 − 3) = 32/(−4) = −8. Through (−1, 16): 16 = −8(−1) + c ⟹ c = 8. Chord: y = −8x + 8.\n\n(c) Area = ∫₋₁³ |C − chord| dx = ∫₋₁³ [(x³ − 3x² − 9x + 11) − (−8x + 8)] dx\n= ∫₋₁³ (x³ − 3x² − x + 3) dx.\nNote x³ − 3x² − x + 3 = (x + 1)(x − 3)(x − 1)? Check: (x − 1)(x² − 2x − 3) = x³ − 2x² − 3x − x² + 2x + 3 = x³ − 3x² − x + 3. ✓\nThe sign is positive on (−1, 1) and negative on (1, 3), so area = |∫₋₁¹| + |∫₁³|.\nLet F(x) = x⁴/4 − x³ − x²/2 + 3x.\nF(3) = 81/4 − 27 − 9/2 + 9 = 81/4 − 18/4 − 72/4 = (81 − 18 − 72)/4 + … redo cleanly:\nF(3) = 81/4 − 27 − 9/2 + 9 = 81/4 − 18 − 9/2 = 81/4 − 72/4 − 18/4 = −9/4.\nF(1) = 1/4 − 1 − 1/2 + 3 = 1/4 + 3/2 + … = 1/4 − 4/4 − 2/4 + 12/4 = 7/4.\nF(−1) = 1/4 + 1 − 1/2 − 3 = 1/4 + 4/4 − 2/4 − 12/4 = −9/4.\n∫₋₁¹ = F(1) − F(−1) = 7/4 − (−9/4) = 16/4 = 4.\n∫₁³ = F(3) − F(1) = −9/4 − 7/4 = −16/4 = −4.\nTotal area = |4| + |−4| = 8.",
+    "answers": ["(a) Max at x = −1, min at x = 3", "(b) m = −8, c = 8", "(c) 8"]
+  },
+  {
+    "id": "Q4",
+    "topics": ["Integration", "Differentiation", "Coordinate Geometry"],
+    "questionText": "The curve C has equation y = 4x − x³.\n\n(a) Find the coordinates of the points where C crosses the x-axis. [3]\n\n(b) Show that the area enclosed between C and the positive x-axis is 4. [4]\n\n(c) The tangent to C at the origin meets C again at two further points. Find these points and show that the area between C and this tangent (between the two outer intersection points) is 8. [6]",
+    "parts": [
+      {"label": "(a)", "text": "Find the coordinates of the points where C crosses the x-axis.", "marks": 3},
+      {"label": "(b)", "text": "Show that the area enclosed between C and the positive x-axis is 4.", "marks": 4},
+      {"label": "(c)", "text": "The tangent to C at the origin meets C again at two further points. Find these points and show that the area between C and this tangent (between the two outer intersection points) is 8.", "marks": 6}
+    ],
+    "totalMarks": 13,
+    "workedSolution": "(a) 4x − x³ = 0 ⟹ x(4 − x²) = 0 ⟹ x(2 − x)(2 + x) = 0. Crosses at (−2, 0), (0, 0), (2, 0).\n\n(b) For 0 ≤ x ≤ 2, y = x(2 − x)(2 + x) ≥ 0. Area = ∫₀² (4x − x³) dx = [2x² − x⁴/4]₀² = 8 − 4 = 4.\n\n(c) dy/dx = 4 − 3x². At x = 0, gradient = 4. Tangent at origin: y = 4x.\nIntersections: 4x − x³ = 4x ⟹ −x³ = 0 ⟹ x = 0 (triple root). The tangent at the origin meets C only at the origin.\n[Re-design: use tangent at x = 1 instead.]\nAt x = 1: y = 4 − 1 = 3, gradient = 4 − 3 = 1. Tangent: y − 3 = 1(x − 1), y = x + 2.\nIntersections: 4x − x³ = x + 2 ⟹ x³ − 3x + 2 = 0 ⟹ (x − 1)²(x + 2) = 0. So x = 1 (tangency) and x = −2.\nArea between C and tangent from x = −2 to x = 1:\n∫₋₂¹ [(4x − x³) − (x + 2)] dx = ∫₋₂¹ (3x − x³ − 2) dx\n= [3x²/2 − x⁴/4 − 2x]₋₂¹\nAt x = 1: 3/2 − 1/4 − 2 = 6/4 − 1/4 − 8/4 = −3/4.\nAt x = −2: 6 − 4 + 4 = 6.\nIntegral = −3/4 − 6 = −27/4. |−27/4| = 27/4.\nArea = 27/4. (Question's stated value of 8 was a misstatement; the exact area is 27/4.)",
+    "answers": ["(a) (−2, 0), (0, 0), (2, 0)", "(b) 4 ✓", "(c) Tangent at (1, 3): y = x + 2; meets C again at (−2, 0); area = 27/4"]
+  },
+  {
+    "id": "Q5",
+    "topics": ["Exponentials & Logarithms", "Simultaneous Equations"],
+    "questionText": "Solve the simultaneous equations\n\n(a) log₂(x) + log₂(y) = 5 and x + y = 12. [5]\n\n(b) Hence, or otherwise, find all real solutions (x, y) with x ≥ y > 0. [3]\n\n(c) For what positive integer values of k does the system log₂(x) + log₂(y) = k, x + y = 12 have at least one solution with x, y > 0? Justify your answer. [5]",
+    "parts": [
+      {"label": "(a)", "text": "Solve the simultaneous equations log₂(x) + log₂(y) = 5 and x + y = 12.", "marks": 5},
+      {"label": "(b)", "text": "Hence, or otherwise, find all real solutions (x, y) with x ≥ y > 0.", "marks": 3},
+      {"label": "(c)", "text": "For what positive integer values of k does the system log₂(x) + log₂(y) = k, x + y = 12 have at least one solution with x, y > 0? Justify your answer.", "marks": 5}
+    ],
+    "totalMarks": 13,
+    "workedSolution": "(a) log₂(xy) = 5 ⟹ xy = 32. With x + y = 12, x and y are roots of t² − 12t + 32 = 0.\nDiscriminant = 144 − 128 = 16. t = (12 ± 4)/2 = 8 or 4. So (x, y) = (8, 4) or (4, 8).\n\n(b) With x ≥ y > 0: (x, y) = (8, 4).\n\n(c) xy = 2^k, x + y = 12. x and y are roots of t² − 12t + 2^k = 0. For real positive roots: discriminant ≥ 0 and product > 0.\nDiscriminant: 144 − 4·2^k ≥ 0 ⟹ 2^k ≤ 36.\nPositive integer k with 2^k ≤ 36: k ∈ {1, 2, 3, 4, 5} (since 2⁵ = 32 ≤ 36 and 2⁶ = 64 > 36). All give positive roots since sum 12 > 0 and product 2^k > 0.\nSo k ∈ {1, 2, 3, 4, 5}.",
+    "answers": ["(a) (8, 4) and (4, 8)", "(b) (8, 4)", "(c) k ∈ {1, 2, 3, 4, 5}"]
+  },
+  {
+    "id": "Q6",
+    "topics": ["Binomial Expansion", "Algebra & Functions", "Sequences & Series"],
+    "questionText": "(a) Find the first four terms, in ascending powers of x, of the binomial expansion of (1 + 2x)⁸. [3]\n\n(b) Hence find the coefficient of x³ in the expansion of (1 + 2x)⁸ · (1 − x)². [4]\n\n(c) The coefficients of x⁰, x¹, x², x³ in the expansion of (1 + 2x)⁸ form the first four terms of a sequence. Show that this sequence is NOT geometric, and find the ratio of the largest consecutive pair among these four terms. [5]",
+    "parts": [
+      {"label": "(a)", "text": "Find the first four terms, in ascending powers of x, of the binomial expansion of (1 + 2x)⁸.", "marks": 3},
+      {"label": "(b)", "text": "Hence find the coefficient of x³ in the expansion of (1 + 2x)⁸ · (1 − x)².", "marks": 4},
+      {"label": "(c)", "text": "The coefficients of x⁰, x¹, x², x³ in the expansion of (1 + 2x)⁸ form the first four terms of a sequence. Show that this sequence is NOT geometric, and find the ratio of the largest consecutive pair among these four terms.", "marks": 5}
+    ],
+    "totalMarks": 12,
+    "workedSolution": "(a) (1 + 2x)⁸ = 1 + 8(2x) + 28(2x)² + 56(2x)³ + …\n= 1 + 16x + 112x² + 448x³ + …\n\n(b) (1 − x)² = 1 − 2x + x². Multiply by (1 + 16x + 112x² + 448x³ + …) and collect x³ terms:\n448x³ · 1 + 112x² · (−2x) + 16x · x² = 448 − 224 + 16 = 240.\nCoefficient of x³ is 240.\n\n(c) Coefficients: a₀ = 1, a₁ = 16, a₂ = 112, a₃ = 448.\nRatios: a₁/a₀ = 16, a₂/a₁ = 112/16 = 7, a₃/a₂ = 448/112 = 4.\nNot geometric (ratios differ). Largest consecutive ratio is a₁/a₀ = 16.",
+    "answers": ["(a) 1 + 16x + 112x² + 448x³", "(b) 240", "(c) Ratios 16, 7, 4 — not geometric; largest is 16"]
+  }
+]

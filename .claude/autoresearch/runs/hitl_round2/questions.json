@@ -1,0 +1,247 @@
+[
+  {
+    "id": "Q1",
+    "type": "A",
+    "topics": [
+      "Differentiation",
+      "Coordinate Geometry",
+      "Sequences and Series",
+      "Integration"
+    ],
+    "questionText": "The cubic curve C has equation y = x^3 + bx + c, where b and c are constants.\n\n(i) Show that the tangent to C at the point with x-coordinate p meets C again at the point with x-coordinate -2p.\n\n(ii) The point P_0 lies on C and has x-coordinate 1. The tangent to C at P_0 meets C again at P_1; the tangent at P_1 meets C again at P_2; and so on. Find the x-coordinate of P_n.\n\n(iii) Show that the infinite sum 1/x_0 + 1/x_1 + 1/x_2 + ... converges, and find its value. State explicitly what is striking about your answer.\n\n(iv) Show that the area of the region enclosed between C and the tangent at the point with x-coordinate p is 27p^4/4. Hence write down the area enclosed between C and the tangent at P_0.",
+    "parts": [
+      {
+        "label": "(i)",
+        "text": "Show that the tangent to C at the point with x-coordinate p meets C again at the point with x-coordinate -2p.",
+        "marks": 4
+      },
+      {
+        "label": "(ii)",
+        "text": "Starting from P_0 with x-coordinate 1, with P_{n+1} the second meeting point of the tangent at P_n, find the x-coordinate of P_n.",
+        "marks": 3
+      },
+      {
+        "label": "(iii)",
+        "text": "Show that the infinite sum of 1/x_n converges, find its value, and state what is striking about it.",
+        "marks": 4
+      },
+      {
+        "label": "(iv)",
+        "text": "Show that the area between C and the tangent at the point with x-coordinate p equals 27p^4/4, and hence write down the area enclosed by the tangent at P_0 and C.",
+        "marks": 3
+      }
+    ],
+    "totalMarks": 14,
+    "surprise": "Both the recursion x -> -2x and the enclosed area 27p^4/4 are completely independent of the constants b and c \u2014 every cubic in the family x^3 + bx + c behaves identically under this tangent process.",
+    "workedSolution": "(i) dy/dx = 3x^2 + b, so the tangent at (p, p^3+bp+c) has equation y = (3p^2 + b)(x - p) + p^3 + bp + c, which simplifies to y = (3p^2 + b)x - 2p^3 + c. Setting this equal to x^3 + bx + c gives x^3 - 3p^2 x + 2p^3 = 0. Since x = p is a double root (tangency), we factor: x^3 - 3p^2 x + 2p^3 = (x - p)^2 (x + 2p). The remaining root is x = -2p. Note: the constants b and c cancel completely.\n\n(ii) Writing x_n for the x-coordinate of P_n, the recursion is x_{n+1} = -2 x_n with x_0 = 1, hence x_n = (-2)^n.\n\n(iii) 1/x_n = (-1/2)^n, a geometric series with first term 1 and ratio -1/2 (with |ratio| < 1, so convergent). Sum = 1 / (1 - (-1/2)) = 2/3. Striking feature: this answer does not depend on b or c at all \u2014 the value 2/3 is the same for every cubic in the family.\n\n(iv) On the interval [-2p, p] (taking p > 0; the argument is symmetric for p < 0), curve - tangent = x^3 - 3p^2 x + 2p^3 = (x - p)^2 (x + 2p), which is non-negative throughout, so the curve lies above the tangent. Substituting u = x - p (so x + 2p = u + 3p, dx = du):\n  Area = integral from -3p to 0 of u^2 (u + 3p) du = integral from -3p to 0 of (u^3 + 3p u^2) du = [u^4/4 + p u^3] from -3p to 0 = 0 - (81p^4/4 - 27 p^4) = 27 p^4/4.\nAt P_0, p = 1, so the enclosed area equals 27/4.",
+    "answers": [
+      "(i) Shown: tangent meets C again at x = -2p, independent of b and c.",
+      "(ii) x_n = (-2)^n.",
+      "(iii) Sum = 2/3; striking that it does not depend on b or c.",
+      "(iv) Shown that area = 27p^4/4; at P_0 (p = 1) the area is 27/4."
+    ]
+  },
+  {
+    "id": "Q2",
+    "type": "C",
+    "topics": [
+      "Differentiation",
+      "Algebra",
+      "Cubics",
+      "Polynomials"
+    ],
+    "questionText": "The cubic curve C has equation y = x^3 + bx + c, where b and c are real constants.\n\n(i) Show that y has two distinct stationary points if and only if b < 0, and find their x-coordinates in terms of b.\n\n(ii) Show that the equation x^3 + bx + c = 0 has three distinct real roots if and only if 4b^3 + 27c^2 < 0.\n\n(iii) Now suppose this condition holds, and the three roots are alpha, beta, gamma. Without finding the roots, evaluate each of the following in terms of b and c:\n    (a) alpha + beta + gamma,\n    (b) alpha^2 + beta^2 + gamma^2,\n    (c) alpha*beta*gamma,\n    (d) alpha^3 + beta^3 + gamma^3.\n\nIn each case, justify your answer carefully.",
+    "parts": [
+      {
+        "label": "(i)",
+        "text": "Show y has two distinct stationary points iff b < 0, and find their x-coordinates.",
+        "marks": 3
+      },
+      {
+        "label": "(ii)",
+        "text": "Show that x^3 + bx + c = 0 has three distinct real roots if and only if 4b^3 + 27c^2 < 0.",
+        "marks": 6
+      },
+      {
+        "label": "(iii)",
+        "text": "Assuming three distinct real roots alpha, beta, gamma, evaluate (a) the sum, (b) the sum of squares, (c) the product, (d) the sum of cubes, in terms of b and c.",
+        "marks": 5
+      }
+    ],
+    "totalMarks": 14,
+    "surprise": "The condition for three distinct real roots collapses to the single elegant inequality 4b^3 + 27c^2 < 0 \u2014 the discriminant of the depressed cubic \u2014 derivable purely from Year 1 calculus and Vieta-style expansion.",
+    "workedSolution": "(i) y' = 3x^2 + b. The equation 3x^2 + b = 0 has two distinct real solutions iff -b/3 > 0, i.e. b < 0. The stationary points are then at x = +/- sqrt(-b/3).\n\n(ii) Let s = sqrt(-b/3) > 0, so b = -3 s^2. Substituting into y:\n   y(s)  = s^3 + b s + c = s^3 - 3 s^2 * s + c = -2 s^3 + c   (the local minimum, since y'' = 6x > 0 at x = s),\n   y(-s) = -s^3 - b s + c = -s^3 + 3 s^2 * s + c = 2 s^3 + c   (the local maximum).\nFor three distinct real roots, the local maximum must be strictly positive and the local minimum strictly negative:\n   2 s^3 + c > 0   and   -2 s^3 + c < 0,\nequivalently  -2 s^3 < c < 2 s^3,  i.e.  c^2 < 4 s^6 = 4 (-b/3)^3 = -4 b^3 / 27.\nMultiplying by 27 gives 27 c^2 < -4 b^3, i.e. 4 b^3 + 27 c^2 < 0. (Conversely, this inequality forces b^3 < 0 and so b < 0, recovering the requirement of two stationary points.)\n\n(iii) Since alpha, beta, gamma are the roots,\n   x^3 + bx + c = (x - alpha)(x - beta)(x - gamma) = x^3 - (alpha+beta+gamma) x^2 + (alpha*beta + beta*gamma + gamma*alpha) x - alpha*beta*gamma.\nComparing coefficients (note: x^2 coefficient is 0):\n   (a) alpha + beta + gamma = 0,\n   (c) alpha*beta*gamma = -c,\n   and   alpha*beta + beta*gamma + gamma*alpha = b.\n   (b) alpha^2 + beta^2 + gamma^2 = (alpha+beta+gamma)^2 - 2(alpha*beta + beta*gamma + gamma*alpha) = 0 - 2b = -2b. (Since b < 0 by (ii), this is positive, as required.)\n   (d) Using the identity alpha^3 + beta^3 + gamma^3 - 3 alpha*beta*gamma = (alpha+beta+gamma)(alpha^2+beta^2+gamma^2 - alpha*beta - beta*gamma - gamma*alpha) = 0 (since alpha+beta+gamma = 0). Hence alpha^3 + beta^3 + gamma^3 = 3 alpha*beta*gamma = -3c.",
+    "answers": [
+      "(i) Stationary points iff b < 0, at x = +/- sqrt(-b/3).",
+      "(ii) Shown: three distinct real roots iff 4b^3 + 27c^2 < 0.",
+      "(iii) (a) 0,  (b) -2b,  (c) -c,  (d) -3c."
+    ]
+  },
+  {
+    "id": "Q3",
+    "type": "D",
+    "topics": [
+      "Differentiation",
+      "Logarithms and Exponentials",
+      "Inequalities",
+      "Algebra"
+    ],
+    "questionText": "(i) By considering the function f(x) = x - 1 - ln x for x > 0, show that\n        ln x  <=  x - 1   for all x > 0,\nwith equality if and only if x = 1.\n\n(ii) Hence show that for any positive reals a and b,\n        a - b  >=  b * ln(a/b),\nwith equality if and only if a = b.\n\n(iii) Let a, b, c be three distinct positive real numbers with a + b + c = 3. Prove that\n        a * b * c  <  1.\n\n(iv) Let n >= 2 and let a_1, a_2, ..., a_n be positive real numbers (not necessarily distinct) with a_1 + a_2 + ... + a_n = n. Show that\n        a_1 * a_2 * ... * a_n  <=  1,\nwith equality if and only if every a_i = 1. (You have just proved a normalised form of the AM-GM inequality.)",
+    "parts": [
+      {
+        "label": "(i)",
+        "text": "Show that ln x <= x - 1 for x > 0, with equality iff x = 1.",
+        "marks": 3
+      },
+      {
+        "label": "(ii)",
+        "text": "Hence show a - b >= b * ln(a/b) for positive a, b, with equality iff a = b.",
+        "marks": 3
+      },
+      {
+        "label": "(iii)",
+        "text": "If a, b, c are distinct positive reals with a + b + c = 3, show that abc < 1.",
+        "marks": 4
+      },
+      {
+        "label": "(iv)",
+        "text": "Generalise: if positive reals a_1,...,a_n sum to n, show that their product is at most 1 (with equality iff all equal 1).",
+        "marks": 4
+      }
+    ],
+    "totalMarks": 14,
+    "surprise": "AM-GM \u2014 usually proved by clever induction or rearrangement \u2014 falls out of a single one-variable calculus inequality applied term by term.",
+    "workedSolution": "(i) Let f(x) = x - 1 - ln x for x > 0. Then f'(x) = 1 - 1/x, which is < 0 for 0 < x < 1, equals 0 at x = 1, and > 0 for x > 1. Thus f has a strict minimum at x = 1, where f(1) = 0. So f(x) >= 0 for all x > 0, with equality only at x = 1, which rearranges to ln x <= x - 1.\n\n(ii) Substitute x = a/b > 0 into (i): ln(a/b) <= a/b - 1. Multiplying by b > 0 gives b * ln(a/b) <= a - b, i.e. a - b >= b * ln(a/b), with equality iff a/b = 1, i.e. a = b.\n\n(iii) Apply (i) to each of a, b, c: ln a <= a - 1, ln b <= b - 1, ln c <= c - 1. Summing,\n   ln a + ln b + ln c  <=  (a + b + c) - 3  =  0.\nHence ln(abc) <= 0, i.e. abc <= 1. Because a, b, c are distinct, at most one of them can equal 1, so at least two of the inequalities are strict, giving abc < 1.\n\n(iv) Apply (i) to each a_i: ln a_i <= a_i - 1. Summing the n inequalities,\n   sum_{i=1}^n ln a_i  <=  sum_{i=1}^n (a_i - 1)  =  n - n  =  0.\nThus ln(a_1 a_2 ... a_n) <= 0, hence a_1 a_2 ... a_n <= 1. Equality requires equality in every term of (i), i.e. each a_i = 1.\n\nRemark: writing a_i = n x_i / (x_1 + ... + x_n) for arbitrary positive x_i recovers the standard AM-GM inequality (x_1 ... x_n)^{1/n} <= (x_1 + ... + x_n)/n.",
+    "answers": [
+      "(i) Shown via f(x) = x - 1 - ln x having minimum 0 at x = 1.",
+      "(ii) Shown by setting x = a/b and multiplying by b.",
+      "(iii) Sum the three inequalities ln a <= a - 1 etc.; strict because the a_i are distinct.",
+      "(iv) Sum the n inequalities ln a_i <= a_i - 1; equality iff every a_i = 1."
+    ]
+  },
+  {
+    "id": "Q4",
+    "type": "E",
+    "topics": [
+      "Polynomials",
+      "Differentiation",
+      "Integration",
+      "Simultaneous Equations"
+    ],
+    "questionText": "A real polynomial p(x) of degree at most 3 satisfies\n        p(0) = 0,    p(1) = 1,    p'(0) = 0,    p'(1) = 0.\n\n(i) Find p(x).\n\n(ii) Show that 0 <= p(x) <= 1 for 0 <= x <= 1, and find the value of x in [0, 1] for which p(x) = 1/2. Comment on the result.\n\n(iii) Evaluate the integral from 0 to 1 of p(x) dx.\n\n(iv) Now find a real polynomial q(x) of degree at most 5 satisfying the same four conditions and additionally\n        q''(0) = 0   and   q''(1) = 0.\nEvaluate the integral from 0 to 1 of q(x) dx, and comment on what you observe by comparison with (iii).",
+    "parts": [
+      {
+        "label": "(i)",
+        "text": "Find the cubic p satisfying p(0)=0, p(1)=1, p'(0)=p'(1)=0.",
+        "marks": 3
+      },
+      {
+        "label": "(ii)",
+        "text": "Show 0 <= p <= 1 on [0,1], find x with p(x) = 1/2, and comment.",
+        "marks": 4
+      },
+      {
+        "label": "(iii)",
+        "text": "Evaluate the integral from 0 to 1 of p(x) dx.",
+        "marks": 2
+      },
+      {
+        "label": "(iv)",
+        "text": "Find the quintic q with the four conditions plus q''(0)=q''(1)=0, evaluate the integral from 0 to 1 of q, and compare with (iii).",
+        "marks": 5
+      }
+    ],
+    "totalMarks": 14,
+    "surprise": "These two interpolating polynomials of very different degrees turn out to take the value 1/2 at exactly the same point and to have exactly the same definite integral over [0,1] \u2014 both equal 1/2.",
+    "workedSolution": "(i) Write p(x) = a x^3 + b x^2 + c x + d. From p(0) = 0 we get d = 0. From p'(0) = c = 0. So p(x) = a x^3 + b x^2. Then p(1) = a + b = 1 and p'(1) = 3a + 2b = 0. Solving: b = -3a/2, so a + (-3a/2) = -a/2 = 1, giving a = -2 and b = 3. Hence\n        p(x) = -2 x^3 + 3 x^2 = x^2 (3 - 2x).\n\n(ii) p'(x) = -6 x^2 + 6 x = 6 x (1 - x), which is >= 0 on [0,1] and zero only at the endpoints. Thus p is monotonically increasing on [0,1], with p(0) = 0 and p(1) = 1, so 0 <= p(x) <= 1.\nSetting p(x) = 1/2: -2 x^3 + 3 x^2 = 1/2, or 4 x^3 - 6 x^2 + 1 = 0. Testing x = 1/2: 4(1/8) - 6(1/4) + 1 = 1/2 - 3/2 + 1 = 0, confirming x = 1/2 is a root. Factorising: 4 x^3 - 6 x^2 + 1 = (2x - 1)(2 x^2 - 2x - 1); the other roots are (1 +/- sqrt(3))/2, which lie outside [0, 1]. Hence the unique solution in [0, 1] is x = 1/2. Comment: the natural midpoint of the input interval also gives the midpoint of the output range \u2014 a striking symmetry given p is a cubic, not a line.\n\n(iii) Integral from 0 to 1 of (-2 x^3 + 3 x^2) dx = [-x^4/2 + x^3] from 0 to 1 = -1/2 + 1 = 1/2.\n\n(iv) Write q(x) = a x^5 + b x^4 + c x^3 + d x^2 + e x + f. Then q(0) = f = 0, q'(0) = e = 0, q''(0) = 2 d = 0, so d = 0. Hence q(x) = a x^5 + b x^4 + c x^3. The remaining conditions:\n   q(1)   = a + b + c = 1\n   q'(1)  = 5 a + 4 b + 3 c = 0\n   q''(1) = 20 a + 12 b + 6 c = 0\nFrom (1): c = 1 - a - b. Sub into (2): 5a + 4b + 3(1 - a - b) = 2a + b + 3 = 0, so b = -2a - 3.\nSub into (3): 20 a + 12(-2 a - 3) + 6(1 - a - (-2a - 3)) = 20 a - 24 a - 36 + 6 + 6 a + 18 = 2 a - 12 = 0, so a = 6, b = -15, c = 10. Hence\n        q(x) = 6 x^5 - 15 x^4 + 10 x^3.\n(Checks: q(1) = 1; q'(x) = 30 x^4 - 60 x^3 + 30 x^2 = 30 x^2 (x - 1)^2, vanishing at 0 and 1; q''(x) = 60 x (2 x - 1)(x - 1), vanishing at 0 and 1.)\nIntegral from 0 to 1 of q(x) dx = [x^6 - 3 x^5 + (5/2) x^4] from 0 to 1 = 1 - 3 + 5/2 = 1/2.\nComment: although q is of higher degree and far flatter near the endpoints than p, the integral over [0,1] is again exactly 1/2 \u2014 the same as for p. Both polynomials in fact share the symmetry p(1/2) = q(1/2) = 1/2 and p(x) + p(1 - x) = q(x) + q(1 - x) = 1, which forces the integral to equal 1/2 in each case.",
+    "answers": [
+      "(i) p(x) = -2 x^3 + 3 x^2.",
+      "(ii) p increases on [0,1] from 0 to 1; p(x) = 1/2 only at x = 1/2 (the midpoint of the interval also produces the midpoint of the range).",
+      "(iii) 1/2.",
+      "(iv) q(x) = 6 x^5 - 15 x^4 + 10 x^3; integral = 1/2 (the same as in (iii) \u2014 both polynomials are symmetric about (1/2, 1/2))."
+    ]
+  },
+  {
+    "id": "Q5",
+    "type": "F",
+    "topics": [
+      "Integration",
+      "Coordinate Geometry",
+      "Functions and Inverses"
+    ],
+    "questionText": "Let f be a strictly increasing differentiable function on the interval [0, a] with f(0) = 0 and f(a) = b, where a, b > 0. Its inverse f^{-1} is then a strictly increasing function on [0, b] with f^{-1}(0) = 0 and f^{-1}(b) = a.\n\n(i) Sketch the graph of y = f(x) for 0 <= x <= a, and identify clearly which regions of the rectangle 0 <= x <= a, 0 <= y <= b have areas equal to the integral from 0 to a of f(x) dx and the integral from 0 to b of f^{-1}(y) dy respectively.\n\n(ii) Hence prove that\n        integral from 0 to a of f(x) dx  +  integral from 0 to b of f^{-1}(y) dy  =  a*b.\n\n(iii) Apply the result with f(x) = x^2 on [0, t] (where t > 0) to evaluate the integral from 0 to t^2 of sqrt(y) dy without performing the integral directly. Verify your answer by direct integration.\n\n(iv) A continuous strictly increasing function g satisfies g(0) = 0 and g(1) = 1, and the integral from 0 to 1 of g(x) dx equals 1/3. Without further information about g, find the integral from 0 to 1 of g^{-1}(y) dy.",
+    "parts": [
+      {
+        "label": "(i)",
+        "text": "Sketch and identify the two regions whose areas are the two integrals.",
+        "marks": 3
+      },
+      {
+        "label": "(ii)",
+        "text": "Prove the area identity by a geometric argument.",
+        "marks": 4
+      },
+      {
+        "label": "(iii)",
+        "text": "Apply with f(x) = x^2 on [0,t] to evaluate the integral from 0 to t^2 of sqrt(y) dy, and verify directly.",
+        "marks": 4
+      },
+      {
+        "label": "(iv)",
+        "text": "Use the identity to find the integral from 0 to 1 of g^{-1}(y) dy when g(0)=0, g(1)=1, integral of g = 1/3.",
+        "marks": 3
+      }
+    ],
+    "totalMarks": 14,
+    "surprise": "The integrals of f and of its inverse f^{-1} \u2014 formally quite different objects \u2014 are tied together by the simple area equation a*b. This lets us evaluate one integral by knowing the other, even when the functional form of f^{-1} is unknown.",
+    "workedSolution": "(i) Sketch the increasing curve y = f(x) from (0, 0) to (a, b) inside the rectangle [0, a] x [0, b]. The region R_1 below the curve and above the x-axis, between x = 0 and x = a, has area equal to the integral from 0 to a of f(x) dx. The region R_2 to the left of the curve and right of the y-axis, between y = 0 and y = b, has area equal to the integral from 0 to b of f^{-1}(y) dy (since at height y, the horizontal strip extends from x = 0 to x = f^{-1}(y)).\n\n(ii) Because f is strictly increasing and continuous from (0, 0) to (a, b), every point (x, y) of the rectangle satisfies exactly one of: y < f(x) (below the curve, in R_1), or y > f(x) (above the curve, in R_2), or y = f(x) (on the curve, area zero). Equivalently, R_2 is also the set with x < f^{-1}(y). The two regions tile the rectangle, so their areas add to the rectangle's area:\n        integral from 0 to a of f(x) dx + integral from 0 to b of f^{-1}(y) dy = a * b.\n\n(iii) Take f(x) = x^2 on [0, t]. Then b = f(t) = t^2 and f^{-1}(y) = sqrt(y). The identity gives\n        integral from 0 to t of x^2 dx + integral from 0 to t^2 of sqrt(y) dy = t * t^2 = t^3.\nSince integral from 0 to t of x^2 dx = t^3/3, we deduce\n        integral from 0 to t^2 of sqrt(y) dy = t^3 - t^3/3 = 2 t^3/3.\nVerification: integral from 0 to t^2 of y^{1/2} dy = [(2/3) y^{3/2}] from 0 to t^2 = (2/3)(t^2)^{3/2} = (2/3) t^3.\n\n(iv) Apply (ii) with f = g, a = b = 1: integral of g + integral of g^{-1} = 1. Hence integral from 0 to 1 of g^{-1}(y) dy = 1 - 1/3 = 2/3 \u2014 without needing to know g.",
+    "answers": [
+      "(i) R_1 = region below curve (area = integral of f); R_2 = region left of curve (area = integral of f^{-1}).",
+      "(ii) Shown: the two regions tile the rectangle of area a*b.",
+      "(iii) integral from 0 to t^2 of sqrt(y) dy = 2 t^3 / 3, confirmed by direct integration.",
+      "(iv) 2/3."
+    ]
+  },
+  {
+    "id": "Q6",
+    "type": "F",
+    "topics": [
+      "Binomial Expansion",
+      "Integration",
+      "Series",
+      "Algebra"
+    ],
+    "questionText": "Let n be a non-negative integer, and write C(n, k) for the binomial coefficient \"n choose k\".\n\n(i) By writing (1 + x)^n as a binomial sum and integrating term by term from 0 to 1, prove that\n        sum_{k=0}^{n} C(n,k)/(k + 1)  =  (2^{n+1} - 1)/(n + 1).\n\n(ii) By integrating (1 - x)^n similarly, evaluate\n        sum_{k=0}^{n} (-1)^k * C(n,k)/(k + 1).\n\n(iii) Hence evaluate, separately,\n        sum over even k in {0,...,n} of C(n,k)/(k + 1)\nand\n        sum over odd k in {0,...,n} of C(n,k)/(k + 1).\n\n(iv) By considering the integral from 0 to 1 of x*(1 + x)^n dx in two different ways, find a closed form for\n        sum_{k=0}^{n} C(n,k)/(k + 2).",
+    "parts": [
+      {
+        "label": "(i)",
+        "text": "Show that the sum of C(n,k)/(k+1) over k from 0 to n equals (2^{n+1} - 1)/(n + 1).",
+        "marks": 3
+      },
+      {
+        "label": "(ii)",
+        "text": "Find the alternating sum of (-1)^k * C(n,k)/(k+1).",
+        "marks": 3
+      },
+      {
+        "label": "(iii)",
+        "text": "Hence evaluate the even-k and odd-k partial sums of C(n,k)/(k+1).",
+        "marks": 4
+      },
+      {
+        "label": "(iv)",
+        "text": "Evaluate the sum of C(n,k)/(k+2) by computing integral from 0 to 1 of x*(1+x)^n dx in two ways.",
+        "marks": 4
+      }
+    ],
+    "totalMarks": 14,
+    "surprise": "Awkward-looking finite binomial sums collapse to clean closed forms via a single trick: rewrite the sum as an integral of a binomial expansion. The same idea, with a factor of x inserted, instantly gives the next family of sums.",
+    "workedSolution": "(i) Expanding, (1 + x)^n = sum_{k=0}^{n} C(n,k) x^k. Integrating from 0 to 1 term by term:\n   integral of (1 + x)^n dx = [(1 + x)^{n+1}/(n + 1)] from 0 to 1 = (2^{n+1} - 1)/(n + 1).\nBut also, integral of x^k from 0 to 1 = 1/(k + 1), so the integral equals sum_{k=0}^{n} C(n,k)/(k + 1). Equating gives the required identity.\n\n(ii) Similarly (1 - x)^n = sum_{k=0}^{n} (-1)^k C(n,k) x^k. Integrating from 0 to 1:\n   integral of (1 - x)^n dx = [-(1 - x)^{n+1}/(n + 1)] from 0 to 1 = 0 - (-1/(n + 1)) = 1/(n + 1),\nand also equals sum_{k=0}^{n} (-1)^k C(n,k)/(k + 1). Hence\n        sum_{k=0}^{n} (-1)^k C(n,k)/(k + 1) = 1/(n + 1).\n\n(iii) Let S_even = sum over even k of C(n,k)/(k + 1) and S_odd = sum over odd k of C(n,k)/(k + 1). From (i), S_even + S_odd = (2^{n+1} - 1)/(n + 1). From (ii), S_even - S_odd = 1/(n + 1). Adding and subtracting:\n        S_even = 2^n/(n + 1),       S_odd = (2^n - 1)/(n + 1).\n\n(iv) Approach 1 (term by term): x*(1 + x)^n = sum_{k=0}^{n} C(n,k) x^{k+1}. Integrating from 0 to 1, integral of x^{k+1} dx = 1/(k + 2), so\n        integral from 0 to 1 of x*(1 + x)^n dx = sum_{k=0}^{n} C(n,k)/(k + 2).\nApproach 2 (substitution): Let u = 1 + x, du = dx, so x = u - 1, with u going from 1 to 2:\n        integral from 0 to 1 of x*(1 + x)^n dx = integral from 1 to 2 of (u - 1) u^n du = integral from 1 to 2 of (u^{n+1} - u^n) du\n        = [u^{n+2}/(n + 2) - u^{n+1}/(n + 1)] from 1 to 2 = (2^{n+2} - 1)/(n + 2) - (2^{n+1} - 1)/(n + 1).\nEquating the two expressions:\n        sum_{k=0}^{n} C(n,k)/(k + 2) = (2^{n+2} - 1)/(n + 2) - (2^{n+1} - 1)/(n + 1).",
+    "answers": [
+      "(i) (2^{n+1} - 1)/(n + 1).",
+      "(ii) 1/(n + 1).",
+      "(iii) S_even = 2^n/(n + 1); S_odd = (2^n - 1)/(n + 1).",
+      "(iv) (2^{n+2} - 1)/(n + 2) - (2^{n+1} - 1)/(n + 1)."
+    ]
+  }
+]

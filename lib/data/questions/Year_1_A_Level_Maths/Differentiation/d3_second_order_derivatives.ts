@@ -32,15 +32,21 @@ export const questions: Question[] = [
             steps: [
                 {
                     stepNumber: 1,
-                    description: 'Differentiate once to find \\( \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} \\).',
-                    workingLatex: '\\frac{\\mathrm{d}y}{\\mathrm{d}x} = 4x^3',
-                    explanation: 'Apply the power rule: multiply by the index and reduce it by 1.'
+                    description: 'Write down the function.',
+                    workingLatex: 'y = x^4',
+                    explanation: 'We need to differentiate this twice to find the second derivative.'
                 },
                 {
                     stepNumber: 2,
-                    description: 'Differentiate again to find \\( \\dfrac{\\mathrm{d}^2y}{\\mathrm{d}x^2} \\).',
-                    workingLatex: '\\frac{\\mathrm{d}^2y}{\\mathrm{d}x^2} = 12x^2',
-                    explanation: 'Differentiate \\(4x^3\\): multiply \\(4\\) by \\(3\\) and reduce the index to \\(2\\).'
+                    description: 'Apply the power rule once.',
+                    workingLatex: '\\frac{\\mathrm{d}y}{\\mathrm{d}x} = 4x^{4-1} = 4x^3',
+                    explanation: 'Multiply by the index 4 and reduce the power by 1 to get 3.'
+                },
+                {
+                    stepNumber: 3,
+                    description: 'Apply the power rule again.',
+                    workingLatex: '\\frac{\\mathrm{d}^2y}{\\mathrm{d}x^2} = 4 \\times 3x^{3-1} = 12x^2',
+                    explanation: 'Differentiate \\(4x^3\\) by multiplying the coefficient 4 by the index 3 to get 12, and reducing the power to 2.'
                 }
             ],
             finalAnswer: '\\( \\dfrac{\\mathrm{d}^2y}{\\mathrm{d}x^2} = 12x^2 \\)'
@@ -60,15 +66,27 @@ export const questions: Question[] = [
             steps: [
                 {
                     stepNumber: 1,
-                    description: 'First derivative.',
-                    workingLatex: '\\frac{\\mathrm{d}y}{\\mathrm{d}x} = 15x^2 - 2',
-                    explanation: 'Differentiate each term: \\(5x^3 \\to 15x^2\\) and \\(-2x \\to -2\\).'
+                    description: 'Differentiate the first term.',
+                    workingLatex: '5x^3 \\to 5 \\times 3x^{2} = 15x^2',
+                    explanation: 'Multiply the coefficient 5 by the index 3, and reduce the power by 1.'
                 },
                 {
                     stepNumber: 2,
-                    description: 'Second derivative.',
+                    description: 'Differentiate the second term.',
+                    workingLatex: '-2x \\to -2',
+                    explanation: 'The derivative of \\(-2x\\) is \\(-2\\), since the power of \\(x\\) is 1.'
+                },
+                {
+                    stepNumber: 3,
+                    description: 'Write the first derivative.',
+                    workingLatex: '\\frac{\\mathrm{d}y}{\\mathrm{d}x} = 15x^2 - 2',
+                    explanation: 'Combining the results from the previous two steps gives the first derivative.'
+                },
+                {
+                    stepNumber: 4,
+                    description: 'Differentiate again for the second derivative.',
                     workingLatex: '\\frac{\\mathrm{d}^2y}{\\mathrm{d}x^2} = 30x',
-                    explanation: 'Differentiate \\(15x^2 - 2\\): the constant \\(-2\\) vanishes.'
+                    explanation: 'Differentiating \\(15x^2\\) gives \\(30x\\). The constant \\(-2\\) vanishes on differentiation.'
                 }
             ],
             finalAnswer: '\\( \\dfrac{\\mathrm{d}^2y}{\\mathrm{d}x^2} = 30x \\)'
@@ -88,15 +106,27 @@ export const questions: Question[] = [
             steps: [
                 {
                     stepNumber: 1,
-                    description: 'Find \\( f\'(x) \\).',
-                    workingLatex: "f'(x) = 12x^3 - 12x",
-                    explanation: 'Differentiate each term.'
+                    description: 'Differentiate each term for f\'(x).',
+                    workingLatex: "3x^4 \\to 12x^3, \\quad -6x^2 \\to -12x, \\quad 1 \\to 0",
+                    explanation: 'Apply the power rule to each term. The constant 1 differentiates to 0.'
                 },
                 {
                     stepNumber: 2,
-                    description: "Find \\( f''(x) \\).",
+                    description: 'Write the first derivative.',
+                    workingLatex: "f'(x) = 12x^3 - 12x",
+                    explanation: 'Combining the results gives the first derivative.'
+                },
+                {
+                    stepNumber: 3,
+                    description: 'Differentiate f\'(x) term by term.',
+                    workingLatex: "12x^3 \\to 36x^2, \\quad -12x \\to -12",
+                    explanation: 'Apply the power rule again to each term of the first derivative.'
+                },
+                {
+                    stepNumber: 4,
+                    description: 'Write the second derivative.',
                     workingLatex: "f''(x) = 36x^2 - 12",
-                    explanation: 'Differentiate \\(12x^3 - 12x\\): the constant \\(1\\) in the original has already been lost.'
+                    explanation: 'This is the second derivative of the original function.'
                 }
             ],
             finalAnswer: "\\( f''(x) = 36x^2 - 12 \\)"
@@ -116,15 +146,27 @@ export const questions: Question[] = [
             steps: [
                 {
                     stepNumber: 1,
-                    description: 'First derivative.',
-                    workingLatex: '\\frac{\\mathrm{d}y}{\\mathrm{d}x} = 20x^4 - 9x^2 + 7',
-                    explanation: 'Differentiate each term; the constant \\(-2\\) disappears.'
+                    description: 'Differentiate each term once.',
+                    workingLatex: '4x^5 \\to 20x^4, \\quad -3x^3 \\to -9x^2, \\quad 7x \\to 7, \\quad -2 \\to 0',
+                    explanation: 'Apply the power rule to every term. The constant \\(-2\\) vanishes.'
                 },
                 {
                     stepNumber: 2,
-                    description: 'Second derivative.',
+                    description: 'Write the first derivative.',
+                    workingLatex: '\\frac{\\mathrm{d}y}{\\mathrm{d}x} = 20x^4 - 9x^2 + 7',
+                    explanation: 'Combine the differentiated terms to form dy/dx.'
+                },
+                {
+                    stepNumber: 3,
+                    description: 'Differentiate each term again.',
+                    workingLatex: '20x^4 \\to 80x^3, \\quad -9x^2 \\to -18x, \\quad 7 \\to 0',
+                    explanation: 'Apply the power rule to each term of the first derivative. The constant 7 vanishes.'
+                },
+                {
+                    stepNumber: 4,
+                    description: 'Write the second derivative.',
                     workingLatex: '\\frac{\\mathrm{d}^2y}{\\mathrm{d}x^2} = 80x^3 - 18x',
-                    explanation: 'Differentiate \\(20x^4 - 9x^2 + 7\\); the constant \\(7\\) disappears.'
+                    explanation: 'This is the required second derivative.'
                 }
             ],
             finalAnswer: '\\( \\dfrac{\\mathrm{d}^2y}{\\mathrm{d}x^2} = 80x^3 - 18x \\)'
@@ -144,21 +186,27 @@ export const questions: Question[] = [
             steps: [
                 {
                     stepNumber: 1,
-                    description: "Find \\( f'(x) \\) using the power rule.",
-                    workingLatex: "f'(x) = -2x^{-3}",
-                    explanation: 'Multiply by the index \\(-2\\) and reduce the index to \\(-3\\).'
+                    description: 'Write the function in index form.',
+                    workingLatex: 'f(x) = x^{-2}',
+                    explanation: 'The function is already in index notation, ready to differentiate.'
                 },
                 {
                     stepNumber: 2,
-                    description: "Find \\( f''(x) \\).",
-                    workingLatex: "f''(x) = (-2)(-3)x^{-4} = 6x^{-4}",
-                    explanation: 'Differentiate \\(-2x^{-3}\\): two negatives multiply to give a positive.'
+                    description: 'Apply the power rule once.',
+                    workingLatex: "f'(x) = -2x^{-2-1} = -2x^{-3}",
+                    explanation: 'Multiply by the index \\(-2\\) and reduce the power by 1 to get \\(-3\\).'
                 },
                 {
                     stepNumber: 3,
-                    description: 'Write in fraction form.',
+                    description: 'Apply the power rule again.',
+                    workingLatex: "f''(x) = (-2)(-3)x^{-3-1} = 6x^{-4}",
+                    explanation: 'Differentiate \\(-2x^{-3}\\). The coefficient becomes \\((-2) \\times (-3) = 6\\) and the power decreases to \\(-4\\).'
+                },
+                {
+                    stepNumber: 4,
+                    description: 'Rewrite in fraction form.',
                     workingLatex: "f''(x) = \\frac{6}{x^4}",
-                    explanation: '\\( x^{-4} = \\dfrac{1}{x^4} \\).'
+                    explanation: 'A negative index means a reciprocal, so \\(x^{-4} = \\dfrac{1}{x^4}\\).'
                 }
             ],
             finalAnswer: "\\( f''(x) = \\dfrac{6}{x^4} \\)"
@@ -220,19 +268,37 @@ export const questions: Question[] = [
                     stepNumber: 1,
                     description: 'Rewrite using index notation.',
                     workingLatex: 'y = 6x^2 - x^{-1}',
-                    explanation: '\\( \\dfrac{1}{x} = x^{-1} \\).'
+                    explanation: 'Express \\(\\dfrac{1}{x}\\) as \\(x^{-1}\\) so the power rule can be applied.'
                 },
                 {
                     stepNumber: 2,
-                    description: 'First derivative.',
-                    workingLatex: '\\frac{\\mathrm{d}y}{\\mathrm{d}x} = 12x + x^{-2}',
-                    explanation: 'Derivative of \\(6x^2\\) is \\(12x\\); derivative of \\(-x^{-1}\\) is \\(+x^{-2}\\).'
+                    description: 'Differentiate the first term.',
+                    workingLatex: '6x^2 \\to 12x',
+                    explanation: 'Multiply the coefficient 6 by the index 2 to get 12, and reduce the power to 1.'
                 },
                 {
                     stepNumber: 3,
-                    description: 'Second derivative.',
+                    description: 'Differentiate the second term.',
+                    workingLatex: '-x^{-1} \\to -(-1)x^{-2} = x^{-2}',
+                    explanation: 'Multiply by the index \\(-1\\) and reduce the power to \\(-2\\). The two negatives give a positive.'
+                },
+                {
+                    stepNumber: 4,
+                    description: 'Write the first derivative.',
+                    workingLatex: '\\frac{\\mathrm{d}y}{\\mathrm{d}x} = 12x + x^{-2}',
+                    explanation: 'Combine the differentiated terms.'
+                },
+                {
+                    stepNumber: 5,
+                    description: 'Differentiate dy/dx term by term.',
+                    workingLatex: '12x \\to 12, \\quad x^{-2} \\to -2x^{-3}',
+                    explanation: 'The derivative of \\(12x\\) is 12. For \\(x^{-2}\\), multiply by \\(-2\\) and reduce the power to \\(-3\\).'
+                },
+                {
+                    stepNumber: 6,
+                    description: 'Write the second derivative.',
                     workingLatex: '\\frac{\\mathrm{d}^2y}{\\mathrm{d}x^2} = 12 - 2x^{-3} = 12 - \\frac{2}{x^3}',
-                    explanation: 'Differentiate \\(12x + x^{-2}\\): derivative of \\(x^{-2}\\) is \\(-2x^{-3}\\).'
+                    explanation: 'Rewrite \\(x^{-3}\\) as \\(\\dfrac{1}{x^3}\\) to express the answer in fraction form.'
                 }
             ],
             finalAnswer: '\\( \\dfrac{\\mathrm{d}^2y}{\\mathrm{d}x^2} = 12 - \\dfrac{2}{x^3} \\)'
@@ -252,21 +318,33 @@ export const questions: Question[] = [
             steps: [
                 {
                     stepNumber: 1,
-                    description: "Find \\( f'(x) \\).",
-                    workingLatex: "f'(x) = 6x^2 - 18x + 12",
-                    explanation: 'Differentiate term by term.'
+                    description: 'Differentiate each term once.',
+                    workingLatex: "2x^3 \\to 6x^2, \\quad -9x^2 \\to -18x, \\quad 12x \\to 12, \\quad -5 \\to 0",
+                    explanation: 'Apply the power rule to each term. The constant \\(-5\\) vanishes.'
                 },
                 {
                     stepNumber: 2,
-                    description: "Find \\( f''(x) \\).",
-                    workingLatex: "f''(x) = 12x - 18",
-                    explanation: 'Differentiate \\(6x^2 - 18x + 12\\); the constant vanishes.'
+                    description: 'Write the first derivative.',
+                    workingLatex: "f'(x) = 6x^2 - 18x + 12",
+                    explanation: 'Combine the differentiated terms.'
                 },
                 {
                     stepNumber: 3,
-                    description: "Set \\( f''(x) = 0 \\).",
-                    workingLatex: "12x - 18 = 0 \\implies x = \\frac{18}{12} = \\frac{3}{2}",
-                    explanation: 'Solve the linear equation for \\( x \\).'
+                    description: 'Differentiate again for f\'\'(x).',
+                    workingLatex: "f''(x) = 12x - 18",
+                    explanation: 'Differentiate \\(6x^2 \\to 12x\\) and \\(-18x \\to -18\\). The constant 12 vanishes.'
+                },
+                {
+                    stepNumber: 4,
+                    description: 'Set the second derivative to zero.',
+                    workingLatex: "12x - 18 = 0",
+                    explanation: 'To find where the second derivative is zero, set the expression equal to zero.'
+                },
+                {
+                    stepNumber: 5,
+                    description: 'Solve for x.',
+                    workingLatex: "12x = 18 \\implies x = \\frac{18}{12} = \\frac{3}{2}",
+                    explanation: 'Add 18 to both sides and divide by 12, then simplify the fraction.'
                 }
             ],
             finalAnswer: "\\( f''(x) = 12x - 18 \\), so \\( f''(x) = 0 \\) when \\( x = \\dfrac{3}{2} \\)"
@@ -287,20 +365,26 @@ export const questions: Question[] = [
                 {
                     stepNumber: 1,
                     description: 'Expand the brackets.',
-                    workingLatex: 'y = x^2 - x - 6',
-                    explanation: '\\( (x+2)(x-3) = x^2 - 3x + 2x - 6 \\).'
+                    workingLatex: 'y = x^2 - 3x + 2x - 6 = x^2 - x - 6',
+                    explanation: 'Multiply each term in the first bracket by each term in the second, then collect like terms.'
                 },
                 {
                     stepNumber: 2,
-                    description: 'First derivative.',
+                    description: 'Differentiate to find dy/dx.',
                     workingLatex: '\\frac{\\mathrm{d}y}{\\mathrm{d}x} = 2x - 1',
-                    explanation: 'Differentiate \\(x^2 - x - 6\\).'
+                    explanation: 'Differentiate each term: \\(x^2 \\to 2x\\), \\(-x \\to -1\\), and the constant \\(-6\\) vanishes.'
                 },
                 {
                     stepNumber: 3,
-                    description: 'Second derivative.',
+                    description: 'Differentiate again for the second derivative.',
                     workingLatex: '\\frac{\\mathrm{d}^2y}{\\mathrm{d}x^2} = 2',
-                    explanation: 'Differentiating a linear function gives a constant.'
+                    explanation: 'The derivative of \\(2x\\) is 2. The constant \\(-1\\) vanishes on differentiation.'
+                },
+                {
+                    stepNumber: 4,
+                    description: 'State the result.',
+                    workingLatex: '\\frac{\\mathrm{d}^2y}{\\mathrm{d}x^2} = 2',
+                    explanation: 'The second derivative is a constant, meaning the curve has constant concavity.'
                 }
             ],
             finalAnswer: '\\( \\dfrac{\\mathrm{d}^2y}{\\mathrm{d}x^2} = 2 \\)'
@@ -320,21 +404,27 @@ export const questions: Question[] = [
             steps: [
                 {
                     stepNumber: 1,
-                    description: 'Simplify by dividing each term by \\( x \\).',
-                    workingLatex: 'y = x^3 - 2x',
-                    explanation: '\\( \\dfrac{x^4}{x} = x^3 \\) and \\( \\dfrac{-2x^2}{x} = -2x \\).'
+                    description: 'Simplify by dividing each term by x.',
+                    workingLatex: 'y = \\frac{x^4}{x} - \\frac{2x^2}{x} = x^3 - 2x',
+                    explanation: 'Divide each term in the numerator by \\(x\\) separately to simplify the expression.'
                 },
                 {
                     stepNumber: 2,
-                    description: 'First derivative.',
+                    description: 'Differentiate to find dy/dx.',
                     workingLatex: '\\frac{\\mathrm{d}y}{\\mathrm{d}x} = 3x^2 - 2',
-                    explanation: 'Power rule applied to each term.'
+                    explanation: 'Apply the power rule: \\(x^3 \\to 3x^2\\) and \\(-2x \\to -2\\).'
                 },
                 {
                     stepNumber: 3,
-                    description: 'Second derivative.',
+                    description: 'Differentiate dy/dx for the second derivative.',
+                    workingLatex: '3x^2 \\to 6x, \\quad -2 \\to 0',
+                    explanation: 'Differentiate each term of the first derivative. The constant \\(-2\\) vanishes.'
+                },
+                {
+                    stepNumber: 4,
+                    description: 'Write the second derivative.',
                     workingLatex: '\\frac{\\mathrm{d}^2y}{\\mathrm{d}x^2} = 6x',
-                    explanation: 'Differentiate \\(3x^2 - 2\\); the constant disappears.'
+                    explanation: 'This is the required second derivative of the original expression.'
                 }
             ],
             finalAnswer: '\\( \\dfrac{\\mathrm{d}^2y}{\\mathrm{d}x^2} = 6x \\)'
@@ -354,21 +444,27 @@ export const questions: Question[] = [
             steps: [
                 {
                     stepNumber: 1,
-                    description: 'First derivative.',
+                    description: 'Differentiate to find dy/dx.',
                     workingLatex: '\\frac{\\mathrm{d}y}{\\mathrm{d}x} = 3x^2 - 5',
-                    explanation: 'Power rule applied term by term.'
+                    explanation: 'Apply the power rule: \\(x^3 \\to 3x^2\\) and \\(-5x \\to -5\\).'
                 },
                 {
                     stepNumber: 2,
-                    description: 'Second derivative.',
+                    description: 'Differentiate again for the second derivative.',
                     workingLatex: '\\frac{\\mathrm{d}^2y}{\\mathrm{d}x^2} = 6x',
-                    explanation: 'Differentiate \\(3x^2 - 5\\).'
+                    explanation: 'Differentiate \\(3x^2\\) to get \\(6x\\). The constant \\(-5\\) vanishes.'
                 },
                 {
                     stepNumber: 3,
-                    description: 'Substitute \\( x = 2 \\).',
-                    workingLatex: '\\frac{\\mathrm{d}^2y}{\\mathrm{d}x^2}\\bigg|_{x=2} = 6(2) = 12',
-                    explanation: 'Replace \\(x\\) with \\(2\\) in the second derivative expression.'
+                    description: 'Substitute x = 2.',
+                    workingLatex: '\\frac{\\mathrm{d}^2y}{\\mathrm{d}x^2}\\bigg|_{x=2} = 6(2)',
+                    explanation: 'Replace \\(x\\) with 2 in the second derivative expression.'
+                },
+                {
+                    stepNumber: 4,
+                    description: 'Evaluate the result.',
+                    workingLatex: '6(2) = 12',
+                    explanation: 'Multiply 6 by 2 to obtain the value of the second derivative at \\(x = 2\\).'
                 }
             ],
             finalAnswer: '\\( \\dfrac{\\mathrm{d}^2y}{\\mathrm{d}x^2} = 12 \\) when \\( x = 2 \\)'
@@ -388,21 +484,33 @@ export const questions: Question[] = [
             steps: [
                 {
                     stepNumber: 1,
-                    description: "Find \\( f'(x) \\).",
-                    workingLatex: "f'(x) = 4x^3 - 16x",
-                    explanation: 'Differentiate each term.'
+                    description: 'Differentiate each term once.',
+                    workingLatex: "x^4 \\to 4x^3, \\quad -8x^2 \\to -16x",
+                    explanation: 'Apply the power rule to each term of \\(f(x)\\).'
                 },
                 {
                     stepNumber: 2,
-                    description: "Find \\( f''(x) \\).",
-                    workingLatex: "f''(x) = 12x^2 - 16",
-                    explanation: 'Differentiate \\(4x^3 - 16x\\).'
+                    description: 'Write the first derivative.',
+                    workingLatex: "f'(x) = 4x^3 - 16x",
+                    explanation: 'Combine the differentiated terms to form \\(f\'(x)\\).'
                 },
                 {
                     stepNumber: 3,
-                    description: "Substitute \\( x = 3 \\).",
-                    workingLatex: "f''(3) = 12(9) - 16 = 108 - 16 = 92",
-                    explanation: '\\( 3^2 = 9 \\).'
+                    description: 'Differentiate again for f\'\'(x).',
+                    workingLatex: "f''(x) = 12x^2 - 16",
+                    explanation: 'Differentiate \\(4x^3 \\to 12x^2\\) and \\(-16x \\to -16\\).'
+                },
+                {
+                    stepNumber: 4,
+                    description: 'Substitute x = 3.',
+                    workingLatex: "f''(3) = 12(3)^2 - 16 = 12(9) - 16",
+                    explanation: 'Replace \\(x\\) with 3 in the second derivative. Note that \\(3^2 = 9\\).'
+                },
+                {
+                    stepNumber: 5,
+                    description: 'Evaluate the result.',
+                    workingLatex: "f''(3) = 108 - 16 = 92",
+                    explanation: 'Multiply \\(12 \\times 9 = 108\\), then subtract 16 to get 92.'
                 }
             ],
             finalAnswer: "\\( f''(3) = 92 \\)"
@@ -422,21 +530,33 @@ export const questions: Question[] = [
             steps: [
                 {
                     stepNumber: 1,
-                    description: 'First derivative.',
-                    workingLatex: '\\frac{\\mathrm{d}y}{\\mathrm{d}x} = 8x^3 - 3x^2',
-                    explanation: 'Differentiate term by term; the constant \\(5\\) vanishes.'
+                    description: 'Differentiate each term once.',
+                    workingLatex: '2x^4 \\to 8x^3, \\quad -x^3 \\to -3x^2, \\quad 5 \\to 0',
+                    explanation: 'Apply the power rule to each term. The constant 5 vanishes on differentiation.'
                 },
                 {
                     stepNumber: 2,
-                    description: 'Second derivative.',
-                    workingLatex: '\\frac{\\mathrm{d}^2y}{\\mathrm{d}x^2} = 24x^2 - 6x',
-                    explanation: 'Differentiate \\(8x^3 - 3x^2\\).'
+                    description: 'Write the first derivative.',
+                    workingLatex: '\\frac{\\mathrm{d}y}{\\mathrm{d}x} = 8x^3 - 3x^2',
+                    explanation: 'Combine the differentiated terms.'
                 },
                 {
                     stepNumber: 3,
-                    description: 'Substitute \\( x = -1 \\).',
-                    workingLatex: '24(-1)^2 - 6(-1) = 24 + 6 = 30',
-                    explanation: '\\( (-1)^2 = 1 \\) and \\( -6 \\times (-1) = +6 \\).'
+                    description: 'Differentiate again for the second derivative.',
+                    workingLatex: '\\frac{\\mathrm{d}^2y}{\\mathrm{d}x^2} = 24x^2 - 6x',
+                    explanation: 'Differentiate \\(8x^3 \\to 24x^2\\) and \\(-3x^2 \\to -6x\\).'
+                },
+                {
+                    stepNumber: 4,
+                    description: 'Substitute x = -1.',
+                    workingLatex: '24(-1)^2 - 6(-1)',
+                    explanation: 'Replace \\(x\\) with \\(-1\\) in the second derivative expression.'
+                },
+                {
+                    stepNumber: 5,
+                    description: 'Evaluate the result.',
+                    workingLatex: '24(1) - (-6) = 24 + 6 = 30',
+                    explanation: '\\((-1)^2 = 1\\) so the first term is 24. The second term \\(-6(-1) = +6\\). Adding gives 30.'
                 }
             ],
             finalAnswer: '\\( \\dfrac{\\mathrm{d}^2y}{\\mathrm{d}x^2} = 30 \\) when \\( x = -1 \\)'
@@ -714,21 +834,39 @@ export const questions: Question[] = [
             steps: [
                 {
                     stepNumber: 1,
-                    description: 'First derivative.',
-                    workingLatex: '\\frac{\\mathrm{d}y}{\\mathrm{d}x} = 3 \\cdot \\tfrac{1}{3} x^{-2/3} = x^{-2/3}',
-                    explanation: 'Multiply \\(3\\) by \\(\\tfrac{1}{3}\\) and reduce the index.'
+                    description: 'Apply the power rule for dy/dx.',
+                    workingLatex: '\\frac{\\mathrm{d}y}{\\mathrm{d}x} = 3 \\cdot \\tfrac{1}{3} x^{1/3 - 1}',
+                    explanation: 'Bring down the power and reduce the index by 1.'
                 },
                 {
                     stepNumber: 2,
-                    description: 'Second derivative.',
-                    workingLatex: '\\frac{\\mathrm{d}^2y}{\\mathrm{d}x^2} = -\\tfrac{2}{3}x^{-5/3}',
-                    explanation: 'Multiply \\(1\\) by \\(-\\tfrac{2}{3}\\) and reduce the index from \\(-\\tfrac{2}{3}\\) to \\(-\\tfrac{5}{3}\\).'
+                    description: 'Simplify the first derivative.',
+                    workingLatex: '\\frac{\\mathrm{d}y}{\\mathrm{d}x} = x^{-2/3}',
+                    explanation: 'The coefficient simplifies to 1 and the index becomes \\(-\\tfrac{2}{3}\\).'
                 },
                 {
                     stepNumber: 3,
-                    description: 'Write without fractional or negative indices.',
-                    workingLatex: '\\frac{\\mathrm{d}^2y}{\\mathrm{d}x^2} = -\\frac{2}{3x^{5/3}} = -\\frac{2}{3\\sqrt[3]{x^5}}',
-                    explanation: '\\( x^{5/3} = \\sqrt[3]{x^5} \\).'
+                    description: 'Differentiate again for the second derivative.',
+                    workingLatex: '\\frac{\\mathrm{d}^2y}{\\mathrm{d}x^2} = -\\tfrac{2}{3} x^{-2/3 - 1}',
+                    explanation: 'Bring down the power \\(-\\tfrac{2}{3}\\) and reduce the index by 1.'
+                },
+                {
+                    stepNumber: 4,
+                    description: 'Simplify the second derivative.',
+                    workingLatex: '\\frac{\\mathrm{d}^2y}{\\mathrm{d}x^2} = -\\tfrac{2}{3}x^{-5/3}',
+                    explanation: 'The index simplifies to \\(-\\tfrac{5}{3}\\).'
+                },
+                {
+                    stepNumber: 5,
+                    description: 'Rewrite with a positive index.',
+                    workingLatex: '\\frac{\\mathrm{d}^2y}{\\mathrm{d}x^2} = -\\frac{2}{3x^{5/3}}',
+                    explanation: 'Move \\(x^{-5/3}\\) to the denominator to eliminate the negative index.'
+                },
+                {
+                    stepNumber: 6,
+                    description: 'Express without fractional indices.',
+                    workingLatex: '\\frac{\\mathrm{d}^2y}{\\mathrm{d}x^2} = -\\frac{2}{3\\sqrt[3]{x^5}}',
+                    explanation: 'Rewrite \\(x^{5/3}\\) as \\(\\sqrt[3]{x^5}\\) to remove the fractional index.'
                 }
             ],
             finalAnswer: '\\( \\dfrac{\\mathrm{d}^2y}{\\mathrm{d}x^2} = -\\dfrac{2}{3\\sqrt[3]{x^5}} \\)'
@@ -748,21 +886,27 @@ export const questions: Question[] = [
             steps: [
                 {
                     stepNumber: 1,
-                    description: 'Expand.',
-                    workingLatex: 'y = x^3 - 5x',
-                    explanation: 'Multiply \\( x \\) through the bracket.'
+                    description: 'Expand the brackets.',
+                    workingLatex: 'y = x \\cdot x^2 - x \\cdot 5',
+                    explanation: 'Distribute \\(x\\) across each term in the bracket.'
                 },
                 {
                     stepNumber: 2,
-                    description: 'First derivative.',
-                    workingLatex: '\\frac{\\mathrm{d}y}{\\mathrm{d}x} = 3x^2 - 5',
-                    explanation: 'Power rule.'
+                    description: 'Simplify the expanded expression.',
+                    workingLatex: 'y = x^3 - 5x',
+                    explanation: 'Combine to give a standard polynomial.'
                 },
                 {
                     stepNumber: 3,
-                    description: 'Second derivative.',
+                    description: 'Differentiate to find dy/dx.',
+                    workingLatex: '\\frac{\\mathrm{d}y}{\\mathrm{d}x} = 3x^2 - 5',
+                    explanation: 'Apply the power rule to each term: \\(x^3\\) gives \\(3x^2\\) and \\(-5x\\) gives \\(-5\\).'
+                },
+                {
+                    stepNumber: 4,
+                    description: 'Differentiate again for the second derivative.',
                     workingLatex: '\\frac{\\mathrm{d}^2y}{\\mathrm{d}x^2} = 6x',
-                    explanation: 'Differentiate \\(3x^2 - 5\\).'
+                    explanation: 'Differentiate \\(3x^2\\) to get \\(6x\\); the constant \\(-5\\) vanishes.'
                 }
             ],
             finalAnswer: '\\( \\dfrac{\\mathrm{d}^2y}{\\mathrm{d}x^2} = 6x \\)'
@@ -782,21 +926,27 @@ export const questions: Question[] = [
             steps: [
                 {
                     stepNumber: 1,
-                    description: 'Simplify the fraction.',
-                    workingLatex: 'f(x) = x^3 + 3x',
-                    explanation: 'Divide each term in the numerator by \\( x^2 \\).'
+                    description: 'Split the fraction into separate terms.',
+                    workingLatex: 'f(x) = \\frac{x^5}{x^2} + \\frac{3x^3}{x^2}',
+                    explanation: 'Write each term in the numerator as its own fraction over \\(x^2\\).'
                 },
                 {
                     stepNumber: 2,
-                    description: "Find \\( f'(x) \\).",
-                    workingLatex: "f'(x) = 3x^2 + 3",
-                    explanation: 'Differentiate term by term.'
+                    description: 'Simplify each term.',
+                    workingLatex: 'f(x) = x^3 + 3x',
+                    explanation: 'Subtract the indices: \\(x^{5-2} = x^3\\) and \\(3x^{3-2} = 3x\\).'
                 },
                 {
                     stepNumber: 3,
-                    description: "Find \\( f''(x) \\).",
+                    description: 'Differentiate to find f\'(x).',
+                    workingLatex: "f'(x) = 3x^2 + 3",
+                    explanation: 'Apply the power rule to each term.'
+                },
+                {
+                    stepNumber: 4,
+                    description: 'Differentiate again to find f\'\'(x).',
                     workingLatex: "f''(x) = 6x",
-                    explanation: 'Differentiate \\(3x^2 + 3\\); the constant vanishes.'
+                    explanation: 'Differentiate \\(3x^2\\) to get \\(6x\\); the constant \\(3\\) vanishes.'
                 }
             ],
             finalAnswer: "\\( f''(x) = 6x \\)"
@@ -862,21 +1012,27 @@ export const questions: Question[] = [
             steps: [
                 {
                     stepNumber: 1,
-                    description: "Find \\( f'(x) \\).",
+                    description: 'Differentiate to find f\'(x).',
                     workingLatex: "f'(x) = 3x^2 + 2px",
-                    explanation: 'Differentiate; \\( q \\) is a constant so its derivative is 0.'
+                    explanation: 'Apply the power rule term by term. The constant \\(q\\) differentiates to 0.'
                 },
                 {
                     stepNumber: 2,
-                    description: "Find \\( f''(x) \\).",
+                    description: 'Differentiate again to find f\'\'(x).',
                     workingLatex: "f''(x) = 6x + 2p",
-                    explanation: 'Differentiate the first derivative; note \\(q\\) plays no role here.'
+                    explanation: 'Differentiate \\(3x^2\\) to get \\(6x\\) and \\(2px\\) to get \\(2p\\).'
                 },
                 {
                     stepNumber: 3,
-                    description: "Substitute \\( x = 2 \\) and set equal to 0.",
-                    workingLatex: "f''(2) = 12 + 2p = 0 \\implies p = -6",
-                    explanation: 'Solve the linear equation for \\( p \\).'
+                    description: 'Substitute \\( x = 2 \\) into f\'\'(x).',
+                    workingLatex: "f''(2) = 6(2) + 2p = 12 + 2p",
+                    explanation: 'Replace \\(x\\) with 2 in the second derivative.'
+                },
+                {
+                    stepNumber: 4,
+                    description: 'Set equal to 0 and solve for p.',
+                    workingLatex: '12 + 2p = 0 \\implies 2p = -12 \\implies p = -6',
+                    explanation: 'Rearrange the equation to isolate \\(p\\).'
                 }
             ],
             finalAnswer: '\\( p = -6 \\)'
@@ -1028,21 +1184,27 @@ export const questions: Question[] = [
             steps: [
                 {
                     stepNumber: 1,
-                    description: "(a) Find \\( f'(x) \\).",
+                    description: '(a) Differentiate to find f\'(x).',
                     workingLatex: "f'(x) = 6x^2 - 6x - 36",
-                    explanation: 'Differentiate term by term.'
+                    explanation: 'Apply the power rule to each term. The constant 10 differentiates to 0.'
                 },
                 {
                     stepNumber: 2,
-                    description: "Find \\( f''(x) \\).",
+                    description: 'Differentiate again to find f\'\'(x).',
                     workingLatex: "f''(x) = 12x - 6",
-                    explanation: 'Differentiate the first derivative.'
+                    explanation: 'Differentiate \\(6x^2\\) to get \\(12x\\), \\(-6x\\) to get \\(-6\\), and the constant \\(-36\\) vanishes.'
                 },
                 {
                     stepNumber: 3,
-                    description: "(b) Solve \\( f''(x) < 0 \\).",
-                    workingLatex: '12x - 6 < 0 \\implies 12x < 6 \\implies x < \\tfrac{1}{2}',
-                    explanation: 'Solve the linear inequality.'
+                    description: '(b) Set up the inequality.',
+                    workingLatex: '12x - 6 < 0',
+                    explanation: 'Substitute the expression for \\(f\'\'(x)\\) into the inequality.'
+                },
+                {
+                    stepNumber: 4,
+                    description: 'Solve the inequality for x.',
+                    workingLatex: '12x < 6 \\implies x < \\tfrac{1}{2}',
+                    explanation: 'Add 6 to both sides, then divide both sides by 12.'
                 }
             ],
             finalAnswer: "(a) \\( f''(x) = 12x - 6 \\) \\newline (b) \\( x < \\dfrac{1}{2} \\)"
@@ -1108,21 +1270,27 @@ export const questions: Question[] = [
             steps: [
                 {
                     stepNumber: 1,
-                    description: 'First derivative.',
+                    description: 'Differentiate each term once.',
                     workingLatex: '\\frac{\\mathrm{d}y}{\\mathrm{d}x} = 10x - 3x^2',
-                    explanation: 'Power rule.'
+                    explanation: 'Using the power rule: the derivative of 5x^2 is 10x and the derivative of -x^3 is -3x^2.'
                 },
                 {
                     stepNumber: 2,
-                    description: 'Second derivative.',
+                    description: 'Differentiate again for d²y/dx².',
                     workingLatex: '\\frac{\\mathrm{d}^2y}{\\mathrm{d}x^2} = 10 - 6x',
-                    explanation: 'Differentiate the first derivative.'
+                    explanation: 'Differentiating the first derivative term by term: the derivative of 10x is 10 and the derivative of -3x^2 is -6x.'
                 },
                 {
                     stepNumber: 3,
-                    description: 'Solve the inequality.',
-                    workingLatex: '10 - 6x < 0 \\implies 6x > 10 \\implies x > \\tfrac{5}{3}',
-                    explanation: 'Rearrange, being careful to flip the inequality when dividing by a positive number (no flip needed here since we just rearrange).'
+                    description: 'Set d²y/dx² less than zero.',
+                    workingLatex: '10 - 6x < 0',
+                    explanation: 'The curve is concave where the second derivative is negative, so we set up this inequality.'
+                },
+                {
+                    stepNumber: 4,
+                    description: 'Rearrange the inequality.',
+                    workingLatex: '10 < 6x \\implies \\frac{10}{6} < x \\implies x > \\frac{5}{3}',
+                    explanation: 'Add 6x to both sides, then divide both sides by 6. Since 6 is positive, the inequality sign does not flip.'
                 }
             ],
             finalAnswer: '\\( x > \\dfrac{5}{3} \\)'
@@ -1231,7 +1399,7 @@ export const questions: Question[] = [
         topicRef: 'd3',
         topicTitle: 'Second Order Derivatives 33',
         difficulty: 'Foundation',
-        questionText: 'The function \\( f(x) = \\dfrac{k}{x^2} + 4x \\), where \\( k \\) is a positive constant, has a stationary point at \\( x = 2 \\).\n(a) Show that \\( k = 32 \\).\n(b) Use the second derivative to confirm that this stationary point is a minimum.',
+        questionText: 'The function \\( f(x) = \\dfrac{k}{x^2} + 4x \\), where \\( k \\) is a positive constant, has a stationary point at \\( x = 2 \\).\n\na) Show that \\( k = 16 \\).\nb) Use the second derivative to confirm that this stationary point is a minimum.',
         marks: 6,
         examStyle: true,
         yearCreated: 2026,
@@ -1252,15 +1420,15 @@ export const questions: Question[] = [
                 },
                 {
                     stepNumber: 3,
-                    description: "Set \\( f'(2) = 0 \\).",
-                    workingLatex: '-2k(2)^{-3} + 4 = 0 \\implies -\\tfrac{2k}{8} + 4 = 0 \\implies -\\tfrac{k}{4} = -4 \\implies k = 16',
-                    explanation: 'Wait — substituting \\( x = 2 \\): \\( (2)^{-3} = \\tfrac{1}{8} \\).'
+                    description: "Substitute \\( x = 2 \\) and set \\( f'(2) = 0 \\).",
+                    workingLatex: '-2k(2)^{-3} + 4 = 0 \\implies -\\tfrac{2k}{8} + 4 = 0 \\implies -\\tfrac{k}{4} + 4 = 0',
+                    explanation: 'Since there is a stationary point at \\( x = 2 \\), the derivative must equal zero there. Note \\( (2)^{-3} = \\tfrac{1}{8} \\).'
                 },
                 {
                     stepNumber: 4,
-                    description: 'Re-examine: \\( -\\dfrac{2k}{8} + 4 = 0 \\implies \\dfrac{k}{4} = 4 \\implies k = 16 \\).',
-                    workingLatex: 'k = 16',
-                    explanation: 'Solving correctly: \\( -\\tfrac{2k}{8} = -4 \\implies 2k = 32 \\implies k = 16 \\). Note: the question states \\( k = 32 \\), so let us verify with \\( k = 32 \\): \\( f\'(2) = -2(32)(\\tfrac{1}{8}) + 4 = -8 + 4 = -4 \\neq 0 \\). Adjusting: with \\( k = 16 \\), \\( f\'(2) = 0 \\checkmark \\). The stationary point is at \\( x = 2 \\) when \\( k = 16 \\).'
+                    description: 'Solve for \\( k \\).',
+                    workingLatex: '\\tfrac{k}{4} = 4 \\implies k = 16 \\quad \\checkmark',
+                    explanation: 'Rearranging gives \\( k = 16 \\) as required.'
                 },
                 {
                     stepNumber: 5,
@@ -1275,7 +1443,7 @@ export const questions: Question[] = [
                     explanation: 'Positive second derivative → minimum. ✓'
                 }
             ],
-            finalAnswer: '\\( k = 16 \\) (with this value, \\( f\'(2) = 0 \\)); the second derivative is \\( 6 > 0 \\) at \\( x = 2 \\), confirming a local minimum'
+            finalAnswer: 'a) \\( k = 16 \\). b) \\( f\'\'(2) = 6 > 0 \\), confirming a local minimum.'
         }
     },
     {
@@ -1400,19 +1568,25 @@ export const questions: Question[] = [
                     stepNumber: 1,
                     description: 'Rewrite with a negative index.',
                     workingLatex: 'y = 3x^{-2}',
-                    explanation: 'Prepare for the power rule.'
+                    explanation: 'Rewrite the fraction as a negative power so the power rule can be applied: 3/x^2 = 3x^{-2}.'
                 },
                 {
                     stepNumber: 2,
-                    description: 'First derivative.',
-                    workingLatex: '\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} = -6x^{-3}',
-                    explanation: 'Apply the power rule.'
+                    description: 'Apply power rule for dy/dx.',
+                    workingLatex: '\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} = 3 \\times (-2) \\, x^{-2-1} = -6x^{-3}',
+                    explanation: 'Multiply the coefficient by the power and reduce the power by 1: 3 times -2 gives -6, and -2 minus 1 gives -3.'
                 },
                 {
                     stepNumber: 3,
-                    description: 'Second derivative.',
-                    workingLatex: '\\dfrac{\\mathrm{d}^2y}{\\mathrm{d}x^2} = 18x^{-4} = \\dfrac{18}{x^4}',
-                    explanation: 'Differentiate \\( -6x^{-3} \\) and rewrite with a positive index.'
+                    description: 'Differentiate again for d²y/dx².',
+                    workingLatex: '\\dfrac{\\mathrm{d}^2y}{\\mathrm{d}x^2} = -6 \\times (-3) \\, x^{-3-1} = 18x^{-4}',
+                    explanation: 'Applying the power rule to -6x^{-3}: multiply -6 by -3 to get 18, and reduce the power from -3 to -4.'
+                },
+                {
+                    stepNumber: 4,
+                    description: 'Rewrite with a positive index.',
+                    workingLatex: '\\dfrac{\\mathrm{d}^2y}{\\mathrm{d}x^2} = \\dfrac{18}{x^4}',
+                    explanation: 'Convert the negative index back to a fraction for a cleaner final answer.'
                 }
             ],
             finalAnswer: "\\( \\dfrac{\\mathrm{d}^2y}{\\mathrm{d}x^2} = \\dfrac{18}{x^4} \\)"
@@ -1432,21 +1606,27 @@ export const questions: Question[] = [
             steps: [
                 {
                     stepNumber: 1,
-                    description: 'Rewrite.',
+                    description: 'Rewrite using index notation.',
                     workingLatex: 'f(x) = 4x^{-1/2}',
-                    explanation: '\\( \\dfrac{1}{\\sqrt{x}} = x^{-1/2} \\).'
+                    explanation: 'Express the square root as a power: 1/sqrt(x) = x^{-1/2}, so 4/sqrt(x) = 4x^{-1/2}.'
                 },
                 {
                     stepNumber: 2,
-                    description: 'First derivative.',
-                    workingLatex: "f'(x) = -2x^{-3/2}",
-                    explanation: 'Multiply by the index and reduce.'
+                    description: 'Apply power rule for f\'(x).',
+                    workingLatex: "f'(x) = 4 \\times \\left(-\\tfrac{1}{2}\\right) x^{-1/2 - 1} = -2x^{-3/2}",
+                    explanation: 'Multiply the coefficient 4 by the power -1/2 to get -2, and reduce the power by 1 to get -3/2.'
                 },
                 {
                     stepNumber: 3,
-                    description: 'Second derivative.',
-                    workingLatex: "f''(x) = 3x^{-5/2} = \\dfrac{3}{x^2\\sqrt{x}}",
-                    explanation: 'Multiply \\( -2 \\) by \\( -\\tfrac{3}{2} \\) and reduce the index.'
+                    description: 'Differentiate again for f\'\'(x).',
+                    workingLatex: "f''(x) = -2 \\times \\left(-\\tfrac{3}{2}\\right) x^{-3/2 - 1} = 3x^{-5/2}",
+                    explanation: 'Multiply -2 by -3/2 to get 3, and reduce the power from -3/2 to -5/2.'
+                },
+                {
+                    stepNumber: 4,
+                    description: 'Rewrite with a positive index.',
+                    workingLatex: "f''(x) = \\dfrac{3}{x^{5/2}} = \\dfrac{3}{x^2\\sqrt{x}}",
+                    explanation: 'Convert x^{-5/2} back to fractional form. Since x^{5/2} = x^2 times x^{1/2} = x^2 sqrt(x), the result follows.'
                 }
             ],
             finalAnswer: "\\( f''(x) = \\dfrac{3}{x^2\\sqrt{x}} \\)"
@@ -1466,15 +1646,27 @@ export const questions: Question[] = [
             steps: [
                 {
                     stepNumber: 1,
-                    description: 'Rewrite and differentiate once.',
-                    workingLatex: 'y = 2x^3 + 5x^{-1} \\;\\Rightarrow\\; \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} = 6x^2 - 5x^{-2}',
-                    explanation: 'Apply the power rule term by term.'
+                    description: 'Rewrite 5/x as a negative index.',
+                    workingLatex: 'y = 2x^3 + 5x^{-1}',
+                    explanation: 'Express 5/x as 5x^{-1} so that the power rule can be applied to every term.'
                 },
                 {
                     stepNumber: 2,
-                    description: 'Differentiate again.',
-                    workingLatex: '\\dfrac{\\mathrm{d}^2y}{\\mathrm{d}x^2} = 12x + 10x^{-3} = 12x + \\dfrac{10}{x^3}',
-                    explanation: 'Apply the power rule to each term.'
+                    description: 'Apply power rule for dy/dx.',
+                    workingLatex: '\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} = 6x^2 - 5x^{-2}',
+                    explanation: 'Differentiate each term: 2x^3 gives 6x^2, and 5x^{-1} gives 5 times (-1) x^{-2} = -5x^{-2}.'
+                },
+                {
+                    stepNumber: 3,
+                    description: 'Differentiate again for d²y/dx².',
+                    workingLatex: '\\dfrac{\\mathrm{d}^2y}{\\mathrm{d}x^2} = 12x + 10x^{-3}',
+                    explanation: 'Differentiate each term of dy/dx: 6x^2 gives 12x, and -5x^{-2} gives -5 times (-2) x^{-3} = 10x^{-3}.'
+                },
+                {
+                    stepNumber: 4,
+                    description: 'Rewrite with positive indices.',
+                    workingLatex: '\\dfrac{\\mathrm{d}^2y}{\\mathrm{d}x^2} = 12x + \\dfrac{10}{x^3}',
+                    explanation: 'Convert 10x^{-3} back to fractional form for the final answer.'
                 }
             ],
             finalAnswer: "\\( \\dfrac{\\mathrm{d}^2y}{\\mathrm{d}x^2} = 12x + \\dfrac{10}{x^3} \\)"
@@ -1494,15 +1686,21 @@ export const questions: Question[] = [
             steps: [
                 {
                     stepNumber: 1,
-                    description: 'First derivative.',
-                    workingLatex: '\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} = \\tfrac{3}{2}x^{1/2} + 2x^{-1/2}',
-                    explanation: 'Apply the power rule.'
+                    description: 'Differentiate each term once.',
+                    workingLatex: '\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} = \\tfrac{3}{2}x^{1/2} + 4 \\times \\tfrac{1}{2} x^{-1/2} = \\tfrac{3}{2}x^{1/2} + 2x^{-1/2}',
+                    explanation: 'Apply the power rule to x^{3/2} to get (3/2)x^{1/2}, and to 4x^{1/2} to get 2x^{-1/2}.'
                 },
                 {
                     stepNumber: 2,
-                    description: 'Second derivative.',
-                    workingLatex: '\\dfrac{\\mathrm{d}^2y}{\\mathrm{d}x^2} = \\tfrac{3}{4}x^{-1/2} - x^{-3/2} = \\dfrac{3}{4\\sqrt{x}} - \\dfrac{1}{x\\sqrt{x}}',
-                    explanation: 'Differentiate each term and simplify.'
+                    description: 'Differentiate again for d²y/dx².',
+                    workingLatex: '\\dfrac{\\mathrm{d}^2y}{\\mathrm{d}x^2} = \\tfrac{3}{2} \\times \\tfrac{1}{2} x^{-1/2} + 2 \\times \\left(-\\tfrac{1}{2}\\right) x^{-3/2} = \\tfrac{3}{4}x^{-1/2} - x^{-3/2}',
+                    explanation: 'Differentiate each term of dy/dx using the power rule. The coefficient (3/2)(1/2) = 3/4 and the coefficient 2(-1/2) = -1.'
+                },
+                {
+                    stepNumber: 3,
+                    description: 'Rewrite with positive indices.',
+                    workingLatex: '\\dfrac{\\mathrm{d}^2y}{\\mathrm{d}x^2} = \\dfrac{3}{4\\sqrt{x}} - \\dfrac{1}{x\\sqrt{x}}',
+                    explanation: 'Convert x^{-1/2} to 1/sqrt(x) and x^{-3/2} to 1/(x sqrt(x)) for a cleaner final form.'
                 }
             ],
             finalAnswer: "\\( \\dfrac{\\mathrm{d}^2y}{\\mathrm{d}x^2} = \\dfrac{3}{4\\sqrt{x}} - \\dfrac{1}{x\\sqrt{x}} \\)"
@@ -1522,21 +1720,27 @@ export const questions: Question[] = [
             steps: [
                 {
                     stepNumber: 1,
-                    description: 'Simplify first.',
+                    description: 'Simplify by dividing each term.',
                     workingLatex: 'f(x) = \\dfrac{x^3}{x^2} - \\dfrac{2x}{x^2} = x - 2x^{-1}',
-                    explanation: 'Divide each numerator term by \\( x^2 \\).'
+                    explanation: 'Divide each numerator term by x^2 separately. This gives x and -2/x = -2x^{-1}.'
                 },
                 {
                     stepNumber: 2,
-                    description: 'First derivative.',
-                    workingLatex: "f'(x) = 1 + 2x^{-2}",
-                    explanation: 'Apply the power rule.'
+                    description: 'Apply power rule for f\'(x).',
+                    workingLatex: "f'(x) = 1 - 2 \\times (-1) x^{-2} = 1 + 2x^{-2}",
+                    explanation: 'The derivative of x is 1. For -2x^{-1}, multiply -2 by -1 to get 2, and reduce the power to -2.'
                 },
                 {
                     stepNumber: 3,
-                    description: 'Second derivative.',
-                    workingLatex: "f''(x) = -4x^{-3} = -\\dfrac{4}{x^3}",
-                    explanation: 'Differentiate once more.'
+                    description: 'Differentiate again for f\'\'(x).',
+                    workingLatex: "f''(x) = 2 \\times (-2) x^{-3} = -4x^{-3}",
+                    explanation: 'The derivative of 1 is 0. For 2x^{-2}, multiply 2 by -2 to get -4, and reduce the power to -3.'
+                },
+                {
+                    stepNumber: 4,
+                    description: 'Rewrite with a positive index.',
+                    workingLatex: "f''(x) = -\\dfrac{4}{x^3}",
+                    explanation: 'Convert -4x^{-3} to fractional form for the final answer.'
                 }
             ],
             finalAnswer: "\\( f''(x) = -\\dfrac{4}{x^3} \\)"
@@ -1556,21 +1760,21 @@ export const questions: Question[] = [
             steps: [
                 {
                     stepNumber: 1,
-                    description: 'Expand.',
-                    workingLatex: 'y = x^2 + 6x + 9',
-                    explanation: '\\( (a+b)^2 = a^2 + 2ab + b^2 \\).'
+                    description: 'Expand the bracket.',
+                    workingLatex: 'y = (x+3)^2 = x^2 + 6x + 9',
+                    explanation: 'Use the identity (a + b)^2 = a^2 + 2ab + b^2 with a = x and b = 3.'
                 },
                 {
                     stepNumber: 2,
-                    description: 'First derivative.',
+                    description: 'Differentiate each term once.',
                     workingLatex: '\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} = 2x + 6',
-                    explanation: 'Apply the power rule.'
+                    explanation: 'The derivative of x^2 is 2x, the derivative of 6x is 6, and the constant 9 vanishes.'
                 },
                 {
                     stepNumber: 3,
-                    description: 'Second derivative.',
+                    description: 'Differentiate again for d²y/dx².',
                     workingLatex: '\\dfrac{\\mathrm{d}^2y}{\\mathrm{d}x^2} = 2',
-                    explanation: 'Constant.'
+                    explanation: 'The derivative of 2x is 2, and the constant 6 vanishes. The second derivative is a constant.'
                 }
             ],
             finalAnswer: "\\( \\dfrac{\\mathrm{d}^2y}{\\mathrm{d}x^2} = 2 \\)"
@@ -1590,21 +1794,27 @@ export const questions: Question[] = [
             steps: [
                 {
                     stepNumber: 1,
-                    description: 'Expand using indices.',
-                    workingLatex: 'y = x^{3/2} - 3x^{1/2}',
-                    explanation: '\\( \\sqrt{x} \\cdot x = x^{3/2} \\).'
+                    description: 'Expand using index notation.',
+                    workingLatex: 'y = x^{1/2} \\cdot x - 3 \\cdot x^{1/2} = x^{3/2} - 3x^{1/2}',
+                    explanation: 'Write sqrt(x) as x^{1/2}. Then sqrt(x) times x = x^{1/2 + 1} = x^{3/2}, and sqrt(x) times -3 = -3x^{1/2}.'
                 },
                 {
                     stepNumber: 2,
-                    description: 'First derivative.',
-                    workingLatex: '\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} = \\tfrac{3}{2}x^{1/2} - \\tfrac{3}{2}x^{-1/2}',
-                    explanation: 'Apply the power rule.'
+                    description: 'Differentiate each term for dy/dx.',
+                    workingLatex: '\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} = \\tfrac{3}{2}x^{1/2} - 3 \\times \\tfrac{1}{2} x^{-1/2} = \\tfrac{3}{2}x^{1/2} - \\tfrac{3}{2}x^{-1/2}',
+                    explanation: 'Apply the power rule: x^{3/2} gives (3/2)x^{1/2}, and -3x^{1/2} gives -3(1/2)x^{-1/2} = -(3/2)x^{-1/2}.'
                 },
                 {
                     stepNumber: 3,
-                    description: 'Second derivative.',
-                    workingLatex: '\\dfrac{\\mathrm{d}^2y}{\\mathrm{d}x^2} = \\tfrac{3}{4}x^{-1/2} + \\tfrac{3}{4}x^{-3/2} = \\dfrac{3}{4\\sqrt{x}} + \\dfrac{3}{4x\\sqrt{x}}',
-                    explanation: 'Differentiate once more and simplify.'
+                    description: 'Differentiate again for d²y/dx².',
+                    workingLatex: '\\dfrac{\\mathrm{d}^2y}{\\mathrm{d}x^2} = \\tfrac{3}{2} \\times \\tfrac{1}{2} x^{-1/2} - \\tfrac{3}{2} \\times \\left(-\\tfrac{1}{2}\\right) x^{-3/2} = \\tfrac{3}{4}x^{-1/2} + \\tfrac{3}{4}x^{-3/2}',
+                    explanation: 'Differentiate each term of dy/dx. The coefficient (3/2)(1/2) = 3/4 and -(3/2)(-1/2) = +3/4.'
+                },
+                {
+                    stepNumber: 4,
+                    description: 'Rewrite with positive indices.',
+                    workingLatex: '\\dfrac{\\mathrm{d}^2y}{\\mathrm{d}x^2} = \\dfrac{3}{4\\sqrt{x}} + \\dfrac{3}{4x\\sqrt{x}}',
+                    explanation: 'Convert x^{-1/2} to 1/sqrt(x) and x^{-3/2} to 1/(x sqrt(x)) for a tidier final answer.'
                 }
             ],
             finalAnswer: "\\( \\dfrac{\\mathrm{d}^2y}{\\mathrm{d}x^2} = \\dfrac{3}{4\\sqrt{x}} + \\dfrac{3}{4x\\sqrt{x}} \\)"
@@ -1626,21 +1836,27 @@ export const questions: Question[] = [
             steps: [
                 {
                     stepNumber: 1,
-                    description: 'First derivative.',
+                    description: 'Find the first derivative.',
                     workingLatex: "f'(x) = 4x^3 - 6x^2 + 5",
-                    explanation: 'Apply the power rule.'
+                    explanation: 'Differentiate each term using the power rule: the derivative of \\( x^4 \\) is \\( 4x^3 \\), the derivative of \\( -2x^3 \\) is \\( -6x^2 \\), and the derivative of \\( 5x \\) is \\( 5 \\).'
                 },
                 {
                     stepNumber: 2,
-                    description: 'Second derivative.',
+                    description: 'Find the second derivative.',
                     workingLatex: "f''(x) = 12x^2 - 12x",
-                    explanation: 'Differentiate once more.'
+                    explanation: 'Differentiate \\( f\'(x) \\) term by term: the derivative of \\( 4x^3 \\) is \\( 12x^2 \\), the derivative of \\( -6x^2 \\) is \\( -12x \\), and the constant \\( 5 \\) differentiates to zero.'
                 },
                 {
                     stepNumber: 3,
                     description: 'Substitute \\( x = 1 \\).',
-                    workingLatex: "f''(1) = 12 - 12 = 0",
-                    explanation: 'Evaluate.'
+                    workingLatex: "f''(1) = 12(1)^2 - 12(1) = 12 - 12",
+                    explanation: 'Replace \\( x \\) with \\( 1 \\) in the second derivative expression.'
+                },
+                {
+                    stepNumber: 4,
+                    description: 'Simplify to get the answer.',
+                    workingLatex: "f''(1) = 0",
+                    explanation: 'The terms cancel, giving a second derivative value of zero at \\( x = 1 \\).'
                 }
             ],
             finalAnswer: "\\( f''(1) = 0 \\)"
@@ -1660,21 +1876,27 @@ export const questions: Question[] = [
             steps: [
                 {
                     stepNumber: 1,
-                    description: 'Rewrite and differentiate.',
-                    workingLatex: 'y = 3x^2 - 2x^{1/2} \\;\\Rightarrow\\; \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} = 6x - x^{-1/2}',
-                    explanation: 'Apply the power rule.'
+                    description: 'Rewrite the square root.',
+                    workingLatex: 'y = 3x^2 - 2x^{1/2}',
+                    explanation: 'Express \\( \\sqrt{x} \\) as \\( x^{1/2} \\) so the power rule can be applied.'
                 },
                 {
                     stepNumber: 2,
-                    description: 'Second derivative.',
-                    workingLatex: '\\dfrac{\\mathrm{d}^2y}{\\mathrm{d}x^2} = 6 + \\tfrac{1}{2}x^{-3/2}',
-                    explanation: 'Differentiate each term.'
+                    description: 'Find the first derivative.',
+                    workingLatex: '\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} = 6x - x^{-1/2}',
+                    explanation: 'The derivative of \\( 3x^2 \\) is \\( 6x \\). The derivative of \\( -2x^{1/2} \\) is \\( -2 \\cdot \\tfrac{1}{2}x^{-1/2} = -x^{-1/2} \\).'
                 },
                 {
                     stepNumber: 3,
+                    description: 'Find the second derivative.',
+                    workingLatex: '\\dfrac{\\mathrm{d}^2y}{\\mathrm{d}x^2} = 6 + \\tfrac{1}{2}x^{-3/2}',
+                    explanation: 'The derivative of \\( 6x \\) is \\( 6 \\). The derivative of \\( -x^{-1/2} \\) is \\( -(-\\tfrac{1}{2})x^{-3/2} = \\tfrac{1}{2}x^{-3/2} \\).'
+                },
+                {
+                    stepNumber: 4,
                     description: 'Substitute \\( x = 4 \\).',
                     workingLatex: '6 + \\tfrac{1}{2}(4)^{-3/2} = 6 + \\tfrac{1}{2} \\cdot \\tfrac{1}{8} = 6 + \\tfrac{1}{16} = \\tfrac{97}{16}',
-                    explanation: '\\( 4^{3/2} = (\\sqrt{4})^3 = 8 \\).'
+                    explanation: 'Since \\( 4^{3/2} = (\\sqrt{4})^3 = 8 \\), we have \\( (4)^{-3/2} = \\tfrac{1}{8} \\). Combining gives \\( \\tfrac{96 + 1}{16} = \\tfrac{97}{16} \\).'
                 }
             ],
             finalAnswer: "\\( \\left.\\dfrac{\\mathrm{d}^2y}{\\mathrm{d}x^2}\\right|_{x=4} = \\dfrac{97}{16} \\)"
@@ -1694,21 +1916,27 @@ export const questions: Question[] = [
             steps: [
                 {
                     stepNumber: 1,
-                    description: 'Differentiate twice.',
-                    workingLatex: '\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} = 3ax^2 + 2bx \\;\\Rightarrow\\; \\dfrac{\\mathrm{d}^2y}{\\mathrm{d}x^2} = 6ax + 2b',
-                    explanation: 'Apply the power rule.'
+                    description: 'Find the first derivative.',
+                    workingLatex: '\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} = 3ax^2 + 2bx',
+                    explanation: 'Differentiate \\( ax^3 \\) to get \\( 3ax^2 \\) and \\( bx^2 \\) to get \\( 2bx \\) using the power rule.'
                 },
                 {
                     stepNumber: 2,
-                    description: 'Compare coefficients.',
-                    workingLatex: '6ax + 2b \\equiv 12x - 4',
-                    explanation: 'Match the \\( x \\) term and the constant term.'
+                    description: 'Find the second derivative.',
+                    workingLatex: '\\dfrac{\\mathrm{d}^2y}{\\mathrm{d}x^2} = 6ax + 2b',
+                    explanation: 'Differentiate again: the derivative of \\( 3ax^2 \\) is \\( 6ax \\) and the derivative of \\( 2bx \\) is \\( 2b \\).'
                 },
                 {
                     stepNumber: 3,
-                    description: 'Solve.',
+                    description: 'Compare coefficients.',
+                    workingLatex: '6ax + 2b \\equiv 12x - 4',
+                    explanation: 'Set the second derivative equal to the given expression and match the coefficient of \\( x \\) and the constant term on each side.'
+                },
+                {
+                    stepNumber: 4,
+                    description: 'Solve for \\( a \\) and \\( b \\).',
                     workingLatex: '6a = 12 \\;\\Rightarrow\\; a = 2, \\quad 2b = -4 \\;\\Rightarrow\\; b = -2',
-                    explanation: 'Two equations, two unknowns.'
+                    explanation: 'From the \\( x \\) coefficients, \\( 6a = 12 \\) gives \\( a = 2 \\). From the constants, \\( 2b = -4 \\) gives \\( b = -2 \\).'
                 }
             ],
             finalAnswer: "\\( a = 2 \\) and \\( b = -2 \\)."
@@ -1728,15 +1956,27 @@ export const questions: Question[] = [
             steps: [
                 {
                     stepNumber: 1,
-                    description: 'Differentiate twice.',
-                    workingLatex: "f'(x) = 3x^2 - 2kx + 3, \\quad f''(x) = 6x - 2k",
-                    explanation: 'Apply the power rule.'
+                    description: 'Find the first derivative.',
+                    workingLatex: "f'(x) = 3x^2 - 2kx + 3",
+                    explanation: 'Differentiate each term: the derivative of \\( x^3 \\) is \\( 3x^2 \\), the derivative of \\( -kx^2 \\) is \\( -2kx \\), and the derivative of \\( 3x \\) is \\( 3 \\).'
                 },
                 {
                     stepNumber: 2,
-                    description: "Set \\( f''(2) = 0 \\).",
-                    workingLatex: '12 - 2k = 0 \\;\\Rightarrow\\; k = 6',
-                    explanation: 'Solve for \\( k \\).'
+                    description: 'Find the second derivative.',
+                    workingLatex: "f''(x) = 6x - 2k",
+                    explanation: 'Differentiate \\( f\'(x) \\) again: the derivative of \\( 3x^2 \\) is \\( 6x \\), the derivative of \\( -2kx \\) is \\( -2k \\), and the constant \\( 3 \\) gives zero.'
+                },
+                {
+                    stepNumber: 3,
+                    description: "Substitute \\( x = 2 \\) and set to zero.",
+                    workingLatex: "f''(2) = 6(2) - 2k = 12 - 2k = 0",
+                    explanation: 'Replace \\( x \\) with \\( 2 \\) in the second derivative and set the result equal to zero as required.'
+                },
+                {
+                    stepNumber: 4,
+                    description: 'Solve for \\( k \\).',
+                    workingLatex: '2k = 12 \\;\\Rightarrow\\; k = 6',
+                    explanation: 'Rearrange to isolate \\( k \\), giving \\( k = 6 \\).'
                 }
             ],
             finalAnswer: "\\( k = 6 \\)."
@@ -1756,15 +1996,27 @@ export const questions: Question[] = [
             steps: [
                 {
                     stepNumber: 1,
-                    description: 'Differentiate twice.',
-                    workingLatex: '\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} = 6x^2 + 10x - 4, \\quad \\dfrac{\\mathrm{d}^2y}{\\mathrm{d}x^2} = 12x + 10',
-                    explanation: 'Apply the power rule.'
+                    description: 'Find the first derivative.',
+                    workingLatex: '\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} = 6x^2 + 10x - 4',
+                    explanation: 'Differentiate each term: the derivative of \\( 2x^3 \\) is \\( 6x^2 \\), the derivative of \\( 5x^2 \\) is \\( 10x \\), and the derivative of \\( -4x \\) is \\( -4 \\).'
                 },
                 {
                     stepNumber: 2,
+                    description: 'Find the second derivative.',
+                    workingLatex: '\\dfrac{\\mathrm{d}^2y}{\\mathrm{d}x^2} = 12x + 10',
+                    explanation: 'Differentiate again: the derivative of \\( 6x^2 \\) is \\( 12x \\), the derivative of \\( 10x \\) is \\( 10 \\), and the constant \\( -4 \\) gives zero.'
+                },
+                {
+                    stepNumber: 3,
                     description: 'Set second derivative to zero.',
-                    workingLatex: '12x + 10 = 0 \\;\\Rightarrow\\; x = -\\tfrac{5}{6}',
-                    explanation: 'Solve for \\( x \\).'
+                    workingLatex: '12x + 10 = 0 \\;\\Rightarrow\\; 12x = -10',
+                    explanation: 'Set the second derivative equal to zero and rearrange.'
+                },
+                {
+                    stepNumber: 4,
+                    description: 'Solve for \\( x \\).',
+                    workingLatex: 'x = -\\dfrac{10}{12} = -\\dfrac{5}{6}',
+                    explanation: 'Divide both sides by 12 and simplify the fraction to get \\( x = -\\tfrac{5}{6} \\).'
                 }
             ],
             finalAnswer: "\\( x = -\\dfrac{5}{6} \\)."
@@ -1784,15 +2036,27 @@ export const questions: Question[] = [
             steps: [
                 {
                     stepNumber: 1,
-                    description: 'Differentiate twice.',
-                    workingLatex: "f'(x) = 4x^3 - 12x^2, \\quad f''(x) = 12x^2 - 24x",
-                    explanation: 'Apply the power rule.'
+                    description: 'Find the first derivative.',
+                    workingLatex: "f'(x) = 4x^3 - 12x^2",
+                    explanation: 'Differentiate each term: the derivative of \\( x^4 \\) is \\( 4x^3 \\) and the derivative of \\( -4x^3 \\) is \\( -12x^2 \\).'
                 },
                 {
                     stepNumber: 2,
-                    description: "Solve \\( f''(x) = 0 \\).",
+                    description: 'Find the second derivative.',
+                    workingLatex: "f''(x) = 12x^2 - 24x",
+                    explanation: 'Differentiate again: the derivative of \\( 4x^3 \\) is \\( 12x^2 \\) and the derivative of \\( -12x^2 \\) is \\( -24x \\).'
+                },
+                {
+                    stepNumber: 3,
+                    description: 'Set second derivative to zero.',
+                    workingLatex: '12x^2 - 24x = 0',
+                    explanation: 'We need to find all \\( x \\) values where the second derivative equals zero.'
+                },
+                {
+                    stepNumber: 4,
+                    description: 'Factorise and solve.',
                     workingLatex: '12x(x - 2) = 0 \\;\\Rightarrow\\; x = 0 \\text{ or } x = 2',
-                    explanation: 'Factorise.'
+                    explanation: 'Take out the common factor of \\( 12x \\). Each factor set to zero gives a solution.'
                 }
             ],
             finalAnswer: "\\( x = 0 \\) or \\( x = 2 \\)."
@@ -2074,15 +2338,27 @@ export const questions: Question[] = [
             steps: [
                 {
                     stepNumber: 1,
-                    description: 'Differentiate twice.',
-                    workingLatex: '\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} = 3x^2 - 12x, \\quad \\dfrac{\\mathrm{d}^2y}{\\mathrm{d}x^2} = 6x - 12',
-                    explanation: 'Apply the power rule.'
+                    description: 'Find the first derivative.',
+                    workingLatex: '\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} = 3x^2 - 12x',
+                    explanation: 'Differentiate each term: the derivative of \\( x^3 \\) is \\( 3x^2 \\), the derivative of \\( -6x^2 \\) is \\( -12x \\), and the constant \\( 5 \\) differentiates to zero.'
                 },
                 {
                     stepNumber: 2,
-                    description: 'Concave up when second derivative is positive.',
-                    workingLatex: '6x - 12 > 0 \\;\\Rightarrow\\; x > 2',
-                    explanation: 'Solve the inequality.'
+                    description: 'Find the second derivative.',
+                    workingLatex: '\\dfrac{\\mathrm{d}^2y}{\\mathrm{d}x^2} = 6x - 12',
+                    explanation: 'Differentiate again: the derivative of \\( 3x^2 \\) is \\( 6x \\) and the derivative of \\( -12x \\) is \\( -12 \\).'
+                },
+                {
+                    stepNumber: 3,
+                    description: 'Set up the concavity condition.',
+                    workingLatex: '\\dfrac{\\mathrm{d}^2y}{\\mathrm{d}x^2} > 0 \\;\\Rightarrow\\; 6x - 12 > 0',
+                    explanation: 'A curve is concave up where the second derivative is positive.'
+                },
+                {
+                    stepNumber: 4,
+                    description: 'Solve the inequality.',
+                    workingLatex: '6x > 12 \\;\\Rightarrow\\; x > 2',
+                    explanation: 'Add 12 to both sides and divide by 6 to find that the curve is concave up for \\( x > 2 \\).'
                 }
             ],
             finalAnswer: "Concave up for \\( x > 2 \\)."
@@ -2102,21 +2378,27 @@ export const questions: Question[] = [
             steps: [
                 {
                     stepNumber: 1,
-                    description: 'Second derivative.',
-                    workingLatex: '\\dfrac{\\mathrm{d}^2y}{\\mathrm{d}x^2} = 6x - 18',
-                    explanation: 'Differentiate twice.'
+                    description: 'Find the first derivative.',
+                    workingLatex: '\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} = 3x^2 - 18x + 24',
+                    explanation: 'Differentiate each term: the derivative of \\( x^3 \\) is \\( 3x^2 \\), the derivative of \\( -9x^2 \\) is \\( -18x \\), the derivative of \\( 24x \\) is \\( 24 \\), and the constant \\( -15 \\) gives zero.'
                 },
                 {
                     stepNumber: 2,
-                    description: 'Set to zero.',
-                    workingLatex: '6x - 18 = 0 \\;\\Rightarrow\\; x = 3',
-                    explanation: 'Candidate for inflection.'
+                    description: 'Find the second derivative.',
+                    workingLatex: '\\dfrac{\\mathrm{d}^2y}{\\mathrm{d}x^2} = 6x - 18',
+                    explanation: 'Differentiate again: the derivative of \\( 3x^2 \\) is \\( 6x \\), the derivative of \\( -18x \\) is \\( -18 \\), and the constant \\( 24 \\) gives zero.'
                 },
                 {
                     stepNumber: 3,
-                    description: 'Check sign change.',
-                    workingLatex: "f''(2) = -6 < 0, \\; f''(4) = 6 > 0",
-                    explanation: 'Sign changes, so it is indeed a point of inflection.'
+                    description: 'Set second derivative to zero.',
+                    workingLatex: '6x - 18 = 0 \\;\\Rightarrow\\; x = 3',
+                    explanation: 'Solve for \\( x \\) to find the candidate point of inflection.'
+                },
+                {
+                    stepNumber: 4,
+                    description: 'Check for a sign change.',
+                    workingLatex: "\\left.\\dfrac{\\mathrm{d}^2y}{\\mathrm{d}x^2}\\right|_{x=2} = 12 - 18 = -6 < 0, \\quad \\left.\\dfrac{\\mathrm{d}^2y}{\\mathrm{d}x^2}\\right|_{x=4} = 24 - 18 = 6 > 0",
+                    explanation: 'The second derivative changes sign from negative to positive as \\( x \\) passes through 3, confirming it is a point of inflection.'
                 }
             ],
             finalAnswer: "Point of inflection at \\( x = 3 \\)."
@@ -2136,15 +2418,27 @@ export const questions: Question[] = [
             steps: [
                 {
                     stepNumber: 1,
-                    description: 'Differentiate twice.',
-                    workingLatex: '\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} = 4x^3 - 12x, \\quad \\dfrac{\\mathrm{d}^2y}{\\mathrm{d}x^2} = 12x^2 - 12',
-                    explanation: 'Apply the power rule.'
+                    description: 'Find the first derivative.',
+                    workingLatex: '\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} = 4x^3 - 12x',
+                    explanation: 'Differentiate each term using the power rule: \\( x^4 \\to 4x^3 \\) and \\( -6x^2 \\to -12x \\).'
                 },
                 {
                     stepNumber: 2,
-                    description: 'Concave down when second derivative is negative.',
-                    workingLatex: '12x^2 - 12 < 0 \\;\\Rightarrow\\; x^2 < 1 \\;\\Rightarrow\\; -1 < x < 1',
-                    explanation: 'Solve the inequality.'
+                    description: 'Find the second derivative.',
+                    workingLatex: '\\dfrac{\\mathrm{d}^2y}{\\mathrm{d}x^2} = 12x^2 - 12',
+                    explanation: 'Differentiate the first derivative: \\( 4x^3 \\to 12x^2 \\) and \\( -12x \\to -12 \\).'
+                },
+                {
+                    stepNumber: 3,
+                    description: 'Set up the concavity inequality.',
+                    workingLatex: '12x^2 - 12 < 0',
+                    explanation: 'A curve is concave down where the second derivative is strictly negative.'
+                },
+                {
+                    stepNumber: 4,
+                    description: 'Solve the inequality.',
+                    workingLatex: '12(x^2 - 1) < 0 \\;\\Rightarrow\\; x^2 < 1 \\;\\Rightarrow\\; -1 < x < 1',
+                    explanation: 'Factor out 12, then solve \\( x^2 < 1 \\). Since \\( x^2 < 1 \\) means \\( x \\) lies strictly between \\( -1 \\) and \\( 1 \\).'
                 }
             ],
             finalAnswer: "Concave down on \\( -1 < x < 1 \\)."
@@ -2164,21 +2458,33 @@ export const questions: Question[] = [
             steps: [
                 {
                     stepNumber: 1,
-                    description: 'Second derivative.',
-                    workingLatex: '\\dfrac{\\mathrm{d}^2y}{\\mathrm{d}x^2} = 12x - 18',
-                    explanation: 'Differentiate twice.'
+                    description: 'Find the first derivative.',
+                    workingLatex: '\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} = 6x^2 - 18x + 12',
+                    explanation: 'Differentiate each term using the power rule: \\( 2x^3 \\to 6x^2 \\), \\( -9x^2 \\to -18x \\), and \\( 12x \\to 12 \\).'
                 },
                 {
                     stepNumber: 2,
-                    description: 'Set to zero.',
-                    workingLatex: '12x - 18 = 0 \\;\\Rightarrow\\; x = \\tfrac{3}{2}',
-                    explanation: 'Candidate for inflection.'
+                    description: 'Find the second derivative.',
+                    workingLatex: '\\dfrac{\\mathrm{d}^2y}{\\mathrm{d}x^2} = 12x - 18',
+                    explanation: 'Differentiate the first derivative: \\( 6x^2 \\to 12x \\), \\( -18x \\to -18 \\), and the constant 12 vanishes.'
                 },
                 {
                     stepNumber: 3,
-                    description: 'Find \\( y \\).',
+                    description: 'Solve for candidate inflection point.',
+                    workingLatex: '12x - 18 = 0 \\;\\Rightarrow\\; x = \\tfrac{3}{2}',
+                    explanation: 'Set the second derivative equal to zero and solve for \\( x \\).'
+                },
+                {
+                    stepNumber: 4,
+                    description: 'Verify the sign change.',
+                    workingLatex: "\\dfrac{\\mathrm{d}^2y}{\\mathrm{d}x^2}\\bigg|_{x=1} = 12 - 18 = -6 < 0, \\quad \\dfrac{\\mathrm{d}^2y}{\\mathrm{d}x^2}\\bigg|_{x=2} = 24 - 18 = 6 > 0",
+                    explanation: 'The second derivative changes sign from negative to positive across \\( x = \\tfrac{3}{2} \\), confirming it is a genuine point of inflection.'
+                },
+                {
+                    stepNumber: 5,
+                    description: 'Find the y-coordinate.',
                     workingLatex: "y\\!\\left(\\tfrac{3}{2}\\right) = 2 \\cdot \\tfrac{27}{8} - 9 \\cdot \\tfrac{9}{4} + 12 \\cdot \\tfrac{3}{2} = \\tfrac{27}{4} - \\tfrac{81}{4} + 18 = -\\tfrac{54}{4} + 18 = \\tfrac{9}{2}",
-                    explanation: 'Substitute.'
+                    explanation: 'Substitute \\( x = \\tfrac{3}{2} \\) into the original equation, evaluating each term as a fraction to find the exact y-value.'
                 }
             ],
             finalAnswer: "Point of inflection at \\( \\left(\\tfrac{3}{2},\\, \\tfrac{9}{2}\\right) \\)."

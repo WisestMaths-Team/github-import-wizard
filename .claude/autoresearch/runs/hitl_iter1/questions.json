@@ -1,0 +1,218 @@
+[
+  {
+    "id": "Q1",
+    "topics": [
+      "Differentiation",
+      "Coordinate Geometry",
+      "Integration"
+    ],
+    "questionText": "The curve C has equation y = x^3.\n\n(a) Show that the tangent to C at the point P(p, p^3), where p > 0, meets the curve again at the point Q(-2p, -8p^3). [4]\n(b) Show that the area of the finite region enclosed between C and the chord PQ is 27p^4 / 4. [5]\n(c) The tangent to C at Q meets the curve again at a point R. Find, in its simplest form, the ratio of the area of the region in (b) to the area of the finite region enclosed between C and the chord QR. [4]",
+    "parts": [
+      {
+        "label": "(a)",
+        "text": "Show that the tangent to C at the point P(p, p^3), where p > 0, meets the curve again at the point Q(-2p, -8p^3).",
+        "marks": 4
+      },
+      {
+        "label": "(b)",
+        "text": "Show that the area of the finite region enclosed between C and the chord PQ is 27p^4 / 4.",
+        "marks": 5
+      },
+      {
+        "label": "(c)",
+        "text": "The tangent to C at Q meets the curve again at a point R. Find, in its simplest form, the ratio of the area of the region in (b) to the area of the finite region enclosed between C and the chord QR.",
+        "marks": 4
+      }
+    ],
+    "totalMarks": 13,
+    "workedSolution": "(a) dy/dx = 3x^2, so the gradient at P is 3p^2. The tangent at P has equation y = 3p^2(x - p) + p^3 = 3p^2 x - 2p^3.\nIntersections with C satisfy x^3 = 3p^2 x - 2p^3, i.e. x^3 - 3p^2 x + 2p^3 = 0.\nSince P lies on the tangent and the curve, (x - p) is a factor: x^3 - 3p^2 x + 2p^3 = (x - p)(x^2 + p x - 2p^2) = (x - p)^2(x + 2p).\nThe double root x = p reflects tangency at P; the remaining root is x = -2p, giving Q(-2p, -8p^3).\n\n(b) The chord PQ has the same equation as the tangent, y = 3p^2 x - 2p^3 (since the tangent passes through both P and Q). On [-2p, p], (x - p)^2(x + 2p) >= 0 implies x^3 - (3p^2 x - 2p^3) >= 0, so the curve lies above the chord.\nArea = integral from -2p to p of (x^3 - 3p^2 x + 2p^3) dx = [x^4/4 - 3p^2 x^2/2 + 2p^3 x] from -2p to p.\nAt x = p: p^4/4 - 3p^4/2 + 2p^4 = (p^4 - 6p^4 + 8p^4)/4 = 3p^4/4.\nAt x = -2p: 16p^4/4 - 6p^4 - 4p^4 = 4p^4 - 10p^4 = -6p^4.\nArea = 3p^4/4 - (-6p^4) = 27p^4/4.\n\n(c) Applying part (a) with parameter q = -2p (replacing p), the tangent at Q meets C again at x = -2q = 4p, so R = (4p, 64p^3). By part (b) with parameter q in place of p, the area between C and chord QR is 27q^4/4 = 27(16p^4)/4 = 108p^4.\nRatio = (27p^4/4) : 108p^4 = 27 : 432 = 1 : 16.",
+    "answers": [
+      "(a) Q has x-coordinate -2p, giving Q(-2p, -8p^3).",
+      "(b) Area = 27p^4/4.",
+      "(c) 1 : 16."
+    ]
+  },
+  {
+    "id": "Q2",
+    "topics": [
+      "Coordinate Geometry",
+      "Simultaneous Equations",
+      "Quadratic Inequalities"
+    ],
+    "questionText": "The circle C has equation x^2 + y^2 = 5. The point P has coordinates (5, 5).\n\n(a) Show that any line through P with gradient m has equation y = m x + 5 - 5m. [1]\n(b) Show that this line is tangent to C if and only if 2m^2 - 5m + 2 = 0. [4]\n(c) Hence find the equations of the two tangents to C from P. [3]\n(d) The two tangents from P touch C at points T1 and T2. Show that the line T1T2 has equation x + y = 1. [5]",
+    "parts": [
+      {
+        "label": "(a)",
+        "text": "Show that any line through P with gradient m has equation y = m x + 5 - 5m.",
+        "marks": 1
+      },
+      {
+        "label": "(b)",
+        "text": "Show that this line is tangent to C if and only if 2m^2 - 5m + 2 = 0.",
+        "marks": 4
+      },
+      {
+        "label": "(c)",
+        "text": "Hence find the equations of the two tangents to C from P.",
+        "marks": 3
+      },
+      {
+        "label": "(d)",
+        "text": "The two tangents from P touch C at points T1 and T2. Show that the line T1T2 has equation x + y = 1.",
+        "marks": 5
+      }
+    ],
+    "totalMarks": 13,
+    "workedSolution": "(a) y - 5 = m(x - 5) gives y = m x - 5m + 5 = m x + (5 - 5m).\n\n(b) The perpendicular distance from the origin to the line m x - y + (5 - 5m) = 0 must equal the radius sqrt(5):\n|5 - 5m| / sqrt(m^2 + 1) = sqrt(5).\nSquaring: 25(1 - m)^2 = 5(m^2 + 1), i.e. 5(1 - 2m + m^2) = m^2 + 1, hence 4m^2 - 10m + 4 = 0, and dividing by 2 gives 2m^2 - 5m + 2 = 0.\n\n(c) Factorising: 2m^2 - 5m + 2 = (2m - 1)(m - 2) = 0, so m = 2 or m = 1/2.\nThe tangents are y = 2x - 5 and y = (1/2)x + 5/2 (equivalently x - 2y + 5 = 0).\n\n(d) Substituting y = 2x - 5 into x^2 + y^2 = 5: x^2 + (2x - 5)^2 = 5, so 5x^2 - 20x + 20 = 0, i.e. x^2 - 4x + 4 = 0, giving x = 2 (repeated). Hence T1 = (2, -1).\nSubstituting y = (x + 5)/2 into x^2 + y^2 = 5: 4x^2 + (x + 5)^2 = 20, so 5x^2 + 10x + 5 = 0, i.e. x^2 + 2x + 1 = 0, giving x = -1 (repeated). Hence T2 = (-1, 2).\nGradient of T1T2: (2 - (-1)) / (-1 - 2) = 3 / (-3) = -1. Equation: y - 2 = -(x - (-1)), i.e. y = -x + 1, or equivalently x + y = 1.",
+    "answers": [
+      "(a) y = m x + 5 - 5m.",
+      "(b) 2m^2 - 5m + 2 = 0.",
+      "(c) y = 2x - 5 and y = (1/2)x + 5/2.",
+      "(d) x + y = 1."
+    ]
+  },
+  {
+    "id": "Q3",
+    "topics": [
+      "Sequences & Series",
+      "Exponentials & Logarithms",
+      "Quadratic Inequalities"
+    ],
+    "questionText": "Let a, b, c be positive real numbers forming a geometric progression with common ratio r > 0.\n\n(a) Show that log_2 a, log_2 b, log_2 c form an arithmetic progression, and state its common difference in terms of r. [3]\n(b) Given further that a + b + c = 21 and b = 4, show that r satisfies 4r^2 - 17r + 4 = 0. [4]\n(c) Hence find the two possible sets of values for (a, b, c). [2]\n(d) Prove that for any geometric progression a, b, c of positive numbers, a + c >= 2b, and state the condition for equality. [4]",
+    "parts": [
+      {
+        "label": "(a)",
+        "text": "Show that log_2 a, log_2 b, log_2 c form an arithmetic progression, and state its common difference in terms of r.",
+        "marks": 3
+      },
+      {
+        "label": "(b)",
+        "text": "Given further that a + b + c = 21 and b = 4, show that r satisfies 4r^2 - 17r + 4 = 0.",
+        "marks": 4
+      },
+      {
+        "label": "(c)",
+        "text": "Hence find the two possible sets of values for (a, b, c).",
+        "marks": 2
+      },
+      {
+        "label": "(d)",
+        "text": "Prove that for any geometric progression a, b, c of positive numbers, a + c >= 2b, and state the condition for equality.",
+        "marks": 4
+      }
+    ],
+    "totalMarks": 13,
+    "workedSolution": "(a) Since b = a r and c = a r^2, log_2 b - log_2 a = log_2(b/a) = log_2 r, and log_2 c - log_2 b = log_2(c/b) = log_2 r. The successive differences are equal, so log_2 a, log_2 b, log_2 c form an AP with common difference log_2 r.\n\n(b) With b = 4, a = 4/r and c = 4r. Then a + b + c = 4/r + 4 + 4r = 21, so 4/r + 4r = 17. Multiplying by r: 4 + 4r^2 = 17r, i.e. 4r^2 - 17r + 4 = 0.\n\n(c) The discriminant is 17^2 - 64 = 225 = 15^2, so r = (17 +/- 15)/8 = 4 or 1/2.\nIf r = 4: (a, b, c) = (1, 4, 16). If r = 1/2: (a, b, c) = (8, 4, 2).\n\n(d) Write c = a r^2, so a + c = a(1 + r^2) and 2b = 2 a r. The inequality a + c >= 2b becomes a(1 + r^2) >= 2 a r, i.e. (since a > 0) 1 + r^2 >= 2r, equivalently (r - 1)^2 >= 0, which is always true. Equality holds iff r = 1, i.e. a = b = c.",
+    "answers": [
+      "(a) AP with common difference log_2 r.",
+      "(b) 4r^2 - 17r + 4 = 0.",
+      "(c) (1, 4, 16) or (8, 4, 2).",
+      "(d) a + c >= 2b, with equality iff r = 1 (i.e. a = b = c)."
+    ]
+  },
+  {
+    "id": "Q4",
+    "topics": [
+      "Differentiation",
+      "Integration",
+      "Coordinate Geometry"
+    ],
+    "questionText": "The curve C has equation y = x^2. The tangent to C at the point P(a, a^2), where a > 0, meets the x-axis at B and the y-axis at A.\n\n(a) Show that B has coordinates (a/2, 0). [3]\n(b) Show that the area of the finite region enclosed by C, the tangent at P, and the x-axis is a^3 / 12. [5]\n(c) Show that, for every a > 0, this area is exactly one third of the area of the triangle bounded by the tangent and the two coordinate axes. [4]",
+    "parts": [
+      {
+        "label": "(a)",
+        "text": "Show that B has coordinates (a/2, 0).",
+        "marks": 3
+      },
+      {
+        "label": "(b)",
+        "text": "Show that the area of the finite region enclosed by C, the tangent at P, and the x-axis is a^3 / 12.",
+        "marks": 5
+      },
+      {
+        "label": "(c)",
+        "text": "Show that, for every a > 0, this area is exactly one third of the area of the triangle bounded by the tangent and the two coordinate axes.",
+        "marks": 4
+      }
+    ],
+    "totalMarks": 12,
+    "workedSolution": "(a) dy/dx = 2x, so the gradient at P is 2a. The tangent has equation y - a^2 = 2a(x - a), i.e. y = 2 a x - a^2. Setting y = 0 gives 2 a x = a^2, so x = a/2. Hence B = (a/2, 0).\n\n(b) The enclosed region is bounded above by the curve y = x^2 from (0, 0) to (a, a^2), on the right by the tangent from (a, a^2) down to B(a/2, 0), and below by the x-axis from B back to the origin.\nArea = (area under the curve from 0 to a) - (area of the right-angled triangle with vertices (a/2, 0), (a, 0), (a, a^2)).\nintegral from 0 to a of x^2 dx = a^3/3.\nThe triangle has base a - a/2 = a/2 and height a^2, giving area (1/2)(a/2)(a^2) = a^3/4.\nHence enclosed area = a^3/3 - a^3/4 = (4 a^3 - 3 a^3)/12 = a^3/12.\n\n(c) The tangent y = 2 a x - a^2 meets the y-axis at A = (0, -a^2) and the x-axis at B = (a/2, 0). The triangle formed by the tangent and the two axes has vertices (0, 0), (a/2, 0), (0, -a^2), with area (1/2)(a/2)(a^2) = a^3/4.\nRatio: (a^3/12) / (a^3/4) = 1/3, independent of a. So for every a > 0 the enclosed region has exactly one third of the area of the triangle bounded by the tangent and the axes.",
+    "answers": [
+      "(a) B = (a/2, 0).",
+      "(b) a^3/12.",
+      "(c) Triangle area is a^3/4, which is exactly 3 times a^3/12, independent of a."
+    ]
+  },
+  {
+    "id": "Q5",
+    "topics": [
+      "Binomial Expansion",
+      "Algebra & Functions",
+      "Simultaneous Equations"
+    ],
+    "questionText": "The first three terms in the expansion of (1 + a x)^n in ascending powers of x are 1 + 6x + 12x^2, where a and n are positive constants.\n\n(a) Find the values of a and n. [4]\n(b) Verify that the full expansion is (1 + 2x)^3 = 1 + 6x + 12x^2 + 8x^3. [2]\n(c) Show that, for all real x, (1 + 2x)^3 + (1 - 2x)^3 = 2 + 24 x^2. [3]\n(d) Hence solve, for real x, (1 + 2x)^6 + (1 - 2x)^6 + 2(1 - 4x^2)^3 = 676. [4]",
+    "parts": [
+      {
+        "label": "(a)",
+        "text": "Find the values of a and n.",
+        "marks": 4
+      },
+      {
+        "label": "(b)",
+        "text": "Verify that the full expansion is (1 + 2x)^3 = 1 + 6x + 12x^2 + 8x^3.",
+        "marks": 2
+      },
+      {
+        "label": "(c)",
+        "text": "Show that, for all real x, (1 + 2x)^3 + (1 - 2x)^3 = 2 + 24 x^2.",
+        "marks": 3
+      },
+      {
+        "label": "(d)",
+        "text": "Hence solve, for real x, (1 + 2x)^6 + (1 - 2x)^6 + 2(1 - 4x^2)^3 = 676.",
+        "marks": 4
+      }
+    ],
+    "totalMarks": 13,
+    "workedSolution": "(a) The first three terms of (1 + a x)^n are 1 + n a x + (n(n-1)/2) a^2 x^2. Comparing coefficients: n a = 6 and n(n-1) a^2 / 2 = 12, i.e. n(n-1) a^2 = 24.\nFrom n a = 6, a = 6/n. Substituting: n(n-1)(36/n^2) = 24, so 36(n-1)/n = 24, hence 36 n - 36 = 24 n, giving 12 n = 36, n = 3. Then a = 2.\n\n(b) (1 + 2x)^3 = 1 + 3(2x) + 3(2x)^2 + (2x)^3 = 1 + 6 x + 12 x^2 + 8 x^3.\n\n(c) (1 - 2x)^3 = 1 - 6 x + 12 x^2 - 8 x^3. Adding: (1 + 2x)^3 + (1 - 2x)^3 = (1 + 1) + (6 x - 6 x) + (12 x^2 + 12 x^2) + (8 x^3 - 8 x^3) = 2 + 24 x^2.\n\n(d) Let A = (1 + 2x)^3 and B = (1 - 2x)^3. Then A + B = 2 + 24 x^2 by part (c), and A B = ((1 + 2x)(1 - 2x))^3 = (1 - 4 x^2)^3.\nSo A^2 + B^2 + 2 A B = (A + B)^2, and the given equation becomes (A + B)^2 = 676, hence A + B = 26 (taking the positive root, since 2 + 24 x^2 >= 2 > 0 for real x).\nThus 2 + 24 x^2 = 26, so x^2 = 1, giving x = +/- 1.",
+    "answers": [
+      "(a) a = 2, n = 3.",
+      "(b) Direct expansion gives 1 + 6x + 12x^2 + 8x^3.",
+      "(c) Sum is 2 + 24 x^2.",
+      "(d) x = +/- 1."
+    ]
+  },
+  {
+    "id": "Q6",
+    "topics": [
+      "Sequences & Series",
+      "Exponentials & Logarithms",
+      "Algebra & Functions"
+    ],
+    "questionText": "A geometric sequence has first term a and common ratio r, where 0 < r < 1. The sum to infinity of the sequence is S = 32, and the sum to infinity of the squares of its terms is T = 1024/3.\n\n(a) By forming and solving suitable equations, find the values of a and r. [6]\n(b) Show that the sequence (log_2 a_n) formed by the base-2 logarithms of the terms is an arithmetic progression, stating its first term and common difference. [3]\n(c) Show that for any geometric sequence with first term a > 0 and common ratio r (with 0 < r < 1), the ratio T / S^2 depends only on r and equals (1 - r) / (1 + r). Use this identity to verify your value of r in part (a). [4]",
+    "parts": [
+      {
+        "label": "(a)",
+        "text": "By forming and solving suitable equations, find the values of a and r.",
+        "marks": 6
+      },
+      {
+        "label": "(b)",
+        "text": "Show that the sequence (log_2 a_n) formed by the base-2 logarithms of the terms is an arithmetic progression, stating its first term and common difference.",
+        "marks": 3
+      },
+      {
+        "label": "(c)",
+        "text": "Show that for any geometric sequence with first term a > 0 and common ratio r (with 0 < r < 1), the ratio T / S^2 depends only on r and equals (1 - r) / (1 + r). Use this identity to verify your value of r in part (a).",
+        "marks": 4
+      }
+    ],
+    "totalMarks": 13,
+    "workedSolution": "(a) S = a/(1 - r) = 32, so a = 32(1 - r). The squares form a geometric sequence with first term a^2 and common ratio r^2, so T = a^2/(1 - r^2) = 1024/3.\nSubstituting: [32(1 - r)]^2 / (1 - r^2) = 1024/3, i.e. 1024 (1 - r)^2 / [(1 - r)(1 + r)] = 1024/3, so 1024(1 - r)/(1 + r) = 1024/3.\nHence (1 - r)/(1 + r) = 1/3, giving 3(1 - r) = 1 + r, so 3 - 3 r = 1 + r, 4 r = 2, r = 1/2. Then a = 32(1 - 1/2) = 16.\n\n(b) a_n = 16 (1/2)^(n - 1). Taking log_2: log_2 a_n = log_2 16 + (n - 1) log_2(1/2) = 4 + (n - 1)(-1) = 5 - n. Successive differences are -1, so this is an arithmetic progression with first term 4 (when n = 1) and common difference -1.\n\n(c) For a general geometric sequence with 0 < r < 1, S = a/(1 - r) and T = a^2/(1 - r^2). Hence T/S^2 = [a^2/(1 - r^2)] * [(1 - r)^2 / a^2] = (1 - r)^2 / [(1 - r)(1 + r)] = (1 - r)/(1 + r). The factor a cancels, so T/S^2 depends only on r.\nVerification: with S = 32 and T = 1024/3, T/S^2 = (1024/3)/1024 = 1/3 = (1 - 1/2)/(1 + 1/2), confirming r = 1/2.",
+    "answers": [
+      "(a) a = 16, r = 1/2.",
+      "(b) AP with first term 4 and common difference -1.",
+      "(c) T/S^2 = (1 - r)/(1 + r); with r = 1/2 this gives 1/3, matching (1024/3)/32^2 = 1/3."
+    ]
+  }
+]

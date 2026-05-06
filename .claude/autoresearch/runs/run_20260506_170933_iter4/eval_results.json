@@ -1,0 +1,228 @@
+{
+  "summary": {
+    "total": 6,
+    "passed": 6,
+    "failed": 0,
+    "passRate": "100%",
+    "avgScore": "0.950"
+  },
+  "results": [
+    {
+      "id": "Q1",
+      "pass": true,
+      "avgScore": 0.9375,
+      "constraints": {
+        "C1": {
+          "pass": true,
+          "score": 1,
+          "detail": "6 topic group(s): Algebra & Functions, Coordinate Geometry, Differentiation, Trigonometry, Simultaneous Equations, Sequences & Series",
+          "groups": [
+            "Algebra & Functions",
+            "Coordinate Geometry",
+            "Differentiation",
+            "Trigonometry",
+            "Simultaneous Equations",
+            "Sequences & Series"
+          ]
+        },
+        "C2": {
+          "pass": true,
+          "score": 1,
+          "detail": "All numbers are clean",
+          "issues": []
+        },
+        "C3": {
+          "pass": true,
+          "score": 0.75,
+          "detail": "Total marks: 12 (good range); Insight keywords: hence, show that; Solution length: 1377 chars (substantial)",
+          "difficultyScore": 0.75
+        },
+        "C4": {
+          "pass": true,
+          "score": 1,
+          "detail": "4 parts, well-structured",
+          "numParts": 4
+        }
+      }
+    },
+    {
+      "id": "Q2",
+      "pass": true,
+      "avgScore": 0.9375,
+      "constraints": {
+        "C1": {
+          "pass": true,
+          "score": 1,
+          "detail": "5 topic group(s): Algebra & Functions, Differentiation, Integration, Trigonometry, Sequences & Series",
+          "groups": [
+            "Algebra & Functions",
+            "Differentiation",
+            "Integration",
+            "Trigonometry",
+            "Sequences & Series"
+          ]
+        },
+        "C2": {
+          "pass": true,
+          "score": 1,
+          "detail": "All numbers are clean",
+          "issues": []
+        },
+        "C3": {
+          "pass": true,
+          "score": 0.75,
+          "detail": "Total marks: 13 (good range); Insight keywords: show that, determine; Solution length: 1707 chars (substantial)",
+          "difficultyScore": 0.75
+        },
+        "C4": {
+          "pass": true,
+          "score": 1,
+          "detail": "4 parts, well-structured",
+          "numParts": 4
+        }
+      }
+    },
+    {
+      "id": "Q3",
+      "pass": true,
+      "avgScore": 1,
+      "constraints": {
+        "C1": {
+          "pass": true,
+          "score": 1,
+          "detail": "2 topic group(s): Differentiation, Trigonometry",
+          "groups": [
+            "Differentiation",
+            "Trigonometry"
+          ]
+        },
+        "C2": {
+          "pass": true,
+          "score": 1,
+          "detail": "All numbers are clean",
+          "issues": []
+        },
+        "C3": {
+          "pass": true,
+          "score": 1,
+          "detail": "Total marks: 13 (good range); Insight keywords: hence, show that, determine; Cross-references between parts: 3; Solution length: 2011 chars (substantial)",
+          "difficultyScore": 1
+        },
+        "C4": {
+          "pass": true,
+          "score": 1,
+          "detail": "4 parts, well-structured",
+          "numParts": 4
+        }
+      }
+    },
+    {
+      "id": "Q4",
+      "pass": true,
+      "avgScore": 0.9375,
+      "constraints": {
+        "C1": {
+          "pass": true,
+          "score": 1,
+          "detail": "3 topic group(s): Differentiation, Trigonometry, Exponentials & Logarithms",
+          "groups": [
+            "Differentiation",
+            "Trigonometry",
+            "Exponentials & Logarithms"
+          ]
+        },
+        "C2": {
+          "pass": true,
+          "score": 1,
+          "detail": "All numbers are clean",
+          "issues": []
+        },
+        "C3": {
+          "pass": true,
+          "score": 0.75,
+          "detail": "Total marks: 13 (good range); Insight keywords: show that, determine, justify; Solution length: 1749 chars (substantial)",
+          "difficultyScore": 0.75
+        },
+        "C4": {
+          "pass": true,
+          "score": 1,
+          "detail": "4 parts, well-structured",
+          "numParts": 4
+        }
+      }
+    },
+    {
+      "id": "Q5",
+      "pass": true,
+      "avgScore": 1,
+      "constraints": {
+        "C1": {
+          "pass": true,
+          "score": 1,
+          "detail": "5 topic group(s): Algebra & Functions, Coordinate Geometry, Integration, Trigonometry, Inequalities",
+          "groups": [
+            "Algebra & Functions",
+            "Coordinate Geometry",
+            "Integration",
+            "Trigonometry",
+            "Inequalities"
+          ]
+        },
+        "C2": {
+          "pass": true,
+          "score": 1,
+          "detail": "All numbers are clean",
+          "issues": []
+        },
+        "C3": {
+          "pass": true,
+          "score": 1,
+          "detail": "Total marks: 14 (good range); Insight keywords: show that, verify; Cross-references between parts: 2; Solution length: 2239 chars (substantial)",
+          "difficultyScore": 1
+        },
+        "C4": {
+          "pass": true,
+          "score": 1,
+          "detail": "3 parts, well-structured",
+          "numParts": 3
+        }
+      }
+    },
+    {
+      "id": "Q6",
+      "pass": true,
+      "avgScore": 0.8875,
+      "constraints": {
+        "C1": {
+          "pass": true,
+          "score": 1,
+          "detail": "4 topic group(s): Algebra & Functions, Differentiation, Integration, Trigonometry",
+          "groups": [
+            "Algebra & Functions",
+            "Differentiation",
+            "Integration",
+            "Trigonometry"
+          ]
+        },
+        "C2": {
+          "pass": true,
+          "score": 1,
+          "detail": "All numbers are clean",
+          "issues": []
+        },
+        "C3": {
+          "pass": true,
+          "score": 0.85,
+          "detail": "Total marks: 15 (good range); Some insight keywords: determine; Cross-references between parts: 4; Solution length: 2436 chars (substantial)",
+          "difficultyScore": 0.85
+        },
+        "C4": {
+          "pass": true,
+          "score": 0.7,
+          "detail": "Parts may not build on each other (no scaffolding keywords found)",
+          "numParts": 4
+        }
+      }
+    }
+  ]
+}

@@ -4,7 +4,7 @@ import { Question } from "@/lib/types";
  * Year 2 — Differentiation § 9.7 Parametric Differentiation
  * Ref: y2df7
  * 71 questions.  Given \( x = f(t),\; y = g(t) \), use
- *   \( \dfrac{dy}{dx} = \dfrac{dy/dt}{dx/dt} \).
+ *   \( \\dfrac{dy}{dx} = \\dfrac{dy/dt}{dx/dt} \).
  */
 export const questions: Question[] = [
   { id: "y2df7-001", topicRef: "y2df7", topicTitle: "Parametric Differentiation 13", difficulty: "Standard", questionText: "A curve has parametric equations \\( x = t^2,\\; y = t^3 \\). Find \\( \\tfrac{dy}{dx} \\) in terms of \\( t \\).", marks: 3, examStyle: false, yearCreated: 2026, tags: ["parametric"], workedSolution: { steps: [ { stepNumber: 1, description: "Differentiate each wrt \\(t\\).", workingLatex: "\\tfrac{dx}{dt}=2t,\\; \\tfrac{dy}{dt}=3t^2", explanation: "" }, { stepNumber: 2, description: "Divide.", workingLatex: "\\tfrac{dy}{dx} = \\tfrac{3t^2}{2t} = \\tfrac{3t}{2}", explanation: "Valid for \\(t \\ne 0\\)." } ], finalAnswer: "\\( \\tfrac{3t}{2} \\)" } },

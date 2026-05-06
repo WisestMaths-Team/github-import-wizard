@@ -1,0 +1,236 @@
+[
+  {
+    "id": "Q1",
+    "topics": [
+      "Differentiation",
+      "Coordinate Geometry",
+      "Algebra & Functions"
+    ],
+    "questionText": "A curve C has equation y = x\u00b3 \u2212 9x.\n\n(a) Show that the tangent to C at the point P(1, \u22128) has equation y = \u22126x \u2212 2. [3 marks]\n\n(b) The tangent at P meets C again at the point Q. Show that the x-coordinates of the points where this tangent meets C satisfy (x \u2212 1)\u00b2(x + 2) = 0, and hence find the coordinates of Q. [5 marks]\n\n(c) Show that PQ has length 3\u221a37. [3 marks]\n\n(d) Let P\u2032 = (p, p\u00b3 \u2212 9p) be a general point on C with p \u2260 0. By considering the cubic equation whose roots are the x-coordinates of the intersection points of the tangent at P\u2032 with C, prove that this tangent meets C again at a point with x-coordinate \u22122p. [4 marks]",
+    "parts": [
+      {
+        "label": "(a)",
+        "text": "Show that the tangent to C at the point P(1, \u22128) has equation y = \u22126x \u2212 2.",
+        "marks": 3
+      },
+      {
+        "label": "(b)",
+        "text": "The tangent at P meets C again at Q. Show that the x-coordinates of the intersection points satisfy (x\u22121)\u00b2(x+2)=0, and hence find Q.",
+        "marks": 5
+      },
+      {
+        "label": "(c)",
+        "text": "Show that PQ has length 3\u221a37.",
+        "marks": 3
+      },
+      {
+        "label": "(d)",
+        "text": "Prove that the tangent at a general point P\u2032 = (p, p\u00b3 \u2212 9p), p \u2260 0, meets C again at a point with x-coordinate \u22122p.",
+        "marks": 4
+      }
+    ],
+    "totalMarks": 15,
+    "workedSolution": "(a) y = x\u00b3 \u2212 9x \u21d2 dy/dx = 3x\u00b2 \u2212 9. At x = 1: gradient = 3 \u2212 9 = \u22126. The point P(1, \u22128) lies on C since 1 \u2212 9 = \u22128. Tangent: y \u2212 (\u22128) = \u22126(x \u2212 1) \u21d2 y = \u22126x + 6 \u2212 8 = \u22126x \u2212 2. \u2713\n\n(b) Setting curve = tangent: x\u00b3 \u2212 9x = \u22126x \u2212 2 \u21d2 x\u00b3 \u2212 3x + 2 = 0. Since the line is tangent at x = 1, (x \u2212 1) is a repeated factor. Polynomial division: x\u00b3 \u2212 3x + 2 = (x \u2212 1)(x\u00b2 + x \u2212 2) = (x \u2212 1)(x \u2212 1)(x + 2) = (x \u2212 1)\u00b2(x + 2). \u2713 The third root is x = \u22122; substituting into the tangent y = \u22126(\u22122) \u2212 2 = 10. So Q = (\u22122, 10).\n\n(c) PQ\u00b2 = (1 \u2212 (\u22122))\u00b2 + (\u22128 \u2212 10)\u00b2 = 9 + 324 = 333 = 9 \u00d7 37. Hence PQ = 3\u221a37. \u2713\n\n(d) Tangent at P\u2032(p, p\u00b3 \u2212 9p) has gradient 3p\u00b2 \u2212 9 and equation y = (3p\u00b2 \u2212 9)(x \u2212 p) + p\u00b3 \u2212 9p. Setting this equal to x\u00b3 \u2212 9x and rearranging:\nx\u00b3 \u2212 9x \u2212 (3p\u00b2 \u2212 9)(x \u2212 p) \u2212 (p\u00b3 \u2212 9p) = 0\nx\u00b3 \u2212 9x \u2212 (3p\u00b2 \u2212 9)x + p(3p\u00b2 \u2212 9) \u2212 p\u00b3 + 9p = 0\nx\u00b3 + (\u22129 \u2212 3p\u00b2 + 9)x + 3p\u00b3 \u2212 9p \u2212 p\u00b3 + 9p = 0\nx\u00b3 \u2212 3p\u00b2x + 2p\u00b3 = 0.\nThis cubic has no x\u00b2 term, so by Vieta the three roots sum to 0. Since x = p is a repeated root (tangency), the third root x_Q satisfies 2p + x_Q = 0, giving x_Q = \u22122p. \u2713",
+    "answers": [
+      "(a) y = \u22126x \u2212 2",
+      "(b) Q = (\u22122, 10)",
+      "(c) PQ = 3\u221a37",
+      "(d) x-coordinate of second intersection is \u22122p"
+    ]
+  },
+  {
+    "id": "Q2",
+    "topics": [
+      "Coordinate Geometry",
+      "Simultaneous Equations",
+      "Algebra & Functions"
+    ],
+    "questionText": "The circle C has equation x\u00b2 + y\u00b2 = 5. The line \u2113 has equation y = 2x + k, where k is a constant.\n\n(a) Find the values of k for which \u2113 is tangent to C. [3 marks]\n\n(b) For k = 5, the line \u2113 meets the parabola y = x\u00b2 at two points A and B. Show that the length of AB is 2\u221a30. [4 marks]\n\n(c) Prove that for every value of k for which \u2113 meets the parabola y = x\u00b2 at two distinct points, the midpoint of the resulting chord lies on the vertical line x = 1. [3 marks]\n\n(d) Find the value(s) of k for which the midpoint described in part (c) lies on the circle C. [3 marks]",
+    "parts": [
+      {
+        "label": "(a)",
+        "text": "Find the values of k for which \u2113 is tangent to C.",
+        "marks": 3
+      },
+      {
+        "label": "(b)",
+        "text": "For k = 5, show that \u2113 meets y = x\u00b2 at points A and B with AB = 2\u221a30.",
+        "marks": 4
+      },
+      {
+        "label": "(c)",
+        "text": "Prove that whenever \u2113 meets y = x\u00b2 at two distinct points, the midpoint of the chord lies on x = 1.",
+        "marks": 3
+      },
+      {
+        "label": "(d)",
+        "text": "Find the values of k for which this midpoint lies on the circle C.",
+        "marks": 3
+      }
+    ],
+    "totalMarks": 13,
+    "workedSolution": "(a) Rewrite \u2113 as 2x \u2212 y + k = 0. The perpendicular distance from the centre (0,0) of C to \u2113 is |k|/\u221a(4+1) = |k|/\u221a5. C has radius \u221a5, so tangency requires |k|/\u221a5 = \u221a5, hence k\u00b2 = 25, giving k = \u00b15.\n\n(b) Substituting y = 2x + 5 into y = x\u00b2: x\u00b2 = 2x + 5 \u21d2 x\u00b2 \u2212 2x \u2212 5 = 0. Discriminant = 4 + 20 = 24, roots x = 1 \u00b1 \u221a6. The corresponding y-values are (1 \u00b1 \u221a6)\u00b2 = 7 \u00b1 2\u221a6. So A = (1 \u2212 \u221a6, 7 \u2212 2\u221a6), B = (1 + \u221a6, 7 + 2\u221a6). \nAB\u00b2 = (2\u221a6)\u00b2 + (4\u221a6)\u00b2 = 24 + 96 = 120. Hence AB = \u221a120 = 2\u221a30. \u2713\n\n(c) Substituting y = 2x + k into y = x\u00b2: x\u00b2 \u2212 2x \u2212 k = 0. For two distinct real roots, discriminant 4 + 4k > 0 \u21d2 k > \u22121. By Vieta, the sum of roots is 2, so the midpoint of the chord has x-coordinate 2/2 = 1. Hence it lies on x = 1. \u2713\n\n(d) The midpoint has x = 1 and y = 2(1) + k = k + 2. It lies on C if 1\u00b2 + (k+2)\u00b2 = 5, i.e. (k+2)\u00b2 = 4, giving k + 2 = \u00b12, so k = 0 or k = \u22124. The midpoint exists only for k > \u22121 (from (c)), so k = \u22124 is rejected. Hence k = 0.",
+    "answers": [
+      "(a) k = \u00b15",
+      "(b) AB = 2\u221a30",
+      "(c) midpoint x-coordinate is always 1",
+      "(d) k = 0"
+    ]
+  },
+  {
+    "id": "Q3",
+    "topics": [
+      "Differentiation",
+      "Algebra & Functions",
+      "Quadratic Inequalities"
+    ],
+    "questionText": "The curve C has equation y = x\u00b3 \u2212 3x + k, where k is a real constant.\n\n(a) Find the coordinates of the stationary points of C in terms of k. [3 marks]\n\n(b) By using the second derivative, show that one of these points is a local maximum and the other is a local minimum, and state the y-coordinate of each. [3 marks]\n\n(c) Deduce, with reasoning, the set of values of k for which the equation x\u00b3 \u2212 3x + k = 0 has three distinct real roots. [4 marks]\n\n(d) For the boundary case k = 2, factorise x\u00b3 \u2212 3x + 2 completely, and explain in geometric terms what the repeated factor tells you about the curve C. [3 marks]",
+    "parts": [
+      {
+        "label": "(a)",
+        "text": "Find the coordinates of the stationary points of C in terms of k.",
+        "marks": 3
+      },
+      {
+        "label": "(b)",
+        "text": "Show that one stationary point is a local maximum and the other a local minimum.",
+        "marks": 3
+      },
+      {
+        "label": "(c)",
+        "text": "Deduce the values of k for which x\u00b3 \u2212 3x + k = 0 has three distinct real roots.",
+        "marks": 4
+      },
+      {
+        "label": "(d)",
+        "text": "For k = 2, factorise x\u00b3 \u2212 3x + 2 and explain the geometric significance of the repeated root.",
+        "marks": 3
+      }
+    ],
+    "totalMarks": 13,
+    "workedSolution": "(a) dy/dx = 3x\u00b2 \u2212 3 = 0 \u21d2 x\u00b2 = 1 \u21d2 x = \u00b11. y(1) = 1 \u2212 3 + k = k \u2212 2. y(\u22121) = \u22121 + 3 + k = k + 2. Stationary points: (1, k \u2212 2) and (\u22121, k + 2).\n\n(b) d\u00b2y/dx\u00b2 = 6x. At x = 1: d\u00b2y/dx\u00b2 = 6 > 0, so (1, k \u2212 2) is a local minimum. At x = \u22121: d\u00b2y/dx\u00b2 = \u22126 < 0, so (\u22121, k + 2) is a local maximum.\n\n(c) For three distinct real roots, the curve must cross the x-axis three times, which requires the local maximum to lie strictly above the x-axis and the local minimum to lie strictly below it: k + 2 > 0 AND k \u2212 2 < 0, giving \u22122 < k < 2.\n\n(d) k = 2: x\u00b3 \u2212 3x + 2. Testing x = 1: 1 \u2212 3 + 2 = 0, so (x \u2212 1) is a factor. Dividing: x\u00b3 \u2212 3x + 2 = (x \u2212 1)(x\u00b2 + x \u2212 2) = (x \u2212 1)(x \u2212 1)(x + 2) = (x \u2212 1)\u00b2(x + 2). The repeated factor (x \u2212 1)\u00b2 means the curve y = x\u00b3 \u2212 3x + 2 touches the x-axis tangentially at x = 1 rather than crossing it; this point is precisely the local minimum from part (b), which sits on the x-axis when k = 2 \u2014 the boundary of the inequality found in part (c).",
+    "answers": [
+      "(a) (1, k\u22122) and (\u22121, k+2)",
+      "(b) (1, k\u22122) is a local min; (\u22121, k+2) is a local max",
+      "(c) \u22122 < k < 2",
+      "(d) (x\u22121)\u00b2(x+2); curve touches x-axis at the local min (1, 0)"
+    ]
+  },
+  {
+    "id": "Q4",
+    "topics": [
+      "Sequences & Series",
+      "Exponentials & Logarithms",
+      "Algebra & Functions"
+    ],
+    "questionText": "A geometric series u\u2081, u\u2082, u\u2083, ... has first term a > 0 and common ratio r > 0. Define\nT\u2085 = log\u2083(u\u2081) + log\u2083(u\u2082) + log\u2083(u\u2083) + log\u2083(u\u2084) + log\u2083(u\u2085),\nand S_n = u\u2081 + u\u2082 + ... + u_n.\n\n(a) Show that T\u2085 = 5 log\u2083(u\u2083). [3 marks]\n\n(b) Given that T\u2085 = 10 and S\u2085 = 121, find the values of a and r. [5 marks]\n\n(c) Prove that, for these values of a and r, the product u\u2081 \u00d7 u\u2082 \u00d7 ... \u00d7 u_n equals 3^(n(n\u22121)/2). [3 marks]\n\n(d) Hence find the positive integer n for which u\u2081 \u00d7 u\u2082 \u00d7 ... \u00d7 u_n = 3\u00b9\u2070\u2075. [2 marks]",
+    "parts": [
+      {
+        "label": "(a)",
+        "text": "Show that T\u2085 = 5 log\u2083(u\u2083).",
+        "marks": 3
+      },
+      {
+        "label": "(b)",
+        "text": "Given T\u2085 = 10 and S\u2085 = 121, find a and r.",
+        "marks": 5
+      },
+      {
+        "label": "(c)",
+        "text": "Prove that u\u2081 \u00d7 u\u2082 \u00d7 ... \u00d7 u_n = 3^(n(n\u22121)/2).",
+        "marks": 3
+      },
+      {
+        "label": "(d)",
+        "text": "Find n such that this product equals 3\u00b9\u2070\u2075.",
+        "marks": 2
+      }
+    ],
+    "totalMarks": 13,
+    "workedSolution": "(a) T\u2085 = log\u2083(a) + log\u2083(ar) + log\u2083(ar\u00b2) + log\u2083(ar\u00b3) + log\u2083(ar\u2074)\n= log\u2083(a \u00b7 ar \u00b7 ar\u00b2 \u00b7 ar\u00b3 \u00b7 ar\u2074) = log\u2083(a\u2075r\u00b9\u2070) = 5 log\u2083(a) + 10 log\u2083(r) = 5(log\u2083(a) + 2 log\u2083(r)) = 5 log\u2083(ar\u00b2) = 5 log\u2083(u\u2083). \u2713\n\n(b) From (a), T\u2085 = 10 gives log\u2083(u\u2083) = 2, so u\u2083 = ar\u00b2 = 9. Also S\u2085 = a(r\u2075 \u2212 1)/(r \u2212 1) = 121.\nTry r = 3: ar\u00b2 = 9a = 9, so a = 1. Check: S\u2085 = (3\u2075 \u2212 1)/(3 \u2212 1) = 242/2 = 121. \u2713\nUniqueness: With a = 9/r\u00b2, the equation 9(r\u2075 \u2212 1)/(r\u00b2(r \u2212 1)) = 121 simplifies (using r\u2075 \u2212 1 = (r \u2212 1)(r\u2074 + r\u00b3 + r\u00b2 + r + 1)) to 9(r\u2074 + r\u00b3 + r\u00b2 + r + 1) = 121r\u00b2. Substituting r = 3 gives 9(81 + 27 + 9 + 3 + 1) = 9 \u00d7 121 = 1089 = 121 \u00d7 9 \u2713, and the equation is monotone in r > 0 so r = 3 is the unique positive solution. Hence a = 1, r = 3.\n\n(c) Product = a \u00b7 ar \u00b7 ar\u00b2 \u00b7 ... \u00b7 ar^(n\u22121) = a^n \u00b7 r^(0 + 1 + 2 + ... + (n\u22121)) = a^n \u00b7 r^(n(n\u22121)/2). With a = 1 and r = 3: product = 1^n \u00b7 3^(n(n\u22121)/2) = 3^(n(n\u22121)/2). \u2713\n\n(d) Set 3^(n(n\u22121)/2) = 3\u00b9\u2070\u2075, so n(n\u22121)/2 = 105 \u21d2 n\u00b2 \u2212 n \u2212 210 = 0 \u21d2 (n \u2212 15)(n + 14) = 0. Since n > 0, n = 15.",
+    "answers": [
+      "(a) T\u2085 = 5 log\u2083(u\u2083)",
+      "(b) a = 1, r = 3",
+      "(c) Product = 3^(n(n\u22121)/2)",
+      "(d) n = 15"
+    ]
+  },
+  {
+    "id": "Q5",
+    "topics": [
+      "Trigonometry",
+      "Algebra & Functions",
+      "Quadratic Inequalities"
+    ],
+    "questionText": "Define f(\u03b8) = 2 sin\u00b2\u03b8 + 3 cos\u03b8 for \u03b8 \u2208 \u211d.\n\n(a) Show that f(\u03b8) = \u22122 cos\u00b2\u03b8 + 3 cos\u03b8 + 2. [2 marks]\n\n(b) By writing u = cos\u03b8, show that f(\u03b8) \u2264 25/8 for all real \u03b8. [4 marks]\n\n(c) Find all values of \u03b8 in the interval [0, 2\u03c0] for which f(\u03b8) = 3. [4 marks]\n\n(d) Determine the values of k for which the equation f(\u03b8) = k has exactly four solutions in the interval [0, 2\u03c0). [4 marks]",
+    "parts": [
+      {
+        "label": "(a)",
+        "text": "Show that f(\u03b8) = \u22122cos\u00b2\u03b8 + 3cos\u03b8 + 2.",
+        "marks": 2
+      },
+      {
+        "label": "(b)",
+        "text": "By writing u = cos\u03b8, show that f(\u03b8) \u2264 25/8 for all real \u03b8.",
+        "marks": 4
+      },
+      {
+        "label": "(c)",
+        "text": "Find all \u03b8 in [0, 2\u03c0] with f(\u03b8) = 3.",
+        "marks": 4
+      },
+      {
+        "label": "(d)",
+        "text": "Find the values of k for which f(\u03b8) = k has exactly four solutions in [0, 2\u03c0).",
+        "marks": 4
+      }
+    ],
+    "totalMarks": 14,
+    "workedSolution": "(a) Using sin\u00b2\u03b8 = 1 \u2212 cos\u00b2\u03b8: f(\u03b8) = 2(1 \u2212 cos\u00b2\u03b8) + 3 cos\u03b8 = 2 \u2212 2cos\u00b2\u03b8 + 3cos\u03b8 = \u22122cos\u00b2\u03b8 + 3cos\u03b8 + 2. \u2713\n\n(b) Let u = cos\u03b8, so u \u2208 [\u22121, 1]. Define g(u) = \u22122u\u00b2 + 3u + 2. This is a downward parabola, maximised where g\u2032(u) = \u22124u + 3 = 0, i.e. u = 3/4 (which lies in [\u22121, 1]). Then g(3/4) = \u22122(9/16) + 9/4 + 2 = \u22129/8 + 18/8 + 16/8 = 25/8. Hence f(\u03b8) = g(cos\u03b8) \u2264 25/8 for all real \u03b8. \u2713\n\n(c) f(\u03b8) = 3 \u21d2 \u22122u\u00b2 + 3u + 2 = 3 \u21d2 2u\u00b2 \u2212 3u + 1 = 0 \u21d2 (2u \u2212 1)(u \u2212 1) = 0 \u21d2 u = 1/2 or u = 1.\ncos\u03b8 = 1/2 in [0, 2\u03c0]: \u03b8 = \u03c0/3 or 5\u03c0/3.\ncos\u03b8 = 1 in [0, 2\u03c0]: \u03b8 = 0 or 2\u03c0.\nSolutions: \u03b8 \u2208 {0, \u03c0/3, 5\u03c0/3, 2\u03c0}.\n\n(d) f(\u03b8) = k corresponds to 2u\u00b2 \u2212 3u + (k \u2212 2) = 0, with discriminant \u0394 = 9 \u2212 8(k \u2212 2) = 25 \u2212 8k. For real u, need k \u2264 25/8. Roots: u = (3 \u00b1 \u221a(25 \u2212 8k))/4.\nEach value u \u2208 (\u22121, 1) gives exactly two solutions for \u03b8 \u2208 [0, 2\u03c0); a value u = \u00b11 gives just one solution (\u03b8 = 0, or \u03b8 = \u03c0). For exactly four solutions, we need both roots strictly inside (\u22121, 1).\nLarger root: (3 + \u221a(25 \u2212 8k))/4 < 1 \u21d4 \u221a(25 \u2212 8k) < 1 \u21d4 25 \u2212 8k < 1 \u21d4 k > 3.\nSmaller root: (3 \u2212 \u221a(25 \u2212 8k))/4 > \u22121 \u21d4 \u221a(25 \u2212 8k) < 7 \u21d4 k > \u22123, automatic when k > 3.\nDistinct roots: 25 \u2212 8k > 0 \u21d4 k < 25/8.\nCombining: 3 < k < 25/8.",
+    "answers": [
+      "(a) f(\u03b8) = \u22122cos\u00b2\u03b8 + 3cos\u03b8 + 2",
+      "(b) max is 25/8 at cos\u03b8 = 3/4",
+      "(c) \u03b8 \u2208 {0, \u03c0/3, 5\u03c0/3, 2\u03c0}",
+      "(d) 3 < k < 25/8"
+    ]
+  },
+  {
+    "id": "Q6",
+    "topics": [
+      "Integration",
+      "Coordinate Geometry",
+      "Algebra & Functions"
+    ],
+    "questionText": "The curve C has equation y = x(4 \u2212 x) and the line \u2113 has equation y = mx, where m is a constant with 0 < m < 4.\n\n(a) Show that C and \u2113 meet at the origin O and at the point P with coordinates (4 \u2212 m, m(4 \u2212 m)). [2 marks]\n\n(b) The region R is enclosed between C and \u2113. Show that the area of R is (4 \u2212 m)\u00b3 / 6. [5 marks]\n\n(c) Find the value of m for which R has area 9/2. [2 marks]\n\n(d) Let N be the foot of the perpendicular from P to the x-axis. Find the value of m for which the triangle OPN has the same area as R. [4 marks]",
+    "parts": [
+      {
+        "label": "(a)",
+        "text": "Show C and \u2113 meet at O and at P(4 \u2212 m, m(4 \u2212 m)).",
+        "marks": 2
+      },
+      {
+        "label": "(b)",
+        "text": "Show that the area of R is (4 \u2212 m)\u00b3 / 6.",
+        "marks": 5
+      },
+      {
+        "label": "(c)",
+        "text": "Find m such that the area of R is 9/2.",
+        "marks": 2
+      },
+      {
+        "label": "(d)",
+        "text": "Find m such that triangle OPN has the same area as R.",
+        "marks": 4
+      }
+    ],
+    "totalMarks": 13,
+    "workedSolution": "(a) Setting x(4 \u2212 x) = mx: 4x \u2212 x\u00b2 \u2212 mx = 0 \u21d2 x((4 \u2212 m) \u2212 x) = 0 \u21d2 x = 0 or x = 4 \u2212 m. At x = 4 \u2212 m, y = m(4 \u2212 m). Hence the intersections are O(0, 0) and P(4 \u2212 m, m(4 \u2212 m)). \u2713\n\n(b) For 0 < x < 4 \u2212 m: y_curve \u2212 y_line = x(4 \u2212 x) \u2212 mx = x(4 \u2212 m \u2212 x) > 0, so the curve lies above the line on this interval.\nArea of R = \u222b\u2080^(4\u2212m) [x(4 \u2212 x) \u2212 mx] dx = \u222b\u2080^(4\u2212m) [(4 \u2212 m)x \u2212 x\u00b2] dx\n= [(4 \u2212 m)x\u00b2/2 \u2212 x\u00b3/3]\u2080^(4\u2212m)\n= (4 \u2212 m) \u00b7 (4 \u2212 m)\u00b2/2 \u2212 (4 \u2212 m)\u00b3/3\n= (4 \u2212 m)\u00b3 (1/2 \u2212 1/3)\n= (4 \u2212 m)\u00b3 / 6. \u2713\n\n(c) (4 \u2212 m)\u00b3 / 6 = 9/2 \u21d2 (4 \u2212 m)\u00b3 = 27 \u21d2 4 \u2212 m = 3 \u21d2 m = 1.\n\n(d) N = (4 \u2212 m, 0). Triangle OPN has vertices (0, 0), (4 \u2212 m, m(4 \u2212 m)), (4 \u2212 m, 0). It is a right-angled triangle with horizontal leg ON of length 4 \u2212 m and vertical leg PN of length m(4 \u2212 m). Its area is (1/2)(4 \u2212 m) \u00b7 m(4 \u2212 m) = m(4 \u2212 m)\u00b2/2.\nSetting m(4 \u2212 m)\u00b2/2 = (4 \u2212 m)\u00b3/6 and multiplying by 6: 3m(4 \u2212 m)\u00b2 = (4 \u2212 m)\u00b3. Since 0 < m < 4 implies (4 \u2212 m)\u00b2 \u2260 0, divide by (4 \u2212 m)\u00b2: 3m = 4 \u2212 m \u21d2 4m = 4 \u21d2 m = 1.",
+    "answers": [
+      "(a) Intersections at O(0,0) and P(4\u2212m, m(4\u2212m))",
+      "(b) Area = (4\u2212m)\u00b3/6",
+      "(c) m = 1",
+      "(d) m = 1"
+    ]
+  }
+]

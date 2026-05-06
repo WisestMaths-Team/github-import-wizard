@@ -175,12 +175,19 @@ export function MathText({ text }: { text: string }) {
 function LetterList({ items }: { items: { label: string; content: string }[] }) {
   return (
     <div className="mt-3 mb-1 space-y-3">
-      {items.map((item, i) => (
-        <div key={i} className="flex gap-3 items-baseline">
-          <span className="shrink-0 w-6 text-right font-bold text-accent">{item.label}</span>
-          <span className="flex-1"><MathTextInline text={item.content} /></span>
-        </div>
-      ))}
+      {items.map((item, i) => {
+        // Extract [N marks] from end of content for right-aligned display
+        const marksMatch = item.content.match(/^([\s\S]*?)\s*\[(\d+)\s*marks?\]\s*$/);
+        const mainContent = marksMatch ? marksMatch[1].trim() : item.content;
+        const marks = marksMatch ? marksMatch[2] : null;
+        return (
+          <div key={i} className="flex gap-3 items-baseline">
+            <span className="shrink-0 min-w-[1.75rem] text-right font-bold text-accent">{item.label}</span>
+            <span className="flex-1"><MathTextInline text={mainContent} /></span>
+            {marks && <span className="shrink-0 text-xs font-medium text-foreground/40 whitespace-nowrap">[{marks} marks]</span>}
+          </div>
+        );
+      })}
     </div>
   );
 }
@@ -189,17 +196,17 @@ function LetterList({ items }: { items: { label: string; content: string }[] }) 
  * Renders text with math delimiters and newline handling.
  */
 function MathTextWithBreaks({ text }: { text: string }) {
-  // Check if text contains a lettered list like "a) ... \nb) ..." or roman numeral "i) ... \nii) ..."
-  const listMatch = text.match(/^([\s\S]*?)\n\n?\s*((?:[a-z]\)|(?:\([a-z]\))|(?:i{1,3}v?)\))[\s\S]*)$/);
+  // Check if text contains a lettered list like "a) ... \nb) ..." or roman numeral "i) ... \nii) ..." or "(i) ... \n(ii) ..."
+  const listMatch = text.match(/^([\s\S]*?)\n\n?\s*((?:[a-z]\)|(?:\([a-z]\))|(?:\(i{1,3}v?\))|(?:i{1,3}v?)\))[\s\S]*)$/);
   if (listMatch) {
     const preamble = listMatch[1].trim();
     const listPart = listMatch[2];
     const items: { label: string; content: string }[] = [];
-    const itemRegex = /(?:^|\n)\s*(?:([a-z])\)|(\([a-z]\))|(i{1,3}v?)\))\s*(.*?)(?=\n\s*(?:[a-z]\)|\([a-z]\)|(?:i{1,3}v?)\))|\s*$)/gs;
+    const itemRegex = /(?:^|\n)\s*(?:([a-z])\)|(\([a-z]\))|(\(i{1,3}v?\))|(i{1,3}v?)\))\s*(.*?)(?=\n\s*(?:[a-z]\)|\([a-z]\)|\(i{1,3}v?\)|(?:i{1,3}v?)\))|\s*$)/g;
     let m;
     while ((m = itemRegex.exec(listPart)) !== null) {
-      const label = m[1] ? m[1] + ")" : m[2] ? m[2] : m[3] + ")";
-      const content = m[4] || "";
+      const label = m[1] ? m[1] + ")" : m[2] ? m[2] : m[3] ? m[3] : m[4] + ")";
+      const content = m[5] || "";
       items.push({ label, content: content.trim() });
     }
     if (items.length >= 2) {

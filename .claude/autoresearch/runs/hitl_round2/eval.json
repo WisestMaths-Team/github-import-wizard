@@ -1,0 +1,229 @@
+{
+  "summary": {
+    "total": 6,
+    "passed": 1,
+    "failed": 5,
+    "passRate": "17%",
+    "avgScore": "0.889"
+  },
+  "results": [
+    {
+      "id": "Q1",
+      "pass": false,
+      "avgScore": 0.885,
+      "constraints": {
+        "C1": {
+          "pass": true,
+          "score": 1,
+          "detail": "5 topic group(s): Coordinate Geometry, Differentiation, Integration, Trigonometry, Sequences & Series",
+          "groups": [
+            "Coordinate Geometry",
+            "Differentiation",
+            "Integration",
+            "Trigonometry",
+            "Sequences & Series"
+          ]
+        },
+        "C2": {
+          "pass": true,
+          "score": 1,
+          "detail": "All numbers are clean",
+          "issues": []
+        },
+        "C3": {
+          "pass": false,
+          "score": 0.54,
+          "detail": "Total marks: 14 (STEP range); Some proof parts: show that; Some scaffolding: hence; Solution: 1253 chars (STEP-length)",
+          "difficultyScore": 0.54
+        },
+        "C4": {
+          "pass": true,
+          "score": 1,
+          "detail": "4 parts, well-structured",
+          "numParts": 4
+        }
+      }
+    },
+    {
+      "id": "Q2",
+      "pass": false,
+      "avgScore": 0.8675,
+      "constraints": {
+        "C1": {
+          "pass": true,
+          "score": 1,
+          "detail": "4 topic group(s): Algebra & Functions, Differentiation, Trigonometry, Inequalities",
+          "groups": [
+            "Algebra & Functions",
+            "Differentiation",
+            "Trigonometry",
+            "Inequalities"
+          ]
+        },
+        "C2": {
+          "pass": true,
+          "score": 1,
+          "detail": "All numbers are clean",
+          "issues": []
+        },
+        "C3": {
+          "pass": false,
+          "score": 0.47000000000000003,
+          "detail": "Total marks: 14 (STEP range); Some proof parts: show that; Solution: 1619 chars (STEP-length)",
+          "difficultyScore": 0.47000000000000003
+        },
+        "C4": {
+          "pass": true,
+          "score": 1,
+          "detail": "3 parts, well-structured",
+          "numParts": 3
+        }
+      }
+    },
+    {
+      "id": "Q3",
+      "pass": true,
+      "avgScore": 0.9425,
+      "constraints": {
+        "C1": {
+          "pass": true,
+          "score": 1,
+          "detail": "5 topic group(s): Algebra & Functions, Differentiation, Trigonometry, Exponentials & Logarithms, Inequalities",
+          "groups": [
+            "Algebra & Functions",
+            "Differentiation",
+            "Trigonometry",
+            "Exponentials & Logarithms",
+            "Inequalities"
+          ]
+        },
+        "C2": {
+          "pass": true,
+          "score": 1,
+          "detail": "All numbers are clean",
+          "issues": []
+        },
+        "C3": {
+          "pass": true,
+          "score": 0.77,
+          "detail": "Total marks: 14 (STEP range); Proof parts (2): show that, prove that; Some scaffolding: hence; Parameter/family analysis present; Solution: 1177 chars (STEP-length)",
+          "difficultyScore": 0.77
+        },
+        "C4": {
+          "pass": true,
+          "score": 1,
+          "detail": "4 parts, well-structured",
+          "numParts": 4
+        }
+      }
+    },
+    {
+      "id": "Q4",
+      "pass": false,
+      "avgScore": 0.8875,
+      "constraints": {
+        "C1": {
+          "pass": true,
+          "score": 1,
+          "detail": "4 topic group(s): Differentiation, Integration, Trigonometry, Simultaneous Equations",
+          "groups": [
+            "Differentiation",
+            "Integration",
+            "Trigonometry",
+            "Simultaneous Equations"
+          ]
+        },
+        "C2": {
+          "pass": true,
+          "score": 1,
+          "detail": "All numbers are clean",
+          "issues": []
+        },
+        "C3": {
+          "pass": false,
+          "score": 0.55,
+          "detail": "Total marks: 14 (STEP range); Some proof parts: show that; Parameter/family analysis present; Solution: 2155 chars (STEP-length)",
+          "difficultyScore": 0.55
+        },
+        "C4": {
+          "pass": true,
+          "score": 1,
+          "detail": "4 parts, well-structured",
+          "numParts": 4
+        }
+      }
+    },
+    {
+      "id": "Q5",
+      "pass": false,
+      "avgScore": 0.885,
+      "constraints": {
+        "C1": {
+          "pass": true,
+          "score": 1,
+          "detail": "4 topic group(s): Algebra & Functions, Coordinate Geometry, Integration, Trigonometry",
+          "groups": [
+            "Algebra & Functions",
+            "Coordinate Geometry",
+            "Integration",
+            "Trigonometry"
+          ]
+        },
+        "C2": {
+          "pass": true,
+          "score": 1,
+          "detail": "All numbers are clean",
+          "issues": []
+        },
+        "C3": {
+          "pass": false,
+          "score": 0.54,
+          "detail": "Total marks: 14 (STEP range); Some proof parts: prove that; Some scaffolding: hence; Solution: 1538 chars (STEP-length)",
+          "difficultyScore": 0.54
+        },
+        "C4": {
+          "pass": true,
+          "score": 1,
+          "detail": "4 parts, well-structured",
+          "numParts": 4
+        }
+      }
+    },
+    {
+      "id": "Q6",
+      "pass": false,
+      "avgScore": 0.8675,
+      "constraints": {
+        "C1": {
+          "pass": true,
+          "score": 1,
+          "detail": "4 topic group(s): Algebra & Functions, Integration, Binomial Expansion, Sequences & Series",
+          "groups": [
+            "Algebra & Functions",
+            "Integration",
+            "Binomial Expansion",
+            "Sequences & Series"
+          ]
+        },
+        "C2": {
+          "pass": true,
+          "score": 1,
+          "detail": "All numbers are clean",
+          "issues": []
+        },
+        "C3": {
+          "pass": false,
+          "score": 0.47000000000000003,
+          "detail": "Total marks: 14 (STEP range); Some proof parts: prove that; Some scaffolding: hence; Solution: 1567 chars (STEP-length)",
+          "difficultyScore": 0.47000000000000003
+        },
+        "C4": {
+          "pass": true,
+          "score": 1,
+          "detail": "4 parts, well-structured",
+          "numParts": 4
+        }
+      }
+    }
+  ]
+}

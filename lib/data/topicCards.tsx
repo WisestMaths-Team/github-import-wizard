@@ -153,6 +153,18 @@ export const year1TopicCards: TopicCardData[] = [
       </svg>
     ),
   },
+  {
+    num: "11", title: "Mixed Questions", subcategory: "Mixed Questions",
+    illustration: (
+      <svg viewBox="0 0 240 160" className="h-full w-full">
+        <rect width="240" height="160" fill="#faf7f2" />
+        <text x="120" y="50" textAnchor="middle" fill="#0d9488" fontSize="22" fontWeight="bold" fontFamily="serif">∫ + dy/dx</text>
+        <text x="120" y="85" textAnchor="middle" fill="#d4775c" fontSize="18" fontFamily="serif">x² + y² = r²</text>
+        <text x="120" y="115" textAnchor="middle" fill="#2d2a26" fontSize="16" fontFamily="serif" opacity="0.5">log · sin · Σ</text>
+        <line x1="40" y1="135" x2="200" y2="135" stroke="#0d9488" strokeWidth="2" opacity="0.3" />
+      </svg>
+    ),
+  },
   // ── Statistics topic cards ──────────────────────────────────────
   {
     num: "11", title: "Statistical Sampling", subcategory: "Sampling",

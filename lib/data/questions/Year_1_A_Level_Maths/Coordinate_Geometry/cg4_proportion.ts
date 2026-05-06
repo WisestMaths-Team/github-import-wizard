@@ -459,7 +459,7 @@ export const questions: Question[] = [
         topicRef: 'cg4',
         topicTitle: 'Proportion 14',
         difficulty: 'Foundation',
-        questionText: 'Given that \\( y \\propto \\dfrac{1}{x} \\), \\( y = 6 \\) when \\( x = a \\), and \\( y = a \\) when \\( x = 24 \\) (with \\( a > 0 \\)), find \\( a \\).',
+        questionText: 'Given that \\( y \\propto \\dfrac{1}{x} \\), \\( y = a \\) when \\( x = a \\), and \\( y = 2 \\) when \\( x = 18 \\) (with \\( a > 0 \\)), find \\( a \\).',
         marks: 4,
         examStyle: false,
         yearCreated: 2026,
@@ -468,30 +468,30 @@ export const questions: Question[] = [
             steps: [
                 {
                     stepNumber: 1,
-                    description: 'Write \\( xy = k \\) and use the first pair.',
-                    workingLatex: '6a = k',
-                    explanation: 'Express \\( k \\) in terms of \\( a \\).'
+                    description: 'Write the inverse proportion relationship.',
+                    workingLatex: 'y = \\frac{k}{x} \\implies xy = k',
+                    explanation: 'For inverse proportion, the product \\(xy\\) is constant.'
                 },
                 {
                     stepNumber: 2,
-                    description: 'Use the second pair \\( y = a,\\, x = 24 \\).',
-                    workingLatex: 'a \\times 24 = k \\implies 24a = 6a',
-                    explanation: 'Both expressions equal \\( k \\), so set them equal.'
+                    description: 'Use the first pair: \\(y = a\\) when \\(x = a\\).',
+                    workingLatex: 'k = a \\times a = a^2',
+                    explanation: 'Since both \\(x\\) and \\(y\\) equal \\(a\\), the constant is \\(a^2\\).'
                 },
                 {
                     stepNumber: 3,
-                    description: 'Solve \\( 24a = 6a \\).',
-                    workingLatex: '24a = 6a \\implies k = 6a\\ \\text{ and }\\ k = 24a',
-                    explanation: 'Actually use both: \\( 6a = 24a \\) is inconsistent unless we reconsider — note \\( k = 6a \\) and \\( k = 24a \\). So \\( 6a = 24a \\) gives no solution unless \\( k = xy \\). Let \\( k = 6a \\); then \\( a \\times 24 = 6a \\implies 24a = 6a \\). Recheck: \\( y = a \\) when \\( x = 24 \\) so \\( k = 24a \\). Also \\( k = 6a \\). So \\( 24a = 6a \\) — this means \\( a = 0 \\), contradiction. Re-read: \\( y=6 \\) when \\( x=a \\) gives \\( k = 6a \\); \\( y=a \\) when \\( x = 24 \\) gives \\( k = 24a \\). So \\( 6a = 24a \\) implies \\( a = 0 \\) — restate correctly: \\( k = 6 \\cdot a \\) (first pair), \\( k = a \\cdot 24 \\) (second pair). These give \\( 6a = 24a \\) only if \\(a=0\\). So swap: \\( x=a, y=6 \\Rightarrow k=6a \\); \\( x=24, y=a \\Rightarrow k=24a\\). \\( 6a = 24a \\Rightarrow \\) no. Use \\( k^2 \\): \\( k = 6a \\) and \\( k = 24a \\) are contradictory. Correct reading: from pair 1, \\( k = 6a \\). From pair 2, \\( k = 24 \\cdot a \\). Equate: \\( 6a = 24a \\Rightarrow\\) contradiction. The correct setup is \\( k = 6a \\) and \\( k = 24a \\); these cannot both hold unless there is a typo. Reinterpret properly: \\( k = 6 \\times a \\) and \\( k = a \\times 24 \\Rightarrow 6a = 24a\\). Resolve by noting \\( a \\) appears in both y and x roles — use \\(k = 6a\\) and \\( k=24a\\) only if \\(6a = 24a\\Rightarrow a=0\\). So set \\( k=6a\\) and \\( y=a, x=24\\Rightarrow k=24a \\). We need \\( 6a = 24a\\). This problem is self-contradictory as stated; revise: y=6 when x=a and y=2a when x=6, giving \\(6a = 12a\\). Use k=6a and k = 2a×6=12a. Still same issue. Use clean numbers: \\(k = 6a\\) and \\(k = 24a\\Rightarrow\\) impossible. Correct solution: \\( 6 \\times a = a \\times 24 \\Rightarrow\\) not \\(a^2\\) since these are just products. Actually the intended route is \\( k = 6a \\) and \\( k = 24 \\cdot a \\) — but both give \\(k\\) proportional to \\(a\\), so square-root trick fails. Proper version: \\( xy=k \\Rightarrow k=6a\\) and \\(k=24a\\Rightarrow\\) we need \\(6a = 24a\\) which has no positive solution. The question must intend \\( x=6, y=a \\) in one pair and \\(x=a, y=24\\) in another, giving \\(6a = 24a\\) still. Use: \\( y=a \\) when \\(x=6\\) and \\(y=6\\) when \\(x=24\\) (swapped). Then \\(k=6a\\) and \\(k=144\\Rightarrow a=24\\). Rewrite: correctly \\( k=6a\\) and \\(k=6\\times 24=144\\Rightarrow a=24\\Rightarrow k=144\\). Check: \\(y=a=24\\) when \\(x=6\\): \\(xy=144=k\\checkmark\\).'
+                    description: 'Use the second pair: \\(y = 2\\) when \\(x = 18\\).',
+                    workingLatex: 'k = 18 \\times 2 = 36',
+                    explanation: 'Substituting the second pair gives a numerical value for \\(k\\).'
                 },
                 {
                     stepNumber: 4,
-                    description: 'Correct working: \\( y = a \\) when \\( x = 6 \\) gives \\( k = 6a \\); \\( y = 6 \\) when \\( x = 24 \\) gives \\( k = 144 \\).',
-                    workingLatex: '6a = 144 \\implies a = 24',
-                    explanation: 'Divide both sides by 6 to find \\( a \\).'
+                    description: 'Set the two expressions for \\(k\\) equal and solve.',
+                    workingLatex: 'a^2 = 36 \\implies a = 6',
+                    explanation: 'Take the positive square root since \\(a > 0\\).'
                 }
             ],
-            finalAnswer: '\\( a = 12 \\)'
+            finalAnswer: '\\(a = 6\\)'
         }
     },
 
@@ -517,7 +517,7 @@ export const questions: Question[] = [
                     stepNumber: 2,
                     description: 'Substitute \\( V = 2.5 \\).',
                     workingLatex: 'P = \\frac{1000}{2.5} = 400 \\text{ Pa}',
-                    explanation: 'Halving the volume doubles the pressure (approximately).'
+                    explanation: 'Reducing the volume increases the pressure, since they are inversely proportional.'
                 }
             ],
             finalAnswer: '\\( P = 400 \\) Pa'
@@ -830,7 +830,7 @@ export const questions: Question[] = [
         topicRef: 'cg4',
         topicTitle: 'Proportion 25',
         difficulty: 'Foundation',
-        questionText: 'The gravitational force \\( F \\) N between two objects is inversely proportional to the square of the distance \\( r \\) m between them. When \\( r = 3 \\) m, \\( F = 20 \\) N. Find the force when \\( r = 6 \\) m, and hence state the effect of tripling the original distance on the force.',
+        questionText: 'The gravitational force \\( F \\) N between two objects is inversely proportional to the square of the distance \\( r \\) m between them. When \\( r = 3 \\) m, \\( F = 20 \\) N. Find the force when \\( r = 6 \\) m, and state the effect of doubling the distance on the force.',
         marks: 5,
         examStyle: false,
         yearCreated: 2026,
@@ -851,12 +851,12 @@ export const questions: Question[] = [
                 },
                 {
                     stepNumber: 3,
-                    description: 'State the effect of tripling the distance (\\( r \\to 3r \\)).',
-                    workingLatex: 'F_{\\text{new}} = \\frac{k}{(3r)^2} = \\frac{k}{9r^2} = \\frac{F_{\\text{old}}}{9}',
-                    explanation: 'Tripling the distance reduces the force by a factor of 9.'
+                    description: 'State the effect of doubling the distance (\\( r \\to 2r \\)).',
+                    workingLatex: 'F_{\\text{new}} = \\frac{k}{(2r)^2} = \\frac{k}{4r^2} = \\frac{F_{\\text{old}}}{4}',
+                    explanation: 'Doubling the distance reduces the force by a factor of 4. We can verify: \\(F\\) went from 20 N at \\(r = 3\\) to 5 N at \\(r = 6\\), and \\(20 \\div 4 = 5\\).'
                 }
             ],
-            finalAnswer: '\\( F = 5 \\) N when \\( r = 6 \\) m; tripling the distance reduces the force to \\( \\frac{1}{9} \\) of its original value.'
+            finalAnswer: '\\( F = 5 \\) N when \\( r = 6 \\) m; doubling the distance reduces the force to \\( \\frac{1}{4} \\) of its original value.'
         }
     },
 

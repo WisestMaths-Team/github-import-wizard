@@ -2491,8 +2491,9 @@ export const questions: Question[] = [
             steps: [
                 { stepNumber: 1, description: 'Recognise the numerator as a difference of two squares.', workingLatex: 'x^6 - 1 = (x^3)^2 - 1^2 = (x^3 - 1)(x^3 + 1)', explanation: 'Write \\( x^6 = (x^3)^2 \\) and apply \\( a^2 - b^2 = (a+b)(a-b) \\).' },
                 { stepNumber: 2, description: 'Cancel the common factor \\( (x^3 - 1) \\).', workingLatex: '\\frac{(x^3 - 1)(x^3 + 1)}{x^3 - 1} = x^3 + 1', explanation: 'Since \\( x \\neq 1 \\), \\( x^3 \\neq 1 \\), so we can cancel \\( (x^3 - 1) \\).' },
-                { stepNumber: 3, description: 'Integrate each term.', workingLatex: '\\int (x^3 + 1) \\, \\mathrm{d}x = \\frac{x^4}{4} + x + C', explanation: 'Apply the power rule: \\( \\int x^3 \\, \\mathrm{d}x = \\frac{x^4}{4} \\) and \\( \\int 1 \\, \\mathrm{d}x = x \\).' },
-                { stepNumber: 4, description: 'State the final answer.', workingLatex: '\\frac{x^4}{4} + x + C', explanation: 'This is the required integral.' }
+                { stepNumber: 3, description: 'Write the integral to be evaluated.', workingLatex: '\\int (x^3 + 1) \\, \\mathrm{d}x', explanation: 'The integrand has been simplified to a polynomial.' },
+                { stepNumber: 4, description: 'Integrate each term using the power rule.', workingLatex: '\\int x^3 \\, \\mathrm{d}x = \\frac{x^4}{4}, \\qquad \\int 1 \\, \\mathrm{d}x = x', explanation: 'Apply the power rule to each term individually.' },
+                { stepNumber: 5, description: 'Combine and state the final answer.', workingLatex: '\\frac{x^4}{4} + x + C', explanation: 'This is the required integral.' }
             ],
             finalAnswer: '\\( \\dfrac{x^4}{4} + x + C \\)'
         }
@@ -2693,9 +2694,11 @@ export const questions: Question[] = [
         workedSolution: {
             steps: [
                 { stepNumber: 1, description: 'Factorise the numerator using the difference of two squares.', workingLatex: 'x^4 - 16 = (x^2)^2 - 4^2 = (x^2 - 4)(x^2 + 4)', explanation: 'Write \\( x^4 = (x^2)^2 \\) and \\( 16 = 4^2 \\), then apply \\( a^2 - b^2 = (a-b)(a+b) \\).' },
-                { stepNumber: 2, description: 'Cancel the common factor \\( (x^2 - 4) \\).', workingLatex: '\\frac{(x^2 - 4)(x^2 + 4)}{x^2 - 4} = x^2 + 4', explanation: 'Cancel \\( (x^2 - 4) \\) from numerator and denominator.' },
-                { stepNumber: 3, description: 'Integrate each term.', workingLatex: '\\int (x^2 + 4) \\, \\mathrm{d}x = \\frac{x^3}{3} + 4x + C', explanation: 'Apply the power rule: \\( \\int x^2 \\, \\mathrm{d}x = \\frac{x^3}{3} \\) and \\( \\int 4 \\, \\mathrm{d}x = 4x \\).' },
-                { stepNumber: 4, description: 'State the final answer.', workingLatex: '\\frac{x^3}{3} + 4x + C', explanation: 'This is the required integral.' }
+                { stepNumber: 2, description: 'Note the denominator can also be factorised.', workingLatex: 'x^2 - 4 = (x - 2)(x + 2)', explanation: 'This confirms \\( x^2 - 4 \\) is the common factor between numerator and denominator.' },
+                { stepNumber: 3, description: 'Cancel the common factor \\( (x^2 - 4) \\).', workingLatex: '\\frac{(x^2 - 4)(x^2 + 4)}{x^2 - 4} = x^2 + 4', explanation: 'Cancel \\( (x^2 - 4) \\) from numerator and denominator (valid where \\( x \\neq \\pm 2 \\)).' },
+                { stepNumber: 4, description: 'Integrate \\( x^2 \\).', workingLatex: '\\int x^2 \\, \\mathrm{d}x = \\frac{x^3}{3}', explanation: 'Apply the power rule: increase the index by 1 and divide by the new index.' },
+                { stepNumber: 5, description: 'Integrate the constant term \\( 4 \\).', workingLatex: '\\int 4 \\, \\mathrm{d}x = 4x', explanation: 'The integral of a constant \\( k \\) is \\( kx \\).' },
+                { stepNumber: 6, description: 'Combine and state the final answer.', workingLatex: '\\frac{x^3}{3} + 4x + C', explanation: 'This is the required integral.' }
             ],
             finalAnswer: '\\( \\dfrac{x^3}{3} + 4x + C \\)'
         }
@@ -2714,9 +2717,10 @@ export const questions: Question[] = [
             steps: [
                 { stepNumber: 1, description: 'Factorise the denominator.', workingLatex: 'x^2 - 1 = (x - 1)(x + 1)', explanation: 'Apply the difference of two squares.' },
                 { stepNumber: 2, description: 'Factorise the sum of cubes in the numerator.', workingLatex: 'x^3 + 1 = (x + 1)(x^2 - x + 1)', explanation: 'Apply \\( a^3 + b^3 = (a + b)(a^2 - ab + b^2) \\) with \\( a = x \\) and \\( b = 1 \\).' },
-                { stepNumber: 3, description: 'Rewrite the integrand and cancel common factors.', workingLatex: '\\frac{(x + 1)(x^2 - x + 1)(x - 1)}{(x - 1)(x + 1)} = x^2 - x + 1', explanation: 'Cancel \\( (x - 1) \\) and \\( (x + 1) \\) from numerator and denominator.' },
-                { stepNumber: 4, description: 'Integrate each term.', workingLatex: '\\int (x^2 - x + 1) \\, \\mathrm{d}x = \\frac{x^3}{3} - \\frac{x^2}{2} + x + C', explanation: 'Apply the power rule to each term individually.' },
-                { stepNumber: 5, description: 'State the final answer.', workingLatex: '\\frac{x^3}{3} - \\frac{x^2}{2} + x + C', explanation: 'This is the required integral.' }
+                { stepNumber: 3, description: 'Rewrite the full integrand.', workingLatex: '\\frac{(x + 1)(x^2 - x + 1)(x - 1)}{(x - 1)(x + 1)}', explanation: 'Write the numerator as \\( (x^3 + 1)(x - 1) = (x + 1)(x^2 - x + 1)(x - 1) \\) and the denominator in factored form.' },
+                { stepNumber: 4, description: 'Cancel the common factors \\( (x - 1) \\) and \\( (x + 1) \\).', workingLatex: '\\frac{(x + 1)(x^2 - x + 1)(x - 1)}{(x - 1)(x + 1)} = x^2 - x + 1', explanation: 'Since \\( x \\neq \\pm 1 \\), both factors can be cancelled.' },
+                { stepNumber: 5, description: 'Integrate each term using the power rule.', workingLatex: '\\int (x^2 - x + 1) \\, \\mathrm{d}x = \\frac{x^3}{3} - \\frac{x^2}{2} + x + C', explanation: 'Apply the power rule: \\( \\int x^2 = \\frac{x^3}{3} \\), \\( \\int x = \\frac{x^2}{2} \\), \\( \\int 1 = x \\).' },
+                { stepNumber: 6, description: 'State the final answer.', workingLatex: '\\frac{x^3}{3} - \\frac{x^2}{2} + x + C', explanation: 'This is the required integral.' }
             ],
             finalAnswer: '\\( \\dfrac{x^3}{3} - \\dfrac{x^2}{2} + x + C \\)'
         }
@@ -2733,13 +2737,14 @@ export const questions: Question[] = [
         tags: [],
         workedSolution: {
             steps: [
-                { stepNumber: 1, description: '(a) Integrate \\( f\'\'(x) \\) to find \\( f\'(x) \\).', workingLatex: 'f\'(x) = \\int (12x - 6) \\, \\mathrm{d}x = 6x^2 - 6x + A', explanation: 'Apply the power rule and introduce constant \\( A \\).' },
+                { stepNumber: 1, description: '(a) Integrate \\( f\'\'(x) \\) to find \\( f\'(x) \\).', workingLatex: 'f\'(x) = \\int (12x - 6) \\, \\mathrm{d}x = 6x^2 - 6x + A', explanation: 'Apply the power rule: \\( \\int 12x = 6x^2 \\) and \\( \\int 6 = 6x \\). Introduce constant \\( A \\).' },
                 { stepNumber: 2, description: 'Use the stationary point condition: \\( f\'(1) = 0 \\).', workingLatex: '0 = 6(1)^2 - 6(1) + A = 6 - 6 + A = A \\implies A = 0', explanation: 'At a stationary point the gradient is zero.' },
                 { stepNumber: 3, description: 'State \\( f\'(x) \\).', workingLatex: 'f\'(x) = 6x^2 - 6x', explanation: 'This completes part (a).' },
                 { stepNumber: 4, description: '(b) Integrate \\( f\'(x) \\) to find \\( f(x) \\).', workingLatex: 'f(x) = \\int (6x^2 - 6x) \\, \\mathrm{d}x = 2x^3 - 3x^2 + B', explanation: 'Apply the power rule: \\( \\frac{6x^3}{3} = 2x^3 \\) and \\( \\frac{6x^2}{2} = 3x^2 \\). Use \\( B \\) for the constant.' },
                 { stepNumber: 5, description: 'Use \\( f(1) = 2 \\) to find \\( B \\).', workingLatex: '2 = 2(1)^3 - 3(1)^2 + B = 2 - 3 + B = -1 + B \\implies B = 3', explanation: 'Substitute \\( x = 1 \\), \\( y = 2 \\) and solve for \\( B \\).' },
                 { stepNumber: 6, description: 'State \\( f(x) \\).', workingLatex: 'f(x) = 2x^3 - 3x^2 + 3', explanation: 'This completes part (b).' },
-                { stepNumber: 7, description: '(c) Evaluate \\( f\'\'(1) \\) to classify the stationary point.', workingLatex: 'f\'\'(1) = 12(1) - 6 = 6 > 0', explanation: 'Since \\( f\'\'(1) > 0 \\), the stationary point at \\( (1, 2) \\) is a minimum.' }
+                { stepNumber: 7, description: '(c) Evaluate \\( f\'\'(1) \\) to classify the stationary point.', workingLatex: 'f\'\'(1) = 12(1) - 6 = 6 > 0', explanation: 'Since the second derivative is positive, the curve is concave up at \\( x = 1 \\).' },
+                { stepNumber: 8, description: 'State the classification.', workingLatex: '\\text{The stationary point at } (1,\\, 2) \\text{ is a minimum.}', explanation: 'A positive second derivative at a stationary point indicates a minimum.' }
             ],
             finalAnswer: '(a) \\( f\'(x) = 6x^2 - 6x \\) \\newline (b) \\( f(x) = 2x^3 - 3x^2 + 3 \\) \\newline (c) Minimum'
         }
@@ -2782,9 +2787,11 @@ export const questions: Question[] = [
                 { stepNumber: 1, description: '(a) Integrate \\( f\'\'(x) \\) to find \\( f\'(x) \\).', workingLatex: 'f\'(x) = \\int \\left(2 - 6x^{-5/2}\\right) \\mathrm{d}x = 2x + 4x^{-3/2} + A', explanation: 'For \\( 2 \\): \\( 2x \\). For \\( -6x^{-5/2} \\): new index \\( -\\frac{3}{2} \\), coefficient \\( \\frac{-6}{-3/2} = 4 \\). Use \\( A \\) for the constant.' },
                 { stepNumber: 2, description: 'Use \\( f\'(1) = 0 \\) (stationary point) to find \\( A \\).', workingLatex: '0 = 2(1) + 4(1)^{-3/2} + A = 2 + 4 + A = 6 + A \\implies A = -6', explanation: 'At a stationary point the gradient is zero. Substitute \\( x = 1 \\) and solve.' },
                 { stepNumber: 3, description: 'State \\( f\'(x) \\) as required.', workingLatex: 'f\'(x) = 2x + 4x^{-3/2} - 6 \\qquad \\square', explanation: 'This confirms the given result.' },
-                { stepNumber: 4, description: '(b) Integrate \\( f\'(x) \\) to find \\( f(x) \\).', workingLatex: 'f(x) = \\int \\left(2x + 4x^{-3/2} - 6\\right) \\mathrm{d}x = x^2 - 8x^{-1/2} - 6x + B', explanation: 'For \\( 2x \\): \\( x^2 \\). For \\( 4x^{-3/2} \\): new index \\( -\\frac{1}{2} \\), coefficient \\( \\frac{4}{-1/2} = -8 \\). For \\( -6 \\): \\( -6x \\). Use \\( B \\) for the constant.' },
-                { stepNumber: 5, description: 'Use \\( f(1) = 5 \\) to find \\( B \\).', workingLatex: '5 = (1)^2 - 8(1)^{-1/2} - 6(1) + B = 1 - 8 - 6 + B = -13 + B \\implies B = 18', explanation: 'Substitute \\( x = 1 \\), \\( y = 5 \\) and solve for \\( B \\).' },
-                { stepNumber: 6, description: 'State the final answer.', workingLatex: 'f(x) = x^2 - \\frac{8}{\\sqrt{x}} - 6x + 18', explanation: 'Write \\( x^{-1/2} = \\frac{1}{\\sqrt{x}} \\). This is the required function.' }
+                { stepNumber: 4, description: '(b) Integrate \\( 2x \\) and \\( -6 \\).', workingLatex: '\\int 2x \\, \\mathrm{d}x = x^2, \\qquad \\int -6 \\, \\mathrm{d}x = -6x', explanation: 'Apply the power rule and constant rule respectively.' },
+                { stepNumber: 5, description: 'Integrate \\( 4x^{-3/2} \\).', workingLatex: '\\int 4x^{-3/2} \\, \\mathrm{d}x = \\frac{4x^{-1/2}}{-1/2} = -8x^{-1/2}', explanation: 'New index: \\( -\\frac{3}{2} + 1 = -\\frac{1}{2} \\). Then \\( \\frac{4}{-1/2} = -8 \\).' },
+                { stepNumber: 6, description: 'Combine to write \\( f(x) \\) with constant \\( B \\).', workingLatex: 'f(x) = x^2 - 8x^{-1/2} - 6x + B', explanation: 'Add all the integrated terms and introduce the constant of integration \\( B \\).' },
+                { stepNumber: 7, description: 'Use \\( f(1) = 5 \\) to find \\( B \\).', workingLatex: '5 = (1)^2 - 8(1)^{-1/2} - 6(1) + B = 1 - 8 - 6 + B = -13 + B \\implies B = 18', explanation: 'Substitute \\( x = 1 \\), \\( y = 5 \\) and solve for \\( B \\).' },
+                { stepNumber: 8, description: 'State the final answer.', workingLatex: 'f(x) = x^2 - \\frac{8}{\\sqrt{x}} - 6x + 18', explanation: 'Write \\( x^{-1/2} = \\frac{1}{\\sqrt{x}} \\). This is the required function.' }
             ],
             finalAnswer: '(a) Shown. \\newline (b) \\( f(x) = x^2 - \\dfrac{8}{\\sqrt{x}} - 6x + 18 \\)'
         }
@@ -2829,10 +2836,11 @@ export const questions: Question[] = [
             steps: [
                 { stepNumber: 1, description: 'Expand \\( (\\sqrt{x} + 2)^3 \\) using the binomial expansion.', workingLatex: '(\\sqrt{x} + 2)^3 = (\\sqrt{x})^3 + 3(\\sqrt{x})^2(2) + 3(\\sqrt{x})(4) + 8 = x^{3/2} + 6x + 12x^{1/2} + 8', explanation: 'Apply \\( (a+b)^3 = a^3 + 3a^2 b + 3ab^2 + b^3 \\) with \\( a = \\sqrt{x} \\) and \\( b = 2 \\).' },
                 { stepNumber: 2, description: 'Divide each term by \\( \\sqrt{x} = x^{1/2} \\).', workingLatex: '\\frac{x^{3/2} + 6x + 12x^{1/2} + 8}{x^{1/2}} = x + 6x^{1/2} + 12 + 8x^{-1/2}', explanation: 'Subtract \\( \\frac{1}{2} \\) from each power: \\( \\frac{3}{2} - \\frac{1}{2} = 1 \\), \\( 1 - \\frac{1}{2} = \\frac{1}{2} \\), \\( \\frac{1}{2} - \\frac{1}{2} = 0 \\), \\( 0 - \\frac{1}{2} = -\\frac{1}{2} \\).' },
-                { stepNumber: 3, description: 'Integrate each term.', workingLatex: '\\int \\left(x + 6x^{1/2} + 12 + 8x^{-1/2}\\right) \\mathrm{d}x = \\frac{x^2}{2} + \\frac{6x^{3/2}}{3/2} + 12x + \\frac{8x^{1/2}}{1/2} + C', explanation: 'Apply the power rule to each term.' },
-                { stepNumber: 4, description: 'Simplify the coefficients.', workingLatex: '\\frac{x^2}{2} + 4x^{3/2} + 12x + 16x^{1/2} + C', explanation: 'Dividing by a fraction: \\( \\frac{6}{3/2} = 4 \\) and \\( \\frac{8}{1/2} = 16 \\).' },
-                { stepNumber: 5, description: 'Rewrite using surds for neatness.', workingLatex: '\\frac{x^2}{2} + 4x\\sqrt{x} + 12x + 16\\sqrt{x} + C', explanation: 'Write \\( x^{3/2} = x\\sqrt{x} \\) and \\( x^{1/2} = \\sqrt{x} \\).' },
-                { stepNumber: 6, description: 'State the final answer.', workingLatex: '\\frac{x^2}{2} + 4x^{3/2} + 12x + 16x^{1/2} + C', explanation: 'This is the required integral.' }
+                { stepNumber: 3, description: 'Integrate \\( x \\) and the constant \\( 12 \\).', workingLatex: '\\int x \\, \\mathrm{d}x = \\frac{x^2}{2}, \\qquad \\int 12 \\, \\mathrm{d}x = 12x', explanation: 'Apply the power rule and constant rule.' },
+                { stepNumber: 4, description: 'Integrate \\( 6x^{1/2} \\) and \\( 8x^{-1/2} \\).', workingLatex: '\\int 6x^{1/2} \\, \\mathrm{d}x = \\frac{6x^{3/2}}{3/2} = 4x^{3/2}, \\qquad \\int 8x^{-1/2} \\, \\mathrm{d}x = \\frac{8x^{1/2}}{1/2} = 16x^{1/2}', explanation: 'Dividing by the new index: \\( \\frac{6}{3/2} = 4 \\) and \\( \\frac{8}{1/2} = 16 \\).' },
+                { stepNumber: 5, description: 'Combine all terms and add the constant of integration.', workingLatex: '\\frac{x^2}{2} + 4x^{3/2} + 12x + 16x^{1/2} + C', explanation: 'Gather all the integrated terms together.' },
+                { stepNumber: 6, description: 'Rewrite using surds for neatness.', workingLatex: '\\frac{x^2}{2} + 4x\\sqrt{x} + 12x + 16\\sqrt{x} + C', explanation: 'Write \\( x^{3/2} = x\\sqrt{x} \\) and \\( x^{1/2} = \\sqrt{x} \\).' },
+                { stepNumber: 7, description: 'State the final answer.', workingLatex: '\\frac{x^2}{2} + 4x^{3/2} + 12x + 16x^{1/2} + C', explanation: 'This is the required integral.' }
             ],
             finalAnswer: '\\( \\dfrac{x^2}{2} + 4x^{3/2} + 12x + 16x^{1/2} + C \\)'
         }

@@ -1,0 +1,1 @@
+.claude/autoresearch/loop.sh: line 44: claude: command not found

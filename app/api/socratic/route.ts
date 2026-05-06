@@ -37,76 +37,84 @@ function fixLaTeX(text: string): string {
   // Replace $...$ delimiters with \(...\) for MathText compatibility
   result = result.replace(/\$([^$]+)\$/g, "\\($1\\)");
 
-  // Detect bare LaTeX commands NOT inside \(...\) and wrap them.
-  // Common LaTeX commands that indicate undelimited math:
+  // Fix Gemini using parentheses instead of curly braces for super/subscripts:
+  // x^(n-1) → x^{n-1}, x_(i) → x_{i}
+  result = result.replace(/\^(\([^)]+\))/g, (_, inner) => "^{" + inner.slice(1, -1) + "}");
+  result = result.replace(/_(\([^)]+\))/g, (_, inner) => "_{" + inner.slice(1, -1) + "}");
+
+  // Fix common Gemini patterns: = nx^n without delimiters
+  // Detect any line containing math-like content (=, ^, fractions, x, y with operators)
+  const mathPattern = /(?:^|= )[\d]*[a-z]\^|\\frac|\\sqrt|\\times|\\cdot|\\pm|\\int|\\sum/;
   const latexCmds = /\\(?:frac|dfrac|tfrac|sqrt|left|right|text|begin|end|int|sum|prod|lim|sin|cos|tan|log|ln|infty|alpha|beta|theta|pi|pm|mp|times|div|cdot|leq|geq|neq|approx|equiv|implies|Rightarrow|Leftarrow|quad|qquad|binom|overline|underline|vec|hat|bar|dot|ddot)\b/;
 
-  if (latexCmds.test(result) && !result.includes("\\(")) {
-    // The entire text has LaTeX but no \( \) delimiters.
-    // Wrap sequences containing LaTeX in \( \).
-    // Split by newlines, process each line.
-    const lines = result.split("\n");
-    result = lines.map(line => {
-      if (!latexCmds.test(line)) return line;
-      // Check if this line already has \( \) — if so, skip
-      if (line.includes("\\(")) return line;
-      // Find the LaTeX-heavy portion and wrap it
-      // Strategy: find the first LaTeX command and wrap from there to end of math
-      const match = line.match(/(.*?)(\\.+)/);
-      if (match) {
-        // Wrap everything after the text prefix that contains LaTeX
-        const textPart = line.match(/^((?:Step\s+)?\d+[.:]\s*(?:[A-Z][a-z]*(?:\s+[a-z]+)*[.:])?\s*)/i);
-        if (textPart) {
-          const prefix = textPart[1];
-          const mathPart = line.slice(prefix.length);
-          if (latexCmds.test(mathPart)) {
-            return prefix + "\\(" + mathPart + "\\)";
-          }
+  // Process line by line for best results
+  const lines = result.split("\n");
+  result = lines.map(line => {
+    if (line.includes("\\(") && !latexCmds.test(line.replace(/\\[()]/g, ""))) {
+      // Already has delimiters and no bare commands outside — leave alone
+      return line;
+    }
+
+    // If the line has \( \) but ALSO has bare LaTeX outside, fix the bare parts
+    if (line.includes("\\(") && latexCmds.test(line)) {
+      const parts: string[] = [];
+      let cursor = 0;
+      while (cursor < line.length) {
+        const open = line.indexOf("\\(", cursor);
+        if (open === -1) {
+          parts.push(wrapBareMath(line.slice(cursor)));
+          break;
         }
-        // If no clear prefix, wrap the whole line
+        if (open > cursor) {
+          parts.push(wrapBareMath(line.slice(cursor, open)));
+        }
+        const close = line.indexOf("\\)", open + 2);
+        if (close === -1) {
+          parts.push(line.slice(open));
+          break;
+        }
+        parts.push(line.slice(open, close + 2));
+        cursor = close + 2;
+      }
+      return parts.join("");
+    }
+
+    // No delimiters at all — check if the line contains math
+    if (!line.includes("\\(") && (latexCmds.test(line) || mathPattern.test(line))) {
+      // Find the text prefix (step label, description word) and wrap the rest
+      const prefixMatch = line.match(/^((?:Step\s+)?\d+[.:]\s*(?:(?:Differentiate|Integrate|Find|Apply|Using|Simplify|Expand|Factorise|Calculate|Combine|Substitute|Rearrange|Evaluate|Recall|Write|Multiply|Divide|Identify|The|So|Therefore|Hence|Since|We)\b[^:=]*(?:[:.])\s*)?)/i);
+      if (prefixMatch && prefixMatch[1].length > 0 && prefixMatch[1].length < line.length) {
+        const prefix = prefixMatch[1];
+        const mathPart = line.slice(prefix.length).trim();
+        if (mathPart.length > 0) {
+          return prefix + "\\(" + mathPart + "\\)";
+        }
+      }
+      // No clear prefix — if it looks like pure math, wrap the whole thing
+      if (/^[^a-zA-Z]*\\/.test(line) || /^[^a-zA-Z]*[a-z]\s*=/.test(line)) {
         return "\\(" + line + "\\)";
       }
-      return line;
-    }).join("\n");
-  }
-
-  // Also handle partially delimited text: if some parts have \( \) but
-  // there are bare LaTeX commands outside them, wrap those too.
-  if (latexCmds.test(result) && result.includes("\\(")) {
-    // Process segments outside \(...\) delimiters
-    const parts: string[] = [];
-    let cursor = 0;
-    while (cursor < result.length) {
-      const open = result.indexOf("\\(", cursor);
-      if (open === -1) {
-        // Rest is plain text — check for bare LaTeX
-        const rest = result.slice(cursor);
-        parts.push(wrapBareLaTeX(rest));
-        break;
-      }
-      // Text before the delimiter
-      if (open > cursor) {
-        parts.push(wrapBareLaTeX(result.slice(cursor, open)));
-      }
-      // Find matching \)
-      const close = result.indexOf("\\)", open + 2);
-      if (close === -1) {
-        parts.push(result.slice(open));
-        break;
-      }
-      parts.push(result.slice(open, close + 2));
-      cursor = close + 2;
     }
-    result = parts.join("");
-  }
+
+    return line;
+  }).join("\n");
 
   return result;
 }
 
-function wrapBareLaTeX(text: string): string {
+function wrapBareMath(text: string): string {
   const latexCmds = /\\(?:frac|dfrac|tfrac|sqrt|left|right|begin|end|int|sum|prod|lim|sin|cos|tan|log|ln|infty|alpha|beta|theta|pi|pm|mp|times|div|cdot|leq|geq|neq|approx|equiv|implies|Rightarrow|binom|overline|vec)\b/;
-  if (!latexCmds.test(text)) return text;
-  // Wrap the math portion
+  if (!latexCmds.test(text)) {
+    // Also check for bare math like "= 7x^6" or "nx^{n-1}"
+    if (/[=+\-]\s*\d*[a-z]\^/.test(text) || /\d+[a-z]/.test(text)) {
+      return text.replace(/((?:[=+\-]\s*)?(?:\d*[a-z](?:\^[\d{][^,.\s]*)?(?:\s*[+\-]\s*\d*[a-z](?:\^[\d{][^,.\s]*)?)*(?:\s*[=]\s*\d+)?))/g, (match) => {
+        if (match.trim().length > 1) return "\\(" + match + "\\)";
+        return match;
+      });
+    }
+    return text;
+  }
+  // Wrap sequences containing LaTeX commands
   return text.replace(/((?:\\(?:frac|dfrac|tfrac|sqrt|left|right|begin|end|int|sum|prod|lim|sin|cos|tan|log|ln|infty|alpha|beta|theta|pi|pm|mp|times|div|cdot|leq|geq|neq|approx|equiv|implies|Rightarrow|binom|overline|vec)\b[^,.\n]*)+)/g, "\\($1\\)");
 }
 

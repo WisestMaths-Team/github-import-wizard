@@ -1,0 +1,225 @@
+{
+  "summary": {
+    "total": 6,
+    "passed": 3,
+    "failed": 3,
+    "passRate": "50%",
+    "avgScore": "0.869"
+  },
+  "results": [
+    {
+      "id": "Q1",
+      "pass": true,
+      "avgScore": 0.9375,
+      "constraints": {
+        "C1": {
+          "pass": true,
+          "score": 1,
+          "detail": "4 topic group(s): Algebra & Functions, Coordinate Geometry, Differentiation, Trigonometry",
+          "groups": [
+            "Algebra & Functions",
+            "Coordinate Geometry",
+            "Differentiation",
+            "Trigonometry"
+          ]
+        },
+        "C2": {
+          "pass": true,
+          "score": 1,
+          "detail": "All numbers are clean",
+          "issues": []
+        },
+        "C3": {
+          "pass": true,
+          "score": 0.75,
+          "detail": "Total marks: 10 (good range); Insight keywords: hence, show that; Solution length: 730 chars (substantial)",
+          "difficultyScore": 0.75
+        },
+        "C4": {
+          "pass": true,
+          "score": 1,
+          "detail": "3 parts, well-structured",
+          "numParts": 3
+        }
+      }
+    },
+    {
+      "id": "Q2",
+      "pass": false,
+      "avgScore": 0.7875000000000001,
+      "constraints": {
+        "C1": {
+          "pass": true,
+          "score": 1,
+          "detail": "3 topic group(s): Algebra & Functions, Coordinate Geometry, Integration",
+          "groups": [
+            "Algebra & Functions",
+            "Coordinate Geometry",
+            "Integration"
+          ]
+        },
+        "C2": {
+          "pass": true,
+          "score": 1,
+          "detail": "All numbers are clean",
+          "issues": []
+        },
+        "C3": {
+          "pass": false,
+          "score": 0.45,
+          "detail": "Total marks: 10 (good range); Solution length: 517 chars (substantial)",
+          "difficultyScore": 0.45
+        },
+        "C4": {
+          "pass": true,
+          "score": 0.7,
+          "detail": "Parts may not build on each other (no scaffolding keywords found)",
+          "numParts": 3
+        }
+      }
+    },
+    {
+      "id": "Q3",
+      "pass": true,
+      "avgScore": 0.9,
+      "constraints": {
+        "C1": {
+          "pass": true,
+          "score": 1,
+          "detail": "4 topic group(s): Coordinate Geometry, Trigonometry, Inequalities, Simultaneous Equations",
+          "groups": [
+            "Coordinate Geometry",
+            "Trigonometry",
+            "Inequalities",
+            "Simultaneous Equations"
+          ]
+        },
+        "C2": {
+          "pass": true,
+          "score": 1,
+          "detail": "All numbers are clean",
+          "issues": []
+        },
+        "C3": {
+          "pass": true,
+          "score": 0.6,
+          "detail": "Total marks: 12 (good range); Some insight keywords: show that; Solution length: 555 chars (substantial)",
+          "difficultyScore": 0.6
+        },
+        "C4": {
+          "pass": true,
+          "score": 1,
+          "detail": "4 parts, well-structured",
+          "numParts": 4
+        }
+      }
+    },
+    {
+      "id": "Q4",
+      "pass": false,
+      "avgScore": 0.8625,
+      "constraints": {
+        "C1": {
+          "pass": true,
+          "score": 1,
+          "detail": "3 topic group(s): Algebra & Functions, Coordinate Geometry, Trigonometry",
+          "groups": [
+            "Algebra & Functions",
+            "Coordinate Geometry",
+            "Trigonometry"
+          ]
+        },
+        "C2": {
+          "pass": true,
+          "score": 1,
+          "detail": "All numbers are clean",
+          "issues": []
+        },
+        "C3": {
+          "pass": false,
+          "score": 0.45,
+          "detail": "Total marks: 12 (good range); Solution length: 546 chars (substantial)",
+          "difficultyScore": 0.45
+        },
+        "C4": {
+          "pass": true,
+          "score": 1,
+          "detail": "4 parts, well-structured",
+          "numParts": 4
+        }
+      }
+    },
+    {
+      "id": "Q5",
+      "pass": false,
+      "avgScore": 0.7875000000000001,
+      "constraints": {
+        "C1": {
+          "pass": true,
+          "score": 1,
+          "detail": "5 topic group(s): Algebra & Functions, Differentiation, Integration, Trigonometry, Exponentials & Logarithms",
+          "groups": [
+            "Algebra & Functions",
+            "Differentiation",
+            "Integration",
+            "Trigonometry",
+            "Exponentials & Logarithms"
+          ]
+        },
+        "C2": {
+          "pass": true,
+          "score": 1,
+          "detail": "All numbers are clean",
+          "issues": []
+        },
+        "C3": {
+          "pass": false,
+          "score": 0.45,
+          "detail": "Total marks: 12 (good range); Solution length: 502 chars (substantial)",
+          "difficultyScore": 0.45
+        },
+        "C4": {
+          "pass": true,
+          "score": 0.7,
+          "detail": "Parts may not build on each other (no scaffolding keywords found)",
+          "numParts": 4
+        }
+      }
+    },
+    {
+      "id": "Q6",
+      "pass": true,
+      "avgScore": 0.9375,
+      "constraints": {
+        "C1": {
+          "pass": true,
+          "score": 1,
+          "detail": "3 topic group(s): Algebra & Functions, Trigonometry, Sequences & Series",
+          "groups": [
+            "Algebra & Functions",
+            "Trigonometry",
+            "Sequences & Series"
+          ]
+        },
+        "C2": {
+          "pass": true,
+          "score": 1,
+          "detail": "All numbers are clean",
+          "issues": []
+        },
+        "C3": {
+          "pass": true,
+          "score": 0.75,
+          "detail": "Total marks: 13 (good range); Insight keywords: hence, show that; Solution length: 561 chars (substantial)",
+          "difficultyScore": 0.75
+        },
+        "C4": {
+          "pass": true,
+          "score": 1,
+          "detail": "4 parts, well-structured",
+          "numParts": 4
+        }
+      }
+    }
+  ]
+}

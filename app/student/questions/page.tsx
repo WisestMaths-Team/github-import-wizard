@@ -7,7 +7,6 @@ import { getTopicsForCourse, getQuestionsForCourse } from "@/lib/data/courseData
 import { useCourse } from "@/hooks/useCourse";
 import type { Course } from "@/lib/types";
 import { MathText, MathTextInline } from "@/components/questions/MathText";
-import { CurveDiagram } from "@/components/questions/CurveDiagram";
 import { Badge } from "@/components/ui/badge";
 import { year1TopicCards, year2TopicCards } from "@/lib/data/topicCards";
 
@@ -20,7 +19,7 @@ const diffBadge: Record<string, string> = {
 type ViewLevel = "course" | "year" | "component" | "categories" | "topics" | "questions";
 
 const year1Components = [
-  { id: "pure", title: "Pure Mathematics", icon: "\u222B", desc: "Algebra, trigonometry, calculus, vectors and more.", topics: ["Algebra", "Binomial Expansions 1", "Coordinate Geometry", "Differentiation 1", "Exponentials and Logarithms", "Inequalities and Simultaneous Equations", "Integration 1", "Quadratics and Cubics", "Trigonometry 2", "Vectors 1"] },
+  { id: "pure", title: "Pure Mathematics", icon: "\u222B", desc: "Algebra, trigonometry, calculus, vectors and more.", topics: ["Algebra", "Binomial Expansions 1", "Coordinate Geometry", "Differentiation 1", "Exponentials and Logarithms", "Inequalities and Simultaneous Equations", "Integration 1", "Mixed Questions", "Quadratics and Cubics", "Trigonometry 2", "Vectors 1"] },
   { id: "statistics", title: "Statistics", icon: "\u03A3", desc: "Sampling, data presentation, correlation.", topics: ["Sampling", "Probability", "Statistical Distributions", "Hypothesis Testing"] },
   { id: "mechanics", title: "Mechanics", icon: "\u2192", desc: "Forces, motion, energy and momentum.", topics: ["Kinematics", "Variable Acceleration", "Forces and Motion", "Connected Particles"] },
 ];

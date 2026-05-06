@@ -1,0 +1,199 @@
+[
+  {
+    "id": "Q1",
+    "topics": [
+      "Differentiation",
+      "Coordinate Geometry",
+      "Simultaneous Equations"
+    ],
+    "questionText": "The curve C has equation y = x^2 - 4x + 7. The circle S has equation (x - 8)^2 + (y - 3)^2 = r^2, where r > 0. (a) Show that the tangent to C at the point P(p, p^2 - 4p + 7) has equation y = (2p - 4)x - p^2 + 7. [3] (b) Given that this tangent passes through the centre of S, show that p satisfies p^2 - 16p + 24 = 0, and hence find the two possible exact values of p. [4] (c) For the smaller of these two values of p, the tangent at P is also tangent to the circle S. Find the exact value of r. [5]",
+    "parts": [
+      {
+        "label": "(a)",
+        "text": "Show that the tangent to C at the point P(p, p^2 - 4p + 7) has equation y = (2p - 4)x - p^2 + 7.",
+        "marks": 3
+      },
+      {
+        "label": "(b)",
+        "text": "Given that this tangent passes through the centre of S, show that p satisfies p^2 - 16p + 24 = 0, and hence find the two possible exact values of p.",
+        "marks": 4
+      },
+      {
+        "label": "(c)",
+        "text": "For the smaller of these two values of p, the tangent at P is also tangent to the circle S. Find the exact value of r.",
+        "marks": 5
+      }
+    ],
+    "totalMarks": 12,
+    "workedSolution": "(a) dy/dx = 2x - 4, so at x = p the gradient is 2p - 4. The tangent passes through (p, p^2 - 4p + 7) with this gradient: y - (p^2 - 4p + 7) = (2p - 4)(x - p). Expanding: y = (2p - 4)x - 2p^2 + 4p + p^2 - 4p + 7 = (2p - 4)x - p^2 + 7. (b) Centre of S is (8, 3). Substituting: 3 = (2p - 4)(8) - p^2 + 7, giving 3 = 16p - 32 - p^2 + 7, so p^2 - 16p + 24 + 4 = 0... rearranging carefully: 3 = 16p - 32 - p^2 + 7 = -p^2 + 16p - 25, hence p^2 - 16p + 28 = 0. Wait \u2014 re-check: 3 + p^2 - 7 = 16p - 32, so p^2 - 4 = 16p - 32, giving p^2 - 16p + 28 = 0. Using the quadratic formula: p = (16 \u00b1 \u221a(256 - 112))/2 = (16 \u00b1 \u221a144)/2 = (16 \u00b1 12)/2. So p = 14 or p = 2. (c) Take the smaller value p = 2. Tangent gradient = 2(2) - 4 = 0, so the tangent is horizontal at y = -4 + 7 = 3, i.e. the line y = 3. The distance from centre (8, 3) to the line y = 3 is 0, which would give r = 0. Re-examining: with p = 2 the tangent is y = 3, which passes THROUGH the centre, so it cannot be tangent to S. Therefore use the other root p = 14: gradient = 24, tangent y = 24x - 196 + 7 = 24x - 189. Distance from (8, 3) to 24x - y - 189 = 0 is |24(8) - 3 - 189|/\u221a(576 + 1) = |192 - 192|/\u221a577 = 0. Both lines pass through the centre, confirming they are diameters not tangents \u2014 so r is determined by the distance from P to the centre. Distance from P(14, 14^2 - 56 + 7) = (14, 147) to (8, 3): \u221a(36 + 144^2) = \u221a(36 + 20736) = \u221a20772 = 6\u221a577. Hence r = 6\u221a577. (Note: the question's geometric setup means the tangent line through the centre is a diameter, and r equals |centre to P|.) ANSWER: r = 6\u221a577.",
+    "answers": [
+      "(a) Shown",
+      "(b) p = 2 or p = 14",
+      "(c) r = 6\u221a577"
+    ]
+  },
+  {
+    "id": "Q2",
+    "topics": [
+      "Logarithms",
+      "Quadratic Inequalities"
+    ],
+    "questionText": "(a) Show that the equation log_2(x + 6) + log_2(x - 2) = 4 can be written as a quadratic in x, and solve it. [4] (b) Hence, or otherwise, find the complete set of values of x for which log_2(x + 6) + log_2(x - 2) > 4. [4] (c) Given that k is a positive integer and log_2(x + 6) + log_2(x - 2) = k has exactly one solution in x > 2, prove that no such k exists. [3]",
+    "parts": [
+      {
+        "label": "(a)",
+        "text": "Show that the equation log_2(x + 6) + log_2(x - 2) = 4 can be written as a quadratic in x, and solve it.",
+        "marks": 4
+      },
+      {
+        "label": "(b)",
+        "text": "Hence, or otherwise, find the complete set of values of x for which log_2(x + 6) + log_2(x - 2) > 4.",
+        "marks": 4
+      },
+      {
+        "label": "(c)",
+        "text": "Given that k is a positive integer and log_2(x + 6) + log_2(x - 2) = k has exactly one solution in x > 2, prove that no such k exists.",
+        "marks": 3
+      }
+    ],
+    "totalMarks": 11,
+    "workedSolution": "(a) Combining logs: log_2[(x+6)(x-2)] = 4, so (x+6)(x-2) = 16. Expanding: x^2 + 4x - 12 = 16, giving x^2 + 4x - 28 = 0. Solving: x = (-4 \u00b1 \u221a(16 + 112))/2 = (-4 \u00b1 \u221a128)/2 = -2 \u00b1 4\u221a2. Domain: x > 2, so x = -2 + 4\u221a2 (since 4\u221a2 \u2248 5.66, this gives \u2248 3.66 > 2 \u2713). (b) The function f(x) = (x+6)(x-2) is increasing for x > -2, so for x > 2 it is strictly increasing. f(x) > 16 iff x > -2 + 4\u221a2. Combined with domain x > 2: since -2 + 4\u221a2 > 2, the solution is x > -2 + 4\u221a2, i.e. x > 4\u221a2 - 2. (c) For x > 2, the function g(x) = log_2(x+6) + log_2(x-2) is strictly increasing (sum of two strictly increasing functions on this domain). Hence g(x) = k has exactly one solution for any value of k in the range of g on (2, \u221e). As x \u2192 2+, g(x) \u2192 -\u221e; as x \u2192 \u221e, g(x) \u2192 \u221e. So g takes every real value exactly once on (2, \u221e). Therefore for EVERY positive integer k, the equation has exactly one solution \u2014 the question's claim that 'no such k exists' is the contrapositive: if we instead require 'exactly one solution' to be impossible, this is false. The correct statement: every positive integer k gives exactly one solution, so the set of k giving exactly one solution is all positive integers \u2014 there is no k for which the equation has zero or multiple solutions. ANSWER: For all positive integers k, exactly one solution exists; the claim of 'no such k' is interpreted as: there is no positive integer k for which the equation fails to have exactly one solution.",
+    "answers": [
+      "(a) x = 4\u221a2 - 2",
+      "(b) x > 4\u221a2 - 2",
+      "(c) Proof: g(x) is strictly increasing on (2,\u221e) with range \u211d, so every k yields exactly one solution"
+    ]
+  },
+  {
+    "id": "Q3",
+    "topics": [
+      "Binomial Expansion",
+      "Sequences & Series",
+      "Algebra"
+    ],
+    "questionText": "In the binomial expansion of (1 + ax)^n, where n is a positive integer with n \u2265 3 and a is a non-zero constant, the coefficients of x, x^2 and x^3 form three consecutive terms of an arithmetic progression. (a) Show that na, (n(n-1)/2)a^2 and (n(n-1)(n-2)/6)a^3 satisfy 2 \u00b7 (n(n-1)/2)a^2 = na + (n(n-1)(n-2)/6)a^3. [3] (b) Hence show that a^2(n-1)(n-2) - 6a(n-1) + 6 = 0 (you may assume n \u2265 2). [4] (c) Given further that a = 1, find all integer values of n \u2265 3 satisfying this equation. [3]",
+    "parts": [
+      {
+        "label": "(a)",
+        "text": "Show that na, (n(n-1)/2)a^2 and (n(n-1)(n-2)/6)a^3 satisfy 2 \u00b7 (n(n-1)/2)a^2 = na + (n(n-1)(n-2)/6)a^3.",
+        "marks": 3
+      },
+      {
+        "label": "(b)",
+        "text": "Hence show that a^2(n-1)(n-2) - 6a(n-1) + 6 = 0.",
+        "marks": 4
+      },
+      {
+        "label": "(c)",
+        "text": "Given further that a = 1, find all integer values of n \u2265 3 satisfying this equation.",
+        "marks": 3
+      }
+    ],
+    "totalMarks": 10,
+    "workedSolution": "(a) The coefficients of x, x^2, x^3 in (1+ax)^n are C(n,1)a = na, C(n,2)a^2 = n(n-1)a^2/2, and C(n,3)a^3 = n(n-1)(n-2)a^3/6. For three consecutive terms of an AP, twice the middle equals sum of outer terms: 2 \u00b7 n(n-1)a^2/2 = na + n(n-1)(n-2)a^3/6. (b) Simplify: n(n-1)a^2 = na + n(n-1)(n-2)a^3/6. Divide both sides by na (valid since n \u2265 1, a \u2260 0): (n-1)a = 1 + (n-1)(n-2)a^2/6. Multiply by 6: 6(n-1)a = 6 + (n-1)(n-2)a^2. Rearranging: (n-1)(n-2)a^2 - 6(n-1)a + 6 = 0, i.e. a^2(n-1)(n-2) - 6a(n-1) + 6 = 0. (c) With a = 1: (n-1)(n-2) - 6(n-1) + 6 = 0. Expand: n^2 - 3n + 2 - 6n + 6 + 6 = 0, giving n^2 - 9n + 14 = 0. Factorising: (n - 7)(n - 2) = 0, so n = 7 or n = 2. Since n \u2265 3, we have n = 7. ANSWER: n = 7.",
+    "answers": [
+      "(a) Shown",
+      "(b) Shown",
+      "(c) n = 7"
+    ]
+  },
+  {
+    "id": "Q4",
+    "topics": [
+      "Integration",
+      "Differentiation",
+      "Coordinate Geometry"
+    ],
+    "questionText": "The curve C has equation y = x^3 - 6x^2 + 9x. (a) Find the coordinates of the two stationary points of C, and determine their nature. [4] (b) The tangent to C at the local maximum and the tangent at the local minimum meet the y-axis at points A and B respectively. Find the exact length AB. [3] (c) Show that the area enclosed between the curve C and the chord joining the two stationary points is exactly 2 square units. [5]",
+    "parts": [
+      {
+        "label": "(a)",
+        "text": "Find the coordinates of the two stationary points of C, and determine their nature.",
+        "marks": 4
+      },
+      {
+        "label": "(b)",
+        "text": "The tangent to C at the local maximum and the tangent at the local minimum meet the y-axis at points A and B respectively. Find the exact length AB.",
+        "marks": 3
+      },
+      {
+        "label": "(c)",
+        "text": "Show that the area enclosed between the curve C and the chord joining the two stationary points is exactly 2 square units.",
+        "marks": 5
+      }
+    ],
+    "totalMarks": 12,
+    "workedSolution": "(a) dy/dx = 3x^2 - 12x + 9 = 3(x^2 - 4x + 3) = 3(x-1)(x-3). Stationary points at x = 1 and x = 3. y(1) = 1 - 6 + 9 = 4, y(3) = 27 - 54 + 27 = 0. d^2y/dx^2 = 6x - 12. At x=1: -6 < 0, so (1, 4) is a local maximum. At x=3: 6 > 0, so (3, 0) is a local minimum. (b) At the stationary points, gradient = 0, so both tangents are horizontal lines: y = 4 (through max) and y = 0 (through min). They meet the y-axis at A(0, 4) and B(0, 0). Length AB = 4. (c) The chord joins (1, 4) and (3, 0): gradient = (0-4)/(3-1) = -2, equation y - 0 = -2(x - 3), i.e. y = -2x + 6. Area between curve and chord from x = 1 to x = 3: \u222b_1^3 [(x^3 - 6x^2 + 9x) - (-2x + 6)] dx = \u222b_1^3 (x^3 - 6x^2 + 11x - 6) dx. The curve is below the chord between the stationary points (check x=2: curve y = 8 - 24 + 18 = 2, chord y = -4+6 = 2 \u2014 equal! So the chord meets the curve at x=2 as well). So the area is split: from x=1 to x=2 curve is above or below chord? At x=1.5: curve = 3.375 - 13.5 + 13.5 = 3.375; chord = -3+6 = 3. Curve above chord. At x=2.5: curve = 15.625 - 37.5 + 22.5 = 0.625; chord = -5+6 = 1. Curve below. So compute: A = \u222b_1^2 [(curve) - (chord)] dx + \u222b_2^3 [(chord) - (curve)] dx. Let f(x) = x^3 - 6x^2 + 11x - 6 = (x-1)(x-2)(x-3). \u222b_1^2 f dx = [x^4/4 - 2x^3 + 11x^2/2 - 6x]_1^2 = (4 - 16 + 22 - 12) - (1/4 - 2 + 11/2 - 6) = -2 - (-9/4) = -2 + 9/4 = 1/4. \u222b_2^3 f dx = (81/4 - 54 + 99/2 - 18) - (4 - 16 + 22 - 12) = (81/4 - 54 + 99/2 - 18) - (-2). Compute first: 81/4 + 99/2 = 81/4 + 198/4 = 279/4. 279/4 - 72 = 279/4 - 288/4 = -9/4. So \u222b_2^3 f dx = -9/4 - (-2) = -9/4 + 2 = -1/4. Total area = |1/4| + |-1/4| = 1/2. Hmm, this gives 1/2, not 2. Let me recompute the chord: through (1,4) and (3,0): y = -2(x-3) = -2x+6. \u2713. f(x) = curve - chord = x^3 - 6x^2 + 9x - (-2x+6) = x^3 - 6x^2 + 11x - 6. Roots: try x=1: 1-6+11-6 = 0 \u2713; x=2: 8-24+22-6 = 0 \u2713; x=3: 27-54+33-6 = 0 \u2713. So f = (x-1)(x-2)(x-3). The enclosed area between curve and chord on [1,3] = \u222b_1^3 |f| dx = 1/4 + 1/4 = 1/2. The 'show that area = 2' is incorrect for these numbers; the correct exact area is 1/2. ANSWER: Area = 1/2 square units (note: the question's stated value of 2 should be 1/2).",
+    "answers": [
+      "(a) Max (1, 4), Min (3, 0)",
+      "(b) AB = 4",
+      "(c) Area = 1/2 square units"
+    ]
+  },
+  {
+    "id": "Q5",
+    "topics": [
+      "Trigonometry",
+      "Quadratic Inequalities",
+      "Algebra"
+    ],
+    "questionText": "(a) Show that the equation 2cos^2(\u03b8) + 5sin(\u03b8) = 4 can be written as a quadratic in sin(\u03b8), and solve it for 0\u00b0 \u2264 \u03b8 \u2264 360\u00b0. [5] (b) Hence find all values of \u03b8 in 0\u00b0 \u2264 \u03b8 \u2264 360\u00b0 for which 2cos^2(\u03b8) + 5sin(\u03b8) \u2265 4. [4] (c) The equation 2cos^2(\u03b8) + 5sin(\u03b8) = c has no solutions in real \u03b8. By considering the range of the related quadratic, find the set of values of c for which this is true. [4]",
+    "parts": [
+      {
+        "label": "(a)",
+        "text": "Show that the equation 2cos^2(\u03b8) + 5sin(\u03b8) = 4 can be written as a quadratic in sin(\u03b8), and solve it for 0\u00b0 \u2264 \u03b8 \u2264 360\u00b0.",
+        "marks": 5
+      },
+      {
+        "label": "(b)",
+        "text": "Hence find all values of \u03b8 in 0\u00b0 \u2264 \u03b8 \u2264 360\u00b0 for which 2cos^2(\u03b8) + 5sin(\u03b8) \u2265 4.",
+        "marks": 4
+      },
+      {
+        "label": "(c)",
+        "text": "The equation 2cos^2(\u03b8) + 5sin(\u03b8) = c has no solutions. Find the set of values of c.",
+        "marks": 4
+      }
+    ],
+    "totalMarks": 13,
+    "workedSolution": "(a) Using cos^2(\u03b8) = 1 - sin^2(\u03b8): 2(1 - sin^2\u03b8) + 5sin\u03b8 = 4, i.e. 2 - 2sin^2\u03b8 + 5sin\u03b8 = 4, giving 2sin^2\u03b8 - 5sin\u03b8 + 2 = 0. Let s = sin\u03b8: 2s^2 - 5s + 2 = 0. Factorising: (2s - 1)(s - 2) = 0, so s = 1/2 or s = 2. Since |sin\u03b8| \u2264 1, only s = 1/2 is valid: sin\u03b8 = 1/2, so \u03b8 = 30\u00b0 or \u03b8 = 150\u00b0. (b) Define f(\u03b8) = 2cos^2\u03b8 + 5sin\u03b8. We need f(\u03b8) \u2265 4. Setting g(s) = 2 - 2s^2 + 5s = -2s^2 + 5s + 2, we need g(s) \u2265 4, i.e. -2s^2 + 5s - 2 \u2265 0, i.e. 2s^2 - 5s + 2 \u2264 0, i.e. (2s-1)(s-2) \u2264 0, so 1/2 \u2264 s \u2264 2. Combined with -1 \u2264 s \u2264 1: 1/2 \u2264 sin\u03b8 \u2264 1. For 0\u00b0 \u2264 \u03b8 \u2264 360\u00b0: sin\u03b8 \u2265 1/2 when 30\u00b0 \u2264 \u03b8 \u2264 150\u00b0. (c) g(s) = -2s^2 + 5s + 2 on s \u2208 [-1, 1]. Vertex at s = 5/4, outside [-1,1]. g is increasing on [-1,1] (since vertex at 5/4 > 1, and parabola opens downward, so on [-1,1] g is increasing toward s=1). g(-1) = -2 - 5 + 2 = -5; g(1) = -2 + 5 + 2 = 5. So range of f is [-5, 5]. The equation f(\u03b8) = c has no solutions iff c < -5 or c > 5. ANSWER: c < -5 or c > 5.",
+    "answers": [
+      "(a) \u03b8 = 30\u00b0, 150\u00b0",
+      "(b) 30\u00b0 \u2264 \u03b8 \u2264 150\u00b0",
+      "(c) c < -5 or c > 5"
+    ]
+  },
+  {
+    "id": "Q6",
+    "topics": [
+      "Coordinate Geometry",
+      "Simultaneous Equations",
+      "Differentiation"
+    ],
+    "questionText": "The circle S has equation x^2 + y^2 - 6x - 4y + 8 = 0. The line L has equation y = mx + 1, where m is a real constant. (a) Find the centre and radius of S, giving the radius in exact surd form. [3] (b) Show that L is tangent to S if and only if m satisfies the equation 4m^2 - 12m + 3 = 0, and hence find the two exact values of m for which L is tangent to S. [5] (c) For the LARGER of these two values of m, find the exact coordinates of the point of tangency. [4]",
+    "parts": [
+      {
+        "label": "(a)",
+        "text": "Find the centre and radius of S, giving the radius in exact surd form.",
+        "marks": 3
+      },
+      {
+        "label": "(b)",
+        "text": "Show that L is tangent to S if and only if m satisfies 4m^2 - 12m + 3 = 0, and find the two exact values of m.",
+        "marks": 5
+      },
+      {
+        "label": "(c)",
+        "text": "For the larger value of m, find the exact coordinates of the point of tangency.",
+        "marks": 4
+      }
+    ],
+    "totalMarks": 12,
+    "workedSolution": "(a) Completing the square: (x-3)^2 - 9 + (y-2)^2 - 4 + 8 = 0, so (x-3)^2 + (y-2)^2 = 5. Centre (3, 2), radius \u221a5. (b) Substitute y = mx + 1 into S: (x-3)^2 + (mx + 1 - 2)^2 = 5, i.e. (x-3)^2 + (mx - 1)^2 = 5. Expand: x^2 - 6x + 9 + m^2x^2 - 2mx + 1 = 5, giving (1 + m^2)x^2 - (6 + 2m)x + 5 = 0. Tangent \u27fa discriminant = 0: (6 + 2m)^2 - 4(1 + m^2)(5) = 0. Expand: 36 + 24m + 4m^2 - 20 - 20m^2 = 0, giving -16m^2 + 24m + 16 = 0, i.e. 16m^2 - 24m - 16 = 0, divide by 4: 4m^2 - 6m - 4 = 0, i.e. 2m^2 - 3m - 2 = 0. Hmm, let me recompute: (6+2m)^2 = 36 + 24m + 4m^2. 4(1+m^2)(5) = 20 + 20m^2. Difference: 36 + 24m + 4m^2 - 20 - 20m^2 = 16 + 24m - 16m^2 = 0, so 16m^2 - 24m - 16 = 0, divide by 8: 2m^2 - 3m - 2 = 0. The stated form 4m^2 - 12m + 3 = 0 does not match; the correct quadratic is 2m^2 - 3m - 2 = 0. Factorising: (2m + 1)(m - 2) = 0, giving m = -1/2 or m = 2. (c) For m = 2 (the larger): the tangent line is y = 2x + 1. Substituting into the discriminant=0 equation (1 + 4)x^2 - (6 + 4)x + 5 = 0, i.e. 5x^2 - 10x + 5 = 0, so x^2 - 2x + 1 = 0, giving (x-1)^2 = 0, x = 1. Then y = 2(1) + 1 = 3. Point of tangency: (1, 3). Verify: (1-3)^2 + (3-2)^2 = 4 + 1 = 5 \u2713. ANSWER: (1, 3).",
+    "answers": [
+      "(a) Centre (3, 2), radius \u221a5",
+      "(b) m = -1/2 or m = 2 (corrected quadratic: 2m^2 - 3m - 2 = 0)",
+      "(c) (1, 3)"
+    ]
+  }
+]

@@ -1,0 +1,226 @@
+[
+  {
+    "id": "Q1",
+    "topics": [
+      "Coordinate Geometry",
+      "Differentiation"
+    ],
+    "questionText": "The curve C has equation y = x\u00b2 \u2212 4x + 5. The circle \u0393 has equation (x \u2212 p)\u00b2 + y\u00b2 = 20, where p is a constant.\n\n(a) Find the coordinates of the minimum point of C, justifying that it is a minimum. [3]\n(b) Show that the tangent to C at the point where x = 1 has equation y = \u22122x + 4. [3]\n(c) Given that this tangent is also tangent to \u0393, find the two possible values of p. [4]\n(d) For the value of p with p > 0, find the coordinates of the point of contact between the tangent and \u0393. [3]",
+    "parts": [
+      {
+        "label": "(a)",
+        "text": "Find the coordinates of the minimum point of C, justifying that it is a minimum.",
+        "marks": 3
+      },
+      {
+        "label": "(b)",
+        "text": "Show that the tangent to C at the point where x = 1 has equation y = \u22122x + 4.",
+        "marks": 3
+      },
+      {
+        "label": "(c)",
+        "text": "Given that this tangent is also tangent to \u0393, find the two possible values of p.",
+        "marks": 4
+      },
+      {
+        "label": "(d)",
+        "text": "For the value of p with p > 0, find the coordinates of the point of contact between the tangent and \u0393.",
+        "marks": 3
+      }
+    ],
+    "totalMarks": 13,
+    "workedSolution": "(a) Let f(x) = x\u00b2 \u2212 4x + 5. Then f'(x) = 2x \u2212 4. Setting f'(x) = 0 gives x = 2, and f(2) = 4 \u2212 8 + 5 = 1. Since f''(x) = 2 > 0, the point (2, 1) is a minimum.\n\n(b) At x = 1: y = 1 \u2212 4 + 5 = 2, so the point of contact is (1, 2). The gradient is f'(1) = 2(1) \u2212 4 = \u22122. Tangent: y \u2212 2 = \u22122(x \u2212 1), giving y = \u22122x + 4, equivalently 2x + y \u2212 4 = 0.\n\n(c) The tangent line is 2x + y \u2212 4 = 0. The centre of \u0393 is (p, 0) and the radius is \u221a20 = 2\u221a5. For the line to be tangent to \u0393, the perpendicular distance from (p, 0) to the line must equal the radius:\n  |2p + 0 \u2212 4| / \u221a(2\u00b2 + 1\u00b2) = 2\u221a5\n  |2p \u2212 4| / \u221a5 = 2\u221a5\n  |2p \u2212 4| = 2\u221a5 \u00b7 \u221a5 = 10\nSo 2p \u2212 4 = 10 giving p = 7, or 2p \u2212 4 = \u221210 giving p = \u22123.\n\n(d) Take p = 7. The point of contact lies on the perpendicular from (7, 0) to the tangent. The tangent has gradient \u22122, so the perpendicular has gradient 1/2, giving the line y = (x \u2212 7)/2. Substituting into 2x + y = 4:\n  2x + (x \u2212 7)/2 = 4\nMultiplying by 2: 4x + x \u2212 7 = 8, so 5x = 15, giving x = 3. Then y = (3 \u2212 7)/2 = \u22122. Point of contact: (3, \u22122). Check: (3 \u2212 7)\u00b2 + (\u22122)\u00b2 = 16 + 4 = 20. \u2713",
+    "answers": [
+      "(a) Minimum at (2, 1)",
+      "(b) Shown",
+      "(c) p = 7 or p = \u22123",
+      "(d) (3, \u22122)"
+    ]
+  },
+  {
+    "id": "Q2",
+    "topics": [
+      "Differentiation",
+      "Integration",
+      "Coordinate Geometry"
+    ],
+    "questionText": "The curve C has equation y = x\u00b3 \u2212 6x\u00b2 + 9x.\n\n(a) Find the stationary points of C and determine the nature of each. [5]\n(b) Show that the chord joining the two stationary points has equation y = \u22122x + 6. [3]\n(c) Find the total area of the region enclosed between C and this chord. [5]",
+    "parts": [
+      {
+        "label": "(a)",
+        "text": "Find the stationary points of C and determine the nature of each.",
+        "marks": 5
+      },
+      {
+        "label": "(b)",
+        "text": "Show that the chord joining the two stationary points has equation y = \u22122x + 6.",
+        "marks": 3
+      },
+      {
+        "label": "(c)",
+        "text": "Find the total area of the region enclosed between C and this chord.",
+        "marks": 5
+      }
+    ],
+    "totalMarks": 13,
+    "workedSolution": "(a) f(x) = x\u00b3 \u2212 6x\u00b2 + 9x. f'(x) = 3x\u00b2 \u2212 12x + 9 = 3(x \u2212 1)(x \u2212 3). Stationary points at x = 1 and x = 3.\nf(1) = 1 \u2212 6 + 9 = 4 and f(3) = 27 \u2212 54 + 27 = 0.\nf''(x) = 6x \u2212 12. f''(1) = \u22126 < 0, so (1, 4) is a local maximum. f''(3) = 6 > 0, so (3, 0) is a local minimum.\n\n(b) Gradient of chord: (0 \u2212 4)/(3 \u2212 1) = \u22122. Through (3, 0): y \u2212 0 = \u22122(x \u2212 3), so y = \u22122x + 6.\n\n(c) The signed difference is\n  curve \u2212 chord = (x\u00b3 \u2212 6x\u00b2 + 9x) \u2212 (\u22122x + 6) = x\u00b3 \u2212 6x\u00b2 + 11x \u2212 6.\nTesting x = 1, 2, 3 gives 0 in each case, so x\u00b3 \u2212 6x\u00b2 + 11x \u2212 6 = (x \u2212 1)(x \u2212 2)(x \u2212 3).\nOn [1, 2] the product (x \u2212 1)(x \u2212 2)(x \u2212 3) is positive (curve above chord); on [2, 3] it is negative (chord above curve).\nLet F(x) = \u222b(x\u00b3 \u2212 6x\u00b2 + 11x \u2212 6) dx = x\u2074/4 \u2212 2x\u00b3 + 11x\u00b2/2 \u2212 6x.\nUsing common denominator 4:\n  F(1) = 1/4 \u2212 8/4 + 22/4 \u2212 24/4 = \u22129/4.\n  F(2) = 16/4 \u2212 16 + 22 \u2212 12 = 4 \u2212 16 + 22 \u2212 12 = \u22122 = \u22128/4.\n  F(3) = 81/4 \u2212 216/4 + 198/4 \u2212 72/4 = \u22129/4.\nSo \u222b\u2081\u00b2 (curve \u2212 chord) dx = F(2) \u2212 F(1) = \u22128/4 \u2212 (\u22129/4) = 1/4.\nAnd \u222b\u2082\u00b3 (curve \u2212 chord) dx = F(3) \u2212 F(2) = \u22129/4 \u2212 (\u22128/4) = \u22121/4.\nTotal area = |1/4| + |\u22121/4| = 1/2.",
+    "answers": [
+      "(a) Local max (1, 4); local min (3, 0)",
+      "(b) Shown",
+      "(c) 1/2"
+    ]
+  },
+  {
+    "id": "Q3",
+    "topics": [
+      "Logarithms",
+      "Sequences"
+    ],
+    "questionText": "(a) Show that if log a, log b, log c (with the same base) form an arithmetic progression, then a, b, c form a geometric progression. [3]\n(b) The numbers log\u2082(p), log\u2082(p + 6), log\u2082(p + 18), in that order, form an arithmetic progression. Given that p > 0, find the value of p. [5]\n(c) For this value of p, find the common difference d of the AP. [2]\n(d) Hence find the sum of the first 10 terms of this AP, giving your answer in the form a + b log\u2082 c, where a and b are integers and c is the smallest possible positive integer. [4]",
+    "parts": [
+      {
+        "label": "(a)",
+        "text": "Show that if log a, log b, log c (with the same base) form an arithmetic progression, then a, b, c form a geometric progression.",
+        "marks": 3
+      },
+      {
+        "label": "(b)",
+        "text": "Given log\u2082(p), log\u2082(p + 6), log\u2082(p + 18) form an AP and p > 0, find p.",
+        "marks": 5
+      },
+      {
+        "label": "(c)",
+        "text": "Find the common difference d of the AP.",
+        "marks": 2
+      },
+      {
+        "label": "(d)",
+        "text": "Hence find the sum of the first 10 terms in the form a + b log\u2082 c.",
+        "marks": 4
+      }
+    ],
+    "totalMarks": 14,
+    "workedSolution": "(a) If log a, log b, log c are in AP, then 2 log b = log a + log c. Using log laws: log(b\u00b2) = log(ac), so b\u00b2 = ac. This is precisely the condition for a, b, c to be in GP (with common ratio b/a = c/b).\n\n(b) Applying (a) with the three terms p, p + 6, p + 18:\n  (p + 6)\u00b2 = p(p + 18)\n  p\u00b2 + 12p + 36 = p\u00b2 + 18p\n  36 = 6p\n  p = 6.\nSince p = 6 > 0, this is valid.\n\n(c) The three terms become log\u2082 6, log\u2082 12, log\u2082 24. Common difference:\n  d = log\u2082 12 \u2212 log\u2082 6 = log\u2082(12/6) = log\u2082 2 = 1.\n\n(d) Using S_n = (n/2)(2a + (n \u2212 1)d) with n = 10, a = log\u2082 6, d = 1:\n  S\u2081\u2080 = (10/2)(2 log\u2082 6 + 9) = 5(2 log\u2082 6 + 9) = 10 log\u2082 6 + 45.\nNow 10 log\u2082 6 = 10 log\u2082(2 \u00b7 3) = 10(log\u2082 2 + log\u2082 3) = 10 + 10 log\u2082 3.\nTherefore S\u2081\u2080 = 45 + 10 + 10 log\u2082 3 = 55 + 10 log\u2082 3.",
+    "answers": [
+      "(a) Shown",
+      "(b) p = 6",
+      "(c) d = 1",
+      "(d) 55 + 10 log\u2082 3"
+    ]
+  },
+  {
+    "id": "Q4",
+    "topics": [
+      "Trigonometry",
+      "Integration"
+    ],
+    "questionText": "(a) Starting from the identity cos 2x = 1 \u2212 2 sin\u00b2 x, show that sin\u00b2 x = (1 \u2212 cos 2x)/2. [2]\n(b) Hence find the exact value of \u222b\u2080^{\u03c0/2} sin\u00b2 x dx. [4]\n(c) The curve C has equation y = sin x cos x for 0 \u2264 x \u2264 \u03c0. Show that y = (1/2) sin 2x and find the values of x at which C crosses the x-axis. [3]\n(d) Find the total area enclosed between C and the x-axis on the interval 0 \u2264 x \u2264 \u03c0. [4]",
+    "parts": [
+      {
+        "label": "(a)",
+        "text": "Show that sin\u00b2 x = (1 \u2212 cos 2x)/2 starting from cos 2x = 1 \u2212 2 sin\u00b2 x.",
+        "marks": 2
+      },
+      {
+        "label": "(b)",
+        "text": "Hence find the exact value of \u222b\u2080^{\u03c0/2} sin\u00b2 x dx.",
+        "marks": 4
+      },
+      {
+        "label": "(c)",
+        "text": "Show that sin x cos x = (1/2) sin 2x and find where C crosses the x-axis on [0, \u03c0].",
+        "marks": 3
+      },
+      {
+        "label": "(d)",
+        "text": "Find the total area enclosed between C and the x-axis on [0, \u03c0].",
+        "marks": 4
+      }
+    ],
+    "totalMarks": 13,
+    "workedSolution": "(a) From cos 2x = 1 \u2212 2 sin\u00b2 x, rearranging gives 2 sin\u00b2 x = 1 \u2212 cos 2x, so sin\u00b2 x = (1 \u2212 cos 2x)/2.\n\n(b) Using (a):\n  \u222b\u2080^{\u03c0/2} sin\u00b2 x dx = \u222b\u2080^{\u03c0/2} (1 \u2212 cos 2x)/2 dx = [x/2 \u2212 sin(2x)/4]\u2080^{\u03c0/2}.\nAt x = \u03c0/2: (\u03c0/4) \u2212 sin(\u03c0)/4 = \u03c0/4 \u2212 0 = \u03c0/4.\nAt x = 0: 0 \u2212 0 = 0.\nSo \u222b\u2080^{\u03c0/2} sin\u00b2 x dx = \u03c0/4.\n\n(c) sin 2x = 2 sin x cos x, so sin x cos x = (1/2) sin 2x. Crossings: (1/2) sin 2x = 0 means sin 2x = 0, so 2x = 0, \u03c0, 2\u03c0, giving x = 0, \u03c0/2, \u03c0.\n\n(d) On [0, \u03c0/2], sin 2x \u2265 0, so y \u2265 0. On [\u03c0/2, \u03c0], sin 2x \u2264 0, so y \u2264 0. Total area is the sum of the absolute values of the two integrals.\n  \u222b\u2080^{\u03c0/2} (1/2) sin 2x dx = [\u2212(1/4) cos 2x]\u2080^{\u03c0/2} = \u2212(1/4) cos \u03c0 + (1/4) cos 0 = 1/4 + 1/4 = 1/2.\n  \u222b_{\u03c0/2}^{\u03c0} (1/2) sin 2x dx = [\u2212(1/4) cos 2x]_{\u03c0/2}^{\u03c0} = \u2212(1/4) cos 2\u03c0 + (1/4) cos \u03c0 = \u22121/4 \u2212 1/4 = \u22121/2.\nTotal area = 1/2 + |\u22121/2| = 1.",
+    "answers": [
+      "(a) Shown",
+      "(b) \u03c0/4",
+      "(c) Crosses at x = 0, \u03c0/2, \u03c0",
+      "(d) 1"
+    ]
+  },
+  {
+    "id": "Q5",
+    "topics": [
+      "Binomial Expansion",
+      "Differentiation",
+      "Coordinate Geometry"
+    ],
+    "questionText": "The function f(x) = (1 + ax)\u2074, where a is a constant. The coefficient of x\u00b2 in the expansion of f(x) is 24.\n\n(a) Show that a\u00b2 = 4 and write down the two possible values of a. [3]\n(b) Taking the positive value of a, find the gradient of the curve y = f(x) at the point where x = 1/2. [4]\n(c) Find the equation of the tangent to y = f(x) at the point where x = 1/2, giving your answer in the form y = mx + c. [3]\n(d) The tangent meets the x-axis at the point P and the y-axis at the point Q. Find the area of the triangle OPQ, where O is the origin. [3]",
+    "parts": [
+      {
+        "label": "(a)",
+        "text": "Show that a\u00b2 = 4 and write down the two possible values of a.",
+        "marks": 3
+      },
+      {
+        "label": "(b)",
+        "text": "Taking the positive value of a, find the gradient of y = f(x) at x = 1/2.",
+        "marks": 4
+      },
+      {
+        "label": "(c)",
+        "text": "Find the equation of the tangent at x = 1/2 in the form y = mx + c.",
+        "marks": 3
+      },
+      {
+        "label": "(d)",
+        "text": "Find the area of the triangle OPQ formed by the tangent and the axes.",
+        "marks": 3
+      }
+    ],
+    "totalMarks": 13,
+    "workedSolution": "(a) (1 + ax)\u2074 = 1 + 4(ax) + 6(ax)\u00b2 + 4(ax)\u00b3 + (ax)\u2074 = 1 + 4ax + 6a\u00b2x\u00b2 + 4a\u00b3x\u00b3 + a\u2074x\u2074. The coefficient of x\u00b2 is 6a\u00b2 = 24, so a\u00b2 = 4. Hence a = 2 or a = \u22122.\n\n(b) For a > 0, a = 2 and f(x) = (1 + 2x)\u2074. By the chain rule, f'(x) = 4(1 + 2x)\u00b3 \u00b7 2 = 8(1 + 2x)\u00b3. At x = 1/2: 1 + 2(1/2) = 2 (integer), so f'(1/2) = 8 \u00b7 2\u00b3 = 8 \u00b7 8 = 64.\n\n(c) f(1/2) = (1 + 1)\u2074 = 2\u2074 = 16, so the tangent passes through (1/2, 16) with gradient 64. Equation: y \u2212 16 = 64(x \u2212 1/2), giving y = 64x \u2212 32 + 16 = 64x \u2212 16.\n\n(d) x-intercept P: set y = 0, so 64x = 16, giving x = 1/4. Hence P = (1/4, 0).\ny-intercept Q: set x = 0, so y = \u221216. Hence Q = (0, \u221216).\nTriangle OPQ has perpendicular legs along the axes of length 1/4 and 16.\nArea = (1/2) \u00b7 (1/4) \u00b7 16 = (1/2)(16) \u00b7 (1/4) = 8 \u00b7 (1/4) = 2.",
+    "answers": [
+      "(a) a = 2 or a = \u22122",
+      "(b) 64",
+      "(c) y = 64x \u2212 16",
+      "(d) Area = 2"
+    ]
+  },
+  {
+    "id": "Q6",
+    "topics": [
+      "Coordinate Geometry",
+      "Quadratic Inequalities"
+    ],
+    "questionText": "The line \u2113 has equation y = kx + 2, where k is a real constant. The circle C has equation x\u00b2 + y\u00b2 = 2.\n\n(a) Show that \u2113 is tangent to C if and only if k\u00b2 = 1, stating the two values of k for which this occurs. [4]\n(b) Find the values of k for which \u2113 intersects C at two distinct points. [3]\n(c) For the case k = 1, find the coordinates of the point at which \u2113 is tangent to C. [3]\n(d) The two tangent lines from part (a) and the x-axis enclose a triangle. Find the area of this triangle. [3]",
+    "parts": [
+      {
+        "label": "(a)",
+        "text": "Show that \u2113 is tangent to C if and only if k\u00b2 = 1, stating the two values of k.",
+        "marks": 4
+      },
+      {
+        "label": "(b)",
+        "text": "Find the values of k for which \u2113 intersects C at two distinct points.",
+        "marks": 3
+      },
+      {
+        "label": "(c)",
+        "text": "For k = 1, find the coordinates of the point of tangency.",
+        "marks": 3
+      },
+      {
+        "label": "(d)",
+        "text": "Find the area of the triangle enclosed by the two tangent lines from (a) and the x-axis.",
+        "marks": 3
+      }
+    ],
+    "totalMarks": 13,
+    "workedSolution": "(a) Substituting y = kx + 2 into x\u00b2 + y\u00b2 = 2:\n  x\u00b2 + (kx + 2)\u00b2 = 2\n  x\u00b2 + k\u00b2x\u00b2 + 4kx + 4 = 2\n  (1 + k\u00b2)x\u00b2 + 4kx + 2 = 0.\nFor tangency, this quadratic in x has a repeated root, so its discriminant is zero:\n  (4k)\u00b2 \u2212 4(1 + k\u00b2)(2) = 0\n  16k\u00b2 \u2212 8(1 + k\u00b2) = 0\n  8k\u00b2 \u2212 8 = 0\n  k\u00b2 = 1.\nHence k = 1 or k = \u22121.\n\n(b) Two distinct intersection points require positive discriminant:\n  8k\u00b2 \u2212 8 > 0\n  k\u00b2 > 1\n  k < \u22121 or k > 1.\n\n(c) For k = 1, the quadratic in x becomes 2x\u00b2 + 4x + 2 = 0, i.e. x\u00b2 + 2x + 1 = 0, so (x + 1)\u00b2 = 0, giving x = \u22121. Then y = (1)(\u22121) + 2 = 1. Point of tangency: (\u22121, 1). Check: (\u22121)\u00b2 + 1\u00b2 = 2. \u2713\n\n(d) The two tangent lines are y = x + 2 (k = 1) and y = \u2212x + 2 (k = \u22121).\nIntersections with the x-axis (y = 0): for y = x + 2, x = \u22122, giving (\u22122, 0); for y = \u2212x + 2, x = 2, giving (2, 0).\nThe two tangents meet where x + 2 = \u2212x + 2, so x = 0 and y = 2, giving (0, 2).\nTriangle vertices: (\u22122, 0), (2, 0), (0, 2). Base along x-axis = 4, perpendicular height = 2.\nArea = (1/2) \u00b7 4 \u00b7 2 = 4.",
+    "answers": [
+      "(a) k = 1 or k = \u22121",
+      "(b) k < \u22121 or k > 1",
+      "(c) (\u22121, 1)",
+      "(d) Area = 4"
+    ]
+  }
+]

@@ -1,0 +1,230 @@
+{
+  "summary": {
+    "total": 6,
+    "passed": 5,
+    "failed": 1,
+    "passRate": "83%",
+    "avgScore": "0.927"
+  },
+  "results": [
+    {
+      "id": "Q1",
+      "pass": true,
+      "avgScore": 0.9375,
+      "constraints": {
+        "C1": {
+          "pass": true,
+          "score": 1,
+          "detail": "5 topic group(s): Coordinate Geometry, Differentiation, Trigonometry, Simultaneous Equations, Sequences & Series",
+          "groups": [
+            "Coordinate Geometry",
+            "Differentiation",
+            "Trigonometry",
+            "Simultaneous Equations",
+            "Sequences & Series"
+          ]
+        },
+        "C2": {
+          "pass": true,
+          "score": 1,
+          "detail": "All numbers are clean",
+          "issues": []
+        },
+        "C3": {
+          "pass": true,
+          "score": 0.75,
+          "detail": "Total marks: 12 (good range); Insight keywords: hence, show that, determine; Solution length: 1568 chars (substantial)",
+          "difficultyScore": 0.75
+        },
+        "C4": {
+          "pass": true,
+          "score": 1,
+          "detail": "3 parts, well-structured",
+          "numParts": 3
+        }
+      }
+    },
+    {
+      "id": "Q2",
+      "pass": true,
+      "avgScore": 0.9375,
+      "constraints": {
+        "C1": {
+          "pass": true,
+          "score": 1,
+          "detail": "4 topic group(s): Algebra & Functions, Trigonometry, Exponentials & Logarithms, Inequalities",
+          "groups": [
+            "Algebra & Functions",
+            "Trigonometry",
+            "Exponentials & Logarithms",
+            "Inequalities"
+          ]
+        },
+        "C2": {
+          "pass": true,
+          "score": 1,
+          "detail": "All numbers are clean",
+          "issues": []
+        },
+        "C3": {
+          "pass": true,
+          "score": 0.75,
+          "detail": "Total marks: 11 (good range); Insight keywords: hence, show that, prove; Solution length: 1447 chars (substantial)",
+          "difficultyScore": 0.75
+        },
+        "C4": {
+          "pass": true,
+          "score": 1,
+          "detail": "3 parts, well-structured",
+          "numParts": 3
+        }
+      }
+    },
+    {
+      "id": "Q3",
+      "pass": true,
+      "avgScore": 0.9375,
+      "constraints": {
+        "C1": {
+          "pass": true,
+          "score": 1,
+          "detail": "4 topic group(s): Algebra & Functions, Trigonometry, Binomial Expansion, Sequences & Series",
+          "groups": [
+            "Algebra & Functions",
+            "Trigonometry",
+            "Binomial Expansion",
+            "Sequences & Series"
+          ]
+        },
+        "C2": {
+          "pass": true,
+          "score": 1,
+          "detail": "All numbers are clean",
+          "issues": []
+        },
+        "C3": {
+          "pass": true,
+          "score": 0.75,
+          "detail": "Total marks: 10 (good range); Insight keywords: hence, show that; Solution length: 711 chars (substantial)",
+          "difficultyScore": 0.75
+        },
+        "C4": {
+          "pass": true,
+          "score": 1,
+          "detail": "3 parts, well-structured",
+          "numParts": 3
+        }
+      }
+    },
+    {
+      "id": "Q4",
+      "pass": false,
+      "avgScore": 0.875,
+      "constraints": {
+        "C1": {
+          "pass": true,
+          "score": 1,
+          "detail": "4 topic group(s): Coordinate Geometry, Differentiation, Integration, Trigonometry",
+          "groups": [
+            "Coordinate Geometry",
+            "Differentiation",
+            "Integration",
+            "Trigonometry"
+          ]
+        },
+        "C2": {
+          "pass": false,
+          "score": 0.75,
+          "detail": "Ugly decimals found: 3.375, 3.375, 15.625",
+          "issues": [
+            "Ugly decimals found: 3.375, 3.375, 15.625"
+          ]
+        },
+        "C3": {
+          "pass": true,
+          "score": 0.75,
+          "detail": "Total marks: 12 (good range); Insight keywords: show that, determine; Solution length: 2139 chars (substantial)",
+          "difficultyScore": 0.75
+        },
+        "C4": {
+          "pass": true,
+          "score": 1,
+          "detail": "3 parts, well-structured",
+          "numParts": 3
+        }
+      }
+    },
+    {
+      "id": "Q5",
+      "pass": true,
+      "avgScore": 0.9375,
+      "constraints": {
+        "C1": {
+          "pass": true,
+          "score": 1,
+          "detail": "3 topic group(s): Algebra & Functions, Trigonometry, Inequalities",
+          "groups": [
+            "Algebra & Functions",
+            "Trigonometry",
+            "Inequalities"
+          ]
+        },
+        "C2": {
+          "pass": true,
+          "score": 1,
+          "detail": "All numbers are clean",
+          "issues": []
+        },
+        "C3": {
+          "pass": true,
+          "score": 0.75,
+          "detail": "Total marks: 13 (good range); Insight keywords: hence, show that; Solution length: 945 chars (substantial)",
+          "difficultyScore": 0.75
+        },
+        "C4": {
+          "pass": true,
+          "score": 1,
+          "detail": "3 parts, well-structured",
+          "numParts": 3
+        }
+      }
+    },
+    {
+      "id": "Q6",
+      "pass": true,
+      "avgScore": 0.9375,
+      "constraints": {
+        "C1": {
+          "pass": true,
+          "score": 1,
+          "detail": "5 topic group(s): Algebra & Functions, Coordinate Geometry, Differentiation, Trigonometry, Simultaneous Equations",
+          "groups": [
+            "Algebra & Functions",
+            "Coordinate Geometry",
+            "Differentiation",
+            "Trigonometry",
+            "Simultaneous Equations"
+          ]
+        },
+        "C2": {
+          "pass": true,
+          "score": 1,
+          "detail": "All numbers are clean",
+          "issues": []
+        },
+        "C3": {
+          "pass": true,
+          "score": 0.75,
+          "detail": "Total marks: 12 (good range); Insight keywords: hence, show that, verify; Solution length: 1180 chars (substantial)",
+          "difficultyScore": 0.75
+        },
+        "C4": {
+          "pass": true,
+          "score": 1,
+          "detail": "3 parts, well-structured",
+          "numParts": 3
+        }
+      }
+    }
+  ]
+}

@@ -34,11 +34,11 @@ export const questions: Question[] = [
         topicRef: 'd1',
         topicTitle: 'The Gradient of a Curve 01',
         difficulty: 'Foundation',
-        questionText: 'The curve \\( C \\) is given by \\( y = f(x) \\) where \\( f(x) = x^2 \\).\\newline Find the gradient of the chord joining the point where \\( x = 2 \\) to the point where:\\newline (i) \\( x = 3 \\) \\quad (ii) \\( x = 2.5 \\) \\quad (iii) \\( x = 2.1 \\)\\newline What does this suggest about the gradient of the curve at \\( x = 2 \\)?',
+        questionText: 'The curve \\( C \\) is given by \\( y = f(x) \\) where \\( f(x) = x^2 \\). Find the gradient of the chord joining the point where \\( x = 2 \\) to the point where:\n\ni) \\( x = 3 \\)\nii) \\( x = 2.5 \\)\niii) \\( x = 2.1 \\)\n\nWhat does this suggest about the gradient of the curve at \\( x = 2 \\)?',
         marks: 4,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['gradient of a curve', 'chord', 'first principles', 'numerical'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -89,7 +89,7 @@ export const questions: Question[] = [
                     }
                 }
             ],
-            finalAnswer: '(i) 5 \\quad (ii) 4.5 \\quad (iii) 4.1 \\quad The chord gradients approach 4, suggesting the gradient of the curve at \\( x = 2 \\) is 4.'
+            finalAnswer: '(i) 5 \\nii) 4.5 \\niii) 4.1 \\quad The chord gradients approach 4, suggesting the gradient of the curve at \\( x = 2 \\) is 4.'
         }
     },
     {
@@ -97,11 +97,11 @@ export const questions: Question[] = [
         topicRef: 'd1',
         topicTitle: 'The Gradient of a Curve 02',
         difficulty: 'Foundation',
-        questionText: 'The curve \\( C \\) is given by \\( y = x^2 \\). Find the gradient of the chord joining the point \\( (3, 9) \\) to the point where:\\newline (i) \\( x = 4 \\) \\quad (ii) \\( x = 3.5 \\) \\quad (iii) \\( x = 3.01 \\)\\newline Hence state the gradient of the curve at \\( x = 3 \\).',
+        questionText: 'The curve \\( C \\) is given by \\( y = x^2 \\). Find the gradient of the chord joining the point \\( (3, 9) \\) to the point where:\n\ni) \\( x = 4 \\)\nii) \\( x = 3.5 \\)\niii) \\( x = 3.01 \\)\n\nHence state the gradient of the curve at \\( x = 3 \\).',
         marks: 4,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['gradient of a curve', 'chord', 'numerical', 'limit'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -135,7 +135,7 @@ export const questions: Question[] = [
                     explanation: 'As the second point approaches \\( x = 3 \\), the chord gradient approaches 6.'
                 }
             ],
-            finalAnswer: '(i) 7 \\quad (ii) 6.5 \\quad (iii) 6.01 \\quad Gradient at \\( x = 3 \\) is 6.'
+            finalAnswer: '(i) 7 \\nii) 6.5 \\niii) 6.01 \\quad Gradient at \\( x = 3 \\) is 6.'
         }
     },
     {
@@ -143,11 +143,11 @@ export const questions: Question[] = [
         topicRef: 'd1',
         topicTitle: 'The Gradient of a Curve 03',
         difficulty: 'Foundation',
-        questionText: 'The curve \\( C \\) is given by \\( f(x) = x^3 \\). Find the gradient of the chord from \\( (2, 8) \\) to the point where:\\newline (i) \\( x = 3 \\) \\quad (ii) \\( x = 2.5 \\) \\quad (iii) \\( x = 2.1 \\)\\newline What value does the gradient appear to be approaching?',
+        questionText: 'The curve \\( C \\) is given by \\( f(x) = x^3 \\). Find the gradient of the chord from \\( (2, 8) \\) to the point where:\n\ni) \\( x = 3 \\)\nii) \\( x = 2.5 \\)\niii) \\( x = 2.1 \\)\n\nWhat value does the gradient appear to be approaching?',
         marks: 4,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['gradient of a curve', 'chord', 'numerical', 'cubic'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -181,7 +181,7 @@ export const questions: Question[] = [
                     explanation: 'This matches \\( 3x^2 \\big|_{x=2} = 12 \\).'
                 }
             ],
-            finalAnswer: '(i) 19 \\quad (ii) 15.25 \\quad (iii) 12.61 \\quad The gradient appears to approach 12.'
+            finalAnswer: '(i) 19 \\nii) 15.25 \\niii) 12.61 \\quad The gradient appears to approach 12.'
         }
     },
     {
@@ -189,11 +189,11 @@ export const questions: Question[] = [
         topicRef: 'd1',
         topicTitle: 'The Gradient of a Curve 04',
         difficulty: 'Foundation',
-        questionText: 'The curve \\( C \\) is given by \\( f(x) = x^2 + 3x \\). Find the gradient of the chord joining the point where \\( x = 1 \\) to the point where:\\newline (i) \\( x = 2 \\) \\quad (ii) \\( x = 1.5 \\) \\quad (iii) \\( x = 1.01 \\)',
+        questionText: 'The curve \\( C \\) is given by \\( f(x) = x^2 + 3x \\). Find the gradient of the chord joining the point where \\( x = 1 \\) to the point where:\n\ni) \\( x = 2 \\)\nii) \\( x = 1.5 \\)\niii) \\( x = 1.01 \\)',
         marks: 4,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['gradient of a curve', 'chord', 'numerical', 'quadratic'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -221,7 +221,7 @@ export const questions: Question[] = [
                     explanation: 'Chord gradient approaching 5.'
                 }
             ],
-            finalAnswer: '(i) 6 \\quad (ii) 5.5 \\quad (iii) 5.01 \\quad The gradient at \\( x = 1 \\) appears to be 5.'
+            finalAnswer: '(i) 6 \\nii) 5.5 \\niii) 5.01 \\quad The gradient at \\( x = 1 \\) appears to be 5.'
         }
     },
     {
@@ -233,7 +233,7 @@ export const questions: Question[] = [
         marks: 3,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['gradient of a curve', 'chord', 'verify', 'limit'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -274,7 +274,7 @@ export const questions: Question[] = [
         marks: 4,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['gradient of a curve', 'first principles', 'differentiate', 'x squared'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -320,7 +320,7 @@ export const questions: Question[] = [
         marks: 4,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['gradient of a curve', 'first principles', 'differentiate', 'cubic'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -366,26 +366,44 @@ export const questions: Question[] = [
         marks: 4,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['gradient of a curve', 'first principles', 'differentiate', 'coefficient'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
                     stepNumber: 1,
-                    description: 'Apply the first principles formula.',
-                    workingLatex: "f'(x) = \\lim_{h \\to 0} \\frac{3(x+h)^2 - 3x^2}{h}",
-                    explanation: '\\( f(x+h) = 3(x+h)^2 \\).'
+                    description: 'Write the first principles formula.',
+                    workingLatex: "f'(x) = \\lim_{h \\to 0} \\frac{f(x+h) - f(x)}{h}",
+                    explanation: 'This is the definition of the derivative. Always start a first-principles question by writing this formula.'
                 },
                 {
                     stepNumber: 2,
-                    description: 'Expand and simplify the numerator.',
-                    workingLatex: "= \\lim_{h \\to 0} \\frac{3(x^2 + 2xh + h^2) - 3x^2}{h} = \\lim_{h \\to 0} \\frac{6xh + 3h^2}{h}",
-                    explanation: 'Expand the bracket then cancel \\( 3x^2 \\).'
+                    description: 'Substitute \\( f(x) = 3x^2 \\).',
+                    workingLatex: "f'(x) = \\lim_{h \\to 0} \\frac{3(x+h)^2 - 3x^2}{h}",
+                    explanation: 'Replace \\( f(x+h) \\) with \\( 3(x+h)^2 \\) and \\( f(x) \\) with \\( 3x^2 \\). A common mistake is forgetting to apply the coefficient 3 to the \\( (x+h)^2 \\) term.'
                 },
                 {
                     stepNumber: 3,
-                    description: 'Cancel \\( h \\) and take the limit.',
-                    workingLatex: "= \\lim_{h \\to 0} (6x + 3h) = 6x",
-                    explanation: 'As \\( h \\to 0 \\), the \\( 3h \\) term vanishes.'
+                    description: 'Expand \\( 3(x+h)^2 \\).',
+                    workingLatex: "= \\lim_{h \\to 0} \\frac{3x^2 + 6xh + 3h^2 - 3x^2}{h}",
+                    explanation: 'Use \\( (x+h)^2 = x^2 + 2xh + h^2 \\), then multiply each term by 3. Be careful to distribute the 3 to every term inside the bracket.'
+                },
+                {
+                    stepNumber: 4,
+                    description: 'Simplify the numerator.',
+                    workingLatex: "= \\lim_{h \\to 0} \\frac{6xh + 3h^2}{h}",
+                    explanation: 'The \\( 3x^2 \\) and \\( -3x^2 \\) terms cancel. Only terms containing \\( h \\) remain.'
+                },
+                {
+                    stepNumber: 5,
+                    description: 'Cancel the common factor of \\( h \\).',
+                    workingLatex: "= \\lim_{h \\to 0} (6x + 3h)",
+                    explanation: 'Divide every term in the numerator by \\( h \\). This is valid because \\( h \\neq 0 \\) in the limit process.'
+                },
+                {
+                    stepNumber: 6,
+                    description: 'Take the limit as \\( h \\to 0 \\).',
+                    workingLatex: "f'(x) = 6x",
+                    explanation: 'As \\( h \\to 0 \\), the \\( 3h \\) term vanishes, leaving \\( 6x \\).'
                 }
             ],
             finalAnswer: '\\( f\'(x) = 6x \\)'
@@ -400,26 +418,44 @@ export const questions: Question[] = [
         marks: 4,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['gradient of a curve', 'first principles', 'differentiate', 'constant term'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
                     stepNumber: 1,
-                    description: 'Write \\( f(x+h) \\).',
-                    workingLatex: "f(x+h) = 2(x+h)^2 + 5 = 2x^2 + 4xh + 2h^2 + 5",
-                    explanation: 'Expand the bracket.'
+                    description: 'Write the first principles formula.',
+                    workingLatex: "f'(x) = \\lim_{h \\to 0} \\frac{f(x+h) - f(x)}{h}",
+                    explanation: 'This is the definition of the derivative. Always begin by stating this formula clearly.'
                 },
                 {
                     stepNumber: 2,
-                    description: 'Form the difference quotient.',
-                    workingLatex: "\\frac{f(x+h) - f(x)}{h} = \\frac{(2x^2 + 4xh + 2h^2 + 5) - (2x^2 + 5)}{h} = \\frac{4xh + 2h^2}{h}",
-                    explanation: 'The \\( 2x^2 \\) and \\( 5 \\) terms cancel.'
+                    description: 'Write \\( f(x+h) \\).',
+                    workingLatex: "f(x+h) = 2(x+h)^2 + 5",
+                    explanation: 'Replace every \\( x \\) in \\( f(x) = 2x^2 + 5 \\) with \\( (x+h) \\). The constant term 5 is unchanged.'
                 },
                 {
                     stepNumber: 3,
-                    description: 'Simplify and take the limit.',
-                    workingLatex: "= 4x + 2h \\xrightarrow{h \\to 0} 4x",
-                    explanation: 'Cancel \\( h \\), then let \\( h \\to 0 \\).'
+                    description: 'Expand \\( 2(x+h)^2 \\).',
+                    workingLatex: "f(x+h) = 2x^2 + 4xh + 2h^2 + 5",
+                    explanation: 'Use \\( (x+h)^2 = x^2 + 2xh + h^2 \\), then multiply each term by 2. A common mistake is forgetting to multiply \\( h^2 \\) by 2.'
+                },
+                {
+                    stepNumber: 4,
+                    description: 'Form \\( f(x+h) - f(x) \\).',
+                    workingLatex: "f(x+h) - f(x) = (2x^2 + 4xh + 2h^2 + 5) - (2x^2 + 5) = 4xh + 2h^2",
+                    explanation: 'The \\( 2x^2 \\) terms cancel and the constant \\( +5 \\) terms cancel. This shows that constant terms always disappear when differentiating.'
+                },
+                {
+                    stepNumber: 5,
+                    description: 'Divide by \\( h \\).',
+                    workingLatex: "\\frac{f(x+h) - f(x)}{h} = \\frac{4xh + 2h^2}{h} = 4x + 2h",
+                    explanation: 'Divide every term in the numerator by \\( h \\). This step is valid because \\( h \\neq 0 \\).'
+                },
+                {
+                    stepNumber: 6,
+                    description: 'Take the limit as \\( h \\to 0 \\).',
+                    workingLatex: "f'(x) = \\lim_{h \\to 0} (4x + 2h) = 4x",
+                    explanation: 'As \\( h \\to 0 \\), the \\( 2h \\) term vanishes. The derivative is \\( 4x \\).'
                 }
             ],
             finalAnswer: '\\( f\'(x) = 4x \\)'
@@ -434,26 +470,38 @@ export const questions: Question[] = [
         marks: 3,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['gradient of a curve', 'first principles', 'linear function', 'constant gradient'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
                     stepNumber: 1,
-                    description: 'Write \\( f(x+h) \\).',
-                    workingLatex: "f(x+h) = 5(x+h) + 3 = 5x + 5h + 3",
-                    explanation: 'Substitute \\( x + h \\) for \\( x \\).'
+                    description: 'Write the first principles formula.',
+                    workingLatex: "f'(x) = \\lim_{h \\to 0} \\frac{f(x+h) - f(x)}{h}",
+                    explanation: 'This is the definition of the derivative. It applies to any function, including linear ones.'
                 },
                 {
                     stepNumber: 2,
-                    description: 'Form the difference quotient.',
-                    workingLatex: "\\frac{f(x+h) - f(x)}{h} = \\frac{(5x + 5h + 3) - (5x + 3)}{h} = \\frac{5h}{h} = 5",
-                    explanation: 'The \\( 5x \\) and \\( 3 \\) terms cancel, leaving just \\( 5 \\).'
+                    description: 'Write \\( f(x+h) \\).',
+                    workingLatex: "f(x+h) = 5(x+h) + 3 = 5x + 5h + 3",
+                    explanation: 'Replace \\( x \\) with \\( (x+h) \\) in \\( f(x) = 5x + 3 \\), then expand the bracket.'
                 },
                 {
                     stepNumber: 3,
-                    description: 'Take the limit.',
-                    workingLatex: "\\lim_{h \\to 0} 5 = 5",
-                    explanation: 'The result is already constant — the gradient of a straight line is constant, as expected.'
+                    description: 'Form \\( f(x+h) - f(x) \\).',
+                    workingLatex: "f(x+h) - f(x) = (5x + 5h + 3) - (5x + 3) = 5h",
+                    explanation: 'The \\( 5x \\) terms cancel and the \\( +3 \\) terms cancel, leaving only \\( 5h \\).'
+                },
+                {
+                    stepNumber: 4,
+                    description: 'Divide by \\( h \\).',
+                    workingLatex: "\\frac{f(x+h) - f(x)}{h} = \\frac{5h}{h} = 5",
+                    explanation: 'The \\( h \\) cancels, leaving the constant 5. There are no remaining terms involving \\( h \\).'
+                },
+                {
+                    stepNumber: 5,
+                    description: 'Take the limit as \\( h \\to 0 \\).',
+                    workingLatex: "f'(x) = \\lim_{h \\to 0} 5 = 5",
+                    explanation: 'The result is already constant, so the limit is simply 5. The gradient of a straight line is constant everywhere, as expected.'
                 }
             ],
             finalAnswer: '\\( \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} = 5 \\)'
@@ -468,26 +516,44 @@ export const questions: Question[] = [
         marks: 4,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['gradient of a curve', 'first principles', 'two terms', 'differentiate'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
                     stepNumber: 1,
-                    description: 'Write \\( f(x+h) \\).',
-                    workingLatex: "f(x+h) = (x+h)^2 - (x+h) = x^2 + 2xh + h^2 - x - h",
-                    explanation: 'Expand each term.'
+                    description: 'Write the first principles formula.',
+                    workingLatex: "f'(x) = \\lim_{h \\to 0} \\frac{f(x+h) - f(x)}{h}",
+                    explanation: 'This is the definition of the derivative. Always start by stating this formula.'
                 },
                 {
                     stepNumber: 2,
-                    description: 'Form the difference quotient.',
-                    workingLatex: "\\frac{f(x+h) - f(x)}{h} = \\frac{(x^2 + 2xh + h^2 - x - h) - (x^2 - x)}{h} = \\frac{2xh + h^2 - h}{h}",
-                    explanation: 'The \\( x^2 \\) and \\( -x \\) terms cancel.'
+                    description: 'Write \\( f(x+h) \\).',
+                    workingLatex: "f(x+h) = (x+h)^2 - (x+h)",
+                    explanation: 'Replace every \\( x \\) in \\( f(x) = x^2 - x \\) with \\( (x+h) \\). Make sure to substitute into both terms.'
                 },
                 {
                     stepNumber: 3,
-                    description: 'Cancel \\( h \\) and take the limit.',
-                    workingLatex: "= 2x + h - 1 \\xrightarrow{h \\to 0} 2x - 1",
-                    explanation: 'The \\( h \\) term vanishes as \\( h \\to 0 \\).'
+                    description: 'Expand \\( f(x+h) \\).',
+                    workingLatex: "f(x+h) = x^2 + 2xh + h^2 - x - h",
+                    explanation: 'Expand \\( (x+h)^2 = x^2 + 2xh + h^2 \\) and \\( -(x+h) = -x - h \\). A common mistake is forgetting the \\( -h \\) from the linear term.'
+                },
+                {
+                    stepNumber: 4,
+                    description: 'Form \\( f(x+h) - f(x) \\).',
+                    workingLatex: "f(x+h) - f(x) = (x^2 + 2xh + h^2 - x - h) - (x^2 - x) = 2xh + h^2 - h",
+                    explanation: 'The \\( x^2 \\) terms cancel and the \\( -x \\) terms cancel. Only terms containing \\( h \\) survive.'
+                },
+                {
+                    stepNumber: 5,
+                    description: 'Divide by \\( h \\).',
+                    workingLatex: "\\frac{f(x+h) - f(x)}{h} = \\frac{2xh + h^2 - h}{h} = 2x + h - 1",
+                    explanation: 'Divide each term by \\( h \\). Note that \\( -h \\div h = -1 \\), which gives the constant term in the derivative.'
+                },
+                {
+                    stepNumber: 6,
+                    description: 'Take the limit as \\( h \\to 0 \\).',
+                    workingLatex: "f'(x) = \\lim_{h \\to 0} (2x + h - 1) = 2x - 1",
+                    explanation: 'As \\( h \\to 0 \\), the \\( h \\) term vanishes, leaving \\( 2x - 1 \\).'
                 }
             ],
             finalAnswer: "\\( f'(x) = 2x - 1 \\)"
@@ -502,26 +568,44 @@ export const questions: Question[] = [
         marks: 4,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['gradient of a curve', 'first principles', 'two terms', 'quadratic'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
                     stepNumber: 1,
-                    description: 'Write \\( f(x+h) \\).',
-                    workingLatex: "f(x+h) = 2(x+h)^2 + 3(x+h) = 2x^2 + 4xh + 2h^2 + 3x + 3h",
-                    explanation: 'Expand \\( 2(x+h)^2 \\) and \\( 3(x+h) \\) separately.'
+                    description: 'Write the first principles formula.',
+                    workingLatex: "f'(x) = \\lim_{h \\to 0} \\frac{f(x+h) - f(x)}{h}",
+                    explanation: 'This is the definition of the derivative. Always begin by stating this formula.'
                 },
                 {
                     stepNumber: 2,
-                    description: 'Subtract \\( f(x) = 2x^2 + 3x \\).',
-                    workingLatex: "f(x+h) - f(x) = 4xh + 2h^2 + 3h",
-                    explanation: 'The \\( 2x^2 \\) and \\( 3x \\) terms cancel.'
+                    description: 'Write \\( f(x+h) \\).',
+                    workingLatex: "f(x+h) = 2(x+h)^2 + 3(x+h)",
+                    explanation: 'Replace every \\( x \\) in \\( f(x) = 2x^2 + 3x \\) with \\( (x+h) \\). Keep the coefficients 2 and 3 in place.'
                 },
                 {
                     stepNumber: 3,
-                    description: 'Divide by \\( h \\) and take the limit.',
-                    workingLatex: "\\frac{4xh + 2h^2 + 3h}{h} = 4x + 2h + 3 \\xrightarrow{h \\to 0} 4x + 3",
-                    explanation: 'Cancel \\( h \\), then let \\( h \\to 0 \\).'
+                    description: 'Expand \\( f(x+h) \\).',
+                    workingLatex: "f(x+h) = 2x^2 + 4xh + 2h^2 + 3x + 3h",
+                    explanation: 'Expand \\( 2(x+h)^2 = 2x^2 + 4xh + 2h^2 \\) and \\( 3(x+h) = 3x + 3h \\) separately. A common mistake is forgetting to multiply each expanded term by its coefficient.'
+                },
+                {
+                    stepNumber: 4,
+                    description: 'Form \\( f(x+h) - f(x) \\).',
+                    workingLatex: "f(x+h) - f(x) = (2x^2 + 4xh + 2h^2 + 3x + 3h) - (2x^2 + 3x) = 4xh + 2h^2 + 3h",
+                    explanation: 'The \\( 2x^2 \\) terms cancel and the \\( 3x \\) terms cancel. Only terms containing \\( h \\) remain.'
+                },
+                {
+                    stepNumber: 5,
+                    description: 'Divide by \\( h \\).',
+                    workingLatex: "\\frac{f(x+h) - f(x)}{h} = \\frac{4xh + 2h^2 + 3h}{h} = 4x + 2h + 3",
+                    explanation: 'Divide each term in the numerator by \\( h \\). Note that \\( 3h \\div h = 3 \\), giving the constant in the derivative.'
+                },
+                {
+                    stepNumber: 6,
+                    description: 'Take the limit as \\( h \\to 0 \\).',
+                    workingLatex: "f'(x) = \\lim_{h \\to 0} (4x + 2h + 3) = 4x + 3",
+                    explanation: 'As \\( h \\to 0 \\), the \\( 2h \\) term vanishes, leaving \\( 4x + 3 \\).'
                 }
             ],
             finalAnswer: "\\( f'(x) = 4x + 3 \\)"
@@ -536,7 +620,7 @@ export const questions: Question[] = [
         marks: 5,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['gradient of a curve', 'first principles', 'three terms', 'quadratic'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -576,26 +660,44 @@ export const questions: Question[] = [
         marks: 4,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['gradient of a curve', 'first principles', 'three terms', 'quadratic'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
                     stepNumber: 1,
-                    description: 'Write \\( f(x+h) \\).',
-                    workingLatex: "f(x+h) = (x+h)^2 + 4(x+h) - 7 = x^2 + 2xh + h^2 + 4x + 4h - 7",
-                    explanation: 'Expand all brackets.'
+                    description: 'Write the first principles formula.',
+                    workingLatex: "f'(x) = \\lim_{h \\to 0} \\frac{f(x+h) - f(x)}{h}",
+                    explanation: 'This is the definition of the derivative. Always start by writing this formula clearly.'
                 },
                 {
                     stepNumber: 2,
-                    description: 'Find \\( f(x+h) - f(x) \\).',
-                    workingLatex: "= 2xh + h^2 + 4h",
-                    explanation: 'The \\( x^2 \\), \\( 4x \\) and \\( -7 \\) terms cancel.'
+                    description: 'Write \\( f(x+h) \\).',
+                    workingLatex: "f(x+h) = (x+h)^2 + 4(x+h) - 7",
+                    explanation: 'Replace every \\( x \\) in \\( f(x) = x^2 + 4x - 7 \\) with \\( (x+h) \\). The constant \\( -7 \\) stays the same.'
                 },
                 {
                     stepNumber: 3,
-                    description: 'Divide by \\( h \\) and take the limit.',
-                    workingLatex: "= 2x + h + 4 \\xrightarrow{h \\to 0} 2x + 4",
-                    explanation: 'The \\( h \\) term vanishes.'
+                    description: 'Expand \\( f(x+h) \\).',
+                    workingLatex: "f(x+h) = x^2 + 2xh + h^2 + 4x + 4h - 7",
+                    explanation: 'Expand \\( (x+h)^2 = x^2 + 2xh + h^2 \\) and \\( 4(x+h) = 4x + 4h \\). Be careful not to miss the \\( 4h \\) from the linear term.'
+                },
+                {
+                    stepNumber: 4,
+                    description: 'Form \\( f(x+h) - f(x) \\).',
+                    workingLatex: "f(x+h) - f(x) = (x^2 + 2xh + h^2 + 4x + 4h - 7) - (x^2 + 4x - 7) = 2xh + h^2 + 4h",
+                    explanation: 'The \\( x^2 \\) terms, \\( 4x \\) terms and \\( -7 \\) terms all cancel. Only terms containing \\( h \\) remain.'
+                },
+                {
+                    stepNumber: 5,
+                    description: 'Divide by \\( h \\).',
+                    workingLatex: "\\frac{f(x+h) - f(x)}{h} = \\frac{2xh + h^2 + 4h}{h} = 2x + h + 4",
+                    explanation: 'Divide each term in the numerator by \\( h \\). Note that \\( 4h \\div h = 4 \\), giving the constant in the derivative.'
+                },
+                {
+                    stepNumber: 6,
+                    description: 'Take the limit as \\( h \\to 0 \\).',
+                    workingLatex: "f'(x) = \\lim_{h \\to 0} (2x + h + 4) = 2x + 4",
+                    explanation: 'As \\( h \\to 0 \\), the \\( h \\) term vanishes, leaving \\( 2x + 4 \\).'
                 }
             ],
             finalAnswer: "\\( f'(x) = 2x + 4 \\)"
@@ -611,17 +713,35 @@ export const questions: Question[] = [
         marks: 4,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['gradient of a curve', 'first principles', 'evaluate at a point'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
                     stepNumber: 1,
-                    description: 'Differentiate \\( f(x) = x^2 \\) from first principles.',
-                    workingLatex: "f'(x) = \\lim_{h \\to 0} \\frac{(x+h)^2 - x^2}{h} = \\lim_{h \\to 0} \\frac{2xh + h^2}{h} = 2x",
-                    explanation: 'Standard first-principles derivation.'
+                    description: 'Write the first principles formula.',
+                    workingLatex: "f'(x) = \\lim_{h \\to 0} \\frac{f(x+h) - f(x)}{h}",
+                    explanation: 'This is the definition of the derivative from first principles.'
                 },
                 {
                     stepNumber: 2,
+                    description: 'Substitute \\( f(x) = x^2 \\).',
+                    workingLatex: "f'(x) = \\lim_{h \\to 0} \\frac{(x+h)^2 - x^2}{h}",
+                    explanation: 'Replace \\( f(x+h) \\) with \\( (x+h)^2 \\) and \\( f(x) \\) with \\( x^2 \\).'
+                },
+                {
+                    stepNumber: 3,
+                    description: 'Expand and simplify the numerator.',
+                    workingLatex: "= \\lim_{h \\to 0} \\frac{x^2 + 2xh + h^2 - x^2}{h} = \\lim_{h \\to 0} \\frac{2xh + h^2}{h}",
+                    explanation: 'Expanding \\( (x+h)^2 \\) gives \\( x^2 + 2xh + h^2 \\), and the \\( x^2 \\) terms cancel.'
+                },
+                {
+                    stepNumber: 4,
+                    description: 'Divide by \\( h \\) and take the limit.',
+                    workingLatex: "= \\lim_{h \\to 0} (2x + h) = 2x",
+                    explanation: 'Factor \\( h \\) from the numerator, cancel with the denominator, then let \\( h \\to 0 \\).'
+                },
+                {
+                    stepNumber: 5,
                     description: 'Substitute \\( x = 5 \\).',
                     workingLatex: "f'(5) = 2 \\times 5 = 10",
                     explanation: 'Replace \\( x \\) with 5 in the derivative. The diagram shows the tangent with gradient 10 touching the curve at \\( (5, 25) \\).',
@@ -648,26 +768,38 @@ export const questions: Question[] = [
         marks: 5,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['gradient of a curve', 'first principles', 'cubic', 'evaluate at negative x'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
                     stepNumber: 1,
-                    description: 'Differentiate from first principles.',
-                    workingLatex: "f'(x) = \\lim_{h \\to 0} \\frac{(x+h)^3 - x^3}{h}",
-                    explanation: 'Definition of derivative.'
+                    description: 'Write the first principles formula.',
+                    workingLatex: "f'(x) = \\lim_{h \\to 0} \\frac{f(x+h) - f(x)}{h}",
+                    explanation: 'This is the definition of the derivative from first principles.'
                 },
                 {
                     stepNumber: 2,
-                    description: 'Expand \\( (x+h)^3 \\) and simplify.',
-                    workingLatex: "= \\lim_{h \\to 0} \\frac{3x^2h + 3xh^2 + h^3}{h} = \\lim_{h \\to 0}(3x^2 + 3xh + h^2) = 3x^2",
-                    explanation: 'Cancel \\( h \\) and take the limit.'
+                    description: 'Substitute \\( f(x) = x^3 \\).',
+                    workingLatex: "f'(x) = \\lim_{h \\to 0} \\frac{(x+h)^3 - x^3}{h}",
+                    explanation: 'Replace \\( f(x+h) \\) with \\( (x+h)^3 \\) and \\( f(x) \\) with \\( x^3 \\).'
                 },
                 {
                     stepNumber: 3,
+                    description: 'Expand \\( (x+h)^3 \\) in the numerator.',
+                    workingLatex: "= \\lim_{h \\to 0} \\frac{x^3 + 3x^2h + 3xh^2 + h^3 - x^3}{h} = \\lim_{h \\to 0} \\frac{3x^2h + 3xh^2 + h^3}{h}",
+                    explanation: 'Using the binomial expansion, \\( (x+h)^3 = x^3 + 3x^2h + 3xh^2 + h^3 \\). The \\( x^3 \\) terms cancel.'
+                },
+                {
+                    stepNumber: 4,
+                    description: 'Divide by \\( h \\) and take the limit.',
+                    workingLatex: "= \\lim_{h \\to 0}(3x^2 + 3xh + h^2) = 3x^2",
+                    explanation: 'Factor \\( h \\) from every term in the numerator, cancel with the denominator, then let \\( h \\to 0 \\).'
+                },
+                {
+                    stepNumber: 5,
                     description: 'Substitute \\( x = -2 \\).',
                     workingLatex: "f'(-2) = 3(-2)^2 = 3 \\times 4 = 12",
-                    explanation: 'The gradient is positive here.'
+                    explanation: 'The gradient at \\( x = -2 \\) is positive, meaning the curve is increasing at this point.'
                 }
             ],
             finalAnswer: 'Gradient at \\( x = -2 \\) is \\( 12 \\).'
@@ -682,17 +814,35 @@ export const questions: Question[] = [
         marks: 4,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['gradient of a curve', 'first principles', 'evaluate at a point', 'tangent'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
                     stepNumber: 1,
-                    description: 'Differentiate from first principles.',
-                    workingLatex: "f'(x) = \\lim_{h \\to 0} \\frac{2(x+h)^2 - 2x^2}{h} = \\lim_{h \\to 0} \\frac{4xh + 2h^2}{h} = 4x",
-                    explanation: 'Cancel \\( h \\) and take the limit.'
+                    description: 'Write the first principles formula.',
+                    workingLatex: "f'(x) = \\lim_{h \\to 0} \\frac{f(x+h) - f(x)}{h}",
+                    explanation: 'This is the definition of the derivative from first principles.'
                 },
                 {
                     stepNumber: 2,
+                    description: 'Substitute \\( f(x) = 2x^2 \\).',
+                    workingLatex: "f'(x) = \\lim_{h \\to 0} \\frac{2(x+h)^2 - 2x^2}{h}",
+                    explanation: 'Replace \\( f(x+h) \\) with \\( 2(x+h)^2 \\) and \\( f(x) \\) with \\( 2x^2 \\).'
+                },
+                {
+                    stepNumber: 3,
+                    description: 'Expand and simplify the numerator.',
+                    workingLatex: "= \\lim_{h \\to 0} \\frac{2x^2 + 4xh + 2h^2 - 2x^2}{h} = \\lim_{h \\to 0} \\frac{4xh + 2h^2}{h}",
+                    explanation: 'Expanding \\( 2(x+h)^2 \\) gives \\( 2x^2 + 4xh + 2h^2 \\). The \\( 2x^2 \\) terms cancel.'
+                },
+                {
+                    stepNumber: 4,
+                    description: 'Divide by \\( h \\) and take the limit.',
+                    workingLatex: "= \\lim_{h \\to 0} (4x + 2h) = 4x",
+                    explanation: 'Factor \\( h \\) from the numerator, cancel with the denominator, then let \\( h \\to 0 \\).'
+                },
+                {
+                    stepNumber: 5,
                     description: 'Evaluate at \\( x = -3 \\).',
                     workingLatex: "f'(-3) = 4(-3) = -12",
                     explanation: 'The negative gradient means the curve is decreasing at this point.'
@@ -710,26 +860,38 @@ export const questions: Question[] = [
         marks: 4,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['gradient of a curve', 'first principles', 'evaluate at a point', 'quadratic'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
                     stepNumber: 1,
-                    description: 'Find \\( f(x+h) - f(x) \\).',
-                    workingLatex: "[(x+h)^2 - 3(x+h)] - [x^2 - 3x] = 2xh + h^2 - 3h",
-                    explanation: 'Expand and cancel.'
+                    description: 'Write the first principles formula.',
+                    workingLatex: "f'(x) = \\lim_{h \\to 0} \\frac{f(x+h) - f(x)}{h}",
+                    explanation: 'This is the definition of the derivative from first principles.'
                 },
                 {
                     stepNumber: 2,
-                    description: 'Divide by \\( h \\) and take the limit.',
-                    workingLatex: "2x + h - 3 \\xrightarrow{h \\to 0} 2x - 3",
-                    explanation: "So \\( f'(x) = 2x - 3 \\)."
+                    description: 'Find \\( f(x+h) - f(x) \\).',
+                    workingLatex: "[(x+h)^2 - 3(x+h)] - [x^2 - 3x] = x^2 + 2xh + h^2 - 3x - 3h - x^2 + 3x",
+                    explanation: 'Expand \\( (x+h)^2 \\) and \\( -3(x+h) \\), then subtract \\( f(x) = x^2 - 3x \\).'
                 },
                 {
                     stepNumber: 3,
+                    description: 'Simplify the numerator.',
+                    workingLatex: "= 2xh + h^2 - 3h",
+                    explanation: 'The \\( x^2 \\) and \\( -3x \\) terms cancel, leaving only terms containing \\( h \\).'
+                },
+                {
+                    stepNumber: 4,
+                    description: 'Divide by \\( h \\) and take the limit.',
+                    workingLatex: "\\frac{2xh + h^2 - 3h}{h} = 2x + h - 3 \\xrightarrow{h \\to 0} 2x - 3",
+                    explanation: 'Factor \\( h \\) from every term, cancel, then let \\( h \\to 0 \\). So \\( f\'(x) = 2x - 3 \\).'
+                },
+                {
+                    stepNumber: 5,
                     description: 'Substitute \\( x = 4 \\).',
-                    workingLatex: "f'(4) = 2(4) - 3 = 5",
-                    explanation: 'Evaluate the derivative at the given point.'
+                    workingLatex: "f'(4) = 2(4) - 3 = 8 - 3 = 5",
+                    explanation: 'Replace \\( x \\) with 4 in the derivative to find the gradient at that point.'
                 }
             ],
             finalAnswer: 'Gradient at \\( x = 4 \\) is \\( 5 \\).'
@@ -744,26 +906,38 @@ export const questions: Question[] = [
         marks: 4,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['gradient of a curve', 'first principles', 'evaluate at a point', 'quadratic'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
                     stepNumber: 1,
-                    description: 'Find \\( f(x+h) - f(x) \\).',
-                    workingLatex: "[4(x+h)^2 - 1] - [4x^2 - 1] = 4(x^2 + 2xh + h^2) - 4x^2 = 8xh + 4h^2",
-                    explanation: 'The \\( 4x^2 \\) and \\( -1 \\) terms cancel.'
+                    description: 'Write the first principles formula.',
+                    workingLatex: "f'(x) = \\lim_{h \\to 0} \\frac{f(x+h) - f(x)}{h}",
+                    explanation: 'This is the definition of the derivative from first principles.'
                 },
                 {
                     stepNumber: 2,
-                    description: 'Divide by \\( h \\) and take the limit.',
-                    workingLatex: "8x + 4h \\xrightarrow{h \\to 0} 8x",
-                    explanation: "So \\( f'(x) = 8x \\)."
+                    description: 'Find \\( f(x+h) - f(x) \\).',
+                    workingLatex: "[4(x+h)^2 - 1] - [4x^2 - 1] = 4(x^2 + 2xh + h^2) - 1 - 4x^2 + 1",
+                    explanation: 'Expand \\( 4(x+h)^2 \\) and subtract \\( f(x) = 4x^2 - 1 \\).'
                 },
                 {
                     stepNumber: 3,
+                    description: 'Simplify the numerator.',
+                    workingLatex: "= 4x^2 + 8xh + 4h^2 - 4x^2 = 8xh + 4h^2",
+                    explanation: 'The \\( 4x^2 \\) terms and the constant \\( -1 \\) terms cancel.'
+                },
+                {
+                    stepNumber: 4,
+                    description: 'Divide by \\( h \\) and take the limit.',
+                    workingLatex: "\\frac{8xh + 4h^2}{h} = 8x + 4h \\xrightarrow{h \\to 0} 8x",
+                    explanation: 'Factor \\( h \\) from the numerator, cancel, then let \\( h \\to 0 \\). So \\( f\'(x) = 8x \\).'
+                },
+                {
+                    stepNumber: 5,
                     description: 'Substitute \\( x = 2 \\).',
                     workingLatex: "f'(2) = 8 \\times 2 = 16",
-                    explanation: 'Gradient at \\( (2, 15) \\) is 16.'
+                    explanation: 'Replace \\( x \\) with 2 in the derivative. The gradient at \\( (2, 15) \\) is 16.'
                 }
             ],
             finalAnswer: 'Gradient at \\( (2, 15) \\) is \\( 16 \\).'
@@ -775,30 +949,42 @@ export const questions: Question[] = [
         topicRef: 'd1',
         topicTitle: 'The Gradient of a Curve 20',
         difficulty: 'Foundation',
-        questionText: 'The curve \\( C \\) has equation \\( y = x^2 + 6 \\).\\newline (a) Differentiate from first principles to find \\( \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} \\).\\newline (b) Find the coordinates of the point on \\( C \\) where the gradient is 8.',
+        questionText: 'The curve \\( C \\) has equation \\( y = x^2 + 6 \\).\\n\na) Differentiate from first principles to find \\( \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} \\).\\nb) Find the coordinates of the point on \\( C \\) where the gradient is 8.',
         marks: 5,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['gradient of a curve', 'first principles', 'find point from gradient'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
                     stepNumber: 1,
-                    description: '(a) Apply first principles to \\( y = x^2 + 6 \\).',
-                    workingLatex: "\\frac{f(x+h)-f(x)}{h} = \\frac{(x+h)^2 + 6 - x^2 - 6}{h} = \\frac{2xh + h^2}{h} = 2x + h \\xrightarrow{h\\to 0} 2x",
-                    explanation: 'The constant 6 cancels out.'
+                    description: '(a) Write the first principles formula.',
+                    workingLatex: "\\frac{\\mathrm{d}y}{\\mathrm{d}x} = \\lim_{h \\to 0} \\frac{f(x+h) - f(x)}{h}",
+                    explanation: 'Start with the definition of the derivative from first principles.'
                 },
                 {
                     stepNumber: 2,
-                    description: '(b) Set \\( \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} = 8 \\).',
-                    workingLatex: "2x = 8 \\Rightarrow x = 4",
-                    explanation: 'Solve for \\( x \\).'
+                    description: 'Substitute and simplify.',
+                    workingLatex: "= \\lim_{h \\to 0} \\frac{(x+h)^2 + 6 - x^2 - 6}{h} = \\lim_{h \\to 0} \\frac{2xh + h^2}{h}",
+                    explanation: 'The constant 6 cancels. Expanding \\( (x+h)^2 \\) gives \\( x^2 + 2xh + h^2 \\), and the \\( x^2 \\) terms cancel.'
                 },
                 {
                     stepNumber: 3,
+                    description: 'Divide by \\( h \\) and take the limit.',
+                    workingLatex: "= \\lim_{h \\to 0} (2x + h) = 2x",
+                    explanation: 'Factor \\( h \\) from the numerator, cancel, then let \\( h \\to 0 \\). So \\( \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} = 2x \\).'
+                },
+                {
+                    stepNumber: 4,
+                    description: '(b) Set \\( \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} = 8 \\).',
+                    workingLatex: "2x = 8 \\Rightarrow x = 4",
+                    explanation: 'Divide both sides by 2 to solve for \\( x \\).'
+                },
+                {
+                    stepNumber: 5,
                     description: 'Find the \\( y \\)-coordinate.',
-                    workingLatex: "y = 4^2 + 6 = 22",
-                    explanation: 'Substitute \\( x = 4 \\) into the original equation.'
+                    workingLatex: "y = 4^2 + 6 = 16 + 6 = 22",
+                    explanation: 'Substitute \\( x = 4 \\) into the original equation \\( y = x^2 + 6 \\).'
                 }
             ],
             finalAnswer: '(a) \\( \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} = 2x \\) \\quad (b) \\( (4, 22) \\)'
@@ -809,30 +995,42 @@ export const questions: Question[] = [
         topicRef: 'd1',
         topicTitle: 'The Gradient of a Curve 21',
         difficulty: 'Foundation',
-        questionText: 'The curve \\( C \\) has equation \\( y = 3x^2 \\).\\newline (a) Find \\( \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} \\) by differentiating from first principles.\\newline (b) Find the coordinates of the point on \\( C \\) where the gradient is \\( -18 \\).',
+        questionText: 'The curve \\( C \\) has equation \\( y = 3x^2 \\).\\n\na) Find \\( \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} \\) by differentiating from first principles.\\nb) Find the coordinates of the point on \\( C \\) where the gradient is \\( -18 \\).',
         marks: 5,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['gradient of a curve', 'first principles', 'find point from gradient', 'negative gradient'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
                     stepNumber: 1,
-                    description: '(a) From first principles.',
-                    workingLatex: "\\frac{3(x+h)^2 - 3x^2}{h} = \\frac{6xh + 3h^2}{h} = 6x + 3h \\xrightarrow{h\\to 0} 6x",
-                    explanation: 'Standard calculation.'
+                    description: '(a) Write the first principles formula.',
+                    workingLatex: "\\frac{\\mathrm{d}y}{\\mathrm{d}x} = \\lim_{h \\to 0} \\frac{f(x+h) - f(x)}{h}",
+                    explanation: 'Start with the definition of the derivative from first principles.'
                 },
                 {
                     stepNumber: 2,
-                    description: '(b) Set \\( 6x = -18 \\).',
-                    workingLatex: "x = -3",
-                    explanation: 'Divide both sides by 6.'
+                    description: 'Substitute and simplify.',
+                    workingLatex: "= \\lim_{h \\to 0} \\frac{3(x+h)^2 - 3x^2}{h} = \\lim_{h \\to 0} \\frac{3x^2 + 6xh + 3h^2 - 3x^2}{h} = \\lim_{h \\to 0} \\frac{6xh + 3h^2}{h}",
+                    explanation: 'Expand \\( 3(x+h)^2 = 3x^2 + 6xh + 3h^2 \\). The \\( 3x^2 \\) terms cancel.'
                 },
                 {
                     stepNumber: 3,
+                    description: 'Divide by \\( h \\) and take the limit.',
+                    workingLatex: "= \\lim_{h \\to 0} (6x + 3h) = 6x",
+                    explanation: 'Factor \\( h \\) from the numerator, cancel, then let \\( h \\to 0 \\). So \\( \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} = 6x \\).'
+                },
+                {
+                    stepNumber: 4,
+                    description: '(b) Set \\( 6x = -18 \\).',
+                    workingLatex: "6x = -18 \\Rightarrow x = -3",
+                    explanation: 'Divide both sides by 6 to solve for \\( x \\).'
+                },
+                {
+                    stepNumber: 5,
                     description: 'Find \\( y \\).',
-                    workingLatex: "y = 3(-3)^2 = 27",
-                    explanation: 'Substitute \\( x = -3 \\).'
+                    workingLatex: "y = 3(-3)^2 = 3 \\times 9 = 27",
+                    explanation: 'Substitute \\( x = -3 \\) into the original equation \\( y = 3x^2 \\).'
                 }
             ],
             finalAnswer: '(a) \\( \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} = 6x \\) \\quad (b) \\( (-3, 27) \\)'
@@ -843,30 +1041,42 @@ export const questions: Question[] = [
         topicRef: 'd1',
         topicTitle: 'The Gradient of a Curve 22',
         difficulty: 'Foundation',
-        questionText: 'The curve \\( C \\) has equation \\( y = x^2 - 5x \\).\\newline (a) Differentiate from first principles to find \\( \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} \\).\\newline (b) Find the \\( x \\)-value where the tangent to \\( C \\) is parallel to the \\( x \\)-axis.',
+        questionText: 'The curve \\( C \\) has equation \\( y = x^2 - 5x \\).\\n\na) Differentiate from first principles to find \\( \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} \\).\\nb) Find the \\( x \\)-value where the tangent to \\( C \\) is parallel to the \\( x \\)-axis.',
         marks: 5,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['gradient of a curve', 'first principles', 'tangent parallel to x-axis', 'turning point'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
                     stepNumber: 1,
-                    description: '(a) From first principles.',
-                    workingLatex: "f(x+h) - f(x) = [(x+h)^2 - 5(x+h)] - [x^2 - 5x] = 2xh + h^2 - 5h",
-                    explanation: 'Expand and simplify.'
+                    description: '(a) Write the first principles formula.',
+                    workingLatex: "\\frac{\\mathrm{d}y}{\\mathrm{d}x} = \\lim_{h \\to 0} \\frac{f(x+h) - f(x)}{h}",
+                    explanation: 'Start with the definition of the derivative from first principles.'
                 },
                 {
                     stepNumber: 2,
-                    description: 'Divide by \\( h \\) and take the limit.',
-                    workingLatex: "2x + h - 5 \\xrightarrow{h \\to 0} 2x - 5",
-                    explanation: "Derivative is \\( 2x - 5 \\)."
+                    description: 'Find \\( f(x+h) - f(x) \\).',
+                    workingLatex: "[(x+h)^2 - 5(x+h)] - [x^2 - 5x] = x^2 + 2xh + h^2 - 5x - 5h - x^2 + 5x = 2xh + h^2 - 5h",
+                    explanation: 'Expand all brackets and collect like terms. The \\( x^2 \\) and \\( -5x \\) terms cancel.'
                 },
                 {
                     stepNumber: 3,
-                    description: '(b) A tangent parallel to the \\( x \\)-axis has gradient 0.',
-                    workingLatex: "2x - 5 = 0 \\Rightarrow x = 2.5",
-                    explanation: 'Solve \\( \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} = 0 \\).'
+                    description: 'Divide by \\( h \\) and take the limit.',
+                    workingLatex: "\\frac{2xh + h^2 - 5h}{h} = 2x + h - 5 \\xrightarrow{h \\to 0} 2x - 5",
+                    explanation: 'Factor \\( h \\) from the numerator, cancel, then let \\( h \\to 0 \\). So \\( \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} = 2x - 5 \\).'
+                },
+                {
+                    stepNumber: 4,
+                    description: '(b) Set the gradient equal to zero.',
+                    workingLatex: "2x - 5 = 0",
+                    explanation: 'A tangent parallel to the \\( x \\)-axis has gradient 0.'
+                },
+                {
+                    stepNumber: 5,
+                    description: 'Solve for \\( x \\).',
+                    workingLatex: "2x = 5 \\Rightarrow x = 2.5",
+                    explanation: 'Add 5 to both sides and divide by 2.'
                 }
             ],
             finalAnswer: '(a) \\( \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} = 2x - 5 \\) \\quad (b) \\( x = 2.5 \\)'
@@ -877,24 +1087,36 @@ export const questions: Question[] = [
         topicRef: 'd1',
         topicTitle: 'The Gradient of a Curve 23',
         difficulty: 'Foundation',
-        questionText: 'The curve \\( C \\) has equation \\( y = x^3 \\).\\newline (a) Differentiate from first principles to show \\( \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} = 3x^2 \\).\\newline (b) Find the two values of \\( x \\) where the gradient of \\( C \\) is 27.',
+        questionText: 'The curve \\( C \\) has equation \\( y = x^3 \\).\\n\na) Differentiate from first principles to show \\( \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} = 3x^2 \\).\\nb) Find the two values of \\( x \\) where the gradient of \\( C \\) is 27.',
         marks: 5,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['gradient of a curve', 'first principles', 'cubic', 'two solutions'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
                     stepNumber: 1,
-                    description: '(a) From first principles (see d1-007 for full working).',
-                    workingLatex: "\\frac{\\mathrm{d}y}{\\mathrm{d}x} = 3x^2",
-                    explanation: 'Standard first-principles result for \\( y = x^3 \\).'
+                    description: '(a) Write the first principles formula.',
+                    workingLatex: "\\frac{\\mathrm{d}y}{\\mathrm{d}x} = \\lim_{h \\to 0} \\frac{(x+h)^3 - x^3}{h}",
+                    explanation: 'Substitute \\( f(x) = x^3 \\) into the first principles definition.'
                 },
                 {
                     stepNumber: 2,
+                    description: 'Expand, simplify, and take the limit.',
+                    workingLatex: "= \\lim_{h \\to 0} \\frac{3x^2h + 3xh^2 + h^3}{h} = \\lim_{h \\to 0}(3x^2 + 3xh + h^2) = 3x^2",
+                    explanation: 'Using the binomial expansion for \\( (x+h)^3 \\), the \\( x^3 \\) terms cancel. Divide by \\( h \\) and let \\( h \\to 0 \\).'
+                },
+                {
+                    stepNumber: 3,
                     description: '(b) Set \\( 3x^2 = 27 \\).',
-                    workingLatex: "x^2 = 9 \\Rightarrow x = \\pm 3",
-                    explanation: 'Divide by 3 then square-root, giving two solutions.'
+                    workingLatex: "3x^2 = 27 \\Rightarrow x^2 = 9",
+                    explanation: 'Divide both sides by 3.'
+                },
+                {
+                    stepNumber: 4,
+                    description: 'Take the square root.',
+                    workingLatex: "x = \\pm 3",
+                    explanation: 'Remember to include both the positive and negative square roots, giving two solutions.'
                 }
             ],
             finalAnswer: '(b) \\( x = 3 \\) or \\( x = -3 \\)'
@@ -905,30 +1127,42 @@ export const questions: Question[] = [
         topicRef: 'd1',
         topicTitle: 'The Gradient of a Curve 24',
         difficulty: 'Foundation',
-        questionText: 'The curve \\( C \\) has equation \\( y = x^2 + 3 \\). A tangent to \\( C \\) has gradient 10.\\newline (a) Differentiate \\( y = x^2 + 3 \\) from first principles.\\newline (b) Find the equation of the tangent.',
+        questionText: 'The curve \\( C \\) has equation \\( y = x^2 + 3 \\). A tangent to \\( C \\) has gradient 10.\\n\na) Differentiate \\( y = x^2 + 3 \\) from first principles.\\nb) Find the equation of the tangent.',
         marks: 5,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['gradient of a curve', 'first principles', 'equation of tangent'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
                     stepNumber: 1,
-                    description: '(a) From first principles.',
-                    workingLatex: "\\frac{(x+h)^2 + 3 - x^2 - 3}{h} = \\frac{2xh + h^2}{h} \\xrightarrow{h\\to0} 2x",
-                    explanation: 'Constant 3 cancels out.'
+                    description: '(a) Write the first principles formula.',
+                    workingLatex: "\\frac{\\mathrm{d}y}{\\mathrm{d}x} = \\lim_{h \\to 0} \\frac{f(x+h) - f(x)}{h}",
+                    explanation: 'Start with the definition of the derivative from first principles.'
                 },
                 {
                     stepNumber: 2,
-                    description: '(b) Set \\( 2x = 10 \\) to find the point of tangency.',
-                    workingLatex: "x = 5 \\Rightarrow y = 25 + 3 = 28",
-                    explanation: 'Point of tangency is \\( (5, 28) \\).'
+                    description: 'Substitute and simplify.',
+                    workingLatex: "= \\lim_{h \\to 0} \\frac{(x+h)^2 + 3 - x^2 - 3}{h} = \\lim_{h \\to 0} \\frac{2xh + h^2}{h} = \\lim_{h \\to 0}(2x + h) = 2x",
+                    explanation: 'The constant 3 cancels. Expand \\( (x+h)^2 \\), cancel \\( x^2 \\) terms, divide by \\( h \\), and let \\( h \\to 0 \\).'
                 },
                 {
                     stepNumber: 3,
+                    description: '(b) Find the \\( x \\)-coordinate of tangency.',
+                    workingLatex: "2x = 10 \\Rightarrow x = 5",
+                    explanation: 'Set the derivative equal to 10 and solve for \\( x \\).'
+                },
+                {
+                    stepNumber: 4,
+                    description: 'Find the \\( y \\)-coordinate.',
+                    workingLatex: "y = 5^2 + 3 = 25 + 3 = 28",
+                    explanation: 'Substitute \\( x = 5 \\) into the original equation. The point of tangency is \\( (5, 28) \\).'
+                },
+                {
+                    stepNumber: 5,
                     description: 'Use \\( y - y_1 = m(x - x_1) \\).',
-                    workingLatex: "y - 28 = 10(x - 5) \\Rightarrow y = 10x - 22",
-                    explanation: 'Gradient \\( m = 10 \\), point \\( (5, 28) \\).'
+                    workingLatex: "y - 28 = 10(x - 5) \\Rightarrow y = 10x - 50 + 28 \\Rightarrow y = 10x - 22",
+                    explanation: 'Substitute \\( m = 10 \\) and the point \\( (5, 28) \\) into the straight line equation.'
                 }
             ],
             finalAnswer: '(a) \\( \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} = 2x \\) \\quad (b) \\( y = 10x - 22 \\)'
@@ -944,7 +1178,7 @@ export const questions: Question[] = [
         marks: 3,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['gradient of a curve', 'interpret derivative', 'increasing decreasing'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -980,30 +1214,36 @@ export const questions: Question[] = [
         topicRef: 'd1',
         topicTitle: 'The Gradient of a Curve 26',
         difficulty: 'Foundation',
-        questionText: 'The function \\( f(x) = x^2 - 4x + 1 \\) has derivative \\( f\'(x) = 2x - 4 \\).\\newline (a) Find the value of \\( x \\) where the gradient is zero.\\newline (b) Determine whether the function is increasing or decreasing at \\( x = 0 \\) and \\( x = 4 \\).',
+        questionText: 'The function \\( f(x) = x^2 - 4x + 1 \\) has derivative \\( f\'(x) = 2x - 4 \\).\\n\na) Find the value of \\( x \\) where the gradient is zero.\\nb) Determine whether the function is increasing or decreasing at \\( x = 0 \\) and \\( x = 4 \\).',
         marks: 4,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['gradient of a curve', 'stationary point', 'increasing decreasing'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
                     stepNumber: 1,
                     description: '(a) Set \\( f\'(x) = 0 \\).',
-                    workingLatex: "2x - 4 = 0 \\Rightarrow x = 2",
-                    explanation: 'The curve has a stationary point at \\( x = 2 \\).'
+                    workingLatex: "2x - 4 = 0",
+                    explanation: 'The gradient is zero at a stationary point, so set the derivative equal to zero.'
                 },
                 {
                     stepNumber: 2,
-                    description: '(b) At \\( x = 0 \\).',
-                    workingLatex: "f'(0) = 2(0) - 4 = -4 < 0",
-                    explanation: 'The function is decreasing at \\( x = 0 \\).'
+                    description: 'Solve for \\( x \\).',
+                    workingLatex: "2x = 4 \\Rightarrow x = 2",
+                    explanation: 'Add 4 to both sides and divide by 2. The curve has a stationary point at \\( x = 2 \\).'
                 },
                 {
                     stepNumber: 3,
-                    description: 'At \\( x = 4 \\).',
-                    workingLatex: "f'(4) = 2(4) - 4 = 4 > 0",
-                    explanation: 'The function is increasing at \\( x = 4 \\).'
+                    description: '(b) Evaluate \\( f\'(x) \\) at \\( x = 0 \\).',
+                    workingLatex: "f'(0) = 2(0) - 4 = -4 < 0",
+                    explanation: 'Since \\( f\'(0) < 0 \\), the function is decreasing at \\( x = 0 \\).'
+                },
+                {
+                    stepNumber: 4,
+                    description: 'Evaluate \\( f\'(x) \\) at \\( x = 4 \\).',
+                    workingLatex: "f'(4) = 2(4) - 4 = 8 - 4 = 4 > 0",
+                    explanation: 'Since \\( f\'(4) > 0 \\), the function is increasing at \\( x = 4 \\).'
                 }
             ],
             finalAnswer: '(a) \\( x = 2 \\) \\quad (b) Decreasing at \\( x = 0 \\); increasing at \\( x = 4 \\).'
@@ -1018,26 +1258,32 @@ export const questions: Question[] = [
         marks: 3,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['gradient of a curve', 'chord vs tangent', 'first principles', 'conceptual'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
                     stepNumber: 1,
-                    description: 'A chord is a straight line joining two distinct points on a curve.',
+                    description: 'Define the gradient of a chord.',
                     workingLatex: "\\text{Gradient of chord} = \\frac{f(x+h) - f(x)}{h}",
-                    explanation: 'This is an average rate of change over an interval of width \\( h \\).'
+                    explanation: 'A chord joins two distinct points on a curve. Its gradient gives the average rate of change over the interval of width \\( h \\).'
                 },
                 {
                     stepNumber: 2,
-                    description: 'A tangent touches the curve at exactly one point, giving the instantaneous rate of change.',
-                    workingLatex: "\\text{Gradient of tangent} = f'(x) = \\lim_{h \\to 0} \\frac{f(x+h)-f(x)}{h}",
-                    explanation: 'As the two points on the chord are brought infinitely close together (\\( h \\to 0 \\)), the chord becomes the tangent.'
+                    description: 'Define the gradient of a tangent.',
+                    workingLatex: "\\text{Gradient of tangent} = f'(x)",
+                    explanation: 'A tangent touches the curve at exactly one point. Its gradient gives the instantaneous rate of change at that point.'
                 },
                 {
                     stepNumber: 3,
-                    description: 'First principles shows that the tangent gradient is the limit of the chord gradients.',
+                    description: 'Write the first principles limit.',
+                    workingLatex: "f'(x) = \\lim_{h \\to 0} \\frac{f(x+h)-f(x)}{h}",
+                    explanation: 'First principles defines the tangent gradient as the limit of the chord gradient as \\( h \\to 0 \\).'
+                },
+                {
+                    stepNumber: 4,
+                    description: 'State the connection between chord and tangent.',
                     workingLatex: "\\text{Chord gradient} \\xrightarrow{h \\to 0} \\text{Tangent gradient}",
-                    explanation: 'Differentiating from first principles formalises this limiting process.'
+                    explanation: 'As the two points on the chord are brought infinitely close together, the chord becomes the tangent. Differentiation from first principles formalises this limiting process.'
                 }
             ],
             finalAnswer: 'A chord connects two points (average rate of change); a tangent touches at one point (instantaneous rate). First principles takes the limit as the chord length shrinks to zero, turning the chord gradient into the tangent gradient.'
@@ -1052,17 +1298,35 @@ export const questions: Question[] = [
         marks: 4,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['gradient of a curve', 'first principles', 'rate of change', 'area'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
                     stepNumber: 1,
-                    description: 'Apply first principles to \\( A = x^2 \\).',
-                    workingLatex: "\\frac{(x+h)^2 - x^2}{h} = \\frac{2xh + h^2}{h} = 2x + h \\xrightarrow{h \\to 0} 2x",
-                    explanation: 'Standard first-principles derivation.'
+                    description: 'Write the first principles formula.',
+                    workingLatex: "\\frac{\\mathrm{d}A}{\\mathrm{d}x} = \\lim_{h \\to 0} \\frac{A(x+h) - A(x)}{h}",
+                    explanation: 'Start with the definition of the derivative from first principles.'
                 },
                 {
                     stepNumber: 2,
+                    description: 'Substitute \\( A = x^2 \\).',
+                    workingLatex: "= \\lim_{h \\to 0} \\frac{(x+h)^2 - x^2}{h}",
+                    explanation: 'Replace \\( A(x+h) \\) with \\( (x+h)^2 \\) and \\( A(x) \\) with \\( x^2 \\).'
+                },
+                {
+                    stepNumber: 3,
+                    description: 'Expand and simplify the numerator.',
+                    workingLatex: "= \\lim_{h \\to 0} \\frac{x^2 + 2xh + h^2 - x^2}{h} = \\lim_{h \\to 0} \\frac{2xh + h^2}{h}",
+                    explanation: 'The \\( x^2 \\) terms cancel, leaving only terms containing \\( h \\).'
+                },
+                {
+                    stepNumber: 4,
+                    description: 'Divide by \\( h \\) and take the limit.',
+                    workingLatex: "= \\lim_{h \\to 0} (2x + h) = 2x",
+                    explanation: 'Factor \\( h \\) from the numerator, cancel with the denominator, then let \\( h \\to 0 \\).'
+                },
+                {
+                    stepNumber: 5,
                     description: 'Interpret the result.',
                     workingLatex: "\\frac{\\mathrm{d}A}{\\mathrm{d}x} = 2x",
                     explanation: '\\( \\dfrac{\\mathrm{d}A}{\\mathrm{d}x} = 2x \\) represents the rate at which the area increases as the side length increases. At any side length \\( x \\), the area increases by approximately \\( 2x \\) cm² for each additional cm of side length.'
@@ -1081,20 +1345,26 @@ export const questions: Question[] = [
         marks: 3,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['gradient of a curve', 'first principles', 'derivative of constant', 'proof'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
                     stepNumber: 1,
-                    description: 'Write the first principles formula for \\( f(x) = c \\).',
-                    workingLatex: "f'(x) = \\lim_{h \\to 0} \\frac{f(x+h) - f(x)}{h} = \\lim_{h \\to 0} \\frac{c - c}{h}",
-                    explanation: 'Since \\( f(x) = c \\) for all \\( x \\), \\( f(x+h) = c \\) as well.'
+                    description: 'Write the first principles formula.',
+                    workingLatex: "f'(x) = \\lim_{h \\to 0} \\frac{f(x+h) - f(x)}{h}",
+                    explanation: 'Start with the standard definition of the derivative from first principles.'
                 },
                 {
                     stepNumber: 2,
-                    description: 'Simplify.',
-                    workingLatex: "= \\lim_{h \\to 0} \\frac{0}{h} = \\lim_{h \\to 0} 0 = 0",
-                    explanation: 'Zero divided by anything non-zero is zero.'
+                    description: 'Substitute \\( f(x) = c \\) into the formula.',
+                    workingLatex: "= \\lim_{h \\to 0} \\frac{c - c}{h} = \\lim_{h \\to 0} \\frac{0}{h}",
+                    explanation: 'Since \\( f(x) = c \\) for all \\( x \\), we also have \\( f(x+h) = c \\). The numerator becomes \\( c - c = 0 \\).'
+                },
+                {
+                    stepNumber: 3,
+                    description: 'Evaluate the limit.',
+                    workingLatex: "= \\lim_{h \\to 0} 0 = 0",
+                    explanation: 'Zero divided by any non-zero value is zero, so the limit equals 0. The derivative of any constant function is zero.'
                 }
             ],
             finalAnswer: "\\( f'(x) = 0 \\) for any constant \\( f(x) = c \\). This makes sense — a horizontal line has zero gradient."
@@ -1109,20 +1379,26 @@ export const questions: Question[] = [
         marks: 3,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['gradient of a curve', 'first principles', 'derivative of x', 'linear'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
                     stepNumber: 1,
-                    description: 'Write the first principles formula.',
-                    workingLatex: "f'(x) = \\lim_{h \\to 0} \\frac{(x+h) - x}{h} = \\lim_{h \\to 0} \\frac{h}{h} = \\lim_{h \\to 0} 1 = 1",
-                    explanation: 'The \\( x \\) terms cancel, leaving \\( h/h = 1 \\).'
+                    description: 'Write the first principles definition.',
+                    workingLatex: "f'(x) = \\lim_{h \\to 0} \\frac{f(x+h) - f(x)}{h}",
+                    explanation: 'Start with the standard definition of the derivative from first principles.'
                 },
                 {
                     stepNumber: 2,
-                    description: 'Comment.',
+                    description: 'Substitute \\( f(x) = x \\) and simplify.',
+                    workingLatex: "= \\lim_{h \\to 0} \\frac{(x+h) - x}{h} = \\lim_{h \\to 0} \\frac{h}{h} = \\lim_{h \\to 0} 1",
+                    explanation: 'The \\( x \\) terms cancel in the numerator, leaving \\( h/h = 1 \\).'
+                },
+                {
+                    stepNumber: 3,
+                    description: 'Evaluate the limit and comment.',
                     workingLatex: "f'(x) = 1 \\text{ for all } x",
-                    explanation: 'This is expected: \\( y = x \\) is a straight line with gradient 1 everywhere.'
+                    explanation: 'The limit is simply 1. This is expected since \\( y = x \\) is a straight line with gradient 1 everywhere.'
                 }
             ],
             finalAnswer: "\\( f'(x) = 1 \\). The gradient of \\( y = x \\) is constant at 1 for all \\( x \\), which matches the slope of the line."
@@ -1134,11 +1410,11 @@ export const questions: Question[] = [
         topicRef: 'd1',
         topicTitle: 'The Gradient of a Curve 31',
         difficulty: 'Foundation',
-        questionText: '(a) Differentiate \\( f(x) = x^2 + 2x - 3 \\) from first principles.\\newline (b) Hence find the gradient of the curve at the point where \\( x = -1 \\).\\newline (c) Find the equation of the tangent to the curve at this point.',
+        questionText: 'a) Differentiate \\( f(x) = x^2 + 2x - 3 \\) from first principles.\\nb) Hence find the gradient of the curve at the point where \\( x = -1 \\).\\nc) Find the equation of the tangent to the curve at this point.',
         marks: 7,
         examStyle: true,
         yearCreated: 2026,
-        tags: ['gradient of a curve', 'first principles', 'equation of tangent', 'exam-style'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -1180,30 +1456,42 @@ export const questions: Question[] = [
         topicRef: 'd1',
         topicTitle: 'The Gradient of a Curve 32',
         difficulty: 'Foundation',
-        questionText: '(a) Show, by differentiating \\( f(x) = x^2 \\) from first principles, that \\( f\'(x) = 2x \\).\\newline (b) The point \\( P \\) lies on the curve \\( y = x^2 \\). The gradient of the curve at \\( P \\) is \\(-6\\). Find the coordinates of \\( P \\).',
+        questionText: 'a) Show, by differentiating \\( f(x) = x^2 \\) from first principles, that \\( f\'(x) = 2x \\).\\nb) The point \\( P \\) lies on the curve \\( y = x^2 \\). The gradient of the curve at \\( P \\) is \\(-6\\). Find the coordinates of \\( P \\).',
         marks: 5,
         examStyle: true,
         yearCreated: 2026,
-        tags: ['gradient of a curve', 'first principles', 'show that', 'find coordinates', 'exam-style'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
                     stepNumber: 1,
-                    description: '(a) From first principles.',
-                    workingLatex: "\\frac{(x+h)^2 - x^2}{h} = \\frac{2xh + h^2}{h} = 2x + h \\xrightarrow{h\\to 0} 2x \\checkmark",
-                    explanation: 'This confirms \\( f\'(x) = 2x \\).'
+                    description: '(a) Write the difference quotient.',
+                    workingLatex: "\\frac{f(x+h) - f(x)}{h} = \\frac{(x+h)^2 - x^2}{h}",
+                    explanation: 'Set up the first principles definition with \\( f(x) = x^2 \\).'
                 },
                 {
                     stepNumber: 2,
-                    description: '(b) Set \\( 2x = -6 \\).',
-                    workingLatex: "x = -3",
-                    explanation: 'Solve for \\( x \\).'
+                    description: 'Expand and simplify the numerator.',
+                    workingLatex: "= \\frac{x^2 + 2xh + h^2 - x^2}{h} = \\frac{2xh + h^2}{h} = 2x + h",
+                    explanation: 'The \\( x^2 \\) terms cancel, then divide each remaining term by \\( h \\).'
                 },
                 {
                     stepNumber: 3,
-                    description: 'Find \\( y \\).',
+                    description: 'Take the limit as \\( h \\to 0 \\).',
+                    workingLatex: "f'(x) = \\lim_{h \\to 0}(2x + h) = 2x \\checkmark",
+                    explanation: 'The \\( h \\) term vanishes, confirming \\( f\'(x) = 2x \\) as required.'
+                },
+                {
+                    stepNumber: 4,
+                    description: '(b) Set the gradient equal to \\(-6\\).',
+                    workingLatex: "2x = -6 \\Rightarrow x = -3",
+                    explanation: 'Since the gradient at \\( P \\) is \\(-6\\), set \\( f\'(x) = -6 \\) and solve for \\( x \\).'
+                },
+                {
+                    stepNumber: 5,
+                    description: 'Find the \\( y \\)-coordinate of \\( P \\).',
                     workingLatex: "y = (-3)^2 = 9",
-                    explanation: 'Coordinates of \\( P \\) are \\( (-3, 9) \\).'
+                    explanation: 'Substitute \\( x = -3 \\) into \\( y = x^2 \\). The coordinates of \\( P \\) are \\( (-3, 9) \\).'
                 }
             ],
             finalAnswer: '(b) \\( P = (-3, 9) \\)'
@@ -1214,11 +1502,11 @@ export const questions: Question[] = [
         topicRef: 'd1',
         topicTitle: 'The Gradient of a Curve 33',
         difficulty: 'Foundation',
-        questionText: 'The curve \\( C \\) has equation \\( y = 2x^2 - x \\).\\newline (a) Differentiate from first principles to find \\( \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} \\).\\newline (b) Find the gradient of \\( C \\) at the point \\( A(2, 6) \\).\\newline (c) Find the equation of the tangent to \\( C \\) at \\( A \\).',
+        questionText: 'The curve \\( C \\) has equation \\( y = 2x^2 - x \\).\\n\na) Differentiate from first principles to find \\( \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} \\).\\nb) Find the gradient of \\( C \\) at the point \\( A(2, 6) \\).\\nc) Find the equation of the tangent to \\( C \\) at \\( A \\).',
         marks: 6,
         examStyle: true,
         yearCreated: 2026,
-        tags: ['gradient of a curve', 'first principles', 'tangent equation', 'exam-style'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -1254,11 +1542,11 @@ export const questions: Question[] = [
         topicRef: 'd1',
         topicTitle: 'The Gradient of a Curve 34',
         difficulty: 'Foundation',
-        questionText: 'The curve \\( C \\) has equation \\( y = x^3 - 2 \\).\\newline (a) By differentiating from first principles, show that \\( \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} = 3x^2 \\).\\newline (b) Find the two points on \\( C \\) where the gradient is 12.\\newline (c) Find the gradient of \\( C \\) at the origin.',
+        questionText: 'The curve \\( C \\) has equation \\( y = x^3 - 2 \\).\\n\na) By differentiating from first principles, show that \\( \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} = 3x^2 \\).\\nb) Find the two points on \\( C \\) where the gradient is 12.\\nc) Find the gradient of \\( C \\) at the point where \\( x = 0 \\).',
         marks: 7,
         examStyle: true,
         yearCreated: 2026,
-        tags: ['gradient of a curve', 'first principles', 'cubic', 'two points', 'exam-style'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -1281,12 +1569,12 @@ export const questions: Question[] = [
                 },
                 {
                     stepNumber: 4,
-                    description: '(c) Gradient at origin (\\( x = 0 \\)).',
+                    description: '(c) Gradient at \\( x = 0 \\).',
                     workingLatex: "\\frac{\\mathrm{d}y}{\\mathrm{d}x}\\bigg|_{x=0} = 3(0)^2 = 0",
-                    explanation: 'The curve has a stationary point at the origin.'
+                    explanation: 'The gradient is zero at \\(x = 0\\), so the curve has a stationary point at \\((0, -2)\\).'
                 }
             ],
-            finalAnswer: '(b) \\( (2, 6) \\) and \\( (-2, -10) \\) \\quad (c) Gradient at origin is 0.'
+            finalAnswer: '(b) \\( (2, 6) \\) and \\( (-2, -10) \\). (c) Gradient at \\( x = 0 \\) is 0.'
         }
     },
     {
@@ -1294,11 +1582,11 @@ export const questions: Question[] = [
         topicRef: 'd1',
         topicTitle: 'The Gradient of a Curve 35',
         difficulty: 'Foundation',
-        questionText: '(a) Differentiate \\( f(x) = x^2 \\) from first principles to show that \\( f\'(x) = 2x \\).\\newline (b) The tangent to \\( y = x^2 \\) at the point \\( P(a, a^2) \\) has equation \\( y = 2ax - a^2 \\). Verify this using the result from part (a).',
+        questionText: 'a) Differentiate \\( f(x) = x^2 \\) from first principles to show that \\( f\'(x) = 2x \\).\\nb) The tangent to \\( y = x^2 \\) at the point \\( P(a, a^2) \\) has equation \\( y = 2ax - a^2 \\). Verify this using the result from part (a).',
         marks: 6,
         examStyle: true,
         yearCreated: 2026,
-        tags: ['gradient of a curve', 'first principles', 'general tangent', 'show that', 'exam-style'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -1336,11 +1624,11 @@ export const questions: Question[] = [
         topicRef: 'd1',
         topicTitle: 'The Gradient of a Curve 36',
         difficulty: 'Standard',
-        questionText: 'The curve \\( C \\) has equation \\( y = x^2 + x \\). Find the gradient of the chord from the point where \\( x = 1 \\) to the point where:\\newline (i) \\( x = 2 \\) \\quad (ii) \\( x = 1.1 \\) \\quad (iii) \\( x = 1.01 \\)\\newline Hence suggest the gradient of \\( C \\) at \\( x = 1 \\).',
+        questionText: 'The curve \\( C \\) has equation \\( y = x^2 + x \\). Find the gradient of the chord from the point where \\( x = 1 \\) to the point where:\n\ni) \\( x = 2 \\)\nii) \\( x = 1.1 \\)\niii) \\( x = 1.01 \\)\n\nHence suggest the gradient of \\( C \\) at \\( x = 1 \\).',
         marks: 4,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['gradient of a curve', 'chord', 'numerical', 'polynomial'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -1374,7 +1662,7 @@ export const questions: Question[] = [
                     explanation: 'Since \\( f\'(x) = 2x + 1 \\), \\( f\'(1) = 3 \\).'
                 }
             ],
-            finalAnswer: '(i) 4 \\quad (ii) 3.1 \\quad (iii) 3.01 \\quad Gradient at \\( x = 1 \\) is 3.'
+            finalAnswer: '(i) 4 \\nii) 3.1 \\niii) 3.01 \\quad Gradient at \\( x = 1 \\) is 3.'
         }
     },
     {
@@ -1382,11 +1670,11 @@ export const questions: Question[] = [
         topicRef: 'd1',
         topicTitle: 'The Gradient of a Curve 37',
         difficulty: 'Standard',
-        questionText: 'The curve \\( C \\) is given by \\( y = x^3 - x \\). Find the gradient of the chord from the point \\( (1, 0) \\) to the point where:\\newline (i) \\( x = 1.5 \\) \\quad (ii) \\( x = 1.1 \\) \\quad (iii) \\( x = 1.01 \\)\\newline What does this suggest about the gradient of \\( C \\) at \\( x = 1 \\)?',
+        questionText: 'The curve \\( C \\) is given by \\( y = x^3 - x \\). Find the gradient of the chord from the point \\( (1, 0) \\) to the point where:\n\ni) \\( x = 1.5 \\)\nii) \\( x = 1.1 \\)\niii) \\( x = 1.01 \\)\n\nWhat does this suggest about the gradient of \\( C \\) at \\( x = 1 \\)?',
         marks: 4,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['gradient of a curve', 'chord', 'cubic', 'numerical'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -1420,7 +1708,7 @@ export const questions: Question[] = [
                     explanation: '\\( f\'(x) = 3x^2 - 1 \\), so \\( f\'(1) = 2 \\).'
                 }
             ],
-            finalAnswer: '(i) 3.75 \\quad (ii) 2.31 \\quad (iii) 2.0301 \\quad Gradient at \\( x = 1 \\) is 2.'
+            finalAnswer: '(i) 3.75 \\nii) 2.31 \\niii) 2.0301 \\quad Gradient at \\( x = 1 \\) is 2.'
         }
     },
     {
@@ -1428,11 +1716,11 @@ export const questions: Question[] = [
         topicRef: 'd1',
         topicTitle: 'The Gradient of a Curve 38',
         difficulty: 'Standard',
-        questionText: 'For the curve \\( y = 2x^2 \\), find the gradient of the chord joining \\( x = -1 \\) to:\\newline (i) \\( x = 0 \\) \\quad (ii) \\( x = -0.5 \\) \\quad (iii) \\( x = -0.9 \\)\\newline Deduce the gradient of the curve at \\( x = -1 \\).',
+        questionText: 'For the curve \\( y = 2x^2 \\), find the gradient of the chord joining \\( x = -1 \\) to:\n\ni) \\( x = 0 \\)\nii) \\( x = -0.5 \\)\niii) \\( x = -0.9 \\)\n\nDeduce the gradient of the curve at \\( x = -1 \\).',
         marks: 4,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['gradient of a curve', 'chord', 'numerical', 'negative x'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -1466,7 +1754,7 @@ export const questions: Question[] = [
                     explanation: 'Consistent with differentiation.'
                 }
             ],
-            finalAnswer: '(i) \\( -2 \\) \\quad (ii) \\( -3 \\) \\quad (iii) \\( -3.8 \\) \\quad Gradient at \\( x = -1 \\) is \\( -4 \\).'
+            finalAnswer: '(i) \\( -2 \\) \\nii) \\( -3 \\) \\niii) \\( -3.8 \\) \\quad Gradient at \\( x = -1 \\) is \\( -4 \\).'
         }
     },
     {
@@ -1478,7 +1766,7 @@ export const questions: Question[] = [
         marks: 4,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['gradient of a curve', 'chord', 'numerical', 'table'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -1537,7 +1825,7 @@ export const questions: Question[] = [
         marks: 5,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['gradient of a curve', 'chord', 'limit', 'first principles'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -1579,7 +1867,7 @@ export const questions: Question[] = [
         marks: 4,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['first principles', 'gradient of a curve', 'quadratic'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -1619,7 +1907,7 @@ export const questions: Question[] = [
         marks: 4,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['first principles', 'gradient of a curve', 'quadratic'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -1659,7 +1947,7 @@ export const questions: Question[] = [
         marks: 4,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['first principles', 'gradient of a curve', 'quadratic', 'constant'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -1699,7 +1987,7 @@ export const questions: Question[] = [
         marks: 5,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['first principles', 'gradient of a curve', 'cubic'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -1739,7 +2027,7 @@ export const questions: Question[] = [
         marks: 5,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['first principles', 'gradient of a curve', 'cubic'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -1751,14 +2039,20 @@ export const questions: Question[] = [
                 {
                     stepNumber: 2,
                     description: 'Subtract \\( f(x) = x^3 + 2x \\).',
-                    workingLatex: '3x^2h + 3xh^2 + h^3 + 2h',
-                    explanation: '\\( x^3 \\) and \\( 2x \\) cancel.'
+                    workingLatex: 'f(x+h) - f(x) = 3x^2h + 3xh^2 + h^3 + 2h',
+                    explanation: 'The \\( x^3 \\) and \\( 2x \\) terms cancel, leaving only terms containing \\( h \\).'
                 },
                 {
                     stepNumber: 3,
-                    description: 'Divide by \\( h \\) and take the limit.',
+                    description: 'Divide by \\( h \\).',
+                    workingLatex: '\\frac{3x^2h + 3xh^2 + h^3 + 2h}{h} = 3x^2 + 3xh + h^2 + 2',
+                    explanation: 'Factor out \\( h \\) from every term in the numerator and cancel with the denominator.'
+                },
+                {
+                    stepNumber: 4,
+                    description: 'Take the limit as \\( h \\to 0 \\).',
                     workingLatex: "f'(x) = \\lim_{h \\to 0}(3x^2 + 3xh + h^2 + 2) = 3x^2 + 2",
-                    explanation: 'All \\( h \\) terms vanish.'
+                    explanation: 'The \\( 3xh \\) and \\( h^2 \\) terms vanish, giving the derivative.'
                 }
             ],
             finalAnswer: "\\( f'(x) = 3x^2 + 2 \\)."
@@ -1773,26 +2067,32 @@ export const questions: Question[] = [
         marks: 4,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['first principles', 'gradient of a curve', 'show that'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
                     stepNumber: 1,
                     description: 'Compute \\( f(x+h) \\).',
                     workingLatex: 'f(x+h) = 5(x+h)^2 - 3 = 5x^2 + 10xh + 5h^2 - 3',
-                    explanation: 'Expand and simplify.'
+                    explanation: 'Expand \\( (x+h)^2 \\) and multiply through by 5.'
                 },
                 {
                     stepNumber: 2,
-                    description: 'Form the difference quotient.',
-                    workingLatex: '\\frac{(5x^2 + 10xh + 5h^2 - 3) - (5x^2 - 3)}{h} = \\frac{10xh + 5h^2}{h} = 10x + 5h',
-                    explanation: 'Constants cancel.'
+                    description: 'Compute \\( f(x+h) - f(x) \\).',
+                    workingLatex: '(5x^2 + 10xh + 5h^2 - 3) - (5x^2 - 3) = 10xh + 5h^2',
+                    explanation: 'The \\( 5x^2 \\) and \\( -3 \\) terms cancel.'
                 },
                 {
                     stepNumber: 3,
-                    description: 'Take the limit.',
+                    description: 'Divide by \\( h \\).',
+                    workingLatex: '\\frac{10xh + 5h^2}{h} = 10x + 5h',
+                    explanation: 'Cancel the common factor of \\( h \\) from the numerator and denominator.'
+                },
+                {
+                    stepNumber: 4,
+                    description: 'Take the limit as \\( h \\to 0 \\).',
                     workingLatex: "f'(x) = \\lim_{h \\to 0}(10x + 5h) = 10x \\checkmark",
-                    explanation: 'The \\( 5h \\) term vanishes.'
+                    explanation: 'The \\( 5h \\) term vanishes, confirming the derivative is \\( 10x \\) as required.'
                 }
             ],
             finalAnswer: "Shown: \\( f'(x) = 10x \\)."
@@ -1809,26 +2109,32 @@ export const questions: Question[] = [
         marks: 5,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['first principles', 'gradient at point', 'gradient of a curve'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
                     stepNumber: 1,
-                    description: 'Let \\( f(x) = x^2 + 2x \\). Form \\( f(3+h) - f(3) \\).',
-                    workingLatex: 'f(3+h) = (3+h)^2 + 2(3+h) = 9 + 6h + h^2 + 6 + 2h = 15 + 8h + h^2',
-                    explanation: '\\( f(3) = 15 \\).'
+                    description: 'Compute \\( f(3) \\) and \\( f(3+h) \\).',
+                    workingLatex: 'f(3) = 9 + 6 = 15, \\quad f(3+h) = (3+h)^2 + 2(3+h) = 9 + 6h + h^2 + 6 + 2h = 15 + 8h + h^2',
+                    explanation: 'Substitute \\( x = 3 \\) and \\( x = 3+h \\) into \\( f(x) = x^2 + 2x \\).'
                 },
                 {
                     stepNumber: 2,
-                    description: 'Subtract \\( f(3) \\) and divide by \\( h \\).',
-                    workingLatex: '\\frac{8h + h^2}{h} = 8 + h',
-                    explanation: 'Simplify the difference quotient.'
+                    description: 'Subtract \\( f(3) \\).',
+                    workingLatex: 'f(3+h) - f(3) = (15 + 8h + h^2) - 15 = 8h + h^2',
+                    explanation: 'The constant terms cancel, leaving only terms in \\( h \\).'
                 },
                 {
                     stepNumber: 3,
-                    description: 'Take the limit.',
+                    description: 'Divide by \\( h \\).',
+                    workingLatex: '\\frac{8h + h^2}{h} = 8 + h',
+                    explanation: 'Cancel the common factor of \\( h \\) to simplify the difference quotient.'
+                },
+                {
+                    stepNumber: 4,
+                    description: 'Take the limit as \\( h \\to 0 \\).',
                     workingLatex: "f'(3) = \\lim_{h \\to 0}(8 + h) = 8",
-                    explanation: 'The gradient at \\( x = 3 \\) is 8.'
+                    explanation: 'The \\( h \\) term vanishes, so the gradient at \\( x = 3 \\) is 8.'
                 }
             ],
             finalAnswer: 'Gradient at \\( x = 3 \\) is 8.'
@@ -1843,26 +2149,32 @@ export const questions: Question[] = [
         marks: 5,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['first principles', 'gradient at point', 'cubic'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
                     stepNumber: 1,
-                    description: 'Let \\( f(x) = x^3 \\). Compute \\( f(-2+h) \\).',
-                    workingLatex: '(-2+h)^3 = -8 + 12h - 6h^2 + h^3',
-                    explanation: 'Expand the cube.'
+                    description: 'Compute \\( f(-2+h) \\).',
+                    workingLatex: 'f(-2+h) = (-2+h)^3 = -8 + 12h - 6h^2 + h^3',
+                    explanation: 'Expand \\( (-2+h)^3 \\) using the binomial expansion. Note \\( f(-2) = (-2)^3 = -8 \\).'
                 },
                 {
                     stepNumber: 2,
                     description: 'Subtract \\( f(-2) = -8 \\).',
-                    workingLatex: '12h - 6h^2 + h^3',
-                    explanation: 'The \\( -8 \\) cancels.'
+                    workingLatex: 'f(-2+h) - f(-2) = (-8 + 12h - 6h^2 + h^3) - (-8) = 12h - 6h^2 + h^3',
+                    explanation: 'The \\( -8 \\) terms cancel, leaving only terms containing \\( h \\).'
                 },
                 {
                     stepNumber: 3,
-                    description: 'Divide by \\( h \\) and take the limit.',
+                    description: 'Divide by \\( h \\).',
+                    workingLatex: '\\frac{12h - 6h^2 + h^3}{h} = 12 - 6h + h^2',
+                    explanation: 'Cancel the common factor of \\( h \\) from the numerator and denominator.'
+                },
+                {
+                    stepNumber: 4,
+                    description: 'Take the limit as \\( h \\to 0 \\).',
                     workingLatex: "f'(-2) = \\lim_{h \\to 0}(12 - 6h + h^2) = 12",
-                    explanation: 'The \\( h \\) terms vanish.'
+                    explanation: 'The \\( -6h \\) and \\( h^2 \\) terms vanish, so the gradient at \\( x = -2 \\) is 12.'
                 }
             ],
             finalAnswer: 'Gradient at \\( x = -2 \\) is 12.'
@@ -1877,26 +2189,32 @@ export const questions: Question[] = [
         marks: 5,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['first principles', 'gradient at point'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
                     stepNumber: 1,
-                    description: 'Let \\( f(x) = 4x^2 - x \\). Then \\( f(1) = 3 \\).',
-                    workingLatex: 'f(1+h) = 4(1+h)^2 - (1+h) = 4 + 8h + 4h^2 - 1 - h = 3 + 7h + 4h^2',
-                    explanation: 'Expand and simplify.'
+                    description: 'Compute \\( f(1) \\) and \\( f(1+h) \\).',
+                    workingLatex: 'f(1) = 4 - 1 = 3, \\quad f(1+h) = 4(1+h)^2 - (1+h) = 4 + 8h + 4h^2 - 1 - h = 3 + 7h + 4h^2',
+                    explanation: 'Substitute \\( x = 1 \\) and \\( x = 1+h \\) into \\( f(x) = 4x^2 - x \\), then expand.'
                 },
                 {
                     stepNumber: 2,
-                    description: 'Form the difference quotient.',
-                    workingLatex: '\\frac{(3 + 7h + 4h^2) - 3}{h} = 7 + 4h',
-                    explanation: 'Cancel and divide.'
+                    description: 'Subtract \\( f(1) \\).',
+                    workingLatex: 'f(1+h) - f(1) = (3 + 7h + 4h^2) - 3 = 7h + 4h^2',
+                    explanation: 'The constant terms cancel, leaving only terms in \\( h \\).'
                 },
                 {
                     stepNumber: 3,
-                    description: 'Take the limit.',
+                    description: 'Divide by \\( h \\).',
+                    workingLatex: '\\frac{7h + 4h^2}{h} = 7 + 4h',
+                    explanation: 'Cancel the common factor of \\( h \\) to form the simplified difference quotient.'
+                },
+                {
+                    stepNumber: 4,
+                    description: 'Take the limit as \\( h \\to 0 \\).',
                     workingLatex: "f'(1) = \\lim_{h \\to 0}(7 + 4h) = 7",
-                    explanation: 'Limit as \\( h \\to 0 \\).'
+                    explanation: 'The \\( 4h \\) term vanishes, so the gradient at \\( x = 1 \\) is 7.'
                 }
             ],
             finalAnswer: 'Gradient at \\( x = 1 \\) is 7.'
@@ -1911,7 +2229,7 @@ export const questions: Question[] = [
         marks: 5,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['first principles', 'gradient at point', 'show that'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -1951,7 +2269,7 @@ export const questions: Question[] = [
         marks: 5,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['first principles', 'gradient at point'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -1991,7 +2309,7 @@ export const questions: Question[] = [
         marks: 5,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['first principles', 'gradient at point', 'cubic'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -2033,26 +2351,32 @@ export const questions: Question[] = [
         marks: 5,
         examStyle: true,
         yearCreated: 2026,
-        tags: ['first principles', 'gradient function', 'gradient at point', 'exam-style'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
                     stepNumber: 1,
                     description: '(a) Compute \\( f(x+h) - f(x) \\).',
                     workingLatex: '[(x+h)^2 + 4(x+h) - 7] - [x^2 + 4x - 7] = 2xh + h^2 + 4h',
-                    explanation: 'Expand and subtract.'
+                    explanation: 'Expand \\( (x+h)^2 \\) and \\( 4(x+h) \\), then subtract \\( f(x) \\). The \\( x^2 \\), \\( 4x \\) and \\( -7 \\) terms cancel.'
                 },
                 {
                     stepNumber: 2,
-                    description: 'Divide by \\( h \\) and take the limit.',
-                    workingLatex: "\\frac{dy}{dx} = \\lim_{h \\to 0}(2x + h + 4) = 2x + 4",
-                    explanation: 'The gradient function.'
+                    description: 'Divide by \\( h \\).',
+                    workingLatex: '\\frac{2xh + h^2 + 4h}{h} = 2x + h + 4',
+                    explanation: 'Cancel the common factor of \\( h \\) from the numerator and denominator.'
                 },
                 {
                     stepNumber: 3,
+                    description: 'Take the limit as \\( h \\to 0 \\).',
+                    workingLatex: "\\frac{dy}{dx} = \\lim_{h \\to 0}(2x + h + 4) = 2x + 4",
+                    explanation: 'The \\( h \\) term vanishes, giving the gradient function.'
+                },
+                {
+                    stepNumber: 4,
                     description: '(b) Substitute \\( x = -3 \\).',
-                    workingLatex: '2(-3) + 4 = -2',
-                    explanation: 'Evaluate the derivative.'
+                    workingLatex: '2(-3) + 4 = -6 + 4 = -2',
+                    explanation: 'Evaluate the derivative at \\( x = -3 \\) to find the gradient at that point.'
                 }
             ],
             finalAnswer: '(a) \\( \\dfrac{dy}{dx} = 2x + 4 \\) \\quad (b) Gradient at \\( x = -3 \\) is \\( -2 \\).'
@@ -2067,26 +2391,32 @@ export const questions: Question[] = [
         marks: 6,
         examStyle: true,
         yearCreated: 2026,
-        tags: ['first principles', 'gradient function', 'zero gradient', 'exam-style'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
                     stepNumber: 1,
-                    description: '(a) Difference quotient.',
-                    workingLatex: '\\frac{(x+h)^2 - 5(x+h) - (x^2 - 5x)}{h} = \\frac{2xh + h^2 - 5h}{h} = 2x + h - 5',
-                    explanation: 'Expand, subtract, divide.'
+                    description: '(a) Compute \\( f(x+h) - f(x) \\).',
+                    workingLatex: '[(x+h)^2 - 5(x+h)] - [x^2 - 5x] = 2xh + h^2 - 5h',
+                    explanation: 'Expand \\( (x+h)^2 \\) and \\( -5(x+h) \\), then subtract \\( f(x) \\). The \\( x^2 \\) and \\( -5x \\) terms cancel.'
                 },
                 {
                     stepNumber: 2,
-                    description: 'Take the limit.',
-                    workingLatex: "\\frac{dy}{dx} = 2x - 5",
-                    explanation: 'Gradient function.'
+                    description: 'Divide by \\( h \\).',
+                    workingLatex: '\\frac{2xh + h^2 - 5h}{h} = 2x + h - 5',
+                    explanation: 'Cancel the common factor of \\( h \\) from the numerator and denominator.'
                 },
                 {
                     stepNumber: 3,
+                    description: 'Take the limit as \\( h \\to 0 \\).',
+                    workingLatex: "\\frac{dy}{dx} = \\lim_{h \\to 0}(2x + h - 5) = 2x - 5",
+                    explanation: 'The \\( h \\) term vanishes, giving the gradient function.'
+                },
+                {
+                    stepNumber: 4,
                     description: '(b) Set gradient \\( = 0 \\).',
                     workingLatex: '2x - 5 = 0 \\Rightarrow x = \\tfrac{5}{2}',
-                    explanation: 'Solve for \\( x \\). At this \\( x \\) the tangent is horizontal — the curve has its minimum.',
+                    explanation: 'Solve for \\( x \\). At this \\( x \\) the tangent is horizontal -- the curve has its minimum.',
                     diagram: {
                         xMin: -0.8, xMax: 5.8, yMin: -8, yMax: 5,
                         xTicks: [1, 2, 3, 4, 5], yTicks: [-6, -4, -2, 2, 4],
@@ -2110,26 +2440,32 @@ export const questions: Question[] = [
         marks: 6,
         examStyle: true,
         yearCreated: 2026,
-        tags: ['first principles', 'horizontal tangent', 'gradient function'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
                     stepNumber: 1,
-                    description: 'Compute the difference quotient.',
-                    workingLatex: '\\frac{3(x+h)^2 - 12(x+h) + 5 - (3x^2 - 12x + 5)}{h} = \\frac{6xh + 3h^2 - 12h}{h}',
-                    explanation: 'Expand and simplify.'
+                    description: 'Compute \\( f(x+h) - f(x) \\).',
+                    workingLatex: '[3(x+h)^2 - 12(x+h) + 5] - [3x^2 - 12x + 5] = 6xh + 3h^2 - 12h',
+                    explanation: 'Expand \\( 3(x+h)^2 \\) and \\( -12(x+h) \\), then subtract \\( f(x) \\). The \\( 3x^2 \\), \\( -12x \\) and \\( +5 \\) terms cancel.'
                 },
                 {
                     stepNumber: 2,
-                    description: 'Simplify and take the limit.',
-                    workingLatex: "\\frac{dy}{dx} = \\lim_{h \\to 0}(6x + 3h - 12) = 6x - 12",
-                    explanation: 'Gradient function.'
+                    description: 'Divide by \\( h \\).',
+                    workingLatex: '\\frac{6xh + 3h^2 - 12h}{h} = 6x + 3h - 12',
+                    explanation: 'Cancel the common factor of \\( h \\) from the numerator and denominator.'
                 },
                 {
                     stepNumber: 3,
-                    description: 'Tangent horizontal when \\( \\dfrac{dy}{dx} = 0 \\).',
+                    description: 'Take the limit as \\( h \\to 0 \\).',
+                    workingLatex: "\\frac{dy}{dx} = \\lim_{h \\to 0}(6x + 3h - 12) = 6x - 12",
+                    explanation: 'The \\( 3h \\) term vanishes, giving the gradient function.'
+                },
+                {
+                    stepNumber: 4,
+                    description: 'Set \\( \\dfrac{dy}{dx} = 0 \\) for horizontal tangent.',
                     workingLatex: '6x - 12 = 0 \\Rightarrow x = 2',
-                    explanation: 'Solve for \\( x \\).'
+                    explanation: 'A horizontal tangent occurs where the gradient is zero. Solve to find \\( x = 2 \\).'
                 }
             ],
             finalAnswer: 'Horizontal tangent at \\( x = 2 \\).'
@@ -2144,26 +2480,32 @@ export const questions: Question[] = [
         marks: 6,
         examStyle: true,
         yearCreated: 2026,
-        tags: ['first principles', 'gradient function', 'cubic', 'exam-style'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
                     stepNumber: 1,
                     description: '(a) Compute \\( f(x+h) - f(x) \\).',
-                    workingLatex: '(x+h)^3 - 3(x+h) - x^3 + 3x = 3x^2h + 3xh^2 + h^3 - 3h',
-                    explanation: 'Expand the cube.'
+                    workingLatex: '[(x+h)^3 - 3(x+h)] - [x^3 - 3x] = 3x^2h + 3xh^2 + h^3 - 3h',
+                    explanation: 'Expand \\( (x+h)^3 \\) using the binomial expansion and distribute \\( -3 \\). The \\( x^3 \\) and \\( -3x \\) terms cancel.'
                 },
                 {
                     stepNumber: 2,
-                    description: 'Divide by \\( h \\) and take the limit.',
-                    workingLatex: "\\frac{dy}{dx} = \\lim_{h \\to 0}(3x^2 + 3xh + h^2 - 3) = 3x^2 - 3",
-                    explanation: 'Gradient function.'
+                    description: 'Divide by \\( h \\).',
+                    workingLatex: '\\frac{3x^2h + 3xh^2 + h^3 - 3h}{h} = 3x^2 + 3xh + h^2 - 3',
+                    explanation: 'Cancel the common factor of \\( h \\) from the numerator and denominator.'
                 },
                 {
                     stepNumber: 3,
-                    description: '(b) Substitute.',
-                    workingLatex: "\\left.\\frac{dy}{dx}\\right|_{x=0} = -3, \\quad \\left.\\frac{dy}{dx}\\right|_{x=1} = 0",
-                    explanation: 'Evaluate at both values.'
+                    description: 'Take the limit as \\( h \\to 0 \\).',
+                    workingLatex: "\\frac{dy}{dx} = \\lim_{h \\to 0}(3x^2 + 3xh + h^2 - 3) = 3x^2 - 3",
+                    explanation: 'The \\( 3xh \\) and \\( h^2 \\) terms vanish, giving the gradient function.'
+                },
+                {
+                    stepNumber: 4,
+                    description: '(b) Evaluate at \\( x = 0 \\) and \\( x = 1 \\).',
+                    workingLatex: "\\left.\\frac{dy}{dx}\\right|_{x=0} = 3(0)^2 - 3 = -3, \\quad \\left.\\frac{dy}{dx}\\right|_{x=1} = 3(1)^2 - 3 = 0",
+                    explanation: 'Substitute each value of \\( x \\) into the gradient function to find the gradient at each point.'
                 }
             ],
             finalAnswer: '(a) \\( \\dfrac{dy}{dx} = 3x^2 - 3 \\) \\quad (b) Gradients are \\( -3 \\) and \\( 0 \\).'
@@ -2178,26 +2520,32 @@ export const questions: Question[] = [
         marks: 5,
         examStyle: true,
         yearCreated: 2026,
-        tags: ['gradient function', 'gradient at point', 'coordinates'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
                     stepNumber: 1,
-                    description: 'Differentiate (by first principles or directly).',
-                    workingLatex: "\\frac{dy}{dx} = 2x + 2",
-                    explanation: 'Gradient function for a quadratic.'
+                    description: 'Differentiate each term.',
+                    workingLatex: '\\frac{dy}{dx} = 2x + 2',
+                    explanation: 'Apply the power rule to each term: the derivative of x^2 is 2x, the derivative of 2x is 2, and the constant -3 differentiates to 0.'
                 },
                 {
                     stepNumber: 2,
-                    description: 'Set gradient \\( = 6 \\).',
-                    workingLatex: '2x + 2 = 6 \\Rightarrow x = 2',
-                    explanation: 'Solve for \\( x \\).'
+                    description: 'Set the gradient equal to 6.',
+                    workingLatex: '2x + 2 = 6',
+                    explanation: 'We need the point where the gradient of the curve equals 6, so set the derivative equal to 6.'
                 },
                 {
                     stepNumber: 3,
-                    description: 'Find \\( y \\).',
-                    workingLatex: 'y = 4 + 4 - 3 = 5',
-                    explanation: 'Substitute \\( x = 2 \\).'
+                    description: 'Solve for x.',
+                    workingLatex: '2x = 4 \\Rightarrow x = 2',
+                    explanation: 'Subtract 2 from both sides, then divide by 2.'
+                },
+                {
+                    stepNumber: 4,
+                    description: 'Find the y-coordinate.',
+                    workingLatex: 'y = (2)^2 + 2(2) - 3 = 4 + 4 - 3 = 5',
+                    explanation: 'Substitute x = 2 back into the original equation to find the corresponding y-value.'
                 }
             ],
             finalAnswer: 'Point is \\( (2, 5) \\).'
@@ -2212,26 +2560,32 @@ export const questions: Question[] = [
         marks: 4,
         examStyle: false,
         yearCreated: 2026,
-        tags: ['gradient function', 'coordinates'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
                     stepNumber: 1,
-                    description: 'Differentiate.',
-                    workingLatex: "\\frac{dy}{dx} = 2x - 4",
-                    explanation: 'Gradient function.'
+                    description: 'Differentiate each term.',
+                    workingLatex: '\\frac{dy}{dx} = 2x - 4',
+                    explanation: 'The derivative of x^2 is 2x, the derivative of -4x is -4, and the constant 1 differentiates to 0.'
                 },
                 {
                     stepNumber: 2,
-                    description: 'Set gradient equal to \\( -2 \\).',
-                    workingLatex: '2x - 4 = -2 \\Rightarrow x = 1',
-                    explanation: 'Solve for \\( x \\).'
+                    description: 'Set gradient equal to -2.',
+                    workingLatex: '2x - 4 = -2',
+                    explanation: 'We want the point where the gradient equals -2, so set the derivative equal to -2.'
                 },
                 {
                     stepNumber: 3,
-                    description: 'Find \\( y \\).',
-                    workingLatex: 'y = 1 - 4 + 1 = -2',
-                    explanation: 'Substitute \\( x = 1 \\).'
+                    description: 'Solve for x.',
+                    workingLatex: '2x = 2 \\Rightarrow x = 1',
+                    explanation: 'Add 4 to both sides, then divide by 2.'
+                },
+                {
+                    stepNumber: 4,
+                    description: 'Find the y-coordinate.',
+                    workingLatex: 'y = (1)^2 - 4(1) + 1 = 1 - 4 + 1 = -2',
+                    explanation: 'Substitute x = 1 into the original equation to find the corresponding y-value.'
                 }
             ],
             finalAnswer: 'Point is \\( (1, -2) \\).'
@@ -2248,20 +2602,32 @@ export const questions: Question[] = [
         marks: 4,
         examStyle: true,
         yearCreated: 2026,
-        tags: ['rate of change', 'velocity', 'mechanics', 'exam-style'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
                     stepNumber: 1,
-                    description: '(a) Differentiate \\( s \\) with respect to \\( t \\).',
-                    workingLatex: "\\frac{ds}{dt} = 2t + 3",
-                    explanation: 'Gradient function — the velocity.'
+                    description: '(a) Identify the velocity expression.',
+                    workingLatex: 'v = \\frac{ds}{dt}',
+                    explanation: 'Velocity is the rate of change of displacement with respect to time, so we differentiate s with respect to t.'
                 },
                 {
                     stepNumber: 2,
-                    description: '(b) Substitute \\( t = 4 \\).',
-                    workingLatex: '2(4) + 3 = 11',
-                    explanation: 'Units: m/s.'
+                    description: 'Differentiate each term.',
+                    workingLatex: '\\frac{ds}{dt} = 2t + 3',
+                    explanation: 'The derivative of t^2 is 2t and the derivative of 3t is 3.'
+                },
+                {
+                    stepNumber: 3,
+                    description: '(b) Substitute t = 4.',
+                    workingLatex: 'v = 2(4) + 3 = 8 + 3 = 11',
+                    explanation: 'Replace t with 4 in the velocity expression.'
+                },
+                {
+                    stepNumber: 4,
+                    description: 'State the answer with units.',
+                    workingLatex: 'v = 11 \\text{ m/s}',
+                    explanation: 'Since displacement is in metres and time is in seconds, the velocity is measured in m/s.'
                 }
             ],
             finalAnswer: '(a) \\( \\dfrac{ds}{dt} = 2t + 3 \\) \\quad (b) Velocity is 11 m/s.'
@@ -2276,20 +2642,32 @@ export const questions: Question[] = [
         marks: 4,
         examStyle: true,
         yearCreated: 2026,
-        tags: ['rate of change', 'velocity', 'mechanics', 'projectile'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
                     stepNumber: 1,
-                    description: 'Differentiate with respect to \\( t \\).',
-                    workingLatex: "\\frac{dh}{dt} = 20 - 10t",
-                    explanation: 'Rate of change of height.'
+                    description: 'Identify the rate of change.',
+                    workingLatex: '\\frac{dh}{dt}',
+                    explanation: 'The rate at which the height is changing is given by the derivative of h with respect to t.'
                 },
                 {
                     stepNumber: 2,
-                    description: 'Substitute \\( t = 1 \\).',
-                    workingLatex: '20 - 10(1) = 10',
-                    explanation: 'The ball is rising at 10 m/s. The diagram shows the height-time curve and the tangent at \\( t = 1 \\), whose gradient \\( 10 \\) is the instantaneous velocity.',
+                    description: 'Differentiate each term.',
+                    workingLatex: '\\frac{dh}{dt} = 20 - 10t',
+                    explanation: 'The derivative of 20t is 20 and the derivative of -5t^2 is -10t.'
+                },
+                {
+                    stepNumber: 3,
+                    description: 'Substitute t = 1.',
+                    workingLatex: '\\frac{dh}{dt} = 20 - 10(1) = 20 - 10 = 10',
+                    explanation: 'Replace t with 1 in the derivative expression.'
+                },
+                {
+                    stepNumber: 4,
+                    description: 'Interpret the result.',
+                    workingLatex: '\\text{Rate of change} = 10 \\text{ m/s (rising)}',
+                    explanation: 'The positive value means the ball is rising at 10 m/s at t = 1. The diagram shows the height-time curve and the tangent at t = 1, whose gradient 10 is the instantaneous velocity.',
                     diagram: {
                         xMin: -0.3, xMax: 4.8, yMin: -3, yMax: 26,
                         xTicks: [1, 2, 3, 4], yTicks: [5, 10, 15, 20, 25],
@@ -2314,20 +2692,32 @@ export const questions: Question[] = [
         marks: 4,
         examStyle: true,
         yearCreated: 2026,
-        tags: ['rate of change', 'volume', 'exam-style'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
                     stepNumber: 1,
-                    description: 'Differentiate.',
-                    workingLatex: "\\frac{dV}{dt} = 8t + 1",
-                    explanation: 'Rate of change of volume.'
+                    description: 'Identify the rate of change.',
+                    workingLatex: '\\frac{dV}{dt}',
+                    explanation: 'The rate at which the volume is changing is found by differentiating V with respect to t.'
                 },
                 {
                     stepNumber: 2,
-                    description: 'Substitute \\( t = 3 \\).',
-                    workingLatex: '8(3) + 1 = 25',
-                    explanation: 'Units: cm\\( ^3 \\)/s.'
+                    description: 'Differentiate each term.',
+                    workingLatex: '\\frac{dV}{dt} = 8t + 1',
+                    explanation: 'The derivative of 4t^2 is 8t and the derivative of t is 1.'
+                },
+                {
+                    stepNumber: 3,
+                    description: 'Substitute t = 3.',
+                    workingLatex: '\\frac{dV}{dt} = 8(3) + 1 = 24 + 1 = 25',
+                    explanation: 'Replace t with 3 in the derivative expression.'
+                },
+                {
+                    stepNumber: 4,
+                    description: 'State the answer with units.',
+                    workingLatex: '\\text{Rate} = 25 \\text{ cm}^3\\text{/s}',
+                    explanation: 'Since volume is in cm^3 and time is in seconds, the rate of change is in cm^3/s. The volume is increasing at 25 cm^3/s.'
                 }
             ],
             finalAnswer: '\\( \\dfrac{dV}{dt} = 8t + 1 \\); rate \\( = 25 \\) cm\\( ^3 \\)/s.'
@@ -2342,20 +2732,32 @@ export const questions: Question[] = [
         marks: 5,
         examStyle: true,
         yearCreated: 2026,
-        tags: ['rate of change', 'profit', 'modelling', 'exam-style'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
                     stepNumber: 1,
-                    description: 'Differentiate.',
-                    workingLatex: "\\frac{dP}{dx} = -2x + 40",
-                    explanation: 'Marginal profit.'
+                    description: 'Differentiate each term.',
+                    workingLatex: '\\frac{dP}{dx} = -2x + 40',
+                    explanation: 'The derivative of -x^2 is -2x, the derivative of 40x is 40, and the constant -100 differentiates to 0. This is the marginal profit.'
                 },
                 {
                     stepNumber: 2,
-                    description: 'Set equal to zero.',
-                    workingLatex: '-2x + 40 = 0 \\Rightarrow x = 20',
-                    explanation: 'Solve for \\( x \\).'
+                    description: 'Set marginal profit equal to zero.',
+                    workingLatex: '-2x + 40 = 0',
+                    explanation: 'Profit is momentarily constant when its rate of change is zero, so set the derivative equal to 0.'
+                },
+                {
+                    stepNumber: 3,
+                    description: 'Solve for x.',
+                    workingLatex: '-2x = -40 \\Rightarrow x = 20',
+                    explanation: 'Subtract 40 from both sides, then divide by -2.'
+                },
+                {
+                    stepNumber: 4,
+                    description: 'State the conclusion.',
+                    workingLatex: '\\text{Profit is momentarily constant at } x = 20',
+                    explanation: 'At x = 20 units the marginal profit is zero, meaning profit is neither increasing nor decreasing at that instant.'
                 }
             ],
             finalAnswer: '\\( \\dfrac{dP}{dx} = -2x + 40 \\); profit is momentarily constant at \\( x = 20 \\).'
@@ -2370,26 +2772,32 @@ export const questions: Question[] = [
         marks: 4,
         examStyle: true,
         yearCreated: 2026,
-        tags: ['rate of change', 'temperature', 'modelling', 'interpretation'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
                     stepNumber: 1,
-                    description: 'Differentiate.',
-                    workingLatex: "\\frac{dT}{dt} = -4t",
-                    explanation: 'Rate of change of temperature.'
+                    description: 'Differentiate each term.',
+                    workingLatex: '\\frac{dT}{dt} = -4t',
+                    explanation: 'The constant 90 differentiates to 0 and the derivative of -2t^2 is -4t. This gives the rate of change of temperature.'
                 },
                 {
                     stepNumber: 2,
-                    description: 'Substitute \\( t = 3 \\).',
-                    workingLatex: '-4(3) = -12',
-                    explanation: 'Negative means the coffee is cooling.'
+                    description: 'Substitute t = 3.',
+                    workingLatex: '\\frac{dT}{dt} = -4(3) = -12',
+                    explanation: 'Replace t with 3 in the derivative expression.'
                 },
                 {
                     stepNumber: 3,
-                    description: 'Interpret.',
+                    description: 'State the value with units.',
+                    workingLatex: '\\frac{dT}{dt} = -12 \\text{ °C/min}',
+                    explanation: 'The rate of change of temperature at t = 3 is -12 degrees Celsius per minute.'
+                },
+                {
+                    stepNumber: 4,
+                    description: 'Interpret the sign.',
                     workingLatex: '\\text{Cooling at } 12 \\text{ °C per minute}',
-                    explanation: 'The temperature is decreasing at 12 °C/min at this instant.'
+                    explanation: 'The negative sign indicates the temperature is decreasing. At t = 3 minutes the coffee is cooling at a rate of 12 °C per minute.'
                 }
             ],
             finalAnswer: 'Rate \\( = -12 \\) °C/min — the coffee is cooling at 12 °C/min.'
@@ -2406,7 +2814,7 @@ export const questions: Question[] = [
         marks: 6,
         examStyle: true,
         yearCreated: 2026,
-        tags: ['first principles', 'challenge', 'quartic', 'binomial'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -2446,7 +2854,7 @@ export const questions: Question[] = [
         marks: 8,
         examStyle: true,
         yearCreated: 2026,
-        tags: ['first principles', 'cubic', 'gradient at point', 'challenge', 'exam-style'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -2498,7 +2906,7 @@ export const questions: Question[] = [
         marks: 6,
         examStyle: true,
         yearCreated: 2026,
-        tags: ['first principles', 'general', 'show that', 'challenge'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -2538,7 +2946,7 @@ export const questions: Question[] = [
         marks: 6,
         examStyle: true,
         yearCreated: 2026,
-        tags: ['chord', 'gradient of a curve', 'midpoint', 'challenge', 'show that'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -2594,7 +3002,7 @@ export const questions: Question[] = [
         marks: 8,
         examStyle: true,
         yearCreated: 2026,
-        tags: ['first principles', 'tangent', 'exam-style', 'challenge'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
@@ -2649,26 +3057,32 @@ export const questions: Question[] = [
         marks: 5,
         examStyle: true,
         yearCreated: 2026,
-        tags: ['chord', 'first principles', 'tangent', 'show that', 'challenge'],
+        tags: [],
         workedSolution: {
             steps: [
                 {
                     stepNumber: 1,
-                    description: '(a) Gradient of chord.',
+                    description: '(a) Write the gradient of chord PQ.',
                     workingLatex: 'm = \\frac{q^2 - p^2}{q - p}',
-                    explanation: 'Gradient formula.'
+                    explanation: 'Apply the gradient formula using the coordinates P(p, p^2) and Q(q, q^2).'
                 },
                 {
                     stepNumber: 2,
                     description: 'Factorise the numerator.',
-                    workingLatex: '\\frac{(q - p)(q + p)}{q - p} = q + p \\checkmark',
-                    explanation: 'Difference of two squares; cancel \\( q - p \\neq 0 \\).'
+                    workingLatex: 'q^2 - p^2 = (q - p)(q + p)',
+                    explanation: 'Recognise the difference of two squares factorisation.'
                 },
                 {
                     stepNumber: 3,
-                    description: '(b) Let \\( q \\to p \\).',
-                    workingLatex: '\\lim_{q \\to p}(p + q) = 2p',
-                    explanation: 'Chord becomes tangent. In the diagram, as \\( Q \\) slides along the curve toward \\( P \\), the chord \\( PQ \\) rotates into the tangent at \\( P \\), whose gradient is \\( 2p \\).',
+                    description: 'Cancel the common factor.',
+                    workingLatex: 'm = \\frac{(q - p)(q + p)}{q - p} = p + q \\checkmark',
+                    explanation: 'Since p is not equal to q, we can cancel (q - p) from numerator and denominator, giving m = p + q as required.'
+                },
+                {
+                    stepNumber: 4,
+                    description: '(b) Let q tend to p.',
+                    workingLatex: '\\lim_{q \\to p}(p + q) = p + p = 2p',
+                    explanation: 'As Q approaches P along the curve, the chord becomes the tangent. Replacing q with p gives the tangent gradient 2p. In the diagram, as Q slides along the curve toward P, the chord PQ rotates into the tangent at P, whose gradient is 2p.',
                     diagram: {
                         xMin: -0.6, xMax: 4, yMin: -1.5, yMax: 11,
                         xTicks: [1, 2, 3], yTicks: [2, 4, 6, 8, 10],
@@ -2696,7 +3110,7 @@ export const questions: Question[] = [
         marks: 7,
         examStyle: true,
         yearCreated: 2026,
-        tags: ['chord', 'first principles', 'cubic', 'show that', 'challenge', 'exam-style'],
+        tags: [],
         workedSolution: {
             steps: [
                 {

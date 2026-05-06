@@ -1,0 +1,225 @@
+{
+  "summary": {
+    "total": 6,
+    "passed": 6,
+    "failed": 0,
+    "passRate": "100%",
+    "avgScore": "0.908"
+  },
+  "results": [
+    {
+      "id": "Q1",
+      "pass": true,
+      "avgScore": 0.9375,
+      "constraints": {
+        "C1": {
+          "pass": true,
+          "score": 1,
+          "detail": "4 topic group(s): Coordinate Geometry, Differentiation, Trigonometry, Simultaneous Equations",
+          "groups": [
+            "Coordinate Geometry",
+            "Differentiation",
+            "Trigonometry",
+            "Simultaneous Equations"
+          ]
+        },
+        "C2": {
+          "pass": true,
+          "score": 1,
+          "detail": "All numbers are clean",
+          "issues": []
+        },
+        "C3": {
+          "pass": true,
+          "score": 0.75,
+          "detail": "Total marks: 12 (good range); Insight keywords: hence, show that; Solution length: 785 chars (substantial)",
+          "difficultyScore": 0.75
+        },
+        "C4": {
+          "pass": true,
+          "score": 1,
+          "detail": "3 parts, well-structured",
+          "numParts": 3
+        }
+      }
+    },
+    {
+      "id": "Q2",
+      "pass": true,
+      "avgScore": 0.9375,
+      "constraints": {
+        "C1": {
+          "pass": true,
+          "score": 1,
+          "detail": "5 topic group(s): Algebra & Functions, Coordinate Geometry, Trigonometry, Inequalities, Simultaneous Equations",
+          "groups": [
+            "Algebra & Functions",
+            "Coordinate Geometry",
+            "Trigonometry",
+            "Inequalities",
+            "Simultaneous Equations"
+          ]
+        },
+        "C2": {
+          "pass": true,
+          "score": 1,
+          "detail": "All numbers are clean",
+          "issues": []
+        },
+        "C3": {
+          "pass": true,
+          "score": 0.75,
+          "detail": "Total marks: 12 (good range); Insight keywords: hence, show that; Solution length: 1214 chars (substantial)",
+          "difficultyScore": 0.75
+        },
+        "C4": {
+          "pass": true,
+          "score": 1,
+          "detail": "3 parts, well-structured",
+          "numParts": 3
+        }
+      }
+    },
+    {
+      "id": "Q3",
+      "pass": true,
+      "avgScore": 0.825,
+      "constraints": {
+        "C1": {
+          "pass": true,
+          "score": 1,
+          "detail": "3 topic group(s): Coordinate Geometry, Differentiation, Integration",
+          "groups": [
+            "Coordinate Geometry",
+            "Differentiation",
+            "Integration"
+          ]
+        },
+        "C2": {
+          "pass": true,
+          "score": 1,
+          "detail": "All numbers are clean",
+          "issues": []
+        },
+        "C3": {
+          "pass": true,
+          "score": 0.6,
+          "detail": "Total marks: 13 (good range); Some insight keywords: determine; Solution length: 1170 chars (substantial)",
+          "difficultyScore": 0.6
+        },
+        "C4": {
+          "pass": true,
+          "score": 0.7,
+          "detail": "Parts may not build on each other (no scaffolding keywords found)",
+          "numParts": 3
+        }
+      }
+    },
+    {
+      "id": "Q4",
+      "pass": true,
+      "avgScore": 0.9,
+      "constraints": {
+        "C1": {
+          "pass": true,
+          "score": 1,
+          "detail": "4 topic group(s): Coordinate Geometry, Differentiation, Integration, Trigonometry",
+          "groups": [
+            "Coordinate Geometry",
+            "Differentiation",
+            "Integration",
+            "Trigonometry"
+          ]
+        },
+        "C2": {
+          "pass": true,
+          "score": 1,
+          "detail": "All numbers are clean",
+          "issues": []
+        },
+        "C3": {
+          "pass": true,
+          "score": 0.6,
+          "detail": "Total marks: 13 (good range); Some insight keywords: show that; Solution length: 946 chars (substantial)",
+          "difficultyScore": 0.6
+        },
+        "C4": {
+          "pass": true,
+          "score": 1,
+          "detail": "3 parts, well-structured",
+          "numParts": 3
+        }
+      }
+    },
+    {
+      "id": "Q5",
+      "pass": true,
+      "avgScore": 0.9375,
+      "constraints": {
+        "C1": {
+          "pass": true,
+          "score": 1,
+          "detail": "3 topic group(s): Trigonometry, Exponentials & Logarithms, Simultaneous Equations",
+          "groups": [
+            "Trigonometry",
+            "Exponentials & Logarithms",
+            "Simultaneous Equations"
+          ]
+        },
+        "C2": {
+          "pass": true,
+          "score": 1,
+          "detail": "All numbers are clean",
+          "issues": []
+        },
+        "C3": {
+          "pass": true,
+          "score": 0.75,
+          "detail": "Total marks: 13 (good range); Insight keywords: hence, justify; Solution length: 556 chars (substantial)",
+          "difficultyScore": 0.75
+        },
+        "C4": {
+          "pass": true,
+          "score": 1,
+          "detail": "3 parts, well-structured",
+          "numParts": 3
+        }
+      }
+    },
+    {
+      "id": "Q6",
+      "pass": true,
+      "avgScore": 0.9125,
+      "constraints": {
+        "C1": {
+          "pass": true,
+          "score": 1,
+          "detail": "3 topic group(s): Algebra & Functions, Binomial Expansion, Sequences & Series",
+          "groups": [
+            "Algebra & Functions",
+            "Binomial Expansion",
+            "Sequences & Series"
+          ]
+        },
+        "C2": {
+          "pass": true,
+          "score": 1,
+          "detail": "All numbers are clean",
+          "issues": []
+        },
+        "C3": {
+          "pass": true,
+          "score": 0.65,
+          "detail": "Total marks: 12 (good range); Insight keywords: hence, show that; Solution length: 448 chars (moderate)",
+          "difficultyScore": 0.65
+        },
+        "C4": {
+          "pass": true,
+          "score": 1,
+          "detail": "3 parts, well-structured",
+          "numParts": 3
+        }
+      }
+    }
+  ]
+}

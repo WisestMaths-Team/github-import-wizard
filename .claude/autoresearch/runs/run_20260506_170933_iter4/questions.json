@@ -1,0 +1,228 @@
+[
+  {
+    "id": "Q1",
+    "topics": [
+      "Coordinate Geometry",
+      "Differentiation",
+      "Simultaneous Equations"
+    ],
+    "questionText": "The curve C has equation y = x^2 - 6x + 11, and the circle S has equation x^2 + y^2 = 5.\n\n(a) Show that the tangent to C at the point where the gradient equals 2 has equation y = 2x - 5, and state the coordinates of the point of contact. [3]\n\n(b) Show that the line y = 2x - 5 is also tangent to the circle S, by considering an appropriate discriminant. [3]\n\n(c) Find the coordinates of the point at which y = 2x - 5 touches the circle S. [3]\n\n(d) Hence find the exact distance between the point of tangency on C and the point of tangency on S. [3]",
+    "parts": [
+      {
+        "label": "(a)",
+        "text": "Show that the tangent to C at the point where the gradient equals 2 has equation y = 2x - 5, and state the coordinates of the point of contact.",
+        "marks": 3
+      },
+      {
+        "label": "(b)",
+        "text": "Show that the line y = 2x - 5 is also tangent to the circle S, by considering an appropriate discriminant.",
+        "marks": 3
+      },
+      {
+        "label": "(c)",
+        "text": "Find the coordinates of the point at which y = 2x - 5 touches the circle S.",
+        "marks": 3
+      },
+      {
+        "label": "(d)",
+        "text": "Hence find the exact distance between the point of tangency on C and the point of tangency on S.",
+        "marks": 3
+      }
+    ],
+    "totalMarks": 12,
+    "workedSolution": "Topics: Coordinate Geometry + Differentiation + Simultaneous Equations\nInsight step: Part (b) requires recognising that 'tangent to circle' translates into 'discriminant = 0' for the simultaneous system - reframing a geometric condition as an algebraic one.\nDifficulty audit: A student following routine algorithms might find the tangent in (a) but the link to the discriminant in (b) and the synthesis in (d) need genuine insight.\nCleanliness audit: All x-coordinates substituted (x = 4 into x^2 - 6x + 11, x = 2 into 2x - 5) are integers; the discriminant calculation evaluates to 0 (an integer); the distance simplifies to the clean surd 2*sqrt(5).\n\n(a) dy/dx = 2x - 6. Setting equal to 2: 2x - 6 = 2 gives x = 4. Then y = 16 - 24 + 11 = 3, so the contact point is (4, 3). The tangent line through (4, 3) with gradient 2: y - 3 = 2(x - 4), i.e. y = 2x - 5.\n\n(b) Substitute y = 2x - 5 into x^2 + y^2 = 5:\nx^2 + (2x - 5)^2 = 5\nx^2 + 4x^2 - 20x + 25 = 5\n5x^2 - 20x + 20 = 0\nx^2 - 4x + 4 = 0.\nDiscriminant = (-4)^2 - 4(1)(4) = 16 - 16 = 0. Since the discriminant is zero, the line meets the circle at exactly one point and is therefore tangent to S.\n\n(c) From (b), x^2 - 4x + 4 = (x - 2)^2 = 0, so x = 2. Then y = 2(2) - 5 = -1. The point of contact on S is (2, -1).\n\n(d) Distance between (4, 3) and (2, -1): sqrt((4 - 2)^2 + (3 - (-1))^2) = sqrt(4 + 16) = sqrt(20) = 2*sqrt(5).",
+    "answers": [
+      "(a) Tangent y = 2x - 5, contact point (4, 3)",
+      "(b) Discriminant = 0, hence tangent",
+      "(c) (2, -1)",
+      "(d) 2*sqrt(5)"
+    ]
+  },
+  {
+    "id": "Q2",
+    "topics": [
+      "Differentiation",
+      "Integration",
+      "Algebra & Functions"
+    ],
+    "questionText": "The function f is defined for all real x by f(x) = x^3 + ax^2 + bx + c, where a, b, c are constants. f has stationary points at x = 1 and x = 3, and f(1) = 4.\n\n(a) Find the values of a, b and c. [4]\n\n(b) Determine the nature of each stationary point of f. [3]\n\n(c) Show that the curve y = f(x) crosses the x-axis at the origin and touches the x-axis at x = 3. [2]\n\n(d) Find the exact area of the region enclosed between the curve y = f(x) and the x-axis between x = 0 and x = 3. [4]",
+    "parts": [
+      {
+        "label": "(a)",
+        "text": "Find the values of a, b and c.",
+        "marks": 4
+      },
+      {
+        "label": "(b)",
+        "text": "Determine the nature of each stationary point of f.",
+        "marks": 3
+      },
+      {
+        "label": "(c)",
+        "text": "Show that the curve y = f(x) crosses the x-axis at the origin and touches the x-axis at x = 3.",
+        "marks": 2
+      },
+      {
+        "label": "(d)",
+        "text": "Find the exact area of the region enclosed between the curve y = f(x) and the x-axis between x = 0 and x = 3.",
+        "marks": 4
+      }
+    ],
+    "totalMarks": 13,
+    "workedSolution": "Topics: Differentiation + Integration + Algebra & Functions\nInsight step: Part (c) requires recognising that 'touches the axis at x = 3' is a condition equivalent to 'x = 3 is a stationary point AND f(3) = 0' - the student must reinterpret the geometric phrase as a double-root condition rather than a numerical check.\nDifficulty audit: A purely algorithmic student would answer (a) and (b) but might not see the structural meaning of 'touches' in (c), nor recognise that the bounded region is a single integral because the curve sits below the x-axis nowhere on [0, 3].\nCleanliness audit: Stationary x-coordinates 1 and 3 are integers, so cubing them in (a) and integrating to limits 1 and 3 in (d) produces only integer powers; integration limits 0 and 3 give 3^4/4 = 81/4 and 2*3^3 = 54 (clean); final area 27/4 is a fraction with denominator 4.\n\n(a) f'(x) = 3x^2 + 2ax + b. Stationary at x = 1: 3 + 2a + b = 0. Stationary at x = 3: 27 + 6a + b = 0. Subtracting: 24 + 4a = 0, so a = -6. Then b = -3 - 2(-6) = 9. f(1) = 1 - 6 + 9 + c = 4 + c = 4, so c = 0. Therefore a = -6, b = 9, c = 0.\n\n(b) f''(x) = 6x + 2a = 6x - 12. At x = 1: f''(1) = -6 < 0, so x = 1 is a local maximum. At x = 3: f''(3) = 6 > 0, so x = 3 is a local minimum.\n\n(c) f(x) = x^3 - 6x^2 + 9x = x(x^2 - 6x + 9) = x(x - 3)^2. So f(0) = 0 (the curve crosses the x-axis at the origin) and f(3) = 0 with x = 3 being a double root, which means the curve touches but does not cross the x-axis at x = 3.\n\n(d) On [0, 3], f(x) = x(x - 3)^2 >= 0, so the area equals the integral.\nIntegral from 0 to 3 of (x^3 - 6x^2 + 9x) dx = [x^4/4 - 2x^3 + 9x^2/2] from 0 to 3.\nAt x = 3: 81/4 - 54 + 81/2 = 81/4 - 216/4 + 162/4 = 27/4.\nAt x = 0: 0.\nArea = 27/4.",
+    "answers": [
+      "(a) a = -6, b = 9, c = 0",
+      "(b) Maximum at x = 1, minimum at x = 3",
+      "(c) f(0) = 0; f(x) = x(x - 3)^2 has a double root at x = 3 so touches the x-axis there",
+      "(d) 27/4"
+    ]
+  },
+  {
+    "id": "Q3",
+    "topics": [
+      "Trigonometry",
+      "Differentiation"
+    ],
+    "questionText": "Let f(theta) = 4*sin^2(theta) - 4*cos(theta) - 1, defined for 0 <= theta <= 2*pi.\n\n(a) Show that the equation f(theta) = 0 can be written as (2*cos(theta) - 1)(2*cos(theta) + 3) = 0. [3]\n\n(b) Hence solve f(theta) = 0 for 0 <= theta <= 2*pi, giving exact answers. [3]\n\n(c) Find all values of theta in [0, 2*pi] for which f'(theta) = 0. [4]\n\n(d) Hence determine the maximum and minimum values of f(theta) on [0, 2*pi]. [3]",
+    "parts": [
+      {
+        "label": "(a)",
+        "text": "Show that the equation f(theta) = 0 can be written as (2*cos(theta) - 1)(2*cos(theta) + 3) = 0.",
+        "marks": 3
+      },
+      {
+        "label": "(b)",
+        "text": "Hence solve f(theta) = 0 for 0 <= theta <= 2*pi, giving exact answers.",
+        "marks": 3
+      },
+      {
+        "label": "(c)",
+        "text": "Find all values of theta in [0, 2*pi] for which f'(theta) = 0.",
+        "marks": 4
+      },
+      {
+        "label": "(d)",
+        "text": "Hence determine the maximum and minimum values of f(theta) on [0, 2*pi].",
+        "marks": 3
+      }
+    ],
+    "totalMarks": 13,
+    "workedSolution": "Topics: Trigonometry + Differentiation\nInsight step: Part (c) requires noticing that f'(theta) factors as 4*sin(theta)*(2*cos(theta) + 1) - the linear factor is (2*cos(theta) + 1), NOT the (2*cos(theta) - 1) from part (a). A student who assumed the same factor structure would miss two of the stationary points.\nDifficulty audit: A memorising student would solve (a) and (b) by the standard 'replace sin^2 with 1 - cos^2' algorithm; (c) however requires a fresh factorisation that doesn't reuse part (a), and (d) requires evaluating at five candidates (including endpoints) and recognising which give maxima vs minima.\nCleanliness audit: Every value of cos(theta) substituted is +/- 1/2 (clean), and (sqrt(3)/2)^2 = 3/4 with denominator 4 <= 8; all f-values evaluate to integers (-5, 4, 3, 4, -5).\n\n(a) Use sin^2(theta) = 1 - cos^2(theta):\nf(theta) = 4(1 - cos^2(theta)) - 4*cos(theta) - 1 = 3 - 4*cos^2(theta) - 4*cos(theta).\nSetting f(theta) = 0: 4*cos^2(theta) + 4*cos(theta) - 3 = 0.\nFactorise: (2*cos(theta) - 1)(2*cos(theta) + 3) = 4*cos^2(theta) + 6*cos(theta) - 2*cos(theta) - 3 = 4*cos^2(theta) + 4*cos(theta) - 3. So f(theta) = 0 iff (2*cos(theta) - 1)(2*cos(theta) + 3) = 0.\n\n(b) Either cos(theta) = 1/2 or cos(theta) = -3/2. The second has no solution since |cos(theta)| <= 1. So cos(theta) = 1/2 in [0, 2*pi] gives theta = pi/3 or theta = 5*pi/3.\n\n(c) f'(theta) = d/d(theta)[4*sin^2(theta) - 4*cos(theta) - 1] = 8*sin(theta)*cos(theta) + 4*sin(theta) = 4*sin(theta)*(2*cos(theta) + 1).\nSet f'(theta) = 0:\n- sin(theta) = 0: theta = 0, pi, 2*pi.\n- 2*cos(theta) + 1 = 0, i.e. cos(theta) = -1/2: theta = 2*pi/3, 4*pi/3.\nSo theta in {0, 2*pi/3, pi, 4*pi/3, 2*pi}.\n\n(d) Evaluate f at each candidate:\n- f(0) = 0 - 4 - 1 = -5.\n- f(2*pi/3) = 4*(sqrt(3)/2)^2 - 4*(-1/2) - 1 = 4*(3/4) + 2 - 1 = 3 + 1 = 4.\n- f(pi) = 0 - 4*(-1) - 1 = 3.\n- f(4*pi/3) = 4*(3/4) - 4*(-1/2) - 1 = 3 + 2 - 1 = 4.\n- f(2*pi) = 0 - 4 - 1 = -5.\nMaximum value: 4 (at theta = 2*pi/3 and 4*pi/3). Minimum value: -5 (at theta = 0 and 2*pi).",
+    "answers": [
+      "(a) Shown via sin^2 = 1 - cos^2 and factorisation",
+      "(b) theta = pi/3, 5*pi/3",
+      "(c) theta = 0, 2*pi/3, pi, 4*pi/3, 2*pi",
+      "(d) Maximum 4, minimum -5"
+    ]
+  },
+  {
+    "id": "Q4",
+    "topics": [
+      "Exponentials & Logarithms",
+      "Differentiation"
+    ],
+    "questionText": "The curve C has equation y = e^(2x) - 4*e^x + 3.\n\n(a) Find, in exact form, the x-coordinates of the points where C meets the x-axis. [3]\n\n(b) Show that C has exactly one stationary point, find its coordinates, and give the y-coordinate as an exact value. [4]\n\n(c) Determine the nature of this stationary point. [3]\n\n(d) Sketch the curve C, indicating the coordinates of all axis crossings, the stationary point, and the behaviour of y as x tends to plus and minus infinity. [3]",
+    "parts": [
+      {
+        "label": "(a)",
+        "text": "Find, in exact form, the x-coordinates of the points where C meets the x-axis.",
+        "marks": 3
+      },
+      {
+        "label": "(b)",
+        "text": "Show that C has exactly one stationary point, find its coordinates, and give the y-coordinate as an exact value.",
+        "marks": 4
+      },
+      {
+        "label": "(c)",
+        "text": "Determine the nature of this stationary point.",
+        "marks": 3
+      },
+      {
+        "label": "(d)",
+        "text": "Sketch the curve C, indicating the coordinates of all axis crossings, the stationary point, and the behaviour of y as x tends to plus and minus infinity.",
+        "marks": 3
+      }
+    ],
+    "totalMarks": 13,
+    "workedSolution": "Topics: Exponentials & Logarithms + Differentiation\nInsight step: Recognising that y = e^(2x) - 4*e^x + 3 is a quadratic in u = e^x, AND that the same substitution turns dy/dx = 2*e^(2x) - 4*e^x = 2*e^x*(e^x - 2) into a single product whose only relevant root is e^x = 2. The non-obvious move is using e^x > 0 to rule out one factor.\nDifficulty audit: A mechanical student might attempt the equation in (a) without spotting the quadratic substitution; even if they do (a), justifying 'exactly one stationary point' in (b) requires the e^x > 0 argument, which a memoriser would skip.\nCleanliness audit: The values substituted into the exponential are x = 0, ln 2, ln 3; e^(ln 2) = 2 and e^(2*ln 2) = 4 are integers, so y at the stationary point evaluates as 4 - 8 + 3 = -1 (integer), and y'' at x = ln 2 evaluates to 4*2*(2 - 1) = 8 (integer). No fractional powers of fractions arise.\n\n(a) Set y = 0 and substitute u = e^x: u^2 - 4u + 3 = 0, factorising (u - 1)(u - 3) = 0. So u = 1 or u = 3, giving e^x = 1 (x = 0) or e^x = 3 (x = ln 3). The curve crosses the x-axis at x = 0 and x = ln 3.\n\n(b) dy/dx = 2*e^(2x) - 4*e^x = 2*e^x*(e^x - 2). Since e^x > 0 for all real x, the only stationary point occurs when e^x - 2 = 0, i.e. x = ln 2. At x = ln 2: e^x = 2 and e^(2x) = 4, so y = 4 - 4*2 + 3 = -1. Stationary point: (ln 2, -1).\n\n(c) d^2y/dx^2 = 4*e^(2x) - 4*e^x = 4*e^x*(e^x - 1). At x = ln 2: 4*2*(2 - 1) = 8 > 0. Therefore (ln 2, -1) is a local minimum.\n\n(d) Sketch: as x -> -infinity, e^x and e^(2x) -> 0, so y -> 3 (horizontal asymptote y = 3 from below since y(0) = 0 < 3). At x = 0, y = 0; the curve then dips to its minimum at (ln 2, -1), rises back to cross the x-axis at x = ln 3, and as x -> +infinity, y -> +infinity. Note 0 < ln 2 < ln 3.",
+    "answers": [
+      "(a) x = 0 and x = ln 3",
+      "(b) Single stationary point at (ln 2, -1)",
+      "(c) Local minimum (since d^2y/dx^2 = 8 > 0)",
+      "(d) Sketch as described: passes through (0, 0), minimum at (ln 2, -1), passes through (ln 3, 0); y -> 3 as x -> -infinity; y -> +infinity as x -> +infinity"
+    ]
+  },
+  {
+    "id": "Q5",
+    "topics": [
+      "Coordinate Geometry",
+      "Quadratic Inequalities",
+      "Integration"
+    ],
+    "questionText": "The line L has equation y = 2x + k, where k is a real constant. The parabola P has equation y = x^2 + 4x + 7.\n\n(a) Find the set of values of k for which L intersects P at two distinct points. [3]\n\n(b) For k = 10, find the coordinates of the two intersection points and the exact area enclosed between L and P. [6]\n\n(c) Show that, for any value of k for which L meets P at two distinct points, the area enclosed between L and P is given by (4/3)*(k - 6)^(3/2). Verify this gives the answer found in (b). [5]",
+    "parts": [
+      {
+        "label": "(a)",
+        "text": "Find the set of values of k for which L intersects P at two distinct points.",
+        "marks": 3
+      },
+      {
+        "label": "(b)",
+        "text": "For k = 10, find the coordinates of the two intersection points and the exact area enclosed between L and P.",
+        "marks": 6
+      },
+      {
+        "label": "(c)",
+        "text": "Show that, for any value of k for which L meets P at two distinct points, the area enclosed between L and P is given by (4/3)*(k - 6)^(3/2). Verify this gives the answer found in (b).",
+        "marks": 5
+      }
+    ],
+    "totalMarks": 14,
+    "workedSolution": "Topics: Coordinate Geometry + Quadratic Inequalities + Integration\nInsight step: Part (c) requires recognising that the integrand factorises as -(x - alpha)(x - beta), and applying (or deriving) the standard result that the integral of (beta - x)(x - alpha) from alpha to beta equals (beta - alpha)^3/6. The student must reformulate a calculus problem as an algebraic identity in alpha, beta.\nDifficulty audit: A formula-following student handles (a) and (b) routinely. Part (c) requires manipulation of symbolic roots and an integration formula in factored form - not a single 'plug and chug' move.\nCleanliness audit: For k = 10 the roots are -3 and 1 (integers), so the integration limits are integers; (-3)^3/3 = -9 (integer), 1^3/3 = 1/3 (denominator 3, allowed); final area 32/3 (denominator 3, allowed). For general k the symbolic difference beta - alpha = 2*sqrt(k - 6) is a clean engineered surd.\n\n(a) Eliminating y: x^2 + 4x + 7 = 2x + k gives x^2 + 2x + (7 - k) = 0. For two distinct intersections the discriminant must be positive: 2^2 - 4(7 - k) > 0, i.e. 4 - 28 + 4k > 0, so k > 6.\n\n(b) For k = 10: x^2 + 2x - 3 = 0, factorise (x + 3)(x - 1) = 0, so x = -3 or x = 1. Substituting into y = 2x + 10: at x = -3, y = 4; at x = 1, y = 12. Intersection points: (-3, 4) and (1, 12).\nFor x in [-3, 1], 2x + 10 - (x^2 + 4x + 7) = -x^2 - 2x + 3 >= 0, so the line is above the parabola.\nArea = integral from -3 to 1 of (-x^2 - 2x + 3) dx = [-x^3/3 - x^2 + 3x] from -3 to 1.\nAt x = 1: -1/3 - 1 + 3 = 5/3.\nAt x = -3: -(-27)/3 - 9 + (-9) = 9 - 9 - 9 = -9.\nArea = 5/3 - (-9) = 5/3 + 27/3 = 32/3.\n\n(c) For general k > 6, x^2 + 2x + (7 - k) = 0 has roots x = -1 +/- sqrt(k - 6). Let alpha = -1 - sqrt(k - 6) and beta = -1 + sqrt(k - 6), so beta - alpha = 2*sqrt(k - 6), and x^2 + 2x + (7 - k) = (x - alpha)(x - beta).\nThen (2x + k) - (x^2 + 4x + 7) = -(x^2 + 2x + (7 - k)) = -(x - alpha)(x - beta) = (beta - x)(x - alpha) (rearranging signs).\nUsing the standard result that integral from alpha to beta of (beta - x)(x - alpha) dx = (beta - alpha)^3/6:\nArea = (beta - alpha)^3/6 = (2*sqrt(k - 6))^3/6 = 8*(k - 6)^(3/2)/6 = (4/3)*(k - 6)^(3/2).\nVerification at k = 10: (4/3)*(10 - 6)^(3/2) = (4/3)*4^(3/2) = (4/3)*8 = 32/3. This agrees with (b).",
+    "answers": [
+      "(a) k > 6",
+      "(b) Points (-3, 4) and (1, 12); area 32/3",
+      "(c) Shown; verification gives (4/3)*8 = 32/3 as in (b)"
+    ]
+  },
+  {
+    "id": "Q6",
+    "topics": [
+      "Differentiation",
+      "Integration",
+      "Algebra & Functions"
+    ],
+    "questionText": "The curve C has equation y = x^3 - 12x + 1.\n\n(a) Find the coordinates of the stationary points of C and determine their nature. [4]\n\n(b) Find the equation of the tangent T to C at the point on C with x = 1. [3]\n\n(c) The tangent T meets C at exactly one other point. By using the fact that T is tangent at x = 1, find this other point of intersection. [4]\n\n(d) Find the exact area of the region enclosed between C and T. [4]",
+    "parts": [
+      {
+        "label": "(a)",
+        "text": "Find the coordinates of the stationary points of C and determine their nature.",
+        "marks": 4
+      },
+      {
+        "label": "(b)",
+        "text": "Find the equation of the tangent T to C at the point on C with x = 1.",
+        "marks": 3
+      },
+      {
+        "label": "(c)",
+        "text": "The tangent T meets C at exactly one other point. By using the fact that T is tangent at x = 1, find this other point of intersection.",
+        "marks": 4
+      },
+      {
+        "label": "(d)",
+        "text": "Find the exact area of the region enclosed between C and T.",
+        "marks": 4
+      }
+    ],
+    "totalMarks": 15,
+    "workedSolution": "Topics: Differentiation + Integration + Algebra & Functions\nInsight step: Part (c) requires recognising that 'T is tangent at x = 1' forces x = 1 to be a DOUBLE root of (curve - tangent) = 0. The student must reinterpret tangency as a multiple-root condition rather than just solving a cubic from scratch (which is hard without that insight). This factorisation then drives part (d), where the integrand is the same factored cubic.\nDifficulty audit: A mechanical student would compute (a) and (b) routinely. Part (c) is the gate: without the double-root insight the cubic x^3 - 3x + 2 = 0 must be solved by inspection or rational roots, and the student must recognise WHY x = 1 should appear as a double factor. Part (d) builds on (c) by recognising that the sign of (x - 1)^2*(x + 2) on [-2, 1] is non-negative, so absolute value is unnecessary.\nCleanliness audit: Stationary x-coordinates +/-2 are integers, so f(+/-2) evaluates to integers (17 and -15); tangent point x = 1 is integer; second intersection x = -2 is integer. Integration limits -2 and 1 are integers, so (-2)^4/4 = 4 and 1^4/4 = 1/4 (denominator 4, allowed); final area 27/4 (denominator 4, allowed). No fractional bases raised to powers >= 2.\n\n(a) y' = 3x^2 - 12. Setting y' = 0: x^2 = 4, x = +/- 2. At x = 2: y = 8 - 24 + 1 = -15. At x = -2: y = -8 + 24 + 1 = 17. y'' = 6x. y''(2) = 12 > 0, so (2, -15) is a local minimum. y''(-2) = -12 < 0, so (-2, 17) is a local maximum.\n\n(b) At x = 1: y = 1 - 12 + 1 = -10, and y' = 3 - 12 = -9. Tangent T: y - (-10) = -9*(x - 1), i.e. y = -9x - 1.\n\n(c) C meets T when x^3 - 12x + 1 = -9x - 1, i.e. x^3 - 3x + 2 = 0. Since T is tangent to C at x = 1, x = 1 is a double root of x^3 - 3x + 2, so (x - 1)^2 is a factor. Dividing: x^3 - 3x + 2 = (x - 1)^2*(x - r) for some r. Expanding (x - 1)^2*(x - r) = (x^2 - 2x + 1)(x - r) = x^3 - (r + 2)*x^2 + (2r + 1)*x - r. Matching coefficients with x^3 + 0*x^2 - 3x + 2: -(r + 2) = 0 so r = -2 (and the constant -r = 2 confirms this). The other intersection is at x = -2, where y = -9*(-2) - 1 = 17. The point is (-2, 17).\n\n(d) C - T = x^3 - 3x + 2 = (x - 1)^2*(x + 2). For x in [-2, 1], (x - 1)^2 >= 0 and (x + 2) >= 0, so C >= T throughout, and the area equals the integral.\nIntegral from -2 to 1 of (x^3 - 3x + 2) dx = [x^4/4 - 3*x^2/2 + 2x] from -2 to 1.\nAt x = 1: 1/4 - 3/2 + 2 = 1/4 - 6/4 + 8/4 = 3/4.\nAt x = -2: 16/4 - 6 - 4 = 4 - 6 - 4 = -6.\nArea = 3/4 - (-6) = 3/4 + 24/4 = 27/4.",
+    "answers": [
+      "(a) Maximum at (-2, 17); minimum at (2, -15)",
+      "(b) y = -9x - 1",
+      "(c) Other intersection at (-2, 17)",
+      "(d) 27/4"
+    ]
+  }
+]
